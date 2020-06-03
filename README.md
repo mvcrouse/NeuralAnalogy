@@ -1,5 +1,5 @@
 # Analogical Matching Network
-A neural-based system for outputting analogical matchings. At its core, it is a series of Pointer Networks that use both Graph Neural Networks and Transformers.
+A neural-based system for outputting analogical matchings. It combines recent advances in Graph Neural Networks, Transformers, and Pointer Networks.
 
 ## Experiment Setup
 
