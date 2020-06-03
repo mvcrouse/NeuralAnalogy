@@ -1,0 +1,178 @@
+(ElementInImageFn Element-83 Image-2)
+(ElementInImageFn Element-83 Image-1)
+(ElementInImageFn Element-82 Image-1)
+(ElementInImageFn Element-82 Image-2)
+(RemovedShape (ElementInImageFn Element-83 Image-2))
+(AddedShapeTypeFnStrictShapeTypeFn00
+ (ElementInImageFn Element-83 Image-1))
+(ScaledShape-Smaller (ElementInImageFn Element-82 Image-1))
+(ScaledShape-Bigger (ElementInImageFn Element-82 Image-2))
+(ElementAddedInImageFn Element-83 Image-1)
+(elementContains (ElementAddedInImageFn Element-83 Image-1)
+ (ElementInImageFn Element-82 Image-1))
+(centeredOn (ElementInImageFn Element-82 Image-1)
+ (ElementAddedInImageFn Element-83 Image-1))
+(ElementInARowFn1 Image-2)
+(changeBetweenImages
+ (centeredOn (ElementInImageFn Element-82 Image-1)
+  (ElementAddedInImageFn Element-83 Image-1))
+ Image-2 Image-1)
+(changeBetweenImages
+ (elementContains (ElementAddedInImageFn Element-83 Image-1)
+  (ElementInImageFn Element-82 Image-1))
+ Image-2 Image-1)
+(changeBetweenImagesFromTo
+ (ScaledShape-Smaller (ElementInImageFn Element-82 Image-1))
+ (ScaledShape-Bigger (ElementInImageFn Element-82 Image-2)) Image-1
+ Image-2)
+(changeBetweenImagesFromTo
+ (RemovedShape (ElementInImageFn Element-83 Image-2))
+ (AddedShapeTypeFnStrictShapeTypeFn00
+  (ElementInImageFn Element-83 Image-1))
+ Image-2 Image-1)
+(ElementInARowFn0 Image-1)
++++++++++++
+(ElementInARowFn0 Image-1)
+(ElementInImageFn Element-31 Image-2)
+(ElementInImageFn Element-31 Image-1)
+(ElementInImageFn Element-30 Image-1)
+(ElementInImageFn Element-30 Image-2)
+(RemovedShape (ElementInImageFn Element-31 Image-2))
+(AddedShapeTypeFnStrictShapeTypeFn10
+ (ElementInImageFn Element-31 Image-1))
+(changeBetweenImagesFromTo
+ (RemovedShape (ElementInImageFn Element-31 Image-2))
+ (AddedShapeTypeFnStrictShapeTypeFn10
+  (ElementInImageFn Element-31 Image-1))
+ Image-2 Image-1)
+(changeBetweenImagesFromTo
+ (ScaledShape-Smaller (ElementInImageFn Element-30 Image-1))
+ (ScaledShape-Bigger (ElementInImageFn Element-30 Image-2)) Image-1
+ Image-2)
+(ScaledShape-Smaller (ElementInImageFn Element-30 Image-1))
+(ScaledShape-Bigger (ElementInImageFn Element-30 Image-2))
+(ElementAddedInImageFn Element-31 Image-1)
+(elementContains (ElementAddedInImageFn Element-31 Image-1)
+ (ElementInImageFn Element-30 Image-1))
+(changeBetweenImages
+ (elementContains (ElementAddedInImageFn Element-31 Image-1)
+  (ElementInImageFn Element-30 Image-1))
+ Image-2 Image-1)
+(changeBetweenImages
+ (centeredOn (ElementInImageFn Element-30 Image-1)
+  (ElementAddedInImageFn Element-31 Image-1))
+ Image-2 Image-1)
+(centeredOn (ElementInImageFn Element-30 Image-1)
+ (ElementAddedInImageFn Element-31 Image-1))
+(ElementInARowFn1 Image-2)
++++++++++++
+(matchBetween Image-1 Image-1)
+(matchBetween (ElementInARowFn0 Image-1) (ElementInARowFn0 Image-1))
+(matchBetween Element-82 Element-30)
+(matchBetween (ElementInImageFn Element-82 Image-2) (ElementInImageFn
+                                                     Element-30
+                                                     Image-2))
+(matchBetween (ElementInImageFn Element-82 Image-1) (ElementInImageFn
+                                                     Element-30
+                                                     Image-1))
+(matchBetween (ScaledShape-Smaller
+               (ElementInImageFn Element-82
+                Image-1)) (ScaledShape-Smaller
+                           (ElementInImageFn Element-30 Image-1)))
+(matchBetween (ScaledShape-Bigger
+               (ElementInImageFn Element-82
+                Image-2)) (ScaledShape-Bigger
+                           (ElementInImageFn Element-30 Image-2)))
+(matchBetween (changeBetweenImagesFromTo
+               (ScaledShape-Smaller
+                (ElementInImageFn Element-82 Image-1))
+               (ScaledShape-Bigger
+                (ElementInImageFn Element-82 Image-2))
+               Image-1 Image-2) (changeBetweenImagesFromTo
+                                 (ScaledShape-Smaller
+                                  (ElementInImageFn
+                                   Element-30
+                                   Image-1))
+                                 (ScaledShape-Bigger
+                                  (ElementInImageFn
+                                   Element-30
+                                   Image-2))
+                                 Image-1
+                                 Image-2))
+(matchBetween (centeredOn (ElementInImageFn Element-82 Image-1)
+               (ElementAddedInImageFn Element-83 Image-1)) (centeredOn
+                                                            (ElementInImageFn
+                                                             Element-30
+                                                             Image-1)
+                                                            (ElementAddedInImageFn
+                                                             Element-31
+                                                             Image-1)))
+(matchBetween (changeBetweenImages
+               (centeredOn (ElementInImageFn Element-82 Image-1)
+                (ElementAddedInImageFn Element-83 Image-1))
+               Image-2 Image-1) (changeBetweenImages
+                                 (centeredOn
+                                  (ElementInImageFn Element-30 Image-1)
+                                  (ElementAddedInImageFn
+                                   Element-31
+                                   Image-1))
+                                 Image-2
+                                 Image-1))
+(matchBetween (changeBetweenImages
+               (elementContains
+                (ElementAddedInImageFn Element-83 Image-1)
+                (ElementInImageFn Element-82 Image-1))
+               Image-2 Image-1) (changeBetweenImages
+                                 (elementContains
+                                  (ElementAddedInImageFn
+                                   Element-31
+                                   Image-1)
+                                  (ElementInImageFn
+                                   Element-30
+                                   Image-1))
+                                 Image-2
+                                 Image-1))
+(matchBetween (elementContains
+               (ElementAddedInImageFn Element-83 Image-1)
+               (ElementInImageFn Element-82 Image-1)) (elementContains
+                                                       (ElementAddedInImageFn
+                                                        Element-31
+                                                        Image-1)
+                                                       (ElementInImageFn
+                                                        Element-30
+                                                        Image-1)))
+(matchBetween (ElementAddedInImageFn Element-83
+               Image-1) (ElementAddedInImageFn Element-31 Image-1))
+(matchBetween (changeBetweenImagesFromTo
+               (RemovedShape (ElementInImageFn Element-83 Image-2))
+               (AddedShapeTypeFnStrictShapeTypeFn00
+                (ElementInImageFn Element-83 Image-1))
+               Image-2 Image-1) (changeBetweenImagesFromTo
+                                 (RemovedShape
+                                  (ElementInImageFn
+                                   Element-31
+                                   Image-2))
+                                 (AddedShapeTypeFnStrictShapeTypeFn10
+                                  (ElementInImageFn
+                                   Element-31
+                                   Image-1))
+                                 Image-2
+                                 Image-1))
+(matchBetween (AddedShapeTypeFnStrictShapeTypeFn00
+               (ElementInImageFn Element-83
+                Image-1)) (AddedShapeTypeFnStrictShapeTypeFn10
+                           (ElementInImageFn Element-31 Image-1)))
+(matchBetween (RemovedShape
+               (ElementInImageFn Element-83 Image-2)) (RemovedShape
+                                                       (ElementInImageFn
+                                                        Element-31
+                                                        Image-2)))
+(matchBetween (ElementInImageFn Element-83 Image-2) (ElementInImageFn
+                                                     Element-31
+                                                     Image-2))
+(matchBetween (ElementInImageFn Element-83 Image-1) (ElementInImageFn
+                                                     Element-31
+                                                     Image-1))
+(matchBetween Element-83 Element-31)
+(matchBetween (ElementInARowFn1 Image-2) (ElementInARowFn1 Image-2))
+(matchBetween Image-2 Image-2)

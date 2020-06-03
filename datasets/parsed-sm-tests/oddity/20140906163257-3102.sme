@@ -1,0 +1,35 @@
+(elementIntersects Edge-2714 Super-Edge-2718)
+(edgesPerpendicular Super-Edge-2718 Edge-2714)
+(lengthShort Edge-2714)
+(lengthLong Super-Edge-2718)
+(PerceptualEdge Edge-2714)
+(StraightEdge Edge-2714)
+(PerceptualEdge Super-Edge-2718)
+(StraightEdge Super-Edge-2718)
++++++++++++
+(StraightEdge Super-Edge-2724)
+(StraightEdge Edge-2720)
+(PerceptualEdge Super-Edge-2724)
+(PerceptualEdge Edge-2720)
+(lengthLong Super-Edge-2724)
+(lengthShort Edge-2720)
+(edgesPerpendicular Super-Edge-2724 Edge-2720)
+(elementIntersects Edge-2720 Super-Edge-2724)
++++++++++++
+(matchBetween Super-Edge-2718 Super-Edge-2724)
+(matchBetween (lengthLong Super-Edge-2718) (lengthLong Super-Edge-2724))
+(matchBetween (PerceptualEdge Edge-2714) (PerceptualEdge Edge-2720))
+(matchBetween (StraightEdge Edge-2714) (StraightEdge Edge-2720))
+(matchBetween (edgesPerpendicular Super-Edge-2718
+               Edge-2714) (edgesPerpendicular Super-Edge-2724
+                           Edge-2720))
+(matchBetween (elementIntersects Edge-2714
+               Super-Edge-2718) (elementIntersects
+                                 Edge-2720
+                                 Super-Edge-2724))
+(matchBetween (StraightEdge Super-Edge-2718) (StraightEdge
+                                              Super-Edge-2724))
+(matchBetween (PerceptualEdge Super-Edge-2718) (PerceptualEdge
+                                                Super-Edge-2724))
+(matchBetween (lengthShort Edge-2714) (lengthShort Edge-2720))
+(matchBetween Edge-2714 Edge-2720)

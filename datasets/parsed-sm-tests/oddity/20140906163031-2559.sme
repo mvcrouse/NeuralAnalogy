@@ -1,0 +1,41 @@
+(ShapeTypeFn0 Object-454)
+((ShapeTypeFn 1) Object-455)
+(wideEdged Object-455)
+(narrowEdged Object-454)
+(elementContains Object-455 Object-454)
+(onTopHalfOf Object-454 Object-455)
+(onRightHalfOf Object-454 Object-455)
+(ObjectsBorderColoredFnBlackColor Object-455)
+(ObjectsBorderColoredFnBlackColor Object-454)
+(ObjectsColoredFnWhiteColor Object-455)
+(ObjectsColoredFnBlackColor Object-454)
++++++++++++
+(ObjectsColoredFnBlackColor Object-460)
+(ObjectsColoredFnWhiteColor Object-461)
+(ObjectsBorderColoredFnBlackColor Object-460)
+(ObjectsBorderColoredFnBlackColor Object-461)
+(onBottomHalfOf Object-460 Object-461)
+(elementContains Object-461 Object-460)
+(narrowEdged Object-460)
+(wideEdged Object-461)
+((ShapeTypeFn 2) Object-461)
+(ShapeTypeFn0 Object-460)
++++++++++++
+(matchBetween (ObjectsBorderColoredFnBlackColor
+               Object-455) (ObjectsBorderColoredFnBlackColor
+                            Object-461))
+(matchBetween Object-454 Object-460)
+(matchBetween (ShapeTypeFn0 Object-454) (ShapeTypeFn0 Object-460))
+(matchBetween (ObjectsBorderColoredFnBlackColor
+               Object-454) (ObjectsBorderColoredFnBlackColor
+                            Object-460))
+(matchBetween (elementContains Object-455 Object-454) (elementContains
+                                                       Object-461
+                                                       Object-460))
+(matchBetween (ObjectsColoredFnBlackColor
+               Object-454) (ObjectsColoredFnBlackColor Object-460))
+(matchBetween (narrowEdged Object-454) (narrowEdged Object-460))
+(matchBetween (ObjectsColoredFnWhiteColor
+               Object-455) (ObjectsColoredFnWhiteColor Object-461))
+(matchBetween (wideEdged Object-455) (wideEdged Object-461))
+(matchBetween Object-455 Object-461)

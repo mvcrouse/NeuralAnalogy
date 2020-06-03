@@ -1,0 +1,71 @@
+(convexAngleBetweenEdges Edge-106 Edge-107)
+(convexAngleBetweenEdges Edge-107 Edge-108)
+(convexAngleBetweenEdges Edge-108 Edge-106)
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-108 Edge-106)
+ (convexAngleBetweenEdges Edge-106 Edge-107))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-107 Edge-108)
+ (convexAngleBetweenEdges Edge-108 Edge-106))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-106 Edge-107)
+ (convexAngleBetweenEdges Edge-107 Edge-108))
+(PerceptualEdge Edge-108)
+(StraightEdge Edge-108)
+(PerceptualEdge Edge-107)
+(StraightEdge Edge-107)
+(axisAligned Edge-106)
+(PerceptualEdge Edge-106)
+(StraightEdge Edge-106)
++++++++++++
+(StraightEdge Edge-109)
+(StraightEdge Edge-110)
+(StraightEdge Edge-111)
+(PerceptualEdge Edge-109)
+(PerceptualEdge Edge-110)
+(PerceptualEdge Edge-111)
+(axisAligned Edge-109)
+(convexAngleBetweenEdges Edge-109 Edge-110)
+(convexAngleBetweenEdges Edge-110 Edge-111)
+(convexAngleBetweenEdges Edge-111 Edge-109)
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-109 Edge-110)
+ (convexAngleBetweenEdges Edge-110 Edge-111))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-110 Edge-111)
+ (convexAngleBetweenEdges Edge-111 Edge-109))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-111 Edge-109)
+ (convexAngleBetweenEdges Edge-109 Edge-110))
++++++++++++
+(matchBetween Edge-108 Edge-111)
+(matchBetween (PerceptualEdge Edge-108) (PerceptualEdge Edge-111))
+(matchBetween (StraightEdge Edge-108) (StraightEdge Edge-111))
+(matchBetween (PerceptualEdge Edge-106) (PerceptualEdge Edge-109))
+(matchBetween (convexAngleBetweenEdges Edge-107
+               Edge-108) (convexAngleBetweenEdges Edge-110 Edge-111))
+(matchBetween (convexAngleBetweenEdges Edge-106
+               Edge-107) (convexAngleBetweenEdges Edge-109 Edge-110))
+(matchBetween (cycleAdjacentAngles
+               (convexAngleBetweenEdges Edge-106 Edge-107)
+               (convexAngleBetweenEdges Edge-107
+                Edge-108)) (cycleAdjacentAngles
+                            (convexAngleBetweenEdges Edge-109 Edge-110)
+                            (convexAngleBetweenEdges Edge-110
+                             Edge-111)))
+(matchBetween (cycleAdjacentAngles
+               (convexAngleBetweenEdges Edge-108 Edge-106)
+               (convexAngleBetweenEdges Edge-106
+                Edge-107)) (cycleAdjacentAngles
+                            (convexAngleBetweenEdges Edge-111 Edge-109)
+                            (convexAngleBetweenEdges Edge-109
+                             Edge-110)))
+(matchBetween (cycleAdjacentAngles
+               (convexAngleBetweenEdges Edge-107 Edge-108)
+               (convexAngleBetweenEdges Edge-108
+                Edge-106)) (cycleAdjacentAngles
+                            (convexAngleBetweenEdges Edge-110 Edge-111)
+                            (convexAngleBetweenEdges Edge-111
+                             Edge-109)))
+(matchBetween (convexAngleBetweenEdges Edge-108
+               Edge-106) (convexAngleBetweenEdges Edge-111 Edge-109))
+(matchBetween (StraightEdge Edge-106) (StraightEdge Edge-109))
+(matchBetween (axisAligned Edge-106) (axisAligned Edge-109))
+(matchBetween Edge-106 Edge-109)
+(matchBetween (StraightEdge Edge-107) (StraightEdge Edge-110))
+(matchBetween (PerceptualEdge Edge-107) (PerceptualEdge Edge-110))
+(matchBetween Edge-107 Edge-110)

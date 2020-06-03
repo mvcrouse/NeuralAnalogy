@@ -1,0 +1,171 @@
+(sacredValueChoice applyProgram2)
+(sacredValueChoice notChangeProgram)
+(affectsSigLargerGroup applyProgram2)
+(affectsSigLargerGroup notChangeProgram)
+(uninferredSentence (affectsSigLargerGroup applyProgram2))
+(uninferredSentence (affectsSigLargerGroup notChangeProgram))
+(uninferredSentence (directlyResponsible you8116 notChangeProgram))
+(uninferredSentence (preventsAlternativeNegativeOutcome applyProgram2))
+(uninferredSentence (usedAsMeansToPreventNegativeOutcome applyProgram2))
+(directlyResponsible you8116 applyProgram2)
+(directlyResponsible you8116 notChangeProgram)
+(preventsAlternativeNegativeOutcome applyProgram2)
+(usedAsMeansToPreventNegativeOutcome applyProgram2)
+(and (sacredValueChoice applyProgram2)
+     (sacredValueChoice notChangeProgram)
+     (uninferredSentence (affectsSigLargerGroup applyProgram2))
+     (uninferredSentence (affectsSigLargerGroup notChangeProgram))
+     (directlyResponsible you8116 applyProgram2)
+     (uninferredSentence
+      (directlyResponsible you8116 notChangeProgram))
+     (uninferredSentence
+      (preventsAlternativeNegativeOutcome applyProgram2))
+     (uninferredSentence
+      (usedAsMeansToPreventNegativeOutcome applyProgram2)))
+(rightChoice notChangeProgram)
+(chosenItem ChangeOrNotChangeTheProgram notChangeProgram)
+(chosenItem ChangeOrNotChangeTheProgram applyProgram2)
+((GroupFn MedicalPatient) CancerPatients)
+((GroupFn MedicalPatient) CancerPatientsGroup1)
+((GroupFn MedicalPatient) CancerPatientsGroup2)
+(IntelligentAgent you8116)
+(Cancer cancer2)
+(Cancer cancer1)
+(Dying DyingCancerPatientsGroup1)
+(Dying DyingCancerPatientsGroup2)
+(DrugAdministrationRouteType cancerProgram1)
+(DrugAdministrationRouteType cancerProgram2)
+(PreventingSomething preventingDyingCancerPatientsGroup1)
+(PreventingSomething preventingDyingCancerPatientsGroup2)
+(Inaction notChangeProgram)
+(SelectingSomething ChangeOrNotChangeTheProgram)
+(groupCardinality CancerPatientsGroup1 100)
+(groupCardinality CancerPatientsGroup2 1000)
+(subGroups CancerPatients CancerPatientsGroup1)
+(subGroups CancerPatients CancerPatientsGroup2)
+(objectActedOn DyingCancerPatientsGroup1 CancerPatientsGroup1)
+(objectActedOn DyingCancerPatientsGroup2 CancerPatientsGroup2)
+(diseaseTypeCurableByTreatmentType cancer1 cancerProgram1)
+(diseaseTypeCurableByTreatmentType cancer2 cancerProgram2)
+(preventedProp preventingDyingCancerPatientsGroup1
+ DyingCancerPatientsGroup1)
+(preventedProp preventingDyingCancerPatientsGroup2
+ DyingCancerPatientsGroup2)
+(choices ChangeOrNotChangeTheProgram applyProgram2)
+(choices ChangeOrNotChangeTheProgram notChangeProgram)
+(performedBy applyProgram2 you8116)
+(performedBy notChangeProgram you8116)
+(causes-PropProp (chosenItem ChangeOrNotChangeTheProgram applyProgram2)
+ preventingDyingCancerPatientsGroup2)
+(causes-PropProp (chosenItem ChangeOrNotChangeTheProgram applyProgram2)
+ DyingCancerPatientsGroup1)
+(causes-PropProp
+ (chosenItem ChangeOrNotChangeTheProgram notChangeProgram)
+ DyingCancerPatientsGroup2)
+(causes-PropProp
+ (chosenItem ChangeOrNotChangeTheProgram notChangeProgram)
+ preventingDyingCancerPatientsGroup1)
+(implies
+ (and (sacredValueChoice applyProgram2)
+      (sacredValueChoice notChangeProgram)
+      (uninferredSentence (affectsSigLargerGroup applyProgram2))
+      (uninferredSentence (affectsSigLargerGroup notChangeProgram))
+      (directlyResponsible you8116 applyProgram2)
+      (uninferredSentence
+       (directlyResponsible you8116 notChangeProgram))
+      (uninferredSentence
+       (preventsAlternativeNegativeOutcome applyProgram2))
+      (uninferredSentence
+       (usedAsMeansToPreventNegativeOutcome applyProgram2)))
+ (rightChoice notChangeProgram))
+(makeDecision you8116 notChangeProgram)
++++++++++++
+(Inaction Inaction68012)
+(performedBy PreventingSomething68010 you64335)
+(performedBy hit64076 train64488)
+(performedBy hit67367 train64488)
+(performedBy redirect67174 you64335)
+(performedBy Inaction68012 you64335)
+(performedBy save64374 you64335)
+(preventedSit PreventingSomething68010 hit64076)
+(PreventingSomething PreventingSomething68010)
+(SelectingSomething SelectingSomething68011)
+(choices SelectingSomething68011 redirect67174)
+(choices SelectingSomething68011 Inaction68012)
+(chosenItem SelectingSomething68011 Inaction68012)
+(chosenItem SelectingSomething68011 redirect67174)
+(causes-PropSit (chosenItem SelectingSomething68011 Inaction68012)
+ hit64076)
+(causes-PropSit (chosenItem SelectingSomething68011 redirect67174)
+ save64374)
+(causes-PropSit (chosenItem SelectingSomething68011 redirect67174)
+ hit67367)
+((GroupFn Person) them64407)
+((GroupFn Person) set-of-passenger66080)
+(Dying hit64076)
+(Dying hit67367)
+(Bus-RoadVehicle bus64133)
+(Bus-RoadVehicle bus66039)
+(on-UnderspecifiedSurface bus66039 side-track66173)
+(HittingAnObject hit64076)
+(HittingAnObject hit67367)
+(objectActedOn hit64076 bus64133)
+(objectActedOn hit67367 bus66039)
+(Translation-LocationChange redirect67174)
+(primaryObjectMoving redirect67174 train64488)
+(toLocation redirect67174 side-track66173)
+(RescuingSomeone save64374)
+(beneficiary save64374 them64407)
+(by-Underspecified save64374 redirect67174)
+(causes-SitSit save64374 PreventingSomething68010)
+(cardinality set-of-passenger66080 2)
+(cardinality them64407 10)
+(Set-Mathematical set-of-passenger66080)
+(Set-Mathematical them64407)
+(Railway-siding side-track66173)
+(HighAmountFn Speed)
+(speedOfObject-Underspecified train64488 (HighAmountFn Speed))
+(Train-TransportationDevice train64488)
++++++++++++
+(matchBetween DyingCancerPatientsGroup2 hit64076)
+(matchBetween (Dying DyingCancerPatientsGroup2) (Dying hit64076))
+(matchBetween CancerPatientsGroup2 bus64133)
+(matchBetween (objectActedOn DyingCancerPatientsGroup2
+               CancerPatientsGroup2) (objectActedOn hit64076 bus64133))
+(matchBetween notChangeProgram Inaction68012)
+(matchBetween (Inaction notChangeProgram) (Inaction Inaction68012))
+(matchBetween applyProgram2 redirect67174)
+(matchBetween you8116 you64335)
+(matchBetween (performedBy applyProgram2 you8116) (performedBy
+                                                   redirect67174
+                                                   you64335))
+(matchBetween (choices ChangeOrNotChangeTheProgram
+               applyProgram2) (choices SelectingSomething68011
+                               redirect67174))
+(matchBetween (choices ChangeOrNotChangeTheProgram
+               notChangeProgram) (choices
+                                  SelectingSomething68011
+                                  Inaction68012))
+(matchBetween (chosenItem ChangeOrNotChangeTheProgram
+               notChangeProgram) (chosenItem
+                                  SelectingSomething68011
+                                  Inaction68012))
+(matchBetween (chosenItem ChangeOrNotChangeTheProgram
+               applyProgram2) (chosenItem SelectingSomething68011
+                               redirect67174))
+(matchBetween (performedBy notChangeProgram you8116) (performedBy
+                                                      Inaction68012
+                                                      you64335))
+(matchBetween (SelectingSomething
+               ChangeOrNotChangeTheProgram) (SelectingSomething
+                                             SelectingSomething68011))
+(matchBetween ChangeOrNotChangeTheProgram SelectingSomething68011)
+(matchBetween (objectActedOn DyingCancerPatientsGroup1
+               CancerPatientsGroup1) (objectActedOn hit67367 bus66039))
+(matchBetween CancerPatientsGroup1 bus66039)
+(matchBetween (Dying DyingCancerPatientsGroup1) (Dying hit67367))
+(matchBetween DyingCancerPatientsGroup1 hit67367)
+(matchBetween (PreventingSomething
+               preventingDyingCancerPatientsGroup1) (PreventingSomething
+                                                     PreventingSomething68010))
+(matchBetween preventingDyingCancerPatientsGroup1 PreventingSomething68010)

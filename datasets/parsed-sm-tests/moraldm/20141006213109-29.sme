@@ -1,0 +1,233 @@
+(sacredValueChoice FinancialAssitanceToShelter2)
+(sacredValueChoice notChangeSupport)
+(affectsSigLargerGroup FinancialAssitanceToShelter2)
+(affectsSigLargerGroup notChangeSupport)
+(uninferredSentence
+ (affectsSigLargerGroup FinancialAssitanceToShelter2))
+(uninferredSentence (affectsSigLargerGroup notChangeSupport))
+(uninferredSentence (directlyResponsible you1143 notChangeSupport))
+(uninferredSentence
+ (preventsAlternativeNegativeOutcome FinancialAssitanceToShelter2))
+(uninferredSentence
+ (usedAsMeansToPreventNegativeOutcome FinancialAssitanceToShelter2))
+(directlyResponsible you1143 FinancialAssitanceToShelter2)
+(directlyResponsible you1143 notChangeSupport)
+(preventsAlternativeNegativeOutcome FinancialAssitanceToShelter2)
+(usedAsMeansToPreventNegativeOutcome FinancialAssitanceToShelter2)
+(and (sacredValueChoice FinancialAssitanceToShelter2)
+     (sacredValueChoice notChangeSupport)
+     (uninferredSentence
+      (affectsSigLargerGroup FinancialAssitanceToShelter2))
+     (uninferredSentence (affectsSigLargerGroup notChangeSupport))
+     (directlyResponsible you1143 FinancialAssitanceToShelter2)
+     (uninferredSentence
+      (directlyResponsible you1143 notChangeSupport))
+     (uninferredSentence
+      (preventsAlternativeNegativeOutcome
+       FinancialAssitanceToShelter2))
+     (uninferredSentence
+      (usedAsMeansToPreventNegativeOutcome
+       FinancialAssitanceToShelter2)))
+(rightChoice notChangeSupport)
+(chosenItem GivingOrNotGivingAssistance notChangeSupport)
+(chosenItem GivingOrNotGivingAssistance FinancialAssitanceToShelter2)
+(IntelligentAgent you1143)
+((GroupFn HomelessPerson) group1FemaleHomeless)
+((GroupFn HomelessPerson) group2FemaleHomeless)
+(HumanShelterConstruction shelter1)
+(ShelteringSomething shelteringGroup1)
+(FinancialSupport FinancialAssitanceToShelter1)
+(HumanShelterConstruction shelter2)
+(ShelteringSomething shelteringGroup2)
+(FinancialSupport FinancialAssitanceToShelter2)
+(HarmingAnAgent harmingGroup1)
+(HarmingAnAgent harmingGroup2)
+(PreventingSomething preventingHarmingGroup1)
+(PreventingSomething preventingHarmingGroup2)
+(Inaction notChangeSupport)
+(SelectingSomething GivingOrNotGivingAssistance)
+(groupCardinality group1FemaleHomeless 50)
+(groupCardinality group2FemaleHomeless 150)
+(performedBy shelteringGroup1 shelter1)
+(objectActedOn shelteringGroup1 group1FemaleHomeless)
+(beneficiary FinancialAssitanceToShelter1 shelter1)
+(performedBy FinancialAssitanceToShelter1 you1143)
+(performedBy shelteringGroup2 shelter1)
+(objectActedOn shelteringGroup2 group2FemaleHomeless)
+(beneficiary FinancialAssitanceToShelter2 shelter2)
+(performedBy FinancialAssitanceToShelter2 you1143)
+(objectActedOn harmingGroup1 group1FemaleHomeless)
+(objectActedOn harmingGroup2 group2FemaleHomeless)
+(preventedProp preventingHarmingGroup1 harmingGroup1)
+(preventedProp preventingHarmingGroup2 harmingGroup2)
+(performedBy notChangeSupport you1143)
+(choices GivingOrNotGivingAssistance FinancialAssitanceToShelter2)
+(choices GivingOrNotGivingAssistance notChangeSupport)
+(causes-PropProp
+ (chosenItem GivingOrNotGivingAssistance FinancialAssitanceToShelter2)
+ preventingHarmingGroup2)
+(causes-PropProp
+ (chosenItem GivingOrNotGivingAssistance FinancialAssitanceToShelter2)
+ harmingGroup1)
+(causes-PropProp
+ (chosenItem GivingOrNotGivingAssistance notChangeSupport)
+ preventingHarmingGroup1)
+(causes-PropProp
+ (chosenItem GivingOrNotGivingAssistance notChangeSupport)
+ harmingGroup2)
+(implies
+ (and (sacredValueChoice FinancialAssitanceToShelter2)
+      (sacredValueChoice notChangeSupport)
+      (uninferredSentence
+       (affectsSigLargerGroup FinancialAssitanceToShelter2))
+      (uninferredSentence (affectsSigLargerGroup notChangeSupport))
+      (directlyResponsible you1143 FinancialAssitanceToShelter2)
+      (uninferredSentence
+       (directlyResponsible you1143 notChangeSupport))
+      (uninferredSentence
+       (preventsAlternativeNegativeOutcome
+        FinancialAssitanceToShelter2))
+      (uninferredSentence
+       (usedAsMeansToPreventNegativeOutcome
+        FinancialAssitanceToShelter2)))
+ (rightChoice notChangeSupport))
+(makeDecision you1143 notChangeSupport)
++++++++++++
+((GroupFn HumanChild) ChildrenInDanger)
+((GroupFn HumanChild) ChildrenInDangerGroup1)
+((GroupFn HumanChild) ChildrenInDangerGroup2)
+(IntelligentAgent you2805)
+(groupCardinality ChildrenInDanger 10000)
+(groupCardinality ChildrenInDangerGroup1 10)
+(groupCardinality ChildrenInDangerGroup2 1)
+(subGroups ChildrenInDanger ChildrenInDangerGroup1)
+(subGroups ChildrenInDanger ChildrenInDangerGroup2)
+(DiseaseType disease1960)
+((VaccineForAgainstFn ChildrenInDanger disease1960) vaccine1960)
+(Dying DyingChildrenGroup1)
+(Dying DyingChildrenGroup2)
+(objectActedOn DyingChildrenGroup1 ChildrenInDangerGroup1)
+(objectActedOn DyingChildrenGroup2 ChildrenInDangerGroup2)
+(Injecting-Medical giveVaccine)
+(deviceUsed giveVaccine vaccine1960)
+(bodilyActedOn vaccine1960 ChildrenInDangerGroup1)
+(bodilyActedOn vaccineSideEffect ChildrenInDangerGroup2)
+(Inaction NotGiveVaccine)
+(PreventingSomething preventingDyingChildrenGroup1)
+(PreventingSomething preventingDyingChildrenGroup2)
+(preventedProp preventingDyingChildrenGroup1 DyingChildrenGroup1)
+(preventedProp preventingDyingChildrenGroup2 DyingChildrenGroup2)
+(SelectingSomething GivingOrNotGivingTheVaccine)
+(choices GivingOrNotGivingTheVaccine giveVaccine)
+(choices GivingOrNotGivingTheVaccine NotGiveVaccine)
+(performedBy giveVaccine you2805)
+(performedBy NotGiveVaccine you2805)
+(chosenItem GivingOrNotGivingTheVaccine giveVaccine)
+(chosenItem GivingOrNotGivingTheVaccine NotGiveVaccine)
+(causes-PropProp (chosenItem GivingOrNotGivingTheVaccine giveVaccine)
+ preventingDyingChildrenGroup1)
+(causes-PropProp (chosenItem GivingOrNotGivingTheVaccine giveVaccine)
+ DyingChildrenGroup2)
+(causes-PropProp
+ (chosenItem GivingOrNotGivingTheVaccine NotGiveVaccine)
+ DyingChildrenGroup1)
+(causes-PropProp
+ (chosenItem GivingOrNotGivingTheVaccine NotGiveVaccine)
+ preventingDyingChildrenGroup2)
++++++++++++
+(matchBetween preventingHarmingGroup2 preventingDyingChildrenGroup1)
+(matchBetween (PreventingSomething
+               preventingHarmingGroup2) (PreventingSomething
+                                         preventingDyingChildrenGroup1))
+(matchBetween group2FemaleHomeless ChildrenInDangerGroup1)
+(matchBetween 150 10)
+(matchBetween (groupCardinality group2FemaleHomeless
+               150) (groupCardinality ChildrenInDangerGroup1 10))
+(matchBetween harmingGroup2 DyingChildrenGroup1)
+(matchBetween (objectActedOn harmingGroup2
+               group2FemaleHomeless) (objectActedOn
+                                      DyingChildrenGroup1
+                                      ChildrenInDangerGroup1))
+(matchBetween (preventedProp preventingHarmingGroup2
+               harmingGroup2) (preventedProp
+                               preventingDyingChildrenGroup1
+                               DyingChildrenGroup1))
+(matchBetween notChangeSupport NotGiveVaccine)
+(matchBetween (Inaction notChangeSupport) (Inaction NotGiveVaccine))
+(matchBetween (performedBy notChangeSupport you1143) (performedBy
+                                                      NotGiveVaccine
+                                                      you2805))
+(matchBetween (choices GivingOrNotGivingAssistance
+               FinancialAssitanceToShelter2) (choices
+                                              GivingOrNotGivingTheVaccine
+                                              giveVaccine))
+(matchBetween (chosenItem GivingOrNotGivingAssistance
+               FinancialAssitanceToShelter2) (chosenItem
+                                              GivingOrNotGivingTheVaccine
+                                              giveVaccine))
+(matchBetween (causes-PropProp
+               (chosenItem GivingOrNotGivingAssistance
+                FinancialAssitanceToShelter2)
+               harmingGroup1) (causes-PropProp
+                               (chosenItem
+                                GivingOrNotGivingTheVaccine
+                                giveVaccine)
+                               DyingChildrenGroup2))
+(matchBetween (chosenItem GivingOrNotGivingAssistance
+               notChangeSupport) (chosenItem
+                                  GivingOrNotGivingTheVaccine
+                                  NotGiveVaccine))
+(matchBetween (causes-PropProp
+               (chosenItem GivingOrNotGivingAssistance
+                notChangeSupport)
+               harmingGroup2) (causes-PropProp
+                               (chosenItem
+                                GivingOrNotGivingTheVaccine
+                                NotGiveVaccine)
+                               DyingChildrenGroup1))
+(matchBetween (causes-PropProp
+               (chosenItem GivingOrNotGivingAssistance
+                notChangeSupport)
+               preventingHarmingGroup1) (causes-PropProp
+                                         (chosenItem
+                                          GivingOrNotGivingTheVaccine
+                                          NotGiveVaccine)
+                                         preventingDyingChildrenGroup2))
+(matchBetween (causes-PropProp
+               (chosenItem GivingOrNotGivingAssistance
+                FinancialAssitanceToShelter2)
+               preventingHarmingGroup2) (causes-PropProp
+                                         (chosenItem
+                                          GivingOrNotGivingTheVaccine
+                                          giveVaccine)
+                                         preventingDyingChildrenGroup1))
+(matchBetween (choices GivingOrNotGivingAssistance
+               notChangeSupport) (choices
+                                  GivingOrNotGivingTheVaccine
+                                  NotGiveVaccine))
+(matchBetween (SelectingSomething
+               GivingOrNotGivingAssistance) (SelectingSomething
+                                             GivingOrNotGivingTheVaccine))
+(matchBetween GivingOrNotGivingAssistance GivingOrNotGivingTheVaccine)
+(matchBetween (performedBy FinancialAssitanceToShelter2
+               you1143) (performedBy giveVaccine you2805))
+(matchBetween FinancialAssitanceToShelter2 giveVaccine)
+(matchBetween (preventedProp preventingHarmingGroup1
+               harmingGroup1) (preventedProp
+                               preventingDyingChildrenGroup2
+                               DyingChildrenGroup2))
+(matchBetween (objectActedOn harmingGroup1
+               group1FemaleHomeless) (objectActedOn
+                                      DyingChildrenGroup2
+                                      ChildrenInDangerGroup2))
+(matchBetween harmingGroup1 DyingChildrenGroup2)
+(matchBetween (groupCardinality group1FemaleHomeless
+               50) (groupCardinality ChildrenInDangerGroup2 1))
+(matchBetween 50 1)
+(matchBetween group1FemaleHomeless ChildrenInDangerGroup2)
+(matchBetween (PreventingSomething
+               preventingHarmingGroup1) (PreventingSomething
+                                         preventingDyingChildrenGroup2))
+(matchBetween preventingHarmingGroup1 preventingDyingChildrenGroup2)
+(matchBetween (IntelligentAgent you1143) (IntelligentAgent you2805))
+(matchBetween you1143 you2805)

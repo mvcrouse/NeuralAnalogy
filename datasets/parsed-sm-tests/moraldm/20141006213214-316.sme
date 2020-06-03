@@ -1,0 +1,194 @@
+(sacredValueChoice open3575)
+(sacredValueChoice Inaction4227)
+(affectsSigLargerGroup open3575)
+(affectsSigLargerGroup Inaction4227)
+(uninferredSentence (affectsSigLargerGroup open3575))
+(uninferredSentence (affectsSigLargerGroup Inaction4227))
+(uninferredSentence (directlyResponsible you3467 Inaction4227))
+(uninferredSentence (preventsAlternativeNegativeOutcome open3575))
+(uninferredSentence (usedAsMeansToPreventNegativeOutcome open3575))
+(directlyResponsible you3467 open3575)
+(directlyResponsible you3467 Inaction4227)
+(preventsAlternativeNegativeOutcome open3575)
+(usedAsMeansToPreventNegativeOutcome open3575)
+(and (sacredValueChoice open3575) (sacredValueChoice Inaction4227)
+     (uninferredSentence (affectsSigLargerGroup open3575))
+     (uninferredSentence (affectsSigLargerGroup Inaction4227))
+     (directlyResponsible you3467 open3575)
+     (uninferredSentence (directlyResponsible you3467 Inaction4227))
+     (uninferredSentence (preventsAlternativeNegativeOutcome open3575))
+     (uninferredSentence
+      (usedAsMeansToPreventNegativeOutcome open3575)))
+(and (on-UnderspecifiedSurface dam3171 river3220) (Dam dam3171)
+     (River river3220) (TemporalPredicate temporallySubsumes))
+(rightChoice Inaction4227)
+(chosenItem SelectingSomething4226 Inaction4227)
+(chosenItem SelectingSomething4226 open3575)
+(on-UnderspecifiedSurface dam3171 river3220)
+(Dam dam3171)
+(River river3220)
+(TemporalPredicate temporallySubsumes)
+(Set-Mathematical them3545)
+(BiologicalSpecies species3257)
+(Extinction extinction3406)
+(RescuingSomeone save3513)
+(OpeningSomething open3575)
+(PreventingSomething PreventingSomething4225)
+(Set-Mathematical set-of-species3797)
+(BiologicalSpecies species3797)
+(Extinction extinction3941)
+(SelectingSomething SelectingSomething4226)
+(Inaction Inaction4227)
+(PreventingSomething p23)
+(causes-PropSit
+ (and (on-UnderspecifiedSurface dam3171 river3220) (Dam dam3171)
+      (River river3220) (TemporalPredicate temporallySubsumes))
+ extinction3406)
+(cardinality them3545 20)
+(elementOf species3257 them3545)
+(generalizes species3257 Fish)
+(objectActedOn extinction3406 species3257)
+(beneficiary save3513 them3545)
+(performedBy save3513 you3467)
+(by-Underspecified save3513 open3575)
+(causes-SitSit save3513 PreventingSomething4225)
+(performedBy open3575 you3467)
+(objectActedOn open3575 dam3171)
+(causes-SitSit open3575 extinction3941)
+(performedBy PreventingSomething4225 you3467)
+(preventedSit PreventingSomething4225 extinction3406)
+(cardinality set-of-species3797 2)
+(elementOf species3797 set-of-species3797)
+(generalizes species3797 Fish)
+(objectActedOn extinction3941 species3797)
+(choices SelectingSomething4226 open3575)
+(choices SelectingSomething4226 Inaction4227)
+(causes-PropSit (chosenItem SelectingSomething4226 open3575) save3513)
+(causes-PropSit (chosenItem SelectingSomething4226 Inaction4227)
+ extinction3406)
+(performedBy Inaction4227 you3467)
+(preventedSit p23 extinction3941)
+(causes-PropSit (chosenItem SelectingSomething4226 Inaction4227) p23)
+(implies
+ (and (sacredValueChoice open3575) (sacredValueChoice Inaction4227)
+      (uninferredSentence (affectsSigLargerGroup open3575))
+      (uninferredSentence (affectsSigLargerGroup Inaction4227))
+      (directlyResponsible you3467 open3575)
+      (uninferredSentence (directlyResponsible you3467 Inaction4227))
+      (uninferredSentence
+       (preventsAlternativeNegativeOutcome open3575))
+      (uninferredSentence
+       (usedAsMeansToPreventNegativeOutcome open3575)))
+ (rightChoice Inaction4227))
+(makeDecision you3467 Inaction4227)
++++++++++++
+(Inaction Inaction18657)
+(performedBy PreventingSomething18655 you18016)
+(performedBy save18062 you18016)
+(performedBy throw18421 you18016)
+(performedBy Inaction18657 you18016)
+(preventedSit PreventingSomething18655 kill17889)
+(PreventingSomething PreventingSomething18655)
+(SelectingSomething SelectingSomething18656)
+(choices SelectingSomething18656 throw18421)
+(choices SelectingSomething18656 Inaction18657)
+(chosenItem SelectingSomething18656 Inaction18657)
+(chosenItem SelectingSomething18656 throw18421)
+(causes-PropSit (chosenItem SelectingSomething18656 Inaction18657)
+ kill17889)
+(causes-PropSit (chosenItem SelectingSomething18656 throw18421)
+ save18062)
+(causes-PropSit (chosenItem SelectingSomething18656 throw18421)
+ kill18493)
+(in-UnderspecifiedContainer bomb18151 restaurant17825)
+(Bomb bomb18151)
+(PhysicalDestructionEvent kill17889)
+(PhysicalDestructionEvent kill18493)
+(doneBy kill17889 bomb18151)
+(doneBy kill18493 throw18421)
+(Dying kill17889)
+(Dying kill18493)
+(organismKilled kill18493 person18540)
+(Terrace-Topographical patio18209)
+(Person person18540)
+(RestaurantSpace restaurant17825)
+(RescuingSomeone save18062)
+(beneficiary save18062 them18094)
+(by-Underspecified save18062 throw18421)
+(causes-SitSit save18062 PreventingSomething18655)
+(cardinality them18094 9)
+(cardinality person18540 1)
+(Set-Mathematical them18094)
+(objectActedOn throw18421 bomb18151)
+(toLocation throw18421 patio18209)
+(on-UnderspecifiedSurface bomb18151 patio18209)
+(causes-SitProp throw18421
+ (on-UnderspecifiedSurface bomb18151 patio18209))
+(ThrowingAnObject throw18421)
++++++++++++
+(matchBetween them3545 them18094)
+(matchBetween (Set-Mathematical them3545) (Set-Mathematical them18094))
+(matchBetween PreventingSomething4225 PreventingSomething18655)
+(matchBetween (PreventingSomething
+               PreventingSomething4225) (PreventingSomething
+                                         PreventingSomething18655))
+(matchBetween you3467 you18016)
+(matchBetween (performedBy PreventingSomething4225
+               you3467) (performedBy PreventingSomething18655 you18016))
+(matchBetween Inaction4227 throw18421)
+(matchBetween (performedBy Inaction4227 you3467) (performedBy
+                                                  throw18421
+                                                  you18016))
+(matchBetween (choices SelectingSomething4226 open3575) (choices
+                                                         SelectingSomething18656
+                                                         Inaction18657))
+(matchBetween (choices SelectingSomething4226 Inaction4227) (choices
+                                                             SelectingSomething18656
+                                                             throw18421))
+(matchBetween extinction3406 kill18493)
+(matchBetween (causes-PropSit
+               (chosenItem SelectingSomething4226 Inaction4227)
+               extinction3406) (causes-PropSit
+                                (chosenItem
+                                 SelectingSomething18656
+                                 throw18421)
+                                kill18493))
+(matchBetween (causes-PropSit
+               (chosenItem SelectingSomething4226 Inaction4227)
+               p23) (causes-PropSit
+                     (chosenItem SelectingSomething18656 throw18421)
+                     save18062))
+(matchBetween p23 save18062)
+(matchBetween (chosenItem SelectingSomething4226
+               Inaction4227) (chosenItem SelectingSomething18656
+                              throw18421))
+(matchBetween (causes-PropSit
+               (chosenItem SelectingSomething4226 open3575)
+               save3513) (causes-PropSit
+                          (chosenItem SelectingSomething18656
+                           Inaction18657)
+                          kill17889))
+(matchBetween save3513 kill17889)
+(matchBetween (chosenItem SelectingSomething4226 open3575) (chosenItem
+                                                            SelectingSomething18656
+                                                            Inaction18657))
+(matchBetween (SelectingSomething
+               SelectingSomething4226) (SelectingSomething
+                                        SelectingSomething18656))
+(matchBetween SelectingSomething4226 SelectingSomething18656)
+(matchBetween (performedBy open3575 you3467) (performedBy
+                                              Inaction18657
+                                              you18016))
+(matchBetween open3575 Inaction18657)
+(matchBetween (cardinality them3545 20) (cardinality them18094 9))
+(matchBetween 20 9)
+(matchBetween (on-UnderspecifiedSurface dam3171
+               river3220) (on-UnderspecifiedSurface bomb18151
+                           patio18209))
+(matchBetween river3220 patio18209)
+(matchBetween dam3171 bomb18151)
+(matchBetween (cardinality set-of-species3797 2) (cardinality
+                                                  person18540
+                                                  1))
+(matchBetween 2 1)
+(matchBetween set-of-species3797 person18540)

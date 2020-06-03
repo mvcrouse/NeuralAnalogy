@@ -1,0 +1,216 @@
+(sacredValueChoice ReRouteToCamp2)
+(sacredValueChoice notReRoute)
+(affectsSigLargerGroup ReRouteToCamp2)
+(affectsSigLargerGroup notReRoute)
+(uninferredSentence (affectsSigLargerGroup ReRouteToCamp2))
+(uninferredSentence (affectsSigLargerGroup notReRoute))
+(uninferredSentence (directlyResponsible you8115 notReRoute))
+(uninferredSentence (preventsAlternativeNegativeOutcome ReRouteToCamp2))
+(uninferredSentence
+ (usedAsMeansToPreventNegativeOutcome ReRouteToCamp2))
+(directlyResponsible you8115 ReRouteToCamp2)
+(directlyResponsible you8115 notReRoute)
+(preventsAlternativeNegativeOutcome ReRouteToCamp2)
+(usedAsMeansToPreventNegativeOutcome ReRouteToCamp2)
+(and (sacredValueChoice ReRouteToCamp2) (sacredValueChoice notReRoute)
+     (uninferredSentence (affectsSigLargerGroup ReRouteToCamp2))
+     (uninferredSentence (affectsSigLargerGroup notReRoute))
+     (directlyResponsible you8115 ReRouteToCamp2)
+     (uninferredSentence (directlyResponsible you8115 notReRoute))
+     (uninferredSentence
+      (preventsAlternativeNegativeOutcome ReRouteToCamp2))
+     (uninferredSentence
+      (usedAsMeansToPreventNegativeOutcome ReRouteToCamp2)))
+(rightChoice notReRoute)
+(chosenItem SendingTruckToCamp1OrCamp2 notReRoute)
+(chosenItem SendingTruckToCamp1OrCamp2 ReRouteToCamp2)
+(IntelligentAgent you8115)
+(RefugeeCamp Camp1)
+(RefugeeCamp Camp2)
+(GroupFnPerson PeopleInDangerInCamp1)
+(GroupFnPerson PeopleInDangerInCamp2)
+(Starvation PeopleDyingInCamp1)
+(Starvation PeopleDyingInCamp2)
+(Convoy TruckConvoy)
+(MovementEvent ReRouteToCamp2)
+(PreventingSomething preventingPeopleDyingInCamp1)
+(PreventingSomething preventingPeopleDyingInCamp2)
+(Inaction notReRoute)
+(SelectingSomething SendingTruckToCamp1OrCamp2)
+(groupCardinality PeopleInDangerInCamp1 100)
+(groupCardinality PeopleInDangerInCamp2 1000)
+(residesInRegion PeopleInDangerInCamp1 Camp1)
+(residesInRegion PeopleInDangerInCamp2 Camp2)
+(objectActedOn PeopleDyingInCamp1 PeopleInDangerInCamp1)
+(objectActedOn PeopleDyingInCamp2 PeopleInDangerInCamp2)
+(containedObject FoodTruck Food)
+(groupMemberType TruckConvoy FoodTruck)
+(objectActedOn ReRouteToCamp2 TruckConvoy)
+(toLocation ReRouteToCamp2 Camp2)
+(preventedProp preventingPeopleDyingInCamp1 PeopleDyingInCamp1)
+(preventedProp preventingPeopleDyingInCamp2 PeopleDyingInCamp2)
+(choices SendingTruckToCamp1OrCamp2 ReRouteToCamp2)
+(choices SendingTruckToCamp1OrCamp2 notReRoute)
+(performedBy ReRouteToCamp2 you8115)
+(performedBy notReRoute you8115)
+(causes-PropProp (chosenItem SendingTruckToCamp1OrCamp2 ReRouteToCamp2)
+ preventingPeopleDyingInCamp2)
+(causes-PropProp (chosenItem SendingTruckToCamp1OrCamp2 ReRouteToCamp2)
+ PeopleDyingInCamp1)
+(causes-PropProp (chosenItem SendingTruckToCamp1OrCamp2 notReRoute)
+ PeopleDyingInCamp2)
+(causes-PropProp (chosenItem SendingTruckToCamp1OrCamp2 notReRoute)
+ preventingPeopleDyingInCamp1)
+(implies
+ (and (sacredValueChoice ReRouteToCamp2) (sacredValueChoice notReRoute)
+      (uninferredSentence (affectsSigLargerGroup ReRouteToCamp2))
+      (uninferredSentence (affectsSigLargerGroup notReRoute))
+      (directlyResponsible you8115 ReRouteToCamp2)
+      (uninferredSentence (directlyResponsible you8115 notReRoute))
+      (uninferredSentence
+       (preventsAlternativeNegativeOutcome ReRouteToCamp2))
+      (uninferredSentence
+       (usedAsMeansToPreventNegativeOutcome ReRouteToCamp2)))
+ (rightChoice notReRoute))
+(makeDecision you8115 notReRoute)
++++++++++++
+(IntelligentAgent you8115)
+(Region-Underspecified region1)
+(Region-Underspecified region2)
+(GroupFnPerson PeopleInArea1)
+(GroupFnPerson PeopleInArea2)
+(groupCardinality PeopleInArea1 50)
+(groupCardinality PeopleInArea2 200)
+(residesInRegion PeopleInArea1 region1)
+(residesInRegion PeopleInArea2 region2)
+(Dying PeopleDyingInArea1)
+(Dying PeopleDyingInArea2)
+(objectActedOn PeopleDyingInArea1 PeopleInArea1)
+(objectActedOn PeopleDyingInArea2 PeopleInArea2)
+((GroupEventOfTypeFn VehicleAccident) TrafficAccidents)
+((PreventingFn (DyingFromEventTypeFn TrafficAccidents)) trafficProgram)
+(Translation-LocationChange changeToArea2)
+(fromLocation changeToArea2 region1)
+(toLocation ChangeToArea2 region2)
+(Inaction notChangeLocation)
+(PreventingSomething preventingPeopleDyingInArea1)
+(PreventingSomething preventingPeopleDyingInArea2)
+(preventedProp preventingPeopleDyingInArea1 PeopleDyingInArea1)
+(preventedProp preventingPeopleDyingInArea2 PeopleDyingInArea2)
+(SelectingSomething ChooseBetweenArea1or2)
+(choices ChooseBetweenArea1or2 changeToArea2)
+(choices ChooseBetweenArea1or2 notChangeLocation)
+(performedBy changeToArea2 you8115)
+(performedBy notChangeLocation you8115)
+(chosenItem ChooseBetweenArea1or2 changeToArea2)
+(chosenItem ChooseBetweenArea1or2 notChangeLocation)
+(causes-PropProp (chosenItem ChooseBetweenArea1or2 changeToArea2)
+ preventingPeopleDyingInArea2)
+(causes-PropProp (chosenItem ChooseBetweenArea1or2 changeToArea2)
+ PeopleDyingInArea1)
+(causes-PropProp (chosenItem ChooseBetweenArea1or2 notChangeLocation)
+ PeopleDyingInArea2)
+(causes-PropProp (chosenItem ChooseBetweenArea1or2 notChangeLocation)
+ preventingPeopleDyingInArea1)
++++++++++++
+(matchBetween preventingPeopleDyingInCamp2 preventingPeopleDyingInArea2)
+(matchBetween (PreventingSomething
+               preventingPeopleDyingInCamp2) (PreventingSomething
+                                              preventingPeopleDyingInArea2))
+(matchBetween PeopleInDangerInCamp2 PeopleInArea2)
+(matchBetween (GroupFnPerson PeopleInDangerInCamp2) (GroupFnPerson
+                                                     PeopleInArea2))
+(matchBetween 1000 200)
+(matchBetween (groupCardinality PeopleInDangerInCamp2
+               1000) (groupCardinality PeopleInArea2 200))
+(matchBetween Camp1 region1)
+(matchBetween (residesInRegion PeopleInDangerInCamp1
+               Camp1) (residesInRegion PeopleInArea1 region1))
+(matchBetween PeopleDyingInCamp2 PeopleDyingInArea2)
+(matchBetween (preventedProp preventingPeopleDyingInCamp2
+               PeopleDyingInCamp2) (preventedProp
+                                    preventingPeopleDyingInArea2
+                                    PeopleDyingInArea2))
+(matchBetween (objectActedOn PeopleDyingInCamp2
+               PeopleInDangerInCamp2) (objectActedOn
+                                       PeopleDyingInArea2
+                                       PeopleInArea2))
+(matchBetween notReRoute notChangeLocation)
+(matchBetween (Inaction notReRoute) (Inaction notChangeLocation))
+(matchBetween (performedBy notReRoute you8115) (performedBy
+                                                notChangeLocation
+                                                you8115))
+(matchBetween (choices SendingTruckToCamp1OrCamp2
+               ReRouteToCamp2) (choices
+                                ChooseBetweenArea1or2
+                                changeToArea2))
+(matchBetween (chosenItem SendingTruckToCamp1OrCamp2
+               ReRouteToCamp2) (chosenItem
+                                ChooseBetweenArea1or2
+                                changeToArea2))
+(matchBetween (causes-PropProp
+               (chosenItem SendingTruckToCamp1OrCamp2 ReRouteToCamp2)
+               PeopleDyingInCamp1) (causes-PropProp
+                                    (chosenItem
+                                     ChooseBetweenArea1or2
+                                     changeToArea2)
+                                    PeopleDyingInArea1))
+(matchBetween (chosenItem SendingTruckToCamp1OrCamp2
+               notReRoute) (chosenItem ChooseBetweenArea1or2
+                            notChangeLocation))
+(matchBetween (causes-PropProp
+               (chosenItem SendingTruckToCamp1OrCamp2 notReRoute)
+               preventingPeopleDyingInCamp1) (causes-PropProp
+                                              (chosenItem
+                                               ChooseBetweenArea1or2
+                                               notChangeLocation)
+                                              preventingPeopleDyingInArea1))
+(matchBetween (causes-PropProp
+               (chosenItem SendingTruckToCamp1OrCamp2 notReRoute)
+               PeopleDyingInCamp2) (causes-PropProp
+                                    (chosenItem
+                                     ChooseBetweenArea1or2
+                                     notChangeLocation)
+                                    PeopleDyingInArea2))
+(matchBetween (causes-PropProp
+               (chosenItem SendingTruckToCamp1OrCamp2 ReRouteToCamp2)
+               preventingPeopleDyingInCamp2) (causes-PropProp
+                                              (chosenItem
+                                               ChooseBetweenArea1or2
+                                               changeToArea2)
+                                              preventingPeopleDyingInArea2))
+(matchBetween (choices SendingTruckToCamp1OrCamp2 notReRoute) (choices
+                                                               ChooseBetweenArea1or2
+                                                               notChangeLocation))
+(matchBetween (SelectingSomething
+               SendingTruckToCamp1OrCamp2) (SelectingSomething
+                                            ChooseBetweenArea1or2))
+(matchBetween SendingTruckToCamp1OrCamp2 ChooseBetweenArea1or2)
+(matchBetween (performedBy ReRouteToCamp2 you8115) (performedBy
+                                                    changeToArea2
+                                                    you8115))
+(matchBetween ReRouteToCamp2 changeToArea2)
+(matchBetween (objectActedOn PeopleDyingInCamp1
+               PeopleInDangerInCamp1) (objectActedOn
+                                       PeopleDyingInArea1
+                                       PeopleInArea1))
+(matchBetween (preventedProp preventingPeopleDyingInCamp1
+               PeopleDyingInCamp1) (preventedProp
+                                    preventingPeopleDyingInArea1
+                                    PeopleDyingInArea1))
+(matchBetween PeopleDyingInCamp1 PeopleDyingInArea1)
+(matchBetween (residesInRegion PeopleInDangerInCamp2
+               Camp2) (residesInRegion PeopleInArea2 region2))
+(matchBetween Camp2 region2)
+(matchBetween (groupCardinality PeopleInDangerInCamp1
+               100) (groupCardinality PeopleInArea1 50))
+(matchBetween 100 50)
+(matchBetween (GroupFnPerson PeopleInDangerInCamp1) (GroupFnPerson
+                                                     PeopleInArea1))
+(matchBetween PeopleInDangerInCamp1 PeopleInArea1)
+(matchBetween (PreventingSomething
+               preventingPeopleDyingInCamp1) (PreventingSomething
+                                              preventingPeopleDyingInArea1))
+(matchBetween preventingPeopleDyingInCamp1 preventingPeopleDyingInArea1)
+(matchBetween (IntelligentAgent you8115) (IntelligentAgent you8115))
+(matchBetween you8115 you8115)

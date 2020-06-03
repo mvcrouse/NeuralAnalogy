@@ -1,0 +1,171 @@
+(sacredValueChoice destroy44806)
+(sacredValueChoice Inaction45139)
+(affectsSigLargerGroup destroy44806)
+(affectsSigLargerGroup Inaction45139)
+(uninferredSentence (affectsSigLargerGroup destroy44806))
+(uninferredSentence (affectsSigLargerGroup Inaction45139))
+(uninferredSentence (directlyResponsible you44570 Inaction45139))
+(uninferredSentence (usedAsMeansToPreventNegativeOutcome destroy44806))
+(directlyResponsible you44570 destroy44806)
+(directlyResponsible you44570 Inaction45139)
+(preventsAlternativeNegativeOutcome destroy44806)
+(usedAsMeansToPreventNegativeOutcome destroy44806)
+(and (sacredValueChoice destroy44806) (sacredValueChoice Inaction45139)
+     (uninferredSentence (affectsSigLargerGroup destroy44806))
+     (uninferredSentence (affectsSigLargerGroup Inaction45139))
+     (directlyResponsible you44570 destroy44806)
+     (uninferredSentence (directlyResponsible you44570 Inaction45139))
+     (preventsAlternativeNegativeOutcome destroy44806)
+     (uninferredSentence
+      (usedAsMeansToPreventNegativeOutcome destroy44806)))
+(rightChoice destroy44806)
+(chosenItem SelectingSomething45138 destroy44806)
+(chosenItem SelectingSomething45138 Inaction45139)
+(Inaction Inaction45139)
+(PreventingSomething PreventingSomething45137)
+(SelectingSomething SelectingSomething45138)
+(Watercraft boat44423)
+(DestructionEvent destroy44806)
+(RescuingSomeone save44609)
+((GroupFn Person) set-of-soldier44949)
+(Set-Mathematical set-of-soldier44949)
+(SinkingEvent sink44393)
+(SinkingEvent sink44858)
+(Submarine submarine44901)
+((GroupFn Person) them44642)
+(Set-Mathematical them44642)
+(Dying sink44858)
+(Dying sink44393)
+(Torpedo torpedo44700)
+(performedBy PreventingSomething45137 you44570)
+(preventedSit PreventingSomething45137 sink44393)
+(choices SelectingSomething45138 destroy44806)
+(choices SelectingSomething45138 Inaction45139)
+(causes-PropSit (chosenItem SelectingSomething45138 Inaction45139)
+ sink44393)
+(causes-PropSit (chosenItem SelectingSomething45138 destroy44806)
+ save44609)
+(causes-PropSit (chosenItem SelectingSomething45138 destroy44806)
+ sink44858)
+(inputsDestroyed destroy44806 torpedo44700)
+(doneBy destroy44806 you44570)
+(performedBy destroy44806 you44570)
+(performedBy Inaction45139 you44570)
+(beneficiary save44609 them44642)
+(performedBy save44609 you44570)
+(by-Underspecified save44609 destroy44806)
+(causes-SitSit save44609 PreventingSomething45137)
+(cardinality set-of-soldier44949 3)
+(doneBy sink44393 torpedo44700)
+(objectActedOn sink44393 boat44423)
+(doneBy sink44858 destroy44806)
+(objectActedOn sink44858 submarine44901)
+(cardinality them44642 6)
+(implies
+ (and (sacredValueChoice destroy44806)
+      (sacredValueChoice Inaction45139)
+      (uninferredSentence (affectsSigLargerGroup destroy44806))
+      (uninferredSentence (affectsSigLargerGroup Inaction45139))
+      (directlyResponsible you44570 destroy44806)
+      (uninferredSentence (directlyResponsible you44570 Inaction45139))
+      (preventsAlternativeNegativeOutcome destroy44806)
+      (uninferredSentence
+       (usedAsMeansToPreventNegativeOutcome destroy44806)))
+ (rightChoice destroy44806))
+(makeDecision you44570 destroy44806)
++++++++++++
+(IntelligentAgent you1143)
+((GroupFn HomelessPerson) group1FemaleHomeless)
+((GroupFn HomelessPerson) group2FemaleHomeless)
+(groupCardinality group1FemaleHomeless 50)
+(groupCardinality group2FemaleHomeless 150)
+(HumanShelterConstruction shelter1)
+(HumanShelterConstruction shelter2)
+(ShelteringSomething shelteringGroup1)
+(ShelteringSomething shelteringGroup2)
+(performedBy shelteringGroup1 shelter1)
+(performedBy FinancialAssitanceToShelter1 you1143)
+(performedBy shelteringGroup2 shelter1)
+(performedBy FinancialAssitanceToShelter2 you1143)
+(performedBy notChangeSupport you1143)
+(objectActedOn shelteringGroup1 group1FemaleHomeless)
+(objectActedOn shelteringGroup2 group2FemaleHomeless)
+(objectActedOn harmingGroup1 group1FemaleHomeless)
+(objectActedOn harmingGroup2 group2FemaleHomeless)
+(FinancialSupport FinancialAssitanceToShelter1)
+(FinancialSupport FinancialAssitanceToShelter2)
+(beneficiary FinancialAssitanceToShelter1 shelter1)
+(beneficiary FinancialAssitanceToShelter2 shelter2)
+(HarmingAnAgent harmingGroup1)
+(HarmingAnAgent harmingGroup2)
+(PreventingSomething preventingHarmingGroup1)
+(PreventingSomething preventingHarmingGroup2)
+(preventedProp preventingHarmingGroup1 harmingGroup1)
+(preventedProp preventingHarmingGroup2 harmingGroup2)
+(Inaction notChangeSupport)
+(SelectingSomething GivingOrNotGivingAssistance)
+(choices GivingOrNotGivingAssistance FinancialAssitanceToShelter2)
+(choices GivingOrNotGivingAssistance notChangeSupport)
+(chosenItem GivingOrNotGivingAssistance FinancialAssitanceToShelter2)
+(chosenItem GivingOrNotGivingAssistance notChangeSupport)
+(causes-PropProp
+ (chosenItem GivingOrNotGivingAssistance FinancialAssitanceToShelter2)
+ preventingHarmingGroup2)
+(causes-PropProp
+ (chosenItem GivingOrNotGivingAssistance FinancialAssitanceToShelter2)
+ harmingGroup1)
+(causes-PropProp
+ (chosenItem GivingOrNotGivingAssistance notChangeSupport)
+ preventingHarmingGroup1)
+(causes-PropProp
+ (chosenItem GivingOrNotGivingAssistance notChangeSupport)
+ harmingGroup2)
++++++++++++
+(matchBetween sink44858 harmingGroup1)
+(matchBetween submarine44901 group1FemaleHomeless)
+(matchBetween (objectActedOn sink44858 submarine44901) (objectActedOn
+                                                        harmingGroup1
+                                                        group1FemaleHomeless))
+(matchBetween save44609 FinancialAssitanceToShelter1)
+(matchBetween them44642 shelter1)
+(matchBetween (beneficiary save44609 them44642) (beneficiary
+                                                 FinancialAssitanceToShelter1
+                                                 shelter1))
+(matchBetween SelectingSomething45138 GivingOrNotGivingAssistance)
+(matchBetween (SelectingSomething
+               SelectingSomething45138) (SelectingSomething
+                                         GivingOrNotGivingAssistance))
+(matchBetween destroy44806 FinancialAssitanceToShelter2)
+(matchBetween (performedBy destroy44806 you44570) (performedBy
+                                                   FinancialAssitanceToShelter2
+                                                   you1143))
+(matchBetween (choices SelectingSomething45138 destroy44806) (choices
+                                                              GivingOrNotGivingAssistance
+                                                              FinancialAssitanceToShelter2))
+(matchBetween (choices SelectingSomething45138 Inaction45139) (choices
+                                                               GivingOrNotGivingAssistance
+                                                               notChangeSupport))
+(matchBetween (chosenItem SelectingSomething45138
+               Inaction45139) (chosenItem GivingOrNotGivingAssistance
+                               notChangeSupport))
+(matchBetween (chosenItem SelectingSomething45138
+               destroy44806) (chosenItem GivingOrNotGivingAssistance
+                              FinancialAssitanceToShelter2))
+(matchBetween (performedBy Inaction45139 you44570) (performedBy
+                                                    notChangeSupport
+                                                    you1143))
+(matchBetween (performedBy save44609 you44570) (performedBy
+                                                FinancialAssitanceToShelter1
+                                                you1143))
+(matchBetween you44570 you1143)
+(matchBetween (Inaction Inaction45139) (Inaction notChangeSupport))
+(matchBetween Inaction45139 notChangeSupport)
+(matchBetween (objectActedOn sink44393 boat44423) (objectActedOn
+                                                   harmingGroup2
+                                                   group2FemaleHomeless))
+(matchBetween boat44423 group2FemaleHomeless)
+(matchBetween sink44393 harmingGroup2)
+(matchBetween (PreventingSomething
+               PreventingSomething45137) (PreventingSomething
+                                          preventingHarmingGroup2))
+(matchBetween PreventingSomething45137 preventingHarmingGroup2)

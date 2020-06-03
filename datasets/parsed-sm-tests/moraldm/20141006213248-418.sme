@@ -1,0 +1,171 @@
+(sacredValueChoice changeToArea2)
+(sacredValueChoice notChangeLocation)
+(affectsSigLargerGroup changeToArea2)
+(affectsSigLargerGroup notChangeLocation)
+(uninferredSentence (affectsSigLargerGroup changeToArea2))
+(uninferredSentence (affectsSigLargerGroup notChangeLocation))
+(uninferredSentence (directlyResponsible you8115 notChangeLocation))
+(uninferredSentence (preventsAlternativeNegativeOutcome changeToArea2))
+(uninferredSentence (usedAsMeansToPreventNegativeOutcome changeToArea2))
+(directlyResponsible you8115 changeToArea2)
+(directlyResponsible you8115 notChangeLocation)
+(preventsAlternativeNegativeOutcome changeToArea2)
+(usedAsMeansToPreventNegativeOutcome changeToArea2)
+(and (sacredValueChoice changeToArea2)
+     (sacredValueChoice notChangeLocation)
+     (uninferredSentence (affectsSigLargerGroup changeToArea2))
+     (uninferredSentence (affectsSigLargerGroup notChangeLocation))
+     (directlyResponsible you8115 changeToArea2)
+     (uninferredSentence
+      (directlyResponsible you8115 notChangeLocation))
+     (uninferredSentence
+      (preventsAlternativeNegativeOutcome changeToArea2))
+     (uninferredSentence
+      (usedAsMeansToPreventNegativeOutcome changeToArea2)))
+(rightChoice notChangeLocation)
+(chosenItem ChooseBetweenArea1or2 notChangeLocation)
+(chosenItem ChooseBetweenArea1or2 changeToArea2)
+(IntelligentAgent you8115)
+(Region-Underspecified region1)
+(Region-Underspecified region2)
+((GroupFn Person) PeopleInArea1)
+((GroupFn Person) PeopleInArea2)
+(Dying PeopleDyingInArea1)
+(Dying PeopleDyingInArea2)
+((GroupEventOfTypeFn VehicleAccident) TrafficAccidents)
+((PreventingFn (DyingFromEventTypeFn TrafficAccidents)) trafficProgram)
+(Translation-LocationChange changeToArea2)
+(Inaction notChangeLocation)
+(PreventingSomething preventingPeopleDyingInArea1)
+(PreventingSomething preventingPeopleDyingInArea2)
+(SelectingSomething ChooseBetweenArea1or2)
+(groupCardinality PeopleInArea1 50)
+(groupCardinality PeopleInArea2 200)
+(residesInRegion PeopleInArea1 region1)
+(residesInRegion PeopleInArea2 region2)
+(objectActedOn PeopleDyingInArea1 PeopleInArea1)
+(objectActedOn PeopleDyingInArea2 PeopleInArea2)
+(fromLocation changeToArea2 region1)
+(toLocation ChangeToArea2 region2)
+(preventedProp preventingPeopleDyingInArea1 PeopleDyingInArea1)
+(preventedProp preventingPeopleDyingInArea2 PeopleDyingInArea2)
+(choices ChooseBetweenArea1or2 changeToArea2)
+(choices ChooseBetweenArea1or2 notChangeLocation)
+(performedBy changeToArea2 you8115)
+(performedBy notChangeLocation you8115)
+(causes-PropProp (chosenItem ChooseBetweenArea1or2 changeToArea2)
+ preventingPeopleDyingInArea2)
+(causes-PropProp (chosenItem ChooseBetweenArea1or2 changeToArea2)
+ PeopleDyingInArea1)
+(causes-PropProp (chosenItem ChooseBetweenArea1or2 notChangeLocation)
+ PeopleDyingInArea2)
+(causes-PropProp (chosenItem ChooseBetweenArea1or2 notChangeLocation)
+ preventingPeopleDyingInArea1)
+(implies
+ (and (sacredValueChoice changeToArea2)
+      (sacredValueChoice notChangeLocation)
+      (uninferredSentence (affectsSigLargerGroup changeToArea2))
+      (uninferredSentence (affectsSigLargerGroup notChangeLocation))
+      (directlyResponsible you8115 changeToArea2)
+      (uninferredSentence
+       (directlyResponsible you8115 notChangeLocation))
+      (uninferredSentence
+       (preventsAlternativeNegativeOutcome changeToArea2))
+      (uninferredSentence
+       (usedAsMeansToPreventNegativeOutcome changeToArea2)))
+ (rightChoice notChangeLocation))
+(makeDecision you8115 notChangeLocation)
++++++++++++
+(on-UnderspecifiedSurface dam3171 river3220)
+(Dam dam3171)
+(River river3220)
+(TemporalPredicate temporallySubsumes)
+(and (on-UnderspecifiedSurface dam3171 river3220) (Dam dam3171)
+     (River river3220) (TemporalPredicate temporallySubsumes))
+(causes-PropSit
+ (and (on-UnderspecifiedSurface dam3171 river3220) (Dam dam3171)
+      (River river3220) (TemporalPredicate temporallySubsumes))
+ extinction3406)
+(causes-PropSit (chosenItem SelectingSomething4226 open3575) save3513)
+(causes-PropSit (chosenItem SelectingSomething4226 Inaction4227)
+ extinction3406)
+(causes-PropSit (chosenItem SelectingSomething4226 Inaction4227) p23)
+(Set-Mathematical them3545)
+(Set-Mathematical set-of-species3797)
+(cardinality them3545 20)
+(cardinality set-of-species3797 2)
+(generalizes species3257 Fish)
+(generalizes species3797 Fish)
+(BiologicalSpecies species3257)
+(BiologicalSpecies species3797)
+(Extinction extinction3406)
+(Extinction extinction3941)
+(objectActedOn extinction3406 species3257)
+(objectActedOn open3575 dam3171)
+(objectActedOn extinction3941 species3797)
+(RescuingSomeone save3513)
+(beneficiary save3513 them3545)
+(performedBy save3513 you3467)
+(performedBy open3575 you3467)
+(performedBy PreventingSomething4225 you3467)
+(performedBy Inaction4227 you3467)
+(by-Underspecified save3513 open3575)
+(causes-SitSit save3513 PreventingSomething4225)
+(causes-SitSit open3575 extinction3941)
+(OpeningSomething open3575)
+(PreventingSomething PreventingSomething4225)
+(PreventingSomething p23)
+(preventedSit PreventingSomething4225 extinction3406)
+(preventedSit p23 extinction3941)
+(SelectingSomething SelectingSomething4226)
+(choices SelectingSomething4226 open3575)
+(choices SelectingSomething4226 Inaction4227)
+(chosenItem SelectingSomething4226 open3575)
+(chosenItem SelectingSomething4226 Inaction4227)
+(Inaction Inaction4227)
++++++++++++
+(matchBetween preventingPeopleDyingInArea1 p23)
+(matchBetween (PreventingSomething
+               preventingPeopleDyingInArea1) (PreventingSomething p23))
+(matchBetween PeopleDyingInArea1 extinction3941)
+(matchBetween PeopleInArea1 species3797)
+(matchBetween (objectActedOn PeopleDyingInArea1
+               PeopleInArea1) (objectActedOn extinction3941
+                               species3797))
+(matchBetween ChooseBetweenArea1or2 SelectingSomething4226)
+(matchBetween (SelectingSomething
+               ChooseBetweenArea1or2) (SelectingSomething
+                                       SelectingSomething4226))
+(matchBetween (performedBy notChangeLocation you8115) (performedBy
+                                                       Inaction4227
+                                                       you3467))
+(matchBetween (chosenItem ChooseBetweenArea1or2
+               changeToArea2) (chosenItem SelectingSomething4226
+                               open3575))
+(matchBetween (chosenItem ChooseBetweenArea1or2
+               notChangeLocation) (chosenItem
+                                   SelectingSomething4226
+                                   Inaction4227))
+(matchBetween (choices ChooseBetweenArea1or2
+               notChangeLocation) (choices
+                                   SelectingSomething4226
+                                   Inaction4227))
+(matchBetween (choices ChooseBetweenArea1or2 changeToArea2) (choices
+                                                             SelectingSomething4226
+                                                             open3575))
+(matchBetween (performedBy changeToArea2 you8115) (performedBy
+                                                   open3575
+                                                   you3467))
+(matchBetween you8115 you3467)
+(matchBetween changeToArea2 open3575)
+(matchBetween (Inaction notChangeLocation) (Inaction Inaction4227))
+(matchBetween notChangeLocation Inaction4227)
+(matchBetween (objectActedOn PeopleDyingInArea2
+               PeopleInArea2) (objectActedOn extinction3406
+                               species3257))
+(matchBetween PeopleInArea2 species3257)
+(matchBetween PeopleDyingInArea2 extinction3406)
+(matchBetween (PreventingSomething
+               preventingPeopleDyingInArea2) (PreventingSomething
+                                              PreventingSomething4225))
+(matchBetween preventingPeopleDyingInArea2 PreventingSomething4225)

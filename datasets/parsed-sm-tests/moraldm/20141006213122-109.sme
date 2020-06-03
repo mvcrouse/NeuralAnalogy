@@ -1,0 +1,212 @@
+(sacredValueChoice FinancialAssitanceToShelter2)
+(sacredValueChoice notChangeSupport)
+(affectsSigLargerGroup FinancialAssitanceToShelter2)
+(affectsSigLargerGroup notChangeSupport)
+(uninferredSentence
+ (affectsSigLargerGroup FinancialAssitanceToShelter2))
+(uninferredSentence (affectsSigLargerGroup notChangeSupport))
+(uninferredSentence (directlyResponsible you1143 notChangeSupport))
+(uninferredSentence
+ (preventsAlternativeNegativeOutcome FinancialAssitanceToShelter2))
+(uninferredSentence
+ (usedAsMeansToPreventNegativeOutcome FinancialAssitanceToShelter2))
+(directlyResponsible you1143 FinancialAssitanceToShelter2)
+(directlyResponsible you1143 notChangeSupport)
+(preventsAlternativeNegativeOutcome FinancialAssitanceToShelter2)
+(usedAsMeansToPreventNegativeOutcome FinancialAssitanceToShelter2)
+(and (sacredValueChoice FinancialAssitanceToShelter2)
+     (sacredValueChoice notChangeSupport)
+     (uninferredSentence
+      (affectsSigLargerGroup FinancialAssitanceToShelter2))
+     (uninferredSentence (affectsSigLargerGroup notChangeSupport))
+     (directlyResponsible you1143 FinancialAssitanceToShelter2)
+     (uninferredSentence
+      (directlyResponsible you1143 notChangeSupport))
+     (uninferredSentence
+      (preventsAlternativeNegativeOutcome
+       FinancialAssitanceToShelter2))
+     (uninferredSentence
+      (usedAsMeansToPreventNegativeOutcome
+       FinancialAssitanceToShelter2)))
+(rightChoice notChangeSupport)
+(chosenItem GivingOrNotGivingAssistance notChangeSupport)
+(chosenItem GivingOrNotGivingAssistance FinancialAssitanceToShelter2)
+(IntelligentAgent you1143)
+((GroupFn HomelessPerson) group1FemaleHomeless)
+((GroupFn HomelessPerson) group2FemaleHomeless)
+(HumanShelterConstruction shelter1)
+(ShelteringSomething shelteringGroup1)
+(FinancialSupport FinancialAssitanceToShelter1)
+(HumanShelterConstruction shelter2)
+(ShelteringSomething shelteringGroup2)
+(FinancialSupport FinancialAssitanceToShelter2)
+(HarmingAnAgent harmingGroup1)
+(HarmingAnAgent harmingGroup2)
+(PreventingSomething preventingHarmingGroup1)
+(PreventingSomething preventingHarmingGroup2)
+(Inaction notChangeSupport)
+(SelectingSomething GivingOrNotGivingAssistance)
+(groupCardinality group1FemaleHomeless 50)
+(groupCardinality group2FemaleHomeless 150)
+(performedBy shelteringGroup1 shelter1)
+(objectActedOn shelteringGroup1 group1FemaleHomeless)
+(beneficiary FinancialAssitanceToShelter1 shelter1)
+(performedBy FinancialAssitanceToShelter1 you1143)
+(performedBy shelteringGroup2 shelter1)
+(objectActedOn shelteringGroup2 group2FemaleHomeless)
+(beneficiary FinancialAssitanceToShelter2 shelter2)
+(performedBy FinancialAssitanceToShelter2 you1143)
+(objectActedOn harmingGroup1 group1FemaleHomeless)
+(objectActedOn harmingGroup2 group2FemaleHomeless)
+(preventedProp preventingHarmingGroup1 harmingGroup1)
+(preventedProp preventingHarmingGroup2 harmingGroup2)
+(performedBy notChangeSupport you1143)
+(choices GivingOrNotGivingAssistance FinancialAssitanceToShelter2)
+(choices GivingOrNotGivingAssistance notChangeSupport)
+(causes-PropProp
+ (chosenItem GivingOrNotGivingAssistance FinancialAssitanceToShelter2)
+ preventingHarmingGroup2)
+(causes-PropProp
+ (chosenItem GivingOrNotGivingAssistance FinancialAssitanceToShelter2)
+ harmingGroup1)
+(causes-PropProp
+ (chosenItem GivingOrNotGivingAssistance notChangeSupport)
+ preventingHarmingGroup1)
+(causes-PropProp
+ (chosenItem GivingOrNotGivingAssistance notChangeSupport)
+ harmingGroup2)
+(implies
+ (and (sacredValueChoice FinancialAssitanceToShelter2)
+      (sacredValueChoice notChangeSupport)
+      (uninferredSentence
+       (affectsSigLargerGroup FinancialAssitanceToShelter2))
+      (uninferredSentence (affectsSigLargerGroup notChangeSupport))
+      (directlyResponsible you1143 FinancialAssitanceToShelter2)
+      (uninferredSentence
+       (directlyResponsible you1143 notChangeSupport))
+      (uninferredSentence
+       (preventsAlternativeNegativeOutcome
+        FinancialAssitanceToShelter2))
+      (uninferredSentence
+       (usedAsMeansToPreventNegativeOutcome
+        FinancialAssitanceToShelter2)))
+ (rightChoice notChangeSupport))
+(makeDecision you1143 notChangeSupport)
++++++++++++
+(IntelligentAgent you811)
+(NatureReserve natureReserve1)
+(NatureReserve natureReserve2)
+(landAreaOfRegion natureReserve1 200)
+(landAreaOfRegion natureReserve2 50)
+(Army-BranchOfService army2)
+(TransferringPossession TransferNaturePreserve2)
+(TransferringPossession TransferNaturePreserve1)
+(TransferringPossession GiveLand)
+(toPossessor TransferNaturePreserve2 army2)
+(objectOfPossessionTransfer TransferNaturePreserve2 natureReserve2)
+(objectOfPossessionTransfer TransferNaturePreserve1 natureReserve1)
+(fromPossessor TransferNaturePreserve1 army2)
+(Inaction NotGiveLand)
+(PreventingSomething preventingTransferNaturePreserve1)
+(PreventingSomething preventingTransferNaturePreserve2)
+(PreventingSomething armyDoesNotOwnNaturePreserve1)
+(preventedProp preventingTransferNaturePreserve1
+ TransferNaturePreserve1)
+(preventedProp preventingTransferNaturePreserve2
+ TransferNaturePreserve2)
+(causes-SitSit TransferNaturePreserve1 armyDoesNotOwnNaturePreserve1)
+(operatesInRegion army2 natureReserve1)
+(operatesInRegion army2 natureReserve2)
+(preventedSit armyDoesNotOwnNaturePreserve1
+ (operatesInRegion army2 natureReserve1))
+(SelectingSomething GivingOrNotGivingTheLand)
+(choices GivingOrNotGivingTheLand GiveLand)
+(choices GivingOrNotGivingTheLand NotGiveLand)
+(performedBy GiveLand you811)
+(performedBy NotGiveLand you811)
+(chosenItem GivingOrNotGivingTheLand GiveLand)
+(chosenItem GivingOrNotGivingTheLand NotGiveLand)
+(causes-PropProp (chosenItem GivingOrNotGivingTheLand GiveLand)
+ TransferNaturePreserve1)
+(causes-PropProp (chosenItem GivingOrNotGivingTheLand GiveLand)
+ TransferNaturePreserve2)
+(causes-PropProp TransferNaturePreserve2
+ (operatesInRegion army2 natureReserve2))
+(causes-PropProp (chosenItem GivingOrNotGivingTheLand NotGiveLand)
+ preventingTransferNaturePreserve1)
+(causes-PropProp (chosenItem GivingOrNotGivingTheLand NotGiveLand)
+ preventingTransferNaturePreserve2)
++++++++++++
+(matchBetween preventingHarmingGroup1 preventingTransferNaturePreserve2)
+(matchBetween (PreventingSomething
+               preventingHarmingGroup1) (PreventingSomething
+                                         preventingTransferNaturePreserve2))
+(matchBetween notChangeSupport NotGiveLand)
+(matchBetween (Inaction notChangeSupport) (Inaction NotGiveLand))
+(matchBetween (performedBy notChangeSupport you1143) (performedBy
+                                                      NotGiveLand
+                                                      you811))
+(matchBetween (choices GivingOrNotGivingAssistance
+               FinancialAssitanceToShelter2) (choices
+                                              GivingOrNotGivingTheLand
+                                              GiveLand))
+(matchBetween (chosenItem GivingOrNotGivingAssistance
+               FinancialAssitanceToShelter2) (chosenItem
+                                              GivingOrNotGivingTheLand
+                                              GiveLand))
+(matchBetween preventingHarmingGroup2 TransferNaturePreserve1)
+(matchBetween (causes-PropProp
+               (chosenItem GivingOrNotGivingAssistance
+                FinancialAssitanceToShelter2)
+               preventingHarmingGroup2) (causes-PropProp
+                                         (chosenItem
+                                          GivingOrNotGivingTheLand
+                                          GiveLand)
+                                         TransferNaturePreserve1))
+(matchBetween (causes-PropProp
+               (chosenItem GivingOrNotGivingAssistance
+                FinancialAssitanceToShelter2)
+               harmingGroup1) (causes-PropProp
+                               (chosenItem
+                                GivingOrNotGivingTheLand
+                                GiveLand)
+                               TransferNaturePreserve2))
+(matchBetween (causes-PropProp
+               (chosenItem GivingOrNotGivingAssistance
+                notChangeSupport)
+               preventingHarmingGroup1) (causes-PropProp
+                                         (chosenItem
+                                          GivingOrNotGivingTheLand
+                                          NotGiveLand)
+                                         preventingTransferNaturePreserve2))
+(matchBetween (causes-PropProp
+               (chosenItem GivingOrNotGivingAssistance
+                notChangeSupport)
+               harmingGroup2) (causes-PropProp
+                               (chosenItem
+                                GivingOrNotGivingTheLand
+                                NotGiveLand)
+                               preventingTransferNaturePreserve1))
+(matchBetween harmingGroup2 preventingTransferNaturePreserve1)
+(matchBetween (chosenItem GivingOrNotGivingAssistance
+               notChangeSupport) (chosenItem
+                                  GivingOrNotGivingTheLand
+                                  NotGiveLand))
+(matchBetween (choices GivingOrNotGivingAssistance
+               notChangeSupport) (choices
+                                  GivingOrNotGivingTheLand
+                                  NotGiveLand))
+(matchBetween (SelectingSomething
+               GivingOrNotGivingAssistance) (SelectingSomething
+                                             GivingOrNotGivingTheLand))
+(matchBetween GivingOrNotGivingAssistance GivingOrNotGivingTheLand)
+(matchBetween (performedBy FinancialAssitanceToShelter2
+               you1143) (performedBy GiveLand you811))
+(matchBetween FinancialAssitanceToShelter2 GiveLand)
+(matchBetween (preventedProp preventingHarmingGroup1
+               harmingGroup1) (preventedProp
+                               preventingTransferNaturePreserve2
+                               TransferNaturePreserve2))
+(matchBetween harmingGroup1 TransferNaturePreserve2)
+(matchBetween (IntelligentAgent you1143) (IntelligentAgent you811))
+(matchBetween you1143 you811)

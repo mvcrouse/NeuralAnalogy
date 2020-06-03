@@ -1,0 +1,180 @@
+(sacredValueChoice transfer91105)
+(sacredValueChoice Inaction91624)
+(affectsSigLargerGroup transfer91105)
+(affectsSigLargerGroup Inaction91624)
+(uninferredSentence (affectsSigLargerGroup transfer91105))
+(uninferredSentence (affectsSigLargerGroup Inaction91624))
+(uninferredSentence (directlyResponsible you90799 Inaction91624))
+(uninferredSentence (preventsAlternativeNegativeOutcome transfer91105))
+(uninferredSentence (usedAsMeansToPreventNegativeOutcome transfer91105))
+(directlyResponsible you90799 transfer91105)
+(directlyResponsible you90799 Inaction91624)
+(preventsAlternativeNegativeOutcome transfer91105)
+(usedAsMeansToPreventNegativeOutcome transfer91105)
+(and (sacredValueChoice transfer91105)
+     (sacredValueChoice Inaction91624)
+     (uninferredSentence (affectsSigLargerGroup transfer91105))
+     (uninferredSentence (affectsSigLargerGroup Inaction91624))
+     (directlyResponsible you90799 transfer91105)
+     (uninferredSentence (directlyResponsible you90799 Inaction91624))
+     (uninferredSentence
+      (preventsAlternativeNegativeOutcome transfer91105))
+     (uninferredSentence
+      (usedAsMeansToPreventNegativeOutcome transfer91105)))
+(rightChoice Inaction91624)
+(chosenItem SelectingSomething91623 transfer91105)
+(Inaction Inaction91624)
+(PreventingSomething PreventingSomething91622)
+(SelectingSomething SelectingSomething91623)
+(Set-Mathematical set-of-worker90320)
+(Set-Mathematical set-of-worker90031)
+(ClosingSomething close90499)
+(FinancialSupport financial-support89816)
+(OfficeSpace office89775)
+(FactoryBuildingComplex plant89874)
+(FactoryBuildingComplex plant90251)
+(MakingSomethingAvailable provide89786)
+(RescuingSomeone save90838)
+(GeneralizedTransfer transfer91105)
+(performedBy PreventingSomething91622 you90799)
+(choices SelectingSomething91623 transfer91105)
+(choices SelectingSomething91623 Inaction91624)
+(cardinality set-of-worker90320 500)
+(cardinality set-of-worker90031 50)
+(causes-PropSit (chosenItem SelectingSomething91623 transfer91105)
+ save90838)
+(target provide89786 plant89874)
+(transferredObject provide89786 financial-support89816)
+(performedBy provide89786 office89775)
+(to-UnderspecifiedLocation provide89786 plant89874)
+(beneficiary save90838 set-of-worker90320)
+(performedBy save90838 you90799)
+(by-Underspecified save90838 transfer91105)
+(causes-SitSit save90838 PreventingSomething91622)
+(performedBy transfer91105 you90799)
+(performedBy Inaction91624 you90799)
+(transferredObject transfer91105 financial-support89816)
+(implies
+ (and (sacredValueChoice transfer91105)
+      (sacredValueChoice Inaction91624)
+      (uninferredSentence (affectsSigLargerGroup transfer91105))
+      (uninferredSentence (affectsSigLargerGroup Inaction91624))
+      (directlyResponsible you90799 transfer91105)
+      (uninferredSentence (directlyResponsible you90799 Inaction91624))
+      (uninferredSentence
+       (preventsAlternativeNegativeOutcome transfer91105))
+      (uninferredSentence
+       (usedAsMeansToPreventNegativeOutcome transfer91105)))
+ (rightChoice Inaction91624))
+(makeDecision you90799 Inaction91624)
++++++++++++
+(on-UnderspecifiedSurface dam3171 river3220)
+(Dam dam3171)
+(River river3220)
+(TemporalPredicate temporallySubsumes)
+(and (on-UnderspecifiedSurface dam3171 river3220) (Dam dam3171)
+     (River river3220) (TemporalPredicate temporallySubsumes))
+(causes-PropSit
+ (and (on-UnderspecifiedSurface dam3171 river3220) (Dam dam3171)
+      (River river3220) (TemporalPredicate temporallySubsumes))
+ extinction3406)
+(causes-PropSit (chosenItem SelectingSomething4226 open3575) save3513)
+(causes-PropSit (chosenItem SelectingSomething4226 Inaction4227)
+ extinction3406)
+(causes-PropSit (chosenItem SelectingSomething4226 Inaction4227) p23)
+(Set-Mathematical them3545)
+(Set-Mathematical set-of-species3797)
+(cardinality them3545 20)
+(cardinality set-of-species3797 2)
+(generalizes species3257 Fish)
+(generalizes species3797 Fish)
+(BiologicalSpecies species3257)
+(BiologicalSpecies species3797)
+(Extinction extinction3406)
+(Extinction extinction3941)
+(objectActedOn extinction3406 species3257)
+(objectActedOn open3575 dam3171)
+(objectActedOn extinction3941 species3797)
+(RescuingSomeone save3513)
+(beneficiary save3513 them3545)
+(performedBy save3513 you3467)
+(performedBy open3575 you3467)
+(performedBy PreventingSomething4225 you3467)
+(performedBy Inaction4227 you3467)
+(by-Underspecified save3513 open3575)
+(causes-SitSit save3513 PreventingSomething4225)
+(causes-SitSit open3575 extinction3941)
+(OpeningSomething open3575)
+(PreventingSomething PreventingSomething4225)
+(PreventingSomething p23)
+(preventedSit PreventingSomething4225 extinction3406)
+(preventedSit p23 extinction3941)
+(SelectingSomething SelectingSomething4226)
+(choices SelectingSomething4226 open3575)
+(choices SelectingSomething4226 Inaction4227)
+(chosenItem SelectingSomething4226 open3575)
+(chosenItem SelectingSomething4226 Inaction4227)
+(Inaction Inaction4227)
++++++++++++
+(matchBetween Inaction91624 Inaction4227)
+(matchBetween (Inaction Inaction91624) (Inaction Inaction4227))
+(matchBetween set-of-worker90320 them3545)
+(matchBetween (Set-Mathematical set-of-worker90320) (Set-Mathematical
+                                                     them3545))
+(matchBetween 500 20)
+(matchBetween (cardinality set-of-worker90320 500) (cardinality
+                                                    them3545
+                                                    20))
+(matchBetween you90799 you3467)
+(matchBetween (performedBy Inaction91624 you90799) (performedBy
+                                                    Inaction4227
+                                                    you3467))
+(matchBetween (causes-SitSit save90838
+               PreventingSomething91622) (causes-SitSit
+                                          save3513
+                                          PreventingSomething4225))
+(matchBetween (performedBy save90838 you90799) (performedBy
+                                                save3513
+                                                you3467))
+(matchBetween (choices SelectingSomething91623 Inaction91624) (choices
+                                                               SelectingSomething4226
+                                                               Inaction4227))
+(matchBetween (by-Underspecified save90838
+               transfer91105) (by-Underspecified save3513 open3575))
+(matchBetween (chosenItem SelectingSomething91623
+               transfer91105) (chosenItem SelectingSomething4226
+                               open3575))
+(matchBetween (causes-PropSit
+               (chosenItem SelectingSomething91623 transfer91105)
+               save90838) (causes-PropSit
+                           (chosenItem SelectingSomething4226 open3575)
+                           save3513))
+(matchBetween (choices SelectingSomething91623 transfer91105) (choices
+                                                               SelectingSomething4226
+                                                               open3575))
+(matchBetween (performedBy transfer91105 you90799) (performedBy
+                                                    open3575
+                                                    you3467))
+(matchBetween transfer91105 open3575)
+(matchBetween (SelectingSomething
+               SelectingSomething91623) (SelectingSomething
+                                         SelectingSomething4226))
+(matchBetween SelectingSomething91623 SelectingSomething4226)
+(matchBetween (beneficiary save90838 set-of-worker90320) (beneficiary
+                                                          save3513
+                                                          them3545))
+(matchBetween (performedBy PreventingSomething91622
+               you90799) (performedBy PreventingSomething4225 you3467))
+(matchBetween (RescuingSomeone save90838) (RescuingSomeone save3513))
+(matchBetween save90838 save3513)
+(matchBetween (cardinality set-of-worker90031 50) (cardinality
+                                                   set-of-species3797
+                                                   2))
+(matchBetween 50 2)
+(matchBetween (PreventingSomething
+               PreventingSomething91622) (PreventingSomething
+                                          PreventingSomething4225))
+(matchBetween PreventingSomething91622 PreventingSomething4225)
+(matchBetween (Set-Mathematical set-of-worker90031) (Set-Mathematical
+                                                     set-of-species3797))
+(matchBetween set-of-worker90031 set-of-species3797)

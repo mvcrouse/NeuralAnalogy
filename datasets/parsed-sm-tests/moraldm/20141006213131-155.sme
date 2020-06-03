@@ -1,0 +1,214 @@
+(sacredValueChoice ReRouteToCamp2)
+(sacredValueChoice notReRoute)
+(affectsSigLargerGroup ReRouteToCamp2)
+(affectsSigLargerGroup notReRoute)
+(uninferredSentence (affectsSigLargerGroup ReRouteToCamp2))
+(uninferredSentence (affectsSigLargerGroup notReRoute))
+(uninferredSentence (directlyResponsible you8115 notReRoute))
+(uninferredSentence (preventsAlternativeNegativeOutcome ReRouteToCamp2))
+(uninferredSentence
+ (usedAsMeansToPreventNegativeOutcome ReRouteToCamp2))
+(directlyResponsible you8115 ReRouteToCamp2)
+(directlyResponsible you8115 notReRoute)
+(preventsAlternativeNegativeOutcome ReRouteToCamp2)
+(usedAsMeansToPreventNegativeOutcome ReRouteToCamp2)
+(and (sacredValueChoice ReRouteToCamp2) (sacredValueChoice notReRoute)
+     (uninferredSentence (affectsSigLargerGroup ReRouteToCamp2))
+     (uninferredSentence (affectsSigLargerGroup notReRoute))
+     (directlyResponsible you8115 ReRouteToCamp2)
+     (uninferredSentence (directlyResponsible you8115 notReRoute))
+     (uninferredSentence
+      (preventsAlternativeNegativeOutcome ReRouteToCamp2))
+     (uninferredSentence
+      (usedAsMeansToPreventNegativeOutcome ReRouteToCamp2)))
+(rightChoice notReRoute)
+(chosenItem SendingTruckToCamp1OrCamp2 notReRoute)
+(chosenItem SendingTruckToCamp1OrCamp2 ReRouteToCamp2)
+(IntelligentAgent you8115)
+(RefugeeCamp Camp1)
+(RefugeeCamp Camp2)
+((GroupFn Person) PeopleInDangerInCamp1)
+((GroupFn Person) PeopleInDangerInCamp2)
+(Starvation PeopleDyingInCamp1)
+(Starvation PeopleDyingInCamp2)
+(Convoy TruckConvoy)
+(MovementEvent ReRouteToCamp2)
+(PreventingSomething preventingPeopleDyingInCamp1)
+(PreventingSomething preventingPeopleDyingInCamp2)
+(Inaction notReRoute)
+(SelectingSomething SendingTruckToCamp1OrCamp2)
+(groupCardinality PeopleInDangerInCamp1 100)
+(groupCardinality PeopleInDangerInCamp2 1000)
+(residesInRegion PeopleInDangerInCamp1 Camp1)
+(residesInRegion PeopleInDangerInCamp2 Camp2)
+(objectActedOn PeopleDyingInCamp1 PeopleInDangerInCamp1)
+(objectActedOn PeopleDyingInCamp2 PeopleInDangerInCamp2)
+(containedObject FoodTruck Food)
+(groupMemberType TruckConvoy FoodTruck)
+(objectActedOn ReRouteToCamp2 TruckConvoy)
+(toLocation ReRouteToCamp2 Camp2)
+(preventedProp preventingPeopleDyingInCamp1 PeopleDyingInCamp1)
+(preventedProp preventingPeopleDyingInCamp2 PeopleDyingInCamp2)
+(choices SendingTruckToCamp1OrCamp2 ReRouteToCamp2)
+(choices SendingTruckToCamp1OrCamp2 notReRoute)
+(performedBy ReRouteToCamp2 you8115)
+(performedBy notReRoute you8115)
+(causes-PropProp (chosenItem SendingTruckToCamp1OrCamp2 ReRouteToCamp2)
+ preventingPeopleDyingInCamp2)
+(causes-PropProp (chosenItem SendingTruckToCamp1OrCamp2 ReRouteToCamp2)
+ PeopleDyingInCamp1)
+(causes-PropProp (chosenItem SendingTruckToCamp1OrCamp2 notReRoute)
+ PeopleDyingInCamp2)
+(causes-PropProp (chosenItem SendingTruckToCamp1OrCamp2 notReRoute)
+ preventingPeopleDyingInCamp1)
+(implies
+ (and (sacredValueChoice ReRouteToCamp2) (sacredValueChoice notReRoute)
+      (uninferredSentence (affectsSigLargerGroup ReRouteToCamp2))
+      (uninferredSentence (affectsSigLargerGroup notReRoute))
+      (directlyResponsible you8115 ReRouteToCamp2)
+      (uninferredSentence (directlyResponsible you8115 notReRoute))
+      (uninferredSentence
+       (preventsAlternativeNegativeOutcome ReRouteToCamp2))
+      (uninferredSentence
+       (usedAsMeansToPreventNegativeOutcome ReRouteToCamp2)))
+ (rightChoice notReRoute))
+(makeDecision you8115 notReRoute)
++++++++++++
+(IntelligentAgent you1143)
+((GroupFn HomelessPerson) group1FemaleHomeless)
+((GroupFn HomelessPerson) group2FemaleHomeless)
+(groupCardinality group1FemaleHomeless 50)
+(groupCardinality group2FemaleHomeless 150)
+(HumanShelterConstruction shelter1)
+(HumanShelterConstruction shelter2)
+(ShelteringSomething shelteringGroup1)
+(ShelteringSomething shelteringGroup2)
+(performedBy shelteringGroup1 shelter1)
+(performedBy FinancialAssitanceToShelter1 you1143)
+(performedBy shelteringGroup2 shelter1)
+(performedBy FinancialAssitanceToShelter2 you1143)
+(performedBy notChangeSupport you1143)
+(objectActedOn shelteringGroup1 group1FemaleHomeless)
+(objectActedOn shelteringGroup2 group2FemaleHomeless)
+(objectActedOn harmingGroup1 group1FemaleHomeless)
+(objectActedOn harmingGroup2 group2FemaleHomeless)
+(FinancialSupport FinancialAssitanceToShelter1)
+(FinancialSupport FinancialAssitanceToShelter2)
+(beneficiary FinancialAssitanceToShelter1 shelter1)
+(beneficiary FinancialAssitanceToShelter2 shelter2)
+(HarmingAnAgent harmingGroup1)
+(HarmingAnAgent harmingGroup2)
+(PreventingSomething preventingHarmingGroup1)
+(PreventingSomething preventingHarmingGroup2)
+(preventedProp preventingHarmingGroup1 harmingGroup1)
+(preventedProp preventingHarmingGroup2 harmingGroup2)
+(Inaction notChangeSupport)
+(SelectingSomething GivingOrNotGivingAssistance)
+(choices GivingOrNotGivingAssistance FinancialAssitanceToShelter2)
+(choices GivingOrNotGivingAssistance notChangeSupport)
+(chosenItem GivingOrNotGivingAssistance FinancialAssitanceToShelter2)
+(chosenItem GivingOrNotGivingAssistance notChangeSupport)
+(causes-PropProp
+ (chosenItem GivingOrNotGivingAssistance FinancialAssitanceToShelter2)
+ preventingHarmingGroup2)
+(causes-PropProp
+ (chosenItem GivingOrNotGivingAssistance FinancialAssitanceToShelter2)
+ harmingGroup1)
+(causes-PropProp
+ (chosenItem GivingOrNotGivingAssistance notChangeSupport)
+ preventingHarmingGroup1)
+(causes-PropProp
+ (chosenItem GivingOrNotGivingAssistance notChangeSupport)
+ harmingGroup2)
++++++++++++
+(matchBetween preventingPeopleDyingInCamp2 preventingHarmingGroup2)
+(matchBetween (PreventingSomething
+               preventingPeopleDyingInCamp2) (PreventingSomething
+                                              preventingHarmingGroup2))
+(matchBetween PeopleInDangerInCamp2 group2FemaleHomeless)
+(matchBetween 1000 150)
+(matchBetween (groupCardinality PeopleInDangerInCamp2
+               1000) (groupCardinality group2FemaleHomeless 150))
+(matchBetween PeopleDyingInCamp2 harmingGroup2)
+(matchBetween (objectActedOn PeopleDyingInCamp2
+               PeopleInDangerInCamp2) (objectActedOn
+                                       harmingGroup2
+                                       group2FemaleHomeless))
+(matchBetween (preventedProp preventingPeopleDyingInCamp2
+               PeopleDyingInCamp2) (preventedProp
+                                    preventingHarmingGroup2
+                                    harmingGroup2))
+(matchBetween notReRoute notChangeSupport)
+(matchBetween (Inaction notReRoute) (Inaction notChangeSupport))
+(matchBetween (performedBy notReRoute you8115) (performedBy
+                                                notChangeSupport
+                                                you1143))
+(matchBetween (choices SendingTruckToCamp1OrCamp2
+               ReRouteToCamp2) (choices
+                                GivingOrNotGivingAssistance
+                                FinancialAssitanceToShelter2))
+(matchBetween (chosenItem SendingTruckToCamp1OrCamp2
+               ReRouteToCamp2) (chosenItem
+                                GivingOrNotGivingAssistance
+                                FinancialAssitanceToShelter2))
+(matchBetween (causes-PropProp
+               (chosenItem SendingTruckToCamp1OrCamp2 ReRouteToCamp2)
+               PeopleDyingInCamp1) (causes-PropProp
+                                    (chosenItem
+                                     GivingOrNotGivingAssistance
+                                     FinancialAssitanceToShelter2)
+                                    harmingGroup1))
+(matchBetween (chosenItem SendingTruckToCamp1OrCamp2
+               notReRoute) (chosenItem GivingOrNotGivingAssistance
+                            notChangeSupport))
+(matchBetween (causes-PropProp
+               (chosenItem SendingTruckToCamp1OrCamp2 notReRoute)
+               preventingPeopleDyingInCamp1) (causes-PropProp
+                                              (chosenItem
+                                               GivingOrNotGivingAssistance
+                                               notChangeSupport)
+                                              preventingHarmingGroup1))
+(matchBetween (causes-PropProp
+               (chosenItem SendingTruckToCamp1OrCamp2 notReRoute)
+               PeopleDyingInCamp2) (causes-PropProp
+                                    (chosenItem
+                                     GivingOrNotGivingAssistance
+                                     notChangeSupport)
+                                    harmingGroup2))
+(matchBetween (causes-PropProp
+               (chosenItem SendingTruckToCamp1OrCamp2 ReRouteToCamp2)
+               preventingPeopleDyingInCamp2) (causes-PropProp
+                                              (chosenItem
+                                               GivingOrNotGivingAssistance
+                                               FinancialAssitanceToShelter2)
+                                              preventingHarmingGroup2))
+(matchBetween (choices SendingTruckToCamp1OrCamp2 notReRoute) (choices
+                                                               GivingOrNotGivingAssistance
+                                                               notChangeSupport))
+(matchBetween (SelectingSomething
+               SendingTruckToCamp1OrCamp2) (SelectingSomething
+                                            GivingOrNotGivingAssistance))
+(matchBetween SendingTruckToCamp1OrCamp2 GivingOrNotGivingAssistance)
+(matchBetween (performedBy ReRouteToCamp2 you8115) (performedBy
+                                                    FinancialAssitanceToShelter2
+                                                    you1143))
+(matchBetween ReRouteToCamp2 FinancialAssitanceToShelter2)
+(matchBetween (preventedProp preventingPeopleDyingInCamp1
+               PeopleDyingInCamp1) (preventedProp
+                                    preventingHarmingGroup1
+                                    harmingGroup1))
+(matchBetween (objectActedOn PeopleDyingInCamp1
+               PeopleInDangerInCamp1) (objectActedOn
+                                       harmingGroup1
+                                       group1FemaleHomeless))
+(matchBetween PeopleDyingInCamp1 harmingGroup1)
+(matchBetween (groupCardinality PeopleInDangerInCamp1
+               100) (groupCardinality group1FemaleHomeless 50))
+(matchBetween 100 50)
+(matchBetween PeopleInDangerInCamp1 group1FemaleHomeless)
+(matchBetween (PreventingSomething
+               preventingPeopleDyingInCamp1) (PreventingSomething
+                                              preventingHarmingGroup1))
+(matchBetween preventingPeopleDyingInCamp1 preventingHarmingGroup1)
+(matchBetween (IntelligentAgent you8115) (IntelligentAgent you1143))
+(matchBetween you8115 you1143)

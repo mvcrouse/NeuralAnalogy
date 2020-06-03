@@ -1,0 +1,26 @@
+(2D-Shape-Straight Element-3)
+(2D-Shape-Forked Element-3)
+(Centered-Element Element-3)
+(2D-Shape-Open Element-3)
+(2D-Shape-Generic Element-3)
+(ObjectsBorderColoredFnBlackColor Element-3)
++++++++++++
+(2D-Shape-Generic Object-577)
+(2D-Shape-Straight Object-577)
+(2D-Shape-Forked Object-577)
+(2D-Shape-Perpendicular Object-577)
+(2D-Shape-Open Object-577)
+(ObjectsBorderColoredFnBlackColor Object-577)
+(Centered-Element Object-577)
++++++++++++
+(matchBetween (2D-Shape-Forked Element-3) (2D-Shape-Forked Object-577))
+(matchBetween (2D-Shape-Open Element-3) (2D-Shape-Open Object-577))
+(matchBetween (ObjectsBorderColoredFnBlackColor
+               Element-3) (ObjectsBorderColoredFnBlackColor Object-577))
+(matchBetween (2D-Shape-Generic Element-3) (2D-Shape-Generic
+                                            Object-577))
+(matchBetween (Centered-Element Element-3) (Centered-Element
+                                            Object-577))
+(matchBetween (2D-Shape-Straight Element-3) (2D-Shape-Straight
+                                             Object-577))
+(matchBetween Element-3 Object-577)

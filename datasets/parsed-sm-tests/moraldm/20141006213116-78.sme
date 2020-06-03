@@ -1,0 +1,201 @@
+(sacredValueChoice open8135)
+(sacredValueChoice notOpen8135)
+(affectsSigLargerGroup open8135)
+(affectsSigLargerGroup notOpen8135)
+(uninferredSentence (affectsSigLargerGroup open8135))
+(uninferredSentence (affectsSigLargerGroup notOpen8135))
+(uninferredSentence (directlyResponsible you8131 notOpen8135))
+(uninferredSentence (preventsAlternativeNegativeOutcome open8135))
+(uninferredSentence (usedAsMeansToPreventNegativeOutcome open8135))
+(directlyResponsible you8131 open8135)
+(directlyResponsible you8131 notOpen8135)
+(preventsAlternativeNegativeOutcome open8135)
+(usedAsMeansToPreventNegativeOutcome open8135)
+(and (sacredValueChoice open8135) (sacredValueChoice notOpen8135)
+     (uninferredSentence (affectsSigLargerGroup open8135))
+     (uninferredSentence (affectsSigLargerGroup notOpen8135))
+     (directlyResponsible you8131 open8135)
+     (uninferredSentence (directlyResponsible you8131 notOpen8135))
+     (uninferredSentence (preventsAlternativeNegativeOutcome open8135))
+     (uninferredSentence
+      (usedAsMeansToPreventNegativeOutcome open8135)))
+(rightChoice notOpen8135)
+(chosenItem OpeningOrNotOpeningTheDam notOpen8135)
+(chosenItem OpeningOrNotOpeningTheDam open8135)
+(IntelligentAgent you8131)
+(Dam dam7557)
+((GroupFn AnimalSpecies) River1FishGroups)
+((GroupFn AnimalSpecies) River1FishGroup1)
+((GroupFn AnimalSpecies) River1FishGroup2)
+(Extinction ExtinctionRiver1FishGroup1)
+(Extinction ExtinctionRiver1FishGroup2)
+(OpeningSomething open8135)
+(PreventingSomething preventingExtinctionRiver1FishGroup1)
+(PreventingSomething preventingExtinctionRiver1FishGroup2)
+(SelectingSomething OpeningOrNotOpeningTheDam)
+(groupCardinality River1FishGroup1 2)
+(groupCardinality River1FishGroup2 20)
+(subGroups River1FishGroups River1FishGroup1)
+(subGroups River1FishGroups River1FishGroup2)
+(objectActedOn ExtinctionRiver1FishGroup1 River1FishGroup1)
+(objectActedOn ExtinctionRiver1FishGroup2 River1FishGroup2)
+(isInaction notOpen8135)
+(objectActedOn open8135 dam7557)
+(preventedProp preventingExtinctionRiver1FishGroup1
+ ExtinctionRiver1FishGroup1)
+(preventedProp preventingExtinctionRiver1FishGroup2
+ ExtinctionRiver1FishGroup2)
+(choices OpeningOrNotOpeningTheDam open8135)
+(choices OpeningOrNotOpeningTheDam notOpen8135)
+(performedBy open8135 you8131)
+(performedBy notOpen8135 you8131)
+(causes-PropProp (chosenItem OpeningOrNotOpeningTheDam open8135)
+ preventingExtinctionRiver1FishGroup2)
+(causes-PropProp (chosenItem OpeningOrNotOpeningTheDam open8135)
+ ExtinctionRiver1FishGroup1)
+(causes-PropProp (chosenItem OpeningOrNotOpeningTheDam notOpen8135)
+ ExtinctionRiver1FishGroup2)
+(causes-PropProp (chosenItem OpeningOrNotOpeningTheDam notOpen8135)
+ preventingExtinctionRiver1FishGroup1)
+(implies
+ (and (sacredValueChoice open8135) (sacredValueChoice notOpen8135)
+      (uninferredSentence (affectsSigLargerGroup open8135))
+      (uninferredSentence (affectsSigLargerGroup notOpen8135))
+      (directlyResponsible you8131 open8135)
+      (uninferredSentence (directlyResponsible you8131 notOpen8135))
+      (uninferredSentence
+       (preventsAlternativeNegativeOutcome open8135))
+      (uninferredSentence
+       (usedAsMeansToPreventNegativeOutcome open8135)))
+ (rightChoice notOpen8135))
+(makeDecision you8131 notOpen8135)
++++++++++++
+(IntelligentAgent you8115)
+(Region-Underspecified region1)
+(Region-Underspecified region2)
+((GroupFn Person) PeopleInArea1)
+((GroupFn Person) PeopleInArea2)
+(groupCardinality PeopleInArea1 50)
+(groupCardinality PeopleInArea2 200)
+(residesInRegion PeopleInArea1 region1)
+(residesInRegion PeopleInArea2 region2)
+(Dying PeopleDyingInArea1)
+(Dying PeopleDyingInArea2)
+(objectActedOn PeopleDyingInArea1 PeopleInArea1)
+(objectActedOn PeopleDyingInArea2 PeopleInArea2)
+((GroupEventOfTypeFn VehicleAccident) TrafficAccidents)
+((PreventingFn (DyingFromEventTypeFn TrafficAccidents)) trafficProgram)
+(Translation-LocationChange changeToArea2)
+(fromLocation changeToArea2 region1)
+(toLocation ChangeToArea2 region2)
+(Inaction notChangeLocation)
+(PreventingSomething preventingPeopleDyingInArea1)
+(PreventingSomething preventingPeopleDyingInArea2)
+(preventedProp preventingPeopleDyingInArea1 PeopleDyingInArea1)
+(preventedProp preventingPeopleDyingInArea2 PeopleDyingInArea2)
+(SelectingSomething ChooseBetweenArea1or2)
+(choices ChooseBetweenArea1or2 changeToArea2)
+(choices ChooseBetweenArea1or2 notChangeLocation)
+(performedBy changeToArea2 you8115)
+(performedBy notChangeLocation you8115)
+(chosenItem ChooseBetweenArea1or2 changeToArea2)
+(chosenItem ChooseBetweenArea1or2 notChangeLocation)
+(causes-PropProp (chosenItem ChooseBetweenArea1or2 changeToArea2)
+ preventingPeopleDyingInArea2)
+(causes-PropProp (chosenItem ChooseBetweenArea1or2 changeToArea2)
+ PeopleDyingInArea1)
+(causes-PropProp (chosenItem ChooseBetweenArea1or2 notChangeLocation)
+ PeopleDyingInArea2)
+(causes-PropProp (chosenItem ChooseBetweenArea1or2 notChangeLocation)
+ preventingPeopleDyingInArea1)
++++++++++++
+(matchBetween preventingExtinctionRiver1FishGroup2 preventingPeopleDyingInArea1)
+(matchBetween (PreventingSomething
+               preventingExtinctionRiver1FishGroup2) (PreventingSomething
+                                                      preventingPeopleDyingInArea1))
+(matchBetween River1FishGroup2 PeopleInArea1)
+(matchBetween 20 50)
+(matchBetween (groupCardinality River1FishGroup2 20) (groupCardinality
+                                                      PeopleInArea1
+                                                      50))
+(matchBetween ExtinctionRiver1FishGroup2 PeopleDyingInArea1)
+(matchBetween (objectActedOn ExtinctionRiver1FishGroup2
+               River1FishGroup2) (objectActedOn
+                                  PeopleDyingInArea1
+                                  PeopleInArea1))
+(matchBetween (preventedProp preventingExtinctionRiver1FishGroup2
+               ExtinctionRiver1FishGroup2) (preventedProp
+                                            preventingPeopleDyingInArea1
+                                            PeopleDyingInArea1))
+(matchBetween notOpen8135 changeToArea2)
+(matchBetween (performedBy notOpen8135 you8131) (performedBy
+                                                 changeToArea2
+                                                 you8115))
+(matchBetween OpeningOrNotOpeningTheDam ChooseBetweenArea1or2)
+(matchBetween (SelectingSomething
+               OpeningOrNotOpeningTheDam) (SelectingSomething
+                                           ChooseBetweenArea1or2))
+(matchBetween (choices OpeningOrNotOpeningTheDam open8135) (choices
+                                                            ChooseBetweenArea1or2
+                                                            notChangeLocation))
+(matchBetween (causes-PropProp
+               (chosenItem OpeningOrNotOpeningTheDam notOpen8135)
+               ExtinctionRiver1FishGroup2) (causes-PropProp
+                                            (chosenItem
+                                             ChooseBetweenArea1or2
+                                             changeToArea2)
+                                            PeopleDyingInArea1))
+(matchBetween (causes-PropProp
+               (chosenItem OpeningOrNotOpeningTheDam open8135)
+               preventingExtinctionRiver1FishGroup2) (causes-PropProp
+                                                      (chosenItem
+                                                       ChooseBetweenArea1or2
+                                                       notChangeLocation)
+                                                      preventingPeopleDyingInArea1))
+(matchBetween (causes-PropProp
+               (chosenItem OpeningOrNotOpeningTheDam open8135)
+               ExtinctionRiver1FishGroup1) (causes-PropProp
+                                            (chosenItem
+                                             ChooseBetweenArea1or2
+                                             notChangeLocation)
+                                            PeopleDyingInArea2))
+(matchBetween (chosenItem OpeningOrNotOpeningTheDam
+               open8135) (chosenItem ChooseBetweenArea1or2
+                          notChangeLocation))
+(matchBetween (causes-PropProp
+               (chosenItem OpeningOrNotOpeningTheDam notOpen8135)
+               preventingExtinctionRiver1FishGroup1) (causes-PropProp
+                                                      (chosenItem
+                                                       ChooseBetweenArea1or2
+                                                       changeToArea2)
+                                                      preventingPeopleDyingInArea2))
+(matchBetween (chosenItem OpeningOrNotOpeningTheDam
+               notOpen8135) (chosenItem ChooseBetweenArea1or2
+                             changeToArea2))
+(matchBetween (choices OpeningOrNotOpeningTheDam notOpen8135) (choices
+                                                               ChooseBetweenArea1or2
+                                                               changeToArea2))
+(matchBetween (performedBy open8135 you8131) (performedBy
+                                              notChangeLocation
+                                              you8115))
+(matchBetween open8135 notChangeLocation)
+(matchBetween (preventedProp preventingExtinctionRiver1FishGroup1
+               ExtinctionRiver1FishGroup1) (preventedProp
+                                            preventingPeopleDyingInArea2
+                                            PeopleDyingInArea2))
+(matchBetween (objectActedOn ExtinctionRiver1FishGroup1
+               River1FishGroup1) (objectActedOn
+                                  PeopleDyingInArea2
+                                  PeopleInArea2))
+(matchBetween ExtinctionRiver1FishGroup1 PeopleDyingInArea2)
+(matchBetween (groupCardinality River1FishGroup1 2) (groupCardinality
+                                                     PeopleInArea2
+                                                     200))
+(matchBetween 2 200)
+(matchBetween River1FishGroup1 PeopleInArea2)
+(matchBetween (PreventingSomething
+               preventingExtinctionRiver1FishGroup1) (PreventingSomething
+                                                      preventingPeopleDyingInArea2))
+(matchBetween preventingExtinctionRiver1FishGroup1 preventingPeopleDyingInArea2)
+(matchBetween (IntelligentAgent you8131) (IntelligentAgent you8115))
+(matchBetween you8131 you8115)

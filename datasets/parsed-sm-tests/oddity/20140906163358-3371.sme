@@ -1,0 +1,30 @@
+(2D-Shape-Convex Element-2)
+(2D-Shape-Generic Element-2)
+(2D-Shape-Closed Element-2)
+(Centered-Element Element-2)
+(2D-Shape-Straight Element-2)
+(ObjectsColoredFnBlackColor Element-2)
+(ObjectsBorderColoredFnBlackColor Element-2)
++++++++++++
+(ObjectsColoredFnBlackColor Object-657)
+(2D-Shape-Generic Object-657)
+(Multiply-Symmetric-Shape Object-657)
+(2D-Shape-Straight Object-657)
+(2D-Shape-Convex Object-657)
+(2D-Shape-Closed Object-657)
+(ObjectsBorderColoredFnBlackColor Object-657)
+(Centered-Element Object-657)
++++++++++++
+(matchBetween (2D-Shape-Generic Element-2) (2D-Shape-Generic
+                                            Object-657))
+(matchBetween (Centered-Element Element-2) (Centered-Element
+                                            Object-657))
+(matchBetween (ObjectsColoredFnBlackColor
+               Element-2) (ObjectsColoredFnBlackColor Object-657))
+(matchBetween (ObjectsBorderColoredFnBlackColor
+               Element-2) (ObjectsBorderColoredFnBlackColor Object-657))
+(matchBetween (2D-Shape-Straight Element-2) (2D-Shape-Straight
+                                             Object-657))
+(matchBetween (2D-Shape-Closed Element-2) (2D-Shape-Closed Object-657))
+(matchBetween (2D-Shape-Convex Element-2) (2D-Shape-Convex Object-657))
+(matchBetween Element-2 Object-657)

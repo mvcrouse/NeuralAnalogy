@@ -1,0 +1,211 @@
+(sacredValueChoice open8135)
+(sacredValueChoice notOpen8135)
+(affectsSigLargerGroup open8135)
+(affectsSigLargerGroup notOpen8135)
+(uninferredSentence (affectsSigLargerGroup open8135))
+(uninferredSentence (affectsSigLargerGroup notOpen8135))
+(uninferredSentence (directlyResponsible you8131 notOpen8135))
+(uninferredSentence (preventsAlternativeNegativeOutcome open8135))
+(uninferredSentence (usedAsMeansToPreventNegativeOutcome open8135))
+(directlyResponsible you8131 open8135)
+(directlyResponsible you8131 notOpen8135)
+(preventsAlternativeNegativeOutcome open8135)
+(usedAsMeansToPreventNegativeOutcome open8135)
+(and (sacredValueChoice open8135) (sacredValueChoice notOpen8135)
+     (uninferredSentence (affectsSigLargerGroup open8135))
+     (uninferredSentence (affectsSigLargerGroup notOpen8135))
+     (directlyResponsible you8131 open8135)
+     (uninferredSentence (directlyResponsible you8131 notOpen8135))
+     (uninferredSentence (preventsAlternativeNegativeOutcome open8135))
+     (uninferredSentence
+      (usedAsMeansToPreventNegativeOutcome open8135)))
+(rightChoice notOpen8135)
+(chosenItem OpeningOrNotOpeningTheDam notOpen8135)
+(chosenItem OpeningOrNotOpeningTheDam open8135)
+(IntelligentAgent you8131)
+(Dam dam7557)
+((GroupFn AnimalSpecies) River1FishGroups)
+((GroupFn AnimalSpecies) River1FishGroup1)
+((GroupFn AnimalSpecies) River1FishGroup2)
+(Extinction ExtinctionRiver1FishGroup1)
+(Extinction ExtinctionRiver1FishGroup2)
+(OpeningSomething open8135)
+(PreventingSomething preventingExtinctionRiver1FishGroup1)
+(PreventingSomething preventingExtinctionRiver1FishGroup2)
+(SelectingSomething OpeningOrNotOpeningTheDam)
+(groupCardinality River1FishGroup1 2)
+(groupCardinality River1FishGroup2 20)
+(subGroups River1FishGroups River1FishGroup1)
+(subGroups River1FishGroups River1FishGroup2)
+(objectActedOn ExtinctionRiver1FishGroup1 River1FishGroup1)
+(objectActedOn ExtinctionRiver1FishGroup2 River1FishGroup2)
+(isInaction notOpen8135)
+(objectActedOn open8135 dam7557)
+(preventedProp preventingExtinctionRiver1FishGroup1
+ ExtinctionRiver1FishGroup1)
+(preventedProp preventingExtinctionRiver1FishGroup2
+ ExtinctionRiver1FishGroup2)
+(choices OpeningOrNotOpeningTheDam open8135)
+(choices OpeningOrNotOpeningTheDam notOpen8135)
+(performedBy open8135 you8131)
+(performedBy notOpen8135 you8131)
+(causes-PropProp (chosenItem OpeningOrNotOpeningTheDam open8135)
+ preventingExtinctionRiver1FishGroup2)
+(causes-PropProp (chosenItem OpeningOrNotOpeningTheDam open8135)
+ ExtinctionRiver1FishGroup1)
+(causes-PropProp (chosenItem OpeningOrNotOpeningTheDam notOpen8135)
+ ExtinctionRiver1FishGroup2)
+(causes-PropProp (chosenItem OpeningOrNotOpeningTheDam notOpen8135)
+ preventingExtinctionRiver1FishGroup1)
+(implies
+ (and (sacredValueChoice open8135) (sacredValueChoice notOpen8135)
+      (uninferredSentence (affectsSigLargerGroup open8135))
+      (uninferredSentence (affectsSigLargerGroup notOpen8135))
+      (directlyResponsible you8131 open8135)
+      (uninferredSentence (directlyResponsible you8131 notOpen8135))
+      (uninferredSentence
+       (preventsAlternativeNegativeOutcome open8135))
+      (uninferredSentence
+       (usedAsMeansToPreventNegativeOutcome open8135)))
+ (rightChoice notOpen8135))
+(makeDecision you8131 notOpen8135)
++++++++++++
+((GroupFn HumanChild) ChildrenInDanger)
+((GroupFn HumanChild) ChildrenInDangerGroup1)
+((GroupFn HumanChild) ChildrenInDangerGroup2)
+(IntelligentAgent you1003)
+(groupCardinality ChildrenInDanger 10000)
+(groupCardinality ChildrenInDangerGroup1 1000)
+(groupCardinality ChildrenInDangerGroup2 1)
+(subGroups ChildrenInDanger ChildrenInDangerGroup1)
+(subGroups ChildrenInDanger ChildrenInDangerGroup2)
+(DiseaseType disease1960)
+((VaccineForAgainstFn ChildrenInDanger disease1960) vaccine1960)
+(Dying DyingChildrenGroup1)
+(Dying DyingChildrenGroup2)
+(objectActedOn DyingChildrenGroup1 ChildrenInDangerGroup1)
+(objectActedOn DyingChildrenGroup2 ChildrenInDangerGroup2)
+(Injecting-Medical giveVaccine)
+(deviceUsed giveVaccine vaccine1960)
+(bodilyActedOn vaccine1960 ChildrenInDangerGroup1)
+(bodilyActedOn vaccineSideEffect ChildrenInDangerGroup2)
+(Inaction NotGiveVaccine)
+(PreventingSomething preventingDyingChildrenGroup1)
+(PreventingSomething preventingDyingChildrenGroup2)
+(preventedProp preventingDyingChildrenGroup1 DyingChildrenGroup1)
+(preventedProp preventingDyingChildrenGroup2 DyingChildrenGroup2)
+(SelectingSomething GivingOrNotGivingTheVaccine2)
+(choices GivingOrNotGivingTheVaccine2 giveVaccine)
+(choices GivingOrNotGivingTheVaccine2 NotGiveVaccine)
+(performedBy giveVaccine you1003)
+(performedBy NotGiveVaccine you1003)
+(chosenItem GivingOrNotGivingTheVaccine2 giveVaccine)
+(chosenItem GivingOrNotGivingTheVaccine2 NotGiveVaccine)
+(causes-PropProp (chosenItem GivingOrNotGivingTheVaccine2 giveVaccine)
+ preventingDyingChildrenGroup1)
+(causes-PropProp (chosenItem GivingOrNotGivingTheVaccine2 giveVaccine)
+ DyingChildrenGroup2)
+(causes-PropProp
+ (chosenItem GivingOrNotGivingTheVaccine2 NotGiveVaccine)
+ DyingChildrenGroup1)
+(causes-PropProp
+ (chosenItem GivingOrNotGivingTheVaccine2 NotGiveVaccine)
+ preventingDyingChildrenGroup2)
++++++++++++
+(matchBetween OpeningOrNotOpeningTheDam GivingOrNotGivingTheVaccine2)
+(matchBetween (SelectingSomething
+               OpeningOrNotOpeningTheDam) (SelectingSomething
+                                           GivingOrNotGivingTheVaccine2))
+(matchBetween preventingExtinctionRiver1FishGroup1 preventingDyingChildrenGroup2)
+(matchBetween (PreventingSomething
+               preventingExtinctionRiver1FishGroup1) (PreventingSomething
+                                                      preventingDyingChildrenGroup2))
+(matchBetween River1FishGroup1 ChildrenInDangerGroup2)
+(matchBetween 2 1)
+(matchBetween (groupCardinality River1FishGroup1 2) (groupCardinality
+                                                     ChildrenInDangerGroup2
+                                                     1))
+(matchBetween (subGroups River1FishGroups River1FishGroup1) (subGroups
+                                                             ChildrenInDanger
+                                                             ChildrenInDangerGroup2))
+(matchBetween ExtinctionRiver1FishGroup1 DyingChildrenGroup2)
+(matchBetween (objectActedOn ExtinctionRiver1FishGroup1
+               River1FishGroup1) (objectActedOn
+                                  DyingChildrenGroup2
+                                  ChildrenInDangerGroup2))
+(matchBetween (preventedProp preventingExtinctionRiver1FishGroup1
+               ExtinctionRiver1FishGroup1) (preventedProp
+                                            preventingDyingChildrenGroup2
+                                            DyingChildrenGroup2))
+(matchBetween open8135 giveVaccine)
+(matchBetween (performedBy open8135 you8131) (performedBy
+                                              giveVaccine
+                                              you1003))
+(matchBetween (choices OpeningOrNotOpeningTheDam open8135) (choices
+                                                            GivingOrNotGivingTheVaccine2
+                                                            giveVaccine))
+(matchBetween (causes-PropProp
+               (chosenItem OpeningOrNotOpeningTheDam notOpen8135)
+               ExtinctionRiver1FishGroup2) (causes-PropProp
+                                            (chosenItem
+                                             GivingOrNotGivingTheVaccine2
+                                             NotGiveVaccine)
+                                            DyingChildrenGroup1))
+(matchBetween (causes-PropProp
+               (chosenItem OpeningOrNotOpeningTheDam open8135)
+               preventingExtinctionRiver1FishGroup2) (causes-PropProp
+                                                      (chosenItem
+                                                       GivingOrNotGivingTheVaccine2
+                                                       giveVaccine)
+                                                      preventingDyingChildrenGroup1))
+(matchBetween (causes-PropProp
+               (chosenItem OpeningOrNotOpeningTheDam open8135)
+               ExtinctionRiver1FishGroup1) (causes-PropProp
+                                            (chosenItem
+                                             GivingOrNotGivingTheVaccine2
+                                             giveVaccine)
+                                            DyingChildrenGroup2))
+(matchBetween (chosenItem OpeningOrNotOpeningTheDam
+               open8135) (chosenItem GivingOrNotGivingTheVaccine2
+                          giveVaccine))
+(matchBetween (causes-PropProp
+               (chosenItem OpeningOrNotOpeningTheDam notOpen8135)
+               preventingExtinctionRiver1FishGroup1) (causes-PropProp
+                                                      (chosenItem
+                                                       GivingOrNotGivingTheVaccine2
+                                                       NotGiveVaccine)
+                                                      preventingDyingChildrenGroup2))
+(matchBetween (chosenItem OpeningOrNotOpeningTheDam
+               notOpen8135) (chosenItem GivingOrNotGivingTheVaccine2
+                             NotGiveVaccine))
+(matchBetween (choices OpeningOrNotOpeningTheDam notOpen8135) (choices
+                                                               GivingOrNotGivingTheVaccine2
+                                                               NotGiveVaccine))
+(matchBetween (performedBy notOpen8135 you8131) (performedBy
+                                                 NotGiveVaccine
+                                                 you1003))
+(matchBetween notOpen8135 NotGiveVaccine)
+(matchBetween (preventedProp preventingExtinctionRiver1FishGroup2
+               ExtinctionRiver1FishGroup2) (preventedProp
+                                            preventingDyingChildrenGroup1
+                                            DyingChildrenGroup1))
+(matchBetween (objectActedOn ExtinctionRiver1FishGroup2
+               River1FishGroup2) (objectActedOn
+                                  DyingChildrenGroup1
+                                  ChildrenInDangerGroup1))
+(matchBetween ExtinctionRiver1FishGroup2 DyingChildrenGroup1)
+(matchBetween (subGroups River1FishGroups River1FishGroup2) (subGroups
+                                                             ChildrenInDanger
+                                                             ChildrenInDangerGroup1))
+(matchBetween River1FishGroups ChildrenInDanger)
+(matchBetween (groupCardinality River1FishGroup2 20) (groupCardinality
+                                                      ChildrenInDangerGroup1
+                                                      1000))
+(matchBetween 20 1000)
+(matchBetween River1FishGroup2 ChildrenInDangerGroup1)
+(matchBetween (PreventingSomething
+               preventingExtinctionRiver1FishGroup2) (PreventingSomething
+                                                      preventingDyingChildrenGroup1))
+(matchBetween preventingExtinctionRiver1FishGroup2 preventingDyingChildrenGroup1)
+(matchBetween (IntelligentAgent you8131) (IntelligentAgent you1003))
+(matchBetween you8131 you1003)

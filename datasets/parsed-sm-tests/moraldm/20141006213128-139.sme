@@ -1,0 +1,217 @@
+(sacredValueChoice giveVaccine)
+(sacredValueChoice NotGiveVaccine)
+(affectsSigLargerGroup giveVaccine)
+(affectsSigLargerGroup NotGiveVaccine)
+(uninferredSentence (affectsSigLargerGroup giveVaccine))
+(uninferredSentence (affectsSigLargerGroup NotGiveVaccine))
+(uninferredSentence (directlyResponsible you2805 NotGiveVaccine))
+(uninferredSentence (preventsAlternativeNegativeOutcome giveVaccine))
+(uninferredSentence (usedAsMeansToPreventNegativeOutcome giveVaccine))
+(directlyResponsible you2805 giveVaccine)
+(directlyResponsible you2805 NotGiveVaccine)
+(preventsAlternativeNegativeOutcome giveVaccine)
+(usedAsMeansToPreventNegativeOutcome giveVaccine)
+(and (sacredValueChoice giveVaccine) (sacredValueChoice NotGiveVaccine)
+     (uninferredSentence (affectsSigLargerGroup giveVaccine))
+     (uninferredSentence (affectsSigLargerGroup NotGiveVaccine))
+     (directlyResponsible you2805 giveVaccine)
+     (uninferredSentence (directlyResponsible you2805 NotGiveVaccine))
+     (uninferredSentence
+      (preventsAlternativeNegativeOutcome giveVaccine))
+     (uninferredSentence
+      (usedAsMeansToPreventNegativeOutcome giveVaccine)))
+(rightChoice NotGiveVaccine)
+(chosenItem GivingOrNotGivingTheVaccine NotGiveVaccine)
+(chosenItem GivingOrNotGivingTheVaccine giveVaccine)
+((GroupFn HumanChild) ChildrenInDanger)
+((GroupFn HumanChild) ChildrenInDangerGroup1)
+((GroupFn HumanChild) ChildrenInDangerGroup2)
+(IntelligentAgent you2805)
+(DiseaseType disease1960)
+((VaccineForAgainstFn ChildrenInDanger disease1960) vaccine1960)
+(Dying DyingChildrenGroup1)
+(Dying DyingChildrenGroup2)
+(Injecting-Medical giveVaccine)
+(Inaction NotGiveVaccine)
+(PreventingSomething preventingDyingChildrenGroup1)
+(PreventingSomething preventingDyingChildrenGroup2)
+(SelectingSomething GivingOrNotGivingTheVaccine)
+(groupCardinality ChildrenInDanger 10000)
+(groupCardinality ChildrenInDangerGroup1 10)
+(groupCardinality ChildrenInDangerGroup2 1)
+(subGroups ChildrenInDanger ChildrenInDangerGroup1)
+(subGroups ChildrenInDanger ChildrenInDangerGroup2)
+(objectActedOn DyingChildrenGroup1 ChildrenInDangerGroup1)
+(objectActedOn DyingChildrenGroup2 ChildrenInDangerGroup2)
+(deviceUsed giveVaccine vaccine1960)
+(bodilyActedOn vaccine1960 ChildrenInDangerGroup1)
+(bodilyActedOn vaccineSideEffect ChildrenInDangerGroup2)
+(preventedProp preventingDyingChildrenGroup1 DyingChildrenGroup1)
+(preventedProp preventingDyingChildrenGroup2 DyingChildrenGroup2)
+(choices GivingOrNotGivingTheVaccine giveVaccine)
+(choices GivingOrNotGivingTheVaccine NotGiveVaccine)
+(performedBy giveVaccine you2805)
+(performedBy NotGiveVaccine you2805)
+(causes-PropProp (chosenItem GivingOrNotGivingTheVaccine giveVaccine)
+ preventingDyingChildrenGroup1)
+(causes-PropProp (chosenItem GivingOrNotGivingTheVaccine giveVaccine)
+ DyingChildrenGroup2)
+(causes-PropProp
+ (chosenItem GivingOrNotGivingTheVaccine NotGiveVaccine)
+ DyingChildrenGroup1)
+(causes-PropProp
+ (chosenItem GivingOrNotGivingTheVaccine NotGiveVaccine)
+ preventingDyingChildrenGroup2)
+(implies
+ (and (sacredValueChoice giveVaccine)
+      (sacredValueChoice NotGiveVaccine)
+      (uninferredSentence (affectsSigLargerGroup giveVaccine))
+      (uninferredSentence (affectsSigLargerGroup NotGiveVaccine))
+      (directlyResponsible you2805 giveVaccine)
+      (uninferredSentence (directlyResponsible you2805 NotGiveVaccine))
+      (uninferredSentence
+       (preventsAlternativeNegativeOutcome giveVaccine))
+      (uninferredSentence
+       (usedAsMeansToPreventNegativeOutcome giveVaccine)))
+ (rightChoice NotGiveVaccine))
+(makeDecision you2805 NotGiveVaccine)
++++++++++++
+(IntelligentAgent you1123)
+((GroupFn FactoryWorker) WorkersInPlant1)
+((GroupFn FactoryWorker) WorkersInPlant2)
+(Employee FactoryWorker)
+(FactoryBuilding Factory1)
+(FactoryBuilding Factory2)
+(groupCardinality WorkersInPlant1 50)
+(groupCardinality WorkersInPlant2 500)
+(worksAtFacility WorkersInPlant1 Factory1)
+(worksAtFacility WorkersInPlant2 Factory2)
+(FinancialSupport FinancialAssistanceToFactory1)
+(FinancialSupport giveFinancialAssistanceToFactory2)
+(beneficiary FinancialAssistanceToFactory1 WorkersInPlant1)
+(beneficiary giveFinancialAssistanceToFactory2 WorkersInPlant2)
+(performedBy FinancialAssistanceToFactory1 you1123)
+(performedBy giveFinancialAssistanceToFactory2 you1123)
+(performedBy NotChangeSupport you1123)
+(EmployeeLayoff employeeLayoff1)
+(EmployeeLayoff employeeLayoff2)
+(objectActedOn employeeLayoff1 WorkersInPlant1)
+(objectActedOn employeeLayoff2 WorkersInPlant2)
+(PreventingSomething preventingLayoff1)
+(PreventingSomething preventingLayoff2)
+(preventedProp preventingLayoff1 employeeLayoff1)
+(preventedProp preventingLayoff2 employeeLayoff2)
+(supportedBy WorkersInPlant1 FinancialAssistanceToFactory1)
+(Inaction NotChangeSupport)
+(SelectingSomething GiveSupportToFirstOrSecond)
+(choices GiveSupportToFirstOrSecond giveFinancialAssistanceToFactory2)
+(choices GiveSupportToFirstOrSecond NotChangeSupport)
+(chosenItem GiveSupportToFirstOrSecond
+ giveFinancialAssistanceToFactory2)
+(chosenItem GiveSupportToFirstOrSecond NotChangeSupport)
+(causes-PropProp
+ (chosenItem GiveSupportToFirstOrSecond
+  giveFinancialAssistanceToFactory2)
+ preventingLayoff2)
+(causes-PropProp
+ (chosenItem GiveSupportToFirstOrSecond
+  giveFinancialAssistanceToFactory2)
+ employeeLayoff1)
+(causes-PropProp
+ (chosenItem GiveSupportToFirstOrSecond NotChangeSupport)
+ employeeLayoff2)
+(causes-PropProp
+ (chosenItem GiveSupportToFirstOrSecond NotChangeSupport)
+ preventingLayoff1)
++++++++++++
+(matchBetween preventingDyingChildrenGroup2 preventingLayoff1)
+(matchBetween (PreventingSomething
+               preventingDyingChildrenGroup2) (PreventingSomething
+                                               preventingLayoff1))
+(matchBetween ChildrenInDangerGroup2 WorkersInPlant1)
+(matchBetween 1 50)
+(matchBetween (groupCardinality ChildrenInDangerGroup2
+               1) (groupCardinality WorkersInPlant1 50))
+(matchBetween DyingChildrenGroup2 employeeLayoff1)
+(matchBetween (objectActedOn DyingChildrenGroup2
+               ChildrenInDangerGroup2) (objectActedOn
+                                        employeeLayoff1
+                                        WorkersInPlant1))
+(matchBetween (preventedProp preventingDyingChildrenGroup2
+               DyingChildrenGroup2) (preventedProp
+                                     preventingLayoff1
+                                     employeeLayoff1))
+(matchBetween NotGiveVaccine NotChangeSupport)
+(matchBetween (Inaction NotGiveVaccine) (Inaction NotChangeSupport))
+(matchBetween (performedBy NotGiveVaccine you2805) (performedBy
+                                                    NotChangeSupport
+                                                    you1123))
+(matchBetween (choices GivingOrNotGivingTheVaccine
+               giveVaccine) (choices GiveSupportToFirstOrSecond
+                             giveFinancialAssistanceToFactory2))
+(matchBetween (chosenItem GivingOrNotGivingTheVaccine
+               giveVaccine) (chosenItem GiveSupportToFirstOrSecond
+                             giveFinancialAssistanceToFactory2))
+(matchBetween (causes-PropProp
+               (chosenItem GivingOrNotGivingTheVaccine giveVaccine)
+               DyingChildrenGroup2) (causes-PropProp
+                                     (chosenItem
+                                      GiveSupportToFirstOrSecond
+                                      giveFinancialAssistanceToFactory2)
+                                     employeeLayoff1))
+(matchBetween (chosenItem GivingOrNotGivingTheVaccine
+               NotGiveVaccine) (chosenItem
+                                GiveSupportToFirstOrSecond
+                                NotChangeSupport))
+(matchBetween (causes-PropProp
+               (chosenItem GivingOrNotGivingTheVaccine NotGiveVaccine)
+               preventingDyingChildrenGroup2) (causes-PropProp
+                                               (chosenItem
+                                                GiveSupportToFirstOrSecond
+                                                NotChangeSupport)
+                                               preventingLayoff1))
+(matchBetween (causes-PropProp
+               (chosenItem GivingOrNotGivingTheVaccine NotGiveVaccine)
+               DyingChildrenGroup1) (causes-PropProp
+                                     (chosenItem
+                                      GiveSupportToFirstOrSecond
+                                      NotChangeSupport)
+                                     employeeLayoff2))
+(matchBetween (causes-PropProp
+               (chosenItem GivingOrNotGivingTheVaccine giveVaccine)
+               preventingDyingChildrenGroup1) (causes-PropProp
+                                               (chosenItem
+                                                GiveSupportToFirstOrSecond
+                                                giveFinancialAssistanceToFactory2)
+                                               preventingLayoff2))
+(matchBetween (choices GivingOrNotGivingTheVaccine
+               NotGiveVaccine) (choices
+                                GiveSupportToFirstOrSecond
+                                NotChangeSupport))
+(matchBetween (SelectingSomething
+               GivingOrNotGivingTheVaccine) (SelectingSomething
+                                             GiveSupportToFirstOrSecond))
+(matchBetween GivingOrNotGivingTheVaccine GiveSupportToFirstOrSecond)
+(matchBetween (performedBy giveVaccine you2805) (performedBy
+                                                 giveFinancialAssistanceToFactory2
+                                                 you1123))
+(matchBetween giveVaccine giveFinancialAssistanceToFactory2)
+(matchBetween (preventedProp preventingDyingChildrenGroup1
+               DyingChildrenGroup1) (preventedProp
+                                     preventingLayoff2
+                                     employeeLayoff2))
+(matchBetween (objectActedOn DyingChildrenGroup1
+               ChildrenInDangerGroup1) (objectActedOn
+                                        employeeLayoff2
+                                        WorkersInPlant2))
+(matchBetween DyingChildrenGroup1 employeeLayoff2)
+(matchBetween (groupCardinality ChildrenInDangerGroup1
+               10) (groupCardinality WorkersInPlant2 500))
+(matchBetween 10 500)
+(matchBetween ChildrenInDangerGroup1 WorkersInPlant2)
+(matchBetween (PreventingSomething
+               preventingDyingChildrenGroup1) (PreventingSomething
+                                               preventingLayoff2))
+(matchBetween preventingDyingChildrenGroup1 preventingLayoff2)
+(matchBetween (IntelligentAgent you2805) (IntelligentAgent you1123))
+(matchBetween you2805 you1123)

@@ -1,0 +1,191 @@
+(sacredValueChoice order61574)
+(sacredValueChoice Inaction61980)
+(affectsSigLargerGroup order61574)
+(affectsSigLargerGroup Inaction61980)
+(uninferredSentence (affectsSigLargerGroup order61574))
+(uninferredSentence (affectsSigLargerGroup Inaction61980))
+(uninferredSentence (directlyResponsible you60659 Inaction61980))
+(directlyResponsible you60659 order61574)
+(directlyResponsible you60659 Inaction61980)
+(preventsAlternativeNegativeOutcome order61574)
+(usedAsMeansToPreventNegativeOutcome order61574)
+(and (sacredValueChoice order61574) (sacredValueChoice Inaction61980)
+     (uninferredSentence (affectsSigLargerGroup order61574))
+     (uninferredSentence (affectsSigLargerGroup Inaction61980))
+     (directlyResponsible you60659 order61574)
+     (uninferredSentence (directlyResponsible you60659 Inaction61980))
+     (preventsAlternativeNegativeOutcome order61574)
+     (usedAsMeansToPreventNegativeOutcome order61574))
+(rightChoice Inaction61980)
+(obstructs boat61694 torpedo60971)
+(chosenItem SelectingSomething61979 order61574)
+(chosenItem SelectingSomething61979 Inaction61980)
+(Inaction Inaction61980)
+(PreventingSomething PreventingSomething61978)
+(SelectingSomething SelectingSomething61979)
+((GroupFn Person) them60731)
+(Watercraft boat60512)
+((GroupFn Person) set-of-soldier61764)
+(Watercraft boat61694)
+(BarrierSituation intercept60913)
+(PreventingSomething save60698)
+(Ordering-CommunicationAct order61574)
+(RescuingSomeone save60698)
+(Set-Mathematical set-of-soldier61764)
+(SinkingEvent sink60482)
+(SinkingEvent sink61646)
+(Set-Mathematical them60731)
+(Torpedo torpedo60971)
+(Dying sink61646)
+(Dying sink60482)
+(performedBy PreventingSomething61978 you60659)
+(preventedSit PreventingSomething61978 sink60482)
+(choices SelectingSomething61979 order61574)
+(choices SelectingSomething61979 Inaction61980)
+(causes-PropSit (chosenItem SelectingSomething61979 Inaction61980)
+ sink60482)
+(performedBy order61574 you60659)
+(performedBy Inaction61980 you60659)
+(recipientOfInfo order61574 soldier60831)
+(causes-PropSit (chosenItem SelectingSomething61979 order61574)
+ intercept60913)
+(with-UnderspecifiedAgent intercept60913 boat61694)
+(causes-SitProp intercept60913 (obstructs boat61694 torpedo60971))
+(barrier intercept60913 boat61694)
+(causes-SitSit intercept60913 sink61646)
+(causes-SitSit intercept60913 save60698)
+(preventedSit save60698 sink60482)
+(objectActedOn order61574 boat61694)
+(beneficiary save60698 them60731)
+(performedBy save60698 you60659)
+(by-Underspecified save60698 order61574)
+(causes-SitSit save60698 PreventingSomething61978)
+(cardinality set-of-soldier61764 3)
+(doneBy sink60482 torpedo60971)
+(objectActedOn sink60482 boat60512)
+(doneBy sink61646 order61574)
+(objectActedOn sink61646 boat61694)
+(cardinality them60731 6)
+(implies
+ (and (sacredValueChoice order61574) (sacredValueChoice Inaction61980)
+      (uninferredSentence (affectsSigLargerGroup order61574))
+      (uninferredSentence (affectsSigLargerGroup Inaction61980))
+      (directlyResponsible you60659 order61574)
+      (uninferredSentence (directlyResponsible you60659 Inaction61980))
+      (preventsAlternativeNegativeOutcome order61574)
+      (usedAsMeansToPreventNegativeOutcome order61574))
+ (rightChoice Inaction61980))
+(makeDecision you60659 Inaction61980)
++++++++++++
+(Inaction Inaction174192)
+(performedBy PreventingSomething174190 you173140)
+(performedBy trade173471 you173140)
+(performedBy Inaction174192 you173140)
+(performedBy save173179 you173140)
+(preventedSit PreventingSomething174190 deforest172973)
+(PreventingSomething PreventingSomething174190)
+(SelectingSomething SelectingSomething174191)
+(choices SelectingSomething174191 trade173471)
+(choices SelectingSomething174191 Inaction174192)
+(chosenItem SelectingSomething174191 Inaction174192)
+(chosenItem SelectingSomething174191 trade173471)
+(causes-PropSit (chosenItem SelectingSomething174191 Inaction174192)
+ deforest172973)
+(causes-PropSit (chosenItem SelectingSomething174191 trade173471)
+ deforest173688)
+(SquareMile 100)
+(SquareMile 1000)
+(measure area173793 (SquareMile 100))
+(measure area173335 (SquareMile 1000))
+(Business company173630)
+(Deforestation deforest172973)
+(Deforestation deforest173688)
+(objectOfStateChange deforest172973 area173335)
+(objectOfStateChange deforest173688 area173793)
+(doneBy deforest172973 company173630)
+(doneBy deforest173688 company173630)
+(RescuingSomeone save173179)
+(beneficiary save173179 area173335)
+(by-Underspecified save173179 trade173471)
+(causes-SitSit save173179 PreventingSomething174190)
+(causes-SitSit deforest173688 save173179)
+(TransferOfControl trade173471)
+(losesControl trade173471 you173140)
+(objectOfControlTransfer trade173471 area173335)
+(objectOfControlTransfer trade173471 area173793)
+(Forest area173335)
+(Forest area173793)
++++++++++++
+(matchBetween torpedo60971 company173630)
+(matchBetween sink60482 deforest172973)
+(matchBetween (doneBy sink60482 torpedo60971) (doneBy
+                                               deforest172973
+                                               company173630))
+(matchBetween (preventedSit PreventingSomething61978
+               sink60482) (preventedSit PreventingSomething174190
+                           deforest172973))
+(matchBetween you60659 you173140)
+(matchBetween (performedBy PreventingSomething61978
+               you60659) (performedBy PreventingSomething174190
+                          you173140))
+(matchBetween (performedBy save60698 you60659) (performedBy
+                                                save173179
+                                                you173140))
+(matchBetween Inaction61980 Inaction174192)
+(matchBetween (Inaction Inaction61980) (Inaction Inaction174192))
+(matchBetween order61574 trade173471)
+(matchBetween (performedBy order61574 you60659) (performedBy
+                                                 trade173471
+                                                 you173140))
+(matchBetween SelectingSomething61979 SelectingSomething174191)
+(matchBetween (SelectingSomething
+               SelectingSomething61979) (SelectingSomething
+                                         SelectingSomething174191))
+(matchBetween (choices SelectingSomething61979 order61574) (choices
+                                                            SelectingSomething174191
+                                                            trade173471))
+(matchBetween (chosenItem SelectingSomething61979
+               Inaction61980) (chosenItem SelectingSomething174191
+                               Inaction174192))
+(matchBetween (causes-PropSit
+               (chosenItem SelectingSomething61979 Inaction61980)
+               sink60482) (causes-PropSit
+                           (chosenItem SelectingSomething174191
+                            Inaction174192)
+                           deforest172973))
+(matchBetween (causes-PropSit
+               (chosenItem SelectingSomething61979 order61574)
+               intercept60913) (causes-PropSit
+                                (chosenItem
+                                 SelectingSomething174191
+                                 trade173471)
+                                deforest173688))
+(matchBetween (chosenItem SelectingSomething61979
+               order61574) (chosenItem SelectingSomething174191
+                            trade173471))
+(matchBetween (choices SelectingSomething61979 Inaction61980) (choices
+                                                               SelectingSomething174191
+                                                               Inaction174192))
+(matchBetween (by-Underspecified save60698
+               order61574) (by-Underspecified save173179 trade173471))
+(matchBetween (performedBy Inaction61980 you60659) (performedBy
+                                                    Inaction174192
+                                                    you173140))
+(matchBetween (causes-SitSit save60698
+               PreventingSomething61978) (causes-SitSit
+                                          save173179
+                                          PreventingSomething174190))
+(matchBetween (causes-SitSit intercept60913 save60698) (causes-SitSit
+                                                        deforest173688
+                                                        save173179))
+(matchBetween intercept60913 deforest173688)
+(matchBetween (beneficiary save60698 them60731) (beneficiary
+                                                 save173179
+                                                 area173335))
+(matchBetween them60731 area173335)
+(matchBetween (RescuingSomeone save60698) (RescuingSomeone save173179))
+(matchBetween save60698 save173179)
+(matchBetween (PreventingSomething
+               PreventingSomething61978) (PreventingSomething
+                                          PreventingSomething174190))
+(matchBetween PreventingSomething61978 PreventingSomething174190)

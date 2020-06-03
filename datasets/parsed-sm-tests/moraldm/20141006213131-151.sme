@@ -1,0 +1,180 @@
+(sacredValueChoice order131049)
+(sacredValueChoice Inaction131950)
+(affectsSigLargerGroup order131049)
+(affectsSigLargerGroup Inaction131950)
+(uninferredSentence (affectsSigLargerGroup order131049))
+(uninferredSentence (affectsSigLargerGroup Inaction131950))
+(uninferredSentence (directlyResponsible you128898 Inaction131950))
+(uninferredSentence (preventsAlternativeNegativeOutcome order131049))
+(uninferredSentence (usedAsMeansToPreventNegativeOutcome order131049))
+(directlyResponsible you128898 order131049)
+(directlyResponsible you128898 Inaction131950)
+(preventsAlternativeNegativeOutcome order131049)
+(usedAsMeansToPreventNegativeOutcome order131049)
+(and (sacredValueChoice order131049) (sacredValueChoice Inaction131950)
+     (uninferredSentence (affectsSigLargerGroup order131049))
+     (uninferredSentence (affectsSigLargerGroup Inaction131950))
+     (directlyResponsible you128898 order131049)
+     (uninferredSentence
+      (directlyResponsible you128898 Inaction131950))
+     (uninferredSentence
+      (preventsAlternativeNegativeOutcome order131049))
+     (uninferredSentence
+      (usedAsMeansToPreventNegativeOutcome order131049)))
+(and (RefugeeCamp refugee-camp129739) (Convoy convoy127246)
+     (primaryObjectMoving go129115 convoy127246)
+     (toLocation go129115 refugee-camp129739)
+     (Movement-TranslationEvent go129115))
+(rightChoice Inaction131950)
+(RefugeeCamp refugee-camp129739)
+(Convoy convoy127246)
+(primaryObjectMoving go129115 convoy127246)
+(toLocation go129115 refugee-camp129739)
+(Movement-TranslationEvent go129115)
+(chosenItem SelectingSomething131949 order131049)
+(chosenItem SelectingSomething131949 Inaction131950)
+(Inaction Inaction131950)
+(PreventingSomething PreventingSomething131948)
+(SelectingSomething SelectingSomething131949)
+(Dying die128829)
+(Dying die131270)
+(Famine famine127520)
+(FoodOrDrink food127320)
+(Ordering-CommunicationAct order131049)
+(RefugeeCamp refugee-camp127421)
+(RescuingSomeone save128937)
+(Set-Mathematical set-of-people131188)
+(Set-Mathematical them128970)
+(TransportationEvent transport127299)
+(Truck truck127274)
+(performedBy PreventingSomething131948 you128898)
+(preventedSit PreventingSomething131948 die128829)
+(choices SelectingSomething131949 order131049)
+(choices SelectingSomething131949 Inaction131950)
+(causes-PropSit (chosenItem SelectingSomething131949 Inaction131950)
+ die128829)
+(causes-PropSit (chosenItem SelectingSomething131949 order131049)
+ save128937)
+(in-UnderspecifiedContainer die131270 refugee-camp129739)
+(in-UnderspecifiedContainer famine127520 ContinentOfAfrica)
+(performedBy order131049 you128898)
+(performedBy Inaction131950 you128898)
+(recipientOfInfo order131049 convoy127246)
+(infoTransferred order131049
+ (and (RefugeeCamp refugee-camp129739) (Convoy convoy127246)
+      (primaryObjectMoving go129115 convoy127246)
+      (toLocation go129115 refugee-camp129739)
+      (Movement-TranslationEvent go129115)))
+(causes-SitSit order131049 die131270)
+(beneficiary save128937 them128970)
+(performedBy save128937 you128898)
+(by-Underspecified save128937 order131049)
+(causes-SitSit save128937 PreventingSomething131948)
+(cardinality set-of-people131188 100)
+(cardinality them128970 1000)
+(to-UnderspecifiedLocation transport127299 refugee-camp127421)
+(transporter transport127299 convoy127246)
+(transportees transport127299 food127320)
+(possessiveRelation truck127274 convoy127246)
+(implies
+ (and (sacredValueChoice order131049)
+      (sacredValueChoice Inaction131950)
+      (uninferredSentence (affectsSigLargerGroup order131049))
+      (uninferredSentence (affectsSigLargerGroup Inaction131950))
+      (directlyResponsible you128898 order131049)
+      (uninferredSentence
+       (directlyResponsible you128898 Inaction131950))
+      (uninferredSentence
+       (preventsAlternativeNegativeOutcome order131049))
+      (uninferredSentence
+       (usedAsMeansToPreventNegativeOutcome order131049)))
+ (rightChoice Inaction131950))
+(makeDecision you128898 Inaction131950)
++++++++++++
+(IntelligentAgent you1143)
+((GroupFn HomelessPerson) group1FemaleHomeless)
+((GroupFn HomelessPerson) group2FemaleHomeless)
+(groupCardinality group1FemaleHomeless 50)
+(groupCardinality group2FemaleHomeless 150)
+(HumanShelterConstruction shelter1)
+(HumanShelterConstruction shelter2)
+(ShelteringSomething shelteringGroup1)
+(ShelteringSomething shelteringGroup2)
+(performedBy shelteringGroup1 shelter1)
+(performedBy FinancialAssitanceToShelter1 you1143)
+(performedBy shelteringGroup2 shelter1)
+(performedBy FinancialAssitanceToShelter2 you1143)
+(performedBy notChangeSupport you1143)
+(objectActedOn shelteringGroup1 group1FemaleHomeless)
+(objectActedOn shelteringGroup2 group2FemaleHomeless)
+(objectActedOn harmingGroup1 group1FemaleHomeless)
+(objectActedOn harmingGroup2 group2FemaleHomeless)
+(FinancialSupport FinancialAssitanceToShelter1)
+(FinancialSupport FinancialAssitanceToShelter2)
+(beneficiary FinancialAssitanceToShelter1 shelter1)
+(beneficiary FinancialAssitanceToShelter2 shelter2)
+(HarmingAnAgent harmingGroup1)
+(HarmingAnAgent harmingGroup2)
+(PreventingSomething preventingHarmingGroup1)
+(PreventingSomething preventingHarmingGroup2)
+(preventedProp preventingHarmingGroup1 harmingGroup1)
+(preventedProp preventingHarmingGroup2 harmingGroup2)
+(Inaction notChangeSupport)
+(SelectingSomething GivingOrNotGivingAssistance)
+(choices GivingOrNotGivingAssistance FinancialAssitanceToShelter2)
+(choices GivingOrNotGivingAssistance notChangeSupport)
+(chosenItem GivingOrNotGivingAssistance FinancialAssitanceToShelter2)
+(chosenItem GivingOrNotGivingAssistance notChangeSupport)
+(causes-PropProp
+ (chosenItem GivingOrNotGivingAssistance FinancialAssitanceToShelter2)
+ preventingHarmingGroup2)
+(causes-PropProp
+ (chosenItem GivingOrNotGivingAssistance FinancialAssitanceToShelter2)
+ harmingGroup1)
+(causes-PropProp
+ (chosenItem GivingOrNotGivingAssistance notChangeSupport)
+ preventingHarmingGroup1)
+(causes-PropProp
+ (chosenItem GivingOrNotGivingAssistance notChangeSupport)
+ harmingGroup2)
++++++++++++
+(matchBetween save128937 FinancialAssitanceToShelter1)
+(matchBetween them128970 shelter1)
+(matchBetween (beneficiary save128937 them128970) (beneficiary
+                                                   FinancialAssitanceToShelter1
+                                                   shelter1))
+(matchBetween SelectingSomething131949 GivingOrNotGivingAssistance)
+(matchBetween (SelectingSomething
+               SelectingSomething131949) (SelectingSomething
+                                          GivingOrNotGivingAssistance))
+(matchBetween order131049 FinancialAssitanceToShelter2)
+(matchBetween (performedBy order131049 you128898) (performedBy
+                                                   FinancialAssitanceToShelter2
+                                                   you1143))
+(matchBetween (choices SelectingSomething131949 order131049) (choices
+                                                              GivingOrNotGivingAssistance
+                                                              FinancialAssitanceToShelter2))
+(matchBetween (choices SelectingSomething131949
+               Inaction131950) (choices
+                                GivingOrNotGivingAssistance
+                                notChangeSupport))
+(matchBetween (chosenItem SelectingSomething131949
+               Inaction131950) (chosenItem
+                                GivingOrNotGivingAssistance
+                                notChangeSupport))
+(matchBetween (chosenItem SelectingSomething131949
+               order131049) (chosenItem GivingOrNotGivingAssistance
+                             FinancialAssitanceToShelter2))
+(matchBetween (performedBy Inaction131950 you128898) (performedBy
+                                                      notChangeSupport
+                                                      you1143))
+(matchBetween (performedBy save128937 you128898) (performedBy
+                                                  FinancialAssitanceToShelter1
+                                                  you1143))
+(matchBetween you128898 you1143)
+(matchBetween (Inaction Inaction131950) (Inaction notChangeSupport))
+(matchBetween Inaction131950 notChangeSupport)
+(matchBetween (PreventingSomething
+               PreventingSomething131948) (PreventingSomething
+                                           preventingHarmingGroup2))
+(matchBetween PreventingSomething131948 preventingHarmingGroup2)

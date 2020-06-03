@@ -1,0 +1,13 @@
+(2D-Shape-Generic Group-7)
+(Proximal-Similar-Shape-Group Group-7)
+(Centered-Element Group-7)
++++++++++++
+(Centered-Element Group-8)
+(Proximal-Similar-Shape-Group Group-8)
+(2D-Shape-Generic Group-8)
++++++++++++
+(matchBetween (Proximal-Similar-Shape-Group
+               Group-7) (Proximal-Similar-Shape-Group Group-8))
+(matchBetween (Centered-Element Group-7) (Centered-Element Group-8))
+(matchBetween (2D-Shape-Generic Group-7) (2D-Shape-Generic Group-8))
+(matchBetween Group-7 Group-8)

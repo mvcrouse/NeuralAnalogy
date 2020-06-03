@@ -1,0 +1,148 @@
+(sacredValueChoice ReRouteToCamp2)
+(sacredValueChoice notReRoute)
+(affectsSigLargerGroup ReRouteToCamp2)
+(affectsSigLargerGroup notReRoute)
+(uninferredSentence (affectsSigLargerGroup ReRouteToCamp2))
+(uninferredSentence (affectsSigLargerGroup notReRoute))
+(uninferredSentence (directlyResponsible you8115 notReRoute))
+(uninferredSentence (preventsAlternativeNegativeOutcome ReRouteToCamp2))
+(uninferredSentence
+ (usedAsMeansToPreventNegativeOutcome ReRouteToCamp2))
+(directlyResponsible you8115 ReRouteToCamp2)
+(directlyResponsible you8115 notReRoute)
+(preventsAlternativeNegativeOutcome ReRouteToCamp2)
+(usedAsMeansToPreventNegativeOutcome ReRouteToCamp2)
+(and (sacredValueChoice ReRouteToCamp2) (sacredValueChoice notReRoute)
+     (uninferredSentence (affectsSigLargerGroup ReRouteToCamp2))
+     (uninferredSentence (affectsSigLargerGroup notReRoute))
+     (directlyResponsible you8115 ReRouteToCamp2)
+     (uninferredSentence (directlyResponsible you8115 notReRoute))
+     (uninferredSentence
+      (preventsAlternativeNegativeOutcome ReRouteToCamp2))
+     (uninferredSentence
+      (usedAsMeansToPreventNegativeOutcome ReRouteToCamp2)))
+(rightChoice notReRoute)
+(chosenItem SendingTruckToCamp1OrCamp2 notReRoute)
+(chosenItem SendingTruckToCamp1OrCamp2 ReRouteToCamp2)
+(IntelligentAgent you8115)
+(RefugeeCamp Camp1)
+(RefugeeCamp Camp2)
+((GroupFn Person) PeopleInDangerInCamp1)
+((GroupFn Person) PeopleInDangerInCamp2)
+(Starvation PeopleDyingInCamp1)
+(Starvation PeopleDyingInCamp2)
+(Convoy TruckConvoy)
+(MovementEvent ReRouteToCamp2)
+(PreventingSomething preventingPeopleDyingInCamp1)
+(PreventingSomething preventingPeopleDyingInCamp2)
+(Inaction notReRoute)
+(SelectingSomething SendingTruckToCamp1OrCamp2)
+(groupCardinality PeopleInDangerInCamp1 100)
+(groupCardinality PeopleInDangerInCamp2 1000)
+(residesInRegion PeopleInDangerInCamp1 Camp1)
+(residesInRegion PeopleInDangerInCamp2 Camp2)
+(objectActedOn PeopleDyingInCamp1 PeopleInDangerInCamp1)
+(objectActedOn PeopleDyingInCamp2 PeopleInDangerInCamp2)
+(containedObject FoodTruck Food)
+(groupMemberType TruckConvoy FoodTruck)
+(objectActedOn ReRouteToCamp2 TruckConvoy)
+(toLocation ReRouteToCamp2 Camp2)
+(preventedProp preventingPeopleDyingInCamp1 PeopleDyingInCamp1)
+(preventedProp preventingPeopleDyingInCamp2 PeopleDyingInCamp2)
+(choices SendingTruckToCamp1OrCamp2 ReRouteToCamp2)
+(choices SendingTruckToCamp1OrCamp2 notReRoute)
+(performedBy ReRouteToCamp2 you8115)
+(performedBy notReRoute you8115)
+(causes-PropProp (chosenItem SendingTruckToCamp1OrCamp2 ReRouteToCamp2)
+ preventingPeopleDyingInCamp2)
+(causes-PropProp (chosenItem SendingTruckToCamp1OrCamp2 ReRouteToCamp2)
+ PeopleDyingInCamp1)
+(causes-PropProp (chosenItem SendingTruckToCamp1OrCamp2 notReRoute)
+ PeopleDyingInCamp2)
+(causes-PropProp (chosenItem SendingTruckToCamp1OrCamp2 notReRoute)
+ preventingPeopleDyingInCamp1)
+(implies
+ (and (sacredValueChoice ReRouteToCamp2) (sacredValueChoice notReRoute)
+      (uninferredSentence (affectsSigLargerGroup ReRouteToCamp2))
+      (uninferredSentence (affectsSigLargerGroup notReRoute))
+      (directlyResponsible you8115 ReRouteToCamp2)
+      (uninferredSentence (directlyResponsible you8115 notReRoute))
+      (uninferredSentence
+       (preventsAlternativeNegativeOutcome ReRouteToCamp2))
+      (uninferredSentence
+       (usedAsMeansToPreventNegativeOutcome ReRouteToCamp2)))
+ (rightChoice notReRoute))
+(makeDecision you8115 notReRoute)
++++++++++++
+(Inaction Inaction43400)
+(performedBy PreventingSomething43398 you39300)
+(performedBy redirect40379 you39300)
+(performedBy Inaction43400 you39300)
+(performedBy save39339 you39300)
+(PreventingSomething PreventingSomething43398)
+(SelectingSomething SelectingSomething43399)
+(choices SelectingSomething43399 redirect40379)
+(choices SelectingSomething43399 Inaction43400)
+(chosenItem SelectingSomething43399 redirect40379)
+(causes-PropSit (chosenItem SelectingSomething43399 redirect40379)
+ save39339)
+(causes-PropSit (chosenItem SelectingSomething43399 redirect40379)
+ (possessiveRelation patient40523 paraplegia40592))
+(possessiveRelation patient40523 paraplegia40592)
+(HarmingAnAgent (possessiveRelation patient40523 paraplegia40592))
+(Paraplegia paraplegia39232)
+(Paraplegia paraplegia40592)
+(MedicalPatient patient40523)
+(objectActedOn redirect40379 virus39075)
+(primaryObjectMoving redirect40379 virus39075)
+(toLocation redirect40379 room39499)
+(Translation-LocationChange redirect40379)
+(with-UnderspecifiedAgent room39499 patient40523)
+(RoomInAConstruction room39499)
+(RescuingSomeone save39339)
+(beneficiary save39339 set-of-patient39165)
+(by-Underspecified save39339 redirect40379)
+(causes-SitSit save39339 PreventingSomething43398)
+((GroupFn MedicalPatient) set-of-patient39165)
+(cardinality set-of-patient39165 4)
+(cardinality patient40523 1)
+(Set-Mathematical set-of-patient39165)
+(Virus virus39075)
++++++++++++
+(matchBetween notReRoute Inaction43400)
+(matchBetween (Inaction notReRoute) (Inaction Inaction43400))
+(matchBetween you8115 you39300)
+(matchBetween (performedBy notReRoute you8115) (performedBy
+                                                Inaction43400
+                                                you39300))
+(matchBetween Camp2 room39499)
+(matchBetween (toLocation ReRouteToCamp2 Camp2) (toLocation
+                                                 redirect40379
+                                                 room39499))
+(matchBetween (performedBy ReRouteToCamp2 you8115) (performedBy
+                                                    redirect40379
+                                                    you39300))
+(matchBetween (chosenItem SendingTruckToCamp1OrCamp2
+               ReRouteToCamp2) (chosenItem
+                                SelectingSomething43399
+                                redirect40379))
+(matchBetween (choices SendingTruckToCamp1OrCamp2
+               ReRouteToCamp2) (choices
+                                SelectingSomething43399
+                                redirect40379))
+(matchBetween (choices SendingTruckToCamp1OrCamp2 notReRoute) (choices
+                                                               SelectingSomething43399
+                                                               Inaction43400))
+(matchBetween (objectActedOn ReRouteToCamp2 TruckConvoy) (objectActedOn
+                                                          redirect40379
+                                                          virus39075))
+(matchBetween TruckConvoy virus39075)
+(matchBetween ReRouteToCamp2 redirect40379)
+(matchBetween (SelectingSomething
+               SendingTruckToCamp1OrCamp2) (SelectingSomething
+                                            SelectingSomething43399))
+(matchBetween SendingTruckToCamp1OrCamp2 SelectingSomething43399)
+(matchBetween (PreventingSomething
+               preventingPeopleDyingInCamp1) (PreventingSomething
+                                              PreventingSomething43398))
+(matchBetween preventingPeopleDyingInCamp1 PreventingSomething43398)

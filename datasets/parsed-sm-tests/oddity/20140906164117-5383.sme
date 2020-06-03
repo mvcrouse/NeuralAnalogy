@@ -1,0 +1,42 @@
+(parallelElements Element-6 Element-5)
+(2D-Shape-Generic Element-6)
+(2D-Shape-Straight Element-6)
+(2D-Shape-Open Element-6)
+(ObjectsBorderColoredFnBlackColor Element-5)
+(ObjectsBorderColoredFnBlackColor Element-6)
+(2D-Shape-Open Element-5)
+(2D-Shape-Straight Element-5)
+(2D-Shape-Generic Element-5)
++++++++++++
+(2D-Shape-Generic Object-1051)
+(2D-Shape-Generic Object-1052)
+(2D-Shape-Straight Object-1051)
+(2D-Shape-Straight Object-1052)
+(2D-Shape-Open Object-1051)
+(2D-Shape-Open Object-1052)
+(ObjectsBorderColoredFnBlackColor Object-1052)
+(ObjectsBorderColoredFnBlackColor Object-1051)
+(parallelElements Object-1052 Object-1051)
+(Centered-Element Object-1051)
++++++++++++
+(matchBetween Element-5 Object-1051)
+(matchBetween (ObjectsBorderColoredFnBlackColor
+               Element-5) (ObjectsBorderColoredFnBlackColor
+                           Object-1051))
+(matchBetween (2D-Shape-Open Element-6) (2D-Shape-Open Object-1052))
+(matchBetween (2D-Shape-Straight Element-6) (2D-Shape-Straight
+                                             Object-1052))
+(matchBetween (2D-Shape-Generic Element-6) (2D-Shape-Generic
+                                            Object-1052))
+(matchBetween (parallelElements Element-6 Element-5) (parallelElements
+                                                      Object-1052
+                                                      Object-1051))
+(matchBetween (2D-Shape-Generic Element-5) (2D-Shape-Generic
+                                            Object-1051))
+(matchBetween (2D-Shape-Straight Element-5) (2D-Shape-Straight
+                                             Object-1051))
+(matchBetween (2D-Shape-Open Element-5) (2D-Shape-Open Object-1051))
+(matchBetween (ObjectsBorderColoredFnBlackColor
+               Element-6) (ObjectsBorderColoredFnBlackColor
+                           Object-1052))
+(matchBetween Element-6 Object-1052)

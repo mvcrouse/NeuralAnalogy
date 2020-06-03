@@ -1,0 +1,37 @@
+(2D-Shape-Closed Element-2)
+(2D-Shape-Generic Element-2)
+(2D-Shape-Curved Element-2)
+(2D-Shape-AxisAligned Element-2)
+(Centered-Element Element-2)
+(2D-Shape-Convex Element-2)
+(ObjectsColoredFnBlackColor Element-2)
+(2D-Shape-Ellipse Element-2)
+(ObjectsBorderColoredFnBlackColor Element-2)
++++++++++++
+(ObjectsColoredFnBlackColor Object-627)
+(2D-Shape-Generic Object-627)
+(Fully-Symmetric-Shape Object-627)
+(2D-Shape-Curved Object-627)
+(2D-Shape-Ellipse Object-627)
+(2D-Shape-Convex Object-627)
+(2D-Shape-Closed Object-627)
+(2D-Shape-AxisAligned Object-627)
+(ObjectsBorderColoredFnBlackColor Object-627)
+(Centered-Element Object-627)
++++++++++++
+(matchBetween (2D-Shape-Generic Element-2) (2D-Shape-Generic
+                                            Object-627))
+(matchBetween (2D-Shape-AxisAligned Element-2) (2D-Shape-AxisAligned
+                                                Object-627))
+(matchBetween (2D-Shape-Convex Element-2) (2D-Shape-Convex Object-627))
+(matchBetween (2D-Shape-Ellipse Element-2) (2D-Shape-Ellipse
+                                            Object-627))
+(matchBetween (ObjectsBorderColoredFnBlackColor
+               Element-2) (ObjectsBorderColoredFnBlackColor Object-627))
+(matchBetween (ObjectsColoredFnBlackColor
+               Element-2) (ObjectsColoredFnBlackColor Object-627))
+(matchBetween (Centered-Element Element-2) (Centered-Element
+                                            Object-627))
+(matchBetween (2D-Shape-Curved Element-2) (2D-Shape-Curved Object-627))
+(matchBetween (2D-Shape-Closed Element-2) (2D-Shape-Closed Object-627))
+(matchBetween Element-2 Object-627)

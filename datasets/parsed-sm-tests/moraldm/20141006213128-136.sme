@@ -1,0 +1,178 @@
+(sacredValueChoice open3575)
+(sacredValueChoice Inaction4227)
+(affectsSigLargerGroup open3575)
+(affectsSigLargerGroup Inaction4227)
+(uninferredSentence (affectsSigLargerGroup open3575))
+(uninferredSentence (affectsSigLargerGroup Inaction4227))
+(uninferredSentence (directlyResponsible you3467 Inaction4227))
+(uninferredSentence (preventsAlternativeNegativeOutcome open3575))
+(uninferredSentence (usedAsMeansToPreventNegativeOutcome open3575))
+(directlyResponsible you3467 open3575)
+(directlyResponsible you3467 Inaction4227)
+(preventsAlternativeNegativeOutcome open3575)
+(usedAsMeansToPreventNegativeOutcome open3575)
+(and (sacredValueChoice open3575) (sacredValueChoice Inaction4227)
+     (uninferredSentence (affectsSigLargerGroup open3575))
+     (uninferredSentence (affectsSigLargerGroup Inaction4227))
+     (directlyResponsible you3467 open3575)
+     (uninferredSentence (directlyResponsible you3467 Inaction4227))
+     (uninferredSentence (preventsAlternativeNegativeOutcome open3575))
+     (uninferredSentence
+      (usedAsMeansToPreventNegativeOutcome open3575)))
+(and (on-UnderspecifiedSurface dam3171 river3220) (Dam dam3171)
+     (River river3220) (TemporalPredicate temporallySubsumes))
+(rightChoice Inaction4227)
+(chosenItem SelectingSomething4226 Inaction4227)
+(chosenItem SelectingSomething4226 open3575)
+(on-UnderspecifiedSurface dam3171 river3220)
+(Dam dam3171)
+(River river3220)
+(TemporalPredicate temporallySubsumes)
+(Set-Mathematical them3545)
+(BiologicalSpecies species3257)
+(Extinction extinction3406)
+(RescuingSomeone save3513)
+(OpeningSomething open3575)
+(PreventingSomething PreventingSomething4225)
+(Set-Mathematical set-of-species3797)
+(BiologicalSpecies species3797)
+(Extinction extinction3941)
+(SelectingSomething SelectingSomething4226)
+(Inaction Inaction4227)
+(PreventingSomething p23)
+(causes-PropSit
+ (and (on-UnderspecifiedSurface dam3171 river3220) (Dam dam3171)
+      (River river3220) (TemporalPredicate temporallySubsumes))
+ extinction3406)
+(cardinality them3545 20)
+(elementOf species3257 them3545)
+(generalizes species3257 Fish)
+(objectActedOn extinction3406 species3257)
+(beneficiary save3513 them3545)
+(performedBy save3513 you3467)
+(by-Underspecified save3513 open3575)
+(causes-SitSit save3513 PreventingSomething4225)
+(performedBy open3575 you3467)
+(objectActedOn open3575 dam3171)
+(causes-SitSit open3575 extinction3941)
+(performedBy PreventingSomething4225 you3467)
+(preventedSit PreventingSomething4225 extinction3406)
+(cardinality set-of-species3797 2)
+(elementOf species3797 set-of-species3797)
+(generalizes species3797 Fish)
+(objectActedOn extinction3941 species3797)
+(choices SelectingSomething4226 open3575)
+(choices SelectingSomething4226 Inaction4227)
+(causes-PropSit (chosenItem SelectingSomething4226 open3575) save3513)
+(causes-PropSit (chosenItem SelectingSomething4226 Inaction4227)
+ extinction3406)
+(performedBy Inaction4227 you3467)
+(preventedSit p23 extinction3941)
+(causes-PropSit (chosenItem SelectingSomething4226 Inaction4227) p23)
+(implies
+ (and (sacredValueChoice open3575) (sacredValueChoice Inaction4227)
+      (uninferredSentence (affectsSigLargerGroup open3575))
+      (uninferredSentence (affectsSigLargerGroup Inaction4227))
+      (directlyResponsible you3467 open3575)
+      (uninferredSentence (directlyResponsible you3467 Inaction4227))
+      (uninferredSentence
+       (preventsAlternativeNegativeOutcome open3575))
+      (uninferredSentence
+       (usedAsMeansToPreventNegativeOutcome open3575)))
+ (rightChoice Inaction4227))
+(makeDecision you3467 Inaction4227)
++++++++++++
+(IntelligentAgent you1123)
+((GroupFn FactoryWorker) WorkersInPlant1)
+((GroupFn FactoryWorker) WorkersInPlant2)
+(Employee FactoryWorker)
+(FactoryBuilding Factory1)
+(FactoryBuilding Factory2)
+(groupCardinality WorkersInPlant1 50)
+(groupCardinality WorkersInPlant2 500)
+(worksAtFacility WorkersInPlant1 Factory1)
+(worksAtFacility WorkersInPlant2 Factory2)
+(FinancialSupport FinancialAssistanceToFactory1)
+(FinancialSupport giveFinancialAssistanceToFactory2)
+(beneficiary FinancialAssistanceToFactory1 WorkersInPlant1)
+(beneficiary giveFinancialAssistanceToFactory2 WorkersInPlant2)
+(performedBy FinancialAssistanceToFactory1 you1123)
+(performedBy giveFinancialAssistanceToFactory2 you1123)
+(performedBy NotChangeSupport you1123)
+(EmployeeLayoff employeeLayoff1)
+(EmployeeLayoff employeeLayoff2)
+(objectActedOn employeeLayoff1 WorkersInPlant1)
+(objectActedOn employeeLayoff2 WorkersInPlant2)
+(PreventingSomething preventingLayoff1)
+(PreventingSomething preventingLayoff2)
+(preventedProp preventingLayoff1 employeeLayoff1)
+(preventedProp preventingLayoff2 employeeLayoff2)
+(supportedBy WorkersInPlant1 FinancialAssistanceToFactory1)
+(Inaction NotChangeSupport)
+(SelectingSomething GiveSupportToFirstOrSecond)
+(choices GiveSupportToFirstOrSecond giveFinancialAssistanceToFactory2)
+(choices GiveSupportToFirstOrSecond NotChangeSupport)
+(chosenItem GiveSupportToFirstOrSecond
+ giveFinancialAssistanceToFactory2)
+(chosenItem GiveSupportToFirstOrSecond NotChangeSupport)
+(causes-PropProp
+ (chosenItem GiveSupportToFirstOrSecond
+  giveFinancialAssistanceToFactory2)
+ preventingLayoff2)
+(causes-PropProp
+ (chosenItem GiveSupportToFirstOrSecond
+  giveFinancialAssistanceToFactory2)
+ employeeLayoff1)
+(causes-PropProp
+ (chosenItem GiveSupportToFirstOrSecond NotChangeSupport)
+ employeeLayoff2)
+(causes-PropProp
+ (chosenItem GiveSupportToFirstOrSecond NotChangeSupport)
+ preventingLayoff1)
++++++++++++
+(matchBetween PreventingSomething4225 preventingLayoff2)
+(matchBetween (PreventingSomething
+               PreventingSomething4225) (PreventingSomething
+                                         preventingLayoff2))
+(matchBetween save3513 FinancialAssistanceToFactory1)
+(matchBetween them3545 WorkersInPlant1)
+(matchBetween (beneficiary save3513 them3545) (beneficiary
+                                               FinancialAssistanceToFactory1
+                                               WorkersInPlant1))
+(matchBetween SelectingSomething4226 GiveSupportToFirstOrSecond)
+(matchBetween (SelectingSomething
+               SelectingSomething4226) (SelectingSomething
+                                        GiveSupportToFirstOrSecond))
+(matchBetween open3575 giveFinancialAssistanceToFactory2)
+(matchBetween (performedBy open3575 you3467) (performedBy
+                                              giveFinancialAssistanceToFactory2
+                                              you1123))
+(matchBetween (choices SelectingSomething4226 open3575) (choices
+                                                         GiveSupportToFirstOrSecond
+                                                         giveFinancialAssistanceToFactory2))
+(matchBetween (choices SelectingSomething4226 Inaction4227) (choices
+                                                             GiveSupportToFirstOrSecond
+                                                             NotChangeSupport))
+(matchBetween (chosenItem SelectingSomething4226
+               Inaction4227) (chosenItem GiveSupportToFirstOrSecond
+                              NotChangeSupport))
+(matchBetween (chosenItem SelectingSomething4226 open3575) (chosenItem
+                                                            GiveSupportToFirstOrSecond
+                                                            giveFinancialAssistanceToFactory2))
+(matchBetween (performedBy Inaction4227 you3467) (performedBy
+                                                  NotChangeSupport
+                                                  you1123))
+(matchBetween (performedBy save3513 you3467) (performedBy
+                                              FinancialAssistanceToFactory1
+                                              you1123))
+(matchBetween you3467 you1123)
+(matchBetween (Inaction Inaction4227) (Inaction NotChangeSupport))
+(matchBetween Inaction4227 NotChangeSupport)
+(matchBetween (objectActedOn extinction3406 species3257) (objectActedOn
+                                                          employeeLayoff2
+                                                          WorkersInPlant2))
+(matchBetween species3257 WorkersInPlant2)
+(matchBetween extinction3406 employeeLayoff2)
+(matchBetween (PreventingSomething p23) (PreventingSomething
+                                         preventingLayoff1))
+(matchBetween p23 preventingLayoff1)

@@ -1,0 +1,116 @@
+(convexAngleBetweenEdges Element-11 Element-12)
+(convexAngleBetweenEdges Element-12 Element-13)
+(convexAngleBetweenEdges Element-13 Element-14)
+(convexAngleBetweenEdges Element-14 Element-11)
+(cycleAdjacentAngles (convexAngleBetweenEdges Element-12 Element-13)
+ (convexAngleBetweenEdges Element-13 Element-14))
+(cycleAdjacentAngles (convexAngleBetweenEdges Element-14 Element-11)
+ (convexAngleBetweenEdges Element-11 Element-12))
+(cycleAdjacentAngles (convexAngleBetweenEdges Element-13 Element-14)
+ (convexAngleBetweenEdges Element-14 Element-11))
+(cycleAdjacentAngles (convexAngleBetweenEdges Element-11 Element-12)
+ (convexAngleBetweenEdges Element-12 Element-13))
+(StraightEdge Element-12)
+(StraightEdge Element-14)
+(PerceptualEdge Element-13)
+(PerceptualEdge Element-11)
+(PerceptualEdge Element-12)
+(PerceptualEdge Element-14)
+(StraightEdge Element-11)
+(StraightEdge Element-13)
++++++++++++
+(StraightEdge Edge-2602)
+(StraightEdge Edge-2601)
+(StraightEdge Edge-2600)
+(StraightEdge Edge-2599)
+(PerceptualEdge Edge-2602)
+(PerceptualEdge Edge-2601)
+(PerceptualEdge Edge-2600)
+(PerceptualEdge Edge-2599)
+(lengthLong Edge-2601)
+(lengthLong Edge-2599)
+(lengthMedium Edge-2602)
+(lengthMedium Edge-2600)
+(edgesPerpendicular Edge-2602 Edge-2601)
+(edgesPerpendicular Edge-2602 Edge-2599)
+(edgesPerpendicular Edge-2601 Edge-2600)
+(edgesPerpendicular Edge-2600 Edge-2599)
+(edgesDisconnected Edge-2601 Edge-2599)
+(edgesDisconnected Edge-2602 Edge-2600)
+(parallelEdgeRelation (edgesDisconnected Edge-2601 Edge-2599))
+(parallelEdgeRelation (edgesDisconnected Edge-2602 Edge-2600))
+(edgesParallel Edge-2601 Edge-2599)
+(edgesParallel Edge-2602 Edge-2600)
+(convexAngleBetweenEdges Edge-2602 Edge-2601)
+(convexAngleBetweenEdges Edge-2601 Edge-2600)
+(convexAngleBetweenEdges Edge-2600 Edge-2599)
+(convexAngleBetweenEdges Edge-2599 Edge-2602)
+(perpendicularCorner (convexAngleBetweenEdges Edge-2602 Edge-2601))
+(perpendicularCorner (convexAngleBetweenEdges Edge-2601 Edge-2600))
+(perpendicularCorner (convexAngleBetweenEdges Edge-2600 Edge-2599))
+(perpendicularCorner (convexAngleBetweenEdges Edge-2599 Edge-2602))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-2602 Edge-2601)
+ (convexAngleBetweenEdges Edge-2601 Edge-2600))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-2601 Edge-2600)
+ (convexAngleBetweenEdges Edge-2600 Edge-2599))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-2600 Edge-2599)
+ (convexAngleBetweenEdges Edge-2599 Edge-2602))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-2599 Edge-2602)
+ (convexAngleBetweenEdges Edge-2602 Edge-2601))
++++++++++++
+(matchBetween Element-12 Edge-2599)
+(matchBetween (PerceptualEdge Element-12) (PerceptualEdge Edge-2599))
+(matchBetween Element-13 Edge-2602)
+(matchBetween (PerceptualEdge Element-13) (PerceptualEdge Edge-2602))
+(matchBetween (StraightEdge Element-11) (StraightEdge Edge-2600))
+(matchBetween (StraightEdge Element-12) (StraightEdge Edge-2599))
+(matchBetween (convexAngleBetweenEdges Element-14
+               Element-11) (convexAngleBetweenEdges Edge-2601
+                            Edge-2600))
+(matchBetween (convexAngleBetweenEdges Element-13
+               Element-14) (convexAngleBetweenEdges Edge-2602
+                            Edge-2601))
+(matchBetween (cycleAdjacentAngles
+               (convexAngleBetweenEdges Element-13 Element-14)
+               (convexAngleBetweenEdges Element-14
+                Element-11)) (cycleAdjacentAngles
+                              (convexAngleBetweenEdges Edge-2602
+                               Edge-2601)
+                              (convexAngleBetweenEdges Edge-2601
+                               Edge-2600)))
+(matchBetween (cycleAdjacentAngles
+               (convexAngleBetweenEdges Element-12 Element-13)
+               (convexAngleBetweenEdges Element-13
+                Element-14)) (cycleAdjacentAngles
+                              (convexAngleBetweenEdges Edge-2599
+                               Edge-2602)
+                              (convexAngleBetweenEdges Edge-2602
+                               Edge-2601)))
+(matchBetween (cycleAdjacentAngles
+               (convexAngleBetweenEdges Element-14 Element-11)
+               (convexAngleBetweenEdges Element-11
+                Element-12)) (cycleAdjacentAngles
+                              (convexAngleBetweenEdges Edge-2601
+                               Edge-2600)
+                              (convexAngleBetweenEdges Edge-2600
+                               Edge-2599)))
+(matchBetween (cycleAdjacentAngles
+               (convexAngleBetweenEdges Element-11 Element-12)
+               (convexAngleBetweenEdges Element-12
+                Element-13)) (cycleAdjacentAngles
+                              (convexAngleBetweenEdges Edge-2600
+                               Edge-2599)
+                              (convexAngleBetweenEdges Edge-2599
+                               Edge-2602)))
+(matchBetween (convexAngleBetweenEdges Element-11
+               Element-12) (convexAngleBetweenEdges Edge-2600
+                            Edge-2599))
+(matchBetween (convexAngleBetweenEdges Element-12
+               Element-13) (convexAngleBetweenEdges Edge-2599
+                            Edge-2602))
+(matchBetween (StraightEdge Element-14) (StraightEdge Edge-2601))
+(matchBetween (StraightEdge Element-13) (StraightEdge Edge-2602))
+(matchBetween (PerceptualEdge Element-11) (PerceptualEdge Edge-2600))
+(matchBetween Element-11 Edge-2600)
+(matchBetween (PerceptualEdge Element-14) (PerceptualEdge Edge-2601))
+(matchBetween Element-14 Edge-2601)

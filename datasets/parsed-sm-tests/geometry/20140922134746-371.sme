@@ -1,0 +1,12 @@
+(PerceptualEdge Edge-336)
+(Circle-Shape Edge-336)
+(EllipseEdge Edge-336)
++++++++++++
+(EllipseEdge Edge-360)
+(Circle-Shape Edge-360)
+(PerceptualEdge Edge-360)
++++++++++++
+(matchBetween (Circle-Shape Edge-336) (Circle-Shape Edge-360))
+(matchBetween (EllipseEdge Edge-336) (EllipseEdge Edge-360))
+(matchBetween (PerceptualEdge Edge-336) (PerceptualEdge Edge-360))
+(matchBetween Edge-336 Edge-360)

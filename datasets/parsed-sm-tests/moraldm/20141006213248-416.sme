@@ -1,0 +1,175 @@
+(sacredValueChoice ReRouteToCamp2)
+(sacredValueChoice notReRoute)
+(affectsSigLargerGroup ReRouteToCamp2)
+(affectsSigLargerGroup notReRoute)
+(uninferredSentence (affectsSigLargerGroup ReRouteToCamp2))
+(uninferredSentence (affectsSigLargerGroup notReRoute))
+(uninferredSentence (directlyResponsible you8115 notReRoute))
+(uninferredSentence (preventsAlternativeNegativeOutcome ReRouteToCamp2))
+(uninferredSentence
+ (usedAsMeansToPreventNegativeOutcome ReRouteToCamp2))
+(directlyResponsible you8115 ReRouteToCamp2)
+(directlyResponsible you8115 notReRoute)
+(preventsAlternativeNegativeOutcome ReRouteToCamp2)
+(usedAsMeansToPreventNegativeOutcome ReRouteToCamp2)
+(and (sacredValueChoice ReRouteToCamp2) (sacredValueChoice notReRoute)
+     (uninferredSentence (affectsSigLargerGroup ReRouteToCamp2))
+     (uninferredSentence (affectsSigLargerGroup notReRoute))
+     (directlyResponsible you8115 ReRouteToCamp2)
+     (uninferredSentence (directlyResponsible you8115 notReRoute))
+     (uninferredSentence
+      (preventsAlternativeNegativeOutcome ReRouteToCamp2))
+     (uninferredSentence
+      (usedAsMeansToPreventNegativeOutcome ReRouteToCamp2)))
+(rightChoice notReRoute)
+(chosenItem SendingTruckToCamp1OrCamp2 notReRoute)
+(chosenItem SendingTruckToCamp1OrCamp2 ReRouteToCamp2)
+(IntelligentAgent you8115)
+(RefugeeCamp Camp1)
+(RefugeeCamp Camp2)
+((GroupFn Person) PeopleInDangerInCamp1)
+((GroupFn Person) PeopleInDangerInCamp2)
+(Starvation PeopleDyingInCamp1)
+(Starvation PeopleDyingInCamp2)
+(Convoy TruckConvoy)
+(MovementEvent ReRouteToCamp2)
+(PreventingSomething preventingPeopleDyingInCamp1)
+(PreventingSomething preventingPeopleDyingInCamp2)
+(Inaction notReRoute)
+(SelectingSomething SendingTruckToCamp1OrCamp2)
+(groupCardinality PeopleInDangerInCamp1 100)
+(groupCardinality PeopleInDangerInCamp2 1000)
+(residesInRegion PeopleInDangerInCamp1 Camp1)
+(residesInRegion PeopleInDangerInCamp2 Camp2)
+(objectActedOn PeopleDyingInCamp1 PeopleInDangerInCamp1)
+(objectActedOn PeopleDyingInCamp2 PeopleInDangerInCamp2)
+(containedObject FoodTruck Food)
+(groupMemberType TruckConvoy FoodTruck)
+(objectActedOn ReRouteToCamp2 TruckConvoy)
+(toLocation ReRouteToCamp2 Camp2)
+(preventedProp preventingPeopleDyingInCamp1 PeopleDyingInCamp1)
+(preventedProp preventingPeopleDyingInCamp2 PeopleDyingInCamp2)
+(choices SendingTruckToCamp1OrCamp2 ReRouteToCamp2)
+(choices SendingTruckToCamp1OrCamp2 notReRoute)
+(performedBy ReRouteToCamp2 you8115)
+(performedBy notReRoute you8115)
+(causes-PropProp (chosenItem SendingTruckToCamp1OrCamp2 ReRouteToCamp2)
+ preventingPeopleDyingInCamp2)
+(causes-PropProp (chosenItem SendingTruckToCamp1OrCamp2 ReRouteToCamp2)
+ PeopleDyingInCamp1)
+(causes-PropProp (chosenItem SendingTruckToCamp1OrCamp2 notReRoute)
+ PeopleDyingInCamp2)
+(causes-PropProp (chosenItem SendingTruckToCamp1OrCamp2 notReRoute)
+ preventingPeopleDyingInCamp1)
+(implies
+ (and (sacredValueChoice ReRouteToCamp2) (sacredValueChoice notReRoute)
+      (uninferredSentence (affectsSigLargerGroup ReRouteToCamp2))
+      (uninferredSentence (affectsSigLargerGroup notReRoute))
+      (directlyResponsible you8115 ReRouteToCamp2)
+      (uninferredSentence (directlyResponsible you8115 notReRoute))
+      (uninferredSentence
+       (preventsAlternativeNegativeOutcome ReRouteToCamp2))
+      (uninferredSentence
+       (usedAsMeansToPreventNegativeOutcome ReRouteToCamp2)))
+ (rightChoice notReRoute))
+(makeDecision you8115 notReRoute)
++++++++++++
+(on-UnderspecifiedSurface dam3171 river3220)
+(Dam dam3171)
+(River river3220)
+(TemporalPredicate temporallySubsumes)
+(and (on-UnderspecifiedSurface dam3171 river3220) (Dam dam3171)
+     (River river3220) (TemporalPredicate temporallySubsumes))
+(causes-PropSit
+ (and (on-UnderspecifiedSurface dam3171 river3220) (Dam dam3171)
+      (River river3220) (TemporalPredicate temporallySubsumes))
+ extinction3406)
+(causes-PropSit (chosenItem SelectingSomething4226 open3575) save3513)
+(causes-PropSit (chosenItem SelectingSomething4226 Inaction4227)
+ extinction3406)
+(causes-PropSit (chosenItem SelectingSomething4226 Inaction4227) p23)
+(Set-Mathematical them3545)
+(Set-Mathematical set-of-species3797)
+(cardinality them3545 20)
+(cardinality set-of-species3797 2)
+(generalizes species3257 Fish)
+(generalizes species3797 Fish)
+(BiologicalSpecies species3257)
+(BiologicalSpecies species3797)
+(Extinction extinction3406)
+(Extinction extinction3941)
+(objectActedOn extinction3406 species3257)
+(objectActedOn open3575 dam3171)
+(objectActedOn extinction3941 species3797)
+(RescuingSomeone save3513)
+(beneficiary save3513 them3545)
+(performedBy save3513 you3467)
+(performedBy open3575 you3467)
+(performedBy PreventingSomething4225 you3467)
+(performedBy Inaction4227 you3467)
+(by-Underspecified save3513 open3575)
+(causes-SitSit save3513 PreventingSomething4225)
+(causes-SitSit open3575 extinction3941)
+(OpeningSomething open3575)
+(PreventingSomething PreventingSomething4225)
+(PreventingSomething p23)
+(preventedSit PreventingSomething4225 extinction3406)
+(preventedSit p23 extinction3941)
+(SelectingSomething SelectingSomething4226)
+(choices SelectingSomething4226 open3575)
+(choices SelectingSomething4226 Inaction4227)
+(chosenItem SelectingSomething4226 open3575)
+(chosenItem SelectingSomething4226 Inaction4227)
+(Inaction Inaction4227)
++++++++++++
+(matchBetween preventingPeopleDyingInCamp1 p23)
+(matchBetween (PreventingSomething
+               preventingPeopleDyingInCamp1) (PreventingSomething p23))
+(matchBetween PeopleDyingInCamp1 extinction3941)
+(matchBetween PeopleInDangerInCamp1 species3797)
+(matchBetween (objectActedOn PeopleDyingInCamp1
+               PeopleInDangerInCamp1) (objectActedOn
+                                       extinction3941
+                                       species3797))
+(matchBetween SendingTruckToCamp1OrCamp2 SelectingSomething4226)
+(matchBetween (SelectingSomething
+               SendingTruckToCamp1OrCamp2) (SelectingSomething
+                                            SelectingSomething4226))
+(matchBetween you8115 you3467)
+(matchBetween (performedBy notReRoute you8115) (performedBy
+                                                Inaction4227
+                                                you3467))
+(matchBetween (choices SendingTruckToCamp1OrCamp2 notReRoute) (choices
+                                                               SelectingSomething4226
+                                                               Inaction4227))
+(matchBetween (chosenItem SendingTruckToCamp1OrCamp2
+               notReRoute) (chosenItem SelectingSomething4226
+                            Inaction4227))
+(matchBetween (chosenItem SendingTruckToCamp1OrCamp2
+               ReRouteToCamp2) (chosenItem
+                                SelectingSomething4226
+                                open3575))
+(matchBetween (choices SendingTruckToCamp1OrCamp2
+               ReRouteToCamp2) (choices
+                                SelectingSomething4226
+                                open3575))
+(matchBetween (performedBy ReRouteToCamp2 you8115) (performedBy
+                                                    open3575
+                                                    you3467))
+(matchBetween (objectActedOn ReRouteToCamp2 TruckConvoy) (objectActedOn
+                                                          open3575
+                                                          dam3171))
+(matchBetween TruckConvoy dam3171)
+(matchBetween ReRouteToCamp2 open3575)
+(matchBetween (Inaction notReRoute) (Inaction Inaction4227))
+(matchBetween notReRoute Inaction4227)
+(matchBetween (objectActedOn PeopleDyingInCamp2
+               PeopleInDangerInCamp2) (objectActedOn
+                                       extinction3406
+                                       species3257))
+(matchBetween PeopleInDangerInCamp2 species3257)
+(matchBetween PeopleDyingInCamp2 extinction3406)
+(matchBetween (PreventingSomething
+               preventingPeopleDyingInCamp2) (PreventingSomething
+                                              PreventingSomething4225))
+(matchBetween preventingPeopleDyingInCamp2 PreventingSomething4225)

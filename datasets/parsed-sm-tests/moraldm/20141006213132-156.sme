@@ -1,0 +1,182 @@
+(sacredValueChoice open3575)
+(sacredValueChoice Inaction4227)
+(affectsSigLargerGroup open3575)
+(affectsSigLargerGroup Inaction4227)
+(uninferredSentence (affectsSigLargerGroup open3575))
+(uninferredSentence (affectsSigLargerGroup Inaction4227))
+(uninferredSentence (directlyResponsible you3467 Inaction4227))
+(uninferredSentence (preventsAlternativeNegativeOutcome open3575))
+(uninferredSentence (usedAsMeansToPreventNegativeOutcome open3575))
+(directlyResponsible you3467 open3575)
+(directlyResponsible you3467 Inaction4227)
+(preventsAlternativeNegativeOutcome open3575)
+(usedAsMeansToPreventNegativeOutcome open3575)
+(and (sacredValueChoice open3575) (sacredValueChoice Inaction4227)
+     (uninferredSentence (affectsSigLargerGroup open3575))
+     (uninferredSentence (affectsSigLargerGroup Inaction4227))
+     (directlyResponsible you3467 open3575)
+     (uninferredSentence (directlyResponsible you3467 Inaction4227))
+     (uninferredSentence (preventsAlternativeNegativeOutcome open3575))
+     (uninferredSentence
+      (usedAsMeansToPreventNegativeOutcome open3575)))
+(and (on-UnderspecifiedSurface dam3171 river3220) (Dam dam3171)
+     (River river3220) (TemporalPredicate temporallySubsumes))
+(rightChoice Inaction4227)
+(chosenItem SelectingSomething4226 Inaction4227)
+(chosenItem SelectingSomething4226 open3575)
+(on-UnderspecifiedSurface dam3171 river3220)
+(Dam dam3171)
+(River river3220)
+(TemporalPredicate temporallySubsumes)
+(Set-Mathematical them3545)
+(BiologicalSpecies species3257)
+(Extinction extinction3406)
+(RescuingSomeone save3513)
+(OpeningSomething open3575)
+(PreventingSomething PreventingSomething4225)
+(Set-Mathematical set-of-species3797)
+(BiologicalSpecies species3797)
+(Extinction extinction3941)
+(SelectingSomething SelectingSomething4226)
+(Inaction Inaction4227)
+(PreventingSomething p23)
+(causes-PropSit
+ (and (on-UnderspecifiedSurface dam3171 river3220) (Dam dam3171)
+      (River river3220) (TemporalPredicate temporallySubsumes))
+ extinction3406)
+(cardinality them3545 20)
+(elementOf species3257 them3545)
+(generalizes species3257 Fish)
+(objectActedOn extinction3406 species3257)
+(beneficiary save3513 them3545)
+(performedBy save3513 you3467)
+(by-Underspecified save3513 open3575)
+(causes-SitSit save3513 PreventingSomething4225)
+(performedBy open3575 you3467)
+(objectActedOn open3575 dam3171)
+(causes-SitSit open3575 extinction3941)
+(performedBy PreventingSomething4225 you3467)
+(preventedSit PreventingSomething4225 extinction3406)
+(cardinality set-of-species3797 2)
+(elementOf species3797 set-of-species3797)
+(generalizes species3797 Fish)
+(objectActedOn extinction3941 species3797)
+(choices SelectingSomething4226 open3575)
+(choices SelectingSomething4226 Inaction4227)
+(causes-PropSit (chosenItem SelectingSomething4226 open3575) save3513)
+(causes-PropSit (chosenItem SelectingSomething4226 Inaction4227)
+ extinction3406)
+(performedBy Inaction4227 you3467)
+(preventedSit p23 extinction3941)
+(causes-PropSit (chosenItem SelectingSomething4226 Inaction4227) p23)
+(implies
+ (and (sacredValueChoice open3575) (sacredValueChoice Inaction4227)
+      (uninferredSentence (affectsSigLargerGroup open3575))
+      (uninferredSentence (affectsSigLargerGroup Inaction4227))
+      (directlyResponsible you3467 open3575)
+      (uninferredSentence (directlyResponsible you3467 Inaction4227))
+      (uninferredSentence
+       (preventsAlternativeNegativeOutcome open3575))
+      (uninferredSentence
+       (usedAsMeansToPreventNegativeOutcome open3575)))
+ (rightChoice Inaction4227))
+(makeDecision you3467 Inaction4227)
++++++++++++
+(IntelligentAgent you1143)
+((GroupFn HomelessPerson) group1FemaleHomeless)
+((GroupFn HomelessPerson) group2FemaleHomeless)
+(groupCardinality group1FemaleHomeless 50)
+(groupCardinality group2FemaleHomeless 150)
+(HumanShelterConstruction shelter1)
+(HumanShelterConstruction shelter2)
+(ShelteringSomething shelteringGroup1)
+(ShelteringSomething shelteringGroup2)
+(performedBy shelteringGroup1 shelter1)
+(performedBy FinancialAssitanceToShelter1 you1143)
+(performedBy shelteringGroup2 shelter1)
+(performedBy FinancialAssitanceToShelter2 you1143)
+(performedBy notChangeSupport you1143)
+(objectActedOn shelteringGroup1 group1FemaleHomeless)
+(objectActedOn shelteringGroup2 group2FemaleHomeless)
+(objectActedOn harmingGroup1 group1FemaleHomeless)
+(objectActedOn harmingGroup2 group2FemaleHomeless)
+(FinancialSupport FinancialAssitanceToShelter1)
+(FinancialSupport FinancialAssitanceToShelter2)
+(beneficiary FinancialAssitanceToShelter1 shelter1)
+(beneficiary FinancialAssitanceToShelter2 shelter2)
+(HarmingAnAgent harmingGroup1)
+(HarmingAnAgent harmingGroup2)
+(PreventingSomething preventingHarmingGroup1)
+(PreventingSomething preventingHarmingGroup2)
+(preventedProp preventingHarmingGroup1 harmingGroup1)
+(preventedProp preventingHarmingGroup2 harmingGroup2)
+(Inaction notChangeSupport)
+(SelectingSomething GivingOrNotGivingAssistance)
+(choices GivingOrNotGivingAssistance FinancialAssitanceToShelter2)
+(choices GivingOrNotGivingAssistance notChangeSupport)
+(chosenItem GivingOrNotGivingAssistance FinancialAssitanceToShelter2)
+(chosenItem GivingOrNotGivingAssistance notChangeSupport)
+(causes-PropProp
+ (chosenItem GivingOrNotGivingAssistance FinancialAssitanceToShelter2)
+ preventingHarmingGroup2)
+(causes-PropProp
+ (chosenItem GivingOrNotGivingAssistance FinancialAssitanceToShelter2)
+ harmingGroup1)
+(causes-PropProp
+ (chosenItem GivingOrNotGivingAssistance notChangeSupport)
+ preventingHarmingGroup1)
+(causes-PropProp
+ (chosenItem GivingOrNotGivingAssistance notChangeSupport)
+ harmingGroup2)
++++++++++++
+(matchBetween PreventingSomething4225 preventingHarmingGroup2)
+(matchBetween (PreventingSomething
+               PreventingSomething4225) (PreventingSomething
+                                         preventingHarmingGroup2))
+(matchBetween extinction3406 harmingGroup2)
+(matchBetween species3257 group2FemaleHomeless)
+(matchBetween (objectActedOn extinction3406 species3257) (objectActedOn
+                                                          harmingGroup2
+                                                          group2FemaleHomeless))
+(matchBetween Inaction4227 notChangeSupport)
+(matchBetween (Inaction Inaction4227) (Inaction notChangeSupport))
+(matchBetween you3467 you1143)
+(matchBetween (performedBy save3513 you3467) (performedBy
+                                              FinancialAssitanceToShelter1
+                                              you1143))
+(matchBetween (performedBy Inaction4227 you3467) (performedBy
+                                                  notChangeSupport
+                                                  you1143))
+(matchBetween (chosenItem SelectingSomething4226 open3575) (chosenItem
+                                                            GivingOrNotGivingAssistance
+                                                            FinancialAssitanceToShelter2))
+(matchBetween (chosenItem SelectingSomething4226
+               Inaction4227) (chosenItem GivingOrNotGivingAssistance
+                              notChangeSupport))
+(matchBetween (choices SelectingSomething4226 Inaction4227) (choices
+                                                             GivingOrNotGivingAssistance
+                                                             notChangeSupport))
+(matchBetween (choices SelectingSomething4226 open3575) (choices
+                                                         GivingOrNotGivingAssistance
+                                                         FinancialAssitanceToShelter2))
+(matchBetween (performedBy open3575 you3467) (performedBy
+                                              FinancialAssitanceToShelter2
+                                              you1143))
+(matchBetween open3575 FinancialAssitanceToShelter2)
+(matchBetween (SelectingSomething
+               SelectingSomething4226) (SelectingSomething
+                                        GivingOrNotGivingAssistance))
+(matchBetween SelectingSomething4226 GivingOrNotGivingAssistance)
+(matchBetween (beneficiary save3513 them3545) (beneficiary
+                                               FinancialAssitanceToShelter1
+                                               shelter1))
+(matchBetween them3545 shelter1)
+(matchBetween save3513 FinancialAssitanceToShelter1)
+(matchBetween (objectActedOn extinction3941 species3797) (objectActedOn
+                                                          harmingGroup1
+                                                          group1FemaleHomeless))
+(matchBetween species3797 group1FemaleHomeless)
+(matchBetween extinction3941 harmingGroup1)
+(matchBetween (PreventingSomething p23) (PreventingSomething
+                                         preventingHarmingGroup1))
+(matchBetween p23 preventingHarmingGroup1)

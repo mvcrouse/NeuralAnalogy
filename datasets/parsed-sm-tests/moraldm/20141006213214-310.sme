@@ -1,0 +1,180 @@
+(sacredValueChoice giveFinancialAssistanceToFactory2)
+(sacredValueChoice NotChangeSupport)
+(affectsSigLargerGroup giveFinancialAssistanceToFactory2)
+(affectsSigLargerGroup NotChangeSupport)
+(uninferredSentence
+ (affectsSigLargerGroup giveFinancialAssistanceToFactory2))
+(uninferredSentence (affectsSigLargerGroup NotChangeSupport))
+(uninferredSentence (directlyResponsible you1123 NotChangeSupport))
+(uninferredSentence
+ (preventsAlternativeNegativeOutcome giveFinancialAssistanceToFactory2))
+(uninferredSentence
+ (usedAsMeansToPreventNegativeOutcome
+  giveFinancialAssistanceToFactory2))
+(directlyResponsible you1123 giveFinancialAssistanceToFactory2)
+(directlyResponsible you1123 NotChangeSupport)
+(preventsAlternativeNegativeOutcome giveFinancialAssistanceToFactory2)
+(usedAsMeansToPreventNegativeOutcome giveFinancialAssistanceToFactory2)
+(and (sacredValueChoice giveFinancialAssistanceToFactory2)
+     (sacredValueChoice NotChangeSupport)
+     (uninferredSentence
+      (affectsSigLargerGroup giveFinancialAssistanceToFactory2))
+     (uninferredSentence (affectsSigLargerGroup NotChangeSupport))
+     (directlyResponsible you1123 giveFinancialAssistanceToFactory2)
+     (uninferredSentence
+      (directlyResponsible you1123 NotChangeSupport))
+     (uninferredSentence
+      (preventsAlternativeNegativeOutcome
+       giveFinancialAssistanceToFactory2))
+     (uninferredSentence
+      (usedAsMeansToPreventNegativeOutcome
+       giveFinancialAssistanceToFactory2)))
+(rightChoice NotChangeSupport)
+(chosenItem GiveSupportToFirstOrSecond NotChangeSupport)
+(chosenItem GiveSupportToFirstOrSecond
+ giveFinancialAssistanceToFactory2)
+(IntelligentAgent you1123)
+((GroupFn FactoryWorker) WorkersInPlant1)
+((GroupFn FactoryWorker) WorkersInPlant2)
+(Employee FactoryWorker)
+(FactoryBuilding Factory1)
+(FactoryBuilding Factory2)
+(FinancialSupport FinancialAssistanceToFactory1)
+(FinancialSupport giveFinancialAssistanceToFactory2)
+(EmployeeLayoff employeeLayoff1)
+(EmployeeLayoff employeeLayoff2)
+(PreventingSomething preventingLayoff1)
+(PreventingSomething preventingLayoff2)
+(Inaction NotChangeSupport)
+(SelectingSomething GiveSupportToFirstOrSecond)
+(groupCardinality WorkersInPlant1 50)
+(groupCardinality WorkersInPlant2 500)
+(worksAtFacility WorkersInPlant1 Factory1)
+(worksAtFacility WorkersInPlant2 Factory2)
+(beneficiary FinancialAssistanceToFactory1 WorkersInPlant1)
+(performedBy FinancialAssistanceToFactory1 you1123)
+(beneficiary giveFinancialAssistanceToFactory2 WorkersInPlant2)
+(performedBy giveFinancialAssistanceToFactory2 you1123)
+(objectActedOn employeeLayoff1 WorkersInPlant1)
+(objectActedOn employeeLayoff2 WorkersInPlant2)
+(preventedProp preventingLayoff1 employeeLayoff1)
+(preventedProp preventingLayoff2 employeeLayoff2)
+(supportedBy WorkersInPlant1 FinancialAssistanceToFactory1)
+(performedBy NotChangeSupport you1123)
+(choices GiveSupportToFirstOrSecond giveFinancialAssistanceToFactory2)
+(choices GiveSupportToFirstOrSecond NotChangeSupport)
+(causes-PropProp
+ (chosenItem GiveSupportToFirstOrSecond
+  giveFinancialAssistanceToFactory2)
+ preventingLayoff2)
+(causes-PropProp
+ (chosenItem GiveSupportToFirstOrSecond
+  giveFinancialAssistanceToFactory2)
+ employeeLayoff1)
+(causes-PropProp
+ (chosenItem GiveSupportToFirstOrSecond NotChangeSupport)
+ employeeLayoff2)
+(causes-PropProp
+ (chosenItem GiveSupportToFirstOrSecond NotChangeSupport)
+ preventingLayoff1)
+(implies
+ (and (sacredValueChoice giveFinancialAssistanceToFactory2)
+      (sacredValueChoice NotChangeSupport)
+      (uninferredSentence
+       (affectsSigLargerGroup giveFinancialAssistanceToFactory2))
+      (uninferredSentence (affectsSigLargerGroup NotChangeSupport))
+      (directlyResponsible you1123 giveFinancialAssistanceToFactory2)
+      (uninferredSentence
+       (directlyResponsible you1123 NotChangeSupport))
+      (uninferredSentence
+       (preventsAlternativeNegativeOutcome
+        giveFinancialAssistanceToFactory2))
+      (uninferredSentence
+       (usedAsMeansToPreventNegativeOutcome
+        giveFinancialAssistanceToFactory2)))
+ (rightChoice NotChangeSupport))
+(makeDecision you1123 NotChangeSupport)
++++++++++++
+(Inaction Inaction18657)
+(performedBy PreventingSomething18655 you18016)
+(performedBy save18062 you18016)
+(performedBy throw18421 you18016)
+(performedBy Inaction18657 you18016)
+(preventedSit PreventingSomething18655 kill17889)
+(PreventingSomething PreventingSomething18655)
+(SelectingSomething SelectingSomething18656)
+(choices SelectingSomething18656 throw18421)
+(choices SelectingSomething18656 Inaction18657)
+(chosenItem SelectingSomething18656 Inaction18657)
+(chosenItem SelectingSomething18656 throw18421)
+(causes-PropSit (chosenItem SelectingSomething18656 Inaction18657)
+ kill17889)
+(causes-PropSit (chosenItem SelectingSomething18656 throw18421)
+ save18062)
+(causes-PropSit (chosenItem SelectingSomething18656 throw18421)
+ kill18493)
+(in-UnderspecifiedContainer bomb18151 restaurant17825)
+(Bomb bomb18151)
+(PhysicalDestructionEvent kill17889)
+(PhysicalDestructionEvent kill18493)
+(doneBy kill17889 bomb18151)
+(doneBy kill18493 throw18421)
+(Dying kill17889)
+(Dying kill18493)
+(organismKilled kill18493 person18540)
+(Terrace-Topographical patio18209)
+(Person person18540)
+(RestaurantSpace restaurant17825)
+(RescuingSomeone save18062)
+(beneficiary save18062 them18094)
+(by-Underspecified save18062 throw18421)
+(causes-SitSit save18062 PreventingSomething18655)
+(cardinality them18094 9)
+(cardinality person18540 1)
+(Set-Mathematical them18094)
+(objectActedOn throw18421 bomb18151)
+(toLocation throw18421 patio18209)
+(on-UnderspecifiedSurface bomb18151 patio18209)
+(causes-SitProp throw18421
+ (on-UnderspecifiedSurface bomb18151 patio18209))
+(ThrowingAnObject throw18421)
++++++++++++
+(matchBetween FinancialAssistanceToFactory1 save18062)
+(matchBetween WorkersInPlant1 them18094)
+(matchBetween (beneficiary FinancialAssistanceToFactory1
+               WorkersInPlant1) (beneficiary save18062 them18094))
+(matchBetween GiveSupportToFirstOrSecond SelectingSomething18656)
+(matchBetween (SelectingSomething
+               GiveSupportToFirstOrSecond) (SelectingSomething
+                                            SelectingSomething18656))
+(matchBetween giveFinancialAssistanceToFactory2 throw18421)
+(matchBetween (performedBy giveFinancialAssistanceToFactory2
+               you1123) (performedBy throw18421 you18016))
+(matchBetween (choices GiveSupportToFirstOrSecond
+               giveFinancialAssistanceToFactory2) (choices
+                                                   SelectingSomething18656
+                                                   throw18421))
+(matchBetween (choices GiveSupportToFirstOrSecond
+               NotChangeSupport) (choices
+                                  SelectingSomething18656
+                                  Inaction18657))
+(matchBetween (chosenItem GiveSupportToFirstOrSecond
+               NotChangeSupport) (chosenItem
+                                  SelectingSomething18656
+                                  Inaction18657))
+(matchBetween (chosenItem GiveSupportToFirstOrSecond
+               giveFinancialAssistanceToFactory2) (chosenItem
+                                                   SelectingSomething18656
+                                                   throw18421))
+(matchBetween (performedBy NotChangeSupport you1123) (performedBy
+                                                      Inaction18657
+                                                      you18016))
+(matchBetween (performedBy FinancialAssistanceToFactory1
+               you1123) (performedBy save18062 you18016))
+(matchBetween you1123 you18016)
+(matchBetween (Inaction NotChangeSupport) (Inaction Inaction18657))
+(matchBetween NotChangeSupport Inaction18657)
+(matchBetween (PreventingSomething
+               preventingLayoff1) (PreventingSomething
+                                   PreventingSomething18655))
+(matchBetween preventingLayoff1 PreventingSomething18655)

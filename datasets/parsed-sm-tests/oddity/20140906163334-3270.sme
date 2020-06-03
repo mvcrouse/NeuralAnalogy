@@ -1,0 +1,72 @@
+(elementContains Element-3 Element-4)
+(2D-Shape-Ellipse Element-4)
+(Implicit-Shape Element-4)
+(2D-Shape-Convex Element-4)
+(Centered-Element Element-3)
+(2D-Shape-Closed Element-3)
+(Fully-Symmetric-Shape Element-3)
+(ObjectsBorderColoredFnBlackColor Element-3)
+(2D-Shape-Convex Element-3)
+(2D-Shape-AxisAligned Element-3)
+(2D-Shape-Curved Element-3)
+(ObjectsColoredFnBlackColor Element-3)
+(2D-Shape-Ellipse Element-3)
+(2D-Shape-Generic Element-3)
+(2D-Shape-AxisAligned Element-4)
+(2D-Shape-Curved Element-4)
+(Fully-Symmetric-Shape Element-4)
+(2D-Shape-Closed Element-4)
++++++++++++
+(ObjectsColoredFnBlackColor Object-637)
+(Implicit-Shape Object-631)
+(Fully-Symmetric-Shape Object-631)
+(Fully-Symmetric-Shape Object-637)
+(2D-Shape-Curved Object-631)
+(2D-Shape-Curved Object-637)
+(2D-Shape-Ellipse Object-631)
+(2D-Shape-Ellipse Object-637)
+(2D-Shape-Convex Object-631)
+(2D-Shape-Convex Object-637)
+(2D-Shape-Closed Object-631)
+(2D-Shape-Closed Object-637)
+(2D-Shape-AxisAligned Object-631)
+(2D-Shape-AxisAligned Object-637)
+(2D-Shape-Generic Object-637)
+(ObjectsBorderColoredFnBlackColor Object-637)
+(centeredOn Object-631 Object-637)
+(elementContains Object-637 Object-631)
+(Centered-Element Object-637)
+(Centered-Element Object-631)
++++++++++++
+(matchBetween (2D-Shape-Convex Element-4) (2D-Shape-Convex Object-631))
+(matchBetween (2D-Shape-AxisAligned Element-4) (2D-Shape-AxisAligned
+                                                Object-631))
+(matchBetween (Fully-Symmetric-Shape Element-4) (Fully-Symmetric-Shape
+                                                 Object-631))
+(matchBetween Element-3 Object-637)
+(matchBetween (Centered-Element Element-3) (Centered-Element
+                                            Object-637))
+(matchBetween (2D-Shape-Convex Element-3) (2D-Shape-Convex Object-637))
+(matchBetween (2D-Shape-Ellipse Element-3) (2D-Shape-Ellipse
+                                            Object-637))
+(matchBetween (2D-Shape-AxisAligned Element-3) (2D-Shape-AxisAligned
+                                                Object-637))
+(matchBetween (Fully-Symmetric-Shape Element-3) (Fully-Symmetric-Shape
+                                                 Object-637))
+(matchBetween (elementContains Element-3 Element-4) (elementContains
+                                                     Object-637
+                                                     Object-631))
+(matchBetween (2D-Shape-Closed Element-3) (2D-Shape-Closed Object-637))
+(matchBetween (2D-Shape-Curved Element-3) (2D-Shape-Curved Object-637))
+(matchBetween (2D-Shape-Generic Element-3) (2D-Shape-Generic
+                                            Object-637))
+(matchBetween (ObjectsColoredFnBlackColor
+               Element-3) (ObjectsColoredFnBlackColor Object-637))
+(matchBetween (ObjectsBorderColoredFnBlackColor
+               Element-3) (ObjectsBorderColoredFnBlackColor Object-637))
+(matchBetween (2D-Shape-Closed Element-4) (2D-Shape-Closed Object-631))
+(matchBetween (2D-Shape-Curved Element-4) (2D-Shape-Curved Object-631))
+(matchBetween (2D-Shape-Ellipse Element-4) (2D-Shape-Ellipse
+                                            Object-631))
+(matchBetween (Implicit-Shape Element-4) (Implicit-Shape Object-631))
+(matchBetween Element-4 Object-631)

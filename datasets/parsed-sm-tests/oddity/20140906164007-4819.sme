@@ -1,0 +1,63 @@
+((ShapeTypeFn 0) Object-1002)
+(ShapeTypeFn2 Object-1008)
+((ShapeTypeFn 3) Object-1001)
+(rotatedShapes Object-1002 Object-1001)
+(narrowEdged Object-1008)
+(wideEdged Object-1001)
+(wideEdged Object-1002)
+(rightOf Object-1001 Object-1002)
+(above Object-1002 Object-1008)
+(ObjectsBorderColoredFnBlackColor Object-1008)
+(ObjectsBorderColoredFnBlackColor Object-1001)
+(ObjectsBorderColoredFnBlackColor Object-1002)
+(ObjectsColoredFnBlackColor Object-1008)
+(ObjectsColoredFnBlackColor Object-1001)
+(ObjectsColoredFnBlackColor Object-1002)
++++++++++++
+(ObjectsColoredFnBlackColor Object-1012)
+(ObjectsColoredFnBlackColor Object-1010)
+(ObjectsColoredFnBlackColor Object-1011)
+(ObjectsBorderColoredFnBlackColor Object-1012)
+(ObjectsBorderColoredFnBlackColor Object-1010)
+(ObjectsBorderColoredFnBlackColor Object-1011)
+(above Object-1012 Object-1011)
+(rightOf Object-1010 Object-1012)
+(wideEdged Object-1012)
+(wideEdged Object-1010)
+(narrowEdged Object-1011)
+(rotatedShapes Object-1012 Object-1010)
+((ShapeTypeFn 4) Object-1010)
+(ShapeTypeFn2 Object-1011)
+((ShapeTypeFn 1) Object-1012)
++++++++++++
+(matchBetween (narrowEdged Object-1008) (narrowEdged Object-1011))
+(matchBetween (ObjectsBorderColoredFnBlackColor
+               Object-1001) (ObjectsBorderColoredFnBlackColor
+                             Object-1010))
+(matchBetween (ObjectsColoredFnBlackColor
+               Object-1001) (ObjectsColoredFnBlackColor Object-1010))
+(matchBetween Object-1002 Object-1012)
+(matchBetween (wideEdged Object-1002) (wideEdged Object-1012))
+(matchBetween (ObjectsColoredFnBlackColor
+               Object-1002) (ObjectsColoredFnBlackColor Object-1012))
+(matchBetween (rightOf Object-1001 Object-1002) (rightOf
+                                                 Object-1010
+                                                 Object-1012))
+(matchBetween (above Object-1002 Object-1008) (above
+                                               Object-1012
+                                               Object-1011))
+(matchBetween (rotatedShapes Object-1002 Object-1001) (rotatedShapes
+                                                       Object-1012
+                                                       Object-1010))
+(matchBetween (ObjectsBorderColoredFnBlackColor
+               Object-1002) (ObjectsBorderColoredFnBlackColor
+                             Object-1012))
+(matchBetween (ObjectsColoredFnBlackColor
+               Object-1008) (ObjectsColoredFnBlackColor Object-1011))
+(matchBetween (ObjectsBorderColoredFnBlackColor
+               Object-1008) (ObjectsBorderColoredFnBlackColor
+                             Object-1011))
+(matchBetween (wideEdged Object-1001) (wideEdged Object-1010))
+(matchBetween Object-1001 Object-1010)
+(matchBetween (ShapeTypeFn2 Object-1008) (ShapeTypeFn2 Object-1011))
+(matchBetween Object-1008 Object-1011)

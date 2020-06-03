@@ -1,0 +1,146 @@
+(sacredValueChoice obtain42917)
+(sacredValueChoice Inaction43377)
+(affectsSigLargerGroup obtain42917)
+(affectsSigLargerGroup Inaction43377)
+(uninferredSentence (affectsSigLargerGroup obtain42917))
+(uninferredSentence (affectsSigLargerGroup Inaction43377))
+(uninferredSentence (directlyResponsible you42105 Inaction43377))
+(directlyResponsible you42105 obtain42917)
+(directlyResponsible you42105 Inaction43377)
+(preventsAlternativeNegativeOutcome obtain42917)
+(usedAsMeansToPreventNegativeOutcome obtain42917)
+(and (sacredValueChoice obtain42917) (sacredValueChoice Inaction43377)
+     (uninferredSentence (affectsSigLargerGroup obtain42917))
+     (uninferredSentence (affectsSigLargerGroup Inaction43377))
+     (directlyResponsible you42105 obtain42917)
+     (uninferredSentence (directlyResponsible you42105 Inaction43377))
+     (preventsAlternativeNegativeOutcome obtain42917)
+     (usedAsMeansToPreventNegativeOutcome obtain42917))
+(rightChoice Inaction43377)
+(chosenItem SelectingSomething43376 obtain42917)
+(possessiveRelation patient43049 paraplegia43118)
+(Inaction Inaction43377)
+(PreventingSomething PreventingSomething43375)
+(SelectingSomething SelectingSomething43376)
+(HarmingAnAgent (possessiveRelation patient43049 paraplegia43118))
+(Marrow bone-marrow42305)
+(TakingSomething obtain42917)
+(Paraplegia paraplegia42037)
+(Paraplegia paraplegia43118)
+(MedicalPatient patient43049)
+(RescuingSomeone save42144)
+((GroupFn MedicalPatient) set-of-patient41970)
+(Set-Mathematical set-of-patient41970)
+(Virus virus41880)
+(performedBy PreventingSomething43375 you42105)
+(choices SelectingSomething43376 obtain42917)
+(choices SelectingSomething43376 Inaction43377)
+(causes-PropSit (chosenItem SelectingSomething43376 obtain42917)
+ save42144)
+(causes-PropSit (chosenItem SelectingSomething43376 obtain42917)
+ (possessiveRelation patient43049 paraplegia43118))
+(objectActedOn obtain42917 patient43049)
+(performedBy obtain42917 you42105)
+(performedBy Inaction43377 you42105)
+(toPossessor obtain42917 you42105)
+(transferredObject obtain42917 bone-marrow42305)
+(from-UnderspecifiedLocation obtain42917 patient43049)
+(beneficiary save42144 set-of-patient41970)
+(performedBy save42144 you42105)
+(by-Underspecified save42144 obtain42917)
+(causes-SitSit save42144 PreventingSomething43375)
+(cardinality set-of-patient41970 4)
+(cardinality patient43049 1)
+(implies
+ (and (sacredValueChoice obtain42917) (sacredValueChoice Inaction43377)
+      (uninferredSentence (affectsSigLargerGroup obtain42917))
+      (uninferredSentence (affectsSigLargerGroup Inaction43377))
+      (directlyResponsible you42105 obtain42917)
+      (uninferredSentence (directlyResponsible you42105 Inaction43377))
+      (preventsAlternativeNegativeOutcome obtain42917)
+      (usedAsMeansToPreventNegativeOutcome obtain42917))
+ (rightChoice Inaction43377))
+(makeDecision you42105 Inaction43377)
++++++++++++
+(IntelligentAgent you1123)
+((GroupFn FactoryWorker) WorkersInPlant1)
+((GroupFn FactoryWorker) WorkersInPlant2)
+(Employee FactoryWorker)
+(FactoryBuilding Factory1)
+(FactoryBuilding Factory2)
+(groupCardinality WorkersInPlant1 50)
+(groupCardinality WorkersInPlant2 500)
+(worksAtFacility WorkersInPlant1 Factory1)
+(worksAtFacility WorkersInPlant2 Factory2)
+(FinancialSupport FinancialAssistanceToFactory1)
+(FinancialSupport giveFinancialAssistanceToFactory2)
+(beneficiary FinancialAssistanceToFactory1 WorkersInPlant1)
+(beneficiary giveFinancialAssistanceToFactory2 WorkersInPlant2)
+(performedBy FinancialAssistanceToFactory1 you1123)
+(performedBy giveFinancialAssistanceToFactory2 you1123)
+(performedBy NotChangeSupport you1123)
+(EmployeeLayoff employeeLayoff1)
+(EmployeeLayoff employeeLayoff2)
+(objectActedOn employeeLayoff1 WorkersInPlant1)
+(objectActedOn employeeLayoff2 WorkersInPlant2)
+(PreventingSomething preventingLayoff1)
+(PreventingSomething preventingLayoff2)
+(preventedProp preventingLayoff1 employeeLayoff1)
+(preventedProp preventingLayoff2 employeeLayoff2)
+(supportedBy WorkersInPlant1 FinancialAssistanceToFactory1)
+(Inaction NotChangeSupport)
+(SelectingSomething GiveSupportToFirstOrSecond)
+(choices GiveSupportToFirstOrSecond giveFinancialAssistanceToFactory2)
+(choices GiveSupportToFirstOrSecond NotChangeSupport)
+(chosenItem GiveSupportToFirstOrSecond
+ giveFinancialAssistanceToFactory2)
+(chosenItem GiveSupportToFirstOrSecond NotChangeSupport)
+(causes-PropProp
+ (chosenItem GiveSupportToFirstOrSecond
+  giveFinancialAssistanceToFactory2)
+ preventingLayoff2)
+(causes-PropProp
+ (chosenItem GiveSupportToFirstOrSecond
+  giveFinancialAssistanceToFactory2)
+ employeeLayoff1)
+(causes-PropProp
+ (chosenItem GiveSupportToFirstOrSecond NotChangeSupport)
+ employeeLayoff2)
+(causes-PropProp
+ (chosenItem GiveSupportToFirstOrSecond NotChangeSupport)
+ preventingLayoff1)
++++++++++++
+(matchBetween save42144 FinancialAssistanceToFactory1)
+(matchBetween set-of-patient41970 WorkersInPlant1)
+(matchBetween (beneficiary save42144 set-of-patient41970) (beneficiary
+                                                           FinancialAssistanceToFactory1
+                                                           WorkersInPlant1))
+(matchBetween you42105 you1123)
+(matchBetween (performedBy save42144 you42105) (performedBy
+                                                FinancialAssistanceToFactory1
+                                                you1123))
+(matchBetween (choices SelectingSomething43376 Inaction43377) (choices
+                                                               GiveSupportToFirstOrSecond
+                                                               giveFinancialAssistanceToFactory2))
+(matchBetween (choices SelectingSomething43376 obtain42917) (choices
+                                                             GiveSupportToFirstOrSecond
+                                                             NotChangeSupport))
+(matchBetween (chosenItem SelectingSomething43376
+               obtain42917) (chosenItem GiveSupportToFirstOrSecond
+                             NotChangeSupport))
+(matchBetween (performedBy obtain42917 you42105) (performedBy
+                                                  NotChangeSupport
+                                                  you1123))
+(matchBetween obtain42917 NotChangeSupport)
+(matchBetween (performedBy Inaction43377 you42105) (performedBy
+                                                    giveFinancialAssistanceToFactory2
+                                                    you1123))
+(matchBetween Inaction43377 giveFinancialAssistanceToFactory2)
+(matchBetween (SelectingSomething
+               SelectingSomething43376) (SelectingSomething
+                                         GiveSupportToFirstOrSecond))
+(matchBetween SelectingSomething43376 GiveSupportToFirstOrSecond)
+(matchBetween (PreventingSomething
+               PreventingSomething43375) (PreventingSomething
+                                          preventingLayoff2))
+(matchBetween PreventingSomething43375 preventingLayoff2)

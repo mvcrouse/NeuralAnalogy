@@ -1,0 +1,166 @@
+(sacredValueChoice giveVaccine)
+(sacredValueChoice NotGiveVaccine)
+(affectsSigLargerGroup giveVaccine)
+(affectsSigLargerGroup NotGiveVaccine)
+(uninferredSentence (affectsSigLargerGroup NotGiveVaccine))
+(uninferredSentence (directlyResponsible you1003 NotGiveVaccine))
+(uninferredSentence (preventsAlternativeNegativeOutcome giveVaccine))
+(uninferredSentence (usedAsMeansToPreventNegativeOutcome giveVaccine))
+(directlyResponsible you1003 giveVaccine)
+(directlyResponsible you1003 NotGiveVaccine)
+(preventsAlternativeNegativeOutcome giveVaccine)
+(usedAsMeansToPreventNegativeOutcome giveVaccine)
+(and (sacredValueChoice giveVaccine) (sacredValueChoice NotGiveVaccine)
+     (affectsSigLargerGroup giveVaccine)
+     (uninferredSentence (affectsSigLargerGroup NotGiveVaccine))
+     (directlyResponsible you1003 giveVaccine)
+     (uninferredSentence (directlyResponsible you1003 NotGiveVaccine))
+     (uninferredSentence
+      (preventsAlternativeNegativeOutcome giveVaccine))
+     (uninferredSentence
+      (usedAsMeansToPreventNegativeOutcome giveVaccine)))
+(rightChoice giveVaccine)
+(chosenItem GivingOrNotGivingTheVaccine2 NotGiveVaccine)
+(chosenItem GivingOrNotGivingTheVaccine2 giveVaccine)
+((GroupFn HumanChild) ChildrenInDanger)
+((GroupFn HumanChild) ChildrenInDangerGroup1)
+((GroupFn HumanChild) ChildrenInDangerGroup2)
+(DiseaseType disease1960)
+((VaccineForAgainstFn ChildrenInDanger disease1960) vaccine1960)
+(Dying DyingChildrenGroup1)
+(Dying DyingChildrenGroup2)
+(Injecting-Medical giveVaccine)
+(Inaction NotGiveVaccine)
+(PreventingSomething preventingDyingChildrenGroup1)
+(PreventingSomething preventingDyingChildrenGroup2)
+(groupCardinality ChildrenInDanger 10000)
+(groupCardinality ChildrenInDangerGroup2 1)
+(subGroups ChildrenInDanger ChildrenInDangerGroup1)
+(subGroups ChildrenInDanger ChildrenInDangerGroup2)
+(objectActedOn DyingChildrenGroup1 ChildrenInDangerGroup1)
+(objectActedOn DyingChildrenGroup2 ChildrenInDangerGroup2)
+(deviceUsed giveVaccine vaccine1960)
+(bodilyActedOn vaccine1960 ChildrenInDangerGroup1)
+(bodilyActedOn vaccineSideEffect ChildrenInDangerGroup2)
+(preventedProp preventingDyingChildrenGroup1 DyingChildrenGroup1)
+(preventedProp preventingDyingChildrenGroup2 DyingChildrenGroup2)
+(IntelligentAgent you1003)
+(SelectingSomething GivingOrNotGivingTheVaccine2)
+(groupCardinality ChildrenInDangerGroup1 1000)
+(choices GivingOrNotGivingTheVaccine2 giveVaccine)
+(choices GivingOrNotGivingTheVaccine2 NotGiveVaccine)
+(performedBy giveVaccine you1003)
+(performedBy NotGiveVaccine you1003)
+(causes-PropProp (chosenItem GivingOrNotGivingTheVaccine2 giveVaccine)
+ preventingDyingChildrenGroup1)
+(causes-PropProp (chosenItem GivingOrNotGivingTheVaccine2 giveVaccine)
+ DyingChildrenGroup2)
+(causes-PropProp
+ (chosenItem GivingOrNotGivingTheVaccine2 NotGiveVaccine)
+ DyingChildrenGroup1)
+(causes-PropProp
+ (chosenItem GivingOrNotGivingTheVaccine2 NotGiveVaccine)
+ preventingDyingChildrenGroup2)
+(implies
+ (and (sacredValueChoice giveVaccine)
+      (sacredValueChoice NotGiveVaccine)
+      (affectsSigLargerGroup giveVaccine)
+      (uninferredSentence (affectsSigLargerGroup NotGiveVaccine))
+      (directlyResponsible you1003 giveVaccine)
+      (uninferredSentence (directlyResponsible you1003 NotGiveVaccine))
+      (uninferredSentence
+       (preventsAlternativeNegativeOutcome giveVaccine))
+      (uninferredSentence
+       (usedAsMeansToPreventNegativeOutcome giveVaccine)))
+ (rightChoice giveVaccine))
+(makeDecision you1003 giveVaccine)
++++++++++++
+(Inaction Inaction71193)
+(performedBy PreventingSomething71191 you69298)
+(performedBy hit69039 train70550)
+(performedBy hit70613 train70550)
+(performedBy push70396 you69298)
+(performedBy Inaction71193 you69298)
+(performedBy save69337 you69298)
+(preventedSit PreventingSomething71191 hit69039)
+(PreventingSomething PreventingSomething71191)
+(SelectingSomething SelectingSomething71192)
+(choices SelectingSomething71192 push70396)
+(choices SelectingSomething71192 Inaction71193)
+(chosenItem SelectingSomething71192 Inaction71193)
+(chosenItem SelectingSomething71192 push70396)
+(causes-PropSit (chosenItem SelectingSomething71192 Inaction71193)
+ hit69039)
+(causes-PropSit (chosenItem SelectingSomething71192 push70396) hit70613)
+(Bus-RoadVehicle bus69096)
+(Bus-RoadVehicle bus70728)
+((GroupFn Person) them69370)
+((GroupFn Person) set-of-passenger69536)
+(Dying hit69039)
+(Dying hit70613)
+(HittingAnObject hit69039)
+(HittingAnObject hit70613)
+(objectActedOn hit69039 bus69096)
+(objectActedOn hit70613 bus70728)
+(objectActedOn push70396 bus70728)
+(causes-SitSit hit70613 save69337)
+(causes-SitSit save69337 PreventingSomething71191)
+(PushingAnObject push70396)
+(providerOfMotiveForce push70396 you69298)
+(primaryObjectMoving push70396 bus70728)
+(RescuingSomeone save69337)
+(beneficiary save69337 them69370)
+(by-Underspecified save69337 push70396)
+(cardinality set-of-passenger69536 2)
+(cardinality them69370 10)
+(Set-Mathematical set-of-passenger69536)
+(Set-Mathematical them69370)
+(HighAmountFn Speed)
+(speedOfObject-Underspecified train70550 (HighAmountFn Speed))
+(Train-TransportationDevice train70550)
++++++++++++
+(matchBetween DyingChildrenGroup2 hit69039)
+(matchBetween (Dying DyingChildrenGroup2) (Dying hit69039))
+(matchBetween ChildrenInDangerGroup2 bus69096)
+(matchBetween (objectActedOn DyingChildrenGroup2
+               ChildrenInDangerGroup2) (objectActedOn
+                                        hit69039
+                                        bus69096))
+(matchBetween NotGiveVaccine Inaction71193)
+(matchBetween (Inaction NotGiveVaccine) (Inaction Inaction71193))
+(matchBetween giveVaccine push70396)
+(matchBetween you1003 you69298)
+(matchBetween (performedBy giveVaccine you1003) (performedBy
+                                                 push70396
+                                                 you69298))
+(matchBetween (choices GivingOrNotGivingTheVaccine2
+               giveVaccine) (choices SelectingSomething71192 push70396))
+(matchBetween (choices GivingOrNotGivingTheVaccine2
+               NotGiveVaccine) (choices
+                                SelectingSomething71192
+                                Inaction71193))
+(matchBetween (chosenItem GivingOrNotGivingTheVaccine2
+               NotGiveVaccine) (chosenItem
+                                SelectingSomething71192
+                                Inaction71193))
+(matchBetween (chosenItem GivingOrNotGivingTheVaccine2
+               giveVaccine) (chosenItem SelectingSomething71192
+                             push70396))
+(matchBetween (performedBy NotGiveVaccine you1003) (performedBy
+                                                    Inaction71193
+                                                    you69298))
+(matchBetween (SelectingSomething
+               GivingOrNotGivingTheVaccine2) (SelectingSomething
+                                              SelectingSomething71192))
+(matchBetween GivingOrNotGivingTheVaccine2 SelectingSomething71192)
+(matchBetween (objectActedOn DyingChildrenGroup1
+               ChildrenInDangerGroup1) (objectActedOn
+                                        hit70613
+                                        bus70728))
+(matchBetween ChildrenInDangerGroup1 bus70728)
+(matchBetween (Dying DyingChildrenGroup1) (Dying hit70613))
+(matchBetween DyingChildrenGroup1 hit70613)
+(matchBetween (PreventingSomething
+               preventingDyingChildrenGroup1) (PreventingSomething
+                                               PreventingSomething71191))
+(matchBetween preventingDyingChildrenGroup1 PreventingSomething71191)

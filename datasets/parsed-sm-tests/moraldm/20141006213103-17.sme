@@ -1,0 +1,207 @@
+(sacredValueChoice open8135)
+(sacredValueChoice notOpen8135)
+(affectsSigLargerGroup open8135)
+(affectsSigLargerGroup notOpen8135)
+(uninferredSentence (affectsSigLargerGroup open8135))
+(uninferredSentence (affectsSigLargerGroup notOpen8135))
+(uninferredSentence (directlyResponsible you8131 notOpen8135))
+(uninferredSentence (preventsAlternativeNegativeOutcome open8135))
+(uninferredSentence (usedAsMeansToPreventNegativeOutcome open8135))
+(directlyResponsible you8131 open8135)
+(directlyResponsible you8131 notOpen8135)
+(preventsAlternativeNegativeOutcome open8135)
+(usedAsMeansToPreventNegativeOutcome open8135)
+(and (sacredValueChoice open8135) (sacredValueChoice notOpen8135)
+     (uninferredSentence (affectsSigLargerGroup open8135))
+     (uninferredSentence (affectsSigLargerGroup notOpen8135))
+     (directlyResponsible you8131 open8135)
+     (uninferredSentence (directlyResponsible you8131 notOpen8135))
+     (uninferredSentence (preventsAlternativeNegativeOutcome open8135))
+     (uninferredSentence
+      (usedAsMeansToPreventNegativeOutcome open8135)))
+(rightChoice notOpen8135)
+(chosenItem OpeningOrNotOpeningTheDam notOpen8135)
+(chosenItem OpeningOrNotOpeningTheDam open8135)
+(IntelligentAgent you8131)
+(Dam dam7557)
+((GroupFn AnimalSpecies) River1FishGroups)
+((GroupFn AnimalSpecies) River1FishGroup1)
+((GroupFn AnimalSpecies) River1FishGroup2)
+(Extinction ExtinctionRiver1FishGroup1)
+(Extinction ExtinctionRiver1FishGroup2)
+(OpeningSomething open8135)
+(PreventingSomething preventingExtinctionRiver1FishGroup1)
+(PreventingSomething preventingExtinctionRiver1FishGroup2)
+(SelectingSomething OpeningOrNotOpeningTheDam)
+(groupCardinality River1FishGroup1 2)
+(groupCardinality River1FishGroup2 20)
+(subGroups River1FishGroups River1FishGroup1)
+(subGroups River1FishGroups River1FishGroup2)
+(objectActedOn ExtinctionRiver1FishGroup1 River1FishGroup1)
+(objectActedOn ExtinctionRiver1FishGroup2 River1FishGroup2)
+(isInaction notOpen8135)
+(objectActedOn open8135 dam7557)
+(preventedProp preventingExtinctionRiver1FishGroup1
+ ExtinctionRiver1FishGroup1)
+(preventedProp preventingExtinctionRiver1FishGroup2
+ ExtinctionRiver1FishGroup2)
+(choices OpeningOrNotOpeningTheDam open8135)
+(choices OpeningOrNotOpeningTheDam notOpen8135)
+(performedBy open8135 you8131)
+(performedBy notOpen8135 you8131)
+(causes-PropProp (chosenItem OpeningOrNotOpeningTheDam open8135)
+ preventingExtinctionRiver1FishGroup2)
+(causes-PropProp (chosenItem OpeningOrNotOpeningTheDam open8135)
+ ExtinctionRiver1FishGroup1)
+(causes-PropProp (chosenItem OpeningOrNotOpeningTheDam notOpen8135)
+ ExtinctionRiver1FishGroup2)
+(causes-PropProp (chosenItem OpeningOrNotOpeningTheDam notOpen8135)
+ preventingExtinctionRiver1FishGroup1)
+(implies
+ (and (sacredValueChoice open8135) (sacredValueChoice notOpen8135)
+      (uninferredSentence (affectsSigLargerGroup open8135))
+      (uninferredSentence (affectsSigLargerGroup notOpen8135))
+      (directlyResponsible you8131 open8135)
+      (uninferredSentence (directlyResponsible you8131 notOpen8135))
+      (uninferredSentence
+       (preventsAlternativeNegativeOutcome open8135))
+      (uninferredSentence
+       (usedAsMeansToPreventNegativeOutcome open8135)))
+ (rightChoice notOpen8135))
+(makeDecision you8131 notOpen8135)
++++++++++++
+(IntelligentAgent you8115)
+(RefugeeCamp Camp1)
+(RefugeeCamp Camp2)
+((GroupFn Person) PeopleInDangerInCamp1)
+((GroupFn Person) PeopleInDangerInCamp2)
+(groupCardinality PeopleInDangerInCamp1 100)
+(groupCardinality PeopleInDangerInCamp2 1000)
+(residesInRegion PeopleInDangerInCamp1 Camp1)
+(residesInRegion PeopleInDangerInCamp2 Camp2)
+(Starvation PeopleDyingInCamp1)
+(Starvation PeopleDyingInCamp2)
+(objectActedOn PeopleDyingInCamp1 PeopleInDangerInCamp1)
+(objectActedOn PeopleDyingInCamp2 PeopleInDangerInCamp2)
+(objectActedOn ReRouteToCamp2 TruckConvoy)
+(Convoy TruckConvoy)
+(genls FoodTruck Truck)
+(containedObject FoodTruck Food)
+(groupMemberType TruckConvoy FoodTruck)
+(MovementEvent ReRouteToCamp2)
+(toLocation ReRouteToCamp2 Camp2)
+(PreventingSomething preventingPeopleDyingInCamp1)
+(PreventingSomething preventingPeopleDyingInCamp2)
+(preventedProp preventingPeopleDyingInCamp1 PeopleDyingInCamp1)
+(preventedProp preventingPeopleDyingInCamp2 PeopleDyingInCamp2)
+(Inaction notReRoute)
+(SelectingSomething SendingTruckToCamp1OrCamp2)
+(choices SendingTruckToCamp1OrCamp2 ReRouteToCamp2)
+(choices SendingTruckToCamp1OrCamp2 notReRoute)
+(performedBy ReRouteToCamp2 you8115)
+(performedBy notReRoute you8115)
+(chosenItem SendingTruckToCamp1OrCamp2 ReRouteToCamp2)
+(chosenItem SendingTruckToCamp1OrCamp2 notReRoute)
+(causes-PropProp (chosenItem SendingTruckToCamp1OrCamp2 ReRouteToCamp2)
+ preventingPeopleDyingInCamp2)
+(causes-PropProp (chosenItem SendingTruckToCamp1OrCamp2 ReRouteToCamp2)
+ PeopleDyingInCamp1)
+(causes-PropProp (chosenItem SendingTruckToCamp1OrCamp2 notReRoute)
+ PeopleDyingInCamp2)
+(causes-PropProp (chosenItem SendingTruckToCamp1OrCamp2 notReRoute)
+ preventingPeopleDyingInCamp1)
++++++++++++
+(matchBetween preventingExtinctionRiver1FishGroup2 preventingPeopleDyingInCamp2)
+(matchBetween (PreventingSomething
+               preventingExtinctionRiver1FishGroup2) (PreventingSomething
+                                                      preventingPeopleDyingInCamp2))
+(matchBetween River1FishGroup2 PeopleInDangerInCamp2)
+(matchBetween 20 1000)
+(matchBetween (groupCardinality River1FishGroup2 20) (groupCardinality
+                                                      PeopleInDangerInCamp2
+                                                      1000))
+(matchBetween ExtinctionRiver1FishGroup2 PeopleDyingInCamp2)
+(matchBetween (objectActedOn ExtinctionRiver1FishGroup2
+               River1FishGroup2) (objectActedOn
+                                  PeopleDyingInCamp2
+                                  PeopleInDangerInCamp2))
+(matchBetween (preventedProp preventingExtinctionRiver1FishGroup2
+               ExtinctionRiver1FishGroup2) (preventedProp
+                                            preventingPeopleDyingInCamp2
+                                            PeopleDyingInCamp2))
+(matchBetween open8135 ReRouteToCamp2)
+(matchBetween dam7557 TruckConvoy)
+(matchBetween (objectActedOn open8135 dam7557) (objectActedOn
+                                                ReRouteToCamp2
+                                                TruckConvoy))
+(matchBetween (performedBy open8135 you8131) (performedBy
+                                              ReRouteToCamp2
+                                              you8115))
+(matchBetween (choices OpeningOrNotOpeningTheDam notOpen8135) (choices
+                                                               SendingTruckToCamp1OrCamp2
+                                                               notReRoute))
+(matchBetween (chosenItem OpeningOrNotOpeningTheDam
+               notOpen8135) (chosenItem SendingTruckToCamp1OrCamp2
+                             notReRoute))
+(matchBetween (causes-PropProp
+               (chosenItem OpeningOrNotOpeningTheDam notOpen8135)
+               preventingExtinctionRiver1FishGroup1) (causes-PropProp
+                                                      (chosenItem
+                                                       SendingTruckToCamp1OrCamp2
+                                                       notReRoute)
+                                                      preventingPeopleDyingInCamp1))
+(matchBetween (chosenItem OpeningOrNotOpeningTheDam
+               open8135) (chosenItem SendingTruckToCamp1OrCamp2
+                          ReRouteToCamp2))
+(matchBetween (causes-PropProp
+               (chosenItem OpeningOrNotOpeningTheDam open8135)
+               ExtinctionRiver1FishGroup1) (causes-PropProp
+                                            (chosenItem
+                                             SendingTruckToCamp1OrCamp2
+                                             ReRouteToCamp2)
+                                            PeopleDyingInCamp1))
+(matchBetween (causes-PropProp
+               (chosenItem OpeningOrNotOpeningTheDam open8135)
+               preventingExtinctionRiver1FishGroup2) (causes-PropProp
+                                                      (chosenItem
+                                                       SendingTruckToCamp1OrCamp2
+                                                       ReRouteToCamp2)
+                                                      preventingPeopleDyingInCamp2))
+(matchBetween (causes-PropProp
+               (chosenItem OpeningOrNotOpeningTheDam notOpen8135)
+               ExtinctionRiver1FishGroup2) (causes-PropProp
+                                            (chosenItem
+                                             SendingTruckToCamp1OrCamp2
+                                             notReRoute)
+                                            PeopleDyingInCamp2))
+(matchBetween (choices OpeningOrNotOpeningTheDam open8135) (choices
+                                                            SendingTruckToCamp1OrCamp2
+                                                            ReRouteToCamp2))
+(matchBetween (SelectingSomething
+               OpeningOrNotOpeningTheDam) (SelectingSomething
+                                           SendingTruckToCamp1OrCamp2))
+(matchBetween OpeningOrNotOpeningTheDam SendingTruckToCamp1OrCamp2)
+(matchBetween (performedBy notOpen8135 you8131) (performedBy
+                                                 notReRoute
+                                                 you8115))
+(matchBetween notOpen8135 notReRoute)
+(matchBetween (preventedProp preventingExtinctionRiver1FishGroup1
+               ExtinctionRiver1FishGroup1) (preventedProp
+                                            preventingPeopleDyingInCamp1
+                                            PeopleDyingInCamp1))
+(matchBetween (objectActedOn ExtinctionRiver1FishGroup1
+               River1FishGroup1) (objectActedOn
+                                  PeopleDyingInCamp1
+                                  PeopleInDangerInCamp1))
+(matchBetween ExtinctionRiver1FishGroup1 PeopleDyingInCamp1)
+(matchBetween (groupCardinality River1FishGroup1 2) (groupCardinality
+                                                     PeopleInDangerInCamp1
+                                                     100))
+(matchBetween 2 100)
+(matchBetween River1FishGroup1 PeopleInDangerInCamp1)
+(matchBetween (PreventingSomething
+               preventingExtinctionRiver1FishGroup1) (PreventingSomething
+                                                      preventingPeopleDyingInCamp1))
+(matchBetween preventingExtinctionRiver1FishGroup1 preventingPeopleDyingInCamp1)
+(matchBetween (IntelligentAgent you8131) (IntelligentAgent you8115))
+(matchBetween you8131 you8115)

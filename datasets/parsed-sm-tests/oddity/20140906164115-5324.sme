@@ -1,0 +1,11 @@
+(ObliqueEdge-Downward Edge-3500)
+(PerceptualEdge Edge-3500)
+(StraightEdge Edge-3500)
++++++++++++
+(StraightEdge Edge-3501)
+(PerceptualEdge Edge-3501)
+(ObliqueEdge-Upward Edge-3501)
++++++++++++
+(matchBetween (StraightEdge Edge-3500) (StraightEdge Edge-3501))
+(matchBetween (PerceptualEdge Edge-3500) (PerceptualEdge Edge-3501))
+(matchBetween Edge-3500 Edge-3501)

@@ -1,0 +1,86 @@
+(convexAngleBetweenEdges Element-7 Element-8)
+(convexAngleBetweenEdges Element-9 Element-7)
+(convexAngleBetweenEdges Element-8 Element-9)
+(lengthLong Element-9)
+(edgesPerpendicular Element-7 Element-8)
+(cycleAdjacentAngles (convexAngleBetweenEdges Element-8 Element-9)
+ (convexAngleBetweenEdges Element-9 Element-7))
+(cycleAdjacentAngles (convexAngleBetweenEdges Element-7 Element-8)
+ (convexAngleBetweenEdges Element-8 Element-9))
+(cycleAdjacentAngles (convexAngleBetweenEdges Element-9 Element-7)
+ (convexAngleBetweenEdges Element-7 Element-8))
+(perpendicularCorner (convexAngleBetweenEdges Element-7 Element-8))
+(lengthMedium Element-7)
+(PerceptualEdge Element-9)
+(PerceptualEdge Element-8)
+(StraightEdge Element-7)
+(PerceptualEdge Element-7)
+(StraightEdge Element-8)
+(StraightEdge Element-9)
++++++++++++
+(StraightEdge Edge-2633)
+(StraightEdge Edge-2632)
+(StraightEdge Edge-2631)
+(PerceptualEdge Edge-2633)
+(PerceptualEdge Edge-2632)
+(PerceptualEdge Edge-2631)
+(lengthLong Edge-2633)
+(lengthMedium Edge-2632)
+(lengthMedium Edge-2631)
+(convexAngleBetweenEdges Edge-2633 Edge-2632)
+(convexAngleBetweenEdges Edge-2632 Edge-2631)
+(convexAngleBetweenEdges Edge-2631 Edge-2633)
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-2633 Edge-2632)
+ (convexAngleBetweenEdges Edge-2632 Edge-2631))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-2632 Edge-2631)
+ (convexAngleBetweenEdges Edge-2631 Edge-2633))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-2631 Edge-2633)
+ (convexAngleBetweenEdges Edge-2633 Edge-2632))
+(adjacentAcuteObtuseAngles
+ (convexAngleBetweenEdges Edge-2633 Edge-2632)
+ (convexAngleBetweenEdges Edge-2632 Edge-2631))
+(adjacentObtuseAcuteAngles
+ (convexAngleBetweenEdges Edge-2632 Edge-2631)
+ (convexAngleBetweenEdges Edge-2631 Edge-2633))
++++++++++++
+(matchBetween (StraightEdge Element-8) (StraightEdge Edge-2631))
+(matchBetween Element-7 Edge-2632)
+(matchBetween (lengthMedium Element-7) (lengthMedium Edge-2632))
+(matchBetween (PerceptualEdge Element-9) (PerceptualEdge Edge-2633))
+(matchBetween (StraightEdge Element-7) (StraightEdge Edge-2632))
+(matchBetween (convexAngleBetweenEdges Element-8
+               Element-9) (convexAngleBetweenEdges Edge-2631 Edge-2633))
+(matchBetween (cycleAdjacentAngles
+               (convexAngleBetweenEdges Element-7 Element-8)
+               (convexAngleBetweenEdges Element-8
+                Element-9)) (cycleAdjacentAngles
+                             (convexAngleBetweenEdges Edge-2632
+                              Edge-2631)
+                             (convexAngleBetweenEdges Edge-2631
+                              Edge-2633)))
+(matchBetween (cycleAdjacentAngles
+               (convexAngleBetweenEdges Element-8 Element-9)
+               (convexAngleBetweenEdges Element-9
+                Element-7)) (cycleAdjacentAngles
+                             (convexAngleBetweenEdges Edge-2631
+                              Edge-2633)
+                             (convexAngleBetweenEdges Edge-2633
+                              Edge-2632)))
+(matchBetween (cycleAdjacentAngles
+               (convexAngleBetweenEdges Element-9 Element-7)
+               (convexAngleBetweenEdges Element-7
+                Element-8)) (cycleAdjacentAngles
+                             (convexAngleBetweenEdges Edge-2633
+                              Edge-2632)
+                             (convexAngleBetweenEdges Edge-2632
+                              Edge-2631)))
+(matchBetween (convexAngleBetweenEdges Element-7
+               Element-8) (convexAngleBetweenEdges Edge-2632 Edge-2631))
+(matchBetween (convexAngleBetweenEdges Element-9
+               Element-7) (convexAngleBetweenEdges Edge-2633 Edge-2632))
+(matchBetween (StraightEdge Element-9) (StraightEdge Edge-2633))
+(matchBetween (PerceptualEdge Element-7) (PerceptualEdge Edge-2632))
+(matchBetween (lengthLong Element-9) (lengthLong Edge-2633))
+(matchBetween Element-9 Edge-2633)
+(matchBetween (PerceptualEdge Element-8) (PerceptualEdge Edge-2631))
+(matchBetween Element-8 Edge-2631)

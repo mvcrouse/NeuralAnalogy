@@ -1,0 +1,208 @@
+(sacredValueChoice destroy44806)
+(sacredValueChoice Inaction45139)
+(affectsSigLargerGroup destroy44806)
+(affectsSigLargerGroup Inaction45139)
+(uninferredSentence (affectsSigLargerGroup destroy44806))
+(uninferredSentence (affectsSigLargerGroup Inaction45139))
+(uninferredSentence (directlyResponsible you44570 Inaction45139))
+(uninferredSentence (usedAsMeansToPreventNegativeOutcome destroy44806))
+(directlyResponsible you44570 destroy44806)
+(directlyResponsible you44570 Inaction45139)
+(preventsAlternativeNegativeOutcome destroy44806)
+(usedAsMeansToPreventNegativeOutcome destroy44806)
+(and (sacredValueChoice destroy44806) (sacredValueChoice Inaction45139)
+     (uninferredSentence (affectsSigLargerGroup destroy44806))
+     (uninferredSentence (affectsSigLargerGroup Inaction45139))
+     (directlyResponsible you44570 destroy44806)
+     (uninferredSentence (directlyResponsible you44570 Inaction45139))
+     (preventsAlternativeNegativeOutcome destroy44806)
+     (uninferredSentence
+      (usedAsMeansToPreventNegativeOutcome destroy44806)))
+(rightChoice destroy44806)
+(chosenItem SelectingSomething45138 destroy44806)
+(chosenItem SelectingSomething45138 Inaction45139)
+(Inaction Inaction45139)
+(PreventingSomething PreventingSomething45137)
+(SelectingSomething SelectingSomething45138)
+(Watercraft boat44423)
+(DestructionEvent destroy44806)
+(RescuingSomeone save44609)
+(GroupFnPerson set-of-soldier44949)
+(Set-Mathematical set-of-soldier44949)
+(SinkingEvent sink44393)
+(SinkingEvent sink44858)
+(Submarine submarine44901)
+(GroupFnPerson them44642)
+(Set-Mathematical them44642)
+(Dying sink44858)
+(Dying sink44393)
+(Torpedo torpedo44700)
+(performedBy PreventingSomething45137 you44570)
+(preventedSit PreventingSomething45137 sink44393)
+(choices SelectingSomething45138 destroy44806)
+(choices SelectingSomething45138 Inaction45139)
+(causes-PropSit (chosenItem SelectingSomething45138 Inaction45139)
+ sink44393)
+(causes-PropSit (chosenItem SelectingSomething45138 destroy44806)
+ save44609)
+(causes-PropSit (chosenItem SelectingSomething45138 destroy44806)
+ sink44858)
+(inputsDestroyed destroy44806 torpedo44700)
+(doneBy destroy44806 you44570)
+(performedBy destroy44806 you44570)
+(performedBy Inaction45139 you44570)
+(beneficiary save44609 them44642)
+(performedBy save44609 you44570)
+(by-Underspecified save44609 destroy44806)
+(causes-SitSit save44609 PreventingSomething45137)
+(cardinality set-of-soldier44949 3)
+(doneBy sink44393 torpedo44700)
+(objectActedOn sink44393 boat44423)
+(doneBy sink44858 destroy44806)
+(objectActedOn sink44858 submarine44901)
+(cardinality them44642 6)
+(implies
+ (and (sacredValueChoice destroy44806)
+      (sacredValueChoice Inaction45139)
+      (uninferredSentence (affectsSigLargerGroup destroy44806))
+      (uninferredSentence (affectsSigLargerGroup Inaction45139))
+      (directlyResponsible you44570 destroy44806)
+      (uninferredSentence (directlyResponsible you44570 Inaction45139))
+      (preventsAlternativeNegativeOutcome destroy44806)
+      (uninferredSentence
+       (usedAsMeansToPreventNegativeOutcome destroy44806)))
+ (rightChoice destroy44806))
+(makeDecision you44570 destroy44806)
++++++++++++
+(Inaction Inaction71193)
+(performedBy PreventingSomething71191 you69298)
+(performedBy hit69039 train70550)
+(performedBy hit70613 train70550)
+(performedBy push70396 you69298)
+(performedBy Inaction71193 you69298)
+(performedBy save69337 you69298)
+(preventedSit PreventingSomething71191 hit69039)
+(PreventingSomething PreventingSomething71191)
+(SelectingSomething SelectingSomething71192)
+(choices SelectingSomething71192 push70396)
+(choices SelectingSomething71192 Inaction71193)
+(chosenItem SelectingSomething71192 Inaction71193)
+(chosenItem SelectingSomething71192 push70396)
+(causes-PropSit (chosenItem SelectingSomething71192 Inaction71193)
+ hit69039)
+(causes-PropSit (chosenItem SelectingSomething71192 push70396) hit70613)
+(Bus-RoadVehicle bus69096)
+(Bus-RoadVehicle bus70728)
+(GroupFnPerson them69370)
+(GroupFnPerson set-of-passenger69536)
+(Dying hit69039)
+(Dying hit70613)
+(HittingAnObject hit69039)
+(HittingAnObject hit70613)
+(objectActedOn hit69039 bus69096)
+(objectActedOn hit70613 bus70728)
+(objectActedOn push70396 bus70728)
+(causes-SitSit hit70613 save69337)
+(causes-SitSit save69337 PreventingSomething71191)
+(PushingAnObject push70396)
+(providerOfMotiveForce push70396 you69298)
+(primaryObjectMoving push70396 bus70728)
+(RescuingSomeone save69337)
+(beneficiary save69337 them69370)
+(by-Underspecified save69337 push70396)
+(cardinality set-of-passenger69536 2)
+(cardinality them69370 10)
+(Set-Mathematical set-of-passenger69536)
+(Set-Mathematical them69370)
+(HighAmountFn Speed)
+(speedOfObject-Underspecified train70550 (HighAmountFn Speed))
+(Train-TransportationDevice train70550)
++++++++++++
+(matchBetween PreventingSomething45137 PreventingSomething71191)
+(matchBetween (PreventingSomething
+               PreventingSomething45137) (PreventingSomething
+                                          PreventingSomething71191))
+(matchBetween them44642 them69370)
+(matchBetween (GroupFnPerson them44642) (GroupFnPerson them69370))
+(matchBetween (Set-Mathematical them44642) (Set-Mathematical them69370))
+(matchBetween sink44393 hit69039)
+(matchBetween (Dying sink44393) (Dying hit69039))
+(matchBetween (choices SelectingSomething45138 Inaction45139) (choices
+                                                               SelectingSomething71192
+                                                               Inaction71193))
+(matchBetween (chosenItem SelectingSomething45138
+               Inaction45139) (chosenItem SelectingSomething71192
+                               Inaction71193))
+(matchBetween (causes-PropSit
+               (chosenItem SelectingSomething45138 Inaction45139)
+               sink44393) (causes-PropSit
+                           (chosenItem SelectingSomething71192
+                            Inaction71193)
+                           hit69039))
+(matchBetween (performedBy destroy44806 you44570) (performedBy
+                                                   push70396
+                                                   you69298))
+(matchBetween boat44423 bus69096)
+(matchBetween (objectActedOn sink44393 boat44423) (objectActedOn
+                                                   hit69039
+                                                   bus69096))
+(matchBetween 3 2)
+(matchBetween (cardinality set-of-soldier44949 3) (cardinality
+                                                   set-of-passenger69536
+                                                   2))
+(matchBetween submarine44901 bus70728)
+(matchBetween (objectActedOn sink44858 submarine44901) (objectActedOn
+                                                        hit70613
+                                                        bus70728))
+(matchBetween (beneficiary save44609 them44642) (beneficiary
+                                                 save69337
+                                                 them69370))
+(matchBetween (causes-SitSit save44609
+               PreventingSomething45137) (causes-SitSit
+                                          save69337
+                                          PreventingSomething71191))
+(matchBetween (chosenItem SelectingSomething45138
+               destroy44806) (chosenItem SelectingSomething71192
+                              push70396))
+(matchBetween (causes-PropSit
+               (chosenItem SelectingSomething45138 destroy44806)
+               sink44858) (causes-PropSit
+                           (chosenItem SelectingSomething71192
+                            push70396)
+                           hit70613))
+(matchBetween (by-Underspecified save44609
+               destroy44806) (by-Underspecified save69337 push70396))
+(matchBetween (performedBy save44609 you44570) (performedBy
+                                                save69337
+                                                you69298))
+(matchBetween (RescuingSomeone save44609) (RescuingSomeone save69337))
+(matchBetween save44609 save69337)
+(matchBetween (Dying sink44858) (Dying hit70613))
+(matchBetween sink44858 hit70613)
+(matchBetween (cardinality them44642 6) (cardinality them69370 10))
+(matchBetween 6 10)
+(matchBetween (performedBy PreventingSomething45137
+               you44570) (performedBy PreventingSomething71191
+                          you69298))
+(matchBetween (performedBy Inaction45139 you44570) (performedBy
+                                                    Inaction71193
+                                                    you69298))
+(matchBetween you44570 you69298)
+(matchBetween (choices SelectingSomething45138 destroy44806) (choices
+                                                              SelectingSomething71192
+                                                              push70396))
+(matchBetween destroy44806 push70396)
+(matchBetween (preventedSit PreventingSomething45137
+               sink44393) (preventedSit PreventingSomething71191
+                           hit69039))
+(matchBetween (Set-Mathematical set-of-soldier44949) (Set-Mathematical
+                                                      set-of-passenger69536))
+(matchBetween (GroupFnPerson set-of-soldier44949) (GroupFnPerson
+                                                   set-of-passenger69536))
+(matchBetween set-of-soldier44949 set-of-passenger69536)
+(matchBetween (SelectingSomething
+               SelectingSomething45138) (SelectingSomething
+                                         SelectingSomething71192))
+(matchBetween SelectingSomething45138 SelectingSomething71192)
+(matchBetween (Inaction Inaction45139) (Inaction Inaction71193))
+(matchBetween Inaction45139 Inaction71193)

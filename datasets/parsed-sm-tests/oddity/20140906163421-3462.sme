@@ -1,0 +1,128 @@
+(convexAngleBetweenEdges Edge-2839 Edge-2838)
+(convexAngleBetweenEdges Edge-2838 Edge-2837)
+(convexAngleBetweenEdges Edge-2837 Edge-2836)
+(convexAngleBetweenEdges Edge-2836 Edge-2839)
+(adjacentObtuseAcuteAngles
+ (convexAngleBetweenEdges Edge-2836 Edge-2839)
+ (convexAngleBetweenEdges Edge-2839 Edge-2838))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-2836 Edge-2839)
+ (convexAngleBetweenEdges Edge-2839 Edge-2838))
+(adjacentAcuteObtuseAngles
+ (convexAngleBetweenEdges Edge-2837 Edge-2836)
+ (convexAngleBetweenEdges Edge-2836 Edge-2839))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-2837 Edge-2836)
+ (convexAngleBetweenEdges Edge-2836 Edge-2839))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-2838 Edge-2837)
+ (convexAngleBetweenEdges Edge-2837 Edge-2836))
+(perpendicularCorner (convexAngleBetweenEdges Edge-2838 Edge-2837))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-2839 Edge-2838)
+ (convexAngleBetweenEdges Edge-2838 Edge-2837))
+(edgesPerpendicular Edge-2838 Edge-2837)
+(PerceptualEdge Edge-2836)
+(StraightEdge Edge-2836)
+(PerceptualEdge Edge-2837)
+(StraightEdge Edge-2837)
+(PerceptualEdge Edge-2838)
+(StraightEdge Edge-2838)
+(PerceptualEdge Edge-2839)
+(StraightEdge Edge-2839)
++++++++++++
+(StraightEdge Edge-2844)
+(StraightEdge Edge-2843)
+(StraightEdge Edge-2842)
+(StraightEdge Edge-2841)
+(PerceptualEdge Edge-2844)
+(PerceptualEdge Edge-2843)
+(PerceptualEdge Edge-2842)
+(PerceptualEdge Edge-2841)
+(axisAligned Edge-2842)
+(axisAligned Edge-2841)
+(lengthLong Edge-2841)
+(lengthLong Edge-2844)
+(lengthMedium Edge-2842)
+(lengthShort Edge-2843)
+(edgesPerpendicular Edge-2842 Edge-2841)
+(convexAngleBetweenEdges Edge-2842 Edge-2843)
+(convexAngleBetweenEdges Edge-2843 Edge-2844)
+(convexAngleBetweenEdges Edge-2841 Edge-2842)
+(convexAngleBetweenEdges Edge-2844 Edge-2841)
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-2842 Edge-2843)
+ (convexAngleBetweenEdges Edge-2843 Edge-2844))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-2841 Edge-2842)
+ (convexAngleBetweenEdges Edge-2842 Edge-2843))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-2844 Edge-2841)
+ (convexAngleBetweenEdges Edge-2841 Edge-2842))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-2843 Edge-2844)
+ (convexAngleBetweenEdges Edge-2844 Edge-2841))
+(perpendicularCorner (convexAngleBetweenEdges Edge-2841 Edge-2842))
+(adjacentObtuseAcuteAngles
+ (convexAngleBetweenEdges Edge-2843 Edge-2844)
+ (convexAngleBetweenEdges Edge-2844 Edge-2841))
++++++++++++
+(matchBetween (StraightEdge Edge-2836) (StraightEdge Edge-2843))
+(matchBetween (StraightEdge Edge-2837) (StraightEdge Edge-2842))
+(matchBetween (StraightEdge Edge-2839) (StraightEdge Edge-2844))
+(matchBetween (StraightEdge Edge-2838) (StraightEdge Edge-2841))
+(matchBetween (convexAngleBetweenEdges Edge-2838
+               Edge-2837) (convexAngleBetweenEdges Edge-2841 Edge-2842))
+(matchBetween (perpendicularCorner
+               (convexAngleBetweenEdges Edge-2838
+                Edge-2837)) (perpendicularCorner
+                             (convexAngleBetweenEdges Edge-2841
+                              Edge-2842)))
+(matchBetween (cycleAdjacentAngles
+               (convexAngleBetweenEdges Edge-2838 Edge-2837)
+               (convexAngleBetweenEdges Edge-2837
+                Edge-2836)) (cycleAdjacentAngles
+                             (convexAngleBetweenEdges Edge-2841
+                              Edge-2842)
+                             (convexAngleBetweenEdges Edge-2842
+                              Edge-2843)))
+(matchBetween (cycleAdjacentAngles
+               (convexAngleBetweenEdges Edge-2836 Edge-2839)
+               (convexAngleBetweenEdges Edge-2839
+                Edge-2838)) (cycleAdjacentAngles
+                             (convexAngleBetweenEdges Edge-2843
+                              Edge-2844)
+                             (convexAngleBetweenEdges Edge-2844
+                              Edge-2841)))
+(matchBetween (cycleAdjacentAngles
+               (convexAngleBetweenEdges Edge-2839 Edge-2838)
+               (convexAngleBetweenEdges Edge-2838
+                Edge-2837)) (cycleAdjacentAngles
+                             (convexAngleBetweenEdges Edge-2844
+                              Edge-2841)
+                             (convexAngleBetweenEdges Edge-2841
+                              Edge-2842)))
+(matchBetween (adjacentObtuseAcuteAngles
+               (convexAngleBetweenEdges Edge-2836 Edge-2839)
+               (convexAngleBetweenEdges Edge-2839
+                Edge-2838)) (adjacentObtuseAcuteAngles
+                             (convexAngleBetweenEdges Edge-2843
+                              Edge-2844)
+                             (convexAngleBetweenEdges Edge-2844
+                              Edge-2841)))
+(matchBetween (convexAngleBetweenEdges Edge-2839
+               Edge-2838) (convexAngleBetweenEdges Edge-2844 Edge-2841))
+(matchBetween (cycleAdjacentAngles
+               (convexAngleBetweenEdges Edge-2837 Edge-2836)
+               (convexAngleBetweenEdges Edge-2836
+                Edge-2839)) (cycleAdjacentAngles
+                             (convexAngleBetweenEdges Edge-2842
+                              Edge-2843)
+                             (convexAngleBetweenEdges Edge-2843
+                              Edge-2844)))
+(matchBetween (convexAngleBetweenEdges Edge-2837
+               Edge-2836) (convexAngleBetweenEdges Edge-2842 Edge-2843))
+(matchBetween (convexAngleBetweenEdges Edge-2836
+               Edge-2839) (convexAngleBetweenEdges Edge-2843 Edge-2844))
+(matchBetween (edgesPerpendicular Edge-2838
+               Edge-2837) (edgesPerpendicular Edge-2842 Edge-2841))
+(matchBetween (PerceptualEdge Edge-2838) (PerceptualEdge Edge-2841))
+(matchBetween Edge-2838 Edge-2841)
+(matchBetween (PerceptualEdge Edge-2839) (PerceptualEdge Edge-2844))
+(matchBetween Edge-2839 Edge-2844)
+(matchBetween (PerceptualEdge Edge-2837) (PerceptualEdge Edge-2842))
+(matchBetween Edge-2837 Edge-2842)
+(matchBetween (PerceptualEdge Edge-2836) (PerceptualEdge Edge-2843))
+(matchBetween Edge-2836 Edge-2843)

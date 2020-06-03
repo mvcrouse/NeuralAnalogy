@@ -1,0 +1,175 @@
+(sacredValueChoice ReRouteToCamp2)
+(sacredValueChoice notReRoute)
+(affectsSigLargerGroup ReRouteToCamp2)
+(affectsSigLargerGroup notReRoute)
+(uninferredSentence (affectsSigLargerGroup ReRouteToCamp2))
+(uninferredSentence (affectsSigLargerGroup notReRoute))
+(uninferredSentence (directlyResponsible you8115 notReRoute))
+(uninferredSentence (preventsAlternativeNegativeOutcome ReRouteToCamp2))
+(uninferredSentence
+ (usedAsMeansToPreventNegativeOutcome ReRouteToCamp2))
+(directlyResponsible you8115 ReRouteToCamp2)
+(directlyResponsible you8115 notReRoute)
+(preventsAlternativeNegativeOutcome ReRouteToCamp2)
+(usedAsMeansToPreventNegativeOutcome ReRouteToCamp2)
+(and (sacredValueChoice ReRouteToCamp2) (sacredValueChoice notReRoute)
+     (uninferredSentence (affectsSigLargerGroup ReRouteToCamp2))
+     (uninferredSentence (affectsSigLargerGroup notReRoute))
+     (directlyResponsible you8115 ReRouteToCamp2)
+     (uninferredSentence (directlyResponsible you8115 notReRoute))
+     (uninferredSentence
+      (preventsAlternativeNegativeOutcome ReRouteToCamp2))
+     (uninferredSentence
+      (usedAsMeansToPreventNegativeOutcome ReRouteToCamp2)))
+(rightChoice notReRoute)
+(chosenItem SendingTruckToCamp1OrCamp2 notReRoute)
+(chosenItem SendingTruckToCamp1OrCamp2 ReRouteToCamp2)
+(IntelligentAgent you8115)
+(RefugeeCamp Camp1)
+(RefugeeCamp Camp2)
+(GroupFnPerson PeopleInDangerInCamp1)
+(GroupFnPerson PeopleInDangerInCamp2)
+(Starvation PeopleDyingInCamp1)
+(Starvation PeopleDyingInCamp2)
+(Convoy TruckConvoy)
+(MovementEvent ReRouteToCamp2)
+(PreventingSomething preventingPeopleDyingInCamp1)
+(PreventingSomething preventingPeopleDyingInCamp2)
+(Inaction notReRoute)
+(SelectingSomething SendingTruckToCamp1OrCamp2)
+(groupCardinality PeopleInDangerInCamp1 100)
+(groupCardinality PeopleInDangerInCamp2 1000)
+(residesInRegion PeopleInDangerInCamp1 Camp1)
+(residesInRegion PeopleInDangerInCamp2 Camp2)
+(objectActedOn PeopleDyingInCamp1 PeopleInDangerInCamp1)
+(objectActedOn PeopleDyingInCamp2 PeopleInDangerInCamp2)
+(containedObject FoodTruck Food)
+(groupMemberType TruckConvoy FoodTruck)
+(objectActedOn ReRouteToCamp2 TruckConvoy)
+(toLocation ReRouteToCamp2 Camp2)
+(preventedProp preventingPeopleDyingInCamp1 PeopleDyingInCamp1)
+(preventedProp preventingPeopleDyingInCamp2 PeopleDyingInCamp2)
+(choices SendingTruckToCamp1OrCamp2 ReRouteToCamp2)
+(choices SendingTruckToCamp1OrCamp2 notReRoute)
+(performedBy ReRouteToCamp2 you8115)
+(performedBy notReRoute you8115)
+(causes-PropProp (chosenItem SendingTruckToCamp1OrCamp2 ReRouteToCamp2)
+ preventingPeopleDyingInCamp2)
+(causes-PropProp (chosenItem SendingTruckToCamp1OrCamp2 ReRouteToCamp2)
+ PeopleDyingInCamp1)
+(causes-PropProp (chosenItem SendingTruckToCamp1OrCamp2 notReRoute)
+ PeopleDyingInCamp2)
+(causes-PropProp (chosenItem SendingTruckToCamp1OrCamp2 notReRoute)
+ preventingPeopleDyingInCamp1)
+(implies
+ (and (sacredValueChoice ReRouteToCamp2) (sacredValueChoice notReRoute)
+      (uninferredSentence (affectsSigLargerGroup ReRouteToCamp2))
+      (uninferredSentence (affectsSigLargerGroup notReRoute))
+      (directlyResponsible you8115 ReRouteToCamp2)
+      (uninferredSentence (directlyResponsible you8115 notReRoute))
+      (uninferredSentence
+       (preventsAlternativeNegativeOutcome ReRouteToCamp2))
+      (uninferredSentence
+       (usedAsMeansToPreventNegativeOutcome ReRouteToCamp2)))
+ (rightChoice notReRoute))
+(makeDecision you8115 notReRoute)
++++++++++++
+(Inaction Inaction61980)
+(performedBy PreventingSomething61978 you60659)
+(performedBy order61574 you60659)
+(performedBy Inaction61980 you60659)
+(performedBy save60698 you60659)
+(preventedSit PreventingSomething61978 sink60482)
+(preventedSit save60698 sink60482)
+(PreventingSomething PreventingSomething61978)
+(PreventingSomething save60698)
+(SelectingSomething SelectingSomething61979)
+(choices SelectingSomething61979 order61574)
+(choices SelectingSomething61979 Inaction61980)
+(chosenItem SelectingSomething61979 Inaction61980)
+(chosenItem SelectingSomething61979 order61574)
+(causes-PropSit (chosenItem SelectingSomething61979 Inaction61980)
+ sink60482)
+(causes-PropSit (chosenItem SelectingSomething61979 order61574)
+ intercept60913)
+(GroupFnPerson them60731)
+(GroupFnPerson set-of-soldier61764)
+(Watercraft boat60512)
+(Watercraft boat61694)
+(recipientOfInfo order61574 soldier60831)
+(with-UnderspecifiedAgent intercept60913 boat61694)
+(obstructs boat61694 torpedo60971)
+(causes-SitProp intercept60913 (obstructs boat61694 torpedo60971))
+(barrier intercept60913 boat61694)
+(BarrierSituation intercept60913)
+(causes-SitSit intercept60913 sink61646)
+(causes-SitSit intercept60913 save60698)
+(causes-SitSit save60698 PreventingSomething61978)
+(objectActedOn order61574 boat61694)
+(objectActedOn sink60482 boat60512)
+(objectActedOn sink61646 boat61694)
+(Ordering-CommunicationAct order61574)
+(RescuingSomeone save60698)
+(beneficiary save60698 them60731)
+(by-Underspecified save60698 order61574)
+(cardinality set-of-soldier61764 3)
+(cardinality them60731 6)
+(Set-Mathematical set-of-soldier61764)
+(Set-Mathematical them60731)
+(doneBy sink60482 torpedo60971)
+(doneBy sink61646 order61574)
+(SinkingEvent sink60482)
+(SinkingEvent sink61646)
+(Torpedo torpedo60971)
+(Dying sink61646)
+(Dying sink60482)
++++++++++++
+(matchBetween preventingPeopleDyingInCamp2 PreventingSomething61978)
+(matchBetween (PreventingSomething
+               preventingPeopleDyingInCamp2) (PreventingSomething
+                                              PreventingSomething61978))
+(matchBetween PeopleDyingInCamp1 sink60482)
+(matchBetween PeopleInDangerInCamp1 boat60512)
+(matchBetween (objectActedOn PeopleDyingInCamp1
+               PeopleInDangerInCamp1) (objectActedOn
+                                       sink60482
+                                       boat60512))
+(matchBetween SendingTruckToCamp1OrCamp2 SelectingSomething61979)
+(matchBetween (SelectingSomething
+               SendingTruckToCamp1OrCamp2) (SelectingSomething
+                                            SelectingSomething61979))
+(matchBetween you8115 you60659)
+(matchBetween (performedBy notReRoute you8115) (performedBy
+                                                Inaction61980
+                                                you60659))
+(matchBetween (choices SendingTruckToCamp1OrCamp2 notReRoute) (choices
+                                                               SelectingSomething61979
+                                                               Inaction61980))
+(matchBetween (chosenItem SendingTruckToCamp1OrCamp2
+               notReRoute) (chosenItem SelectingSomething61979
+                            Inaction61980))
+(matchBetween (chosenItem SendingTruckToCamp1OrCamp2
+               ReRouteToCamp2) (chosenItem
+                                SelectingSomething61979
+                                order61574))
+(matchBetween (choices SendingTruckToCamp1OrCamp2
+               ReRouteToCamp2) (choices
+                                SelectingSomething61979
+                                order61574))
+(matchBetween (performedBy ReRouteToCamp2 you8115) (performedBy
+                                                    order61574
+                                                    you60659))
+(matchBetween (objectActedOn ReRouteToCamp2 TruckConvoy) (objectActedOn
+                                                          order61574
+                                                          boat61694))
+(matchBetween TruckConvoy boat61694)
+(matchBetween ReRouteToCamp2 order61574)
+(matchBetween (Inaction notReRoute) (Inaction Inaction61980))
+(matchBetween notReRoute Inaction61980)
+(matchBetween (PreventingSomething
+               preventingPeopleDyingInCamp1) (PreventingSomething
+                                              save60698))
+(matchBetween preventingPeopleDyingInCamp1 save60698)
+(matchBetween (GroupFnPerson PeopleInDangerInCamp2) (GroupFnPerson
+                                                     set-of-soldier61764))
+(matchBetween PeopleInDangerInCamp2 set-of-soldier61764)

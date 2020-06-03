@@ -1,0 +1,172 @@
+(sacredValueChoice redirect67174)
+(sacredValueChoice Inaction68012)
+(affectsSigLargerGroup redirect67174)
+(affectsSigLargerGroup Inaction68012)
+(uninferredSentence (affectsSigLargerGroup redirect67174))
+(uninferredSentence (affectsSigLargerGroup Inaction68012))
+(uninferredSentence (directlyResponsible you64335 Inaction68012))
+(uninferredSentence (usedAsMeansToPreventNegativeOutcome redirect67174))
+(directlyResponsible you64335 redirect67174)
+(directlyResponsible you64335 Inaction68012)
+(preventsAlternativeNegativeOutcome redirect67174)
+(usedAsMeansToPreventNegativeOutcome redirect67174)
+(and (sacredValueChoice redirect67174)
+     (sacredValueChoice Inaction68012)
+     (uninferredSentence (affectsSigLargerGroup redirect67174))
+     (uninferredSentence (affectsSigLargerGroup Inaction68012))
+     (directlyResponsible you64335 redirect67174)
+     (uninferredSentence (directlyResponsible you64335 Inaction68012))
+     (preventsAlternativeNegativeOutcome redirect67174)
+     (uninferredSentence
+      (usedAsMeansToPreventNegativeOutcome redirect67174)))
+(rightChoice redirect67174)
+(HighAmountFn Speed)
+(chosenItem SelectingSomething68011 redirect67174)
+(chosenItem SelectingSomething68011 Inaction68012)
+(Inaction Inaction68012)
+(PreventingSomething PreventingSomething68010)
+(SelectingSomething SelectingSomething68011)
+((GroupFn Person) them64407)
+((GroupFn Person) set-of-passenger66080)
+(Dying hit64076)
+(Dying hit67367)
+(Bus-RoadVehicle bus64133)
+(Bus-RoadVehicle bus66039)
+(HittingAnObject hit64076)
+(HittingAnObject hit67367)
+(Translation-LocationChange redirect67174)
+(RescuingSomeone save64374)
+(Set-Mathematical set-of-passenger66080)
+(Railway-siding side-track66173)
+(Set-Mathematical them64407)
+(Train-TransportationDevice train64488)
+(performedBy PreventingSomething68010 you64335)
+(preventedSit PreventingSomething68010 hit64076)
+(choices SelectingSomething68011 redirect67174)
+(choices SelectingSomething68011 Inaction68012)
+(causes-PropSit (chosenItem SelectingSomething68011 Inaction68012)
+ hit64076)
+(causes-PropSit (chosenItem SelectingSomething68011 redirect67174)
+ save64374)
+(on-UnderspecifiedSurface bus66039 side-track66173)
+(performedBy hit64076 train64488)
+(objectActedOn hit64076 bus64133)
+(objectActedOn hit67367 bus66039)
+(performedBy hit67367 train64488)
+(causes-PropSit (chosenItem SelectingSomething68011 redirect67174)
+ hit67367)
+(performedBy redirect67174 you64335)
+(performedBy Inaction68012 you64335)
+(primaryObjectMoving redirect67174 train64488)
+(toLocation redirect67174 side-track66173)
+(beneficiary save64374 them64407)
+(performedBy save64374 you64335)
+(by-Underspecified save64374 redirect67174)
+(causes-SitSit save64374 PreventingSomething68010)
+(cardinality set-of-passenger66080 2)
+(cardinality them64407 10)
+(speedOfObject-Underspecified train64488 (HighAmountFn Speed))
+(implies
+ (and (sacredValueChoice redirect67174)
+      (sacredValueChoice Inaction68012)
+      (uninferredSentence (affectsSigLargerGroup redirect67174))
+      (uninferredSentence (affectsSigLargerGroup Inaction68012))
+      (directlyResponsible you64335 redirect67174)
+      (uninferredSentence (directlyResponsible you64335 Inaction68012))
+      (preventsAlternativeNegativeOutcome redirect67174)
+      (uninferredSentence
+       (usedAsMeansToPreventNegativeOutcome redirect67174)))
+ (rightChoice redirect67174))
+(makeDecision you64335 redirect67174)
++++++++++++
+(IntelligentAgent you1123)
+((GroupFn FactoryWorker) WorkersInPlant1)
+((GroupFn FactoryWorker) WorkersInPlant2)
+(Employee FactoryWorker)
+(FactoryBuilding Factory1)
+(FactoryBuilding Factory2)
+(groupCardinality WorkersInPlant1 50)
+(groupCardinality WorkersInPlant2 500)
+(worksAtFacility WorkersInPlant1 Factory1)
+(worksAtFacility WorkersInPlant2 Factory2)
+(FinancialSupport FinancialAssistanceToFactory1)
+(FinancialSupport giveFinancialAssistanceToFactory2)
+(beneficiary FinancialAssistanceToFactory1 WorkersInPlant1)
+(beneficiary giveFinancialAssistanceToFactory2 WorkersInPlant2)
+(performedBy FinancialAssistanceToFactory1 you1123)
+(performedBy giveFinancialAssistanceToFactory2 you1123)
+(performedBy NotChangeSupport you1123)
+(EmployeeLayoff employeeLayoff1)
+(EmployeeLayoff employeeLayoff2)
+(objectActedOn employeeLayoff1 WorkersInPlant1)
+(objectActedOn employeeLayoff2 WorkersInPlant2)
+(PreventingSomething preventingLayoff1)
+(PreventingSomething preventingLayoff2)
+(preventedProp preventingLayoff1 employeeLayoff1)
+(preventedProp preventingLayoff2 employeeLayoff2)
+(supportedBy WorkersInPlant1 FinancialAssistanceToFactory1)
+(Inaction NotChangeSupport)
+(SelectingSomething GiveSupportToFirstOrSecond)
+(choices GiveSupportToFirstOrSecond giveFinancialAssistanceToFactory2)
+(choices GiveSupportToFirstOrSecond NotChangeSupport)
+(chosenItem GiveSupportToFirstOrSecond
+ giveFinancialAssistanceToFactory2)
+(chosenItem GiveSupportToFirstOrSecond NotChangeSupport)
+(causes-PropProp
+ (chosenItem GiveSupportToFirstOrSecond
+  giveFinancialAssistanceToFactory2)
+ preventingLayoff2)
+(causes-PropProp
+ (chosenItem GiveSupportToFirstOrSecond
+  giveFinancialAssistanceToFactory2)
+ employeeLayoff1)
+(causes-PropProp
+ (chosenItem GiveSupportToFirstOrSecond NotChangeSupport)
+ employeeLayoff2)
+(causes-PropProp
+ (chosenItem GiveSupportToFirstOrSecond NotChangeSupport)
+ preventingLayoff1)
++++++++++++
+(matchBetween hit64076 employeeLayoff2)
+(matchBetween bus64133 WorkersInPlant2)
+(matchBetween (objectActedOn hit64076 bus64133) (objectActedOn
+                                                 employeeLayoff2
+                                                 WorkersInPlant2))
+(matchBetween Inaction68012 NotChangeSupport)
+(matchBetween (Inaction Inaction68012) (Inaction NotChangeSupport))
+(matchBetween you64335 you1123)
+(matchBetween (performedBy save64374 you64335) (performedBy
+                                                FinancialAssistanceToFactory1
+                                                you1123))
+(matchBetween (performedBy Inaction68012 you64335) (performedBy
+                                                    NotChangeSupport
+                                                    you1123))
+(matchBetween (chosenItem SelectingSomething68011
+               redirect67174) (chosenItem GiveSupportToFirstOrSecond
+                               giveFinancialAssistanceToFactory2))
+(matchBetween (chosenItem SelectingSomething68011
+               Inaction68012) (chosenItem GiveSupportToFirstOrSecond
+                               NotChangeSupport))
+(matchBetween (choices SelectingSomething68011 Inaction68012) (choices
+                                                               GiveSupportToFirstOrSecond
+                                                               NotChangeSupport))
+(matchBetween (choices SelectingSomething68011 redirect67174) (choices
+                                                               GiveSupportToFirstOrSecond
+                                                               giveFinancialAssistanceToFactory2))
+(matchBetween (performedBy redirect67174 you64335) (performedBy
+                                                    giveFinancialAssistanceToFactory2
+                                                    you1123))
+(matchBetween redirect67174 giveFinancialAssistanceToFactory2)
+(matchBetween (SelectingSomething
+               SelectingSomething68011) (SelectingSomething
+                                         GiveSupportToFirstOrSecond))
+(matchBetween SelectingSomething68011 GiveSupportToFirstOrSecond)
+(matchBetween (beneficiary save64374 them64407) (beneficiary
+                                                 FinancialAssistanceToFactory1
+                                                 WorkersInPlant1))
+(matchBetween them64407 WorkersInPlant1)
+(matchBetween save64374 FinancialAssistanceToFactory1)
+(matchBetween (PreventingSomething
+               PreventingSomething68010) (PreventingSomething
+                                          preventingLayoff2))
+(matchBetween PreventingSomething68010 preventingLayoff2)

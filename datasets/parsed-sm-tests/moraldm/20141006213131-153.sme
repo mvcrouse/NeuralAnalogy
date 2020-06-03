@@ -1,0 +1,158 @@
+(sacredValueChoice trade173471)
+(sacredValueChoice Inaction174192)
+(affectsSigLargerGroup trade173471)
+(affectsSigLargerGroup Inaction174192)
+(uninferredSentence (affectsSigLargerGroup trade173471))
+(uninferredSentence (affectsSigLargerGroup Inaction174192))
+(uninferredSentence (directlyResponsible you173140 Inaction174192))
+(directlyResponsible you173140 trade173471)
+(directlyResponsible you173140 Inaction174192)
+(preventsAlternativeNegativeOutcome trade173471)
+(usedAsMeansToPreventNegativeOutcome trade173471)
+(and (sacredValueChoice trade173471) (sacredValueChoice Inaction174192)
+     (uninferredSentence (affectsSigLargerGroup trade173471))
+     (uninferredSentence (affectsSigLargerGroup Inaction174192))
+     (directlyResponsible you173140 trade173471)
+     (uninferredSentence
+      (directlyResponsible you173140 Inaction174192))
+     (preventsAlternativeNegativeOutcome trade173471)
+     (usedAsMeansToPreventNegativeOutcome trade173471))
+(rightChoice Inaction174192)
+(chosenItem SelectingSomething174191 trade173471)
+(chosenItem SelectingSomething174191 Inaction174192)
+(SquareMile 1000)
+(SquareMile 100)
+(Inaction Inaction174192)
+(PreventingSomething PreventingSomething174190)
+(SelectingSomething SelectingSomething174191)
+(Business company173630)
+(Deforestation deforest172973)
+(Deforestation deforest173688)
+(RescuingSomeone save173179)
+(TransferOfControl trade173471)
+(Forest area173335)
+(Forest area173793)
+(performedBy PreventingSomething174190 you173140)
+(preventedSit PreventingSomething174190 deforest172973)
+(choices SelectingSomething174191 trade173471)
+(choices SelectingSomething174191 Inaction174192)
+(performedBy trade173471 you173140)
+(performedBy Inaction174192 you173140)
+(causes-PropSit (chosenItem SelectingSomething174191 Inaction174192)
+ deforest172973)
+(measure area173793 (SquareMile 100))
+(objectOfStateChange deforest172973 area173335)
+(doneBy deforest172973 company173630)
+(doneBy deforest173688 company173630)
+(objectOfStateChange deforest173688 area173793)
+(measure area173335 (SquareMile 1000))
+(beneficiary save173179 area173335)
+(performedBy save173179 you173140)
+(by-Underspecified save173179 trade173471)
+(causes-SitSit save173179 PreventingSomething174190)
+(causes-PropSit (chosenItem SelectingSomething174191 trade173471)
+ deforest173688)
+(losesControl trade173471 you173140)
+(objectOfControlTransfer trade173471 area173335)
+(objectOfControlTransfer trade173471 area173793)
+(causes-SitSit deforest173688 save173179)
+(implies
+ (and (sacredValueChoice trade173471)
+      (sacredValueChoice Inaction174192)
+      (uninferredSentence (affectsSigLargerGroup trade173471))
+      (uninferredSentence (affectsSigLargerGroup Inaction174192))
+      (directlyResponsible you173140 trade173471)
+      (uninferredSentence
+       (directlyResponsible you173140 Inaction174192))
+      (preventsAlternativeNegativeOutcome trade173471)
+      (usedAsMeansToPreventNegativeOutcome trade173471))
+ (rightChoice Inaction174192))
+(makeDecision you173140 Inaction174192)
++++++++++++
+(IntelligentAgent you1143)
+((GroupFn HomelessPerson) group1FemaleHomeless)
+((GroupFn HomelessPerson) group2FemaleHomeless)
+(groupCardinality group1FemaleHomeless 50)
+(groupCardinality group2FemaleHomeless 150)
+(HumanShelterConstruction shelter1)
+(HumanShelterConstruction shelter2)
+(ShelteringSomething shelteringGroup1)
+(ShelteringSomething shelteringGroup2)
+(performedBy shelteringGroup1 shelter1)
+(performedBy FinancialAssitanceToShelter1 you1143)
+(performedBy shelteringGroup2 shelter1)
+(performedBy FinancialAssitanceToShelter2 you1143)
+(performedBy notChangeSupport you1143)
+(objectActedOn shelteringGroup1 group1FemaleHomeless)
+(objectActedOn shelteringGroup2 group2FemaleHomeless)
+(objectActedOn harmingGroup1 group1FemaleHomeless)
+(objectActedOn harmingGroup2 group2FemaleHomeless)
+(FinancialSupport FinancialAssitanceToShelter1)
+(FinancialSupport FinancialAssitanceToShelter2)
+(beneficiary FinancialAssitanceToShelter1 shelter1)
+(beneficiary FinancialAssitanceToShelter2 shelter2)
+(HarmingAnAgent harmingGroup1)
+(HarmingAnAgent harmingGroup2)
+(PreventingSomething preventingHarmingGroup1)
+(PreventingSomething preventingHarmingGroup2)
+(preventedProp preventingHarmingGroup1 harmingGroup1)
+(preventedProp preventingHarmingGroup2 harmingGroup2)
+(Inaction notChangeSupport)
+(SelectingSomething GivingOrNotGivingAssistance)
+(choices GivingOrNotGivingAssistance FinancialAssitanceToShelter2)
+(choices GivingOrNotGivingAssistance notChangeSupport)
+(chosenItem GivingOrNotGivingAssistance FinancialAssitanceToShelter2)
+(chosenItem GivingOrNotGivingAssistance notChangeSupport)
+(causes-PropProp
+ (chosenItem GivingOrNotGivingAssistance FinancialAssitanceToShelter2)
+ preventingHarmingGroup2)
+(causes-PropProp
+ (chosenItem GivingOrNotGivingAssistance FinancialAssitanceToShelter2)
+ harmingGroup1)
+(causes-PropProp
+ (chosenItem GivingOrNotGivingAssistance notChangeSupport)
+ preventingHarmingGroup1)
+(causes-PropProp
+ (chosenItem GivingOrNotGivingAssistance notChangeSupport)
+ harmingGroup2)
++++++++++++
+(matchBetween save173179 FinancialAssitanceToShelter1)
+(matchBetween area173335 shelter1)
+(matchBetween (beneficiary save173179 area173335) (beneficiary
+                                                   FinancialAssitanceToShelter1
+                                                   shelter1))
+(matchBetween SelectingSomething174191 GivingOrNotGivingAssistance)
+(matchBetween (SelectingSomething
+               SelectingSomething174191) (SelectingSomething
+                                          GivingOrNotGivingAssistance))
+(matchBetween trade173471 FinancialAssitanceToShelter2)
+(matchBetween (performedBy trade173471 you173140) (performedBy
+                                                   FinancialAssitanceToShelter2
+                                                   you1143))
+(matchBetween (choices SelectingSomething174191 trade173471) (choices
+                                                              GivingOrNotGivingAssistance
+                                                              FinancialAssitanceToShelter2))
+(matchBetween (choices SelectingSomething174191
+               Inaction174192) (choices
+                                GivingOrNotGivingAssistance
+                                notChangeSupport))
+(matchBetween (chosenItem SelectingSomething174191
+               Inaction174192) (chosenItem
+                                GivingOrNotGivingAssistance
+                                notChangeSupport))
+(matchBetween (chosenItem SelectingSomething174191
+               trade173471) (chosenItem GivingOrNotGivingAssistance
+                             FinancialAssitanceToShelter2))
+(matchBetween (performedBy Inaction174192 you173140) (performedBy
+                                                      notChangeSupport
+                                                      you1143))
+(matchBetween (performedBy save173179 you173140) (performedBy
+                                                  FinancialAssitanceToShelter1
+                                                  you1143))
+(matchBetween you173140 you1143)
+(matchBetween (Inaction Inaction174192) (Inaction notChangeSupport))
+(matchBetween Inaction174192 notChangeSupport)
+(matchBetween (PreventingSomething
+               PreventingSomething174190) (PreventingSomething
+                                           preventingHarmingGroup2))
+(matchBetween PreventingSomething174190 preventingHarmingGroup2)

@@ -1,0 +1,187 @@
+(sacredValueChoice redirect40379)
+(sacredValueChoice Inaction43400)
+(affectsSigLargerGroup redirect40379)
+(affectsSigLargerGroup Inaction43400)
+(uninferredSentence (affectsSigLargerGroup redirect40379))
+(uninferredSentence (affectsSigLargerGroup Inaction43400))
+(uninferredSentence (directlyResponsible you39300 Inaction43400))
+(uninferredSentence (usedAsMeansToPreventNegativeOutcome redirect40379))
+(directlyResponsible you39300 redirect40379)
+(directlyResponsible you39300 Inaction43400)
+(preventsAlternativeNegativeOutcome redirect40379)
+(usedAsMeansToPreventNegativeOutcome redirect40379)
+(and (sacredValueChoice redirect40379)
+     (sacredValueChoice Inaction43400)
+     (uninferredSentence (affectsSigLargerGroup redirect40379))
+     (uninferredSentence (affectsSigLargerGroup Inaction43400))
+     (directlyResponsible you39300 redirect40379)
+     (uninferredSentence (directlyResponsible you39300 Inaction43400))
+     (preventsAlternativeNegativeOutcome redirect40379)
+     (uninferredSentence
+      (usedAsMeansToPreventNegativeOutcome redirect40379)))
+(rightChoice redirect40379)
+(chosenItem SelectingSomething43399 redirect40379)
+(possessiveRelation patient40523 paraplegia40592)
+(Inaction Inaction43400)
+(PreventingSomething PreventingSomething43398)
+(SelectingSomething SelectingSomething43399)
+(HarmingAnAgent (possessiveRelation patient40523 paraplegia40592))
+(Paraplegia paraplegia39232)
+(Paraplegia paraplegia40592)
+(MedicalPatient patient40523)
+(Translation-LocationChange redirect40379)
+(RoomInAConstruction room39499)
+(RescuingSomeone save39339)
+((GroupFn MedicalPatient) set-of-patient39165)
+(Set-Mathematical set-of-patient39165)
+(Virus virus39075)
+(performedBy PreventingSomething43398 you39300)
+(choices SelectingSomething43399 redirect40379)
+(choices SelectingSomething43399 Inaction43400)
+(causes-PropSit (chosenItem SelectingSomething43399 redirect40379)
+ save39339)
+(performedBy redirect40379 you39300)
+(performedBy Inaction43400 you39300)
+(objectActedOn redirect40379 virus39075)
+(primaryObjectMoving redirect40379 virus39075)
+(toLocation redirect40379 room39499)
+(causes-PropSit (chosenItem SelectingSomething43399 redirect40379)
+ (possessiveRelation patient40523 paraplegia40592))
+(with-UnderspecifiedAgent room39499 patient40523)
+(beneficiary save39339 set-of-patient39165)
+(performedBy save39339 you39300)
+(by-Underspecified save39339 redirect40379)
+(causes-SitSit save39339 PreventingSomething43398)
+(cardinality set-of-patient39165 4)
+(cardinality patient40523 1)
+(implies
+ (and (sacredValueChoice redirect40379)
+      (sacredValueChoice Inaction43400)
+      (uninferredSentence (affectsSigLargerGroup redirect40379))
+      (uninferredSentence (affectsSigLargerGroup Inaction43400))
+      (directlyResponsible you39300 redirect40379)
+      (uninferredSentence (directlyResponsible you39300 Inaction43400))
+      (preventsAlternativeNegativeOutcome redirect40379)
+      (uninferredSentence
+       (usedAsMeansToPreventNegativeOutcome redirect40379)))
+ (rightChoice redirect40379))
+(makeDecision you39300 redirect40379)
++++++++++++
+(Inaction Inaction131950)
+(performedBy PreventingSomething131948 you128898)
+(performedBy order131049 you128898)
+(performedBy Inaction131950 you128898)
+(performedBy save128937 you128898)
+(preventedSit PreventingSomething131948 die128829)
+(PreventingSomething PreventingSomething131948)
+(SelectingSomething SelectingSomething131949)
+(choices SelectingSomething131949 order131049)
+(choices SelectingSomething131949 Inaction131950)
+(chosenItem SelectingSomething131949 Inaction131950)
+(chosenItem SelectingSomething131949 order131049)
+(causes-PropSit (chosenItem SelectingSomething131949 Inaction131950)
+ die128829)
+(causes-PropSit (chosenItem SelectingSomething131949 order131049)
+ save128937)
+(Dying die128829)
+(Dying die131270)
+(in-UnderspecifiedContainer die131270 refugee-camp129739)
+(in-UnderspecifiedContainer famine127520 ContinentOfAfrica)
+(Famine famine127520)
+(FoodOrDrink food127320)
+(recipientOfInfo order131049 convoy127246)
+(RefugeeCamp refugee-camp129739)
+(RefugeeCamp refugee-camp127421)
+(Convoy convoy127246)
+(primaryObjectMoving go129115 convoy127246)
+(toLocation go129115 refugee-camp129739)
+(Movement-TranslationEvent go129115)
+(and (RefugeeCamp refugee-camp129739) (Convoy convoy127246)
+     (primaryObjectMoving go129115 convoy127246)
+     (toLocation go129115 refugee-camp129739)
+     (Movement-TranslationEvent go129115))
+(infoTransferred order131049
+ (and (RefugeeCamp refugee-camp129739) (Convoy convoy127246)
+      (primaryObjectMoving go129115 convoy127246)
+      (toLocation go129115 refugee-camp129739)
+      (Movement-TranslationEvent go129115)))
+(causes-SitSit order131049 die131270)
+(causes-SitSit save128937 PreventingSomething131948)
+(Ordering-CommunicationAct order131049)
+(RescuingSomeone save128937)
+(beneficiary save128937 them128970)
+(by-Underspecified save128937 order131049)
+(cardinality set-of-people131188 100)
+(cardinality them128970 1000)
+(Set-Mathematical set-of-people131188)
+(Set-Mathematical them128970)
+(to-UnderspecifiedLocation transport127299 refugee-camp127421)
+(transporter transport127299 convoy127246)
+(transportees transport127299 food127320)
+(TransportationEvent transport127299)
+(Truck truck127274)
+(possessiveRelation truck127274 convoy127246)
++++++++++++
+(matchBetween Inaction43400 Inaction131950)
+(matchBetween (Inaction Inaction43400) (Inaction Inaction131950))
+(matchBetween set-of-patient39165 them128970)
+(matchBetween (Set-Mathematical set-of-patient39165) (Set-Mathematical
+                                                      them128970))
+(matchBetween save39339 save128937)
+(matchBetween (RescuingSomeone save39339) (RescuingSomeone save128937))
+(matchBetween (performedBy Inaction43400 you39300) (performedBy
+                                                    Inaction131950
+                                                    you128898))
+(matchBetween (causes-SitSit save39339
+               PreventingSomething43398) (causes-SitSit
+                                          save128937
+                                          PreventingSomething131948))
+(matchBetween SelectingSomething43399 SelectingSomething131949)
+(matchBetween (SelectingSomething
+               SelectingSomething43399) (SelectingSomething
+                                         SelectingSomething131949))
+(matchBetween redirect40379 order131049)
+(matchBetween (performedBy redirect40379 you39300) (performedBy
+                                                    order131049
+                                                    you128898))
+(matchBetween (choices SelectingSomething43399 redirect40379) (choices
+                                                               SelectingSomething131949
+                                                               order131049))
+(matchBetween (causes-PropSit
+               (chosenItem SelectingSomething43399 redirect40379)
+               save39339) (causes-PropSit
+                           (chosenItem SelectingSomething131949
+                            order131049)
+                           save128937))
+(matchBetween (chosenItem SelectingSomething43399
+               redirect40379) (chosenItem SelectingSomething131949
+                               order131049))
+(matchBetween (by-Underspecified save39339
+               redirect40379) (by-Underspecified save128937
+                               order131049))
+(matchBetween (choices SelectingSomething43399 Inaction43400) (choices
+                                                               SelectingSomething131949
+                                                               Inaction131950))
+(matchBetween (performedBy save39339 you39300) (performedBy
+                                                save128937
+                                                you128898))
+(matchBetween (beneficiary save39339 set-of-patient39165) (beneficiary
+                                                           save128937
+                                                           them128970))
+(matchBetween (performedBy PreventingSomething43398
+               you39300) (performedBy PreventingSomething131948
+                          you128898))
+(matchBetween you39300 you128898)
+(matchBetween (cardinality set-of-patient39165 4) (cardinality
+                                                   them128970
+                                                   1000))
+(matchBetween 4 1000)
+(matchBetween (PreventingSomething
+               PreventingSomething43398) (PreventingSomething
+                                          PreventingSomething131948))
+(matchBetween PreventingSomething43398 PreventingSomething131948)
+(matchBetween (cardinality patient40523 1) (cardinality
+                                            set-of-people131188
+                                            100))
+(matchBetween 1 100)
+(matchBetween patient40523 set-of-people131188)

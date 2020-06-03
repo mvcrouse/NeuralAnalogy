@@ -1,0 +1,152 @@
+(sacredValueChoice GiveLand)
+(sacredValueChoice NotGiveLand)
+(affectsSigLargerGroup GiveLand)
+(affectsSigLargerGroup NotGiveLand)
+(uninferredSentence (affectsSigLargerGroup GiveLand))
+(uninferredSentence (affectsSigLargerGroup NotGiveLand))
+(uninferredSentence (directlyResponsible you811 NotGiveLand))
+(uninferredSentence (preventsAlternativeNegativeOutcome GiveLand))
+(uninferredSentence (usedAsMeansToPreventNegativeOutcome GiveLand))
+(directlyResponsible you811 GiveLand)
+(directlyResponsible you811 NotGiveLand)
+(preventsAlternativeNegativeOutcome GiveLand)
+(usedAsMeansToPreventNegativeOutcome GiveLand)
+(and (sacredValueChoice GiveLand) (sacredValueChoice NotGiveLand)
+     (uninferredSentence (affectsSigLargerGroup GiveLand))
+     (uninferredSentence (affectsSigLargerGroup NotGiveLand))
+     (directlyResponsible you811 GiveLand)
+     (uninferredSentence (directlyResponsible you811 NotGiveLand))
+     (uninferredSentence (preventsAlternativeNegativeOutcome GiveLand))
+     (uninferredSentence
+      (usedAsMeansToPreventNegativeOutcome GiveLand)))
+(rightChoice NotGiveLand)
+(chosenItem GivingOrNotGivingTheLand NotGiveLand)
+(chosenItem GivingOrNotGivingTheLand GiveLand)
+(operatesInRegion army2 natureReserve2)
+(operatesInRegion army2 natureReserve1)
+(IntelligentAgent you811)
+(NatureReserve natureReserve1)
+(NatureReserve natureReserve2)
+(Army-BranchOfService army2)
+(TransferringPossession TransferNaturePreserve2)
+(TransferringPossession TransferNaturePreserve1)
+(TransferringPossession GiveLand)
+(Inaction NotGiveLand)
+(PreventingSomething preventingTransferNaturePreserve1)
+(PreventingSomething preventingTransferNaturePreserve2)
+(PreventingSomething armyDoesNotOwnNaturePreserve1)
+(SelectingSomething GivingOrNotGivingTheLand)
+(landAreaOfRegion natureReserve1 200)
+(landAreaOfRegion natureReserve2 50)
+(toPossessor TransferNaturePreserve2 army2)
+(objectOfPossessionTransfer TransferNaturePreserve2 natureReserve2)
+(fromPossessor TransferNaturePreserve1 army2)
+(objectOfPossessionTransfer TransferNaturePreserve1 natureReserve1)
+(preventedProp preventingTransferNaturePreserve1
+ TransferNaturePreserve1)
+(preventedProp preventingTransferNaturePreserve2
+ TransferNaturePreserve2)
+(causes-SitSit TransferNaturePreserve1 armyDoesNotOwnNaturePreserve1)
+(preventedSit armyDoesNotOwnNaturePreserve1
+ (operatesInRegion army2 natureReserve1))
+(choices GivingOrNotGivingTheLand GiveLand)
+(choices GivingOrNotGivingTheLand NotGiveLand)
+(performedBy GiveLand you811)
+(performedBy NotGiveLand you811)
+(causes-PropProp (chosenItem GivingOrNotGivingTheLand GiveLand)
+ TransferNaturePreserve1)
+(causes-PropProp (chosenItem GivingOrNotGivingTheLand GiveLand)
+ TransferNaturePreserve2)
+(causes-PropProp TransferNaturePreserve2
+ (operatesInRegion army2 natureReserve2))
+(causes-PropProp (chosenItem GivingOrNotGivingTheLand NotGiveLand)
+ preventingTransferNaturePreserve1)
+(causes-PropProp (chosenItem GivingOrNotGivingTheLand NotGiveLand)
+ preventingTransferNaturePreserve2)
+(implies
+ (and (sacredValueChoice GiveLand) (sacredValueChoice NotGiveLand)
+      (uninferredSentence (affectsSigLargerGroup GiveLand))
+      (uninferredSentence (affectsSigLargerGroup NotGiveLand))
+      (directlyResponsible you811 GiveLand)
+      (uninferredSentence (directlyResponsible you811 NotGiveLand))
+      (uninferredSentence
+       (preventsAlternativeNegativeOutcome GiveLand))
+      (uninferredSentence
+       (usedAsMeansToPreventNegativeOutcome GiveLand)))
+ (rightChoice NotGiveLand))
+(makeDecision you811 NotGiveLand)
++++++++++++
+(Inaction Inaction174192)
+(performedBy PreventingSomething174190 you173140)
+(performedBy trade173471 you173140)
+(performedBy Inaction174192 you173140)
+(performedBy save173179 you173140)
+(preventedSit PreventingSomething174190 deforest172973)
+(PreventingSomething PreventingSomething174190)
+(SelectingSomething SelectingSomething174191)
+(choices SelectingSomething174191 trade173471)
+(choices SelectingSomething174191 Inaction174192)
+(chosenItem SelectingSomething174191 Inaction174192)
+(chosenItem SelectingSomething174191 trade173471)
+(causes-PropSit (chosenItem SelectingSomething174191 Inaction174192)
+ deforest172973)
+(causes-PropSit (chosenItem SelectingSomething174191 trade173471)
+ deforest173688)
+(SquareMile 100)
+(SquareMile 1000)
+(measure area173793 (SquareMile 100))
+(measure area173335 (SquareMile 1000))
+(Business company173630)
+(Deforestation deforest172973)
+(Deforestation deforest173688)
+(objectOfStateChange deforest172973 area173335)
+(objectOfStateChange deforest173688 area173793)
+(doneBy deforest172973 company173630)
+(doneBy deforest173688 company173630)
+(RescuingSomeone save173179)
+(beneficiary save173179 area173335)
+(by-Underspecified save173179 trade173471)
+(causes-SitSit save173179 PreventingSomething174190)
+(causes-SitSit deforest173688 save173179)
+(TransferOfControl trade173471)
+(losesControl trade173471 you173140)
+(objectOfControlTransfer trade173471 area173335)
+(objectOfControlTransfer trade173471 area173793)
+(Forest area173335)
+(Forest area173793)
++++++++++++
+(matchBetween TransferNaturePreserve1 save173179)
+(matchBetween (causes-SitSit TransferNaturePreserve1
+               armyDoesNotOwnNaturePreserve1) (causes-SitSit
+                                               save173179
+                                               PreventingSomething174190))
+(matchBetween GivingOrNotGivingTheLand SelectingSomething174191)
+(matchBetween (SelectingSomething
+               GivingOrNotGivingTheLand) (SelectingSomething
+                                          SelectingSomething174191))
+(matchBetween (performedBy NotGiveLand you811) (performedBy
+                                                Inaction174192
+                                                you173140))
+(matchBetween (chosenItem GivingOrNotGivingTheLand
+               GiveLand) (chosenItem SelectingSomething174191
+                          trade173471))
+(matchBetween (chosenItem GivingOrNotGivingTheLand
+               NotGiveLand) (chosenItem SelectingSomething174191
+                             Inaction174192))
+(matchBetween (choices GivingOrNotGivingTheLand NotGiveLand) (choices
+                                                              SelectingSomething174191
+                                                              Inaction174192))
+(matchBetween (choices GivingOrNotGivingTheLand GiveLand) (choices
+                                                           SelectingSomething174191
+                                                           trade173471))
+(matchBetween (performedBy GiveLand you811) (performedBy
+                                             trade173471
+                                             you173140))
+(matchBetween you811 you173140)
+(matchBetween GiveLand trade173471)
+(matchBetween (Inaction NotGiveLand) (Inaction Inaction174192))
+(matchBetween NotGiveLand Inaction174192)
+(matchBetween (PreventingSomething
+               armyDoesNotOwnNaturePreserve1) (PreventingSomething
+                                               PreventingSomething174190))
+(matchBetween armyDoesNotOwnNaturePreserve1 PreventingSomething174190)

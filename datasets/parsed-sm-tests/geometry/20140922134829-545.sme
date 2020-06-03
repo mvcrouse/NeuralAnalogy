@@ -1,0 +1,40 @@
+((ShapeTypeFn 0) Object-312)
+((ShapeTypeFn 2) Object-313)
+((ShapeTypeFn 4) Object-316)
+(above Object-313 Object-316)
+(above Object-316 Object-312)
+(ObjectsBorderColoredFnBlackColor Object-313)
+(ObjectsBorderColoredFnBlackColor Object-316)
+(ObjectsBorderColoredFnBlackColor Object-312)
+(ObjectsColoredFnBlackColor Object-313)
+(ObjectsColoredFnWhiteColor Object-312)
++++++++++++
+(ObjectsColoredFnBlackColor Object-321)
+(ObjectsColoredFnWhiteColor Object-322)
+(ObjectsBorderColoredFnBlackColor Object-321)
+(ObjectsBorderColoredFnBlackColor Object-323)
+(ObjectsBorderColoredFnBlackColor Object-322)
+(above Object-323 Object-321)
+(above Object-322 Object-323)
+((ShapeTypeFn 5) Object-323)
+((ShapeTypeFn 3) Object-322)
+((ShapeTypeFn 1) Object-321)
++++++++++++
+(matchBetween Object-313 Object-322)
+(matchBetween (ObjectsBorderColoredFnBlackColor
+               Object-313) (ObjectsBorderColoredFnBlackColor
+                            Object-322))
+(matchBetween (above Object-316 Object-312) (above
+                                             Object-323
+                                             Object-321))
+(matchBetween (above Object-313 Object-316) (above
+                                             Object-322
+                                             Object-323))
+(matchBetween (ObjectsBorderColoredFnBlackColor
+               Object-316) (ObjectsBorderColoredFnBlackColor
+                            Object-323))
+(matchBetween Object-316 Object-323)
+(matchBetween (ObjectsBorderColoredFnBlackColor
+               Object-312) (ObjectsBorderColoredFnBlackColor
+                            Object-321))
+(matchBetween Object-312 Object-321)

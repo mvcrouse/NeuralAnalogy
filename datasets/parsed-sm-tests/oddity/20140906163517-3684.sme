@@ -1,0 +1,188 @@
+(edgesDisconnected Element-15 Element-14)
+(edgesDisconnected Element-12 Element-13)
+(convexAngleBetweenEdges Element-13 Element-15)
+(convexAngleBetweenEdges Element-15 Element-12)
+(convexAngleBetweenEdges Element-14 Element-13)
+(convexAngleBetweenEdges Element-12 Element-14)
+(edgesParallel Element-12 Element-13)
+(parallelEdgeRelation (edgesDisconnected Element-12 Element-13))
+(adjacentObtuseAcuteAngles
+ (convexAngleBetweenEdges Element-12 Element-14)
+ (convexAngleBetweenEdges Element-14 Element-13))
+(adjacentAcuteObtuseAngles
+ (convexAngleBetweenEdges Element-15 Element-12)
+ (convexAngleBetweenEdges Element-12 Element-14))
+(cycleAdjacentAngles (convexAngleBetweenEdges Element-15 Element-12)
+ (convexAngleBetweenEdges Element-12 Element-14))
+(cycleAdjacentAngles (convexAngleBetweenEdges Element-14 Element-13)
+ (convexAngleBetweenEdges Element-13 Element-15))
+(cycleAdjacentAngles (convexAngleBetweenEdges Element-13 Element-15)
+ (convexAngleBetweenEdges Element-15 Element-12))
+(cycleAdjacentAngles (convexAngleBetweenEdges Element-12 Element-14)
+ (convexAngleBetweenEdges Element-14 Element-13))
+(adjacentAcuteObtuseAngles
+ (convexAngleBetweenEdges Element-14 Element-13)
+ (convexAngleBetweenEdges Element-13 Element-15))
+(adjacentObtuseAcuteAngles
+ (convexAngleBetweenEdges Element-13 Element-15)
+ (convexAngleBetweenEdges Element-15 Element-12))
+(parallelEdgeRelation (edgesDisconnected Element-15 Element-14))
+(edgesParallel Element-15 Element-14)
+(PerceptualEdge Element-12)
+(PerceptualEdge Element-13)
+(StraightEdge Element-12)
+(StraightEdge Element-13)
+(StraightEdge Element-14)
+(StraightEdge Element-15)
+(PerceptualEdge Element-14)
+(PerceptualEdge Element-15)
++++++++++++
+(StraightEdge Edge-2926)
+(StraightEdge Edge-2925)
+(StraightEdge Edge-2924)
+(StraightEdge Edge-2923)
+(PerceptualEdge Edge-2926)
+(PerceptualEdge Edge-2925)
+(PerceptualEdge Edge-2924)
+(PerceptualEdge Edge-2923)
+(lengthLong Edge-2926)
+(lengthLong Edge-2924)
+(lengthMedium Edge-2925)
+(lengthMedium Edge-2923)
+(edgesDisconnected Edge-2925 Edge-2923)
+(edgesDisconnected Edge-2926 Edge-2924)
+(parallelEdgeRelation (edgesDisconnected Edge-2925 Edge-2923))
+(parallelEdgeRelation (edgesDisconnected Edge-2926 Edge-2924))
+(edgesParallel Edge-2925 Edge-2923)
+(edgesParallel Edge-2926 Edge-2924)
+(convexAngleBetweenEdges Edge-2926 Edge-2925)
+(convexAngleBetweenEdges Edge-2925 Edge-2924)
+(convexAngleBetweenEdges Edge-2924 Edge-2923)
+(convexAngleBetweenEdges Edge-2923 Edge-2926)
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-2926 Edge-2925)
+ (convexAngleBetweenEdges Edge-2925 Edge-2924))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-2925 Edge-2924)
+ (convexAngleBetweenEdges Edge-2924 Edge-2923))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-2924 Edge-2923)
+ (convexAngleBetweenEdges Edge-2923 Edge-2926))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-2923 Edge-2926)
+ (convexAngleBetweenEdges Edge-2926 Edge-2925))
+(adjacentAcuteObtuseAngles
+ (convexAngleBetweenEdges Edge-2926 Edge-2925)
+ (convexAngleBetweenEdges Edge-2925 Edge-2924))
+(adjacentAcuteObtuseAngles
+ (convexAngleBetweenEdges Edge-2924 Edge-2923)
+ (convexAngleBetweenEdges Edge-2923 Edge-2926))
+(adjacentObtuseAcuteAngles
+ (convexAngleBetweenEdges Edge-2925 Edge-2924)
+ (convexAngleBetweenEdges Edge-2924 Edge-2923))
+(adjacentObtuseAcuteAngles
+ (convexAngleBetweenEdges Edge-2923 Edge-2926)
+ (convexAngleBetweenEdges Edge-2926 Edge-2925))
++++++++++++
+(matchBetween Element-14 Edge-2926)
+(matchBetween (StraightEdge Element-14) (StraightEdge Edge-2926))
+(matchBetween Element-12 Edge-2923)
+(matchBetween (StraightEdge Element-12) (StraightEdge Edge-2923))
+(matchBetween (PerceptualEdge Element-14) (PerceptualEdge Edge-2926))
+(matchBetween (PerceptualEdge Element-12) (PerceptualEdge Edge-2923))
+(matchBetween (edgesParallel Element-12 Element-13) (edgesParallel
+                                                     Edge-2925
+                                                     Edge-2923))
+(matchBetween (edgesDisconnected Element-12
+               Element-13) (edgesDisconnected Edge-2925 Edge-2923))
+(matchBetween (parallelEdgeRelation
+               (edgesDisconnected Element-12
+                Element-13)) (parallelEdgeRelation
+                              (edgesDisconnected Edge-2925 Edge-2923)))
+(matchBetween (convexAngleBetweenEdges Element-15
+               Element-12) (convexAngleBetweenEdges Edge-2924
+                            Edge-2923))
+(matchBetween (convexAngleBetweenEdges Element-13
+               Element-15) (convexAngleBetweenEdges Edge-2925
+                            Edge-2924))
+(matchBetween (cycleAdjacentAngles
+               (convexAngleBetweenEdges Element-13 Element-15)
+               (convexAngleBetweenEdges Element-15
+                Element-12)) (cycleAdjacentAngles
+                              (convexAngleBetweenEdges Edge-2925
+                               Edge-2924)
+                              (convexAngleBetweenEdges Edge-2924
+                               Edge-2923)))
+(matchBetween (cycleAdjacentAngles
+               (convexAngleBetweenEdges Element-15 Element-12)
+               (convexAngleBetweenEdges Element-12
+                Element-14)) (cycleAdjacentAngles
+                              (convexAngleBetweenEdges Edge-2924
+                               Edge-2923)
+                              (convexAngleBetweenEdges Edge-2923
+                               Edge-2926)))
+(matchBetween (adjacentAcuteObtuseAngles
+               (convexAngleBetweenEdges Element-15 Element-12)
+               (convexAngleBetweenEdges Element-12
+                Element-14)) (adjacentAcuteObtuseAngles
+                              (convexAngleBetweenEdges Edge-2924
+                               Edge-2923)
+                              (convexAngleBetweenEdges Edge-2923
+                               Edge-2926)))
+(matchBetween (adjacentObtuseAcuteAngles
+               (convexAngleBetweenEdges Element-12 Element-14)
+               (convexAngleBetweenEdges Element-14
+                Element-13)) (adjacentObtuseAcuteAngles
+                              (convexAngleBetweenEdges Edge-2923
+                               Edge-2926)
+                              (convexAngleBetweenEdges Edge-2926
+                               Edge-2925)))
+(matchBetween (adjacentObtuseAcuteAngles
+               (convexAngleBetweenEdges Element-13 Element-15)
+               (convexAngleBetweenEdges Element-15
+                Element-12)) (adjacentObtuseAcuteAngles
+                              (convexAngleBetweenEdges Edge-2925
+                               Edge-2924)
+                              (convexAngleBetweenEdges Edge-2924
+                               Edge-2923)))
+(matchBetween (adjacentAcuteObtuseAngles
+               (convexAngleBetweenEdges Element-14 Element-13)
+               (convexAngleBetweenEdges Element-13
+                Element-15)) (adjacentAcuteObtuseAngles
+                              (convexAngleBetweenEdges Edge-2926
+                               Edge-2925)
+                              (convexAngleBetweenEdges Edge-2925
+                               Edge-2924)))
+(matchBetween (cycleAdjacentAngles
+               (convexAngleBetweenEdges Element-14 Element-13)
+               (convexAngleBetweenEdges Element-13
+                Element-15)) (cycleAdjacentAngles
+                              (convexAngleBetweenEdges Edge-2926
+                               Edge-2925)
+                              (convexAngleBetweenEdges Edge-2925
+                               Edge-2924)))
+(matchBetween (cycleAdjacentAngles
+               (convexAngleBetweenEdges Element-12 Element-14)
+               (convexAngleBetweenEdges Element-14
+                Element-13)) (cycleAdjacentAngles
+                              (convexAngleBetweenEdges Edge-2923
+                               Edge-2926)
+                              (convexAngleBetweenEdges Edge-2926
+                               Edge-2925)))
+(matchBetween (convexAngleBetweenEdges Element-14
+               Element-13) (convexAngleBetweenEdges Edge-2926
+                            Edge-2925))
+(matchBetween (convexAngleBetweenEdges Element-12
+               Element-14) (convexAngleBetweenEdges Edge-2923
+                            Edge-2926))
+(matchBetween (parallelEdgeRelation
+               (edgesDisconnected Element-15
+                Element-14)) (parallelEdgeRelation
+                              (edgesDisconnected Edge-2926 Edge-2924)))
+(matchBetween (edgesDisconnected Element-15
+               Element-14) (edgesDisconnected Edge-2926 Edge-2924))
+(matchBetween (edgesParallel Element-15 Element-14) (edgesParallel
+                                                     Edge-2926
+                                                     Edge-2924))
+(matchBetween (PerceptualEdge Element-13) (PerceptualEdge Edge-2925))
+(matchBetween (PerceptualEdge Element-15) (PerceptualEdge Edge-2924))
+(matchBetween (StraightEdge Element-13) (StraightEdge Edge-2925))
+(matchBetween Element-13 Edge-2925)
+(matchBetween (StraightEdge Element-15) (StraightEdge Edge-2924))
+(matchBetween Element-15 Edge-2924)

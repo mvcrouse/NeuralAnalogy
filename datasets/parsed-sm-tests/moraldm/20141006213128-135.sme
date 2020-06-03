@@ -1,0 +1,215 @@
+(sacredValueChoice ReRouteToCamp2)
+(sacredValueChoice notReRoute)
+(affectsSigLargerGroup ReRouteToCamp2)
+(affectsSigLargerGroup notReRoute)
+(uninferredSentence (affectsSigLargerGroup ReRouteToCamp2))
+(uninferredSentence (affectsSigLargerGroup notReRoute))
+(uninferredSentence (directlyResponsible you8115 notReRoute))
+(uninferredSentence (preventsAlternativeNegativeOutcome ReRouteToCamp2))
+(uninferredSentence
+ (usedAsMeansToPreventNegativeOutcome ReRouteToCamp2))
+(directlyResponsible you8115 ReRouteToCamp2)
+(directlyResponsible you8115 notReRoute)
+(preventsAlternativeNegativeOutcome ReRouteToCamp2)
+(usedAsMeansToPreventNegativeOutcome ReRouteToCamp2)
+(and (sacredValueChoice ReRouteToCamp2) (sacredValueChoice notReRoute)
+     (uninferredSentence (affectsSigLargerGroup ReRouteToCamp2))
+     (uninferredSentence (affectsSigLargerGroup notReRoute))
+     (directlyResponsible you8115 ReRouteToCamp2)
+     (uninferredSentence (directlyResponsible you8115 notReRoute))
+     (uninferredSentence
+      (preventsAlternativeNegativeOutcome ReRouteToCamp2))
+     (uninferredSentence
+      (usedAsMeansToPreventNegativeOutcome ReRouteToCamp2)))
+(rightChoice notReRoute)
+(chosenItem SendingTruckToCamp1OrCamp2 notReRoute)
+(chosenItem SendingTruckToCamp1OrCamp2 ReRouteToCamp2)
+(IntelligentAgent you8115)
+(RefugeeCamp Camp1)
+(RefugeeCamp Camp2)
+((GroupFn Person) PeopleInDangerInCamp1)
+((GroupFn Person) PeopleInDangerInCamp2)
+(Starvation PeopleDyingInCamp1)
+(Starvation PeopleDyingInCamp2)
+(Convoy TruckConvoy)
+(MovementEvent ReRouteToCamp2)
+(PreventingSomething preventingPeopleDyingInCamp1)
+(PreventingSomething preventingPeopleDyingInCamp2)
+(Inaction notReRoute)
+(SelectingSomething SendingTruckToCamp1OrCamp2)
+(groupCardinality PeopleInDangerInCamp1 100)
+(groupCardinality PeopleInDangerInCamp2 1000)
+(residesInRegion PeopleInDangerInCamp1 Camp1)
+(residesInRegion PeopleInDangerInCamp2 Camp2)
+(objectActedOn PeopleDyingInCamp1 PeopleInDangerInCamp1)
+(objectActedOn PeopleDyingInCamp2 PeopleInDangerInCamp2)
+(containedObject FoodTruck Food)
+(groupMemberType TruckConvoy FoodTruck)
+(objectActedOn ReRouteToCamp2 TruckConvoy)
+(toLocation ReRouteToCamp2 Camp2)
+(preventedProp preventingPeopleDyingInCamp1 PeopleDyingInCamp1)
+(preventedProp preventingPeopleDyingInCamp2 PeopleDyingInCamp2)
+(choices SendingTruckToCamp1OrCamp2 ReRouteToCamp2)
+(choices SendingTruckToCamp1OrCamp2 notReRoute)
+(performedBy ReRouteToCamp2 you8115)
+(performedBy notReRoute you8115)
+(causes-PropProp (chosenItem SendingTruckToCamp1OrCamp2 ReRouteToCamp2)
+ preventingPeopleDyingInCamp2)
+(causes-PropProp (chosenItem SendingTruckToCamp1OrCamp2 ReRouteToCamp2)
+ PeopleDyingInCamp1)
+(causes-PropProp (chosenItem SendingTruckToCamp1OrCamp2 notReRoute)
+ PeopleDyingInCamp2)
+(causes-PropProp (chosenItem SendingTruckToCamp1OrCamp2 notReRoute)
+ preventingPeopleDyingInCamp1)
+(implies
+ (and (sacredValueChoice ReRouteToCamp2) (sacredValueChoice notReRoute)
+      (uninferredSentence (affectsSigLargerGroup ReRouteToCamp2))
+      (uninferredSentence (affectsSigLargerGroup notReRoute))
+      (directlyResponsible you8115 ReRouteToCamp2)
+      (uninferredSentence (directlyResponsible you8115 notReRoute))
+      (uninferredSentence
+       (preventsAlternativeNegativeOutcome ReRouteToCamp2))
+      (uninferredSentence
+       (usedAsMeansToPreventNegativeOutcome ReRouteToCamp2)))
+ (rightChoice notReRoute))
+(makeDecision you8115 notReRoute)
++++++++++++
+(IntelligentAgent you1123)
+((GroupFn FactoryWorker) WorkersInPlant1)
+((GroupFn FactoryWorker) WorkersInPlant2)
+(Employee FactoryWorker)
+(FactoryBuilding Factory1)
+(FactoryBuilding Factory2)
+(groupCardinality WorkersInPlant1 50)
+(groupCardinality WorkersInPlant2 500)
+(worksAtFacility WorkersInPlant1 Factory1)
+(worksAtFacility WorkersInPlant2 Factory2)
+(FinancialSupport FinancialAssistanceToFactory1)
+(FinancialSupport giveFinancialAssistanceToFactory2)
+(beneficiary FinancialAssistanceToFactory1 WorkersInPlant1)
+(beneficiary giveFinancialAssistanceToFactory2 WorkersInPlant2)
+(performedBy FinancialAssistanceToFactory1 you1123)
+(performedBy giveFinancialAssistanceToFactory2 you1123)
+(performedBy NotChangeSupport you1123)
+(EmployeeLayoff employeeLayoff1)
+(EmployeeLayoff employeeLayoff2)
+(objectActedOn employeeLayoff1 WorkersInPlant1)
+(objectActedOn employeeLayoff2 WorkersInPlant2)
+(PreventingSomething preventingLayoff1)
+(PreventingSomething preventingLayoff2)
+(preventedProp preventingLayoff1 employeeLayoff1)
+(preventedProp preventingLayoff2 employeeLayoff2)
+(supportedBy WorkersInPlant1 FinancialAssistanceToFactory1)
+(Inaction NotChangeSupport)
+(SelectingSomething GiveSupportToFirstOrSecond)
+(choices GiveSupportToFirstOrSecond giveFinancialAssistanceToFactory2)
+(choices GiveSupportToFirstOrSecond NotChangeSupport)
+(chosenItem GiveSupportToFirstOrSecond
+ giveFinancialAssistanceToFactory2)
+(chosenItem GiveSupportToFirstOrSecond NotChangeSupport)
+(causes-PropProp
+ (chosenItem GiveSupportToFirstOrSecond
+  giveFinancialAssistanceToFactory2)
+ preventingLayoff2)
+(causes-PropProp
+ (chosenItem GiveSupportToFirstOrSecond
+  giveFinancialAssistanceToFactory2)
+ employeeLayoff1)
+(causes-PropProp
+ (chosenItem GiveSupportToFirstOrSecond NotChangeSupport)
+ employeeLayoff2)
+(causes-PropProp
+ (chosenItem GiveSupportToFirstOrSecond NotChangeSupport)
+ preventingLayoff1)
++++++++++++
+(matchBetween preventingPeopleDyingInCamp2 preventingLayoff2)
+(matchBetween (PreventingSomething
+               preventingPeopleDyingInCamp2) (PreventingSomething
+                                              preventingLayoff2))
+(matchBetween PeopleInDangerInCamp2 WorkersInPlant2)
+(matchBetween 1000 500)
+(matchBetween (groupCardinality PeopleInDangerInCamp2
+               1000) (groupCardinality WorkersInPlant2 500))
+(matchBetween PeopleDyingInCamp2 employeeLayoff2)
+(matchBetween (objectActedOn PeopleDyingInCamp2
+               PeopleInDangerInCamp2) (objectActedOn
+                                       employeeLayoff2
+                                       WorkersInPlant2))
+(matchBetween (preventedProp preventingPeopleDyingInCamp2
+               PeopleDyingInCamp2) (preventedProp
+                                    preventingLayoff2
+                                    employeeLayoff2))
+(matchBetween notReRoute NotChangeSupport)
+(matchBetween (Inaction notReRoute) (Inaction NotChangeSupport))
+(matchBetween (performedBy notReRoute you8115) (performedBy
+                                                NotChangeSupport
+                                                you1123))
+(matchBetween (choices SendingTruckToCamp1OrCamp2
+               ReRouteToCamp2) (choices
+                                GiveSupportToFirstOrSecond
+                                giveFinancialAssistanceToFactory2))
+(matchBetween (chosenItem SendingTruckToCamp1OrCamp2
+               ReRouteToCamp2) (chosenItem
+                                GiveSupportToFirstOrSecond
+                                giveFinancialAssistanceToFactory2))
+(matchBetween (causes-PropProp
+               (chosenItem SendingTruckToCamp1OrCamp2 ReRouteToCamp2)
+               PeopleDyingInCamp1) (causes-PropProp
+                                    (chosenItem
+                                     GiveSupportToFirstOrSecond
+                                     giveFinancialAssistanceToFactory2)
+                                    employeeLayoff1))
+(matchBetween (chosenItem SendingTruckToCamp1OrCamp2
+               notReRoute) (chosenItem GiveSupportToFirstOrSecond
+                            NotChangeSupport))
+(matchBetween (causes-PropProp
+               (chosenItem SendingTruckToCamp1OrCamp2 notReRoute)
+               preventingPeopleDyingInCamp1) (causes-PropProp
+                                              (chosenItem
+                                               GiveSupportToFirstOrSecond
+                                               NotChangeSupport)
+                                              preventingLayoff1))
+(matchBetween (causes-PropProp
+               (chosenItem SendingTruckToCamp1OrCamp2 notReRoute)
+               PeopleDyingInCamp2) (causes-PropProp
+                                    (chosenItem
+                                     GiveSupportToFirstOrSecond
+                                     NotChangeSupport)
+                                    employeeLayoff2))
+(matchBetween (causes-PropProp
+               (chosenItem SendingTruckToCamp1OrCamp2 ReRouteToCamp2)
+               preventingPeopleDyingInCamp2) (causes-PropProp
+                                              (chosenItem
+                                               GiveSupportToFirstOrSecond
+                                               giveFinancialAssistanceToFactory2)
+                                              preventingLayoff2))
+(matchBetween (choices SendingTruckToCamp1OrCamp2 notReRoute) (choices
+                                                               GiveSupportToFirstOrSecond
+                                                               NotChangeSupport))
+(matchBetween (SelectingSomething
+               SendingTruckToCamp1OrCamp2) (SelectingSomething
+                                            GiveSupportToFirstOrSecond))
+(matchBetween SendingTruckToCamp1OrCamp2 GiveSupportToFirstOrSecond)
+(matchBetween (performedBy ReRouteToCamp2 you8115) (performedBy
+                                                    giveFinancialAssistanceToFactory2
+                                                    you1123))
+(matchBetween ReRouteToCamp2 giveFinancialAssistanceToFactory2)
+(matchBetween (preventedProp preventingPeopleDyingInCamp1
+               PeopleDyingInCamp1) (preventedProp
+                                    preventingLayoff1
+                                    employeeLayoff1))
+(matchBetween (objectActedOn PeopleDyingInCamp1
+               PeopleInDangerInCamp1) (objectActedOn
+                                       employeeLayoff1
+                                       WorkersInPlant1))
+(matchBetween PeopleDyingInCamp1 employeeLayoff1)
+(matchBetween (groupCardinality PeopleInDangerInCamp1
+               100) (groupCardinality WorkersInPlant1 50))
+(matchBetween 100 50)
+(matchBetween PeopleInDangerInCamp1 WorkersInPlant1)
+(matchBetween (PreventingSomething
+               preventingPeopleDyingInCamp1) (PreventingSomething
+                                              preventingLayoff1))
+(matchBetween preventingPeopleDyingInCamp1 preventingLayoff1)
+(matchBetween (IntelligentAgent you8115) (IntelligentAgent you1123))
+(matchBetween you8115 you1123)

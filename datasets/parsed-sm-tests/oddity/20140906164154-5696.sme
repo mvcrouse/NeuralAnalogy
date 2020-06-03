@@ -1,0 +1,91 @@
+(convexAngleBetweenEdges Edge-3530 Edge-3529)
+(convexAngleBetweenEdges Edge-3529 Edge-3528)
+(convexAngleBetweenEdges Edge-3528 Edge-3530)
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-3528 Edge-3530)
+ (convexAngleBetweenEdges Edge-3530 Edge-3529))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-3529 Edge-3528)
+ (convexAngleBetweenEdges Edge-3528 Edge-3530))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-3530 Edge-3529)
+ (convexAngleBetweenEdges Edge-3529 Edge-3528))
+(perpendicularCorner (convexAngleBetweenEdges Edge-3530 Edge-3529))
+(edgesPerpendicular Edge-3530 Edge-3529)
+(lengthMedium Edge-3530)
+(lengthLong Edge-3529)
+(lengthLong Edge-3528)
+(PerceptualEdge Edge-3528)
+(StraightEdge Edge-3528)
+(PerceptualEdge Edge-3529)
+(StraightEdge Edge-3529)
+(PerceptualEdge Edge-3530)
+(StraightEdge Edge-3530)
++++++++++++
+(StraightEdge Edge-3531)
+(StraightEdge Edge-3532)
+(StraightEdge Edge-3533)
+(PerceptualEdge Edge-3531)
+(PerceptualEdge Edge-3532)
+(PerceptualEdge Edge-3533)
+(axisAligned Edge-3532)
+(lengthLong Edge-3531)
+(lengthLong Edge-3532)
+(lengthLong Edge-3533)
+(edgesPerpendicular Edge-3532 Edge-3533)
+(convexAngleBetweenEdges Edge-3531 Edge-3532)
+(convexAngleBetweenEdges Edge-3532 Edge-3533)
+(convexAngleBetweenEdges Edge-3533 Edge-3531)
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-3531 Edge-3532)
+ (convexAngleBetweenEdges Edge-3532 Edge-3533))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-3532 Edge-3533)
+ (convexAngleBetweenEdges Edge-3533 Edge-3531))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-3533 Edge-3531)
+ (convexAngleBetweenEdges Edge-3531 Edge-3532))
+(perpendicularCorner (convexAngleBetweenEdges Edge-3532 Edge-3533))
++++++++++++
+(matchBetween (PerceptualEdge Edge-3528) (PerceptualEdge Edge-3531))
+(matchBetween Edge-3530 Edge-3532)
+(matchBetween (PerceptualEdge Edge-3530) (PerceptualEdge Edge-3532))
+(matchBetween Edge-3529 Edge-3533)
+(matchBetween (lengthLong Edge-3529) (lengthLong Edge-3533))
+(matchBetween (StraightEdge Edge-3529) (StraightEdge Edge-3533))
+(matchBetween (convexAngleBetweenEdges Edge-3530
+               Edge-3529) (convexAngleBetweenEdges Edge-3532 Edge-3533))
+(matchBetween (perpendicularCorner
+               (convexAngleBetweenEdges Edge-3530
+                Edge-3529)) (perpendicularCorner
+                             (convexAngleBetweenEdges Edge-3532
+                              Edge-3533)))
+(matchBetween (cycleAdjacentAngles
+               (convexAngleBetweenEdges Edge-3530 Edge-3529)
+               (convexAngleBetweenEdges Edge-3529
+                Edge-3528)) (cycleAdjacentAngles
+                             (convexAngleBetweenEdges Edge-3532
+                              Edge-3533)
+                             (convexAngleBetweenEdges Edge-3533
+                              Edge-3531)))
+(matchBetween (cycleAdjacentAngles
+               (convexAngleBetweenEdges Edge-3528 Edge-3530)
+               (convexAngleBetweenEdges Edge-3530
+                Edge-3529)) (cycleAdjacentAngles
+                             (convexAngleBetweenEdges Edge-3531
+                              Edge-3532)
+                             (convexAngleBetweenEdges Edge-3532
+                              Edge-3533)))
+(matchBetween (cycleAdjacentAngles
+               (convexAngleBetweenEdges Edge-3529 Edge-3528)
+               (convexAngleBetweenEdges Edge-3528
+                Edge-3530)) (cycleAdjacentAngles
+                             (convexAngleBetweenEdges Edge-3533
+                              Edge-3531)
+                             (convexAngleBetweenEdges Edge-3531
+                              Edge-3532)))
+(matchBetween (convexAngleBetweenEdges Edge-3529
+               Edge-3528) (convexAngleBetweenEdges Edge-3533 Edge-3531))
+(matchBetween (convexAngleBetweenEdges Edge-3528
+               Edge-3530) (convexAngleBetweenEdges Edge-3531 Edge-3532))
+(matchBetween (edgesPerpendicular Edge-3530
+               Edge-3529) (edgesPerpendicular Edge-3532 Edge-3533))
+(matchBetween (PerceptualEdge Edge-3529) (PerceptualEdge Edge-3533))
+(matchBetween (StraightEdge Edge-3530) (StraightEdge Edge-3532))
+(matchBetween (StraightEdge Edge-3528) (StraightEdge Edge-3531))
+(matchBetween (lengthLong Edge-3528) (lengthLong Edge-3531))
+(matchBetween Edge-3528 Edge-3531)

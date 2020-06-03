@@ -1,0 +1,81 @@
+(convexAngleBetweenEdges Edge-3383 Edge-3384)
+(convexAngleBetweenEdges Edge-3384 Edge-3385)
+(convexAngleBetweenEdges Edge-3385 Edge-3383)
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-3385 Edge-3383)
+ (convexAngleBetweenEdges Edge-3383 Edge-3384))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-3384 Edge-3385)
+ (convexAngleBetweenEdges Edge-3385 Edge-3383))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-3383 Edge-3384)
+ (convexAngleBetweenEdges Edge-3384 Edge-3385))
+(lengthMedium Edge-3384)
+(lengthLong Edge-3383)
+(lengthLong Edge-3385)
+(PerceptualEdge Edge-3385)
+(StraightEdge Edge-3385)
+(axisAligned Edge-3384)
+(PerceptualEdge Edge-3384)
+(StraightEdge Edge-3384)
+(PerceptualEdge Edge-3383)
+(StraightEdge Edge-3383)
++++++++++++
+(StraightEdge Edge-3386)
+(StraightEdge Edge-3387)
+(StraightEdge Edge-3388)
+(PerceptualEdge Edge-3386)
+(PerceptualEdge Edge-3387)
+(PerceptualEdge Edge-3388)
+(lengthLong Edge-3388)
+(lengthLong Edge-3386)
+(lengthMedium Edge-3387)
+(convexAngleBetweenEdges Edge-3388 Edge-3387)
+(convexAngleBetweenEdges Edge-3387 Edge-3386)
+(convexAngleBetweenEdges Edge-3386 Edge-3388)
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-3388 Edge-3387)
+ (convexAngleBetweenEdges Edge-3387 Edge-3386))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-3386 Edge-3388)
+ (convexAngleBetweenEdges Edge-3388 Edge-3387))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-3387 Edge-3386)
+ (convexAngleBetweenEdges Edge-3386 Edge-3388))
++++++++++++
+(matchBetween Edge-3385 Edge-3386)
+(matchBetween (lengthLong Edge-3385) (lengthLong Edge-3386))
+(matchBetween (PerceptualEdge Edge-3383) (PerceptualEdge Edge-3388))
+(matchBetween (PerceptualEdge Edge-3385) (PerceptualEdge Edge-3386))
+(matchBetween (StraightEdge Edge-3384) (StraightEdge Edge-3387))
+(matchBetween (convexAngleBetweenEdges Edge-3384
+               Edge-3385) (convexAngleBetweenEdges Edge-3387 Edge-3386))
+(matchBetween (convexAngleBetweenEdges Edge-3383
+               Edge-3384) (convexAngleBetweenEdges Edge-3388 Edge-3387))
+(matchBetween (cycleAdjacentAngles
+               (convexAngleBetweenEdges Edge-3383 Edge-3384)
+               (convexAngleBetweenEdges Edge-3384
+                Edge-3385)) (cycleAdjacentAngles
+                             (convexAngleBetweenEdges Edge-3388
+                              Edge-3387)
+                             (convexAngleBetweenEdges Edge-3387
+                              Edge-3386)))
+(matchBetween (cycleAdjacentAngles
+               (convexAngleBetweenEdges Edge-3385 Edge-3383)
+               (convexAngleBetweenEdges Edge-3383
+                Edge-3384)) (cycleAdjacentAngles
+                             (convexAngleBetweenEdges Edge-3386
+                              Edge-3388)
+                             (convexAngleBetweenEdges Edge-3388
+                              Edge-3387)))
+(matchBetween (cycleAdjacentAngles
+               (convexAngleBetweenEdges Edge-3384 Edge-3385)
+               (convexAngleBetweenEdges Edge-3385
+                Edge-3383)) (cycleAdjacentAngles
+                             (convexAngleBetweenEdges Edge-3387
+                              Edge-3386)
+                             (convexAngleBetweenEdges Edge-3386
+                              Edge-3388)))
+(matchBetween (convexAngleBetweenEdges Edge-3385
+               Edge-3383) (convexAngleBetweenEdges Edge-3386 Edge-3388))
+(matchBetween (StraightEdge Edge-3385) (StraightEdge Edge-3386))
+(matchBetween (StraightEdge Edge-3383) (StraightEdge Edge-3388))
+(matchBetween (PerceptualEdge Edge-3384) (PerceptualEdge Edge-3387))
+(matchBetween (lengthLong Edge-3383) (lengthLong Edge-3388))
+(matchBetween Edge-3383 Edge-3388)
+(matchBetween (lengthMedium Edge-3384) (lengthMedium Edge-3387))
+(matchBetween Edge-3384 Edge-3387)

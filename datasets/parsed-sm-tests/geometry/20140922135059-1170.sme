@@ -1,0 +1,48 @@
+(elementIntersects Edge-1103 Super-Edge-1118)
+(edgesPerpendicular Super-Edge-1118 Edge-1103)
+(above Super-Edge-1118 Edge-1103)
+(VerticalEdge Edge-1103)
+(axisAligned Edge-1103)
+(PerceptualEdge Edge-1103)
+(StraightEdge Edge-1103)
+(HorizontalEdge Super-Edge-1118)
+(axisAligned Super-Edge-1118)
+(PerceptualEdge Super-Edge-1118)
+(StraightEdge Super-Edge-1118)
++++++++++++
+(StraightEdge Super-Edge-1129)
+(StraightEdge Edge-1125)
+(PerceptualEdge Super-Edge-1129)
+(PerceptualEdge Edge-1125)
+(axisAligned Super-Edge-1129)
+(axisAligned Edge-1125)
+(HorizontalEdge Super-Edge-1129)
+(VerticalEdge Edge-1125)
+(above Super-Edge-1129 Edge-1125)
+(edgesPerpendicular Super-Edge-1129 Edge-1125)
+(elementIntersects Edge-1125 Super-Edge-1129)
++++++++++++
+(matchBetween Super-Edge-1118 Super-Edge-1129)
+(matchBetween (HorizontalEdge Super-Edge-1118) (HorizontalEdge
+                                                Super-Edge-1129))
+(matchBetween (axisAligned Edge-1103) (axisAligned Edge-1125))
+(matchBetween (PerceptualEdge Edge-1103) (PerceptualEdge Edge-1125))
+(matchBetween (StraightEdge Edge-1103) (StraightEdge Edge-1125))
+(matchBetween (edgesPerpendicular Super-Edge-1118
+               Edge-1103) (edgesPerpendicular Super-Edge-1129
+                           Edge-1125))
+(matchBetween (above Super-Edge-1118 Edge-1103) (above
+                                                 Super-Edge-1129
+                                                 Edge-1125))
+(matchBetween (elementIntersects Edge-1103
+               Super-Edge-1118) (elementIntersects
+                                 Edge-1125
+                                 Super-Edge-1129))
+(matchBetween (StraightEdge Super-Edge-1118) (StraightEdge
+                                              Super-Edge-1129))
+(matchBetween (PerceptualEdge Super-Edge-1118) (PerceptualEdge
+                                                Super-Edge-1129))
+(matchBetween (axisAligned Super-Edge-1118) (axisAligned
+                                             Super-Edge-1129))
+(matchBetween (VerticalEdge Edge-1103) (VerticalEdge Edge-1125))
+(matchBetween Edge-1103 Edge-1125)

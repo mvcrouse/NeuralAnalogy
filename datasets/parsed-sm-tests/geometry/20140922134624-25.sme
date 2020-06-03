@@ -1,0 +1,150 @@
+(convexAngleBetweenEdges Edge-25 Edge-24)
+(convexAngleBetweenEdges Edge-24 Edge-23)
+(convexAngleBetweenEdges Edge-23 Edge-25)
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-23 Edge-25)
+ (convexAngleBetweenEdges Edge-25 Edge-24))
+(verticallyOrientedCorner (convexAngleBetweenEdges Edge-23 Edge-25))
+(leftToRightCorner (convexAngleBetweenEdges Edge-23 Edge-25))
+(perpendicularCorner (convexAngleBetweenEdges Edge-23 Edge-25))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-24 Edge-23)
+ (convexAngleBetweenEdges Edge-23 Edge-25))
+(bottomToTopCorner (convexAngleBetweenEdges Edge-24 Edge-23))
+(rightToLeftCorner (convexAngleBetweenEdges Edge-24 Edge-23))
+(perpendicularCorner (convexAngleBetweenEdges Edge-24 Edge-23))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-25 Edge-24)
+ (convexAngleBetweenEdges Edge-24 Edge-23))
+(topToBottomCorner (convexAngleBetweenEdges Edge-25 Edge-24))
+(perpendicularCorner (convexAngleBetweenEdges Edge-25 Edge-24))
+(above Edge-23 Edge-24)
+(rightOf Edge-24 Edge-23)
+(edgesPerpendicular Edge-25 Edge-23)
+(rightOf Edge-25 Edge-23)
+(above Edge-25 Edge-24)
+(lengthMedium Edge-25)
+(lengthMedium Edge-23)
+(lengthLong Edge-24)
+(ObliqueEdge-Upward Edge-23)
+(PerceptualEdge Edge-23)
+(StraightEdge Edge-23)
+(CurvedEdge-DownBumped Edge-24)
+(PerceptualEdge Edge-24)
+(CurvedEdge Edge-24)
+(ObliqueEdge-Downward Edge-25)
+(PerceptualEdge Edge-25)
+(StraightEdge Edge-25)
++++++++++++
+(StraightEdge Edge-32)
+(StraightEdge Edge-30)
+(PerceptualEdge Edge-32)
+(PerceptualEdge Edge-31)
+(PerceptualEdge Edge-30)
+(ObliqueEdge-Downward Edge-32)
+(CurvedEdge Edge-31)
+(CurvedEdge-DownBumped Edge-31)
+(ObliqueEdge-Upward Edge-30)
+(lengthLong Edge-31)
+(lengthMedium Edge-30)
+(lengthMedium Edge-32)
+(above Edge-32 Edge-31)
+(above Edge-30 Edge-31)
+(rightOf Edge-32 Edge-30)
+(rightOf Edge-31 Edge-30)
+(edgesPerpendicular Edge-32 Edge-30)
+(convexAngleBetweenEdges Edge-32 Edge-31)
+(convexAngleBetweenEdges Edge-31 Edge-30)
+(convexAngleBetweenEdges Edge-30 Edge-32)
+(perpendicularCorner (convexAngleBetweenEdges Edge-32 Edge-31))
+(perpendicularCorner (convexAngleBetweenEdges Edge-31 Edge-30))
+(perpendicularCorner (convexAngleBetweenEdges Edge-30 Edge-32))
+(topToBottomCorner (convexAngleBetweenEdges Edge-32 Edge-31))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-32 Edge-31)
+ (convexAngleBetweenEdges Edge-31 Edge-30))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-31 Edge-30)
+ (convexAngleBetweenEdges Edge-30 Edge-32))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-30 Edge-32)
+ (convexAngleBetweenEdges Edge-32 Edge-31))
+(rightToLeftCorner (convexAngleBetweenEdges Edge-31 Edge-30))
+(bottomToTopCorner (convexAngleBetweenEdges Edge-31 Edge-30))
+(leftToRightCorner (convexAngleBetweenEdges Edge-30 Edge-32))
+(verticallyOrientedCorner (convexAngleBetweenEdges Edge-30 Edge-32))
++++++++++++
+(matchBetween Edge-24 Edge-31)
+(matchBetween (lengthLong Edge-24) (lengthLong Edge-31))
+(matchBetween (CurvedEdge Edge-24) (CurvedEdge Edge-31))
+(matchBetween (PerceptualEdge Edge-25) (PerceptualEdge Edge-32))
+(matchBetween (StraightEdge Edge-25) (StraightEdge Edge-32))
+(matchBetween (ObliqueEdge-Upward Edge-23) (ObliqueEdge-Upward Edge-30))
+(matchBetween (StraightEdge Edge-23) (StraightEdge Edge-30))
+(matchBetween (convexAngleBetweenEdges Edge-25
+               Edge-24) (convexAngleBetweenEdges Edge-32 Edge-31))
+(matchBetween (topToBottomCorner
+               (convexAngleBetweenEdges Edge-25
+                Edge-24)) (topToBottomCorner
+                           (convexAngleBetweenEdges Edge-32 Edge-31)))
+(matchBetween (edgesPerpendicular Edge-25 Edge-23) (edgesPerpendicular
+                                                    Edge-32
+                                                    Edge-30))
+(matchBetween (rightOf Edge-24 Edge-23) (rightOf Edge-31 Edge-30))
+(matchBetween (convexAngleBetweenEdges Edge-23
+               Edge-25) (convexAngleBetweenEdges Edge-30 Edge-32))
+(matchBetween (verticallyOrientedCorner
+               (convexAngleBetweenEdges Edge-23
+                Edge-25)) (verticallyOrientedCorner
+                           (convexAngleBetweenEdges Edge-30 Edge-32)))
+(matchBetween (convexAngleBetweenEdges Edge-24
+               Edge-23) (convexAngleBetweenEdges Edge-31 Edge-30))
+(matchBetween (bottomToTopCorner
+               (convexAngleBetweenEdges Edge-24
+                Edge-23)) (bottomToTopCorner
+                           (convexAngleBetweenEdges Edge-31 Edge-30)))
+(matchBetween (perpendicularCorner
+               (convexAngleBetweenEdges Edge-24
+                Edge-23)) (perpendicularCorner
+                           (convexAngleBetweenEdges Edge-31 Edge-30)))
+(matchBetween (cycleAdjacentAngles
+               (convexAngleBetweenEdges Edge-25 Edge-24)
+               (convexAngleBetweenEdges Edge-24
+                Edge-23)) (cycleAdjacentAngles
+                           (convexAngleBetweenEdges Edge-32 Edge-31)
+                           (convexAngleBetweenEdges Edge-31 Edge-30)))
+(matchBetween (cycleAdjacentAngles
+               (convexAngleBetweenEdges Edge-24 Edge-23)
+               (convexAngleBetweenEdges Edge-23
+                Edge-25)) (cycleAdjacentAngles
+                           (convexAngleBetweenEdges Edge-31 Edge-30)
+                           (convexAngleBetweenEdges Edge-30 Edge-32)))
+(matchBetween (cycleAdjacentAngles
+               (convexAngleBetweenEdges Edge-23 Edge-25)
+               (convexAngleBetweenEdges Edge-25
+                Edge-24)) (cycleAdjacentAngles
+                           (convexAngleBetweenEdges Edge-30 Edge-32)
+                           (convexAngleBetweenEdges Edge-32 Edge-31)))
+(matchBetween (perpendicularCorner
+               (convexAngleBetweenEdges Edge-23
+                Edge-25)) (perpendicularCorner
+                           (convexAngleBetweenEdges Edge-30 Edge-32)))
+(matchBetween (rightToLeftCorner
+               (convexAngleBetweenEdges Edge-24
+                Edge-23)) (rightToLeftCorner
+                           (convexAngleBetweenEdges Edge-31 Edge-30)))
+(matchBetween (leftToRightCorner
+               (convexAngleBetweenEdges Edge-23
+                Edge-25)) (leftToRightCorner
+                           (convexAngleBetweenEdges Edge-30 Edge-32)))
+(matchBetween (above Edge-23 Edge-24) (above Edge-30 Edge-31))
+(matchBetween (rightOf Edge-25 Edge-23) (rightOf Edge-32 Edge-30))
+(matchBetween (perpendicularCorner
+               (convexAngleBetweenEdges Edge-25
+                Edge-24)) (perpendicularCorner
+                           (convexAngleBetweenEdges Edge-32 Edge-31)))
+(matchBetween (above Edge-25 Edge-24) (above Edge-32 Edge-31))
+(matchBetween (PerceptualEdge Edge-23) (PerceptualEdge Edge-30))
+(matchBetween (lengthMedium Edge-23) (lengthMedium Edge-30))
+(matchBetween Edge-23 Edge-30)
+(matchBetween (PerceptualEdge Edge-24) (PerceptualEdge Edge-31))
+(matchBetween (ObliqueEdge-Downward Edge-25) (ObliqueEdge-Downward
+                                              Edge-32))
+(matchBetween (CurvedEdge-DownBumped Edge-24) (CurvedEdge-DownBumped
+                                               Edge-31))
+(matchBetween (lengthMedium Edge-25) (lengthMedium Edge-32))
+(matchBetween Edge-25 Edge-32)

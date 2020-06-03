@@ -1,0 +1,13 @@
+(Proximal-Similar-Shape-Group Element-3)
+(Centered-Element Element-3)
+(2D-Shape-Generic Element-3)
++++++++++++
+(Centered-Element Group-7)
+(Proximal-Similar-Shape-Group Group-7)
+(2D-Shape-Generic Group-7)
++++++++++++
+(matchBetween (Centered-Element Element-3) (Centered-Element Group-7))
+(matchBetween (2D-Shape-Generic Element-3) (2D-Shape-Generic Group-7))
+(matchBetween (Proximal-Similar-Shape-Group
+               Element-3) (Proximal-Similar-Shape-Group Group-7))
+(matchBetween Element-3 Group-7)

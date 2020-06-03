@@ -1,0 +1,2258 @@
+(abstract-hx heater1 h-in t-in)
+(ideal-gas air)
+(pr turbine1)
+(shaft-work turbine1)
+(shaft-work compressor1)
+(spec-shaft-work turbine1)
+(spec-shaft-work compressor1)
+(nu-isentropic turbine1)
+(nu-isentropic compressor1)
+(r air)
+(spec-s h-in)
+(spec-s t-in)
+(spec-s cool-in)
+(spec-s comp-in)
+(p comp-in)
+(p t-in)
+(p cool-in)
+(p h-in)
+(tout-isentropic turbine1)
+(tout-isentropic compressor1)
+(spec-shaft-work-isentropic turbine1)
+(spec-shaft-work-isentropic compressor1)
+(hout-isentropic turbine1)
+(hout-isentropic compressor1)
+(delta-h-isentropic turbine1)
+(delta-h-isentropic compressor1)
+(nu-thermal cycle)
+(gas cool-in)
+(gas t-in)
+(substance-of cool-in air)
+(substance-of comp-in air)
+(substance-of h-in air)
+(substance-of t-in air)
+(isentropic turbine1)
+(heat-engine cycle)
+(heat-source cooler1)
+(heat-source heater1)
+(compressor compressor1 comp-in h-in)
+(turbine turbine1 t-in cool-in)
+(thermodynamic-cycle cycle)
+(heat-flows-in cycle)
+(q heater1)
+(the-set (q heater1))
+(the-set (shaft-work turbine1))
+(the-set (shaft-work compressor1))
+(members (heat-flows-in cycle) (the-set (q heater1)))
+(members (work-flows-out cycle) (the-set (shaft-work turbine1)))
+(members (work-flows-in cycle) (the-set (shaft-work compressor1)))
+(and (members (heat-flows-in cycle) (the-set (q heater1)))
+     (thermodynamic-cycle cycle))
+(and (nvalue (q heater1) 439461.94)
+     (equation (= (q-in cycle) (+ (q heater1)))))
+(and (nvalue (mass-flow heater1) 1.0)
+     (nvalue (spec-q heater1) 439461.94)
+     (equation
+      (= (spec-q heater1) (/ (q heater1) (mass-flow heater1)))))
+(and (nvalue (mass-flow h-in) 1.0)
+     (equation (= (mass-flow h-in) (mass-flow heater1))))
+(and (nvalue (mass-flow t-in) 1.0)
+     (equation (= (mass-flow h-in) (mass-flow t-in))))
+(and (nvalue (mass-flow turbine1) 1.0)
+     (equation (= (mass-flow t-in) (mass-flow turbine1))))
+(and (nvalue (mass-flow t-in) 1.0)
+     (equation (= (mass-flow t-in) (mass-flow cool-in))))
+(and (nvalue (mass-flow cool-in) 1.0)
+     (equation (= (mass-flow cool-in) (mass-flow comp-in))))
+(and (nvalue (spec-h h-in) 563951.9) (nvalue (spec-h t-in) 1003413.8)
+     (equation (= (spec-h t-in) (+ (spec-h h-in) (spec-q heater1)))))
+(and (substance-of h-in air) (ideal-gas air))
+(and (nvalue (t h-in) 562.0332)
+     (equation (= (spec-h h-in) (* (cp air) (t h-in))))
+     (nvalue (cp air) 1003.4138))
+(and (nvalue (spec-h h-in) 563951.9)
+     (nvalue (hout-isentropic compressor1) 563951.9)
+     (nvalue (spec-h comp-in) 301024.12)
+     (equation
+      (= (nu-isentropic compressor1)
+         (/ (- (spec-h comp-in) (hout-isentropic compressor1))
+            (- (spec-h comp-in) (spec-h h-in))))))
+(and (nvalue (p h-in) 900000.0) (nvalue (spec-s h-in) 2422.6174)
+     (equation
+      (= (spec-s h-in)
+         (- (* (cp air) (log (t h-in))) (* (r air) (log (p h-in))))))
+     (nvalue (cp air) 1003.4138) (nvalue (r air) 8314/29))
+(and (nvalue (p t-in) 900000.0) (equation (= (p h-in) (p t-in))))
+(and (nvalue (p h-in) 900000.0) (nvalue (spec-s comp-in) 2422.6174)
+     (equation
+      (= (spec-s comp-in)
+         (- (* (cp air) (log (tout-isentropic compressor1)))
+            (* (r air) (log (p h-in))))))
+     (nvalue (cp air) 1003.4138) (nvalue (r air) 8314/29))
+(and (substance-of comp-in air) (compressor compressor1 comp-in h-in)
+     (ideal-gas air))
+(and (nvalue (p cool-in) 100000.0) (nvalue (pr turbine1) 9.0)
+     (equation (= (pr turbine1) (/ (p t-in) (p cool-in)))))
+(and (nvalue (p t-in) 900000.0) (nvalue (t t-in) 1000.0)
+     (equation
+      (= (spec-s t-in)
+         (- (* (cp air) (log (t t-in))) (* (r air) (log (p t-in))))))
+     (nvalue (cp air) 1003.4138) (nvalue (r air) 8314/29))
+(and (substance-of t-in air) (ideal-gas air))
+(and (nvalue (p comp-in) 100000.0)
+     (equation (= (p cool-in) (p comp-in))))
+(and (nvalue (spec-s t-in) 3000.7788) (nvalue (p cool-in) 100000.0)
+     (equation
+      (= (spec-s t-in)
+         (- (* (cp air) (log (tout-isentropic turbine1)))
+            (* (r air) (log (p cool-in))))))
+     (nvalue (cp air) 1003.4138) (nvalue (r air) 8314/29))
+(and (substance-of t-in air) (gas cool-in) (gas t-in)
+     (turbine turbine1 t-in cool-in) (ideal-gas air))
+(and (nvalue (spec-s cool-in) 3000.7788) (nvalue (p cool-in) 100000.0)
+     (equation
+      (= (spec-s cool-in)
+         (- (* (cp air) (log (t cool-in)))
+            (* (r air) (log (p cool-in))))))
+     (nvalue (cp air) 1003.4138) (nvalue (r air) 8314/29))
+(and (substance-of cool-in air) (ideal-gas air))
+(and (nvalue (tout-isentropic turbine1) 533.7763)
+     (nvalue (t t-in) 1000.0)
+     (equation
+      (= (delta-h-isentropic turbine1)
+         (* (cp air) (- (t t-in) (tout-isentropic turbine1)))))
+     (nvalue (cp air) 1003.4138))
+(and (nvalue (tout-isentropic turbine1) 533.7763)
+     (equation
+      (= (hout-isentropic turbine1)
+         (* (cp air) (tout-isentropic turbine1))))
+     (nvalue (cp air) 1003.4138))
+(and (substance-of cool-in air) (gas cool-in) (gas t-in)
+     (turbine turbine1 t-in cool-in) (ideal-gas air))
+(and (nvalue (spec-h cool-in) 535598.5)
+     (nvalue (hout-isentropic turbine1) 535598.5)
+     (nvalue (spec-h t-in) 1003413.8)
+     (equation
+      (= (nu-isentropic turbine1)
+         (/ (- (spec-h t-in) (spec-h cool-in))
+            (- (spec-h t-in) (hout-isentropic turbine1))))))
+(and (nvalue (t cool-in) 533.7763)
+     (equation (= (spec-h cool-in) (* (cp air) (t cool-in))))
+     (nvalue (cp air) 1003.4138))
+(and (isentropic turbine1) (turbine turbine1 t-in cool-in))
+(and (nvalue (spec-s t-in) 3000.7788)
+     (equation (= (spec-s t-in) (spec-s cool-in))))
+(and (nvalue (delta-h-isentropic turbine1) 467815.3)
+     (equation
+      (= (spec-shaft-work-isentropic turbine1)
+         (delta-h-isentropic turbine1))))
+(and (nvalue (nu-isentropic turbine1) 1.0)
+     (nvalue (spec-shaft-work-isentropic turbine1) 467815.3)
+     (equation
+      (= (nu-isentropic turbine1)
+         (/ (spec-shaft-work turbine1)
+            (spec-shaft-work-isentropic turbine1)))))
+(and (nvalue (mass-flow turbine1) 1.0)
+     (nvalue (spec-shaft-work turbine1) 467815.3)
+     (equation
+      (= (spec-shaft-work turbine1)
+         (/ (shaft-work turbine1) (mass-flow turbine1)))))
+(and (nvalue (work-in cycle) -262927.72)
+     (nvalue (work-out cycle) 467815.3)
+     (equation
+      (= (net-work cycle) (+ (work-in cycle) (work-out cycle)))))
+(and (members (work-flows-out cycle) (the-set (shaft-work turbine1)))
+     (thermodynamic-cycle cycle))
+(and (nvalue (shaft-work turbine1) 467815.3)
+     (equation (= (work-out cycle) (+ (shaft-work turbine1)))))
+(and (nvalue (net-work cycle) 204887.56)
+     (nvalue (q-in cycle) 439461.94)
+     (equation
+      (= (nu-thermal cycle) (/ (net-work cycle) (q-in cycle)))))
+(and (members (work-flows-in cycle) (the-set (shaft-work compressor1)))
+     (thermodynamic-cycle cycle))
+(and (nvalue (shaft-work compressor1) -262927.72)
+     (equation (= (work-in cycle) (+ (shaft-work compressor1)))))
+(and (nvalue (mass-flow compressor1) 1.0)
+     (nvalue (spec-shaft-work compressor1) -262927.72)
+     (equation
+      (= (spec-shaft-work compressor1)
+         (/ (shaft-work compressor1) (mass-flow compressor1)))))
+(and (nvalue (mass-flow comp-in) 1.0)
+     (equation (= (mass-flow comp-in) (mass-flow compressor1))))
+(and (nvalue (spec-shaft-work-isentropic compressor1) -262927.72)
+     (nvalue (nu-isentropic compressor1) 1.0)
+     (equation
+      (= (nu-isentropic compressor1)
+         (/ (spec-shaft-work-isentropic compressor1)
+            (spec-shaft-work compressor1)))))
+(and (nvalue (delta-h-isentropic compressor1) -262927.72)
+     (equation
+      (= (spec-shaft-work-isentropic compressor1)
+         (delta-h-isentropic compressor1))))
+(and (substance-of comp-in air) (compressor compressor1 comp-in h-in))
+(and (nvalue (hout-isentropic compressor1) 563951.9)
+     (nvalue (spec-h comp-in) 301024.12)
+     (equation
+      (= (delta-h-isentropic compressor1)
+         (- (spec-h comp-in) (hout-isentropic compressor1)))))
+(and (nvalue (tout-isentropic compressor1) 562.0332)
+     (equation
+      (= (hout-isentropic compressor1)
+         (* (cp air) (tout-isentropic compressor1))))
+     (nvalue (cp air) 1003.4138))
+(and (substance-of comp-in air) (ideal-gas air))
+(and (nvalue (t comp-in) 300.0)
+     (equation (= (spec-h comp-in) (* (cp air) (t comp-in))))
+     (nvalue (cp air) 1003.4138))
+(q-in cycle)
+(+ (q heater1))
+(+ (spec-h h-in) (spec-q heater1))
+(+ (work-in cycle) (work-out cycle))
+(+ (shaft-work turbine1))
+(+ (shaft-work compressor1))
+(= (q-in cycle) (+ (q heater1)))
+(= (spec-q heater1) (/ (q heater1) (mass-flow heater1)))
+(= (mass-flow h-in) (mass-flow heater1))
+(= (mass-flow h-in) (mass-flow t-in))
+(= (mass-flow t-in) (mass-flow turbine1))
+(= (mass-flow t-in) (mass-flow cool-in))
+(= (mass-flow cool-in) (mass-flow comp-in))
+(= (spec-h t-in) (+ (spec-h h-in) (spec-q heater1)))
+(= (spec-h h-in) (* (cp air) (t h-in)))
+(= (nu-isentropic compressor1)
+   (/ (- (spec-h comp-in) (hout-isentropic compressor1))
+      (- (spec-h comp-in) (spec-h h-in))))
+(= (spec-s h-in)
+   (- (* (cp air) (log (t h-in))) (* (r air) (log (p h-in)))))
+(= (p h-in) (p t-in))
+(= (spec-s comp-in)
+   (- (* (cp air) (log (tout-isentropic compressor1)))
+      (* (r air) (log (p h-in)))))
+(= (pr turbine1) (/ (p t-in) (p cool-in)))
+(= (spec-s t-in)
+   (- (* (cp air) (log (t t-in))) (* (r air) (log (p t-in)))))
+(= (p cool-in) (p comp-in))
+(= (spec-s t-in)
+   (- (* (cp air) (log (tout-isentropic turbine1)))
+      (* (r air) (log (p cool-in)))))
+(= (spec-s cool-in)
+   (- (* (cp air) (log (t cool-in))) (* (r air) (log (p cool-in)))))
+(= (delta-h-isentropic turbine1)
+   (* (cp air) (- (t t-in) (tout-isentropic turbine1))))
+(= (hout-isentropic turbine1) (* (cp air) (tout-isentropic turbine1)))
+(= (nu-isentropic turbine1)
+   (/ (- (spec-h t-in) (spec-h cool-in))
+      (- (spec-h t-in) (hout-isentropic turbine1))))
+(= (spec-h cool-in) (* (cp air) (t cool-in)))
+(= (spec-s t-in) (spec-s cool-in))
+(= (spec-shaft-work-isentropic turbine1) (delta-h-isentropic turbine1))
+(= (nu-isentropic turbine1)
+   (/ (spec-shaft-work turbine1) (spec-shaft-work-isentropic turbine1)))
+(= (spec-shaft-work turbine1)
+   (/ (shaft-work turbine1) (mass-flow turbine1)))
+(= (net-work cycle) (+ (work-in cycle) (work-out cycle)))
+(= (work-out cycle) (+ (shaft-work turbine1)))
+(= (nu-thermal cycle) (/ (net-work cycle) (q-in cycle)))
+(= (work-in cycle) (+ (shaft-work compressor1)))
+(= (spec-shaft-work compressor1)
+   (/ (shaft-work compressor1) (mass-flow compressor1)))
+(= (mass-flow comp-in) (mass-flow compressor1))
+(= (nu-isentropic compressor1)
+   (/ (spec-shaft-work-isentropic compressor1)
+      (spec-shaft-work compressor1)))
+(= (spec-shaft-work-isentropic compressor1)
+   (delta-h-isentropic compressor1))
+(= (delta-h-isentropic compressor1)
+   (- (spec-h comp-in) (hout-isentropic compressor1)))
+(= (hout-isentropic compressor1)
+   (* (cp air) (tout-isentropic compressor1)))
+(= (spec-h comp-in) (* (cp air) (t comp-in)))
+(equation (= (q-in cycle) (+ (q heater1))))
+(equation (= (spec-q heater1) (/ (q heater1) (mass-flow heater1))))
+(equation (= (mass-flow h-in) (mass-flow heater1)))
+(equation (= (mass-flow h-in) (mass-flow t-in)))
+(equation (= (mass-flow t-in) (mass-flow turbine1)))
+(equation (= (mass-flow t-in) (mass-flow cool-in)))
+(equation (= (mass-flow cool-in) (mass-flow comp-in)))
+(equation (= (spec-h t-in) (+ (spec-h h-in) (spec-q heater1))))
+(equation (= (spec-h h-in) (* (cp air) (t h-in))))
+(equation
+ (= (nu-isentropic compressor1)
+    (/ (- (spec-h comp-in) (hout-isentropic compressor1))
+       (- (spec-h comp-in) (spec-h h-in)))))
+(equation
+ (= (spec-s h-in)
+    (- (* (cp air) (log (t h-in))) (* (r air) (log (p h-in))))))
+(equation (= (p h-in) (p t-in)))
+(equation
+ (= (spec-s comp-in)
+    (- (* (cp air) (log (tout-isentropic compressor1)))
+       (* (r air) (log (p h-in))))))
+(equation (= (pr turbine1) (/ (p t-in) (p cool-in))))
+(equation
+ (= (spec-s t-in)
+    (- (* (cp air) (log (t t-in))) (* (r air) (log (p t-in))))))
+(equation (= (p cool-in) (p comp-in)))
+(equation
+ (= (spec-s t-in)
+    (- (* (cp air) (log (tout-isentropic turbine1)))
+       (* (r air) (log (p cool-in))))))
+(equation
+ (= (spec-s cool-in)
+    (- (* (cp air) (log (t cool-in))) (* (r air) (log (p cool-in))))))
+(equation
+ (= (delta-h-isentropic turbine1)
+    (* (cp air) (- (t t-in) (tout-isentropic turbine1)))))
+(equation
+ (= (hout-isentropic turbine1) (* (cp air) (tout-isentropic turbine1))))
+(equation
+ (= (nu-isentropic turbine1)
+    (/ (- (spec-h t-in) (spec-h cool-in))
+       (- (spec-h t-in) (hout-isentropic turbine1)))))
+(equation (= (spec-h cool-in) (* (cp air) (t cool-in))))
+(equation (= (spec-s t-in) (spec-s cool-in)))
+(equation
+ (= (spec-shaft-work-isentropic turbine1)
+    (delta-h-isentropic turbine1)))
+(equation
+ (= (nu-isentropic turbine1)
+    (/ (spec-shaft-work turbine1)
+       (spec-shaft-work-isentropic turbine1))))
+(equation
+ (= (spec-shaft-work turbine1)
+    (/ (shaft-work turbine1) (mass-flow turbine1))))
+(equation (= (net-work cycle) (+ (work-in cycle) (work-out cycle))))
+(equation (= (work-out cycle) (+ (shaft-work turbine1))))
+(equation (= (nu-thermal cycle) (/ (net-work cycle) (q-in cycle))))
+(equation (= (work-in cycle) (+ (shaft-work compressor1))))
+(equation
+ (= (spec-shaft-work compressor1)
+    (/ (shaft-work compressor1) (mass-flow compressor1))))
+(equation (= (mass-flow comp-in) (mass-flow compressor1)))
+(equation
+ (= (nu-isentropic compressor1)
+    (/ (spec-shaft-work-isentropic compressor1)
+       (spec-shaft-work compressor1))))
+(equation
+ (= (spec-shaft-work-isentropic compressor1)
+    (delta-h-isentropic compressor1)))
+(equation
+ (= (delta-h-isentropic compressor1)
+    (- (spec-h comp-in) (hout-isentropic compressor1))))
+(equation
+ (= (hout-isentropic compressor1)
+    (* (cp air) (tout-isentropic compressor1))))
+(equation (= (spec-h comp-in) (* (cp air) (t comp-in))))
+(nvalue (q-in cycle) 439461.94)
+(nvalue (q heater1) 439461.94)
+(nvalue (mass-flow heater1) 1.0)
+(nvalue (spec-q heater1) 439461.94)
+(nvalue (mass-flow h-in) 1.0)
+(nvalue (mass-flow t-in) 1.0)
+(nvalue (mass-flow turbine1) 1.0)
+(nvalue (mass-flow cool-in) 1.0)
+(nvalue (mass-flow comp-in) 1.0)
+(nvalue (spec-h h-in) 563951.9)
+(nvalue (spec-h t-in) 1003413.8)
+(nvalue (t h-in) 562.0332)
+(nvalue (cp air) 1003.4138)
+(nvalue (nu-isentropic compressor1) 1.0)
+(nvalue (hout-isentropic compressor1) 563951.9)
+(nvalue (spec-h comp-in) 301024.12)
+(nvalue (p h-in) 900000.0)
+(nvalue (spec-s h-in) 2422.6174)
+(nvalue (r air) 8314/29)
+(nvalue (p t-in) 900000.0)
+(nvalue (tout-isentropic compressor1) 562.0332)
+(nvalue (spec-s comp-in) 2422.6174)
+(nvalue (p cool-in) 100000.0)
+(nvalue (pr turbine1) 9.0)
+(nvalue (spec-s t-in) 3000.7788)
+(nvalue (t t-in) 1000.0)
+(nvalue (p comp-in) 100000.0)
+(nvalue (tout-isentropic turbine1) 533.7763)
+(nvalue (t cool-in) 533.7763)
+(nvalue (spec-s cool-in) 3000.7788)
+(nvalue (delta-h-isentropic turbine1) 467815.3)
+(nvalue (hout-isentropic turbine1) 535598.5)
+(nvalue (nu-isentropic turbine1) 1.0)
+(nvalue (spec-h cool-in) 535598.5)
+(nvalue (spec-shaft-work-isentropic turbine1) 467815.3)
+(nvalue (spec-shaft-work turbine1) 467815.3)
+(nvalue (shaft-work turbine1) 467815.3)
+(nvalue (net-work cycle) 204887.56)
+(nvalue (work-in cycle) -262927.72)
+(nvalue (work-out cycle) 467815.3)
+(nvalue (nu-thermal cycle) 0.4662237)
+(nvalue (shaft-work compressor1) -262927.72)
+(nvalue (mass-flow compressor1) 1.0)
+(nvalue (spec-shaft-work compressor1) -262927.72)
+(nvalue (spec-shaft-work-isentropic compressor1) -262927.72)
+(nvalue (delta-h-isentropic compressor1) -262927.72)
+(nvalue (t comp-in) 300.0)
+(mass-flow heater1)
+(mass-flow h-in)
+(mass-flow t-in)
+(mass-flow turbine1)
+(mass-flow cool-in)
+(mass-flow comp-in)
+(mass-flow compressor1)
+(spec-q heater1)
+(/ (q heater1) (mass-flow heater1))
+(/ (- (spec-h comp-in) (hout-isentropic compressor1))
+   (- (spec-h comp-in) (spec-h h-in)))
+(/ (p t-in) (p cool-in))
+(/ (- (spec-h t-in) (spec-h cool-in))
+   (- (spec-h t-in) (hout-isentropic turbine1)))
+(/ (spec-shaft-work turbine1) (spec-shaft-work-isentropic turbine1))
+(/ (shaft-work turbine1) (mass-flow turbine1))
+(/ (net-work cycle) (q-in cycle))
+(/ (shaft-work compressor1) (mass-flow compressor1))
+(/ (spec-shaft-work-isentropic compressor1)
+   (spec-shaft-work compressor1))
+(spec-h h-in)
+(spec-h t-in)
+(spec-h comp-in)
+(spec-h cool-in)
+(cp air)
+(t h-in)
+(t t-in)
+(t cool-in)
+(t comp-in)
+(* (cp air) (t h-in))
+(* (cp air) (log (t h-in)))
+(* (r air) (log (p h-in)))
+(* (cp air) (log (tout-isentropic compressor1)))
+(* (cp air) (log (t t-in)))
+(* (r air) (log (p t-in)))
+(* (cp air) (log (tout-isentropic turbine1)))
+(* (r air) (log (p cool-in)))
+(* (cp air) (log (t cool-in)))
+(* (cp air) (- (t t-in) (tout-isentropic turbine1)))
+(* (cp air) (tout-isentropic turbine1))
+(* (cp air) (t cool-in))
+(* (cp air) (tout-isentropic compressor1))
+(* (cp air) (t comp-in))
+(- (spec-h comp-in) (hout-isentropic compressor1))
+(- (spec-h comp-in) (spec-h h-in))
+(- (* (cp air) (log (t h-in))) (* (r air) (log (p h-in))))
+(- (* (cp air) (log (tout-isentropic compressor1)))
+   (* (r air) (log (p h-in))))
+(- (* (cp air) (log (t t-in))) (* (r air) (log (p t-in))))
+(- (* (cp air) (log (tout-isentropic turbine1)))
+   (* (r air) (log (p cool-in))))
+(- (* (cp air) (log (t cool-in))) (* (r air) (log (p cool-in))))
+(- (t t-in) (tout-isentropic turbine1))
+(- (spec-h t-in) (spec-h cool-in))
+(- (spec-h t-in) (hout-isentropic turbine1))
+(log (t h-in))
+(log (p h-in))
+(log (tout-isentropic compressor1))
+(log (t t-in))
+(log (p t-in))
+(log (tout-isentropic turbine1))
+(log (p cool-in))
+(log (t cool-in))
+(net-work cycle)
+(work-in cycle)
+(work-out cycle)
+(work-flows-out cycle)
+(work-flows-in cycle)
+(derived-by (nvalue (spec-h comp-in) 301024.12)
+ (and (nvalue (t comp-in) 300.0)
+      (equation (= (spec-h comp-in) (* (cp air) (t comp-in))))
+      (nvalue (cp air) 1003.4138)))
+(implies (and (substance-of comp-in air) (ideal-gas air))
+ (equation (= (spec-h comp-in) (* (cp air) (t comp-in)))))
+(given (nvalue (mass-flow turbine1) 1.0))
+(derived-by (nvalue (hout-isentropic compressor1) 563951.9)
+ (and (nvalue (tout-isentropic compressor1) 562.0332)
+      (equation
+       (= (hout-isentropic compressor1)
+          (* (cp air) (tout-isentropic compressor1))))
+      (nvalue (cp air) 1003.4138)))
+(implies
+ (and (substance-of comp-in air) (compressor compressor1 comp-in h-in)
+      (ideal-gas air))
+ (equation
+  (= (hout-isentropic compressor1)
+     (* (cp air) (tout-isentropic compressor1)))))
+(derived-by (nvalue (delta-h-isentropic compressor1) -262927.72)
+ (and (nvalue (hout-isentropic compressor1) 563951.9)
+      (nvalue (spec-h comp-in) 301024.12)
+      (equation
+       (= (delta-h-isentropic compressor1)
+          (- (spec-h comp-in) (hout-isentropic compressor1))))))
+(implies
+ (and (substance-of comp-in air) (compressor compressor1 comp-in h-in))
+ (equation
+  (= (delta-h-isentropic compressor1)
+     (- (spec-h comp-in) (hout-isentropic compressor1)))))
+(derived-by
+ (nvalue (spec-shaft-work-isentropic compressor1) -262927.72)
+ (and (nvalue (delta-h-isentropic compressor1) -262927.72)
+      (equation
+       (= (spec-shaft-work-isentropic compressor1)
+          (delta-h-isentropic compressor1)))))
+(implies (compressor compressor1 comp-in h-in)
+ (equation
+  (= (spec-shaft-work-isentropic compressor1)
+     (delta-h-isentropic compressor1))))
+(implies (compressor compressor1 comp-in h-in)
+ (equation
+  (= (nu-isentropic compressor1)
+     (/ (spec-shaft-work-isentropic compressor1)
+        (spec-shaft-work compressor1)))))
+(derived-by (nvalue (spec-shaft-work compressor1) -262927.72)
+ (and (nvalue (spec-shaft-work-isentropic compressor1) -262927.72)
+      (nvalue (nu-isentropic compressor1) 1.0)
+      (equation
+       (= (nu-isentropic compressor1)
+          (/ (spec-shaft-work-isentropic compressor1)
+             (spec-shaft-work compressor1))))))
+(derived-by (nvalue (mass-flow compressor1) 1.0)
+ (and (nvalue (mass-flow comp-in) 1.0)
+      (equation (= (mass-flow comp-in) (mass-flow compressor1)))))
+(implies (compressor compressor1 comp-in h-in)
+ (equation
+  (= (spec-shaft-work compressor1)
+     (/ (shaft-work compressor1) (mass-flow compressor1)))))
+(derived-by (nvalue (shaft-work compressor1) -262927.72)
+ (and (nvalue (mass-flow compressor1) 1.0)
+      (nvalue (spec-shaft-work compressor1) -262927.72)
+      (equation
+       (= (spec-shaft-work compressor1)
+          (/ (shaft-work compressor1) (mass-flow compressor1))))))
+(derived-by (nvalue (work-in cycle) -262927.72)
+ (and (nvalue (shaft-work compressor1) -262927.72)
+      (equation (= (work-in cycle) (+ (shaft-work compressor1))))))
+(implies
+ (and (members (work-flows-in cycle)
+       (the-set (shaft-work compressor1)))
+      (thermodynamic-cycle cycle))
+ (equation (= (work-in cycle) (+ (shaft-work compressor1)))))
+(implies (heat-engine cycle)
+ (equation (= (nu-thermal cycle) (/ (net-work cycle) (q-in cycle)))))
+(derived-by (nvalue (nu-thermal cycle) 0.4662237)
+ (and (nvalue (net-work cycle) 204887.56)
+      (nvalue (q-in cycle) 439461.94)
+      (equation
+       (= (nu-thermal cycle) (/ (net-work cycle) (q-in cycle))))))
+(derived-by (nvalue (work-out cycle) 467815.3)
+ (and (nvalue (shaft-work turbine1) 467815.3)
+      (equation (= (work-out cycle) (+ (shaft-work turbine1))))))
+(implies
+ (and (members (work-flows-out cycle) (the-set (shaft-work turbine1)))
+      (thermodynamic-cycle cycle))
+ (equation (= (work-out cycle) (+ (shaft-work turbine1)))))
+(implies (thermodynamic-cycle cycle)
+ (equation (= (net-work cycle) (+ (work-in cycle) (work-out cycle)))))
+(derived-by (nvalue (net-work cycle) 204887.56)
+ (and (nvalue (work-in cycle) -262927.72)
+      (nvalue (work-out cycle) 467815.3)
+      (equation
+       (= (net-work cycle) (+ (work-in cycle) (work-out cycle))))))
+(derived-by (nvalue (shaft-work turbine1) 467815.3)
+ (and (nvalue (mass-flow turbine1) 1.0)
+      (nvalue (spec-shaft-work turbine1) 467815.3)
+      (equation
+       (= (spec-shaft-work turbine1)
+          (/ (shaft-work turbine1) (mass-flow turbine1))))))
+(implies (turbine turbine1 t-in cool-in)
+ (equation
+  (= (spec-shaft-work turbine1)
+     (/ (shaft-work turbine1) (mass-flow turbine1)))))
+(implies (turbine turbine1 t-in cool-in)
+ (equation
+  (= (nu-isentropic turbine1)
+     (/ (spec-shaft-work turbine1)
+        (spec-shaft-work-isentropic turbine1)))))
+(derived-by (nvalue (spec-shaft-work turbine1) 467815.3)
+ (and (nvalue (nu-isentropic turbine1) 1.0)
+      (nvalue (spec-shaft-work-isentropic turbine1) 467815.3)
+      (equation
+       (= (nu-isentropic turbine1)
+          (/ (spec-shaft-work turbine1)
+             (spec-shaft-work-isentropic turbine1))))))
+(derived-by (nvalue (spec-shaft-work-isentropic turbine1) 467815.3)
+ (and (nvalue (delta-h-isentropic turbine1) 467815.3)
+      (equation
+       (= (spec-shaft-work-isentropic turbine1)
+          (delta-h-isentropic turbine1)))))
+(implies (turbine turbine1 t-in cool-in)
+ (equation
+  (= (spec-shaft-work-isentropic turbine1)
+     (delta-h-isentropic turbine1))))
+(derived-by (nvalue (spec-s cool-in) 3000.7788)
+ (and (nvalue (spec-s t-in) 3000.7788)
+      (equation (= (spec-s t-in) (spec-s cool-in)))))
+(implies (and (isentropic turbine1) (turbine turbine1 t-in cool-in))
+ (equation (= (spec-s t-in) (spec-s cool-in))))
+(derived-by (nvalue (spec-h cool-in) 535598.5)
+ (and (nvalue (t cool-in) 533.7763)
+      (equation (= (spec-h cool-in) (* (cp air) (t cool-in))))
+      (nvalue (cp air) 1003.4138)))
+(implies (and (substance-of cool-in air) (ideal-gas air))
+ (equation (= (spec-h cool-in) (* (cp air) (t cool-in)))))
+(derived-by (nvalue (nu-isentropic turbine1) 1.0)
+ (and (nvalue (spec-h cool-in) 535598.5)
+      (nvalue (hout-isentropic turbine1) 535598.5)
+      (nvalue (spec-h t-in) 1003413.8)
+      (equation
+       (= (nu-isentropic turbine1)
+          (/ (- (spec-h t-in) (spec-h cool-in))
+             (- (spec-h t-in) (hout-isentropic turbine1)))))))
+(implies (turbine turbine1 t-in cool-in)
+ (equation
+  (= (nu-isentropic turbine1)
+     (/ (- (spec-h t-in) (spec-h cool-in))
+        (- (spec-h t-in) (hout-isentropic turbine1))))))
+(implies
+ (and (substance-of cool-in air) (gas cool-in) (gas t-in)
+      (turbine turbine1 t-in cool-in) (ideal-gas air))
+ (equation
+  (= (hout-isentropic turbine1)
+     (* (cp air) (tout-isentropic turbine1)))))
+(derived-by (nvalue (hout-isentropic turbine1) 535598.5)
+ (and (nvalue (tout-isentropic turbine1) 533.7763)
+      (equation
+       (= (hout-isentropic turbine1)
+          (* (cp air) (tout-isentropic turbine1))))
+      (nvalue (cp air) 1003.4138)))
+(derived-by (nvalue (delta-h-isentropic turbine1) 467815.3)
+ (and (nvalue (tout-isentropic turbine1) 533.7763)
+      (nvalue (t t-in) 1000.0)
+      (equation
+       (= (delta-h-isentropic turbine1)
+          (* (cp air) (- (t t-in) (tout-isentropic turbine1)))))
+      (nvalue (cp air) 1003.4138)))
+(implies
+ (and (substance-of t-in air) (gas cool-in) (gas t-in)
+      (turbine turbine1 t-in cool-in) (ideal-gas air))
+ (equation
+  (= (delta-h-isentropic turbine1)
+     (* (cp air) (- (t t-in) (tout-isentropic turbine1))))))
+(given (nvalue (pr turbine1) 9.0))
+(implies (and (substance-of cool-in air) (ideal-gas air))
+ (equation
+  (= (spec-s cool-in)
+     (- (* (cp air) (log (t cool-in))) (* (r air) (log (p cool-in)))))))
+(derived-by (nvalue (t cool-in) 533.7763)
+ (and (nvalue (spec-s cool-in) 3000.7788) (nvalue (p cool-in) 100000.0)
+      (equation
+       (= (spec-s cool-in)
+          (- (* (cp air) (log (t cool-in)))
+             (* (r air) (log (p cool-in))))))
+      (nvalue (cp air) 1003.4138) (nvalue (r air) 8314/29)))
+(implies
+ (and (substance-of t-in air) (gas cool-in) (gas t-in)
+      (turbine turbine1 t-in cool-in) (ideal-gas air))
+ (equation
+  (= (spec-s t-in)
+     (- (* (cp air) (log (tout-isentropic turbine1)))
+        (* (r air) (log (p cool-in)))))))
+(derived-by (nvalue (tout-isentropic turbine1) 533.7763)
+ (and (nvalue (spec-s t-in) 3000.7788) (nvalue (p cool-in) 100000.0)
+      (equation
+       (= (spec-s t-in)
+          (- (* (cp air) (log (tout-isentropic turbine1)))
+             (* (r air) (log (p cool-in))))))
+      (nvalue (cp air) 1003.4138) (nvalue (r air) 8314/29)))
+(derived-by (nvalue (p cool-in) 100000.0)
+ (and (nvalue (p comp-in) 100000.0)
+      (equation (= (p cool-in) (p comp-in)))))
+(implies (and (substance-of t-in air) (ideal-gas air))
+ (equation
+  (= (spec-s t-in)
+     (- (* (cp air) (log (t t-in))) (* (r air) (log (p t-in)))))))
+(derived-by (nvalue (spec-s t-in) 3000.7788)
+ (and (nvalue (p t-in) 900000.0) (nvalue (t t-in) 1000.0)
+      (equation
+       (= (spec-s t-in)
+          (- (* (cp air) (log (t t-in))) (* (r air) (log (p t-in))))))
+      (nvalue (cp air) 1003.4138) (nvalue (r air) 8314/29)))
+(implies (turbine turbine1 t-in cool-in)
+ (equation (= (pr turbine1) (/ (p t-in) (p cool-in)))))
+(derived-by (nvalue (p t-in) 900000.0)
+ (and (nvalue (p cool-in) 100000.0) (nvalue (pr turbine1) 9.0)
+      (equation (= (pr turbine1) (/ (p t-in) (p cool-in))))))
+(implies
+ (and (substance-of comp-in air) (compressor compressor1 comp-in h-in)
+      (ideal-gas air))
+ (equation
+  (= (spec-s comp-in)
+     (- (* (cp air) (log (tout-isentropic compressor1)))
+        (* (r air) (log (p h-in)))))))
+(derived-by (nvalue (tout-isentropic compressor1) 562.0332)
+ (and (nvalue (p h-in) 900000.0) (nvalue (spec-s comp-in) 2422.6174)
+      (equation
+       (= (spec-s comp-in)
+          (- (* (cp air) (log (tout-isentropic compressor1)))
+             (* (r air) (log (p h-in))))))
+      (nvalue (cp air) 1003.4138) (nvalue (r air) 8314/29)))
+(derived-by (nvalue (p h-in) 900000.0)
+ (and (nvalue (p t-in) 900000.0) (equation (= (p h-in) (p t-in)))))
+(implies (and (substance-of h-in air) (ideal-gas air))
+ (equation
+  (= (spec-s h-in)
+     (- (* (cp air) (log (t h-in))) (* (r air) (log (p h-in)))))))
+(derived-by (nvalue (t h-in) 562.0332)
+ (and (nvalue (p h-in) 900000.0) (nvalue (spec-s h-in) 2422.6174)
+      (equation
+       (= (spec-s h-in)
+          (- (* (cp air) (log (t h-in))) (* (r air) (log (p h-in))))))
+      (nvalue (cp air) 1003.4138) (nvalue (r air) 8314/29)))
+(derived-by (nvalue (nu-isentropic compressor1) 1.0)
+ (and (nvalue (spec-h h-in) 563951.9)
+      (nvalue (hout-isentropic compressor1) 563951.9)
+      (nvalue (spec-h comp-in) 301024.12)
+      (equation
+       (= (nu-isentropic compressor1)
+          (/ (- (spec-h comp-in) (hout-isentropic compressor1))
+             (- (spec-h comp-in) (spec-h h-in)))))))
+(implies (compressor compressor1 comp-in h-in)
+ (equation
+  (= (nu-isentropic compressor1)
+     (/ (- (spec-h comp-in) (hout-isentropic compressor1))
+        (- (spec-h comp-in) (spec-h h-in))))))
+(derived-by (nvalue (spec-h h-in) 563951.9)
+ (and (nvalue (t h-in) 562.0332)
+      (equation (= (spec-h h-in) (* (cp air) (t h-in))))
+      (nvalue (cp air) 1003.4138)))
+(implies (and (substance-of h-in air) (ideal-gas air))
+ (equation (= (spec-h h-in) (* (cp air) (t h-in)))))
+(implies (abstract-hx heater1 h-in t-in)
+ (equation (= (spec-h t-in) (+ (spec-h h-in) (spec-q heater1)))))
+(derived-by (nvalue (spec-q heater1) 439461.94)
+ (and (nvalue (spec-h h-in) 563951.9) (nvalue (spec-h t-in) 1003413.8)
+      (equation (= (spec-h t-in) (+ (spec-h h-in) (spec-q heater1))))))
+(derived-by (nvalue (mass-flow comp-in) 1.0)
+ (and (nvalue (mass-flow cool-in) 1.0)
+      (equation (= (mass-flow cool-in) (mass-flow comp-in)))))
+(derived-by (nvalue (mass-flow cool-in) 1.0)
+ (and (nvalue (mass-flow t-in) 1.0)
+      (equation (= (mass-flow t-in) (mass-flow cool-in)))))
+(derived-by (nvalue (mass-flow t-in) 1.0)
+ (and (nvalue (mass-flow turbine1) 1.0)
+      (equation (= (mass-flow t-in) (mass-flow turbine1)))))
+(derived-by (nvalue (mass-flow h-in) 1.0)
+ (and (nvalue (mass-flow t-in) 1.0)
+      (equation (= (mass-flow h-in) (mass-flow t-in)))))
+(derived-by (nvalue (mass-flow heater1) 1.0)
+ (and (nvalue (mass-flow h-in) 1.0)
+      (equation (= (mass-flow h-in) (mass-flow heater1)))))
+(implies (abstract-hx heater1 h-in t-in)
+ (equation (= (spec-q heater1) (/ (q heater1) (mass-flow heater1)))))
+(derived-by (nvalue (q heater1) 439461.94)
+ (and (nvalue (mass-flow heater1) 1.0)
+      (nvalue (spec-q heater1) 439461.94)
+      (equation
+       (= (spec-q heater1) (/ (q heater1) (mass-flow heater1))))))
+(derived-by (nvalue (q-in cycle) 439461.94)
+ (and (nvalue (q heater1) 439461.94)
+      (equation (= (q-in cycle) (+ (q heater1))))))
+(implies
+ (and (members (heat-flows-in cycle) (the-set (q heater1)))
+      (thermodynamic-cycle cycle))
+ (equation (= (q-in cycle) (+ (q heater1)))))
+(heater heater1 h-in t-in)
+(cooler cooler1 cool-in comp-in)
+(thermodynamic-stuff t-in)
+(thermodynamic-stuff h-in)
+(thermodynamic-stuff comp-in)
+(thermodynamic-stuff cool-in)
+(heat-flow (heat-source heater1) (heat-source heater1) h-in t-in)
+(heat-flow cool-in comp-in (heat-source cooler1) (heat-source cooler1))
+(fluid-flow comp-in h-in)
+(fluid-flow h-in t-in)
+(fluid-flow t-in cool-in)
+(fluid-flow cool-in comp-in)
+(compression comp-in h-in compressor1)
+(expansion t-in cool-in turbine1)
+(adiabatic turbine1)
+(adiabatic compressor1)
+(isentropic compressor1)
+(isothermal compressor1)
+(polytropic compressor1)
+(non-polytropic compressor1)
+(isobaric heater1)
+(isobaric cooler1)
+(gas h-in)
+(gas comp-in)
++++++++++++
+(thermodynamic-cycle cycle)
+(turbine turbine2 t2-in cool2-in)
+(compressor compressor2 comp2-in h2-in)
+(heater heater2 h2-in t2-in)
+(cooler cooler2 cool2-in comp2-in)
+(thermodynamic-stuff t2-in)
+(thermodynamic-stuff h2-in)
+(thermodynamic-stuff comp2-in)
+(thermodynamic-stuff cool2-in)
+(heat-source heater2)
+(heat-source cooler2)
+(heat-flow (heat-source heater2) (heat-source heater2) h2-in t2-in)
+(heat-flow cool2-in comp2-in (heat-source cooler2)
+ (heat-source cooler2))
+(fluid-flow comp2-in h2-in)
+(fluid-flow h2-in t2-in)
+(fluid-flow t2-in cool2-in)
+(fluid-flow cool2-in comp2-in)
+(compression comp2-in h2-in compressor2)
+(expansion t2-in cool2-in turbine2)
+(heat-engine cycle)
+(adiabatic turbine2)
+(adiabatic compressor2)
+(isentropic turbine2)
+(isentropic compressor2)
+(isothermal compressor2)
+(not (isothermal compressor2))
+(not (polytropic compressor2))
+(not (non-polytropic compressor2))
+(polytropic compressor2)
+(non-polytropic compressor2)
+(isobaric heater2)
+(isobaric cooler2)
+(substance-of t2-in helium)
+(substance-of h2-in helium)
+(substance-of comp2-in helium)
+(substance-of cool2-in helium)
+(gas t2-in)
+(gas h2-in)
+(gas comp2-in)
+(gas cool2-in)
+(t t2-in)
+(t comp2-in)
+(t h2-in)
+(t cool2-in)
+(nvalue (t t2-in) 773.15)
+(nvalue (mass-flow comp2-in) 1.0)
+(nvalue (t comp2-in) 303.15)
+(nvalue (p comp2-in) 100000.0)
+(nvalue (pr compressor2) 9.0)
+(given (nvalue (t t2-in) 773.15))
+(given (nvalue (mass-flow comp2-in) 1.0))
+(given (nvalue (t comp2-in) 303.15))
+(given (nvalue (p comp2-in) 100000.0))
+(given (nvalue (pr compressor2) 9.0))
+(mass-flow comp2-in)
+(mass-flow heater2)
+(mass-flow h2-in)
+(mass-flow t2-in)
+(mass-flow turbine2)
+(mass-flow cool2-in)
+(mass-flow compressor2)
+(p comp2-in)
+(p h2-in)
+(p t2-in)
+(p cool2-in)
+(pr compressor2)
+(pr turbine2)
+(nu-thermal cycle)
+(net-work cycle)
+(q-in cycle)
+(/ (net-work cycle) (q-in cycle))
+(/ (net-work cycle) (work-out cycle))
+(/ (q heater2) (mass-flow heater2))
+(/ (- (spec-h comp2-in) (hout-isentropic compressor2))
+   (- (spec-h comp2-in) (spec-h h2-in)))
+(/ (p t2-in) (p cool2-in))
+(/ (- (spec-h t2-in) (spec-h cool2-in))
+   (- (spec-h t2-in) (hout-isentropic turbine2)))
+(/ (spec-shaft-work turbine2) (spec-shaft-work-isentropic turbine2))
+(/ (shaft-work turbine2) (mass-flow turbine2))
+(/ (shaft-work compressor2) (mass-flow compressor2))
+(/ (spec-shaft-work-isentropic compressor2)
+   (spec-shaft-work compressor2))
+(= (nu-thermal cycle) (/ (net-work cycle) (q-in cycle)))
+(= (work-ratio cycle) (/ (net-work cycle) (work-out cycle)))
+(= (work-in cycle) (+ (shaft-work compressor2)))
+(= (work-out cycle) (+ (shaft-work turbine2)))
+(= (q-in cycle) (+ (q heater2)))
+(= (q-out cycle) (+ (q cooler2)))
+(= (net-work cycle) (+ (work-in cycle) (work-out cycle)))
+(= (net-q cycle) (+ (q-in cycle) (q-out cycle)))
+(= (spec-q heater2) (/ (q heater2) (mass-flow heater2)))
+(= (mass-flow h2-in) (mass-flow heater2))
+(= (mass-flow h2-in) (mass-flow t2-in))
+(= (mass-flow t2-in) (mass-flow turbine2))
+(= (mass-flow t2-in) (mass-flow cool2-in))
+(= (mass-flow cool2-in) (mass-flow comp2-in))
+(= (spec-h t2-in) (+ (spec-h h2-in) (spec-q heater2)))
+(= (nu-isentropic compressor2)
+   (/ (- (spec-h comp2-in) (hout-isentropic compressor2))
+      (- (spec-h comp2-in) (spec-h h2-in))))
+(= (spec-h h2-in) (* (cp helium) (t h2-in)))
+(= (spec-s h2-in)
+   (- (* (cp helium) (log (t h2-in))) (* (r helium) (log (p h2-in)))))
+(= (spec-s comp2-in)
+   (- (* (cp helium) (log (tout-isentropic compressor2)))
+      (* (r helium) (log (p h2-in)))))
+(= (p h2-in) (p t2-in))
+(= (spec-s t2-in)
+   (- (* (cp helium) (log (t t2-in))) (* (r helium) (log (p t2-in)))))
+(= (pr turbine2) (/ (p t2-in) (p cool2-in)))
+(= (spec-s cool2-in)
+   (- (* (cp helium) (log (t cool2-in)))
+      (* (r helium) (log (p cool2-in)))))
+(= (spec-s t2-in)
+   (- (* (cp helium) (log (tout-isentropic turbine2)))
+      (* (r helium) (log (p cool2-in)))))
+(= (p cool2-in) (p comp2-in))
+(= (delta-h-isentropic turbine2)
+   (* (cp helium) (- (t t2-in) (tout-isentropic turbine2))))
+(= (hout-isentropic turbine2)
+   (* (cp helium) (tout-isentropic turbine2)))
+(= (nu-isentropic turbine2)
+   (/ (- (spec-h t2-in) (spec-h cool2-in))
+      (- (spec-h t2-in) (hout-isentropic turbine2))))
+(= (spec-h cool2-in) (* (cp helium) (t cool2-in)))
+(= (spec-s t2-in) (spec-s cool2-in))
+(= (spec-shaft-work-isentropic turbine2) (delta-h-isentropic turbine2))
+(= (nu-isentropic turbine2)
+   (/ (spec-shaft-work turbine2) (spec-shaft-work-isentropic turbine2)))
+(= (spec-shaft-work turbine2)
+   (/ (shaft-work turbine2) (mass-flow turbine2)))
+(= (spec-shaft-work compressor2)
+   (/ (shaft-work compressor2) (mass-flow compressor2)))
+(= (mass-flow comp2-in) (mass-flow compressor2))
+(= (nu-isentropic compressor2)
+   (/ (spec-shaft-work-isentropic compressor2)
+      (spec-shaft-work compressor2)))
+(= (spec-shaft-work-isentropic compressor2)
+   (delta-h-isentropic compressor2))
+(= (delta-h-isentropic compressor2)
+   (- (spec-h comp2-in) (hout-isentropic compressor2)))
+(= (hout-isentropic compressor2)
+   (* (cp helium) (tout-isentropic compressor2)))
+(= (spec-h comp2-in) (* (cp helium) (t comp2-in)))
+(equation (= (nu-thermal cycle) (/ (net-work cycle) (q-in cycle))))
+(equation (= (work-ratio cycle) (/ (net-work cycle) (work-out cycle))))
+(equation (= (work-in cycle) (+ (shaft-work compressor2))))
+(equation (= (work-out cycle) (+ (shaft-work turbine2))))
+(equation (= (q-in cycle) (+ (q heater2))))
+(equation (= (q-out cycle) (+ (q cooler2))))
+(equation (= (net-work cycle) (+ (work-in cycle) (work-out cycle))))
+(equation (= (net-q cycle) (+ (q-in cycle) (q-out cycle))))
+(equation (= (spec-q heater2) (/ (q heater2) (mass-flow heater2))))
+(equation (= (mass-flow h2-in) (mass-flow heater2)))
+(equation (= (mass-flow h2-in) (mass-flow t2-in)))
+(equation (= (mass-flow t2-in) (mass-flow turbine2)))
+(equation (= (mass-flow t2-in) (mass-flow cool2-in)))
+(equation (= (mass-flow cool2-in) (mass-flow comp2-in)))
+(equation (= (spec-h t2-in) (+ (spec-h h2-in) (spec-q heater2))))
+(equation
+ (= (nu-isentropic compressor2)
+    (/ (- (spec-h comp2-in) (hout-isentropic compressor2))
+       (- (spec-h comp2-in) (spec-h h2-in)))))
+(equation (= (spec-h h2-in) (* (cp helium) (t h2-in))))
+(equation
+ (= (spec-s h2-in)
+    (- (* (cp helium) (log (t h2-in))) (* (r helium) (log (p h2-in))))))
+(equation
+ (= (spec-s comp2-in)
+    (- (* (cp helium) (log (tout-isentropic compressor2)))
+       (* (r helium) (log (p h2-in))))))
+(equation (= (p h2-in) (p t2-in)))
+(equation
+ (= (spec-s t2-in)
+    (- (* (cp helium) (log (t t2-in))) (* (r helium) (log (p t2-in))))))
+(equation (= (pr turbine2) (/ (p t2-in) (p cool2-in))))
+(equation
+ (= (spec-s cool2-in)
+    (- (* (cp helium) (log (t cool2-in)))
+       (* (r helium) (log (p cool2-in))))))
+(equation
+ (= (spec-s t2-in)
+    (- (* (cp helium) (log (tout-isentropic turbine2)))
+       (* (r helium) (log (p cool2-in))))))
+(equation (= (p cool2-in) (p comp2-in)))
+(equation
+ (= (delta-h-isentropic turbine2)
+    (* (cp helium) (- (t t2-in) (tout-isentropic turbine2)))))
+(equation
+ (= (hout-isentropic turbine2)
+    (* (cp helium) (tout-isentropic turbine2))))
+(equation
+ (= (nu-isentropic turbine2)
+    (/ (- (spec-h t2-in) (spec-h cool2-in))
+       (- (spec-h t2-in) (hout-isentropic turbine2)))))
+(equation (= (spec-h cool2-in) (* (cp helium) (t cool2-in))))
+(equation (= (spec-s t2-in) (spec-s cool2-in)))
+(equation
+ (= (spec-shaft-work-isentropic turbine2)
+    (delta-h-isentropic turbine2)))
+(equation
+ (= (nu-isentropic turbine2)
+    (/ (spec-shaft-work turbine2)
+       (spec-shaft-work-isentropic turbine2))))
+(equation
+ (= (spec-shaft-work turbine2)
+    (/ (shaft-work turbine2) (mass-flow turbine2))))
+(equation
+ (= (spec-shaft-work compressor2)
+    (/ (shaft-work compressor2) (mass-flow compressor2))))
+(equation (= (mass-flow comp2-in) (mass-flow compressor2)))
+(equation
+ (= (nu-isentropic compressor2)
+    (/ (spec-shaft-work-isentropic compressor2)
+       (spec-shaft-work compressor2))))
+(equation
+ (= (spec-shaft-work-isentropic compressor2)
+    (delta-h-isentropic compressor2)))
+(equation
+ (= (delta-h-isentropic compressor2)
+    (- (spec-h comp2-in) (hout-isentropic compressor2))))
+(equation
+ (= (hout-isentropic compressor2)
+    (* (cp helium) (tout-isentropic compressor2))))
+(equation (= (spec-h comp2-in) (* (cp helium) (t comp2-in))))
+(implies (heat-engine cycle)
+ (equation (= (nu-thermal cycle) (/ (net-work cycle) (q-in cycle)))))
+(implies (heat-engine cycle)
+ (equation
+  (= (work-ratio cycle) (/ (net-work cycle) (work-out cycle)))))
+(implies
+ (and (members (work-flows-in cycle)
+       (the-set (shaft-work compressor2)))
+      (thermodynamic-cycle cycle))
+ (equation (= (work-in cycle) (+ (shaft-work compressor2)))))
+(implies
+ (and (members (work-flows-out cycle) (the-set (shaft-work turbine2)))
+      (thermodynamic-cycle cycle))
+ (equation (= (work-out cycle) (+ (shaft-work turbine2)))))
+(implies
+ (and (members (heat-flows-in cycle) (the-set (q heater2)))
+      (thermodynamic-cycle cycle))
+ (equation (= (q-in cycle) (+ (q heater2)))))
+(implies
+ (and (members (heat-flows-out cycle) (the-set (q cooler2)))
+      (thermodynamic-cycle cycle))
+ (equation (= (q-out cycle) (+ (q cooler2)))))
+(implies (thermodynamic-cycle cycle)
+ (equation (= (net-work cycle) (+ (work-in cycle) (work-out cycle)))))
+(implies (thermodynamic-cycle cycle)
+ (equation (= (net-q cycle) (+ (q-in cycle) (q-out cycle)))))
+(work-ratio cycle)
+(work-out cycle)
+(work-flows-in cycle)
+(shaft-work compressor2)
+(shaft-work turbine2)
+(the-set (shaft-work compressor2))
+(the-set (shaft-work turbine2))
+(the-set (q heater2))
+(the-set (q cooler2))
+(members (work-flows-in cycle) (the-set (shaft-work compressor2)))
+(members (work-flows-out cycle) (the-set (shaft-work turbine2)))
+(members (heat-flows-in cycle) (the-set (q heater2)))
+(members (heat-flows-out cycle) (the-set (q cooler2)))
+(and (members (work-flows-in cycle) (the-set (shaft-work compressor2)))
+     (thermodynamic-cycle cycle))
+(and (members (work-flows-out cycle) (the-set (shaft-work turbine2)))
+     (thermodynamic-cycle cycle))
+(and (members (heat-flows-in cycle) (the-set (q heater2)))
+     (thermodynamic-cycle cycle))
+(and (members (heat-flows-out cycle) (the-set (q cooler2)))
+     (thermodynamic-cycle cycle))
+(work-in cycle)
+(+ (shaft-work compressor2))
+(+ (shaft-work turbine2))
+(+ (q heater2))
+(+ (q cooler2))
+(+ (work-in cycle) (work-out cycle))
+(+ (q-in cycle) (q-out cycle))
+(+ (spec-h h2-in) (spec-q heater2))
+(work-flows-out cycle)
+(heat-flows-in cycle)
+(q heater2)
+(q cooler2)
+(heat-flows-out cycle)
+(q-out cycle)
+(net-q cycle)
+(goal-parameter (nu-thermal cycle))
+(spec-q heater2)
+(spec-h t2-in)
+(spec-h h2-in)
+(spec-h comp2-in)
+(spec-h cool2-in)
+(nu-isentropic compressor2)
+(nu-isentropic turbine2)
+(hout-isentropic compressor2)
+(hout-isentropic turbine2)
+(- (spec-h comp2-in) (hout-isentropic compressor2))
+(- (spec-h comp2-in) (spec-h h2-in))
+(- (* (cp helium) (log (t h2-in))) (* (r helium) (log (p h2-in))))
+(- (* (cp helium) (log (tout-isentropic compressor2)))
+   (* (r helium) (log (p h2-in))))
+(- (* (cp helium) (log (t t2-in))) (* (r helium) (log (p t2-in))))
+(- (* (cp helium) (log (t cool2-in))) (* (r helium) (log (p cool2-in))))
+(- (* (cp helium) (log (tout-isentropic turbine2)))
+   (* (r helium) (log (p cool2-in))))
+(- (t t2-in) (tout-isentropic turbine2))
+(- (spec-h t2-in) (spec-h cool2-in))
+(- (spec-h t2-in) (hout-isentropic turbine2))
+(cp helium)
+(* (cp helium) (t h2-in))
+(* (cp helium) (log (t h2-in)))
+(* (r helium) (log (p h2-in)))
+(* (cp helium) (log (tout-isentropic compressor2)))
+(* (cp helium) (log (t t2-in)))
+(* (r helium) (log (p t2-in)))
+(* (cp helium) (log (t cool2-in)))
+(* (r helium) (log (p cool2-in)))
+(* (cp helium) (log (tout-isentropic turbine2)))
+(* (cp helium) (- (t t2-in) (tout-isentropic turbine2)))
+(* (cp helium) (tout-isentropic turbine2))
+(* (cp helium) (t cool2-in))
+(* (cp helium) (tout-isentropic compressor2))
+(* (cp helium) (t comp2-in))
+(spec-s h2-in)
+(spec-s comp2-in)
+(spec-s t2-in)
+(spec-s cool2-in)
+(log (t h2-in))
+(log (p h2-in))
+(log (tout-isentropic compressor2))
+(log (t t2-in))
+(log (p t2-in))
+(log (t cool2-in))
+(log (p cool2-in))
+(log (tout-isentropic turbine2))
+(r helium)
+(tout-isentropic compressor2)
+(tout-isentropic turbine2)
+(delta-h-isentropic turbine2)
+(delta-h-isentropic compressor2)
+(spec-shaft-work-isentropic turbine2)
+(spec-shaft-work-isentropic compressor2)
+(spec-shaft-work turbine2)
+(spec-shaft-work compressor2)
++++++++++++
+(matchBetween (t comp-in) (t comp2-in))
+(matchBetween 300.0 303.15)
+(matchBetween (nvalue (t comp-in) 300.0) (nvalue (t comp2-in) 303.15))
+(matchBetween (* (cp air) (tout-isentropic compressor1)) (*
+                                                          (cp helium)
+                                                          (tout-isentropic
+                                                           compressor2)))
+(matchBetween (= (hout-isentropic compressor1)
+                 (* (cp air) (tout-isentropic compressor1))) (=
+                                                              (hout-isentropic
+                                                               compressor2)
+                                                              (*
+                                                               (cp
+                                                                helium)
+                                                               (tout-isentropic
+                                                                compressor2))))
+(matchBetween (equation
+               (= (hout-isentropic compressor1)
+                  (* (cp air)
+                     (tout-isentropic compressor1)))) (equation
+                                                       (=
+                                                        (hout-isentropic
+                                                         compressor2)
+                                                        (*
+                                                         (cp helium)
+                                                         (tout-isentropic
+                                                          compressor2)))))
+(matchBetween (= (delta-h-isentropic compressor1)
+                 (- (spec-h comp-in) (hout-isentropic compressor1))) (=
+                                                                      (delta-h-isentropic
+                                                                       compressor2)
+                                                                      (-
+                                                                       (spec-h
+                                                                        comp2-in)
+                                                                       (hout-isentropic
+                                                                        compressor2))))
+(matchBetween (equation
+               (= (delta-h-isentropic compressor1)
+                  (- (spec-h comp-in)
+                     (hout-isentropic compressor1)))) (equation
+                                                       (=
+                                                        (delta-h-isentropic
+                                                         compressor2)
+                                                        (-
+                                                         (spec-h
+                                                          comp2-in)
+                                                         (hout-isentropic
+                                                          compressor2)))))
+(matchBetween (delta-h-isentropic compressor1) (delta-h-isentropic
+                                                compressor2))
+(matchBetween (= (spec-shaft-work-isentropic compressor1)
+                 (delta-h-isentropic compressor1)) (=
+                                                    (spec-shaft-work-isentropic
+                                                     compressor2)
+                                                    (delta-h-isentropic
+                                                     compressor2)))
+(matchBetween (equation
+               (= (spec-shaft-work-isentropic compressor1)
+                  (delta-h-isentropic compressor1))) (equation
+                                                      (=
+                                                       (spec-shaft-work-isentropic
+                                                        compressor2)
+                                                       (delta-h-isentropic
+                                                        compressor2))))
+(matchBetween (spec-shaft-work-isentropic
+               compressor1) (spec-shaft-work-isentropic compressor2))
+(matchBetween (/ (spec-shaft-work-isentropic compressor1)
+                 (spec-shaft-work compressor1)) (/
+                                                 (spec-shaft-work-isentropic
+                                                  compressor2)
+                                                 (spec-shaft-work
+                                                  compressor2)))
+(matchBetween (= (nu-isentropic compressor1)
+                 (/ (spec-shaft-work-isentropic compressor1)
+                    (spec-shaft-work compressor1))) (=
+                                                     (nu-isentropic
+                                                      compressor2)
+                                                     (/
+                                                      (spec-shaft-work-isentropic
+                                                       compressor2)
+                                                      (spec-shaft-work
+                                                       compressor2))))
+(matchBetween (equation
+               (= (nu-isentropic compressor1)
+                  (/ (spec-shaft-work-isentropic compressor1)
+                     (spec-shaft-work compressor1)))) (equation
+                                                       (=
+                                                        (nu-isentropic
+                                                         compressor2)
+                                                        (/
+                                                         (spec-shaft-work-isentropic
+                                                          compressor2)
+                                                         (spec-shaft-work
+                                                          compressor2)))))
+(matchBetween (= (mass-flow comp-in) (mass-flow compressor1)) (=
+                                                               (mass-flow
+                                                                comp2-in)
+                                                               (mass-flow
+                                                                compressor2)))
+(matchBetween (equation
+               (= (mass-flow comp-in)
+                  (mass-flow compressor1))) (equation
+                                             (=
+                                              (mass-flow comp2-in)
+                                              (mass-flow compressor2))))
+(matchBetween (mass-flow compressor1) (mass-flow compressor2))
+(matchBetween (/ (shaft-work compressor1) (mass-flow compressor1)) (/
+                                                                    (shaft-work
+                                                                     compressor2)
+                                                                    (mass-flow
+                                                                     compressor2)))
+(matchBetween (spec-shaft-work compressor1) (spec-shaft-work
+                                             compressor2))
+(matchBetween (= (spec-shaft-work compressor1)
+                 (/ (shaft-work compressor1)
+                    (mass-flow compressor1))) (=
+                                               (spec-shaft-work
+                                                compressor2)
+                                               (/
+                                                (shaft-work
+                                                 compressor2)
+                                                (mass-flow
+                                                 compressor2))))
+(matchBetween (equation
+               (= (spec-shaft-work compressor1)
+                  (/ (shaft-work compressor1)
+                     (mass-flow compressor1)))) (equation
+                                                 (=
+                                                  (spec-shaft-work
+                                                   compressor2)
+                                                  (/
+                                                   (shaft-work
+                                                    compressor2)
+                                                   (mass-flow
+                                                    compressor2)))))
+(matchBetween (the-set (shaft-work compressor1)) (the-set
+                                                  (shaft-work
+                                                   compressor2)))
+(matchBetween (work-flows-in cycle) (work-flows-in cycle))
+(matchBetween (members (work-flows-in cycle)
+               (the-set (shaft-work compressor1))) (members
+                                                    (work-flows-in
+                                                     cycle)
+                                                    (the-set
+                                                     (shaft-work
+                                                      compressor2))))
+(matchBetween (and (members (work-flows-in cycle)
+                    (the-set (shaft-work compressor1)))
+                   (thermodynamic-cycle cycle)) (and
+                                                 (members
+                                                  (work-flows-in cycle)
+                                                  (the-set
+                                                   (shaft-work
+                                                    compressor2)))
+                                                 (thermodynamic-cycle
+                                                  cycle)))
+(matchBetween (+ (shaft-work compressor1)) (+ (shaft-work compressor2)))
+(matchBetween (= (work-in cycle) (+ (shaft-work compressor1))) (=
+                                                                (work-in
+                                                                 cycle)
+                                                                (+
+                                                                 (shaft-work
+                                                                  compressor2))))
+(matchBetween (equation
+               (= (work-in cycle)
+                  (+ (shaft-work compressor1)))) (equation
+                                                  (=
+                                                   (work-in cycle)
+                                                   (+
+                                                    (shaft-work
+                                                     compressor2)))))
+(matchBetween (implies
+               (and (members (work-flows-in cycle)
+                     (the-set (shaft-work compressor1)))
+                    (thermodynamic-cycle cycle))
+               (equation
+                (= (work-in cycle)
+                   (+ (shaft-work compressor1))))) (implies
+                                                    (and
+                                                     (members
+                                                      (work-flows-in
+                                                       cycle)
+                                                      (the-set
+                                                       (shaft-work
+                                                        compressor2)))
+                                                     (thermodynamic-cycle
+                                                      cycle))
+                                                    (equation
+                                                     (=
+                                                      (work-in cycle)
+                                                      (+
+                                                       (shaft-work
+                                                        compressor2))))))
+(matchBetween (/ (net-work cycle) (q-in cycle)) (/
+                                                 (net-work cycle)
+                                                 (q-in cycle)))
+(matchBetween (= (nu-thermal cycle)
+                 (/ (net-work cycle) (q-in cycle))) (=
+                                                     (nu-thermal cycle)
+                                                     (/
+                                                      (net-work cycle)
+                                                      (q-in cycle))))
+(matchBetween (equation
+               (= (nu-thermal cycle)
+                  (/ (net-work cycle) (q-in cycle)))) (equation
+                                                       (=
+                                                        (nu-thermal
+                                                         cycle)
+                                                        (/
+                                                         (net-work
+                                                          cycle)
+                                                         (q-in
+                                                          cycle)))))
+(matchBetween (implies (heat-engine cycle)
+               (equation
+                (= (nu-thermal cycle)
+                   (/ (net-work cycle) (q-in cycle))))) (implies
+                                                         (heat-engine
+                                                          cycle)
+                                                         (equation
+                                                          (=
+                                                           (nu-thermal
+                                                            cycle)
+                                                           (/
+                                                            (net-work
+                                                             cycle)
+                                                            (q-in
+                                                             cycle))))))
+(matchBetween (/ (shaft-work turbine1) (mass-flow turbine1)) (/
+                                                              (shaft-work
+                                                               turbine2)
+                                                              (mass-flow
+                                                               turbine2)))
+(matchBetween (= (spec-shaft-work turbine1)
+                 (/ (shaft-work turbine1) (mass-flow turbine1))) (=
+                                                                  (spec-shaft-work
+                                                                   turbine2)
+                                                                  (/
+                                                                   (shaft-work
+                                                                    turbine2)
+                                                                   (mass-flow
+                                                                    turbine2))))
+(matchBetween (equation
+               (= (spec-shaft-work turbine1)
+                  (/ (shaft-work turbine1)
+                     (mass-flow turbine1)))) (equation
+                                              (=
+                                               (spec-shaft-work
+                                                turbine2)
+                                               (/
+                                                (shaft-work turbine2)
+                                                (mass-flow turbine2)))))
+(matchBetween (work-in cycle) (work-in cycle))
+(matchBetween (+ (work-in cycle) (work-out cycle)) (+
+                                                    (work-in cycle)
+                                                    (work-out cycle)))
+(matchBetween (net-work cycle) (net-work cycle))
+(matchBetween (= (net-work cycle)
+                 (+ (work-in cycle) (work-out cycle))) (=
+                                                        (net-work
+                                                         cycle)
+                                                        (+
+                                                         (work-in
+                                                          cycle)
+                                                         (work-out
+                                                          cycle))))
+(matchBetween (equation
+               (= (net-work cycle)
+                  (+ (work-in cycle) (work-out cycle)))) (equation
+                                                          (=
+                                                           (net-work
+                                                            cycle)
+                                                           (+
+                                                            (work-in
+                                                             cycle)
+                                                            (work-out
+                                                             cycle)))))
+(matchBetween (implies (thermodynamic-cycle cycle)
+               (equation
+                (= (net-work cycle)
+                   (+ (work-in cycle) (work-out cycle))))) (implies
+                                                            (thermodynamic-cycle
+                                                             cycle)
+                                                            (equation
+                                                             (=
+                                                              (net-work
+                                                               cycle)
+                                                              (+
+                                                               (work-in
+                                                                cycle)
+                                                               (work-out
+                                                                cycle))))))
+(matchBetween (the-set (shaft-work turbine1)) (the-set
+                                               (shaft-work turbine2)))
+(matchBetween (work-flows-out cycle) (work-flows-out cycle))
+(matchBetween (members (work-flows-out cycle)
+               (the-set (shaft-work turbine1))) (members
+                                                 (work-flows-out cycle)
+                                                 (the-set
+                                                  (shaft-work
+                                                   turbine2))))
+(matchBetween (and (members (work-flows-out cycle)
+                    (the-set (shaft-work turbine1)))
+                   (thermodynamic-cycle cycle)) (and
+                                                 (members
+                                                  (work-flows-out
+                                                   cycle)
+                                                  (the-set
+                                                   (shaft-work
+                                                    turbine2)))
+                                                 (thermodynamic-cycle
+                                                  cycle)))
+(matchBetween (+ (shaft-work turbine1)) (+ (shaft-work turbine2)))
+(matchBetween (work-out cycle) (work-out cycle))
+(matchBetween (= (work-out cycle) (+ (shaft-work turbine1))) (=
+                                                              (work-out
+                                                               cycle)
+                                                              (+
+                                                               (shaft-work
+                                                                turbine2))))
+(matchBetween (equation
+               (= (work-out cycle)
+                  (+ (shaft-work turbine1)))) (equation
+                                               (=
+                                                (work-out cycle)
+                                                (+
+                                                 (shaft-work
+                                                  turbine2)))))
+(matchBetween (implies
+               (and (members (work-flows-out cycle)
+                     (the-set (shaft-work turbine1)))
+                    (thermodynamic-cycle cycle))
+               (equation
+                (= (work-out cycle)
+                   (+ (shaft-work turbine1))))) (implies
+                                                 (and
+                                                  (members
+                                                   (work-flows-out
+                                                    cycle)
+                                                   (the-set
+                                                    (shaft-work
+                                                     turbine2)))
+                                                  (thermodynamic-cycle
+                                                   cycle))
+                                                 (equation
+                                                  (=
+                                                   (work-out cycle)
+                                                   (+
+                                                    (shaft-work
+                                                     turbine2))))))
+(matchBetween (spec-shaft-work turbine1) (spec-shaft-work turbine2))
+(matchBetween (/ (spec-shaft-work turbine1)
+                 (spec-shaft-work-isentropic turbine1)) (/
+                                                         (spec-shaft-work
+                                                          turbine2)
+                                                         (spec-shaft-work-isentropic
+                                                          turbine2)))
+(matchBetween (= (nu-isentropic turbine1)
+                 (/ (spec-shaft-work turbine1)
+                    (spec-shaft-work-isentropic turbine1))) (=
+                                                             (nu-isentropic
+                                                              turbine2)
+                                                             (/
+                                                              (spec-shaft-work
+                                                               turbine2)
+                                                              (spec-shaft-work-isentropic
+                                                               turbine2))))
+(matchBetween (equation
+               (= (nu-isentropic turbine1)
+                  (/ (spec-shaft-work turbine1)
+                     (spec-shaft-work-isentropic turbine1)))) (equation
+                                                               (=
+                                                                (nu-isentropic
+                                                                 turbine2)
+                                                                (/
+                                                                 (spec-shaft-work
+                                                                  turbine2)
+                                                                 (spec-shaft-work-isentropic
+                                                                  turbine2)))))
+(matchBetween (spec-shaft-work-isentropic
+               turbine1) (spec-shaft-work-isentropic turbine2))
+(matchBetween (= (spec-shaft-work-isentropic turbine1)
+                 (delta-h-isentropic turbine1)) (=
+                                                 (spec-shaft-work-isentropic
+                                                  turbine2)
+                                                 (delta-h-isentropic
+                                                  turbine2)))
+(matchBetween (equation
+               (= (spec-shaft-work-isentropic turbine1)
+                  (delta-h-isentropic turbine1))) (equation
+                                                   (=
+                                                    (spec-shaft-work-isentropic
+                                                     turbine2)
+                                                    (delta-h-isentropic
+                                                     turbine2))))
+(matchBetween (= (spec-s t-in) (spec-s cool-in)) (=
+                                                  (spec-s t2-in)
+                                                  (spec-s cool2-in)))
+(matchBetween (equation (= (spec-s t-in) (spec-s cool-in))) (equation
+                                                             (=
+                                                              (spec-s
+                                                               t2-in)
+                                                              (spec-s
+                                                               cool2-in))))
+(matchBetween (* (cp air) (t cool-in)) (* (cp helium) (t cool2-in)))
+(matchBetween (= (spec-h cool-in) (* (cp air) (t cool-in))) (=
+                                                             (spec-h
+                                                              cool2-in)
+                                                             (*
+                                                              (cp
+                                                               helium)
+                                                              (t
+                                                               cool2-in))))
+(matchBetween (equation
+               (= (spec-h cool-in) (* (cp air) (t cool-in)))) (equation
+                                                               (=
+                                                                (spec-h
+                                                                 cool2-in)
+                                                                (*
+                                                                 (cp
+                                                                  helium)
+                                                                 (t
+                                                                  cool2-in)))))
+(matchBetween (- (spec-h t-in) (hout-isentropic turbine1)) (-
+                                                            (spec-h
+                                                             t2-in)
+                                                            (hout-isentropic
+                                                             turbine2)))
+(matchBetween (spec-h cool-in) (spec-h cool2-in))
+(matchBetween (- (spec-h t-in) (spec-h cool-in)) (-
+                                                  (spec-h t2-in)
+                                                  (spec-h cool2-in)))
+(matchBetween (/ (- (spec-h t-in) (spec-h cool-in))
+                 (- (spec-h t-in) (hout-isentropic turbine1))) (/
+                                                                (-
+                                                                 (spec-h
+                                                                  t2-in)
+                                                                 (spec-h
+                                                                  cool2-in))
+                                                                (-
+                                                                 (spec-h
+                                                                  t2-in)
+                                                                 (hout-isentropic
+                                                                  turbine2))))
+(matchBetween (nu-isentropic turbine1) (nu-isentropic turbine2))
+(matchBetween (= (nu-isentropic turbine1)
+                 (/ (- (spec-h t-in) (spec-h cool-in))
+                    (- (spec-h t-in) (hout-isentropic turbine1)))) (=
+                                                                    (nu-isentropic
+                                                                     turbine2)
+                                                                    (/
+                                                                     (-
+                                                                      (spec-h
+                                                                       t2-in)
+                                                                      (spec-h
+                                                                       cool2-in))
+                                                                     (-
+                                                                      (spec-h
+                                                                       t2-in)
+                                                                      (hout-isentropic
+                                                                       turbine2)))))
+(matchBetween (equation
+               (= (nu-isentropic turbine1)
+                  (/ (- (spec-h t-in) (spec-h cool-in))
+                     (- (spec-h t-in)
+                        (hout-isentropic turbine1))))) (equation
+                                                        (=
+                                                         (nu-isentropic
+                                                          turbine2)
+                                                         (/
+                                                          (-
+                                                           (spec-h
+                                                            t2-in)
+                                                           (spec-h
+                                                            cool2-in))
+                                                          (-
+                                                           (spec-h
+                                                            t2-in)
+                                                           (hout-isentropic
+                                                            turbine2))))))
+(matchBetween (- (t t-in) (tout-isentropic turbine1)) (-
+                                                       (t t2-in)
+                                                       (tout-isentropic
+                                                        turbine2)))
+(matchBetween (* (cp air) (- (t t-in) (tout-isentropic turbine1))) (*
+                                                                    (cp
+                                                                     helium)
+                                                                    (-
+                                                                     (t
+                                                                      t2-in)
+                                                                     (tout-isentropic
+                                                                      turbine2))))
+(matchBetween (delta-h-isentropic turbine1) (delta-h-isentropic
+                                             turbine2))
+(matchBetween (= (delta-h-isentropic turbine1)
+                 (* (cp air)
+                    (- (t t-in) (tout-isentropic turbine1)))) (=
+                                                               (delta-h-isentropic
+                                                                turbine2)
+                                                               (*
+                                                                (cp
+                                                                 helium)
+                                                                (-
+                                                                 (t
+                                                                  t2-in)
+                                                                 (tout-isentropic
+                                                                  turbine2)))))
+(matchBetween (equation
+               (= (delta-h-isentropic turbine1)
+                  (* (cp air)
+                     (- (t t-in)
+                        (tout-isentropic turbine1))))) (equation
+                                                        (=
+                                                         (delta-h-isentropic
+                                                          turbine2)
+                                                         (*
+                                                          (cp helium)
+                                                          (-
+                                                           (t t2-in)
+                                                           (tout-isentropic
+                                                            turbine2))))))
+(matchBetween (* (cp air) (tout-isentropic turbine1)) (*
+                                                       (cp helium)
+                                                       (tout-isentropic
+                                                        turbine2)))
+(matchBetween (hout-isentropic turbine1) (hout-isentropic turbine2))
+(matchBetween (= (hout-isentropic turbine1)
+                 (* (cp air) (tout-isentropic turbine1))) (=
+                                                           (hout-isentropic
+                                                            turbine2)
+                                                           (*
+                                                            (cp helium)
+                                                            (tout-isentropic
+                                                             turbine2))))
+(matchBetween (equation
+               (= (hout-isentropic turbine1)
+                  (* (cp air) (tout-isentropic turbine1)))) (equation
+                                                             (=
+                                                              (hout-isentropic
+                                                               turbine2)
+                                                              (*
+                                                               (cp
+                                                                helium)
+                                                               (tout-isentropic
+                                                                turbine2)))))
+(matchBetween (= (p cool-in) (p comp-in)) (= (p cool2-in) (p comp2-in)))
+(matchBetween (equation (= (p cool-in) (p comp-in))) (equation
+                                                      (=
+                                                       (p cool2-in)
+                                                       (p comp2-in))))
+(matchBetween (tout-isentropic turbine1) (tout-isentropic turbine2))
+(matchBetween (log (tout-isentropic turbine1)) (log
+                                                (tout-isentropic
+                                                 turbine2)))
+(matchBetween (* (cp air) (log (tout-isentropic turbine1))) (*
+                                                             (cp
+                                                              helium)
+                                                             (log
+                                                              (tout-isentropic
+                                                               turbine2))))
+(matchBetween (- (* (cp air) (log (tout-isentropic turbine1)))
+                 (* (r air) (log (p cool-in)))) (-
+                                                 (*
+                                                  (cp helium)
+                                                  (log
+                                                   (tout-isentropic
+                                                    turbine2)))
+                                                 (*
+                                                  (r helium)
+                                                  (log (p cool2-in)))))
+(matchBetween (= (spec-s t-in)
+                 (- (* (cp air) (log (tout-isentropic turbine1)))
+                    (* (r air) (log (p cool-in))))) (=
+                                                     (spec-s t2-in)
+                                                     (-
+                                                      (*
+                                                       (cp helium)
+                                                       (log
+                                                        (tout-isentropic
+                                                         turbine2)))
+                                                      (*
+                                                       (r helium)
+                                                       (log
+                                                        (p
+                                                         cool2-in))))))
+(matchBetween (equation
+               (= (spec-s t-in)
+                  (- (* (cp air) (log (tout-isentropic turbine1)))
+                     (* (r air) (log (p cool-in)))))) (equation
+                                                       (=
+                                                        (spec-s t2-in)
+                                                        (-
+                                                         (*
+                                                          (cp helium)
+                                                          (log
+                                                           (tout-isentropic
+                                                            turbine2)))
+                                                         (*
+                                                          (r helium)
+                                                          (log
+                                                           (p
+                                                            cool2-in)))))))
+(matchBetween (t cool-in) (t cool2-in))
+(matchBetween (log (t cool-in)) (log (t cool2-in)))
+(matchBetween (log (p cool-in)) (log (p cool2-in)))
+(matchBetween (* (r air) (log (p cool-in))) (*
+                                             (r helium)
+                                             (log (p cool2-in))))
+(matchBetween (* (cp air) (log (t cool-in))) (*
+                                              (cp helium)
+                                              (log (t cool2-in))))
+(matchBetween (- (* (cp air) (log (t cool-in)))
+                 (* (r air) (log (p cool-in)))) (-
+                                                 (*
+                                                  (cp helium)
+                                                  (log (t cool2-in)))
+                                                 (*
+                                                  (r helium)
+                                                  (log (p cool2-in)))))
+(matchBetween (spec-s cool-in) (spec-s cool2-in))
+(matchBetween (= (spec-s cool-in)
+                 (- (* (cp air) (log (t cool-in)))
+                    (* (r air) (log (p cool-in))))) (=
+                                                     (spec-s cool2-in)
+                                                     (-
+                                                      (*
+                                                       (cp helium)
+                                                       (log
+                                                        (t cool2-in)))
+                                                      (*
+                                                       (r helium)
+                                                       (log
+                                                        (p
+                                                         cool2-in))))))
+(matchBetween (equation
+               (= (spec-s cool-in)
+                  (- (* (cp air) (log (t cool-in)))
+                     (* (r air) (log (p cool-in)))))) (equation
+                                                       (=
+                                                        (spec-s
+                                                         cool2-in)
+                                                        (-
+                                                         (*
+                                                          (cp helium)
+                                                          (log
+                                                           (t
+                                                            cool2-in)))
+                                                         (*
+                                                          (r helium)
+                                                          (log
+                                                           (p
+                                                            cool2-in)))))))
+(matchBetween (p cool-in) (p cool2-in))
+(matchBetween (/ (p t-in) (p cool-in)) (/ (p t2-in) (p cool2-in)))
+(matchBetween (pr turbine1) (pr turbine2))
+(matchBetween (= (pr turbine1) (/ (p t-in) (p cool-in))) (=
+                                                          (pr turbine2)
+                                                          (/
+                                                           (p t2-in)
+                                                           (p
+                                                            cool2-in))))
+(matchBetween (equation
+               (= (pr turbine1) (/ (p t-in) (p cool-in)))) (equation
+                                                            (=
+                                                             (pr
+                                                              turbine2)
+                                                             (/
+                                                              (p t2-in)
+                                                              (p
+                                                               cool2-in)))))
+(matchBetween (spec-s t-in) (spec-s t2-in))
+(matchBetween (log (p t-in)) (log (p t2-in)))
+(matchBetween (log (t t-in)) (log (t t2-in)))
+(matchBetween (* (cp air) (log (t t-in))) (*
+                                           (cp helium)
+                                           (log (t t2-in))))
+(matchBetween (* (r air) (log (p t-in))) (* (r helium) (log (p t2-in))))
+(matchBetween (- (* (cp air) (log (t t-in)))
+                 (* (r air) (log (p t-in)))) (-
+                                              (*
+                                               (cp helium)
+                                               (log (t t2-in)))
+                                              (*
+                                               (r helium)
+                                               (log (p t2-in)))))
+(matchBetween (= (spec-s t-in)
+                 (- (* (cp air) (log (t t-in)))
+                    (* (r air) (log (p t-in))))) (=
+                                                  (spec-s t2-in)
+                                                  (-
+                                                   (*
+                                                    (cp helium)
+                                                    (log (t t2-in)))
+                                                   (*
+                                                    (r helium)
+                                                    (log (p t2-in))))))
+(matchBetween (equation
+               (= (spec-s t-in)
+                  (- (* (cp air) (log (t t-in)))
+                     (* (r air) (log (p t-in)))))) (equation
+                                                    (=
+                                                     (spec-s t2-in)
+                                                     (-
+                                                      (*
+                                                       (cp helium)
+                                                       (log (t t2-in)))
+                                                      (*
+                                                       (r helium)
+                                                       (log
+                                                        (p t2-in)))))))
+(matchBetween 100000.0 100000.0)
+(matchBetween (nvalue (p comp-in) 100000.0) (nvalue
+                                             (p comp2-in)
+                                             100000.0))
+(matchBetween (p t-in) (p t2-in))
+(matchBetween (= (p h-in) (p t-in)) (= (p h2-in) (p t2-in)))
+(matchBetween (equation (= (p h-in) (p t-in))) (equation
+                                                (=
+                                                 (p h2-in)
+                                                 (p t2-in))))
+(matchBetween (tout-isentropic compressor1) (tout-isentropic
+                                             compressor2))
+(matchBetween (log (tout-isentropic compressor1)) (log
+                                                   (tout-isentropic
+                                                    compressor2)))
+(matchBetween (* (cp air) (log (tout-isentropic compressor1))) (*
+                                                                (cp
+                                                                 helium)
+                                                                (log
+                                                                 (tout-isentropic
+                                                                  compressor2))))
+(matchBetween (- (* (cp air) (log (tout-isentropic compressor1)))
+                 (* (r air) (log (p h-in)))) (-
+                                              (*
+                                               (cp helium)
+                                               (log
+                                                (tout-isentropic
+                                                 compressor2)))
+                                              (*
+                                               (r helium)
+                                               (log (p h2-in)))))
+(matchBetween (spec-s comp-in) (spec-s comp2-in))
+(matchBetween (= (spec-s comp-in)
+                 (- (* (cp air) (log (tout-isentropic compressor1)))
+                    (* (r air) (log (p h-in))))) (=
+                                                  (spec-s comp2-in)
+                                                  (-
+                                                   (*
+                                                    (cp helium)
+                                                    (log
+                                                     (tout-isentropic
+                                                      compressor2)))
+                                                   (*
+                                                    (r helium)
+                                                    (log (p h2-in))))))
+(matchBetween (equation
+               (= (spec-s comp-in)
+                  (- (* (cp air) (log (tout-isentropic compressor1)))
+                     (* (r air) (log (p h-in)))))) (equation
+                                                    (=
+                                                     (spec-s comp2-in)
+                                                     (-
+                                                      (*
+                                                       (cp helium)
+                                                       (log
+                                                        (tout-isentropic
+                                                         compressor2)))
+                                                      (*
+                                                       (r helium)
+                                                       (log
+                                                        (p h2-in)))))))
+(matchBetween (t t-in) (t t2-in))
+(matchBetween 1000.0 773.15)
+(matchBetween (nvalue (t t-in) 1000.0) (nvalue (t t2-in) 773.15))
+(matchBetween (r air) (r helium))
+(matchBetween (p h-in) (p h2-in))
+(matchBetween (log (p h-in)) (log (p h2-in)))
+(matchBetween (* (r air) (log (p h-in))) (* (r helium) (log (p h2-in))))
+(matchBetween (log (t h-in)) (log (t h2-in)))
+(matchBetween (* (cp air) (log (t h-in))) (*
+                                           (cp helium)
+                                           (log (t h2-in))))
+(matchBetween (- (* (cp air) (log (t h-in)))
+                 (* (r air) (log (p h-in)))) (-
+                                              (*
+                                               (cp helium)
+                                               (log (t h2-in)))
+                                              (*
+                                               (r helium)
+                                               (log (p h2-in)))))
+(matchBetween (spec-s h-in) (spec-s h2-in))
+(matchBetween (= (spec-s h-in)
+                 (- (* (cp air) (log (t h-in)))
+                    (* (r air) (log (p h-in))))) (=
+                                                  (spec-s h2-in)
+                                                  (-
+                                                   (*
+                                                    (cp helium)
+                                                    (log (t h2-in)))
+                                                   (*
+                                                    (r helium)
+                                                    (log (p h2-in))))))
+(matchBetween (equation
+               (= (spec-s h-in)
+                  (- (* (cp air) (log (t h-in)))
+                     (* (r air) (log (p h-in)))))) (equation
+                                                    (=
+                                                     (spec-s h2-in)
+                                                     (-
+                                                      (*
+                                                       (cp helium)
+                                                       (log (t h2-in)))
+                                                      (*
+                                                       (r helium)
+                                                       (log
+                                                        (p h2-in)))))))
+(matchBetween (cp air) (cp helium))
+(matchBetween (t h-in) (t h2-in))
+(matchBetween (* (cp air) (t h-in)) (* (cp helium) (t h2-in)))
+(matchBetween (= (spec-h h-in) (* (cp air) (t h-in))) (=
+                                                       (spec-h h2-in)
+                                                       (*
+                                                        (cp helium)
+                                                        (t h2-in))))
+(matchBetween (equation
+               (= (spec-h h-in) (* (cp air) (t h-in)))) (equation
+                                                         (=
+                                                          (spec-h
+                                                           h2-in)
+                                                          (*
+                                                           (cp helium)
+                                                           (t h2-in)))))
+(matchBetween (spec-h comp-in) (spec-h comp2-in))
+(matchBetween (- (spec-h comp-in) (spec-h h-in)) (-
+                                                  (spec-h comp2-in)
+                                                  (spec-h h2-in)))
+(matchBetween (hout-isentropic compressor1) (hout-isentropic
+                                             compressor2))
+(matchBetween (- (spec-h comp-in) (hout-isentropic compressor1)) (-
+                                                                  (spec-h
+                                                                   comp2-in)
+                                                                  (hout-isentropic
+                                                                   compressor2)))
+(matchBetween (/ (- (spec-h comp-in) (hout-isentropic compressor1))
+                 (- (spec-h comp-in) (spec-h h-in))) (/
+                                                      (-
+                                                       (spec-h
+                                                        comp2-in)
+                                                       (hout-isentropic
+                                                        compressor2))
+                                                      (-
+                                                       (spec-h
+                                                        comp2-in)
+                                                       (spec-h h2-in))))
+(matchBetween (nu-isentropic compressor1) (nu-isentropic compressor2))
+(matchBetween (= (nu-isentropic compressor1)
+                 (/ (- (spec-h comp-in) (hout-isentropic compressor1))
+                    (- (spec-h comp-in) (spec-h h-in)))) (=
+                                                          (nu-isentropic
+                                                           compressor2)
+                                                          (/
+                                                           (-
+                                                            (spec-h
+                                                             comp2-in)
+                                                            (hout-isentropic
+                                                             compressor2))
+                                                           (-
+                                                            (spec-h
+                                                             comp2-in)
+                                                            (spec-h
+                                                             h2-in)))))
+(matchBetween (equation
+               (= (nu-isentropic compressor1)
+                  (/ (- (spec-h comp-in) (hout-isentropic compressor1))
+                     (- (spec-h comp-in) (spec-h h-in))))) (equation
+                                                            (=
+                                                             (nu-isentropic
+                                                              compressor2)
+                                                             (/
+                                                              (-
+                                                               (spec-h
+                                                                comp2-in)
+                                                               (hout-isentropic
+                                                                compressor2))
+                                                              (-
+                                                               (spec-h
+                                                                comp2-in)
+                                                               (spec-h
+                                                                h2-in))))))
+(matchBetween (spec-h t-in) (spec-h t2-in))
+(matchBetween (spec-h h-in) (spec-h h2-in))
+(matchBetween (+ (spec-h h-in) (spec-q heater1)) (+
+                                                  (spec-h h2-in)
+                                                  (spec-q heater2)))
+(matchBetween (= (spec-h t-in) (+ (spec-h h-in) (spec-q heater1))) (=
+                                                                    (spec-h
+                                                                     t2-in)
+                                                                    (+
+                                                                     (spec-h
+                                                                      h2-in)
+                                                                     (spec-q
+                                                                      heater2))))
+(matchBetween (equation
+               (= (spec-h t-in)
+                  (+ (spec-h h-in) (spec-q heater1)))) (equation
+                                                        (=
+                                                         (spec-h t2-in)
+                                                         (+
+                                                          (spec-h
+                                                           h2-in)
+                                                          (spec-q
+                                                           heater2)))))
+(matchBetween (= (mass-flow cool-in) (mass-flow comp-in)) (=
+                                                           (mass-flow
+                                                            cool2-in)
+                                                           (mass-flow
+                                                            comp2-in)))
+(matchBetween (equation
+               (= (mass-flow cool-in) (mass-flow comp-in))) (equation
+                                                             (=
+                                                              (mass-flow
+                                                               cool2-in)
+                                                              (mass-flow
+                                                               comp2-in))))
+(matchBetween (mass-flow turbine1) (mass-flow turbine2))
+(matchBetween (= (mass-flow t-in) (mass-flow turbine1)) (=
+                                                         (mass-flow
+                                                          t2-in)
+                                                         (mass-flow
+                                                          turbine2)))
+(matchBetween (equation
+               (= (mass-flow t-in) (mass-flow turbine1))) (equation
+                                                           (=
+                                                            (mass-flow
+                                                             t2-in)
+                                                            (mass-flow
+                                                             turbine2))))
+(matchBetween (mass-flow cool-in) (mass-flow cool2-in))
+(matchBetween (= (mass-flow t-in) (mass-flow cool-in)) (=
+                                                        (mass-flow
+                                                         t2-in)
+                                                        (mass-flow
+                                                         cool2-in)))
+(matchBetween (equation
+               (= (mass-flow t-in) (mass-flow cool-in))) (equation
+                                                          (=
+                                                           (mass-flow
+                                                            t2-in)
+                                                           (mass-flow
+                                                            cool2-in))))
+(matchBetween 1.0 1.0)
+(matchBetween (mass-flow comp-in) (mass-flow comp2-in))
+(matchBetween (nvalue (mass-flow comp-in) 1.0) (nvalue
+                                                (mass-flow comp2-in)
+                                                1.0))
+(matchBetween (mass-flow t-in) (mass-flow t2-in))
+(matchBetween (= (mass-flow h-in) (mass-flow t-in)) (=
+                                                     (mass-flow h2-in)
+                                                     (mass-flow t2-in)))
+(matchBetween (equation
+               (= (mass-flow h-in) (mass-flow t-in))) (equation
+                                                       (=
+                                                        (mass-flow
+                                                         h2-in)
+                                                        (mass-flow
+                                                         t2-in))))
+(matchBetween (mass-flow h-in) (mass-flow h2-in))
+(matchBetween (= (mass-flow h-in) (mass-flow heater1)) (=
+                                                        (mass-flow
+                                                         h2-in)
+                                                        (mass-flow
+                                                         heater2)))
+(matchBetween (equation
+               (= (mass-flow h-in) (mass-flow heater1))) (equation
+                                                          (=
+                                                           (mass-flow
+                                                            h2-in)
+                                                           (mass-flow
+                                                            heater2))))
+(matchBetween (mass-flow heater1) (mass-flow heater2))
+(matchBetween (/ (q heater1) (mass-flow heater1)) (/
+                                                   (q heater2)
+                                                   (mass-flow heater2)))
+(matchBetween (spec-q heater1) (spec-q heater2))
+(matchBetween (= (spec-q heater1)
+                 (/ (q heater1) (mass-flow heater1))) (=
+                                                       (spec-q heater2)
+                                                       (/
+                                                        (q heater2)
+                                                        (mass-flow
+                                                         heater2))))
+(matchBetween (equation
+               (= (spec-q heater1)
+                  (/ (q heater1) (mass-flow heater1)))) (equation
+                                                         (=
+                                                          (spec-q
+                                                           heater2)
+                                                          (/
+                                                           (q heater2)
+                                                           (mass-flow
+                                                            heater2)))))
+(matchBetween (heat-flows-in cycle) (heat-flows-in cycle))
+(matchBetween (q heater1) (q heater2))
+(matchBetween (the-set (q heater1)) (the-set (q heater2)))
+(matchBetween (members (heat-flows-in cycle)
+               (the-set (q heater1))) (members
+                                       (heat-flows-in cycle)
+                                       (the-set (q heater2))))
+(matchBetween (and (members (heat-flows-in cycle)
+                    (the-set (q heater1)))
+                   (thermodynamic-cycle cycle)) (and
+                                                 (members
+                                                  (heat-flows-in cycle)
+                                                  (the-set
+                                                   (q heater2)))
+                                                 (thermodynamic-cycle
+                                                  cycle)))
+(matchBetween (q-in cycle) (q-in cycle))
+(matchBetween (+ (q heater1)) (+ (q heater2)))
+(matchBetween (= (q-in cycle) (+ (q heater1))) (=
+                                                (q-in cycle)
+                                                (+ (q heater2))))
+(matchBetween (equation (= (q-in cycle) (+ (q heater1)))) (equation
+                                                           (=
+                                                            (q-in
+                                                             cycle)
+                                                            (+
+                                                             (q
+                                                              heater2)))))
+(matchBetween (implies
+               (and (members (heat-flows-in cycle)
+                     (the-set (q heater1)))
+                    (thermodynamic-cycle cycle))
+               (equation (= (q-in cycle) (+ (q heater1))))) (implies
+                                                             (and
+                                                              (members
+                                                               (heat-flows-in
+                                                                cycle)
+                                                               (the-set
+                                                                (q
+                                                                 heater2)))
+                                                              (thermodynamic-cycle
+                                                               cycle))
+                                                             (equation
+                                                              (=
+                                                               (q-in
+                                                                cycle)
+                                                               (+
+                                                                (q
+                                                                 heater2))))))
+(matchBetween (heat-engine cycle) (heat-engine cycle))
+(matchBetween turbine1 turbine2)
+(matchBetween (adiabatic turbine1) (adiabatic turbine2))
+(matchBetween (shaft-work turbine1) (shaft-work turbine2))
+(matchBetween (isentropic compressor1) (isentropic compressor2))
+(matchBetween (polytropic compressor1) (polytropic compressor2))
+(matchBetween (shaft-work compressor1) (shaft-work compressor2))
+(matchBetween h-in h2-in)
+(matchBetween (thermodynamic-stuff h-in) (thermodynamic-stuff h2-in))
+(matchBetween (gas cool-in) (gas cool2-in))
+(matchBetween (gas t-in) (gas t2-in))
+(matchBetween (gas comp-in) (gas comp2-in))
+(matchBetween cooler1 cooler2)
+(matchBetween (isobaric cooler1) (isobaric cooler2))
+(matchBetween air helium)
+(matchBetween (substance-of cool-in air) (substance-of cool2-in helium))
+(matchBetween (substance-of t-in air) (substance-of t2-in helium))
+(matchBetween (fluid-flow t-in cool-in) (fluid-flow t2-in cool2-in))
+(matchBetween (fluid-flow cool-in comp-in) (fluid-flow
+                                            cool2-in
+                                            comp2-in))
+(matchBetween (turbine turbine1 t-in cool-in) (turbine
+                                               turbine2
+                                               t2-in
+                                               cool2-in))
+(matchBetween (compressor compressor1 comp-in h-in) (compressor
+                                                     compressor2
+                                                     comp2-in
+                                                     h2-in))
+(matchBetween (heater heater1 h-in t-in) (heater heater2 h2-in t2-in))
+(matchBetween (heat-source heater1) (heat-source heater2))
+(matchBetween (heat-flow (heat-source heater1) (heat-source heater1)
+               h-in t-in) (heat-flow (heat-source heater2)
+                           (heat-source heater2) h2-in t2-in))
+(matchBetween (heat-flow cool-in comp-in (heat-source cooler1)
+               (heat-source cooler1)) (heat-flow
+                                       cool2-in
+                                       comp2-in
+                                       (heat-source cooler2)
+                                       (heat-source cooler2)))
+(matchBetween (heat-source cooler1) (heat-source cooler2))
+(matchBetween (cooler cooler1 cool-in comp-in) (cooler
+                                                cooler2
+                                                cool2-in
+                                                comp2-in))
+(matchBetween (compression comp-in h-in compressor1) (compression
+                                                      comp2-in
+                                                      h2-in
+                                                      compressor2))
+(matchBetween (expansion t-in cool-in turbine1) (expansion
+                                                 t2-in
+                                                 cool2-in
+                                                 turbine2))
+(matchBetween (fluid-flow comp-in h-in) (fluid-flow comp2-in h2-in))
+(matchBetween (fluid-flow h-in t-in) (fluid-flow h2-in t2-in))
+(matchBetween (substance-of comp-in air) (substance-of comp2-in helium))
+(matchBetween (substance-of h-in air) (substance-of h2-in helium))
+(matchBetween (isobaric heater1) (isobaric heater2))
+(matchBetween heater1 heater2)
+(matchBetween (p comp-in) (p comp2-in))
+(matchBetween (thermodynamic-stuff comp-in) (thermodynamic-stuff
+                                             comp2-in))
+(matchBetween comp-in comp2-in)
+(matchBetween (gas h-in) (gas h2-in))
+(matchBetween (thermodynamic-stuff t-in) (thermodynamic-stuff t2-in))
+(matchBetween t-in t2-in)
+(matchBetween (thermodynamic-stuff cool-in) (thermodynamic-stuff
+                                             cool2-in))
+(matchBetween cool-in cool2-in)
+(matchBetween (non-polytropic compressor1) (non-polytropic compressor2))
+(matchBetween (isothermal compressor1) (isothermal compressor2))
+(matchBetween (adiabatic compressor1) (adiabatic compressor2))
+(matchBetween compressor1 compressor2)
+(matchBetween (isentropic turbine1) (isentropic turbine2))
+(matchBetween (nu-thermal cycle) (nu-thermal cycle))
+(matchBetween (thermodynamic-cycle cycle) (thermodynamic-cycle cycle))
+(matchBetween cycle cycle)

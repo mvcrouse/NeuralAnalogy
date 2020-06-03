@@ -1,0 +1,156 @@
+(convexAngleBetweenEdges Edge-3527 Edge-3526)
+(convexAngleBetweenEdges Edge-3526 Edge-3525)
+(convexAngleBetweenEdges Edge-3525 Edge-3527)
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-3525 Edge-3527)
+ (convexAngleBetweenEdges Edge-3527 Edge-3526))
+(bottomToTopCorner (convexAngleBetweenEdges Edge-3525 Edge-3527))
+(rightToLeftCorner (convexAngleBetweenEdges Edge-3525 Edge-3527))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-3526 Edge-3525)
+ (convexAngleBetweenEdges Edge-3525 Edge-3527))
+(horizontallyOrientedCorner
+ (convexAngleBetweenEdges Edge-3526 Edge-3525))
+(topToBottomCorner (convexAngleBetweenEdges Edge-3526 Edge-3525))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-3527 Edge-3526)
+ (convexAngleBetweenEdges Edge-3526 Edge-3525))
+(verticallyOrientedCorner (convexAngleBetweenEdges Edge-3527 Edge-3526))
+(leftToRightCorner (convexAngleBetweenEdges Edge-3527 Edge-3526))
+(perpendicularCorner (convexAngleBetweenEdges Edge-3527 Edge-3526))
+(above Edge-3526 Edge-3525)
+(above Edge-3527 Edge-3525)
+(rightOf Edge-3525 Edge-3527)
+(edgesPerpendicular Edge-3527 Edge-3526)
+(rightOf Edge-3526 Edge-3527)
+(lengthMedium Edge-3527)
+(lengthLong Edge-3526)
+(lengthLong Edge-3525)
+(ObliqueEdge-Upward Edge-3525)
+(PerceptualEdge Edge-3525)
+(StraightEdge Edge-3525)
+(ObliqueEdge-Downward Edge-3526)
+(PerceptualEdge Edge-3526)
+(StraightEdge Edge-3526)
+(ObliqueEdge-Upward Edge-3527)
+(PerceptualEdge Edge-3527)
+(StraightEdge Edge-3527)
++++++++++++
+(StraightEdge Edge-3531)
+(StraightEdge Edge-3532)
+(StraightEdge Edge-3533)
+(PerceptualEdge Edge-3531)
+(PerceptualEdge Edge-3532)
+(PerceptualEdge Edge-3533)
+(ObliqueEdge-Downward Edge-3531)
+(axisAligned Edge-3532)
+(HorizontalEdge Edge-3532)
+(ObliqueEdge-Upward Edge-3533)
+(lengthLong Edge-3531)
+(lengthLong Edge-3532)
+(lengthLong Edge-3533)
+(above Edge-3531 Edge-3532)
+(above Edge-3533 Edge-3532)
+(rightOf Edge-3531 Edge-3533)
+(rightOf Edge-3532 Edge-3533)
+(edgesPerpendicular Edge-3532 Edge-3533)
+(convexAngleBetweenEdges Edge-3531 Edge-3532)
+(convexAngleBetweenEdges Edge-3532 Edge-3533)
+(convexAngleBetweenEdges Edge-3533 Edge-3531)
+(topToBottomCorner (convexAngleBetweenEdges Edge-3531 Edge-3532))
+(horizontallyOrientedCorner
+ (convexAngleBetweenEdges Edge-3531 Edge-3532))
+(horizontallyOrientedCorner
+ (convexAngleBetweenEdges Edge-3532 Edge-3533))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-3531 Edge-3532)
+ (convexAngleBetweenEdges Edge-3532 Edge-3533))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-3532 Edge-3533)
+ (convexAngleBetweenEdges Edge-3533 Edge-3531))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-3533 Edge-3531)
+ (convexAngleBetweenEdges Edge-3531 Edge-3532))
+(perpendicularCorner (convexAngleBetweenEdges Edge-3532 Edge-3533))
+(rightToLeftCorner (convexAngleBetweenEdges Edge-3532 Edge-3533))
+(bottomToTopCorner (convexAngleBetweenEdges Edge-3532 Edge-3533))
+(leftToRightCorner (convexAngleBetweenEdges Edge-3533 Edge-3531))
+(verticallyOrientedCorner (convexAngleBetweenEdges Edge-3533 Edge-3531))
++++++++++++
+(matchBetween Edge-3526 Edge-3531)
+(matchBetween (lengthLong Edge-3526) (lengthLong Edge-3531))
+(matchBetween (PerceptualEdge Edge-3526) (PerceptualEdge Edge-3531))
+(matchBetween (StraightEdge Edge-3526) (StraightEdge Edge-3531))
+(matchBetween Edge-3527 Edge-3533)
+(matchBetween (ObliqueEdge-Upward Edge-3527) (ObliqueEdge-Upward
+                                              Edge-3533))
+(matchBetween (StraightEdge Edge-3527) (StraightEdge Edge-3533))
+(matchBetween (above Edge-3527 Edge-3525) (above Edge-3533 Edge-3532))
+(matchBetween (rightOf Edge-3525 Edge-3527) (rightOf
+                                             Edge-3532
+                                             Edge-3533))
+(matchBetween (topToBottomCorner
+               (convexAngleBetweenEdges Edge-3526
+                Edge-3525)) (topToBottomCorner
+                             (convexAngleBetweenEdges Edge-3531
+                              Edge-3532)))
+(matchBetween (rightToLeftCorner
+               (convexAngleBetweenEdges Edge-3525
+                Edge-3527)) (rightToLeftCorner
+                             (convexAngleBetweenEdges Edge-3532
+                              Edge-3533)))
+(matchBetween (leftToRightCorner
+               (convexAngleBetweenEdges Edge-3527
+                Edge-3526)) (leftToRightCorner
+                             (convexAngleBetweenEdges Edge-3533
+                              Edge-3531)))
+(matchBetween (cycleAdjacentAngles
+               (convexAngleBetweenEdges Edge-3526 Edge-3525)
+               (convexAngleBetweenEdges Edge-3525
+                Edge-3527)) (cycleAdjacentAngles
+                             (convexAngleBetweenEdges Edge-3531
+                              Edge-3532)
+                             (convexAngleBetweenEdges Edge-3532
+                              Edge-3533)))
+(matchBetween (cycleAdjacentAngles
+               (convexAngleBetweenEdges Edge-3525 Edge-3527)
+               (convexAngleBetweenEdges Edge-3527
+                Edge-3526)) (cycleAdjacentAngles
+                             (convexAngleBetweenEdges Edge-3532
+                              Edge-3533)
+                             (convexAngleBetweenEdges Edge-3533
+                              Edge-3531)))
+(matchBetween (cycleAdjacentAngles
+               (convexAngleBetweenEdges Edge-3527 Edge-3526)
+               (convexAngleBetweenEdges Edge-3526
+                Edge-3525)) (cycleAdjacentAngles
+                             (convexAngleBetweenEdges Edge-3533
+                              Edge-3531)
+                             (convexAngleBetweenEdges Edge-3531
+                              Edge-3532)))
+(matchBetween (verticallyOrientedCorner
+               (convexAngleBetweenEdges Edge-3527
+                Edge-3526)) (verticallyOrientedCorner
+                             (convexAngleBetweenEdges Edge-3533
+                              Edge-3531)))
+(matchBetween (convexAngleBetweenEdges Edge-3527
+               Edge-3526) (convexAngleBetweenEdges Edge-3533 Edge-3531))
+(matchBetween (bottomToTopCorner
+               (convexAngleBetweenEdges Edge-3525
+                Edge-3527)) (bottomToTopCorner
+                             (convexAngleBetweenEdges Edge-3532
+                              Edge-3533)))
+(matchBetween (convexAngleBetweenEdges Edge-3525
+               Edge-3527) (convexAngleBetweenEdges Edge-3532 Edge-3533))
+(matchBetween (horizontallyOrientedCorner
+               (convexAngleBetweenEdges Edge-3526
+                Edge-3525)) (horizontallyOrientedCorner
+                             (convexAngleBetweenEdges Edge-3531
+                              Edge-3532)))
+(matchBetween (convexAngleBetweenEdges Edge-3526
+               Edge-3525) (convexAngleBetweenEdges Edge-3531 Edge-3532))
+(matchBetween (rightOf Edge-3526 Edge-3527) (rightOf
+                                             Edge-3531
+                                             Edge-3533))
+(matchBetween (above Edge-3526 Edge-3525) (above Edge-3531 Edge-3532))
+(matchBetween (PerceptualEdge Edge-3527) (PerceptualEdge Edge-3533))
+(matchBetween (StraightEdge Edge-3525) (StraightEdge Edge-3532))
+(matchBetween (PerceptualEdge Edge-3525) (PerceptualEdge Edge-3532))
+(matchBetween (ObliqueEdge-Downward Edge-3526) (ObliqueEdge-Downward
+                                                Edge-3531))
+(matchBetween (lengthLong Edge-3525) (lengthLong Edge-3532))
+(matchBetween Edge-3525 Edge-3532)

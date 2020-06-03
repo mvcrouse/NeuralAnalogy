@@ -1,0 +1,104 @@
+(ElementInImageFn Element-3 Image-1)
+(ElementInImageFn Element-1 Image-1)
+(ElementInImageFn Element-1 Image-2)
+(ElementInImageFn Element-3 Image-2)
+(above (ElementInImageFn Element-3 Image-1)
+ (ElementInImageFn Element-1 Image-1))
+(above (ElementInImageFn Element-1 Image-2)
+ (ElementInImageFn Element-3 Image-2))
+(ElementInARowFn1 Image-2)
+(reversalBetweenImages
+ (above (ElementInImageFn Element-3 Image-1)
+  (ElementInImageFn Element-1 Image-1))
+ (above (ElementInImageFn Element-1 Image-2)
+  (ElementInImageFn Element-3 Image-2))
+ Image-1 Image-2)
+(ElementInARowFn0 Image-1)
++++++++++++
+(ElementInARowFn0 Image-1)
+(ElementInImageFn Element-62 Image-1)
+(ElementInImageFn Element-62 Image-2)
+(ElementInImageFn Element-61 Image-1)
+(ElementInImageFn Element-61 Image-2)
+(ElementInImageFn Element-63 Image-1)
+(ElementInImageFn Element-63 Image-2)
+(RotatedShape-180 (ElementInImageFn Element-62 Image-1))
+(RotatedShape-180 (ElementInImageFn Element-62 Image-2))
+(changeBetweenImagesFromTo
+ (RotatedShape-180 (ElementInImageFn Element-62 Image-1))
+ (RotatedShape-180 (ElementInImageFn Element-62 Image-2)) Image-1
+ Image-2)
+(above (ElementInImageFn Element-61 Image-1)
+ (ElementInImageFn Element-62 Image-1))
+(above (ElementInImageFn Element-62 Image-2)
+ (ElementInImageFn Element-61 Image-2))
+(above (ElementInImageFn Element-62 Image-1)
+ (ElementInImageFn Element-63 Image-1))
+(above (ElementInImageFn Element-63 Image-2)
+ (ElementInImageFn Element-62 Image-2))
+(reversalBetweenImages
+ (above (ElementInImageFn Element-61 Image-1)
+  (ElementInImageFn Element-62 Image-1))
+ (above (ElementInImageFn Element-62 Image-2)
+  (ElementInImageFn Element-61 Image-2))
+ Image-1 Image-2)
+(reversalBetweenImages
+ (above (ElementInImageFn Element-62 Image-1)
+  (ElementInImageFn Element-63 Image-1))
+ (above (ElementInImageFn Element-63 Image-2)
+  (ElementInImageFn Element-62 Image-2))
+ Image-1 Image-2)
+(ElementInARowFn1 Image-2)
++++++++++++
+(matchBetween Image-1 Image-1)
+(matchBetween (ElementInARowFn0 Image-1) (ElementInARowFn0 Image-1))
+(matchBetween (reversalBetweenImages
+               (above (ElementInImageFn Element-3 Image-1)
+                (ElementInImageFn Element-1 Image-1))
+               (above (ElementInImageFn Element-1 Image-2)
+                (ElementInImageFn Element-3 Image-2))
+               Image-1 Image-2) (reversalBetweenImages
+                                 (above
+                                  (ElementInImageFn Element-61 Image-1)
+                                  (ElementInImageFn
+                                   Element-62
+                                   Image-1))
+                                 (above
+                                  (ElementInImageFn Element-62 Image-2)
+                                  (ElementInImageFn
+                                   Element-61
+                                   Image-2))
+                                 Image-1
+                                 Image-2))
+(matchBetween (above (ElementInImageFn Element-3 Image-1)
+               (ElementInImageFn Element-1 Image-1)) (above
+                                                      (ElementInImageFn
+                                                       Element-61
+                                                       Image-1)
+                                                      (ElementInImageFn
+                                                       Element-62
+                                                       Image-1)))
+(matchBetween (above (ElementInImageFn Element-1 Image-2)
+               (ElementInImageFn Element-3 Image-2)) (above
+                                                      (ElementInImageFn
+                                                       Element-62
+                                                       Image-2)
+                                                      (ElementInImageFn
+                                                       Element-61
+                                                       Image-2)))
+(matchBetween (ElementInImageFn Element-3 Image-1) (ElementInImageFn
+                                                    Element-61
+                                                    Image-1))
+(matchBetween (ElementInImageFn Element-1 Image-1) (ElementInImageFn
+                                                    Element-62
+                                                    Image-1))
+(matchBetween (ElementInImageFn Element-1 Image-2) (ElementInImageFn
+                                                    Element-62
+                                                    Image-2))
+(matchBetween Element-1 Element-62)
+(matchBetween (ElementInImageFn Element-3 Image-2) (ElementInImageFn
+                                                    Element-61
+                                                    Image-2))
+(matchBetween Element-3 Element-61)
+(matchBetween (ElementInARowFn1 Image-2) (ElementInARowFn1 Image-2))
+(matchBetween Image-2 Image-2)

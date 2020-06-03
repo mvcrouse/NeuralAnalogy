@@ -1,0 +1,74 @@
+(elementIntersects Edge-1058 Super-Edge-1081)
+(elementIntersects Edge-1058 Super-Edge-1079)
+(rightOf Super-Edge-1079 Edge-1058)
+(elementsConnected Super-Edge-1079 Super-Edge-1081)
+(rightOf Super-Edge-1079 Super-Edge-1081)
+(lengthShort Edge-1058)
+(lengthLong Super-Edge-1079)
+(lengthLong Super-Edge-1081)
+(HorizontalEdge Edge-1058)
+(axisAligned Edge-1058)
+(PerceptualEdge Edge-1058)
+(StraightEdge Edge-1058)
+(ObliqueEdge-Upward Super-Edge-1081)
+(PerceptualEdge Super-Edge-1081)
+(StraightEdge Super-Edge-1081)
+(ObliqueEdge-Downward Super-Edge-1079)
+(PerceptualEdge Super-Edge-1079)
+(StraightEdge Super-Edge-1079)
++++++++++++
+(StraightEdge Super-Edge-1085)
+(StraightEdge Super-Edge-1083)
+(StraightEdge Edge-1073)
+(PerceptualEdge Super-Edge-1085)
+(PerceptualEdge Super-Edge-1083)
+(PerceptualEdge Edge-1073)
+(ObliqueEdge-Downward Super-Edge-1085)
+(ObliqueEdge-Upward Super-Edge-1083)
+(axisAligned Edge-1073)
+(HorizontalEdge Edge-1073)
+(lengthLong Super-Edge-1085)
+(lengthLong Super-Edge-1083)
+(lengthShort Edge-1073)
+(rightOf Super-Edge-1083 Super-Edge-1085)
+(rightOf Super-Edge-1083 Edge-1073)
+(elementsConnected Super-Edge-1085 Super-Edge-1083)
+(elementIntersects Edge-1073 Super-Edge-1085)
+(elementIntersects Edge-1073 Super-Edge-1083)
++++++++++++
+(matchBetween (PerceptualEdge Super-Edge-1081) (PerceptualEdge
+                                                Super-Edge-1085))
+(matchBetween Super-Edge-1079 Super-Edge-1083)
+(matchBetween (lengthLong Super-Edge-1079) (lengthLong Super-Edge-1083))
+(matchBetween (StraightEdge Super-Edge-1079) (StraightEdge
+                                              Super-Edge-1083))
+(matchBetween (HorizontalEdge Edge-1058) (HorizontalEdge Edge-1073))
+(matchBetween (PerceptualEdge Edge-1058) (PerceptualEdge Edge-1073))
+(matchBetween (elementsConnected Super-Edge-1079
+               Super-Edge-1081) (elementsConnected
+                                 Super-Edge-1085
+                                 Super-Edge-1083))
+(matchBetween (elementIntersects Edge-1058
+               Super-Edge-1081) (elementIntersects
+                                 Edge-1073
+                                 Super-Edge-1085))
+(matchBetween (rightOf Super-Edge-1079 Edge-1058) (rightOf
+                                                   Super-Edge-1083
+                                                   Edge-1073))
+(matchBetween (elementIntersects Edge-1058
+               Super-Edge-1079) (elementIntersects
+                                 Edge-1073
+                                 Super-Edge-1083))
+(matchBetween (rightOf Super-Edge-1079 Super-Edge-1081) (rightOf
+                                                         Super-Edge-1083
+                                                         Super-Edge-1085))
+(matchBetween (StraightEdge Edge-1058) (StraightEdge Edge-1073))
+(matchBetween (axisAligned Edge-1058) (axisAligned Edge-1073))
+(matchBetween (lengthShort Edge-1058) (lengthShort Edge-1073))
+(matchBetween Edge-1058 Edge-1073)
+(matchBetween (PerceptualEdge Super-Edge-1079) (PerceptualEdge
+                                                Super-Edge-1083))
+(matchBetween (StraightEdge Super-Edge-1081) (StraightEdge
+                                              Super-Edge-1085))
+(matchBetween (lengthLong Super-Edge-1081) (lengthLong Super-Edge-1085))
+(matchBetween Super-Edge-1081 Super-Edge-1085)

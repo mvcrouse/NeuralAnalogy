@@ -1,0 +1,210 @@
+(sacredValueChoice open8135)
+(sacredValueChoice notOpen8135)
+(affectsSigLargerGroup open8135)
+(affectsSigLargerGroup notOpen8135)
+(uninferredSentence (affectsSigLargerGroup open8135))
+(uninferredSentence (affectsSigLargerGroup notOpen8135))
+(uninferredSentence (directlyResponsible you8131 notOpen8135))
+(uninferredSentence (preventsAlternativeNegativeOutcome open8135))
+(uninferredSentence (usedAsMeansToPreventNegativeOutcome open8135))
+(directlyResponsible you8131 open8135)
+(directlyResponsible you8131 notOpen8135)
+(preventsAlternativeNegativeOutcome open8135)
+(usedAsMeansToPreventNegativeOutcome open8135)
+(and (sacredValueChoice open8135) (sacredValueChoice notOpen8135)
+     (uninferredSentence (affectsSigLargerGroup open8135))
+     (uninferredSentence (affectsSigLargerGroup notOpen8135))
+     (directlyResponsible you8131 open8135)
+     (uninferredSentence (directlyResponsible you8131 notOpen8135))
+     (uninferredSentence (preventsAlternativeNegativeOutcome open8135))
+     (uninferredSentence
+      (usedAsMeansToPreventNegativeOutcome open8135)))
+(rightChoice notOpen8135)
+(chosenItem OpeningOrNotOpeningTheDam notOpen8135)
+(chosenItem OpeningOrNotOpeningTheDam open8135)
+(IntelligentAgent you8131)
+(Dam dam7557)
+((GroupFn AnimalSpecies) River1FishGroups)
+((GroupFn AnimalSpecies) River1FishGroup1)
+((GroupFn AnimalSpecies) River1FishGroup2)
+(Extinction ExtinctionRiver1FishGroup1)
+(Extinction ExtinctionRiver1FishGroup2)
+(OpeningSomething open8135)
+(PreventingSomething preventingExtinctionRiver1FishGroup1)
+(PreventingSomething preventingExtinctionRiver1FishGroup2)
+(SelectingSomething OpeningOrNotOpeningTheDam)
+(groupCardinality River1FishGroup1 2)
+(groupCardinality River1FishGroup2 20)
+(subGroups River1FishGroups River1FishGroup1)
+(subGroups River1FishGroups River1FishGroup2)
+(objectActedOn ExtinctionRiver1FishGroup1 River1FishGroup1)
+(objectActedOn ExtinctionRiver1FishGroup2 River1FishGroup2)
+(isInaction notOpen8135)
+(objectActedOn open8135 dam7557)
+(preventedProp preventingExtinctionRiver1FishGroup1
+ ExtinctionRiver1FishGroup1)
+(preventedProp preventingExtinctionRiver1FishGroup2
+ ExtinctionRiver1FishGroup2)
+(choices OpeningOrNotOpeningTheDam open8135)
+(choices OpeningOrNotOpeningTheDam notOpen8135)
+(performedBy open8135 you8131)
+(performedBy notOpen8135 you8131)
+(causes-PropProp (chosenItem OpeningOrNotOpeningTheDam open8135)
+ preventingExtinctionRiver1FishGroup2)
+(causes-PropProp (chosenItem OpeningOrNotOpeningTheDam open8135)
+ ExtinctionRiver1FishGroup1)
+(causes-PropProp (chosenItem OpeningOrNotOpeningTheDam notOpen8135)
+ ExtinctionRiver1FishGroup2)
+(causes-PropProp (chosenItem OpeningOrNotOpeningTheDam notOpen8135)
+ preventingExtinctionRiver1FishGroup1)
+(implies
+ (and (sacredValueChoice open8135) (sacredValueChoice notOpen8135)
+      (uninferredSentence (affectsSigLargerGroup open8135))
+      (uninferredSentence (affectsSigLargerGroup notOpen8135))
+      (directlyResponsible you8131 open8135)
+      (uninferredSentence (directlyResponsible you8131 notOpen8135))
+      (uninferredSentence
+       (preventsAlternativeNegativeOutcome open8135))
+      (uninferredSentence
+       (usedAsMeansToPreventNegativeOutcome open8135)))
+ (rightChoice notOpen8135))
+(makeDecision you8131 notOpen8135)
++++++++++++
+(IntelligentAgent you1123)
+((GroupFn FactoryWorker) WorkersInPlant1)
+((GroupFn FactoryWorker) WorkersInPlant2)
+(Employee FactoryWorker)
+(FactoryBuilding Factory1)
+(FactoryBuilding Factory2)
+(groupCardinality WorkersInPlant1 50)
+(groupCardinality WorkersInPlant2 500)
+(worksAtFacility WorkersInPlant1 Factory1)
+(worksAtFacility WorkersInPlant2 Factory2)
+(FinancialSupport FinancialAssistanceToFactory1)
+(FinancialSupport giveFinancialAssistanceToFactory2)
+(beneficiary FinancialAssistanceToFactory1 WorkersInPlant1)
+(beneficiary giveFinancialAssistanceToFactory2 WorkersInPlant2)
+(performedBy FinancialAssistanceToFactory1 you1123)
+(performedBy giveFinancialAssistanceToFactory2 you1123)
+(performedBy NotChangeSupport you1123)
+(EmployeeLayoff employeeLayoff1)
+(EmployeeLayoff employeeLayoff2)
+(objectActedOn employeeLayoff1 WorkersInPlant1)
+(objectActedOn employeeLayoff2 WorkersInPlant2)
+(PreventingSomething preventingLayoff1)
+(PreventingSomething preventingLayoff2)
+(preventedProp preventingLayoff1 employeeLayoff1)
+(preventedProp preventingLayoff2 employeeLayoff2)
+(supportedBy WorkersInPlant1 FinancialAssistanceToFactory1)
+(Inaction NotChangeSupport)
+(SelectingSomething GiveSupportToFirstOrSecond)
+(choices GiveSupportToFirstOrSecond giveFinancialAssistanceToFactory2)
+(choices GiveSupportToFirstOrSecond NotChangeSupport)
+(chosenItem GiveSupportToFirstOrSecond
+ giveFinancialAssistanceToFactory2)
+(chosenItem GiveSupportToFirstOrSecond NotChangeSupport)
+(causes-PropProp
+ (chosenItem GiveSupportToFirstOrSecond
+  giveFinancialAssistanceToFactory2)
+ preventingLayoff2)
+(causes-PropProp
+ (chosenItem GiveSupportToFirstOrSecond
+  giveFinancialAssistanceToFactory2)
+ employeeLayoff1)
+(causes-PropProp
+ (chosenItem GiveSupportToFirstOrSecond NotChangeSupport)
+ employeeLayoff2)
+(causes-PropProp
+ (chosenItem GiveSupportToFirstOrSecond NotChangeSupport)
+ preventingLayoff1)
++++++++++++
+(matchBetween preventingExtinctionRiver1FishGroup2 preventingLayoff1)
+(matchBetween (PreventingSomething
+               preventingExtinctionRiver1FishGroup2) (PreventingSomething
+                                                      preventingLayoff1))
+(matchBetween River1FishGroup2 WorkersInPlant1)
+(matchBetween 20 50)
+(matchBetween (groupCardinality River1FishGroup2 20) (groupCardinality
+                                                      WorkersInPlant1
+                                                      50))
+(matchBetween ExtinctionRiver1FishGroup2 employeeLayoff1)
+(matchBetween (objectActedOn ExtinctionRiver1FishGroup2
+               River1FishGroup2) (objectActedOn
+                                  employeeLayoff1
+                                  WorkersInPlant1))
+(matchBetween (preventedProp preventingExtinctionRiver1FishGroup2
+               ExtinctionRiver1FishGroup2) (preventedProp
+                                            preventingLayoff1
+                                            employeeLayoff1))
+(matchBetween notOpen8135 giveFinancialAssistanceToFactory2)
+(matchBetween (performedBy notOpen8135 you8131) (performedBy
+                                                 giveFinancialAssistanceToFactory2
+                                                 you1123))
+(matchBetween OpeningOrNotOpeningTheDam GiveSupportToFirstOrSecond)
+(matchBetween (SelectingSomething
+               OpeningOrNotOpeningTheDam) (SelectingSomething
+                                           GiveSupportToFirstOrSecond))
+(matchBetween (choices OpeningOrNotOpeningTheDam open8135) (choices
+                                                            GiveSupportToFirstOrSecond
+                                                            NotChangeSupport))
+(matchBetween (causes-PropProp
+               (chosenItem OpeningOrNotOpeningTheDam notOpen8135)
+               ExtinctionRiver1FishGroup2) (causes-PropProp
+                                            (chosenItem
+                                             GiveSupportToFirstOrSecond
+                                             giveFinancialAssistanceToFactory2)
+                                            employeeLayoff1))
+(matchBetween (causes-PropProp
+               (chosenItem OpeningOrNotOpeningTheDam open8135)
+               preventingExtinctionRiver1FishGroup2) (causes-PropProp
+                                                      (chosenItem
+                                                       GiveSupportToFirstOrSecond
+                                                       NotChangeSupport)
+                                                      preventingLayoff1))
+(matchBetween (causes-PropProp
+               (chosenItem OpeningOrNotOpeningTheDam open8135)
+               ExtinctionRiver1FishGroup1) (causes-PropProp
+                                            (chosenItem
+                                             GiveSupportToFirstOrSecond
+                                             NotChangeSupport)
+                                            employeeLayoff2))
+(matchBetween (chosenItem OpeningOrNotOpeningTheDam
+               open8135) (chosenItem GiveSupportToFirstOrSecond
+                          NotChangeSupport))
+(matchBetween (causes-PropProp
+               (chosenItem OpeningOrNotOpeningTheDam notOpen8135)
+               preventingExtinctionRiver1FishGroup1) (causes-PropProp
+                                                      (chosenItem
+                                                       GiveSupportToFirstOrSecond
+                                                       giveFinancialAssistanceToFactory2)
+                                                      preventingLayoff2))
+(matchBetween (chosenItem OpeningOrNotOpeningTheDam
+               notOpen8135) (chosenItem GiveSupportToFirstOrSecond
+                             giveFinancialAssistanceToFactory2))
+(matchBetween (choices OpeningOrNotOpeningTheDam notOpen8135) (choices
+                                                               GiveSupportToFirstOrSecond
+                                                               giveFinancialAssistanceToFactory2))
+(matchBetween (performedBy open8135 you8131) (performedBy
+                                              NotChangeSupport
+                                              you1123))
+(matchBetween open8135 NotChangeSupport)
+(matchBetween (preventedProp preventingExtinctionRiver1FishGroup1
+               ExtinctionRiver1FishGroup1) (preventedProp
+                                            preventingLayoff2
+                                            employeeLayoff2))
+(matchBetween (objectActedOn ExtinctionRiver1FishGroup1
+               River1FishGroup1) (objectActedOn
+                                  employeeLayoff2
+                                  WorkersInPlant2))
+(matchBetween ExtinctionRiver1FishGroup1 employeeLayoff2)
+(matchBetween (groupCardinality River1FishGroup1 2) (groupCardinality
+                                                     WorkersInPlant2
+                                                     500))
+(matchBetween 2 500)
+(matchBetween River1FishGroup1 WorkersInPlant2)
+(matchBetween (PreventingSomething
+               preventingExtinctionRiver1FishGroup1) (PreventingSomething
+                                                      preventingLayoff2))
+(matchBetween preventingExtinctionRiver1FishGroup1 preventingLayoff2)
+(matchBetween (IntelligentAgent you8131) (IntelligentAgent you1123))
+(matchBetween you8131 you1123)

@@ -1,0 +1,179 @@
+(sacredValueChoice throw18421)
+(sacredValueChoice Inaction18657)
+(affectsSigLargerGroup throw18421)
+(affectsSigLargerGroup Inaction18657)
+(uninferredSentence (affectsSigLargerGroup throw18421))
+(uninferredSentence (affectsSigLargerGroup Inaction18657))
+(uninferredSentence (directlyResponsible you18016 Inaction18657))
+(uninferredSentence (usedAsMeansToPreventNegativeOutcome throw18421))
+(directlyResponsible you18016 throw18421)
+(directlyResponsible you18016 Inaction18657)
+(preventsAlternativeNegativeOutcome throw18421)
+(usedAsMeansToPreventNegativeOutcome throw18421)
+(and (sacredValueChoice throw18421) (sacredValueChoice Inaction18657)
+     (uninferredSentence (affectsSigLargerGroup throw18421))
+     (uninferredSentence (affectsSigLargerGroup Inaction18657))
+     (directlyResponsible you18016 throw18421)
+     (uninferredSentence (directlyResponsible you18016 Inaction18657))
+     (preventsAlternativeNegativeOutcome throw18421)
+     (uninferredSentence
+      (usedAsMeansToPreventNegativeOutcome throw18421)))
+(rightChoice throw18421)
+(on-UnderspecifiedSurface bomb18151 patio18209)
+(chosenItem SelectingSomething18656 throw18421)
+(chosenItem SelectingSomething18656 Inaction18657)
+(Inaction Inaction18657)
+(PreventingSomething PreventingSomething18655)
+(SelectingSomething SelectingSomething18656)
+(Bomb bomb18151)
+(PhysicalDestructionEvent kill17889)
+(Dying kill17889)
+(Dying kill18493)
+(PhysicalDestructionEvent kill18493)
+(Terrace-Topographical patio18209)
+(Person person18540)
+(RestaurantSpace restaurant17825)
+(RescuingSomeone save18062)
+(Set-Mathematical them18094)
+(ThrowingAnObject throw18421)
+(performedBy PreventingSomething18655 you18016)
+(preventedSit PreventingSomething18655 kill17889)
+(choices SelectingSomething18656 throw18421)
+(choices SelectingSomething18656 Inaction18657)
+(causes-PropSit (chosenItem SelectingSomething18656 Inaction18657)
+ kill17889)
+(causes-PropSit (chosenItem SelectingSomething18656 throw18421)
+ save18062)
+(causes-PropSit (chosenItem SelectingSomething18656 throw18421)
+ kill18493)
+(in-UnderspecifiedContainer bomb18151 restaurant17825)
+(doneBy kill17889 bomb18151)
+(organismKilled kill18493 person18540)
+(doneBy kill18493 throw18421)
+(beneficiary save18062 them18094)
+(performedBy save18062 you18016)
+(by-Underspecified save18062 throw18421)
+(causes-SitSit save18062 PreventingSomething18655)
+(cardinality them18094 9)
+(performedBy throw18421 you18016)
+(performedBy Inaction18657 you18016)
+(objectActedOn throw18421 bomb18151)
+(toLocation throw18421 patio18209)
+(causes-SitProp throw18421
+ (on-UnderspecifiedSurface bomb18151 patio18209))
+(cardinality person18540 1)
+(implies
+ (and (sacredValueChoice throw18421) (sacredValueChoice Inaction18657)
+      (uninferredSentence (affectsSigLargerGroup throw18421))
+      (uninferredSentence (affectsSigLargerGroup Inaction18657))
+      (directlyResponsible you18016 throw18421)
+      (uninferredSentence (directlyResponsible you18016 Inaction18657))
+      (preventsAlternativeNegativeOutcome throw18421)
+      (uninferredSentence
+       (usedAsMeansToPreventNegativeOutcome throw18421)))
+ (rightChoice throw18421))
+(makeDecision you18016 throw18421)
++++++++++++
+(Inaction Inaction43400)
+(performedBy PreventingSomething43398 you39300)
+(performedBy redirect40379 you39300)
+(performedBy Inaction43400 you39300)
+(performedBy save39339 you39300)
+(PreventingSomething PreventingSomething43398)
+(SelectingSomething SelectingSomething43399)
+(choices SelectingSomething43399 redirect40379)
+(choices SelectingSomething43399 Inaction43400)
+(chosenItem SelectingSomething43399 redirect40379)
+(causes-PropSit (chosenItem SelectingSomething43399 redirect40379)
+ save39339)
+(causes-PropSit (chosenItem SelectingSomething43399 redirect40379)
+ (possessiveRelation patient40523 paraplegia40592))
+(possessiveRelation patient40523 paraplegia40592)
+(HarmingAnAgent (possessiveRelation patient40523 paraplegia40592))
+(Paraplegia paraplegia39232)
+(Paraplegia paraplegia40592)
+(MedicalPatient patient40523)
+(objectActedOn redirect40379 virus39075)
+(primaryObjectMoving redirect40379 virus39075)
+(toLocation redirect40379 room39499)
+(Translation-LocationChange redirect40379)
+(with-UnderspecifiedAgent room39499 patient40523)
+(RoomInAConstruction room39499)
+(RescuingSomeone save39339)
+(beneficiary save39339 set-of-patient39165)
+(by-Underspecified save39339 redirect40379)
+(causes-SitSit save39339 PreventingSomething43398)
+((GroupFn MedicalPatient) set-of-patient39165)
+(cardinality set-of-patient39165 4)
+(cardinality patient40523 1)
+(Set-Mathematical set-of-patient39165)
+(Virus virus39075)
++++++++++++
+(matchBetween Inaction18657 Inaction43400)
+(matchBetween (Inaction Inaction18657) (Inaction Inaction43400))
+(matchBetween them18094 set-of-patient39165)
+(matchBetween (Set-Mathematical them18094) (Set-Mathematical
+                                            set-of-patient39165))
+(matchBetween save18062 save39339)
+(matchBetween (RescuingSomeone save18062) (RescuingSomeone save39339))
+(matchBetween (performedBy PreventingSomething18655
+               you18016) (performedBy PreventingSomething43398
+                          you39300))
+(matchBetween (causes-SitSit save18062
+               PreventingSomething18655) (causes-SitSit
+                                          save39339
+                                          PreventingSomething43398))
+(matchBetween SelectingSomething18656 SelectingSomething43399)
+(matchBetween (SelectingSomething
+               SelectingSomething18656) (SelectingSomething
+                                         SelectingSomething43399))
+(matchBetween throw18421 redirect40379)
+(matchBetween bomb18151 virus39075)
+(matchBetween (objectActedOn throw18421 bomb18151) (objectActedOn
+                                                    redirect40379
+                                                    virus39075))
+(matchBetween (performedBy throw18421 you18016) (performedBy
+                                                 redirect40379
+                                                 you39300))
+(matchBetween (choices SelectingSomething18656 throw18421) (choices
+                                                            SelectingSomething43399
+                                                            redirect40379))
+(matchBetween (causes-PropSit
+               (chosenItem SelectingSomething18656 throw18421)
+               save18062) (causes-PropSit
+                           (chosenItem SelectingSomething43399
+                            redirect40379)
+                           save39339))
+(matchBetween (chosenItem SelectingSomething18656
+               throw18421) (chosenItem SelectingSomething43399
+                            redirect40379))
+(matchBetween (by-Underspecified save18062
+               throw18421) (by-Underspecified save39339 redirect40379))
+(matchBetween (toLocation throw18421 patio18209) (toLocation
+                                                  redirect40379
+                                                  room39499))
+(matchBetween patio18209 room39499)
+(matchBetween (choices SelectingSomething18656 Inaction18657) (choices
+                                                               SelectingSomething43399
+                                                               Inaction43400))
+(matchBetween (performedBy save18062 you18016) (performedBy
+                                                save39339
+                                                you39300))
+(matchBetween (beneficiary save18062 them18094) (beneficiary
+                                                 save39339
+                                                 set-of-patient39165))
+(matchBetween (performedBy Inaction18657 you18016) (performedBy
+                                                    Inaction43400
+                                                    you39300))
+(matchBetween you18016 you39300)
+(matchBetween (cardinality them18094 9) (cardinality
+                                         set-of-patient39165
+                                         4))
+(matchBetween 9 4)
+(matchBetween (PreventingSomething
+               PreventingSomething18655) (PreventingSomething
+                                          PreventingSomething43398))
+(matchBetween PreventingSomething18655 PreventingSomething43398)
+(matchBetween (cardinality person18540 1) (cardinality patient40523 1))
+(matchBetween 1 1)
+(matchBetween person18540 patient40523)

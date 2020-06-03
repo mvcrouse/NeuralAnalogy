@@ -1,0 +1,38 @@
+(2D-Shape-Closed Element-3)
+(Perpendicular-Symmetric-Shape Element-3)
+(2D-Shape-Generic Element-3)
+(2D-Shape-Perpendicular Element-3)
+(Centered-Element Element-3)
+(2D-Shape-AxisAligned Element-3)
+(2D-Shape-Straight Element-3)
+(ObjectsColoredFnBlackColor Element-3)
+(2D-Shape-Convex Element-3)
+(ObjectsBorderColoredFnBlackColor Element-3)
++++++++++++
+(ObjectsColoredFnBlackColor Object-430)
+(2D-Shape-Generic Object-430)
+(Perpendicular-Symmetric-Shape Object-430)
+(2D-Shape-Straight Object-430)
+(2D-Shape-Convex Object-430)
+(2D-Shape-Perpendicular Object-430)
+(2D-Shape-Closed Object-430)
+(ObjectsBorderColoredFnBlackColor Object-430)
+(Centered-Element Object-430)
++++++++++++
+(matchBetween (Perpendicular-Symmetric-Shape
+               Element-3) (Perpendicular-Symmetric-Shape Object-430))
+(matchBetween (2D-Shape-Perpendicular
+               Element-3) (2D-Shape-Perpendicular Object-430))
+(matchBetween (2D-Shape-Straight Element-3) (2D-Shape-Straight
+                                             Object-430))
+(matchBetween (2D-Shape-Convex Element-3) (2D-Shape-Convex Object-430))
+(matchBetween (ObjectsBorderColoredFnBlackColor
+               Element-3) (ObjectsBorderColoredFnBlackColor Object-430))
+(matchBetween (ObjectsColoredFnBlackColor
+               Element-3) (ObjectsColoredFnBlackColor Object-430))
+(matchBetween (Centered-Element Element-3) (Centered-Element
+                                            Object-430))
+(matchBetween (2D-Shape-Generic Element-3) (2D-Shape-Generic
+                                            Object-430))
+(matchBetween (2D-Shape-Closed Element-3) (2D-Shape-Closed Object-430))
+(matchBetween Element-3 Object-430)

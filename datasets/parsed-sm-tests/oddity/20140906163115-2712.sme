@@ -1,0 +1,60 @@
+(wideEdged Element-4)
+(narrowEdged Element-3)
+(elementsIntersect Element-4 Element-3)
+(elementsOverlap Element-4 Element-3)
+(Centered-Element Element-4)
+(2D-Shape-Generic Element-4)
+(ObjectsBorderColoredFnBlackColor Element-4)
+(2D-Shape-Convex Element-3)
+(2D-Shape-Generic Element-3)
+(Fully-Symmetric-Shape Element-3)
+(2D-Shape-Closed Element-3)
+(ObjectsBorderColoredFnBlackColor Element-3)
+(2D-Shape-Ellipse Element-3)
+(ObjectsColoredFnBlackColor Element-3)
+(2D-Shape-Curved Element-3)
+(2D-Shape-Straight Element-4)
+(2D-Shape-Open Element-4)
++++++++++++
+(ObjectsColoredFnBlackColor Object-491)
+(2D-Shape-Generic Object-491)
+(2D-Shape-Generic Object-492)
+(Fully-Symmetric-Shape Object-491)
+(2D-Shape-Curved Object-491)
+(2D-Shape-Ellipse Object-491)
+(2D-Shape-Convex Object-491)
+(2D-Shape-Closed Object-491)
+(2D-Shape-Straight Object-492)
+(2D-Shape-Open Object-492)
+(ObjectsBorderColoredFnBlackColor Object-492)
+(ObjectsBorderColoredFnBlackColor Object-491)
+(Centered-Element Object-492)
+(wideEdged Object-492)
+(narrowEdged Object-491)
++++++++++++
+(matchBetween (Centered-Element Element-4) (Centered-Element
+                                            Object-492))
+(matchBetween (ObjectsBorderColoredFnBlackColor
+               Element-4) (ObjectsBorderColoredFnBlackColor Object-492))
+(matchBetween (2D-Shape-Open Element-4) (2D-Shape-Open Object-492))
+(matchBetween (2D-Shape-Convex Element-3) (2D-Shape-Convex Object-491))
+(matchBetween (Fully-Symmetric-Shape Element-3) (Fully-Symmetric-Shape
+                                                 Object-491))
+(matchBetween (ObjectsBorderColoredFnBlackColor
+               Element-3) (ObjectsBorderColoredFnBlackColor Object-491))
+(matchBetween (ObjectsColoredFnBlackColor
+               Element-3) (ObjectsColoredFnBlackColor Object-491))
+(matchBetween (2D-Shape-Curved Element-3) (2D-Shape-Curved Object-491))
+(matchBetween (2D-Shape-Ellipse Element-3) (2D-Shape-Ellipse
+                                            Object-491))
+(matchBetween (2D-Shape-Closed Element-3) (2D-Shape-Closed Object-491))
+(matchBetween (2D-Shape-Generic Element-3) (2D-Shape-Generic
+                                            Object-491))
+(matchBetween (narrowEdged Element-3) (narrowEdged Object-491))
+(matchBetween Element-3 Object-491)
+(matchBetween (2D-Shape-Straight Element-4) (2D-Shape-Straight
+                                             Object-492))
+(matchBetween (2D-Shape-Generic Element-4) (2D-Shape-Generic
+                                            Object-492))
+(matchBetween (wideEdged Element-4) (wideEdged Object-492))
+(matchBetween Element-4 Object-492)

@@ -1,0 +1,213 @@
+(sacredValueChoice changeToArea2)
+(sacredValueChoice notChangeLocation)
+(affectsSigLargerGroup changeToArea2)
+(affectsSigLargerGroup notChangeLocation)
+(uninferredSentence (affectsSigLargerGroup changeToArea2))
+(uninferredSentence (affectsSigLargerGroup notChangeLocation))
+(uninferredSentence (directlyResponsible you8115 notChangeLocation))
+(uninferredSentence (preventsAlternativeNegativeOutcome changeToArea2))
+(uninferredSentence (usedAsMeansToPreventNegativeOutcome changeToArea2))
+(directlyResponsible you8115 changeToArea2)
+(directlyResponsible you8115 notChangeLocation)
+(preventsAlternativeNegativeOutcome changeToArea2)
+(usedAsMeansToPreventNegativeOutcome changeToArea2)
+(and (sacredValueChoice changeToArea2)
+     (sacredValueChoice notChangeLocation)
+     (uninferredSentence (affectsSigLargerGroup changeToArea2))
+     (uninferredSentence (affectsSigLargerGroup notChangeLocation))
+     (directlyResponsible you8115 changeToArea2)
+     (uninferredSentence
+      (directlyResponsible you8115 notChangeLocation))
+     (uninferredSentence
+      (preventsAlternativeNegativeOutcome changeToArea2))
+     (uninferredSentence
+      (usedAsMeansToPreventNegativeOutcome changeToArea2)))
+(rightChoice notChangeLocation)
+(chosenItem ChooseBetweenArea1or2 notChangeLocation)
+(chosenItem ChooseBetweenArea1or2 changeToArea2)
+(IntelligentAgent you8115)
+(Region-Underspecified region1)
+(Region-Underspecified region2)
+((GroupFn Person) PeopleInArea1)
+((GroupFn Person) PeopleInArea2)
+(Dying PeopleDyingInArea1)
+(Dying PeopleDyingInArea2)
+((GroupEventOfTypeFn VehicleAccident) TrafficAccidents)
+((PreventingFn (DyingFromEventTypeFn TrafficAccidents)) trafficProgram)
+(Translation-LocationChange changeToArea2)
+(Inaction notChangeLocation)
+(PreventingSomething preventingPeopleDyingInArea1)
+(PreventingSomething preventingPeopleDyingInArea2)
+(SelectingSomething ChooseBetweenArea1or2)
+(groupCardinality PeopleInArea1 50)
+(groupCardinality PeopleInArea2 200)
+(residesInRegion PeopleInArea1 region1)
+(residesInRegion PeopleInArea2 region2)
+(objectActedOn PeopleDyingInArea1 PeopleInArea1)
+(objectActedOn PeopleDyingInArea2 PeopleInArea2)
+(fromLocation changeToArea2 region1)
+(toLocation ChangeToArea2 region2)
+(preventedProp preventingPeopleDyingInArea1 PeopleDyingInArea1)
+(preventedProp preventingPeopleDyingInArea2 PeopleDyingInArea2)
+(choices ChooseBetweenArea1or2 changeToArea2)
+(choices ChooseBetweenArea1or2 notChangeLocation)
+(performedBy changeToArea2 you8115)
+(performedBy notChangeLocation you8115)
+(causes-PropProp (chosenItem ChooseBetweenArea1or2 changeToArea2)
+ preventingPeopleDyingInArea2)
+(causes-PropProp (chosenItem ChooseBetweenArea1or2 changeToArea2)
+ PeopleDyingInArea1)
+(causes-PropProp (chosenItem ChooseBetweenArea1or2 notChangeLocation)
+ PeopleDyingInArea2)
+(causes-PropProp (chosenItem ChooseBetweenArea1or2 notChangeLocation)
+ preventingPeopleDyingInArea1)
+(implies
+ (and (sacredValueChoice changeToArea2)
+      (sacredValueChoice notChangeLocation)
+      (uninferredSentence (affectsSigLargerGroup changeToArea2))
+      (uninferredSentence (affectsSigLargerGroup notChangeLocation))
+      (directlyResponsible you8115 changeToArea2)
+      (uninferredSentence
+       (directlyResponsible you8115 notChangeLocation))
+      (uninferredSentence
+       (preventsAlternativeNegativeOutcome changeToArea2))
+      (uninferredSentence
+       (usedAsMeansToPreventNegativeOutcome changeToArea2)))
+ (rightChoice notChangeLocation))
+(makeDecision you8115 notChangeLocation)
++++++++++++
+((GroupFn HumanChild) ChildrenInDanger)
+((GroupFn HumanChild) ChildrenInDangerGroup1)
+((GroupFn HumanChild) ChildrenInDangerGroup2)
+(IntelligentAgent you1003)
+(groupCardinality ChildrenInDanger 10000)
+(groupCardinality ChildrenInDangerGroup1 1000)
+(groupCardinality ChildrenInDangerGroup2 1)
+(subGroups ChildrenInDanger ChildrenInDangerGroup1)
+(subGroups ChildrenInDanger ChildrenInDangerGroup2)
+(DiseaseType disease1960)
+((VaccineForAgainstFn ChildrenInDanger disease1960) vaccine1960)
+(Dying DyingChildrenGroup1)
+(Dying DyingChildrenGroup2)
+(objectActedOn DyingChildrenGroup1 ChildrenInDangerGroup1)
+(objectActedOn DyingChildrenGroup2 ChildrenInDangerGroup2)
+(Injecting-Medical giveVaccine)
+(deviceUsed giveVaccine vaccine1960)
+(bodilyActedOn vaccine1960 ChildrenInDangerGroup1)
+(bodilyActedOn vaccineSideEffect ChildrenInDangerGroup2)
+(Inaction NotGiveVaccine)
+(PreventingSomething preventingDyingChildrenGroup1)
+(PreventingSomething preventingDyingChildrenGroup2)
+(preventedProp preventingDyingChildrenGroup1 DyingChildrenGroup1)
+(preventedProp preventingDyingChildrenGroup2 DyingChildrenGroup2)
+(SelectingSomething GivingOrNotGivingTheVaccine2)
+(choices GivingOrNotGivingTheVaccine2 giveVaccine)
+(choices GivingOrNotGivingTheVaccine2 NotGiveVaccine)
+(performedBy giveVaccine you1003)
+(performedBy NotGiveVaccine you1003)
+(chosenItem GivingOrNotGivingTheVaccine2 giveVaccine)
+(chosenItem GivingOrNotGivingTheVaccine2 NotGiveVaccine)
+(causes-PropProp (chosenItem GivingOrNotGivingTheVaccine2 giveVaccine)
+ preventingDyingChildrenGroup1)
+(causes-PropProp (chosenItem GivingOrNotGivingTheVaccine2 giveVaccine)
+ DyingChildrenGroup2)
+(causes-PropProp
+ (chosenItem GivingOrNotGivingTheVaccine2 NotGiveVaccine)
+ DyingChildrenGroup1)
+(causes-PropProp
+ (chosenItem GivingOrNotGivingTheVaccine2 NotGiveVaccine)
+ preventingDyingChildrenGroup2)
++++++++++++
+(matchBetween preventingPeopleDyingInArea2 preventingDyingChildrenGroup1)
+(matchBetween (PreventingSomething
+               preventingPeopleDyingInArea2) (PreventingSomething
+                                              preventingDyingChildrenGroup1))
+(matchBetween PeopleInArea2 ChildrenInDangerGroup1)
+(matchBetween 200 1000)
+(matchBetween (groupCardinality PeopleInArea2 200) (groupCardinality
+                                                    ChildrenInDangerGroup1
+                                                    1000))
+(matchBetween PeopleDyingInArea2 DyingChildrenGroup1)
+(matchBetween (Dying PeopleDyingInArea2) (Dying DyingChildrenGroup1))
+(matchBetween (objectActedOn PeopleDyingInArea2
+               PeopleInArea2) (objectActedOn DyingChildrenGroup1
+                               ChildrenInDangerGroup1))
+(matchBetween (preventedProp preventingPeopleDyingInArea2
+               PeopleDyingInArea2) (preventedProp
+                                    preventingDyingChildrenGroup1
+                                    DyingChildrenGroup1))
+(matchBetween notChangeLocation NotGiveVaccine)
+(matchBetween (Inaction notChangeLocation) (Inaction NotGiveVaccine))
+(matchBetween (performedBy notChangeLocation you8115) (performedBy
+                                                       NotGiveVaccine
+                                                       you1003))
+(matchBetween (choices ChooseBetweenArea1or2 changeToArea2) (choices
+                                                             GivingOrNotGivingTheVaccine2
+                                                             giveVaccine))
+(matchBetween (chosenItem ChooseBetweenArea1or2
+               changeToArea2) (chosenItem GivingOrNotGivingTheVaccine2
+                               giveVaccine))
+(matchBetween (causes-PropProp
+               (chosenItem ChooseBetweenArea1or2 changeToArea2)
+               preventingPeopleDyingInArea2) (causes-PropProp
+                                              (chosenItem
+                                               GivingOrNotGivingTheVaccine2
+                                               giveVaccine)
+                                              preventingDyingChildrenGroup1))
+(matchBetween (chosenItem ChooseBetweenArea1or2
+               notChangeLocation) (chosenItem
+                                   GivingOrNotGivingTheVaccine2
+                                   NotGiveVaccine))
+(matchBetween (causes-PropProp
+               (chosenItem ChooseBetweenArea1or2 notChangeLocation)
+               preventingPeopleDyingInArea1) (causes-PropProp
+                                              (chosenItem
+                                               GivingOrNotGivingTheVaccine2
+                                               NotGiveVaccine)
+                                              preventingDyingChildrenGroup2))
+(matchBetween (causes-PropProp
+               (chosenItem ChooseBetweenArea1or2 notChangeLocation)
+               PeopleDyingInArea2) (causes-PropProp
+                                    (chosenItem
+                                     GivingOrNotGivingTheVaccine2
+                                     NotGiveVaccine)
+                                    DyingChildrenGroup1))
+(matchBetween (causes-PropProp
+               (chosenItem ChooseBetweenArea1or2 changeToArea2)
+               PeopleDyingInArea1) (causes-PropProp
+                                    (chosenItem
+                                     GivingOrNotGivingTheVaccine2
+                                     giveVaccine)
+                                    DyingChildrenGroup2))
+(matchBetween (choices ChooseBetweenArea1or2
+               notChangeLocation) (choices
+                                   GivingOrNotGivingTheVaccine2
+                                   NotGiveVaccine))
+(matchBetween (SelectingSomething
+               ChooseBetweenArea1or2) (SelectingSomething
+                                       GivingOrNotGivingTheVaccine2))
+(matchBetween ChooseBetweenArea1or2 GivingOrNotGivingTheVaccine2)
+(matchBetween (performedBy changeToArea2 you8115) (performedBy
+                                                   giveVaccine
+                                                   you1003))
+(matchBetween changeToArea2 giveVaccine)
+(matchBetween (preventedProp preventingPeopleDyingInArea1
+               PeopleDyingInArea1) (preventedProp
+                                    preventingDyingChildrenGroup2
+                                    DyingChildrenGroup2))
+(matchBetween (objectActedOn PeopleDyingInArea1
+               PeopleInArea1) (objectActedOn DyingChildrenGroup2
+                               ChildrenInDangerGroup2))
+(matchBetween (Dying PeopleDyingInArea1) (Dying DyingChildrenGroup2))
+(matchBetween PeopleDyingInArea1 DyingChildrenGroup2)
+(matchBetween (groupCardinality PeopleInArea1 50) (groupCardinality
+                                                   ChildrenInDangerGroup2
+                                                   1))
+(matchBetween 50 1)
+(matchBetween PeopleInArea1 ChildrenInDangerGroup2)
+(matchBetween (PreventingSomething
+               preventingPeopleDyingInArea1) (PreventingSomething
+                                              preventingDyingChildrenGroup2))
+(matchBetween preventingPeopleDyingInArea1 preventingDyingChildrenGroup2)
+(matchBetween (IntelligentAgent you8115) (IntelligentAgent you1003))
+(matchBetween you8115 you1003)

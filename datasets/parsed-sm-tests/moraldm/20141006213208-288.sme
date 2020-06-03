@@ -1,0 +1,165 @@
+(sacredValueChoice FinancialAssitanceToShelter2)
+(sacredValueChoice notChangeSupport)
+(affectsSigLargerGroup FinancialAssitanceToShelter2)
+(affectsSigLargerGroup notChangeSupport)
+(uninferredSentence
+ (affectsSigLargerGroup FinancialAssitanceToShelter2))
+(uninferredSentence (affectsSigLargerGroup notChangeSupport))
+(uninferredSentence (directlyResponsible you1143 notChangeSupport))
+(uninferredSentence
+ (preventsAlternativeNegativeOutcome FinancialAssitanceToShelter2))
+(uninferredSentence
+ (usedAsMeansToPreventNegativeOutcome FinancialAssitanceToShelter2))
+(directlyResponsible you1143 FinancialAssitanceToShelter2)
+(directlyResponsible you1143 notChangeSupport)
+(preventsAlternativeNegativeOutcome FinancialAssitanceToShelter2)
+(usedAsMeansToPreventNegativeOutcome FinancialAssitanceToShelter2)
+(and (sacredValueChoice FinancialAssitanceToShelter2)
+     (sacredValueChoice notChangeSupport)
+     (uninferredSentence
+      (affectsSigLargerGroup FinancialAssitanceToShelter2))
+     (uninferredSentence (affectsSigLargerGroup notChangeSupport))
+     (directlyResponsible you1143 FinancialAssitanceToShelter2)
+     (uninferredSentence
+      (directlyResponsible you1143 notChangeSupport))
+     (uninferredSentence
+      (preventsAlternativeNegativeOutcome
+       FinancialAssitanceToShelter2))
+     (uninferredSentence
+      (usedAsMeansToPreventNegativeOutcome
+       FinancialAssitanceToShelter2)))
+(rightChoice notChangeSupport)
+(chosenItem GivingOrNotGivingAssistance notChangeSupport)
+(chosenItem GivingOrNotGivingAssistance FinancialAssitanceToShelter2)
+(IntelligentAgent you1143)
+((GroupFn HomelessPerson) group1FemaleHomeless)
+((GroupFn HomelessPerson) group2FemaleHomeless)
+(HumanShelterConstruction shelter1)
+(ShelteringSomething shelteringGroup1)
+(FinancialSupport FinancialAssitanceToShelter1)
+(HumanShelterConstruction shelter2)
+(ShelteringSomething shelteringGroup2)
+(FinancialSupport FinancialAssitanceToShelter2)
+(HarmingAnAgent harmingGroup1)
+(HarmingAnAgent harmingGroup2)
+(PreventingSomething preventingHarmingGroup1)
+(PreventingSomething preventingHarmingGroup2)
+(Inaction notChangeSupport)
+(SelectingSomething GivingOrNotGivingAssistance)
+(groupCardinality group1FemaleHomeless 50)
+(groupCardinality group2FemaleHomeless 150)
+(performedBy shelteringGroup1 shelter1)
+(objectActedOn shelteringGroup1 group1FemaleHomeless)
+(beneficiary FinancialAssitanceToShelter1 shelter1)
+(performedBy FinancialAssitanceToShelter1 you1143)
+(performedBy shelteringGroup2 shelter1)
+(objectActedOn shelteringGroup2 group2FemaleHomeless)
+(beneficiary FinancialAssitanceToShelter2 shelter2)
+(performedBy FinancialAssitanceToShelter2 you1143)
+(objectActedOn harmingGroup1 group1FemaleHomeless)
+(objectActedOn harmingGroup2 group2FemaleHomeless)
+(preventedProp preventingHarmingGroup1 harmingGroup1)
+(preventedProp preventingHarmingGroup2 harmingGroup2)
+(performedBy notChangeSupport you1143)
+(choices GivingOrNotGivingAssistance FinancialAssitanceToShelter2)
+(choices GivingOrNotGivingAssistance notChangeSupport)
+(causes-PropProp
+ (chosenItem GivingOrNotGivingAssistance FinancialAssitanceToShelter2)
+ preventingHarmingGroup2)
+(causes-PropProp
+ (chosenItem GivingOrNotGivingAssistance FinancialAssitanceToShelter2)
+ harmingGroup1)
+(causes-PropProp
+ (chosenItem GivingOrNotGivingAssistance notChangeSupport)
+ preventingHarmingGroup1)
+(causes-PropProp
+ (chosenItem GivingOrNotGivingAssistance notChangeSupport)
+ harmingGroup2)
+(implies
+ (and (sacredValueChoice FinancialAssitanceToShelter2)
+      (sacredValueChoice notChangeSupport)
+      (uninferredSentence
+       (affectsSigLargerGroup FinancialAssitanceToShelter2))
+      (uninferredSentence (affectsSigLargerGroup notChangeSupport))
+      (directlyResponsible you1143 FinancialAssitanceToShelter2)
+      (uninferredSentence
+       (directlyResponsible you1143 notChangeSupport))
+      (uninferredSentence
+       (preventsAlternativeNegativeOutcome
+        FinancialAssitanceToShelter2))
+      (uninferredSentence
+       (usedAsMeansToPreventNegativeOutcome
+        FinancialAssitanceToShelter2)))
+ (rightChoice notChangeSupport))
+(makeDecision you1143 notChangeSupport)
++++++++++++
+(Inaction Inaction43377)
+(performedBy PreventingSomething43375 you42105)
+(performedBy obtain42917 you42105)
+(performedBy Inaction43377 you42105)
+(performedBy save42144 you42105)
+(PreventingSomething PreventingSomething43375)
+(SelectingSomething SelectingSomething43376)
+(choices SelectingSomething43376 obtain42917)
+(choices SelectingSomething43376 Inaction43377)
+(chosenItem SelectingSomething43376 obtain42917)
+(causes-PropSit (chosenItem SelectingSomething43376 obtain42917)
+ save42144)
+(causes-PropSit (chosenItem SelectingSomething43376 obtain42917)
+ (possessiveRelation patient43049 paraplegia43118))
+(possessiveRelation patient43049 paraplegia43118)
+(objectActedOn obtain42917 patient43049)
+(HarmingAnAgent (possessiveRelation patient43049 paraplegia43118))
+(Marrow bone-marrow42305)
+(toPossessor obtain42917 you42105)
+(transferredObject obtain42917 bone-marrow42305)
+(from-UnderspecifiedLocation obtain42917 patient43049)
+(TakingSomething obtain42917)
+(Paraplegia paraplegia42037)
+(Paraplegia paraplegia43118)
+(MedicalPatient patient43049)
+(RescuingSomeone save42144)
+(beneficiary save42144 set-of-patient41970)
+(by-Underspecified save42144 obtain42917)
+(causes-SitSit save42144 PreventingSomething43375)
+((GroupFn MedicalPatient) set-of-patient41970)
+(cardinality set-of-patient41970 4)
+(cardinality patient43049 1)
+(Set-Mathematical set-of-patient41970)
+(Virus virus41880)
++++++++++++
+(matchBetween notChangeSupport Inaction43377)
+(matchBetween (Inaction notChangeSupport) (Inaction Inaction43377))
+(matchBetween GivingOrNotGivingAssistance SelectingSomething43376)
+(matchBetween (SelectingSomething
+               GivingOrNotGivingAssistance) (SelectingSomething
+                                             SelectingSomething43376))
+(matchBetween (performedBy notChangeSupport you1143) (performedBy
+                                                      Inaction43377
+                                                      you42105))
+(matchBetween (choices GivingOrNotGivingAssistance
+               notChangeSupport) (choices
+                                  SelectingSomething43376
+                                  Inaction43377))
+(matchBetween (chosenItem GivingOrNotGivingAssistance
+               FinancialAssitanceToShelter2) (chosenItem
+                                              SelectingSomething43376
+                                              obtain42917))
+(matchBetween (choices GivingOrNotGivingAssistance
+               FinancialAssitanceToShelter2) (choices
+                                              SelectingSomething43376
+                                              obtain42917))
+(matchBetween (performedBy FinancialAssitanceToShelter2
+               you1143) (performedBy obtain42917 you42105))
+(matchBetween FinancialAssitanceToShelter2 obtain42917)
+(matchBetween (performedBy FinancialAssitanceToShelter1
+               you1143) (performedBy save42144 you42105))
+(matchBetween you1143 you42105)
+(matchBetween (beneficiary FinancialAssitanceToShelter1
+               shelter1) (beneficiary save42144 set-of-patient41970))
+(matchBetween shelter1 set-of-patient41970)
+(matchBetween FinancialAssitanceToShelter1 save42144)
+(matchBetween (PreventingSomething
+               preventingHarmingGroup1) (PreventingSomething
+                                         PreventingSomething43375))
+(matchBetween preventingHarmingGroup1 PreventingSomething43375)

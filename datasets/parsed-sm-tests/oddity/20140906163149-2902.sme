@@ -1,0 +1,55 @@
+(wideEdged Element-4)
+(narrowEdged Element-3)
+(2D-Shape-Straight Element-4)
+(2D-Shape-Generic Element-4)
+(2D-Shape-Ellipse Element-3)
+(ObjectsColoredFnBlackColor Element-3)
+(2D-Shape-Convex Element-3)
+(2D-Shape-Generic Element-3)
+(ObjectsBorderColoredFnBlackColor Element-3)
+(2D-Shape-Curved Element-3)
+(Fully-Symmetric-Shape Element-3)
+(2D-Shape-Closed Element-3)
+(2D-Shape-Open Element-4)
+(ObjectsBorderColoredFnBlackColor Element-4)
++++++++++++
+(ObjectsColoredFnBlackColor Object-523)
+(2D-Shape-Generic Object-523)
+(2D-Shape-Generic Object-524)
+(Fully-Symmetric-Shape Object-523)
+(2D-Shape-Curved Object-523)
+(2D-Shape-Ellipse Object-523)
+(2D-Shape-Convex Object-523)
+(2D-Shape-Closed Object-523)
+(2D-Shape-Straight Object-524)
+(2D-Shape-Open Object-524)
+(ObjectsBorderColoredFnBlackColor Object-524)
+(ObjectsBorderColoredFnBlackColor Object-523)
+(colinearElements Object-524 Object-523)
+(wideEdged Object-524)
+(narrowEdged Object-523)
++++++++++++
+(matchBetween (2D-Shape-Straight Element-4) (2D-Shape-Straight
+                                             Object-524))
+(matchBetween (2D-Shape-Open Element-4) (2D-Shape-Open Object-524))
+(matchBetween Element-3 Object-523)
+(matchBetween (narrowEdged Element-3) (narrowEdged Object-523))
+(matchBetween (ObjectsColoredFnBlackColor
+               Element-3) (ObjectsColoredFnBlackColor Object-523))
+(matchBetween (2D-Shape-Generic Element-3) (2D-Shape-Generic
+                                            Object-523))
+(matchBetween (Fully-Symmetric-Shape Element-3) (Fully-Symmetric-Shape
+                                                 Object-523))
+(matchBetween (ObjectsBorderColoredFnBlackColor
+               Element-3) (ObjectsBorderColoredFnBlackColor Object-523))
+(matchBetween (2D-Shape-Closed Element-3) (2D-Shape-Closed Object-523))
+(matchBetween (2D-Shape-Curved Element-3) (2D-Shape-Curved Object-523))
+(matchBetween (2D-Shape-Convex Element-3) (2D-Shape-Convex Object-523))
+(matchBetween (2D-Shape-Ellipse Element-3) (2D-Shape-Ellipse
+                                            Object-523))
+(matchBetween (ObjectsBorderColoredFnBlackColor
+               Element-4) (ObjectsBorderColoredFnBlackColor Object-524))
+(matchBetween (2D-Shape-Generic Element-4) (2D-Shape-Generic
+                                            Object-524))
+(matchBetween (wideEdged Element-4) (wideEdged Object-524))
+(matchBetween Element-4 Object-524)

@@ -1,0 +1,685 @@
+(edgesDisconnected Edge-822 Edge-824)
+(edgesDisconnected Edge-820 Edge-824)
+(edgesDisconnected Edge-819 Edge-821)
+(edgesDisconnected Edge-818 Edge-824)
+(edgesDisconnected Edge-817 Edge-823)
+(edgesDisconnected Edge-818 Edge-822)
+(convexAngleBetweenEdges Edge-817 Edge-818)
+(convexAngleBetweenEdges Edge-819 Edge-820)
+(convexAngleBetweenEdges Edge-820 Edge-821)
+(convexAngleBetweenEdges Edge-822 Edge-823)
+(convexAngleBetweenEdges Edge-823 Edge-824)
+(convexAngleBetweenEdges Edge-824 Edge-817)
+(concaveAngleBetweenEdges Edge-818 Edge-819)
+(concaveAngleBetweenEdges Edge-821 Edge-822)
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-824 Edge-817)
+ (convexAngleBetweenEdges Edge-817 Edge-818))
+(bottomToTopCorner (convexAngleBetweenEdges Edge-824 Edge-817))
+(rightToLeftCorner (convexAngleBetweenEdges Edge-824 Edge-817))
+(perpendicularCorner (convexAngleBetweenEdges Edge-824 Edge-817))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-823 Edge-824)
+ (convexAngleBetweenEdges Edge-824 Edge-817))
+(topToBottomCorner (convexAngleBetweenEdges Edge-823 Edge-824))
+(rightToLeftCorner (convexAngleBetweenEdges Edge-823 Edge-824))
+(perpendicularCorner (convexAngleBetweenEdges Edge-823 Edge-824))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-822 Edge-823)
+ (convexAngleBetweenEdges Edge-823 Edge-824))
+(topToBottomCorner (convexAngleBetweenEdges Edge-822 Edge-823))
+(leftToRightCorner (convexAngleBetweenEdges Edge-822 Edge-823))
+(perpendicularCorner (convexAngleBetweenEdges Edge-822 Edge-823))
+(cycleAdjacentAngles (concaveAngleBetweenEdges Edge-821 Edge-822)
+ (convexAngleBetweenEdges Edge-822 Edge-823))
+(topToBottomCorner (concaveAngleBetweenEdges Edge-821 Edge-822))
+(leftToRightCorner (concaveAngleBetweenEdges Edge-821 Edge-822))
+(perpendicularCorner (concaveAngleBetweenEdges Edge-821 Edge-822))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-820 Edge-821)
+ (concaveAngleBetweenEdges Edge-821 Edge-822))
+(topToBottomCorner (convexAngleBetweenEdges Edge-820 Edge-821))
+(leftToRightCorner (convexAngleBetweenEdges Edge-820 Edge-821))
+(perpendicularCorner (convexAngleBetweenEdges Edge-820 Edge-821))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-819 Edge-820)
+ (convexAngleBetweenEdges Edge-820 Edge-821))
+(bottomToTopCorner (convexAngleBetweenEdges Edge-819 Edge-820))
+(leftToRightCorner (convexAngleBetweenEdges Edge-819 Edge-820))
+(perpendicularCorner (convexAngleBetweenEdges Edge-819 Edge-820))
+(cycleAdjacentAngles (concaveAngleBetweenEdges Edge-818 Edge-819)
+ (convexAngleBetweenEdges Edge-819 Edge-820))
+(straightCorner (edgesDisconnected Edge-818 Edge-822))
+(bottomToTopCorner (concaveAngleBetweenEdges Edge-818 Edge-819))
+(leftToRightCorner (concaveAngleBetweenEdges Edge-818 Edge-819))
+(perpendicularCorner (concaveAngleBetweenEdges Edge-818 Edge-819))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-817 Edge-818)
+ (concaveAngleBetweenEdges Edge-818 Edge-819))
+(bottomToTopCorner (convexAngleBetweenEdges Edge-817 Edge-818))
+(leftToRightCorner (convexAngleBetweenEdges Edge-817 Edge-818))
+(perpendicularCorner (convexAngleBetweenEdges Edge-817 Edge-818))
+(edgesParallel Edge-817 Edge-823)
+(parallelEdgeRelation (edgesDisconnected Edge-817 Edge-823))
+(edgesParallel Edge-818 Edge-824)
+(parallelEdgeRelation (edgesDisconnected Edge-818 Edge-824))
+(edgesParallel Edge-819 Edge-821)
+(parallelEdgeRelation (edgesDisconnected Edge-819 Edge-821))
+(edgesParallel Edge-820 Edge-824)
+(parallelEdgeRelation (edgesDisconnected Edge-820 Edge-824))
+(edgesParallel Edge-822 Edge-824)
+(parallelEdgeRelation (edgesDisconnected Edge-822 Edge-824))
+(edgesPerpendicular Edge-823 Edge-824)
+(above Edge-823 Edge-824)
+(rightOf Edge-823 Edge-824)
+(above Edge-822 Edge-824)
+(rightOf Edge-822 Edge-824)
+(edgesPerpendicular Edge-822 Edge-823)
+(above Edge-822 Edge-823)
+(rightOf Edge-823 Edge-822)
+(above Edge-821 Edge-823)
+(rightOf Edge-823 Edge-821)
+(edgesPerpendicular Edge-821 Edge-822)
+(above Edge-821 Edge-822)
+(rightOf Edge-822 Edge-821)
+(above Edge-820 Edge-822)
+(rightOf Edge-822 Edge-820)
+(edgesPerpendicular Edge-820 Edge-821)
+(above Edge-820 Edge-821)
+(rightOf Edge-821 Edge-820)
+(rightOf Edge-821 Edge-819)
+(edgesPerpendicular Edge-819 Edge-820)
+(above Edge-820 Edge-819)
+(rightOf Edge-820 Edge-819)
+(above Edge-818 Edge-824)
+(rightOf Edge-824 Edge-818)
+(edgesColinear Edge-818 Edge-822)
+(above Edge-820 Edge-818)
+(rightOf Edge-820 Edge-818)
+(edgesPerpendicular Edge-818 Edge-819)
+(above Edge-819 Edge-818)
+(rightOf Edge-819 Edge-818)
+(edgesPerpendicular Edge-817 Edge-824)
+(above Edge-817 Edge-824)
+(rightOf Edge-824 Edge-817)
+(rightOf Edge-823 Edge-817)
+(above Edge-819 Edge-817)
+(rightOf Edge-819 Edge-817)
+(edgesPerpendicular Edge-817 Edge-818)
+(above Edge-818 Edge-817)
+(rightOf Edge-818 Edge-817)
+(lengthShort Edge-823)
+(lengthShort Edge-817)
+(lengthShort Edge-820)
+(lengthShort Edge-822)
+(lengthShort Edge-818)
+(lengthMedium Edge-819)
+(lengthMedium Edge-821)
+(lengthLong Edge-824)
+(HorizontalEdge Edge-824)
+(axisAligned Edge-824)
+(PerceptualEdge Edge-824)
+(StraightEdge Edge-824)
+(VerticalEdge Edge-823)
+(axisAligned Edge-823)
+(PerceptualEdge Edge-823)
+(StraightEdge Edge-823)
+(HorizontalEdge Edge-822)
+(axisAligned Edge-822)
+(PerceptualEdge Edge-822)
+(StraightEdge Edge-822)
+(VerticalEdge Edge-821)
+(axisAligned Edge-821)
+(PerceptualEdge Edge-821)
+(StraightEdge Edge-821)
+(HorizontalEdge Edge-820)
+(axisAligned Edge-820)
+(PerceptualEdge Edge-820)
+(StraightEdge Edge-820)
+(VerticalEdge Edge-819)
+(axisAligned Edge-819)
+(PerceptualEdge Edge-819)
+(StraightEdge Edge-819)
+(HorizontalEdge Edge-818)
+(axisAligned Edge-818)
+(PerceptualEdge Edge-818)
+(StraightEdge Edge-818)
+(VerticalEdge Edge-817)
+(axisAligned Edge-817)
+(PerceptualEdge Edge-817)
+(StraightEdge Edge-817)
++++++++++++
+(StraightEdge Super-Edge-804)
+(StraightEdge Edge-766)
+(StraightEdge Edge-765)
+(StraightEdge Super-Edge-806)
+(StraightEdge Super-Edge-808)
+(StraightEdge Super-Edge-814)
+(StraightEdge Edge-756)
+(StraightEdge Super-Edge-816)
+(PerceptualEdge Super-Edge-804)
+(PerceptualEdge Edge-766)
+(PerceptualEdge Edge-765)
+(PerceptualEdge Super-Edge-806)
+(PerceptualEdge Super-Edge-808)
+(PerceptualEdge Super-Edge-814)
+(PerceptualEdge Edge-756)
+(PerceptualEdge Super-Edge-816)
+(axisAligned Super-Edge-804)
+(axisAligned Edge-766)
+(axisAligned Edge-765)
+(axisAligned Super-Edge-806)
+(axisAligned Super-Edge-808)
+(axisAligned Super-Edge-814)
+(axisAligned Edge-756)
+(axisAligned Super-Edge-816)
+(HorizontalEdge Super-Edge-804)
+(HorizontalEdge Edge-765)
+(HorizontalEdge Super-Edge-808)
+(HorizontalEdge Edge-756)
+(VerticalEdge Edge-766)
+(VerticalEdge Super-Edge-806)
+(VerticalEdge Super-Edge-814)
+(VerticalEdge Super-Edge-816)
+(lengthLong Super-Edge-804)
+(lengthMedium Super-Edge-806)
+(lengthMedium Super-Edge-814)
+(lengthShort Edge-756)
+(lengthShort Edge-765)
+(lengthShort Super-Edge-808)
+(lengthShort Super-Edge-816)
+(lengthShort Edge-766)
+(rightOf Super-Edge-804 Edge-766)
+(rightOf Super-Edge-804 Edge-765)
+(rightOf Super-Edge-814 Super-Edge-804)
+(rightOf Super-Edge-816 Super-Edge-804)
+(rightOf Edge-765 Edge-766)
+(rightOf Super-Edge-806 Edge-766)
+(rightOf Super-Edge-806 Edge-765)
+(rightOf Super-Edge-808 Super-Edge-806)
+(rightOf Super-Edge-814 Super-Edge-808)
+(rightOf Edge-756 Super-Edge-814)
+(rightOf Super-Edge-816 Super-Edge-814)
+(rightOf Super-Edge-816 Edge-756)
+(above Edge-766 Super-Edge-804)
+(above Edge-765 Super-Edge-804)
+(above Super-Edge-814 Super-Edge-804)
+(above Super-Edge-816 Super-Edge-804)
+(above Edge-765 Edge-766)
+(above Super-Edge-806 Edge-766)
+(above Super-Edge-806 Edge-765)
+(above Super-Edge-808 Super-Edge-806)
+(above Super-Edge-808 Super-Edge-814)
+(above Super-Edge-814 Edge-756)
+(above Super-Edge-814 Super-Edge-816)
+(above Edge-756 Super-Edge-816)
+(edgesPerpendicular Super-Edge-804 Edge-766)
+(edgesPerpendicular Super-Edge-804 Super-Edge-816)
+(edgesPerpendicular Edge-766 Edge-765)
+(edgesPerpendicular Edge-765 Super-Edge-806)
+(edgesPerpendicular Super-Edge-806 Super-Edge-808)
+(edgesPerpendicular Super-Edge-808 Super-Edge-814)
+(edgesPerpendicular Super-Edge-814 Edge-756)
+(edgesPerpendicular Edge-756 Super-Edge-816)
+(edgesColinear Edge-765 Edge-756)
+(edgesDisconnected Super-Edge-806 Super-Edge-814)
+(edgesDisconnected Edge-766 Super-Edge-816)
+(edgesDisconnected Super-Edge-804 Edge-756)
+(edgesDisconnected Super-Edge-804 Super-Edge-808)
+(edgesDisconnected Super-Edge-804 Edge-765)
+(edgesDisconnected Edge-765 Edge-756)
+(parallelEdgeRelation (edgesDisconnected Super-Edge-806 Super-Edge-814))
+(parallelEdgeRelation (edgesDisconnected Edge-766 Super-Edge-816))
+(parallelEdgeRelation (edgesDisconnected Super-Edge-804 Edge-756))
+(parallelEdgeRelation (edgesDisconnected Super-Edge-804 Super-Edge-808))
+(parallelEdgeRelation (edgesDisconnected Super-Edge-804 Edge-765))
+(edgesParallel Super-Edge-806 Super-Edge-814)
+(edgesParallel Edge-766 Super-Edge-816)
+(edgesParallel Super-Edge-804 Edge-756)
+(edgesParallel Super-Edge-804 Super-Edge-808)
+(edgesParallel Super-Edge-804 Edge-765)
+(convexAngleBetweenEdges Super-Edge-804 Edge-766)
+(convexAngleBetweenEdges Edge-766 Edge-765)
+(convexAngleBetweenEdges Super-Edge-806 Super-Edge-808)
+(convexAngleBetweenEdges Super-Edge-808 Super-Edge-814)
+(convexAngleBetweenEdges Edge-756 Super-Edge-816)
+(convexAngleBetweenEdges Super-Edge-816 Super-Edge-804)
+(perpendicularCorner (convexAngleBetweenEdges Super-Edge-804 Edge-766))
+(perpendicularCorner (convexAngleBetweenEdges Edge-766 Edge-765))
+(perpendicularCorner (concaveAngleBetweenEdges Edge-765 Super-Edge-806))
+(perpendicularCorner
+ (convexAngleBetweenEdges Super-Edge-806 Super-Edge-808))
+(perpendicularCorner
+ (convexAngleBetweenEdges Super-Edge-808 Super-Edge-814))
+(perpendicularCorner (concaveAngleBetweenEdges Super-Edge-814 Edge-756))
+(perpendicularCorner (convexAngleBetweenEdges Edge-756 Super-Edge-816))
+(perpendicularCorner
+ (convexAngleBetweenEdges Super-Edge-816 Super-Edge-804))
+(rightToLeftCorner (convexAngleBetweenEdges Super-Edge-804 Edge-766))
+(rightToLeftCorner
+ (convexAngleBetweenEdges Super-Edge-816 Super-Edge-804))
+(bottomToTopCorner (convexAngleBetweenEdges Super-Edge-804 Edge-766))
+(bottomToTopCorner (convexAngleBetweenEdges Edge-766 Edge-765))
+(bottomToTopCorner (concaveAngleBetweenEdges Edge-765 Super-Edge-806))
+(bottomToTopCorner
+ (convexAngleBetweenEdges Super-Edge-806 Super-Edge-808))
+(cycleAdjacentAngles (convexAngleBetweenEdges Super-Edge-804 Edge-766)
+ (convexAngleBetweenEdges Edge-766 Edge-765))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-766 Edge-765)
+ (concaveAngleBetweenEdges Edge-765 Super-Edge-806))
+(cycleAdjacentAngles (concaveAngleBetweenEdges Edge-765 Super-Edge-806)
+ (convexAngleBetweenEdges Super-Edge-806 Super-Edge-808))
+(cycleAdjacentAngles
+ (convexAngleBetweenEdges Super-Edge-806 Super-Edge-808)
+ (convexAngleBetweenEdges Super-Edge-808 Super-Edge-814))
+(cycleAdjacentAngles
+ (convexAngleBetweenEdges Super-Edge-808 Super-Edge-814)
+ (concaveAngleBetweenEdges Super-Edge-814 Edge-756))
+(cycleAdjacentAngles (concaveAngleBetweenEdges Super-Edge-814 Edge-756)
+ (convexAngleBetweenEdges Edge-756 Super-Edge-816))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-756 Super-Edge-816)
+ (convexAngleBetweenEdges Super-Edge-816 Super-Edge-804))
+(cycleAdjacentAngles
+ (convexAngleBetweenEdges Super-Edge-816 Super-Edge-804)
+ (convexAngleBetweenEdges Super-Edge-804 Edge-766))
+(leftToRightCorner (convexAngleBetweenEdges Edge-766 Edge-765))
+(leftToRightCorner (concaveAngleBetweenEdges Edge-765 Super-Edge-806))
+(leftToRightCorner
+ (convexAngleBetweenEdges Super-Edge-806 Super-Edge-808))
+(leftToRightCorner
+ (convexAngleBetweenEdges Super-Edge-808 Super-Edge-814))
+(leftToRightCorner (concaveAngleBetweenEdges Super-Edge-814 Edge-756))
+(leftToRightCorner (convexAngleBetweenEdges Edge-756 Super-Edge-816))
+(concaveAngleBetweenEdges Edge-765 Super-Edge-806)
+(concaveAngleBetweenEdges Super-Edge-814 Edge-756)
+(straightCorner (edgesDisconnected Edge-765 Edge-756))
+(topToBottomCorner
+ (convexAngleBetweenEdges Super-Edge-808 Super-Edge-814))
+(topToBottomCorner (concaveAngleBetweenEdges Super-Edge-814 Edge-756))
+(topToBottomCorner (convexAngleBetweenEdges Edge-756 Super-Edge-816))
+(topToBottomCorner
+ (convexAngleBetweenEdges Super-Edge-816 Super-Edge-804))
++++++++++++
+(matchBetween (HorizontalEdge Edge-820) (HorizontalEdge Super-Edge-808))
+(matchBetween (PerceptualEdge Edge-820) (PerceptualEdge Super-Edge-808))
+(matchBetween Edge-817 Edge-766)
+(matchBetween (lengthShort Edge-817) (lengthShort Edge-766))
+(matchBetween Edge-819 Super-Edge-806)
+(matchBetween (lengthMedium Edge-819) (lengthMedium Super-Edge-806))
+(matchBetween (VerticalEdge Edge-819) (VerticalEdge Super-Edge-806))
+(matchBetween (axisAligned Edge-817) (axisAligned Edge-766))
+(matchBetween (axisAligned Edge-823) (axisAligned Super-Edge-816))
+(matchBetween (PerceptualEdge Edge-819) (PerceptualEdge Super-Edge-806))
+(matchBetween (StraightEdge Edge-817) (StraightEdge Edge-766))
+(matchBetween (StraightEdge Edge-823) (StraightEdge Super-Edge-816))
+(matchBetween (VerticalEdge Edge-821) (VerticalEdge Super-Edge-814))
+(matchBetween (PerceptualEdge Edge-821) (PerceptualEdge Super-Edge-814))
+(matchBetween Edge-822 Edge-756)
+(matchBetween (lengthShort Edge-822) (lengthShort Edge-756))
+(matchBetween (axisAligned Edge-822) (axisAligned Edge-756))
+(matchBetween (StraightEdge Edge-822) (StraightEdge Edge-756))
+(matchBetween (HorizontalEdge Edge-818) (HorizontalEdge Edge-765))
+(matchBetween (PerceptualEdge Edge-818) (PerceptualEdge Edge-765))
+(matchBetween Edge-824 Super-Edge-804)
+(matchBetween (lengthLong Edge-824) (lengthLong Super-Edge-804))
+(matchBetween (axisAligned Edge-824) (axisAligned Super-Edge-804))
+(matchBetween (StraightEdge Edge-824) (StraightEdge Super-Edge-804))
+(matchBetween (above Edge-820 Edge-819) (above
+                                         Super-Edge-808
+                                         Super-Edge-806))
+(matchBetween (edgesPerpendicular Edge-820
+               Edge-821) (edgesPerpendicular Super-Edge-808
+                          Super-Edge-814))
+(matchBetween (rightOf Edge-821 Edge-820) (rightOf
+                                           Super-Edge-814
+                                           Super-Edge-808))
+(matchBetween (above Edge-819 Edge-817) (above Super-Edge-806 Edge-766))
+(matchBetween (edgesParallel Edge-819 Edge-821) (edgesParallel
+                                                 Super-Edge-806
+                                                 Super-Edge-814))
+(matchBetween (rightOf Edge-823 Edge-821) (rightOf
+                                           Super-Edge-816
+                                           Super-Edge-814))
+(matchBetween (edgesDisconnected Edge-819 Edge-821) (edgesDisconnected
+                                                     Super-Edge-806
+                                                     Super-Edge-814))
+(matchBetween (parallelEdgeRelation
+               (edgesDisconnected Edge-819
+                Edge-821)) (parallelEdgeRelation
+                            (edgesDisconnected Super-Edge-806
+                             Super-Edge-814)))
+(matchBetween (leftToRightCorner
+               (convexAngleBetweenEdges Edge-819
+                Edge-820)) (leftToRightCorner
+                            (convexAngleBetweenEdges Super-Edge-806
+                             Super-Edge-808)))
+(matchBetween (convexAngleBetweenEdges Edge-820
+               Edge-821) (convexAngleBetweenEdges Super-Edge-808
+                          Super-Edge-814))
+(matchBetween (topToBottomCorner
+               (convexAngleBetweenEdges Edge-820
+                Edge-821)) (topToBottomCorner
+                            (convexAngleBetweenEdges Super-Edge-808
+                             Super-Edge-814)))
+(matchBetween (perpendicularCorner
+               (convexAngleBetweenEdges Edge-820
+                Edge-821)) (perpendicularCorner
+                            (convexAngleBetweenEdges Super-Edge-808
+                             Super-Edge-814)))
+(matchBetween (above Edge-822 Edge-823) (above Edge-756 Super-Edge-816))
+(matchBetween (edgesPerpendicular Edge-821
+               Edge-822) (edgesPerpendicular Super-Edge-814 Edge-756))
+(matchBetween (rightOf Edge-822 Edge-821) (rightOf
+                                           Edge-756
+                                           Super-Edge-814))
+(matchBetween (edgesPerpendicular Edge-818
+               Edge-819) (edgesPerpendicular Edge-765 Super-Edge-806))
+(matchBetween (above Edge-819 Edge-818) (above Super-Edge-806 Edge-765))
+(matchBetween (rightOf Edge-819 Edge-818) (rightOf
+                                           Super-Edge-806
+                                           Edge-765))
+(matchBetween (leftToRightCorner
+               (convexAngleBetweenEdges Edge-822
+                Edge-823)) (leftToRightCorner
+                            (convexAngleBetweenEdges Edge-756
+                             Super-Edge-816)))
+(matchBetween (concaveAngleBetweenEdges Edge-821
+               Edge-822) (concaveAngleBetweenEdges Super-Edge-814
+                          Edge-756))
+(matchBetween (topToBottomCorner
+               (concaveAngleBetweenEdges Edge-821
+                Edge-822)) (topToBottomCorner
+                            (concaveAngleBetweenEdges Super-Edge-814
+                             Edge-756)))
+(matchBetween (perpendicularCorner
+               (concaveAngleBetweenEdges Edge-821
+                Edge-822)) (perpendicularCorner
+                            (concaveAngleBetweenEdges Super-Edge-814
+                             Edge-756)))
+(matchBetween (concaveAngleBetweenEdges Edge-818
+               Edge-819) (concaveAngleBetweenEdges Edge-765
+                          Super-Edge-806))
+(matchBetween (bottomToTopCorner
+               (concaveAngleBetweenEdges Edge-818
+                Edge-819)) (bottomToTopCorner
+                            (concaveAngleBetweenEdges Edge-765
+                             Super-Edge-806)))
+(matchBetween (leftToRightCorner
+               (concaveAngleBetweenEdges Edge-818
+                Edge-819)) (leftToRightCorner
+                            (concaveAngleBetweenEdges Edge-765
+                             Super-Edge-806)))
+(matchBetween (perpendicularCorner
+               (concaveAngleBetweenEdges Edge-818
+                Edge-819)) (perpendicularCorner
+                            (concaveAngleBetweenEdges Edge-765
+                             Super-Edge-806)))
+(matchBetween (edgesDisconnected Edge-818 Edge-822) (edgesDisconnected
+                                                     Edge-765
+                                                     Edge-756))
+(matchBetween (straightCorner
+               (edgesDisconnected Edge-818 Edge-822)) (straightCorner
+                                                       (edgesDisconnected
+                                                        Edge-765
+                                                        Edge-756)))
+(matchBetween (edgesDisconnected Edge-820 Edge-824) (edgesDisconnected
+                                                     Super-Edge-804
+                                                     Super-Edge-808))
+(matchBetween (parallelEdgeRelation
+               (edgesDisconnected Edge-820
+                Edge-824)) (parallelEdgeRelation
+                            (edgesDisconnected Super-Edge-804
+                             Super-Edge-808)))
+(matchBetween (edgesPerpendicular Edge-823
+               Edge-824) (edgesPerpendicular Super-Edge-804
+                          Super-Edge-816))
+(matchBetween (above Edge-823 Edge-824) (above
+                                         Super-Edge-816
+                                         Super-Edge-804))
+(matchBetween (rightOf Edge-823 Edge-824) (rightOf
+                                           Super-Edge-816
+                                           Super-Edge-804))
+(matchBetween (convexAngleBetweenEdges Edge-824
+               Edge-817) (convexAngleBetweenEdges Super-Edge-804
+                          Edge-766))
+(matchBetween (rightToLeftCorner
+               (convexAngleBetweenEdges Edge-824
+                Edge-817)) (rightToLeftCorner
+                            (convexAngleBetweenEdges Super-Edge-804
+                             Edge-766)))
+(matchBetween (bottomToTopCorner
+               (convexAngleBetweenEdges Edge-824
+                Edge-817)) (bottomToTopCorner
+                            (convexAngleBetweenEdges Super-Edge-804
+                             Edge-766)))
+(matchBetween (perpendicularCorner
+               (convexAngleBetweenEdges Edge-824
+                Edge-817)) (perpendicularCorner
+                            (convexAngleBetweenEdges Super-Edge-804
+                             Edge-766)))
+(matchBetween (edgesDisconnected Edge-822 Edge-824) (edgesDisconnected
+                                                     Super-Edge-804
+                                                     Edge-756))
+(matchBetween (parallelEdgeRelation
+               (edgesDisconnected Edge-822
+                Edge-824)) (parallelEdgeRelation
+                            (edgesDisconnected Super-Edge-804
+                             Edge-756)))
+(matchBetween (above Edge-818 Edge-824) (above Edge-765 Super-Edge-804))
+(matchBetween (edgesDisconnected Edge-818 Edge-824) (edgesDisconnected
+                                                     Super-Edge-804
+                                                     Edge-765))
+(matchBetween (parallelEdgeRelation
+               (edgesDisconnected Edge-818
+                Edge-824)) (parallelEdgeRelation
+                            (edgesDisconnected Super-Edge-804
+                             Edge-765)))
+(matchBetween (cycleAdjacentAngles
+               (convexAngleBetweenEdges Edge-820 Edge-821)
+               (concaveAngleBetweenEdges Edge-821
+                Edge-822)) (cycleAdjacentAngles
+                            (convexAngleBetweenEdges Super-Edge-808
+                             Super-Edge-814)
+                            (concaveAngleBetweenEdges Super-Edge-814
+                             Edge-756)))
+(matchBetween (cycleAdjacentAngles
+               (concaveAngleBetweenEdges Edge-821 Edge-822)
+               (convexAngleBetweenEdges Edge-822
+                Edge-823)) (cycleAdjacentAngles
+                            (concaveAngleBetweenEdges Super-Edge-814
+                             Edge-756)
+                            (convexAngleBetweenEdges Edge-756
+                             Super-Edge-816)))
+(matchBetween (cycleAdjacentAngles
+               (convexAngleBetweenEdges Edge-823 Edge-824)
+               (convexAngleBetweenEdges Edge-824
+                Edge-817)) (cycleAdjacentAngles
+                            (convexAngleBetweenEdges Super-Edge-816
+                             Super-Edge-804)
+                            (convexAngleBetweenEdges Super-Edge-804
+                             Edge-766)))
+(matchBetween (cycleAdjacentAngles
+               (convexAngleBetweenEdges Edge-824 Edge-817)
+               (convexAngleBetweenEdges Edge-817
+                Edge-818)) (cycleAdjacentAngles
+                            (convexAngleBetweenEdges Super-Edge-804
+                             Edge-766)
+                            (convexAngleBetweenEdges Edge-766
+                             Edge-765)))
+(matchBetween (cycleAdjacentAngles
+               (convexAngleBetweenEdges Edge-822 Edge-823)
+               (convexAngleBetweenEdges Edge-823
+                Edge-824)) (cycleAdjacentAngles
+                            (convexAngleBetweenEdges Edge-756
+                             Super-Edge-816)
+                            (convexAngleBetweenEdges Super-Edge-816
+                             Super-Edge-804)))
+(matchBetween (cycleAdjacentAngles
+               (convexAngleBetweenEdges Edge-817 Edge-818)
+               (concaveAngleBetweenEdges Edge-818
+                Edge-819)) (cycleAdjacentAngles
+                            (convexAngleBetweenEdges Edge-766 Edge-765)
+                            (concaveAngleBetweenEdges Edge-765
+                             Super-Edge-806)))
+(matchBetween (cycleAdjacentAngles
+               (concaveAngleBetweenEdges Edge-818 Edge-819)
+               (convexAngleBetweenEdges Edge-819
+                Edge-820)) (cycleAdjacentAngles
+                            (concaveAngleBetweenEdges Edge-765
+                             Super-Edge-806)
+                            (convexAngleBetweenEdges Super-Edge-806
+                             Super-Edge-808)))
+(matchBetween (cycleAdjacentAngles
+               (convexAngleBetweenEdges Edge-819 Edge-820)
+               (convexAngleBetweenEdges Edge-820
+                Edge-821)) (cycleAdjacentAngles
+                            (convexAngleBetweenEdges Super-Edge-806
+                             Super-Edge-808)
+                            (convexAngleBetweenEdges Super-Edge-808
+                             Super-Edge-814)))
+(matchBetween (rightOf Edge-824 Edge-818) (rightOf
+                                           Super-Edge-804
+                                           Edge-765))
+(matchBetween (edgesParallel Edge-818 Edge-824) (edgesParallel
+                                                 Super-Edge-804
+                                                 Edge-765))
+(matchBetween (edgesParallel Edge-822 Edge-824) (edgesParallel
+                                                 Super-Edge-804
+                                                 Edge-756))
+(matchBetween (perpendicularCorner
+               (convexAngleBetweenEdges Edge-823
+                Edge-824)) (perpendicularCorner
+                            (convexAngleBetweenEdges Super-Edge-816
+                             Super-Edge-804)))
+(matchBetween (topToBottomCorner
+               (convexAngleBetweenEdges Edge-823
+                Edge-824)) (topToBottomCorner
+                            (convexAngleBetweenEdges Super-Edge-816
+                             Super-Edge-804)))
+(matchBetween (rightToLeftCorner
+               (convexAngleBetweenEdges Edge-823
+                Edge-824)) (rightToLeftCorner
+                            (convexAngleBetweenEdges Super-Edge-816
+                             Super-Edge-804)))
+(matchBetween (convexAngleBetweenEdges Edge-823
+               Edge-824) (convexAngleBetweenEdges Super-Edge-816
+                          Super-Edge-804))
+(matchBetween (rightOf Edge-824 Edge-817) (rightOf
+                                           Super-Edge-804
+                                           Edge-766))
+(matchBetween (above Edge-817 Edge-824) (above Edge-766 Super-Edge-804))
+(matchBetween (edgesPerpendicular Edge-817
+               Edge-824) (edgesPerpendicular Super-Edge-804 Edge-766))
+(matchBetween (edgesParallel Edge-820 Edge-824) (edgesParallel
+                                                 Super-Edge-804
+                                                 Super-Edge-808))
+(matchBetween (edgesColinear Edge-818 Edge-822) (edgesColinear
+                                                 Edge-765
+                                                 Edge-756))
+(matchBetween (perpendicularCorner
+               (convexAngleBetweenEdges Edge-817
+                Edge-818)) (perpendicularCorner
+                            (convexAngleBetweenEdges Edge-766
+                             Edge-765)))
+(matchBetween (leftToRightCorner
+               (convexAngleBetweenEdges Edge-817
+                Edge-818)) (leftToRightCorner
+                            (convexAngleBetweenEdges Edge-766
+                             Edge-765)))
+(matchBetween (bottomToTopCorner
+               (convexAngleBetweenEdges Edge-817
+                Edge-818)) (bottomToTopCorner
+                            (convexAngleBetweenEdges Edge-766
+                             Edge-765)))
+(matchBetween (convexAngleBetweenEdges Edge-817
+               Edge-818) (convexAngleBetweenEdges Edge-766 Edge-765))
+(matchBetween (leftToRightCorner
+               (concaveAngleBetweenEdges Edge-821
+                Edge-822)) (leftToRightCorner
+                            (concaveAngleBetweenEdges Super-Edge-814
+                             Edge-756)))
+(matchBetween (perpendicularCorner
+               (convexAngleBetweenEdges Edge-822
+                Edge-823)) (perpendicularCorner
+                            (convexAngleBetweenEdges Edge-756
+                             Super-Edge-816)))
+(matchBetween (topToBottomCorner
+               (convexAngleBetweenEdges Edge-822
+                Edge-823)) (topToBottomCorner
+                            (convexAngleBetweenEdges Edge-756
+                             Super-Edge-816)))
+(matchBetween (convexAngleBetweenEdges Edge-822
+               Edge-823) (convexAngleBetweenEdges Edge-756
+                          Super-Edge-816))
+(matchBetween (rightOf Edge-818 Edge-817) (rightOf Edge-765 Edge-766))
+(matchBetween (above Edge-818 Edge-817) (above Edge-765 Edge-766))
+(matchBetween (edgesPerpendicular Edge-817
+               Edge-818) (edgesPerpendicular Edge-766 Edge-765))
+(matchBetween (above Edge-821 Edge-822) (above Super-Edge-814 Edge-756))
+(matchBetween (rightOf Edge-823 Edge-822) (rightOf
+                                           Super-Edge-816
+                                           Edge-756))
+(matchBetween (edgesPerpendicular Edge-822
+               Edge-823) (edgesPerpendicular Edge-756 Super-Edge-816))
+(matchBetween (leftToRightCorner
+               (convexAngleBetweenEdges Edge-820
+                Edge-821)) (leftToRightCorner
+                            (convexAngleBetweenEdges Super-Edge-808
+                             Super-Edge-814)))
+(matchBetween (perpendicularCorner
+               (convexAngleBetweenEdges Edge-819
+                Edge-820)) (perpendicularCorner
+                            (convexAngleBetweenEdges Super-Edge-806
+                             Super-Edge-808)))
+(matchBetween (bottomToTopCorner
+               (convexAngleBetweenEdges Edge-819
+                Edge-820)) (bottomToTopCorner
+                            (convexAngleBetweenEdges Super-Edge-806
+                             Super-Edge-808)))
+(matchBetween (convexAngleBetweenEdges Edge-819
+               Edge-820) (convexAngleBetweenEdges Super-Edge-806
+                          Super-Edge-808))
+(matchBetween (parallelEdgeRelation
+               (edgesDisconnected Edge-817
+                Edge-823)) (parallelEdgeRelation
+                            (edgesDisconnected Edge-766
+                             Super-Edge-816)))
+(matchBetween (edgesDisconnected Edge-817 Edge-823) (edgesDisconnected
+                                                     Edge-766
+                                                     Super-Edge-816))
+(matchBetween (above Edge-821 Edge-823) (above
+                                         Super-Edge-814
+                                         Super-Edge-816))
+(matchBetween (rightOf Edge-819 Edge-817) (rightOf
+                                           Super-Edge-806
+                                           Edge-766))
+(matchBetween (edgesParallel Edge-817 Edge-823) (edgesParallel
+                                                 Edge-766
+                                                 Super-Edge-816))
+(matchBetween (above Edge-820 Edge-821) (above
+                                         Super-Edge-808
+                                         Super-Edge-814))
+(matchBetween (rightOf Edge-820 Edge-819) (rightOf
+                                           Super-Edge-808
+                                           Super-Edge-806))
+(matchBetween (edgesPerpendicular Edge-819
+               Edge-820) (edgesPerpendicular Super-Edge-806
+                          Super-Edge-808))
+(matchBetween (PerceptualEdge Edge-824) (PerceptualEdge Super-Edge-804))
+(matchBetween (HorizontalEdge Edge-824) (HorizontalEdge Super-Edge-804))
+(matchBetween (StraightEdge Edge-818) (StraightEdge Edge-765))
+(matchBetween (axisAligned Edge-818) (axisAligned Edge-765))
+(matchBetween (lengthShort Edge-818) (lengthShort Edge-765))
+(matchBetween Edge-818 Edge-765)
+(matchBetween (PerceptualEdge Edge-822) (PerceptualEdge Edge-756))
+(matchBetween (HorizontalEdge Edge-822) (HorizontalEdge Edge-756))
+(matchBetween (StraightEdge Edge-821) (StraightEdge Super-Edge-814))
+(matchBetween (axisAligned Edge-821) (axisAligned Super-Edge-814))
+(matchBetween (lengthMedium Edge-821) (lengthMedium Super-Edge-814))
+(matchBetween Edge-821 Super-Edge-814)
+(matchBetween (StraightEdge Edge-819) (StraightEdge Super-Edge-806))
+(matchBetween (PerceptualEdge Edge-823) (PerceptualEdge Super-Edge-816))
+(matchBetween (PerceptualEdge Edge-817) (PerceptualEdge Edge-766))
+(matchBetween (axisAligned Edge-819) (axisAligned Super-Edge-806))
+(matchBetween (VerticalEdge Edge-823) (VerticalEdge Super-Edge-816))
+(matchBetween (VerticalEdge Edge-817) (VerticalEdge Edge-766))
+(matchBetween (lengthShort Edge-823) (lengthShort Super-Edge-816))
+(matchBetween Edge-823 Super-Edge-816)
+(matchBetween (StraightEdge Edge-820) (StraightEdge Super-Edge-808))
+(matchBetween (axisAligned Edge-820) (axisAligned Super-Edge-808))
+(matchBetween (lengthShort Edge-820) (lengthShort Super-Edge-808))
+(matchBetween Edge-820 Super-Edge-808)

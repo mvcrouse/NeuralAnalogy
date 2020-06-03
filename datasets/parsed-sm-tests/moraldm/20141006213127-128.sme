@@ -1,0 +1,151 @@
+(sacredValueChoice redirect40379)
+(sacredValueChoice Inaction43400)
+(affectsSigLargerGroup redirect40379)
+(affectsSigLargerGroup Inaction43400)
+(uninferredSentence (affectsSigLargerGroup redirect40379))
+(uninferredSentence (affectsSigLargerGroup Inaction43400))
+(uninferredSentence (directlyResponsible you39300 Inaction43400))
+(uninferredSentence (usedAsMeansToPreventNegativeOutcome redirect40379))
+(directlyResponsible you39300 redirect40379)
+(directlyResponsible you39300 Inaction43400)
+(preventsAlternativeNegativeOutcome redirect40379)
+(usedAsMeansToPreventNegativeOutcome redirect40379)
+(and (sacredValueChoice redirect40379)
+     (sacredValueChoice Inaction43400)
+     (uninferredSentence (affectsSigLargerGroup redirect40379))
+     (uninferredSentence (affectsSigLargerGroup Inaction43400))
+     (directlyResponsible you39300 redirect40379)
+     (uninferredSentence (directlyResponsible you39300 Inaction43400))
+     (preventsAlternativeNegativeOutcome redirect40379)
+     (uninferredSentence
+      (usedAsMeansToPreventNegativeOutcome redirect40379)))
+(rightChoice redirect40379)
+(chosenItem SelectingSomething43399 redirect40379)
+(possessiveRelation patient40523 paraplegia40592)
+(Inaction Inaction43400)
+(PreventingSomething PreventingSomething43398)
+(SelectingSomething SelectingSomething43399)
+(HarmingAnAgent (possessiveRelation patient40523 paraplegia40592))
+(Paraplegia paraplegia39232)
+(Paraplegia paraplegia40592)
+(MedicalPatient patient40523)
+(Translation-LocationChange redirect40379)
+(RoomInAConstruction room39499)
+(RescuingSomeone save39339)
+((GroupFn MedicalPatient) set-of-patient39165)
+(Set-Mathematical set-of-patient39165)
+(Virus virus39075)
+(performedBy PreventingSomething43398 you39300)
+(choices SelectingSomething43399 redirect40379)
+(choices SelectingSomething43399 Inaction43400)
+(causes-PropSit (chosenItem SelectingSomething43399 redirect40379)
+ save39339)
+(performedBy redirect40379 you39300)
+(performedBy Inaction43400 you39300)
+(objectActedOn redirect40379 virus39075)
+(primaryObjectMoving redirect40379 virus39075)
+(toLocation redirect40379 room39499)
+(causes-PropSit (chosenItem SelectingSomething43399 redirect40379)
+ (possessiveRelation patient40523 paraplegia40592))
+(with-UnderspecifiedAgent room39499 patient40523)
+(beneficiary save39339 set-of-patient39165)
+(performedBy save39339 you39300)
+(by-Underspecified save39339 redirect40379)
+(causes-SitSit save39339 PreventingSomething43398)
+(cardinality set-of-patient39165 4)
+(cardinality patient40523 1)
+(implies
+ (and (sacredValueChoice redirect40379)
+      (sacredValueChoice Inaction43400)
+      (uninferredSentence (affectsSigLargerGroup redirect40379))
+      (uninferredSentence (affectsSigLargerGroup Inaction43400))
+      (directlyResponsible you39300 redirect40379)
+      (uninferredSentence (directlyResponsible you39300 Inaction43400))
+      (preventsAlternativeNegativeOutcome redirect40379)
+      (uninferredSentence
+       (usedAsMeansToPreventNegativeOutcome redirect40379)))
+ (rightChoice redirect40379))
+(makeDecision you39300 redirect40379)
++++++++++++
+(IntelligentAgent you1123)
+((GroupFn FactoryWorker) WorkersInPlant1)
+((GroupFn FactoryWorker) WorkersInPlant2)
+(Employee FactoryWorker)
+(FactoryBuilding Factory1)
+(FactoryBuilding Factory2)
+(groupCardinality WorkersInPlant1 50)
+(groupCardinality WorkersInPlant2 500)
+(worksAtFacility WorkersInPlant1 Factory1)
+(worksAtFacility WorkersInPlant2 Factory2)
+(FinancialSupport FinancialAssistanceToFactory1)
+(FinancialSupport giveFinancialAssistanceToFactory2)
+(beneficiary FinancialAssistanceToFactory1 WorkersInPlant1)
+(beneficiary giveFinancialAssistanceToFactory2 WorkersInPlant2)
+(performedBy FinancialAssistanceToFactory1 you1123)
+(performedBy giveFinancialAssistanceToFactory2 you1123)
+(performedBy NotChangeSupport you1123)
+(EmployeeLayoff employeeLayoff1)
+(EmployeeLayoff employeeLayoff2)
+(objectActedOn employeeLayoff1 WorkersInPlant1)
+(objectActedOn employeeLayoff2 WorkersInPlant2)
+(PreventingSomething preventingLayoff1)
+(PreventingSomething preventingLayoff2)
+(preventedProp preventingLayoff1 employeeLayoff1)
+(preventedProp preventingLayoff2 employeeLayoff2)
+(supportedBy WorkersInPlant1 FinancialAssistanceToFactory1)
+(Inaction NotChangeSupport)
+(SelectingSomething GiveSupportToFirstOrSecond)
+(choices GiveSupportToFirstOrSecond giveFinancialAssistanceToFactory2)
+(choices GiveSupportToFirstOrSecond NotChangeSupport)
+(chosenItem GiveSupportToFirstOrSecond
+ giveFinancialAssistanceToFactory2)
+(chosenItem GiveSupportToFirstOrSecond NotChangeSupport)
+(causes-PropProp
+ (chosenItem GiveSupportToFirstOrSecond
+  giveFinancialAssistanceToFactory2)
+ preventingLayoff2)
+(causes-PropProp
+ (chosenItem GiveSupportToFirstOrSecond
+  giveFinancialAssistanceToFactory2)
+ employeeLayoff1)
+(causes-PropProp
+ (chosenItem GiveSupportToFirstOrSecond NotChangeSupport)
+ employeeLayoff2)
+(causes-PropProp
+ (chosenItem GiveSupportToFirstOrSecond NotChangeSupport)
+ preventingLayoff1)
++++++++++++
+(matchBetween save39339 FinancialAssistanceToFactory1)
+(matchBetween set-of-patient39165 WorkersInPlant1)
+(matchBetween (beneficiary save39339 set-of-patient39165) (beneficiary
+                                                           FinancialAssistanceToFactory1
+                                                           WorkersInPlant1))
+(matchBetween you39300 you1123)
+(matchBetween (performedBy save39339 you39300) (performedBy
+                                                FinancialAssistanceToFactory1
+                                                you1123))
+(matchBetween (choices SelectingSomething43399 Inaction43400) (choices
+                                                               GiveSupportToFirstOrSecond
+                                                               giveFinancialAssistanceToFactory2))
+(matchBetween (choices SelectingSomething43399 redirect40379) (choices
+                                                               GiveSupportToFirstOrSecond
+                                                               NotChangeSupport))
+(matchBetween (chosenItem SelectingSomething43399
+               redirect40379) (chosenItem GiveSupportToFirstOrSecond
+                               NotChangeSupport))
+(matchBetween (performedBy redirect40379 you39300) (performedBy
+                                                    NotChangeSupport
+                                                    you1123))
+(matchBetween redirect40379 NotChangeSupport)
+(matchBetween (performedBy Inaction43400 you39300) (performedBy
+                                                    giveFinancialAssistanceToFactory2
+                                                    you1123))
+(matchBetween Inaction43400 giveFinancialAssistanceToFactory2)
+(matchBetween (SelectingSomething
+               SelectingSomething43399) (SelectingSomething
+                                         GiveSupportToFirstOrSecond))
+(matchBetween SelectingSomething43399 GiveSupportToFirstOrSecond)
+(matchBetween (PreventingSomething
+               PreventingSomething43398) (PreventingSomething
+                                          preventingLayoff2))
+(matchBetween PreventingSomething43398 preventingLayoff2)

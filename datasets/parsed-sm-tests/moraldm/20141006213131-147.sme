@@ -1,0 +1,179 @@
+(sacredValueChoice redirect67174)
+(sacredValueChoice Inaction68012)
+(affectsSigLargerGroup redirect67174)
+(affectsSigLargerGroup Inaction68012)
+(uninferredSentence (affectsSigLargerGroup redirect67174))
+(uninferredSentence (affectsSigLargerGroup Inaction68012))
+(uninferredSentence (directlyResponsible you64335 Inaction68012))
+(uninferredSentence (usedAsMeansToPreventNegativeOutcome redirect67174))
+(directlyResponsible you64335 redirect67174)
+(directlyResponsible you64335 Inaction68012)
+(preventsAlternativeNegativeOutcome redirect67174)
+(usedAsMeansToPreventNegativeOutcome redirect67174)
+(and (sacredValueChoice redirect67174)
+     (sacredValueChoice Inaction68012)
+     (uninferredSentence (affectsSigLargerGroup redirect67174))
+     (uninferredSentence (affectsSigLargerGroup Inaction68012))
+     (directlyResponsible you64335 redirect67174)
+     (uninferredSentence (directlyResponsible you64335 Inaction68012))
+     (preventsAlternativeNegativeOutcome redirect67174)
+     (uninferredSentence
+      (usedAsMeansToPreventNegativeOutcome redirect67174)))
+(rightChoice redirect67174)
+(HighAmountFn Speed)
+(chosenItem SelectingSomething68011 redirect67174)
+(chosenItem SelectingSomething68011 Inaction68012)
+(Inaction Inaction68012)
+(PreventingSomething PreventingSomething68010)
+(SelectingSomething SelectingSomething68011)
+((GroupFn Person) them64407)
+((GroupFn Person) set-of-passenger66080)
+(Dying hit64076)
+(Dying hit67367)
+(Bus-RoadVehicle bus64133)
+(Bus-RoadVehicle bus66039)
+(HittingAnObject hit64076)
+(HittingAnObject hit67367)
+(Translation-LocationChange redirect67174)
+(RescuingSomeone save64374)
+(Set-Mathematical set-of-passenger66080)
+(Railway-siding side-track66173)
+(Set-Mathematical them64407)
+(Train-TransportationDevice train64488)
+(performedBy PreventingSomething68010 you64335)
+(preventedSit PreventingSomething68010 hit64076)
+(choices SelectingSomething68011 redirect67174)
+(choices SelectingSomething68011 Inaction68012)
+(causes-PropSit (chosenItem SelectingSomething68011 Inaction68012)
+ hit64076)
+(causes-PropSit (chosenItem SelectingSomething68011 redirect67174)
+ save64374)
+(on-UnderspecifiedSurface bus66039 side-track66173)
+(performedBy hit64076 train64488)
+(objectActedOn hit64076 bus64133)
+(objectActedOn hit67367 bus66039)
+(performedBy hit67367 train64488)
+(causes-PropSit (chosenItem SelectingSomething68011 redirect67174)
+ hit67367)
+(performedBy redirect67174 you64335)
+(performedBy Inaction68012 you64335)
+(primaryObjectMoving redirect67174 train64488)
+(toLocation redirect67174 side-track66173)
+(beneficiary save64374 them64407)
+(performedBy save64374 you64335)
+(by-Underspecified save64374 redirect67174)
+(causes-SitSit save64374 PreventingSomething68010)
+(cardinality set-of-passenger66080 2)
+(cardinality them64407 10)
+(speedOfObject-Underspecified train64488 (HighAmountFn Speed))
+(implies
+ (and (sacredValueChoice redirect67174)
+      (sacredValueChoice Inaction68012)
+      (uninferredSentence (affectsSigLargerGroup redirect67174))
+      (uninferredSentence (affectsSigLargerGroup Inaction68012))
+      (directlyResponsible you64335 redirect67174)
+      (uninferredSentence (directlyResponsible you64335 Inaction68012))
+      (preventsAlternativeNegativeOutcome redirect67174)
+      (uninferredSentence
+       (usedAsMeansToPreventNegativeOutcome redirect67174)))
+ (rightChoice redirect67174))
+(makeDecision you64335 redirect67174)
++++++++++++
+(IntelligentAgent you1143)
+((GroupFn HomelessPerson) group1FemaleHomeless)
+((GroupFn HomelessPerson) group2FemaleHomeless)
+(groupCardinality group1FemaleHomeless 50)
+(groupCardinality group2FemaleHomeless 150)
+(HumanShelterConstruction shelter1)
+(HumanShelterConstruction shelter2)
+(ShelteringSomething shelteringGroup1)
+(ShelteringSomething shelteringGroup2)
+(performedBy shelteringGroup1 shelter1)
+(performedBy FinancialAssitanceToShelter1 you1143)
+(performedBy shelteringGroup2 shelter1)
+(performedBy FinancialAssitanceToShelter2 you1143)
+(performedBy notChangeSupport you1143)
+(objectActedOn shelteringGroup1 group1FemaleHomeless)
+(objectActedOn shelteringGroup2 group2FemaleHomeless)
+(objectActedOn harmingGroup1 group1FemaleHomeless)
+(objectActedOn harmingGroup2 group2FemaleHomeless)
+(FinancialSupport FinancialAssitanceToShelter1)
+(FinancialSupport FinancialAssitanceToShelter2)
+(beneficiary FinancialAssitanceToShelter1 shelter1)
+(beneficiary FinancialAssitanceToShelter2 shelter2)
+(HarmingAnAgent harmingGroup1)
+(HarmingAnAgent harmingGroup2)
+(PreventingSomething preventingHarmingGroup1)
+(PreventingSomething preventingHarmingGroup2)
+(preventedProp preventingHarmingGroup1 harmingGroup1)
+(preventedProp preventingHarmingGroup2 harmingGroup2)
+(Inaction notChangeSupport)
+(SelectingSomething GivingOrNotGivingAssistance)
+(choices GivingOrNotGivingAssistance FinancialAssitanceToShelter2)
+(choices GivingOrNotGivingAssistance notChangeSupport)
+(chosenItem GivingOrNotGivingAssistance FinancialAssitanceToShelter2)
+(chosenItem GivingOrNotGivingAssistance notChangeSupport)
+(causes-PropProp
+ (chosenItem GivingOrNotGivingAssistance FinancialAssitanceToShelter2)
+ preventingHarmingGroup2)
+(causes-PropProp
+ (chosenItem GivingOrNotGivingAssistance FinancialAssitanceToShelter2)
+ harmingGroup1)
+(causes-PropProp
+ (chosenItem GivingOrNotGivingAssistance notChangeSupport)
+ preventingHarmingGroup1)
+(causes-PropProp
+ (chosenItem GivingOrNotGivingAssistance notChangeSupport)
+ harmingGroup2)
++++++++++++
+(matchBetween hit67367 shelteringGroup1)
+(matchBetween bus66039 group1FemaleHomeless)
+(matchBetween (objectActedOn hit67367 bus66039) (objectActedOn
+                                                 shelteringGroup1
+                                                 group1FemaleHomeless))
+(matchBetween Inaction68012 notChangeSupport)
+(matchBetween (Inaction Inaction68012) (Inaction notChangeSupport))
+(matchBetween (performedBy hit64076 train64488) (performedBy
+                                                 shelteringGroup2
+                                                 shelter1))
+(matchBetween you64335 you1143)
+(matchBetween save64374 FinancialAssitanceToShelter1)
+(matchBetween (performedBy save64374 you64335) (performedBy
+                                                FinancialAssitanceToShelter1
+                                                you1143))
+(matchBetween (performedBy Inaction68012 you64335) (performedBy
+                                                    notChangeSupport
+                                                    you1143))
+(matchBetween (chosenItem SelectingSomething68011
+               redirect67174) (chosenItem GivingOrNotGivingAssistance
+                               FinancialAssitanceToShelter2))
+(matchBetween (chosenItem SelectingSomething68011
+               Inaction68012) (chosenItem GivingOrNotGivingAssistance
+                               notChangeSupport))
+(matchBetween (choices SelectingSomething68011 Inaction68012) (choices
+                                                               GivingOrNotGivingAssistance
+                                                               notChangeSupport))
+(matchBetween (choices SelectingSomething68011 redirect67174) (choices
+                                                               GivingOrNotGivingAssistance
+                                                               FinancialAssitanceToShelter2))
+(matchBetween (performedBy redirect67174 you64335) (performedBy
+                                                    FinancialAssitanceToShelter2
+                                                    you1143))
+(matchBetween redirect67174 FinancialAssitanceToShelter2)
+(matchBetween (SelectingSomething
+               SelectingSomething68011) (SelectingSomething
+                                         GivingOrNotGivingAssistance))
+(matchBetween SelectingSomething68011 GivingOrNotGivingAssistance)
+(matchBetween (performedBy hit67367 train64488) (performedBy
+                                                 shelteringGroup1
+                                                 shelter1))
+(matchBetween train64488 shelter1)
+(matchBetween (objectActedOn hit64076 bus64133) (objectActedOn
+                                                 shelteringGroup2
+                                                 group2FemaleHomeless))
+(matchBetween bus64133 group2FemaleHomeless)
+(matchBetween hit64076 shelteringGroup2)
+(matchBetween (PreventingSomething
+               PreventingSomething68010) (PreventingSomething
+                                          preventingHarmingGroup2))
+(matchBetween PreventingSomething68010 preventingHarmingGroup2)

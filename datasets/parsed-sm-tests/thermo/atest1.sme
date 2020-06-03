@@ -1,0 +1,408 @@
+(ideal-gas air)
+(abstract-hx heater1 h1-in h1-out)
+(substance-of h1-in air)
+(substance-of h1-out air)
+(heat-source heater1)
+(thermodynamic-stuff h1-in)
+(thermodynamic-stuff h1-out)
+(thermodynamic-cycle cycle)
+(heat-flows-in cycle)
+(q heater1)
+(the-set (q heater1))
+(members (heat-flows-in cycle) (the-set (q heater1)))
+(and (members (heat-flows-in cycle) (the-set (q heater1)))
+     (thermodynamic-cycle cycle))
+(and (nvalue (q heater1) 20068.275)
+     (equation (= (q-in cycle) (+ (q heater1)))))
+(and (nvalue (spec-q heater1) 20068.275)
+     (nvalue (mass-flow heater1) 1.0)
+     (equation
+      (= (spec-q heater1) (/ (q heater1) (mass-flow heater1)))))
+(and (nvalue (mass-flow h1-in) 1.0)
+     (equation (= (mass-flow h1-in) (mass-flow heater1))))
+(and (nvalue (spec-h h1-out) 344321.44)
+     (nvalue (spec-h h1-in) 324253.16)
+     (equation (= (spec-h h1-out) (+ (spec-h h1-in) (spec-q heater1)))))
+(and (substance-of h1-in air) (ideal-gas air))
+(and (nvalue (t h1-in) 323.15)
+     (equation (= (spec-h h1-in) (* (cp air) (t h1-in))))
+     (nvalue (cp air) 1003.4138))
+(and (nvalue (spec-h h1-in) 324253.16) (nvalue (mass-flow h1-in) 1.0)
+     (equation (= (spec-h h1-in) (/ (h h1-in) (mass-flow h1-in)))))
+(and (substance-of h1-out air) (ideal-gas air))
+(and (nvalue (t h1-out) 343.15)
+     (equation (= (spec-h h1-out) (* (cp air) (t h1-out))))
+     (nvalue (cp air) 1003.4138))
+(and (nvalue (spec-h h1-out) 344321.44) (nvalue (mass-flow h1-out) 1.0)
+     (equation (= (spec-h h1-out) (/ (h h1-out) (mass-flow h1-out)))))
+(and (nvalue (spec-u h1-out) 245943.89) (nvalue (mass-flow h1-out) 1.0)
+     (equation (= (spec-u h1-out) (/ (u h1-out) (mass-flow h1-out)))))
+(and (nvalue (mass-flow h1-in) 1.0)
+     (equation (= (mass-flow h1-in) (mass-flow h1-out))))
+(q-in cycle)
+(+ (q heater1))
+(+ (spec-h h1-in) (spec-q heater1))
+(= (q-in cycle) (+ (q heater1)))
+(= (spec-q heater1) (/ (q heater1) (mass-flow heater1)))
+(= (mass-flow h1-in) (mass-flow heater1))
+(= (spec-h h1-out) (+ (spec-h h1-in) (spec-q heater1)))
+(= (spec-h h1-in) (* (cp air) (t h1-in)))
+(= (spec-h h1-in) (/ (h h1-in) (mass-flow h1-in)))
+(= (spec-h h1-out) (* (cp air) (t h1-out)))
+(= (spec-h h1-out) (/ (h h1-out) (mass-flow h1-out)))
+(= (spec-u h1-out) (/ (u h1-out) (mass-flow h1-out)))
+(= (mass-flow h1-in) (mass-flow h1-out))
+(equation (= (q-in cycle) (+ (q heater1))))
+(equation (= (spec-q heater1) (/ (q heater1) (mass-flow heater1))))
+(equation (= (mass-flow h1-in) (mass-flow heater1)))
+(equation (= (spec-h h1-out) (+ (spec-h h1-in) (spec-q heater1))))
+(equation (= (spec-h h1-in) (* (cp air) (t h1-in))))
+(equation (= (spec-h h1-in) (/ (h h1-in) (mass-flow h1-in))))
+(equation (= (spec-h h1-out) (* (cp air) (t h1-out))))
+(equation (= (spec-h h1-out) (/ (h h1-out) (mass-flow h1-out))))
+(equation (= (spec-u h1-out) (/ (u h1-out) (mass-flow h1-out))))
+(equation (= (mass-flow h1-in) (mass-flow h1-out)))
+(nvalue (q-in cycle) 20068.275)
+(nvalue (q heater1) 20068.275)
+(nvalue (spec-q heater1) 20068.275)
+(nvalue (mass-flow heater1) 1.0)
+(nvalue (mass-flow h1-in) 1.0)
+(nvalue (spec-h h1-out) 344321.44)
+(nvalue (spec-h h1-in) 324253.16)
+(nvalue (t h1-in) 323.15)
+(nvalue (cp air) 1003.4138)
+(nvalue (h h1-in) 324253.16)
+(nvalue (t h1-out) 343.15)
+(nvalue (h h1-out) 344321.44)
+(nvalue (mass-flow h1-out) 1.0)
+(nvalue (u h1-out) 245943.89)
+(nvalue (spec-u h1-out) 245943.89)
+(spec-q heater1)
+(mass-flow heater1)
+(mass-flow h1-in)
+(mass-flow h1-out)
+(/ (q heater1) (mass-flow heater1))
+(/ (h h1-in) (mass-flow h1-in))
+(/ (h h1-out) (mass-flow h1-out))
+(/ (u h1-out) (mass-flow h1-out))
+(spec-h h1-out)
+(spec-h h1-in)
+(cp air)
+(t h1-in)
+(t h1-out)
+(* (cp air) (t h1-in))
+(* (cp air) (t h1-out))
+(h h1-in)
+(h h1-out)
+(u h1-out)
+(spec-u h1-out)
+(derived-by (nvalue (mass-flow h1-out) 1.0)
+ (and (nvalue (mass-flow h1-in) 1.0)
+      (equation (= (mass-flow h1-in) (mass-flow h1-out)))))
+(implies (thermodynamic-stuff h1-out)
+ (equation (= (spec-u h1-out) (/ (u h1-out) (mass-flow h1-out)))))
+(derived-by (nvalue (u h1-out) 245943.89)
+ (and (nvalue (spec-u h1-out) 245943.89)
+      (nvalue (mass-flow h1-out) 1.0)
+      (equation (= (spec-u h1-out) (/ (u h1-out) (mass-flow h1-out))))))
+(derived-by (nvalue (h h1-out) 344321.44)
+ (and (nvalue (spec-h h1-out) 344321.44)
+      (nvalue (mass-flow h1-out) 1.0)
+      (equation (= (spec-h h1-out) (/ (h h1-out) (mass-flow h1-out))))))
+(implies (thermodynamic-stuff h1-out)
+ (equation (= (spec-h h1-out) (/ (h h1-out) (mass-flow h1-out)))))
+(derived-by (nvalue (spec-h h1-out) 344321.44)
+ (and (nvalue (t h1-out) 343.15)
+      (equation (= (spec-h h1-out) (* (cp air) (t h1-out))))
+      (nvalue (cp air) 1003.4138)))
+(implies (and (substance-of h1-out air) (ideal-gas air))
+ (equation (= (spec-h h1-out) (* (cp air) (t h1-out)))))
+(derived-by (nvalue (h h1-in) 324253.16)
+ (and (nvalue (spec-h h1-in) 324253.16) (nvalue (mass-flow h1-in) 1.0)
+      (equation (= (spec-h h1-in) (/ (h h1-in) (mass-flow h1-in))))))
+(implies (thermodynamic-stuff h1-in)
+ (equation (= (spec-h h1-in) (/ (h h1-in) (mass-flow h1-in)))))
+(derived-by (nvalue (spec-h h1-in) 324253.16)
+ (and (nvalue (t h1-in) 323.15)
+      (equation (= (spec-h h1-in) (* (cp air) (t h1-in))))
+      (nvalue (cp air) 1003.4138)))
+(implies (and (substance-of h1-in air) (ideal-gas air))
+ (equation (= (spec-h h1-in) (* (cp air) (t h1-in)))))
+(implies (abstract-hx heater1 h1-in h1-out)
+ (equation (= (spec-h h1-out) (+ (spec-h h1-in) (spec-q heater1)))))
+(derived-by (nvalue (spec-q heater1) 20068.275)
+ (and (nvalue (spec-h h1-out) 344321.44)
+      (nvalue (spec-h h1-in) 324253.16)
+      (equation
+       (= (spec-h h1-out) (+ (spec-h h1-in) (spec-q heater1))))))
+(derived-by (nvalue (mass-flow heater1) 1.0)
+ (and (nvalue (mass-flow h1-in) 1.0)
+      (equation (= (mass-flow h1-in) (mass-flow heater1)))))
+(implies (abstract-hx heater1 h1-in h1-out)
+ (equation (= (spec-q heater1) (/ (q heater1) (mass-flow heater1)))))
+(derived-by (nvalue (q heater1) 20068.275)
+ (and (nvalue (spec-q heater1) 20068.275)
+      (nvalue (mass-flow heater1) 1.0)
+      (equation
+       (= (spec-q heater1) (/ (q heater1) (mass-flow heater1))))))
+(derived-by (nvalue (q-in cycle) 20068.275)
+ (and (nvalue (q heater1) 20068.275)
+      (equation (= (q-in cycle) (+ (q heater1))))))
+(implies
+ (and (members (heat-flows-in cycle) (the-set (q heater1)))
+      (thermodynamic-cycle cycle))
+ (equation (= (q-in cycle) (+ (q heater1)))))
+(heater heater1 h1-in h1-out)
+(heat-flow (heat-source heater1) (heat-source heater1) h1-in h1-out)
+(fluid-flow h1-in h1-out)
+(gas h1-out)
+(gas h1-in)
++++++++++++
+(thermodynamic-cycle cycle)
+(heater heater2 h2-inlet h2-outlet)
+(thermodynamic-stuff h2-outlet)
+(thermodynamic-stuff h2-inlet)
+(heat-source heater2)
+(heat-flow (heat-source heater2) (heat-source heater2) h2-inlet
+ h2-outlet)
+(fluid-flow h2-inlet h2-outlet)
+(substance-of h2-outlet helium)
+(substance-of h2-inlet helium)
+(gas h2-outlet)
+(gas h2-inlet)
+(t h2-outlet)
+(t h2-inlet)
+(nvalue (t h2-outlet) 373.15)
+(nvalue (t h2-inlet) 313.15)
+(nvalue (mass-flow h2-inlet) 2.0)
+(mass-flow h2-inlet)
+(mass-flow heater2)
+(mass-flow h2-outlet)
+(q heater2)
+(q-in cycle)
+(+ (q heater2))
+(+ (spec-h h2-inlet) (spec-q heater2))
+(= (q-in cycle) (+ (q heater2)))
+(= (spec-q heater2) (/ (q heater2) (mass-flow heater2)))
+(= (mass-flow h2-inlet) (mass-flow heater2))
+(= (spec-h h2-outlet) (+ (spec-h h2-inlet) (spec-q heater2)))
+(= (spec-h h2-inlet) (* (cp helium) (t h2-inlet)))
+(= (spec-h h2-inlet) (/ (h h2-inlet) (mass-flow h2-inlet)))
+(= (spec-h h2-outlet) (* (cp helium) (t h2-outlet)))
+(= (spec-h h2-outlet) (/ (h h2-outlet) (mass-flow h2-outlet)))
+(= (spec-u h2-outlet) (/ (u h2-outlet) (mass-flow h2-outlet)))
+(= (mass-flow h2-inlet) (mass-flow h2-outlet))
+(equation (= (q-in cycle) (+ (q heater2))))
+(equation (= (spec-q heater2) (/ (q heater2) (mass-flow heater2))))
+(equation (= (mass-flow h2-inlet) (mass-flow heater2)))
+(equation (= (spec-h h2-outlet) (+ (spec-h h2-inlet) (spec-q heater2))))
+(equation (= (spec-h h2-inlet) (* (cp helium) (t h2-inlet))))
+(equation (= (spec-h h2-inlet) (/ (h h2-inlet) (mass-flow h2-inlet))))
+(equation (= (spec-h h2-outlet) (* (cp helium) (t h2-outlet))))
+(equation
+ (= (spec-h h2-outlet) (/ (h h2-outlet) (mass-flow h2-outlet))))
+(equation
+ (= (spec-u h2-outlet) (/ (u h2-outlet) (mass-flow h2-outlet))))
+(equation (= (mass-flow h2-inlet) (mass-flow h2-outlet)))
+(spec-q heater2)
+(/ (q heater2) (mass-flow heater2))
+(/ (h h2-inlet) (mass-flow h2-inlet))
+(/ (h h2-outlet) (mass-flow h2-outlet))
+(/ (u h2-outlet) (mass-flow h2-outlet))
+(spec-h h2-outlet)
+(spec-h h2-inlet)
+(cp helium)
+(* (cp helium) (t h2-inlet))
+(* (cp helium) (t h2-outlet))
+(h h2-inlet)
+(h h2-outlet)
+(spec-u h2-outlet)
+(u h2-outlet)
++++++++++++
+(matchBetween (* (cp air) (t h1-out)) (* (cp helium) (t h2-outlet)))
+(matchBetween (= (spec-h h1-out) (* (cp air) (t h1-out))) (=
+                                                           (spec-h
+                                                            h2-outlet)
+                                                           (*
+                                                            (cp helium)
+                                                            (t
+                                                             h2-outlet))))
+(matchBetween (equation
+               (= (spec-h h1-out) (* (cp air) (t h1-out)))) (equation
+                                                             (=
+                                                              (spec-h
+                                                               h2-outlet)
+                                                              (*
+                                                               (cp
+                                                                helium)
+                                                               (t
+                                                                h2-outlet)))))
+(matchBetween (mass-flow h1-out) (mass-flow h2-outlet))
+(matchBetween (h h1-out) (h h2-outlet))
+(matchBetween (/ (h h1-out) (mass-flow h1-out)) (/
+                                                 (h h2-outlet)
+                                                 (mass-flow h2-outlet)))
+(matchBetween (= (spec-h h1-out) (/ (h h1-out) (mass-flow h1-out))) (=
+                                                                     (spec-h
+                                                                      h2-outlet)
+                                                                     (/
+                                                                      (h
+                                                                       h2-outlet)
+                                                                      (mass-flow
+                                                                       h2-outlet))))
+(matchBetween (equation
+               (= (spec-h h1-out)
+                  (/ (h h1-out) (mass-flow h1-out)))) (equation
+                                                       (=
+                                                        (spec-h
+                                                         h2-outlet)
+                                                        (/
+                                                         (h h2-outlet)
+                                                         (mass-flow
+                                                          h2-outlet)))))
+(matchBetween (cp air) (cp helium))
+(matchBetween (* (cp air) (t h1-in)) (* (cp helium) (t h2-inlet)))
+(matchBetween (= (spec-h h1-in) (* (cp air) (t h1-in))) (=
+                                                         (spec-h
+                                                          h2-inlet)
+                                                         (*
+                                                          (cp helium)
+                                                          (t
+                                                           h2-inlet))))
+(matchBetween (equation
+               (= (spec-h h1-in) (* (cp air) (t h1-in)))) (equation
+                                                           (=
+                                                            (spec-h
+                                                             h2-inlet)
+                                                            (*
+                                                             (cp
+                                                              helium)
+                                                             (t
+                                                              h2-inlet)))))
+(matchBetween (h h1-in) (h h2-inlet))
+(matchBetween (/ (h h1-in) (mass-flow h1-in)) (/
+                                               (h h2-inlet)
+                                               (mass-flow h2-inlet)))
+(matchBetween (= (spec-h h1-in) (/ (h h1-in) (mass-flow h1-in))) (=
+                                                                  (spec-h
+                                                                   h2-inlet)
+                                                                  (/
+                                                                   (h
+                                                                    h2-inlet)
+                                                                   (mass-flow
+                                                                    h2-inlet))))
+(matchBetween (equation
+               (= (spec-h h1-in)
+                  (/ (h h1-in) (mass-flow h1-in)))) (equation
+                                                     (=
+                                                      (spec-h h2-inlet)
+                                                      (/
+                                                       (h h2-inlet)
+                                                       (mass-flow
+                                                        h2-inlet)))))
+(matchBetween (t h1-out) (t h2-outlet))
+(matchBetween 343.15 373.15)
+(matchBetween (nvalue (t h1-out) 343.15) (nvalue (t h2-outlet) 373.15))
+(matchBetween (spec-h h1-in) (spec-h h2-inlet))
+(matchBetween (spec-h h1-out) (spec-h h2-outlet))
+(matchBetween (+ (spec-h h1-in) (spec-q heater1)) (+
+                                                   (spec-h h2-inlet)
+                                                   (spec-q heater2)))
+(matchBetween (= (spec-h h1-out)
+                 (+ (spec-h h1-in) (spec-q heater1))) (=
+                                                       (spec-h
+                                                        h2-outlet)
+                                                       (+
+                                                        (spec-h
+                                                         h2-inlet)
+                                                        (spec-q
+                                                         heater2))))
+(matchBetween (equation
+               (= (spec-h h1-out)
+                  (+ (spec-h h1-in) (spec-q heater1)))) (equation
+                                                         (=
+                                                          (spec-h
+                                                           h2-outlet)
+                                                          (+
+                                                           (spec-h
+                                                            h2-inlet)
+                                                           (spec-q
+                                                            heater2)))))
+(matchBetween (t h1-in) (t h2-inlet))
+(matchBetween 323.15 313.15)
+(matchBetween (nvalue (t h1-in) 323.15) (nvalue (t h2-inlet) 313.15))
+(matchBetween (= (mass-flow h1-in) (mass-flow heater1)) (=
+                                                         (mass-flow
+                                                          h2-inlet)
+                                                         (mass-flow
+                                                          heater2)))
+(matchBetween (equation
+               (= (mass-flow h1-in) (mass-flow heater1))) (equation
+                                                           (=
+                                                            (mass-flow
+                                                             h2-inlet)
+                                                            (mass-flow
+                                                             heater2))))
+(matchBetween (q-in cycle) (q-in cycle))
+(matchBetween (+ (q heater1)) (+ (q heater2)))
+(matchBetween (= (q-in cycle) (+ (q heater1))) (=
+                                                (q-in cycle)
+                                                (+ (q heater2))))
+(matchBetween (equation (= (q-in cycle) (+ (q heater1)))) (equation
+                                                           (=
+                                                            (q-in
+                                                             cycle)
+                                                            (+
+                                                             (q
+                                                              heater2)))))
+(matchBetween (mass-flow heater1) (mass-flow heater2))
+(matchBetween (/ (q heater1) (mass-flow heater1)) (/
+                                                   (q heater2)
+                                                   (mass-flow heater2)))
+(matchBetween (spec-q heater1) (spec-q heater2))
+(matchBetween (= (spec-q heater1)
+                 (/ (q heater1) (mass-flow heater1))) (=
+                                                       (spec-q heater2)
+                                                       (/
+                                                        (q heater2)
+                                                        (mass-flow
+                                                         heater2))))
+(matchBetween (equation
+               (= (spec-q heater1)
+                  (/ (q heater1) (mass-flow heater1)))) (equation
+                                                         (=
+                                                          (spec-q
+                                                           heater2)
+                                                          (/
+                                                           (q heater2)
+                                                           (mass-flow
+                                                            heater2)))))
+(matchBetween 1.0 2.0)
+(matchBetween (mass-flow h1-in) (mass-flow h2-inlet))
+(matchBetween (nvalue (mass-flow h1-in) 1.0) (nvalue
+                                              (mass-flow h2-inlet)
+                                              2.0))
+(matchBetween (q heater1) (q heater2))
+(matchBetween h1-in h2-inlet)
+(matchBetween (thermodynamic-stuff h1-in) (thermodynamic-stuff
+                                           h2-inlet))
+(matchBetween (gas h1-in) (gas h2-inlet))
+(matchBetween air helium)
+(matchBetween (substance-of h1-in air) (substance-of h2-inlet helium))
+(matchBetween (fluid-flow h1-in h1-out) (fluid-flow h2-inlet h2-outlet))
+(matchBetween (heat-source heater1) (heat-source heater2))
+(matchBetween (heat-flow (heat-source heater1) (heat-source heater1)
+               h1-in h1-out) (heat-flow (heat-source heater2)
+                              (heat-source heater2) h2-inlet h2-outlet))
+(matchBetween (heater heater1 h1-in h1-out) (heater
+                                             heater2
+                                             h2-inlet
+                                             h2-outlet))
+(matchBetween heater1 heater2)
+(matchBetween (substance-of h1-out air) (substance-of h2-outlet helium))
+(matchBetween (gas h1-out) (gas h2-outlet))
+(matchBetween (thermodynamic-stuff h1-out) (thermodynamic-stuff
+                                            h2-outlet))
+(matchBetween h1-out h2-outlet)
+(matchBetween (thermodynamic-cycle cycle) (thermodynamic-cycle cycle))
+(matchBetween cycle cycle)

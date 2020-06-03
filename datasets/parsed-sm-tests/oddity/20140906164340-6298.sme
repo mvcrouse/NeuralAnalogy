@@ -1,0 +1,36 @@
+(colinearElements Element-7 Element-6)
+(Proximal-Similar-Shape-Group Element-7)
+(2D-Shape-Generic Element-6)
+(2D-Shape-Generic Element-7)
++++++++++++
+((ObjectsColoredFn BlackColor) Object-1170)
+((ObjectsColoredFn BlackColor) Object-1169)
+(2D-Shape-Generic Object-1169)
+(2D-Shape-Generic Object-1170)
+(2D-Shape-Generic Group-15)
+(Fully-Symmetric-Shape Object-1169)
+(Fully-Symmetric-Shape Object-1170)
+(2D-Shape-Curved Object-1169)
+(2D-Shape-Curved Object-1170)
+(2D-Shape-Ellipse Object-1169)
+(2D-Shape-Ellipse Object-1170)
+(2D-Shape-Convex Object-1169)
+(2D-Shape-Convex Object-1170)
+(2D-Shape-Closed Object-1169)
+(2D-Shape-Closed Object-1170)
+((ObjectsBorderColoredFn BlackColor) Object-1170)
+((ObjectsBorderColoredFn BlackColor) Object-1169)
+(colinearElements Group-15 Object-1169)
+(colinearElements Group-15 Object-1170)
+(Proximal-Similar-Shape-Group Group-15)
++++++++++++
+(matchBetween Element-7 Group-15)
+(matchBetween (Proximal-Similar-Shape-Group
+               Element-7) (Proximal-Similar-Shape-Group Group-15))
+(matchBetween (colinearElements Element-7 Element-6) (colinearElements
+                                                      Group-15
+                                                      Object-1170))
+(matchBetween (2D-Shape-Generic Element-7) (2D-Shape-Generic Group-15))
+(matchBetween (2D-Shape-Generic Element-6) (2D-Shape-Generic
+                                            Object-1170))
+(matchBetween Element-6 Object-1170)

@@ -1,0 +1,29 @@
+((ShapeTypeFn 0) Object-674)
+(ShapeTypeFn2 Object-680)
+(elementContains Object-674 Object-680)
+(centeredOn Object-680 Object-674)
+(ObjectsBorderColoredFnBlackColor Object-674)
+(Implicit-Shape Object-680)
+(ObjectsColoredFnBlackColor Object-674)
++++++++++++
+(ObjectsColoredFnBlackColor Object-673)
+(Implicit-Shape Object-681)
+(ObjectsBorderColoredFnBlackColor Object-673)
+(onLeftHalfOf Object-681 Object-673)
+(onBottomHalfOf Object-681 Object-673)
+(elementContains Object-673 Object-681)
+(ShapeTypeFn2 Object-681)
+((ShapeTypeFn 1) Object-673)
++++++++++++
+(matchBetween Object-674 Object-673)
+(matchBetween (ObjectsBorderColoredFnBlackColor
+               Object-674) (ObjectsBorderColoredFnBlackColor
+                            Object-673))
+(matchBetween (ObjectsColoredFnBlackColor
+               Object-674) (ObjectsColoredFnBlackColor Object-673))
+(matchBetween (elementContains Object-674 Object-680) (elementContains
+                                                       Object-673
+                                                       Object-681))
+(matchBetween (Implicit-Shape Object-680) (Implicit-Shape Object-681))
+(matchBetween (ShapeTypeFn2 Object-680) (ShapeTypeFn2 Object-681))
+(matchBetween Object-680 Object-681)

@@ -1,0 +1,152 @@
+(edgesDisconnected Edge-3401 Edge-3399)
+(edgesDisconnected Edge-3402 Edge-3400)
+(convexAngleBetweenEdges Edge-3402 Edge-3401)
+(convexAngleBetweenEdges Edge-3401 Edge-3400)
+(convexAngleBetweenEdges Edge-3400 Edge-3399)
+(convexAngleBetweenEdges Edge-3399 Edge-3402)
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-3399 Edge-3402)
+ (convexAngleBetweenEdges Edge-3402 Edge-3401))
+(perpendicularCorner (convexAngleBetweenEdges Edge-3399 Edge-3402))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-3400 Edge-3399)
+ (convexAngleBetweenEdges Edge-3399 Edge-3402))
+(perpendicularCorner (convexAngleBetweenEdges Edge-3400 Edge-3399))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-3401 Edge-3400)
+ (convexAngleBetweenEdges Edge-3400 Edge-3399))
+(perpendicularCorner (convexAngleBetweenEdges Edge-3401 Edge-3400))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-3402 Edge-3401)
+ (convexAngleBetweenEdges Edge-3401 Edge-3400))
+(perpendicularCorner (convexAngleBetweenEdges Edge-3402 Edge-3401))
+(edgesParallel Edge-3402 Edge-3400)
+(parallelEdgeRelation (edgesDisconnected Edge-3402 Edge-3400))
+(edgesParallel Edge-3401 Edge-3399)
+(parallelEdgeRelation (edgesDisconnected Edge-3401 Edge-3399))
+(edgesPerpendicular Edge-3400 Edge-3399)
+(edgesPerpendicular Edge-3401 Edge-3400)
+(edgesPerpendicular Edge-3402 Edge-3399)
+(edgesPerpendicular Edge-3402 Edge-3401)
+(lengthShort Edge-3401)
+(lengthShort Edge-3399)
+(lengthLong Edge-3400)
+(lengthLong Edge-3402)
+(axisAligned Edge-3399)
+(PerceptualEdge Edge-3399)
+(StraightEdge Edge-3399)
+(axisAligned Edge-3400)
+(PerceptualEdge Edge-3400)
+(StraightEdge Edge-3400)
+(axisAligned Edge-3401)
+(PerceptualEdge Edge-3401)
+(StraightEdge Edge-3401)
+(axisAligned Edge-3402)
+(PerceptualEdge Edge-3402)
+(StraightEdge Edge-3402)
++++++++++++
+(StraightEdge Edge-3411)
+(StraightEdge Edge-3410)
+(StraightEdge Edge-3409)
+(StraightEdge Edge-3408)
+(PerceptualEdge Edge-3411)
+(PerceptualEdge Edge-3410)
+(PerceptualEdge Edge-3409)
+(PerceptualEdge Edge-3408)
+(edgesDisconnected Edge-3410 Edge-3408)
+(edgesDisconnected Edge-3411 Edge-3409)
+(parallelEdgeRelation (edgesDisconnected Edge-3410 Edge-3408))
+(parallelEdgeRelation (edgesDisconnected Edge-3411 Edge-3409))
+(edgesParallel Edge-3410 Edge-3408)
+(edgesParallel Edge-3411 Edge-3409)
+(convexAngleBetweenEdges Edge-3411 Edge-3410)
+(convexAngleBetweenEdges Edge-3410 Edge-3409)
+(convexAngleBetweenEdges Edge-3409 Edge-3408)
+(convexAngleBetweenEdges Edge-3408 Edge-3411)
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-3411 Edge-3410)
+ (convexAngleBetweenEdges Edge-3410 Edge-3409))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-3410 Edge-3409)
+ (convexAngleBetweenEdges Edge-3409 Edge-3408))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-3409 Edge-3408)
+ (convexAngleBetweenEdges Edge-3408 Edge-3411))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-3408 Edge-3411)
+ (convexAngleBetweenEdges Edge-3411 Edge-3410))
+(adjacentObtuseAcuteAngles
+ (convexAngleBetweenEdges Edge-3411 Edge-3410)
+ (convexAngleBetweenEdges Edge-3410 Edge-3409))
+(adjacentObtuseAcuteAngles
+ (convexAngleBetweenEdges Edge-3409 Edge-3408)
+ (convexAngleBetweenEdges Edge-3408 Edge-3411))
+(adjacentAcuteObtuseAngles
+ (convexAngleBetweenEdges Edge-3410 Edge-3409)
+ (convexAngleBetweenEdges Edge-3409 Edge-3408))
+(adjacentAcuteObtuseAngles
+ (convexAngleBetweenEdges Edge-3408 Edge-3411)
+ (convexAngleBetweenEdges Edge-3411 Edge-3410))
++++++++++++
+(matchBetween Edge-3401 Edge-3410)
+(matchBetween (PerceptualEdge Edge-3401) (PerceptualEdge Edge-3410))
+(matchBetween Edge-3399 Edge-3408)
+(matchBetween (PerceptualEdge Edge-3399) (PerceptualEdge Edge-3408))
+(matchBetween (StraightEdge Edge-3401) (StraightEdge Edge-3410))
+(matchBetween (StraightEdge Edge-3399) (StraightEdge Edge-3408))
+(matchBetween (edgesParallel Edge-3402 Edge-3400) (edgesParallel
+                                                   Edge-3411
+                                                   Edge-3409))
+(matchBetween (edgesDisconnected Edge-3402
+               Edge-3400) (edgesDisconnected Edge-3411 Edge-3409))
+(matchBetween (parallelEdgeRelation
+               (edgesDisconnected Edge-3402
+                Edge-3400)) (parallelEdgeRelation
+                             (edgesDisconnected Edge-3411 Edge-3409)))
+(matchBetween (convexAngleBetweenEdges Edge-3400
+               Edge-3399) (convexAngleBetweenEdges Edge-3409 Edge-3408))
+(matchBetween (cycleAdjacentAngles
+               (convexAngleBetweenEdges Edge-3401 Edge-3400)
+               (convexAngleBetweenEdges Edge-3400
+                Edge-3399)) (cycleAdjacentAngles
+                             (convexAngleBetweenEdges Edge-3410
+                              Edge-3409)
+                             (convexAngleBetweenEdges Edge-3409
+                              Edge-3408)))
+(matchBetween (cycleAdjacentAngles
+               (convexAngleBetweenEdges Edge-3399 Edge-3402)
+               (convexAngleBetweenEdges Edge-3402
+                Edge-3401)) (cycleAdjacentAngles
+                             (convexAngleBetweenEdges Edge-3408
+                              Edge-3411)
+                             (convexAngleBetweenEdges Edge-3411
+                              Edge-3410)))
+(matchBetween (cycleAdjacentAngles
+               (convexAngleBetweenEdges Edge-3400 Edge-3399)
+               (convexAngleBetweenEdges Edge-3399
+                Edge-3402)) (cycleAdjacentAngles
+                             (convexAngleBetweenEdges Edge-3409
+                              Edge-3408)
+                             (convexAngleBetweenEdges Edge-3408
+                              Edge-3411)))
+(matchBetween (convexAngleBetweenEdges Edge-3399
+               Edge-3402) (convexAngleBetweenEdges Edge-3408 Edge-3411))
+(matchBetween (cycleAdjacentAngles
+               (convexAngleBetweenEdges Edge-3402 Edge-3401)
+               (convexAngleBetweenEdges Edge-3401
+                Edge-3400)) (cycleAdjacentAngles
+                             (convexAngleBetweenEdges Edge-3411
+                              Edge-3410)
+                             (convexAngleBetweenEdges Edge-3410
+                              Edge-3409)))
+(matchBetween (convexAngleBetweenEdges Edge-3402
+               Edge-3401) (convexAngleBetweenEdges Edge-3411 Edge-3410))
+(matchBetween (convexAngleBetweenEdges Edge-3401
+               Edge-3400) (convexAngleBetweenEdges Edge-3410 Edge-3409))
+(matchBetween (parallelEdgeRelation
+               (edgesDisconnected Edge-3401
+                Edge-3399)) (parallelEdgeRelation
+                             (edgesDisconnected Edge-3410 Edge-3408)))
+(matchBetween (edgesDisconnected Edge-3401
+               Edge-3399) (edgesDisconnected Edge-3410 Edge-3408))
+(matchBetween (edgesParallel Edge-3401 Edge-3399) (edgesParallel
+                                                   Edge-3410
+                                                   Edge-3408))
+(matchBetween (StraightEdge Edge-3400) (StraightEdge Edge-3409))
+(matchBetween (StraightEdge Edge-3402) (StraightEdge Edge-3411))
+(matchBetween (PerceptualEdge Edge-3400) (PerceptualEdge Edge-3409))
+(matchBetween Edge-3400 Edge-3409)
+(matchBetween (PerceptualEdge Edge-3402) (PerceptualEdge Edge-3411))
+(matchBetween Edge-3402 Edge-3411)

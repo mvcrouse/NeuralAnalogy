@@ -1,0 +1,35 @@
+(Centered-Element Object-14)
+(ObjectsBorderColoredFnBlackColor Object-14)
+(2D-Shape-AxisAligned Object-14)
+(2D-Shape-Closed Object-14)
+(2D-Shape-Perpendicular Object-14)
+(2D-Shape-Convex Object-14)
+(2D-Shape-Straight Object-14)
+(Fully-Symmetric-Shape Object-14)
+(2D-Shape-Generic Object-14)
+((ObjectsColoredFn BlackColor) Object-14)
++++++++++++
+((ObjectsColoredFn WhiteColor) Object-15)
+(2D-Shape-Generic Object-15)
+(Perpendicular-Symmetric-Shape Object-15)
+(2D-Shape-Straight Object-15)
+(2D-Shape-Convex Object-15)
+(2D-Shape-Perpendicular Object-15)
+(2D-Shape-Closed Object-15)
+(2D-Shape-AxisAligned Object-15)
+(ObjectsBorderColoredFnBlackColor Object-15)
+(Centered-Element Object-15)
++++++++++++
+(matchBetween (ObjectsBorderColoredFnBlackColor
+               Object-14) (ObjectsBorderColoredFnBlackColor Object-15))
+(matchBetween (2D-Shape-Closed Object-14) (2D-Shape-Closed Object-15))
+(matchBetween (2D-Shape-Convex Object-14) (2D-Shape-Convex Object-15))
+(matchBetween (2D-Shape-Generic Object-14) (2D-Shape-Generic Object-15))
+(matchBetween (2D-Shape-Straight Object-14) (2D-Shape-Straight
+                                             Object-15))
+(matchBetween (2D-Shape-Perpendicular
+               Object-14) (2D-Shape-Perpendicular Object-15))
+(matchBetween (2D-Shape-AxisAligned Object-14) (2D-Shape-AxisAligned
+                                                Object-15))
+(matchBetween (Centered-Element Object-14) (Centered-Element Object-15))
+(matchBetween Object-14 Object-15)

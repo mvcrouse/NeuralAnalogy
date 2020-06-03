@@ -1,0 +1,196 @@
+(sacredValueChoice applyProgram2)
+(sacredValueChoice notChangeProgram)
+(affectsSigLargerGroup applyProgram2)
+(affectsSigLargerGroup notChangeProgram)
+(uninferredSentence (affectsSigLargerGroup applyProgram2))
+(uninferredSentence (affectsSigLargerGroup notChangeProgram))
+(uninferredSentence (directlyResponsible you8116 notChangeProgram))
+(uninferredSentence (preventsAlternativeNegativeOutcome applyProgram2))
+(uninferredSentence (usedAsMeansToPreventNegativeOutcome applyProgram2))
+(directlyResponsible you8116 applyProgram2)
+(directlyResponsible you8116 notChangeProgram)
+(preventsAlternativeNegativeOutcome applyProgram2)
+(usedAsMeansToPreventNegativeOutcome applyProgram2)
+(and (sacredValueChoice applyProgram2)
+     (sacredValueChoice notChangeProgram)
+     (uninferredSentence (affectsSigLargerGroup applyProgram2))
+     (uninferredSentence (affectsSigLargerGroup notChangeProgram))
+     (directlyResponsible you8116 applyProgram2)
+     (uninferredSentence
+      (directlyResponsible you8116 notChangeProgram))
+     (uninferredSentence
+      (preventsAlternativeNegativeOutcome applyProgram2))
+     (uninferredSentence
+      (usedAsMeansToPreventNegativeOutcome applyProgram2)))
+(rightChoice notChangeProgram)
+(chosenItem ChangeOrNotChangeTheProgram notChangeProgram)
+(chosenItem ChangeOrNotChangeTheProgram applyProgram2)
+((GroupFn MedicalPatient) CancerPatients)
+((GroupFn MedicalPatient) CancerPatientsGroup1)
+((GroupFn MedicalPatient) CancerPatientsGroup2)
+(IntelligentAgent you8116)
+(Cancer cancer2)
+(Cancer cancer1)
+(Dying DyingCancerPatientsGroup1)
+(Dying DyingCancerPatientsGroup2)
+(DrugAdministrationRouteType cancerProgram1)
+(DrugAdministrationRouteType cancerProgram2)
+(PreventingSomething preventingDyingCancerPatientsGroup1)
+(PreventingSomething preventingDyingCancerPatientsGroup2)
+(Inaction notChangeProgram)
+(SelectingSomething ChangeOrNotChangeTheProgram)
+(groupCardinality CancerPatientsGroup1 100)
+(groupCardinality CancerPatientsGroup2 1000)
+(subGroups CancerPatients CancerPatientsGroup1)
+(subGroups CancerPatients CancerPatientsGroup2)
+(objectActedOn DyingCancerPatientsGroup1 CancerPatientsGroup1)
+(objectActedOn DyingCancerPatientsGroup2 CancerPatientsGroup2)
+(diseaseTypeCurableByTreatmentType cancer1 cancerProgram1)
+(diseaseTypeCurableByTreatmentType cancer2 cancerProgram2)
+(preventedProp preventingDyingCancerPatientsGroup1
+ DyingCancerPatientsGroup1)
+(preventedProp preventingDyingCancerPatientsGroup2
+ DyingCancerPatientsGroup2)
+(choices ChangeOrNotChangeTheProgram applyProgram2)
+(choices ChangeOrNotChangeTheProgram notChangeProgram)
+(performedBy applyProgram2 you8116)
+(performedBy notChangeProgram you8116)
+(causes-PropProp (chosenItem ChangeOrNotChangeTheProgram applyProgram2)
+ preventingDyingCancerPatientsGroup2)
+(causes-PropProp (chosenItem ChangeOrNotChangeTheProgram applyProgram2)
+ DyingCancerPatientsGroup1)
+(causes-PropProp
+ (chosenItem ChangeOrNotChangeTheProgram notChangeProgram)
+ DyingCancerPatientsGroup2)
+(causes-PropProp
+ (chosenItem ChangeOrNotChangeTheProgram notChangeProgram)
+ preventingDyingCancerPatientsGroup1)
+(implies
+ (and (sacredValueChoice applyProgram2)
+      (sacredValueChoice notChangeProgram)
+      (uninferredSentence (affectsSigLargerGroup applyProgram2))
+      (uninferredSentence (affectsSigLargerGroup notChangeProgram))
+      (directlyResponsible you8116 applyProgram2)
+      (uninferredSentence
+       (directlyResponsible you8116 notChangeProgram))
+      (uninferredSentence
+       (preventsAlternativeNegativeOutcome applyProgram2))
+      (uninferredSentence
+       (usedAsMeansToPreventNegativeOutcome applyProgram2)))
+ (rightChoice notChangeProgram))
+(makeDecision you8116 notChangeProgram)
++++++++++++
+(IntelligentAgent you811)
+(NatureReserve natureReserve1)
+(NatureReserve natureReserve2)
+(landAreaOfRegion natureReserve1 200)
+(landAreaOfRegion natureReserve2 50)
+(Army-BranchOfService army2)
+(TransferringPossession TransferNaturePreserve2)
+(TransferringPossession TransferNaturePreserve1)
+(TransferringPossession GiveLand)
+(toPossessor TransferNaturePreserve2 army2)
+(objectOfPossessionTransfer TransferNaturePreserve2 natureReserve2)
+(objectOfPossessionTransfer TransferNaturePreserve1 natureReserve1)
+(fromPossessor TransferNaturePreserve1 army2)
+(Inaction NotGiveLand)
+(PreventingSomething preventingTransferNaturePreserve1)
+(PreventingSomething preventingTransferNaturePreserve2)
+(PreventingSomething armyDoesNotOwnNaturePreserve1)
+(preventedProp preventingTransferNaturePreserve1
+ TransferNaturePreserve1)
+(preventedProp preventingTransferNaturePreserve2
+ TransferNaturePreserve2)
+(causes-SitSit TransferNaturePreserve1 armyDoesNotOwnNaturePreserve1)
+(operatesInRegion army2 natureReserve1)
+(operatesInRegion army2 natureReserve2)
+(preventedSit armyDoesNotOwnNaturePreserve1
+ (operatesInRegion army2 natureReserve1))
+(SelectingSomething GivingOrNotGivingTheLand)
+(choices GivingOrNotGivingTheLand GiveLand)
+(choices GivingOrNotGivingTheLand NotGiveLand)
+(performedBy GiveLand you811)
+(performedBy NotGiveLand you811)
+(chosenItem GivingOrNotGivingTheLand GiveLand)
+(chosenItem GivingOrNotGivingTheLand NotGiveLand)
+(causes-PropProp (chosenItem GivingOrNotGivingTheLand GiveLand)
+ TransferNaturePreserve1)
+(causes-PropProp (chosenItem GivingOrNotGivingTheLand GiveLand)
+ TransferNaturePreserve2)
+(causes-PropProp TransferNaturePreserve2
+ (operatesInRegion army2 natureReserve2))
+(causes-PropProp (chosenItem GivingOrNotGivingTheLand NotGiveLand)
+ preventingTransferNaturePreserve1)
+(causes-PropProp (chosenItem GivingOrNotGivingTheLand NotGiveLand)
+ preventingTransferNaturePreserve2)
++++++++++++
+(matchBetween preventingDyingCancerPatientsGroup1 preventingTransferNaturePreserve2)
+(matchBetween (PreventingSomething
+               preventingDyingCancerPatientsGroup1) (PreventingSomething
+                                                     preventingTransferNaturePreserve2))
+(matchBetween notChangeProgram NotGiveLand)
+(matchBetween (Inaction notChangeProgram) (Inaction NotGiveLand))
+(matchBetween (performedBy notChangeProgram you8116) (performedBy
+                                                      NotGiveLand
+                                                      you811))
+(matchBetween (choices ChangeOrNotChangeTheProgram
+               applyProgram2) (choices GivingOrNotGivingTheLand
+                               GiveLand))
+(matchBetween (chosenItem ChangeOrNotChangeTheProgram
+               applyProgram2) (chosenItem GivingOrNotGivingTheLand
+                               GiveLand))
+(matchBetween preventingDyingCancerPatientsGroup2 TransferNaturePreserve1)
+(matchBetween (causes-PropProp
+               (chosenItem ChangeOrNotChangeTheProgram applyProgram2)
+               preventingDyingCancerPatientsGroup2) (causes-PropProp
+                                                     (chosenItem
+                                                      GivingOrNotGivingTheLand
+                                                      GiveLand)
+                                                     TransferNaturePreserve1))
+(matchBetween (causes-PropProp
+               (chosenItem ChangeOrNotChangeTheProgram applyProgram2)
+               DyingCancerPatientsGroup1) (causes-PropProp
+                                           (chosenItem
+                                            GivingOrNotGivingTheLand
+                                            GiveLand)
+                                           TransferNaturePreserve2))
+(matchBetween (causes-PropProp
+               (chosenItem ChangeOrNotChangeTheProgram
+                notChangeProgram)
+               preventingDyingCancerPatientsGroup1) (causes-PropProp
+                                                     (chosenItem
+                                                      GivingOrNotGivingTheLand
+                                                      NotGiveLand)
+                                                     preventingTransferNaturePreserve2))
+(matchBetween (causes-PropProp
+               (chosenItem ChangeOrNotChangeTheProgram
+                notChangeProgram)
+               DyingCancerPatientsGroup2) (causes-PropProp
+                                           (chosenItem
+                                            GivingOrNotGivingTheLand
+                                            NotGiveLand)
+                                           preventingTransferNaturePreserve1))
+(matchBetween DyingCancerPatientsGroup2 preventingTransferNaturePreserve1)
+(matchBetween (chosenItem ChangeOrNotChangeTheProgram
+               notChangeProgram) (chosenItem
+                                  GivingOrNotGivingTheLand
+                                  NotGiveLand))
+(matchBetween (choices ChangeOrNotChangeTheProgram
+               notChangeProgram) (choices
+                                  GivingOrNotGivingTheLand
+                                  NotGiveLand))
+(matchBetween (SelectingSomething
+               ChangeOrNotChangeTheProgram) (SelectingSomething
+                                             GivingOrNotGivingTheLand))
+(matchBetween ChangeOrNotChangeTheProgram GivingOrNotGivingTheLand)
+(matchBetween (performedBy applyProgram2 you8116) (performedBy
+                                                   GiveLand
+                                                   you811))
+(matchBetween applyProgram2 GiveLand)
+(matchBetween (preventedProp preventingDyingCancerPatientsGroup1
+               DyingCancerPatientsGroup1) (preventedProp
+                                           preventingTransferNaturePreserve2
+                                           TransferNaturePreserve2))
+(matchBetween DyingCancerPatientsGroup1 TransferNaturePreserve2)
+(matchBetween (IntelligentAgent you8116) (IntelligentAgent you811))
+(matchBetween you8116 you811)

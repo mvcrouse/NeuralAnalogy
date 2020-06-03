@@ -1,0 +1,24 @@
+(2D-Shape-Generic Element-3)
+(2D-Shape-Closed Element-3)
+(Centered-Element Element-3)
+(ObjectsColoredFnBlackColor Element-3)
+(ObjectsBorderColoredFnBlackColor Element-3)
++++++++++++
+(ObjectsColoredFnBlackColor Object-436)
+(2D-Shape-Generic Object-436)
+(Symmetric-Blob Object-436)
+(2D-Shape-Convex Object-436)
+(2D-Shape-Closed Object-436)
+(ObjectsBorderColoredFnBlackColor Object-436)
+(Centered-Element Object-436)
++++++++++++
+(matchBetween (2D-Shape-Closed Element-3) (2D-Shape-Closed Object-436))
+(matchBetween (ObjectsColoredFnBlackColor
+               Element-3) (ObjectsColoredFnBlackColor Object-436))
+(matchBetween (ObjectsBorderColoredFnBlackColor
+               Element-3) (ObjectsBorderColoredFnBlackColor Object-436))
+(matchBetween (Centered-Element Element-3) (Centered-Element
+                                            Object-436))
+(matchBetween (2D-Shape-Generic Element-3) (2D-Shape-Generic
+                                            Object-436))
+(matchBetween Element-3 Object-436)

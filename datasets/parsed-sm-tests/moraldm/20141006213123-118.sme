@@ -1,0 +1,190 @@
+(sacredValueChoice changeToArea2)
+(sacredValueChoice notChangeLocation)
+(affectsSigLargerGroup changeToArea2)
+(affectsSigLargerGroup notChangeLocation)
+(uninferredSentence (affectsSigLargerGroup changeToArea2))
+(uninferredSentence (affectsSigLargerGroup notChangeLocation))
+(uninferredSentence (directlyResponsible you8115 notChangeLocation))
+(uninferredSentence (preventsAlternativeNegativeOutcome changeToArea2))
+(uninferredSentence (usedAsMeansToPreventNegativeOutcome changeToArea2))
+(directlyResponsible you8115 changeToArea2)
+(directlyResponsible you8115 notChangeLocation)
+(preventsAlternativeNegativeOutcome changeToArea2)
+(usedAsMeansToPreventNegativeOutcome changeToArea2)
+(and (sacredValueChoice changeToArea2)
+     (sacredValueChoice notChangeLocation)
+     (uninferredSentence (affectsSigLargerGroup changeToArea2))
+     (uninferredSentence (affectsSigLargerGroup notChangeLocation))
+     (directlyResponsible you8115 changeToArea2)
+     (uninferredSentence
+      (directlyResponsible you8115 notChangeLocation))
+     (uninferredSentence
+      (preventsAlternativeNegativeOutcome changeToArea2))
+     (uninferredSentence
+      (usedAsMeansToPreventNegativeOutcome changeToArea2)))
+(rightChoice notChangeLocation)
+(chosenItem ChooseBetweenArea1or2 notChangeLocation)
+(chosenItem ChooseBetweenArea1or2 changeToArea2)
+(IntelligentAgent you8115)
+(Region-Underspecified region1)
+(Region-Underspecified region2)
+((GroupFn Person) PeopleInArea1)
+((GroupFn Person) PeopleInArea2)
+(Dying PeopleDyingInArea1)
+(Dying PeopleDyingInArea2)
+((GroupEventOfTypeFn VehicleAccident) TrafficAccidents)
+((PreventingFn (DyingFromEventTypeFn TrafficAccidents)) trafficProgram)
+(Translation-LocationChange changeToArea2)
+(Inaction notChangeLocation)
+(PreventingSomething preventingPeopleDyingInArea1)
+(PreventingSomething preventingPeopleDyingInArea2)
+(SelectingSomething ChooseBetweenArea1or2)
+(groupCardinality PeopleInArea1 50)
+(groupCardinality PeopleInArea2 200)
+(residesInRegion PeopleInArea1 region1)
+(residesInRegion PeopleInArea2 region2)
+(objectActedOn PeopleDyingInArea1 PeopleInArea1)
+(objectActedOn PeopleDyingInArea2 PeopleInArea2)
+(fromLocation changeToArea2 region1)
+(toLocation ChangeToArea2 region2)
+(preventedProp preventingPeopleDyingInArea1 PeopleDyingInArea1)
+(preventedProp preventingPeopleDyingInArea2 PeopleDyingInArea2)
+(choices ChooseBetweenArea1or2 changeToArea2)
+(choices ChooseBetweenArea1or2 notChangeLocation)
+(performedBy changeToArea2 you8115)
+(performedBy notChangeLocation you8115)
+(causes-PropProp (chosenItem ChooseBetweenArea1or2 changeToArea2)
+ preventingPeopleDyingInArea2)
+(causes-PropProp (chosenItem ChooseBetweenArea1or2 changeToArea2)
+ PeopleDyingInArea1)
+(causes-PropProp (chosenItem ChooseBetweenArea1or2 notChangeLocation)
+ PeopleDyingInArea2)
+(causes-PropProp (chosenItem ChooseBetweenArea1or2 notChangeLocation)
+ preventingPeopleDyingInArea1)
+(implies
+ (and (sacredValueChoice changeToArea2)
+      (sacredValueChoice notChangeLocation)
+      (uninferredSentence (affectsSigLargerGroup changeToArea2))
+      (uninferredSentence (affectsSigLargerGroup notChangeLocation))
+      (directlyResponsible you8115 changeToArea2)
+      (uninferredSentence
+       (directlyResponsible you8115 notChangeLocation))
+      (uninferredSentence
+       (preventsAlternativeNegativeOutcome changeToArea2))
+      (uninferredSentence
+       (usedAsMeansToPreventNegativeOutcome changeToArea2)))
+ (rightChoice notChangeLocation))
+(makeDecision you8115 notChangeLocation)
++++++++++++
+(IntelligentAgent you811)
+(NatureReserve natureReserve1)
+(NatureReserve natureReserve2)
+(landAreaOfRegion natureReserve1 200)
+(landAreaOfRegion natureReserve2 50)
+(Army-BranchOfService army2)
+(TransferringPossession TransferNaturePreserve2)
+(TransferringPossession TransferNaturePreserve1)
+(TransferringPossession GiveLand)
+(toPossessor TransferNaturePreserve2 army2)
+(objectOfPossessionTransfer TransferNaturePreserve2 natureReserve2)
+(objectOfPossessionTransfer TransferNaturePreserve1 natureReserve1)
+(fromPossessor TransferNaturePreserve1 army2)
+(Inaction NotGiveLand)
+(PreventingSomething preventingTransferNaturePreserve1)
+(PreventingSomething preventingTransferNaturePreserve2)
+(PreventingSomething armyDoesNotOwnNaturePreserve1)
+(preventedProp preventingTransferNaturePreserve1
+ TransferNaturePreserve1)
+(preventedProp preventingTransferNaturePreserve2
+ TransferNaturePreserve2)
+(causes-SitSit TransferNaturePreserve1 armyDoesNotOwnNaturePreserve1)
+(operatesInRegion army2 natureReserve1)
+(operatesInRegion army2 natureReserve2)
+(preventedSit armyDoesNotOwnNaturePreserve1
+ (operatesInRegion army2 natureReserve1))
+(SelectingSomething GivingOrNotGivingTheLand)
+(choices GivingOrNotGivingTheLand GiveLand)
+(choices GivingOrNotGivingTheLand NotGiveLand)
+(performedBy GiveLand you811)
+(performedBy NotGiveLand you811)
+(chosenItem GivingOrNotGivingTheLand GiveLand)
+(chosenItem GivingOrNotGivingTheLand NotGiveLand)
+(causes-PropProp (chosenItem GivingOrNotGivingTheLand GiveLand)
+ TransferNaturePreserve1)
+(causes-PropProp (chosenItem GivingOrNotGivingTheLand GiveLand)
+ TransferNaturePreserve2)
+(causes-PropProp TransferNaturePreserve2
+ (operatesInRegion army2 natureReserve2))
+(causes-PropProp (chosenItem GivingOrNotGivingTheLand NotGiveLand)
+ preventingTransferNaturePreserve1)
+(causes-PropProp (chosenItem GivingOrNotGivingTheLand NotGiveLand)
+ preventingTransferNaturePreserve2)
++++++++++++
+(matchBetween preventingPeopleDyingInArea1 preventingTransferNaturePreserve2)
+(matchBetween (PreventingSomething
+               preventingPeopleDyingInArea1) (PreventingSomething
+                                              preventingTransferNaturePreserve2))
+(matchBetween notChangeLocation NotGiveLand)
+(matchBetween (Inaction notChangeLocation) (Inaction NotGiveLand))
+(matchBetween (performedBy notChangeLocation you8115) (performedBy
+                                                       NotGiveLand
+                                                       you811))
+(matchBetween (choices ChooseBetweenArea1or2 changeToArea2) (choices
+                                                             GivingOrNotGivingTheLand
+                                                             GiveLand))
+(matchBetween (chosenItem ChooseBetweenArea1or2
+               changeToArea2) (chosenItem GivingOrNotGivingTheLand
+                               GiveLand))
+(matchBetween preventingPeopleDyingInArea2 TransferNaturePreserve1)
+(matchBetween (causes-PropProp
+               (chosenItem ChooseBetweenArea1or2 changeToArea2)
+               preventingPeopleDyingInArea2) (causes-PropProp
+                                              (chosenItem
+                                               GivingOrNotGivingTheLand
+                                               GiveLand)
+                                              TransferNaturePreserve1))
+(matchBetween (causes-PropProp
+               (chosenItem ChooseBetweenArea1or2 changeToArea2)
+               PeopleDyingInArea1) (causes-PropProp
+                                    (chosenItem
+                                     GivingOrNotGivingTheLand
+                                     GiveLand)
+                                    TransferNaturePreserve2))
+(matchBetween (causes-PropProp
+               (chosenItem ChooseBetweenArea1or2 notChangeLocation)
+               preventingPeopleDyingInArea1) (causes-PropProp
+                                              (chosenItem
+                                               GivingOrNotGivingTheLand
+                                               NotGiveLand)
+                                              preventingTransferNaturePreserve2))
+(matchBetween (causes-PropProp
+               (chosenItem ChooseBetweenArea1or2 notChangeLocation)
+               PeopleDyingInArea2) (causes-PropProp
+                                    (chosenItem
+                                     GivingOrNotGivingTheLand
+                                     NotGiveLand)
+                                    preventingTransferNaturePreserve1))
+(matchBetween PeopleDyingInArea2 preventingTransferNaturePreserve1)
+(matchBetween (chosenItem ChooseBetweenArea1or2
+               notChangeLocation) (chosenItem
+                                   GivingOrNotGivingTheLand
+                                   NotGiveLand))
+(matchBetween (choices ChooseBetweenArea1or2
+               notChangeLocation) (choices
+                                   GivingOrNotGivingTheLand
+                                   NotGiveLand))
+(matchBetween (SelectingSomething
+               ChooseBetweenArea1or2) (SelectingSomething
+                                       GivingOrNotGivingTheLand))
+(matchBetween ChooseBetweenArea1or2 GivingOrNotGivingTheLand)
+(matchBetween (performedBy changeToArea2 you8115) (performedBy
+                                                   GiveLand
+                                                   you811))
+(matchBetween changeToArea2 GiveLand)
+(matchBetween (preventedProp preventingPeopleDyingInArea1
+               PeopleDyingInArea1) (preventedProp
+                                    preventingTransferNaturePreserve2
+                                    TransferNaturePreserve2))
+(matchBetween PeopleDyingInArea1 TransferNaturePreserve2)
+(matchBetween (IntelligentAgent you8115) (IntelligentAgent you811))
+(matchBetween you8115 you811)

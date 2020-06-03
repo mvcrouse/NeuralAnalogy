@@ -1,0 +1,29 @@
+((ShapeTypeFn 0) Object-1181)
+((ShapeTypeFn 2) Group-12)
+((ShapeTypeFn 4) Object-1182)
+(rightOf Object-1181 Group-12)
+(rightOf Object-1182 Object-1181)
+(above Group-12 Object-1181)
+(above Object-1181 Object-1182)
+(colinearElements Group-12 Object-1182)
+(colinearElements Group-12 Object-1181)
+((ObjectsBorderColoredFn BlackColor) Object-1181)
+((ObjectsBorderColoredFn BlackColor) Object-1182)
+((ObjectsColoredFn BlackColor) Object-1181)
+((ObjectsColoredFn BlackColor) Object-1182)
++++++++++++
+(colinearElements Group-14 Group-13)
+(parallelElements Group-14 Group-13)
+(above Group-14 Group-13)
+(rightOf Group-14 Group-13)
+((ShapeTypeFn 3) Group-13)
+((ShapeTypeFn 1) Group-14)
++++++++++++
+(matchBetween (colinearElements Group-12 Object-1181) (colinearElements
+                                                       Group-14
+                                                       Group-13))
+(matchBetween (rightOf Object-1181 Group-12) (rightOf
+                                              Group-14
+                                              Group-13))
+(matchBetween Object-1181 Group-14)
+(matchBetween Group-12 Group-13)

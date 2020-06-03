@@ -1,0 +1,12 @@
+(PerceptualEdge Edge-1100)
+(Circle-Shape Edge-1100)
+(EllipseEdge Edge-1100)
++++++++++++
+(EllipseEdge Edge-1102)
+(Circle-Shape Edge-1102)
+(PerceptualEdge Edge-1102)
++++++++++++
+(matchBetween (Circle-Shape Edge-1100) (Circle-Shape Edge-1102))
+(matchBetween (EllipseEdge Edge-1100) (EllipseEdge Edge-1102))
+(matchBetween (PerceptualEdge Edge-1100) (PerceptualEdge Edge-1102))
+(matchBetween Edge-1100 Edge-1102)

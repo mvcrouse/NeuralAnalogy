@@ -1,0 +1,221 @@
+(sacredValueChoice applyProgram2)
+(sacredValueChoice notChangeProgram)
+(affectsSigLargerGroup applyProgram2)
+(affectsSigLargerGroup notChangeProgram)
+(uninferredSentence (affectsSigLargerGroup applyProgram2))
+(uninferredSentence (affectsSigLargerGroup notChangeProgram))
+(uninferredSentence (directlyResponsible you8116 notChangeProgram))
+(uninferredSentence (preventsAlternativeNegativeOutcome applyProgram2))
+(uninferredSentence (usedAsMeansToPreventNegativeOutcome applyProgram2))
+(directlyResponsible you8116 applyProgram2)
+(directlyResponsible you8116 notChangeProgram)
+(preventsAlternativeNegativeOutcome applyProgram2)
+(usedAsMeansToPreventNegativeOutcome applyProgram2)
+(and (sacredValueChoice applyProgram2)
+     (sacredValueChoice notChangeProgram)
+     (uninferredSentence (affectsSigLargerGroup applyProgram2))
+     (uninferredSentence (affectsSigLargerGroup notChangeProgram))
+     (directlyResponsible you8116 applyProgram2)
+     (uninferredSentence
+      (directlyResponsible you8116 notChangeProgram))
+     (uninferredSentence
+      (preventsAlternativeNegativeOutcome applyProgram2))
+     (uninferredSentence
+      (usedAsMeansToPreventNegativeOutcome applyProgram2)))
+(rightChoice notChangeProgram)
+(chosenItem ChangeOrNotChangeTheProgram notChangeProgram)
+(chosenItem ChangeOrNotChangeTheProgram applyProgram2)
+((GroupFn MedicalPatient) CancerPatients)
+((GroupFn MedicalPatient) CancerPatientsGroup1)
+((GroupFn MedicalPatient) CancerPatientsGroup2)
+(IntelligentAgent you8116)
+(Cancer cancer2)
+(Cancer cancer1)
+(Dying DyingCancerPatientsGroup1)
+(Dying DyingCancerPatientsGroup2)
+(DrugAdministrationRouteType cancerProgram1)
+(DrugAdministrationRouteType cancerProgram2)
+(PreventingSomething preventingDyingCancerPatientsGroup1)
+(PreventingSomething preventingDyingCancerPatientsGroup2)
+(Inaction notChangeProgram)
+(SelectingSomething ChangeOrNotChangeTheProgram)
+(groupCardinality CancerPatientsGroup1 100)
+(groupCardinality CancerPatientsGroup2 1000)
+(subGroups CancerPatients CancerPatientsGroup1)
+(subGroups CancerPatients CancerPatientsGroup2)
+(objectActedOn DyingCancerPatientsGroup1 CancerPatientsGroup1)
+(objectActedOn DyingCancerPatientsGroup2 CancerPatientsGroup2)
+(diseaseTypeCurableByTreatmentType cancer1 cancerProgram1)
+(diseaseTypeCurableByTreatmentType cancer2 cancerProgram2)
+(preventedProp preventingDyingCancerPatientsGroup1
+ DyingCancerPatientsGroup1)
+(preventedProp preventingDyingCancerPatientsGroup2
+ DyingCancerPatientsGroup2)
+(choices ChangeOrNotChangeTheProgram applyProgram2)
+(choices ChangeOrNotChangeTheProgram notChangeProgram)
+(performedBy applyProgram2 you8116)
+(performedBy notChangeProgram you8116)
+(causes-PropProp (chosenItem ChangeOrNotChangeTheProgram applyProgram2)
+ preventingDyingCancerPatientsGroup2)
+(causes-PropProp (chosenItem ChangeOrNotChangeTheProgram applyProgram2)
+ DyingCancerPatientsGroup1)
+(causes-PropProp
+ (chosenItem ChangeOrNotChangeTheProgram notChangeProgram)
+ DyingCancerPatientsGroup2)
+(causes-PropProp
+ (chosenItem ChangeOrNotChangeTheProgram notChangeProgram)
+ preventingDyingCancerPatientsGroup1)
+(implies
+ (and (sacredValueChoice applyProgram2)
+      (sacredValueChoice notChangeProgram)
+      (uninferredSentence (affectsSigLargerGroup applyProgram2))
+      (uninferredSentence (affectsSigLargerGroup notChangeProgram))
+      (directlyResponsible you8116 applyProgram2)
+      (uninferredSentence
+       (directlyResponsible you8116 notChangeProgram))
+      (uninferredSentence
+       (preventsAlternativeNegativeOutcome applyProgram2))
+      (uninferredSentence
+       (usedAsMeansToPreventNegativeOutcome applyProgram2)))
+ (rightChoice notChangeProgram))
+(makeDecision you8116 notChangeProgram)
++++++++++++
+(IntelligentAgent you8131)
+(Dam dam7557)
+((GroupFn AnimalSpecies) River1FishGroups)
+((GroupFn AnimalSpecies) River1FishGroup1)
+((GroupFn AnimalSpecies) River1FishGroup2)
+(groupCardinality River1FishGroup1 2)
+(groupCardinality River1FishGroup2 20)
+(subGroups River1FishGroups River1FishGroup1)
+(subGroups River1FishGroups River1FishGroup2)
+(Extinction ExtinctionRiver1FishGroup1)
+(Extinction ExtinctionRiver1FishGroup2)
+(objectActedOn ExtinctionRiver1FishGroup1 River1FishGroup1)
+(objectActedOn ExtinctionRiver1FishGroup2 River1FishGroup2)
+(objectActedOn open8135 dam7557)
+(isInaction notOpen8135)
+(OpeningSomething open8135)
+(PreventingSomething preventingExtinctionRiver1FishGroup1)
+(PreventingSomething preventingExtinctionRiver1FishGroup2)
+(preventedProp preventingExtinctionRiver1FishGroup1
+ ExtinctionRiver1FishGroup1)
+(preventedProp preventingExtinctionRiver1FishGroup2
+ ExtinctionRiver1FishGroup2)
+(SelectingSomething OpeningOrNotOpeningTheDam)
+(choices OpeningOrNotOpeningTheDam open8135)
+(choices OpeningOrNotOpeningTheDam notOpen8135)
+(performedBy open8135 you8131)
+(performedBy notOpen8135 you8131)
+(chosenItem OpeningOrNotOpeningTheDam open8135)
+(chosenItem OpeningOrNotOpeningTheDam notOpen8135)
+(causes-PropProp (chosenItem OpeningOrNotOpeningTheDam open8135)
+ preventingExtinctionRiver1FishGroup2)
+(causes-PropProp (chosenItem OpeningOrNotOpeningTheDam open8135)
+ ExtinctionRiver1FishGroup1)
+(causes-PropProp (chosenItem OpeningOrNotOpeningTheDam notOpen8135)
+ ExtinctionRiver1FishGroup2)
+(causes-PropProp (chosenItem OpeningOrNotOpeningTheDam notOpen8135)
+ preventingExtinctionRiver1FishGroup1)
++++++++++++
+(matchBetween ChangeOrNotChangeTheProgram OpeningOrNotOpeningTheDam)
+(matchBetween (SelectingSomething
+               ChangeOrNotChangeTheProgram) (SelectingSomething
+                                             OpeningOrNotOpeningTheDam))
+(matchBetween preventingDyingCancerPatientsGroup1 preventingExtinctionRiver1FishGroup1)
+(matchBetween (PreventingSomething
+               preventingDyingCancerPatientsGroup1) (PreventingSomething
+                                                     preventingExtinctionRiver1FishGroup1))
+(matchBetween CancerPatientsGroup1 River1FishGroup1)
+(matchBetween 100 2)
+(matchBetween (groupCardinality CancerPatientsGroup1
+               100) (groupCardinality River1FishGroup1 2))
+(matchBetween (subGroups CancerPatients
+               CancerPatientsGroup1) (subGroups
+                                      River1FishGroups
+                                      River1FishGroup1))
+(matchBetween DyingCancerPatientsGroup1 ExtinctionRiver1FishGroup1)
+(matchBetween (objectActedOn DyingCancerPatientsGroup1
+               CancerPatientsGroup1) (objectActedOn
+                                      ExtinctionRiver1FishGroup1
+                                      River1FishGroup1))
+(matchBetween (preventedProp preventingDyingCancerPatientsGroup1
+               DyingCancerPatientsGroup1) (preventedProp
+                                           preventingExtinctionRiver1FishGroup1
+                                           ExtinctionRiver1FishGroup1))
+(matchBetween applyProgram2 open8135)
+(matchBetween (performedBy applyProgram2 you8116) (performedBy
+                                                   open8135
+                                                   you8131))
+(matchBetween (choices ChangeOrNotChangeTheProgram
+               applyProgram2) (choices OpeningOrNotOpeningTheDam
+                               open8135))
+(matchBetween (causes-PropProp
+               (chosenItem ChangeOrNotChangeTheProgram
+                notChangeProgram)
+               DyingCancerPatientsGroup2) (causes-PropProp
+                                           (chosenItem
+                                            OpeningOrNotOpeningTheDam
+                                            notOpen8135)
+                                           ExtinctionRiver1FishGroup2))
+(matchBetween (causes-PropProp
+               (chosenItem ChangeOrNotChangeTheProgram applyProgram2)
+               preventingDyingCancerPatientsGroup2) (causes-PropProp
+                                                     (chosenItem
+                                                      OpeningOrNotOpeningTheDam
+                                                      open8135)
+                                                     preventingExtinctionRiver1FishGroup2))
+(matchBetween (causes-PropProp
+               (chosenItem ChangeOrNotChangeTheProgram applyProgram2)
+               DyingCancerPatientsGroup1) (causes-PropProp
+                                           (chosenItem
+                                            OpeningOrNotOpeningTheDam
+                                            open8135)
+                                           ExtinctionRiver1FishGroup1))
+(matchBetween (chosenItem ChangeOrNotChangeTheProgram
+               applyProgram2) (chosenItem OpeningOrNotOpeningTheDam
+                               open8135))
+(matchBetween (causes-PropProp
+               (chosenItem ChangeOrNotChangeTheProgram
+                notChangeProgram)
+               preventingDyingCancerPatientsGroup1) (causes-PropProp
+                                                     (chosenItem
+                                                      OpeningOrNotOpeningTheDam
+                                                      notOpen8135)
+                                                     preventingExtinctionRiver1FishGroup1))
+(matchBetween (chosenItem ChangeOrNotChangeTheProgram
+               notChangeProgram) (chosenItem
+                                  OpeningOrNotOpeningTheDam
+                                  notOpen8135))
+(matchBetween (choices ChangeOrNotChangeTheProgram
+               notChangeProgram) (choices
+                                  OpeningOrNotOpeningTheDam
+                                  notOpen8135))
+(matchBetween (performedBy notChangeProgram you8116) (performedBy
+                                                      notOpen8135
+                                                      you8131))
+(matchBetween notChangeProgram notOpen8135)
+(matchBetween (preventedProp preventingDyingCancerPatientsGroup2
+               DyingCancerPatientsGroup2) (preventedProp
+                                           preventingExtinctionRiver1FishGroup2
+                                           ExtinctionRiver1FishGroup2))
+(matchBetween (objectActedOn DyingCancerPatientsGroup2
+               CancerPatientsGroup2) (objectActedOn
+                                      ExtinctionRiver1FishGroup2
+                                      River1FishGroup2))
+(matchBetween DyingCancerPatientsGroup2 ExtinctionRiver1FishGroup2)
+(matchBetween (subGroups CancerPatients
+               CancerPatientsGroup2) (subGroups
+                                      River1FishGroups
+                                      River1FishGroup2))
+(matchBetween CancerPatients River1FishGroups)
+(matchBetween (groupCardinality CancerPatientsGroup2
+               1000) (groupCardinality River1FishGroup2 20))
+(matchBetween 1000 20)
+(matchBetween CancerPatientsGroup2 River1FishGroup2)
+(matchBetween (PreventingSomething
+               preventingDyingCancerPatientsGroup2) (PreventingSomething
+                                                     preventingExtinctionRiver1FishGroup2))
+(matchBetween preventingDyingCancerPatientsGroup2 preventingExtinctionRiver1FishGroup2)
+(matchBetween (IntelligentAgent you8116) (IntelligentAgent you8131))
+(matchBetween you8116 you8131)

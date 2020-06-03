@@ -1,0 +1,36 @@
+(elementsConnected Edge-263 Edge-262)
+(edgesPerpendicular Edge-263 Edge-262)
+(rightOf Edge-263 Edge-262)
+(ObliqueEdge-Downward Edge-262)
+(PerceptualEdge Edge-262)
+(StraightEdge Edge-262)
+(ObliqueEdge-Upward Edge-263)
+(PerceptualEdge Edge-263)
+(StraightEdge Edge-263)
++++++++++++
+(StraightEdge Edge-255)
+(StraightEdge Edge-254)
+(PerceptualEdge Edge-255)
+(PerceptualEdge Edge-254)
+(ObliqueEdge-Upward Edge-255)
+(ObliqueEdge-Downward Edge-254)
+(rightOf Edge-255 Edge-254)
+(edgesPerpendicular Edge-255 Edge-254)
+(elementsConnected Edge-255 Edge-254)
++++++++++++
+(matchBetween Edge-263 Edge-255)
+(matchBetween (ObliqueEdge-Upward Edge-263) (ObliqueEdge-Upward
+                                             Edge-255))
+(matchBetween (PerceptualEdge Edge-262) (PerceptualEdge Edge-254))
+(matchBetween (StraightEdge Edge-262) (StraightEdge Edge-254))
+(matchBetween (edgesPerpendicular Edge-263
+               Edge-262) (edgesPerpendicular Edge-255 Edge-254))
+(matchBetween (rightOf Edge-263 Edge-262) (rightOf Edge-255 Edge-254))
+(matchBetween (elementsConnected Edge-263 Edge-262) (elementsConnected
+                                                     Edge-255
+                                                     Edge-254))
+(matchBetween (StraightEdge Edge-263) (StraightEdge Edge-255))
+(matchBetween (PerceptualEdge Edge-263) (PerceptualEdge Edge-255))
+(matchBetween (ObliqueEdge-Downward Edge-262) (ObliqueEdge-Downward
+                                               Edge-254))
+(matchBetween Edge-262 Edge-254)

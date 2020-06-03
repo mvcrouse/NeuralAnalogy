@@ -1,0 +1,40 @@
+(elementsIntersect Super-Edge-101 Super-Edge-103)
+(edgesPerpendicular Super-Edge-101 Super-Edge-103)
+(ObliqueEdge-Upward Super-Edge-103)
+(PerceptualEdge Super-Edge-103)
+(StraightEdge Super-Edge-103)
+(ObliqueEdge-Downward Super-Edge-101)
+(PerceptualEdge Super-Edge-101)
+(StraightEdge Super-Edge-101)
++++++++++++
+(StraightEdge Super-Edge-85)
+(StraightEdge Super-Edge-83)
+(PerceptualEdge Super-Edge-85)
+(PerceptualEdge Super-Edge-83)
+(ObliqueEdge-Upward Super-Edge-85)
+(ObliqueEdge-Downward Super-Edge-83)
+(edgesPerpendicular Super-Edge-85 Super-Edge-83)
+(elementsIntersect Super-Edge-85 Super-Edge-83)
++++++++++++
+(matchBetween Super-Edge-101 Super-Edge-83)
+(matchBetween (ObliqueEdge-Downward
+               Super-Edge-101) (ObliqueEdge-Downward Super-Edge-83))
+(matchBetween (PerceptualEdge Super-Edge-103) (PerceptualEdge
+                                               Super-Edge-85))
+(matchBetween (StraightEdge Super-Edge-103) (StraightEdge
+                                             Super-Edge-85))
+(matchBetween (edgesPerpendicular Super-Edge-101
+               Super-Edge-103) (edgesPerpendicular
+                                Super-Edge-85
+                                Super-Edge-83))
+(matchBetween (elementsIntersect Super-Edge-101
+               Super-Edge-103) (elementsIntersect
+                                Super-Edge-85
+                                Super-Edge-83))
+(matchBetween (StraightEdge Super-Edge-101) (StraightEdge
+                                             Super-Edge-83))
+(matchBetween (PerceptualEdge Super-Edge-101) (PerceptualEdge
+                                               Super-Edge-83))
+(matchBetween (ObliqueEdge-Upward Super-Edge-103) (ObliqueEdge-Upward
+                                                   Super-Edge-85))
+(matchBetween Super-Edge-103 Super-Edge-85)

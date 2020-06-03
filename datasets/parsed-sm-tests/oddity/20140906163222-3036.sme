@@ -1,0 +1,88 @@
+(convexAngleBetweenEdges Element-7 Element-8)
+(convexAngleBetweenEdges Element-9 Element-7)
+(convexAngleBetweenEdges Element-8 Element-9)
+(lengthLong Element-9)
+(edgesPerpendicular Element-7 Element-8)
+(cycleAdjacentAngles (convexAngleBetweenEdges Element-8 Element-9)
+ (convexAngleBetweenEdges Element-9 Element-7))
+(cycleAdjacentAngles (convexAngleBetweenEdges Element-7 Element-8)
+ (convexAngleBetweenEdges Element-8 Element-9))
+(cycleAdjacentAngles (convexAngleBetweenEdges Element-9 Element-7)
+ (convexAngleBetweenEdges Element-7 Element-8))
+(perpendicularCorner (convexAngleBetweenEdges Element-7 Element-8))
+(lengthMedium Element-7)
+(PerceptualEdge Element-9)
+(PerceptualEdge Element-8)
+(StraightEdge Element-7)
+(PerceptualEdge Element-7)
+(StraightEdge Element-8)
+(StraightEdge Element-9)
++++++++++++
+(StraightEdge Edge-2636)
+(StraightEdge Edge-2635)
+(StraightEdge Edge-2634)
+(PerceptualEdge Edge-2636)
+(PerceptualEdge Edge-2635)
+(PerceptualEdge Edge-2634)
+(lengthLong Edge-2634)
+(lengthLong Edge-2635)
+(lengthShort Edge-2636)
+(edgesPerpendicular Edge-2636 Edge-2635)
+(convexAngleBetweenEdges Edge-2636 Edge-2635)
+(convexAngleBetweenEdges Edge-2635 Edge-2634)
+(convexAngleBetweenEdges Edge-2634 Edge-2636)
+(perpendicularCorner (convexAngleBetweenEdges Edge-2636 Edge-2635))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-2636 Edge-2635)
+ (convexAngleBetweenEdges Edge-2635 Edge-2634))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-2635 Edge-2634)
+ (convexAngleBetweenEdges Edge-2634 Edge-2636))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-2634 Edge-2636)
+ (convexAngleBetweenEdges Edge-2636 Edge-2635))
++++++++++++
+(matchBetween (PerceptualEdge Element-9) (PerceptualEdge Edge-2634))
+(matchBetween Element-7 Edge-2636)
+(matchBetween (PerceptualEdge Element-7) (PerceptualEdge Edge-2636))
+(matchBetween (StraightEdge Element-8) (StraightEdge Edge-2635))
+(matchBetween (edgesPerpendicular Element-7
+               Element-8) (edgesPerpendicular Edge-2636 Edge-2635))
+(matchBetween (convexAngleBetweenEdges Element-8
+               Element-9) (convexAngleBetweenEdges Edge-2635 Edge-2634))
+(matchBetween (convexAngleBetweenEdges Element-9
+               Element-7) (convexAngleBetweenEdges Edge-2634 Edge-2636))
+(matchBetween (cycleAdjacentAngles
+               (convexAngleBetweenEdges Element-8 Element-9)
+               (convexAngleBetweenEdges Element-9
+                Element-7)) (cycleAdjacentAngles
+                             (convexAngleBetweenEdges Edge-2635
+                              Edge-2634)
+                             (convexAngleBetweenEdges Edge-2634
+                              Edge-2636)))
+(matchBetween (cycleAdjacentAngles
+               (convexAngleBetweenEdges Element-7 Element-8)
+               (convexAngleBetweenEdges Element-8
+                Element-9)) (cycleAdjacentAngles
+                             (convexAngleBetweenEdges Edge-2636
+                              Edge-2635)
+                             (convexAngleBetweenEdges Edge-2635
+                              Edge-2634)))
+(matchBetween (cycleAdjacentAngles
+               (convexAngleBetweenEdges Element-9 Element-7)
+               (convexAngleBetweenEdges Element-7
+                Element-8)) (cycleAdjacentAngles
+                             (convexAngleBetweenEdges Edge-2634
+                              Edge-2636)
+                             (convexAngleBetweenEdges Edge-2636
+                              Edge-2635)))
+(matchBetween (perpendicularCorner
+               (convexAngleBetweenEdges Element-7
+                Element-8)) (perpendicularCorner
+                             (convexAngleBetweenEdges Edge-2636
+                              Edge-2635)))
+(matchBetween (convexAngleBetweenEdges Element-7
+               Element-8) (convexAngleBetweenEdges Edge-2636 Edge-2635))
+(matchBetween (StraightEdge Element-7) (StraightEdge Edge-2636))
+(matchBetween (PerceptualEdge Element-8) (PerceptualEdge Edge-2635))
+(matchBetween Element-8 Edge-2635)
+(matchBetween (StraightEdge Element-9) (StraightEdge Edge-2634))
+(matchBetween (lengthLong Element-9) (lengthLong Edge-2634))
+(matchBetween Element-9 Edge-2634)

@@ -1,0 +1,12 @@
+(PerceptualEdge Edge-8)
+(Circle-Shape Edge-8)
+(EllipseEdge Edge-8)
++++++++++++
+(EllipseEdge Edge-26)
+(Circle-Shape Edge-26)
+(PerceptualEdge Edge-26)
++++++++++++
+(matchBetween (Circle-Shape Edge-8) (Circle-Shape Edge-26))
+(matchBetween (EllipseEdge Edge-8) (EllipseEdge Edge-26))
+(matchBetween (PerceptualEdge Edge-8) (PerceptualEdge Edge-26))
+(matchBetween Edge-8 Edge-26)

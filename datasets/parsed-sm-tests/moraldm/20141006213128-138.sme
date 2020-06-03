@@ -1,0 +1,217 @@
+(sacredValueChoice changeToArea2)
+(sacredValueChoice notChangeLocation)
+(affectsSigLargerGroup changeToArea2)
+(affectsSigLargerGroup notChangeLocation)
+(uninferredSentence (affectsSigLargerGroup changeToArea2))
+(uninferredSentence (affectsSigLargerGroup notChangeLocation))
+(uninferredSentence (directlyResponsible you8115 notChangeLocation))
+(uninferredSentence (preventsAlternativeNegativeOutcome changeToArea2))
+(uninferredSentence (usedAsMeansToPreventNegativeOutcome changeToArea2))
+(directlyResponsible you8115 changeToArea2)
+(directlyResponsible you8115 notChangeLocation)
+(preventsAlternativeNegativeOutcome changeToArea2)
+(usedAsMeansToPreventNegativeOutcome changeToArea2)
+(and (sacredValueChoice changeToArea2)
+     (sacredValueChoice notChangeLocation)
+     (uninferredSentence (affectsSigLargerGroup changeToArea2))
+     (uninferredSentence (affectsSigLargerGroup notChangeLocation))
+     (directlyResponsible you8115 changeToArea2)
+     (uninferredSentence
+      (directlyResponsible you8115 notChangeLocation))
+     (uninferredSentence
+      (preventsAlternativeNegativeOutcome changeToArea2))
+     (uninferredSentence
+      (usedAsMeansToPreventNegativeOutcome changeToArea2)))
+(rightChoice notChangeLocation)
+(chosenItem ChooseBetweenArea1or2 notChangeLocation)
+(chosenItem ChooseBetweenArea1or2 changeToArea2)
+(IntelligentAgent you8115)
+(Region-Underspecified region1)
+(Region-Underspecified region2)
+((GroupFn Person) PeopleInArea1)
+((GroupFn Person) PeopleInArea2)
+(Dying PeopleDyingInArea1)
+(Dying PeopleDyingInArea2)
+((GroupEventOfTypeFn VehicleAccident) TrafficAccidents)
+((PreventingFn (DyingFromEventTypeFn TrafficAccidents)) trafficProgram)
+(Translation-LocationChange changeToArea2)
+(Inaction notChangeLocation)
+(PreventingSomething preventingPeopleDyingInArea1)
+(PreventingSomething preventingPeopleDyingInArea2)
+(SelectingSomething ChooseBetweenArea1or2)
+(groupCardinality PeopleInArea1 50)
+(groupCardinality PeopleInArea2 200)
+(residesInRegion PeopleInArea1 region1)
+(residesInRegion PeopleInArea2 region2)
+(objectActedOn PeopleDyingInArea1 PeopleInArea1)
+(objectActedOn PeopleDyingInArea2 PeopleInArea2)
+(fromLocation changeToArea2 region1)
+(toLocation ChangeToArea2 region2)
+(preventedProp preventingPeopleDyingInArea1 PeopleDyingInArea1)
+(preventedProp preventingPeopleDyingInArea2 PeopleDyingInArea2)
+(choices ChooseBetweenArea1or2 changeToArea2)
+(choices ChooseBetweenArea1or2 notChangeLocation)
+(performedBy changeToArea2 you8115)
+(performedBy notChangeLocation you8115)
+(causes-PropProp (chosenItem ChooseBetweenArea1or2 changeToArea2)
+ preventingPeopleDyingInArea2)
+(causes-PropProp (chosenItem ChooseBetweenArea1or2 changeToArea2)
+ PeopleDyingInArea1)
+(causes-PropProp (chosenItem ChooseBetweenArea1or2 notChangeLocation)
+ PeopleDyingInArea2)
+(causes-PropProp (chosenItem ChooseBetweenArea1or2 notChangeLocation)
+ preventingPeopleDyingInArea1)
+(implies
+ (and (sacredValueChoice changeToArea2)
+      (sacredValueChoice notChangeLocation)
+      (uninferredSentence (affectsSigLargerGroup changeToArea2))
+      (uninferredSentence (affectsSigLargerGroup notChangeLocation))
+      (directlyResponsible you8115 changeToArea2)
+      (uninferredSentence
+       (directlyResponsible you8115 notChangeLocation))
+      (uninferredSentence
+       (preventsAlternativeNegativeOutcome changeToArea2))
+      (uninferredSentence
+       (usedAsMeansToPreventNegativeOutcome changeToArea2)))
+ (rightChoice notChangeLocation))
+(makeDecision you8115 notChangeLocation)
++++++++++++
+(IntelligentAgent you1123)
+((GroupFn FactoryWorker) WorkersInPlant1)
+((GroupFn FactoryWorker) WorkersInPlant2)
+(Employee FactoryWorker)
+(FactoryBuilding Factory1)
+(FactoryBuilding Factory2)
+(groupCardinality WorkersInPlant1 50)
+(groupCardinality WorkersInPlant2 500)
+(worksAtFacility WorkersInPlant1 Factory1)
+(worksAtFacility WorkersInPlant2 Factory2)
+(FinancialSupport FinancialAssistanceToFactory1)
+(FinancialSupport giveFinancialAssistanceToFactory2)
+(beneficiary FinancialAssistanceToFactory1 WorkersInPlant1)
+(beneficiary giveFinancialAssistanceToFactory2 WorkersInPlant2)
+(performedBy FinancialAssistanceToFactory1 you1123)
+(performedBy giveFinancialAssistanceToFactory2 you1123)
+(performedBy NotChangeSupport you1123)
+(EmployeeLayoff employeeLayoff1)
+(EmployeeLayoff employeeLayoff2)
+(objectActedOn employeeLayoff1 WorkersInPlant1)
+(objectActedOn employeeLayoff2 WorkersInPlant2)
+(PreventingSomething preventingLayoff1)
+(PreventingSomething preventingLayoff2)
+(preventedProp preventingLayoff1 employeeLayoff1)
+(preventedProp preventingLayoff2 employeeLayoff2)
+(supportedBy WorkersInPlant1 FinancialAssistanceToFactory1)
+(Inaction NotChangeSupport)
+(SelectingSomething GiveSupportToFirstOrSecond)
+(choices GiveSupportToFirstOrSecond giveFinancialAssistanceToFactory2)
+(choices GiveSupportToFirstOrSecond NotChangeSupport)
+(chosenItem GiveSupportToFirstOrSecond
+ giveFinancialAssistanceToFactory2)
+(chosenItem GiveSupportToFirstOrSecond NotChangeSupport)
+(causes-PropProp
+ (chosenItem GiveSupportToFirstOrSecond
+  giveFinancialAssistanceToFactory2)
+ preventingLayoff2)
+(causes-PropProp
+ (chosenItem GiveSupportToFirstOrSecond
+  giveFinancialAssistanceToFactory2)
+ employeeLayoff1)
+(causes-PropProp
+ (chosenItem GiveSupportToFirstOrSecond NotChangeSupport)
+ employeeLayoff2)
+(causes-PropProp
+ (chosenItem GiveSupportToFirstOrSecond NotChangeSupport)
+ preventingLayoff1)
++++++++++++
+(matchBetween preventingPeopleDyingInArea2 preventingLayoff2)
+(matchBetween (PreventingSomething
+               preventingPeopleDyingInArea2) (PreventingSomething
+                                              preventingLayoff2))
+(matchBetween PeopleInArea2 WorkersInPlant2)
+(matchBetween 200 500)
+(matchBetween (groupCardinality PeopleInArea2 200) (groupCardinality
+                                                    WorkersInPlant2
+                                                    500))
+(matchBetween PeopleDyingInArea2 employeeLayoff2)
+(matchBetween (objectActedOn PeopleDyingInArea2
+               PeopleInArea2) (objectActedOn employeeLayoff2
+                               WorkersInPlant2))
+(matchBetween (preventedProp preventingPeopleDyingInArea2
+               PeopleDyingInArea2) (preventedProp
+                                    preventingLayoff2
+                                    employeeLayoff2))
+(matchBetween notChangeLocation NotChangeSupport)
+(matchBetween (Inaction notChangeLocation) (Inaction NotChangeSupport))
+(matchBetween (performedBy notChangeLocation you8115) (performedBy
+                                                       NotChangeSupport
+                                                       you1123))
+(matchBetween (choices ChooseBetweenArea1or2 changeToArea2) (choices
+                                                             GiveSupportToFirstOrSecond
+                                                             giveFinancialAssistanceToFactory2))
+(matchBetween (chosenItem ChooseBetweenArea1or2
+               changeToArea2) (chosenItem GiveSupportToFirstOrSecond
+                               giveFinancialAssistanceToFactory2))
+(matchBetween (causes-PropProp
+               (chosenItem ChooseBetweenArea1or2 changeToArea2)
+               PeopleDyingInArea1) (causes-PropProp
+                                    (chosenItem
+                                     GiveSupportToFirstOrSecond
+                                     giveFinancialAssistanceToFactory2)
+                                    employeeLayoff1))
+(matchBetween (chosenItem ChooseBetweenArea1or2
+               notChangeLocation) (chosenItem
+                                   GiveSupportToFirstOrSecond
+                                   NotChangeSupport))
+(matchBetween (causes-PropProp
+               (chosenItem ChooseBetweenArea1or2 notChangeLocation)
+               preventingPeopleDyingInArea1) (causes-PropProp
+                                              (chosenItem
+                                               GiveSupportToFirstOrSecond
+                                               NotChangeSupport)
+                                              preventingLayoff1))
+(matchBetween (causes-PropProp
+               (chosenItem ChooseBetweenArea1or2 notChangeLocation)
+               PeopleDyingInArea2) (causes-PropProp
+                                    (chosenItem
+                                     GiveSupportToFirstOrSecond
+                                     NotChangeSupport)
+                                    employeeLayoff2))
+(matchBetween (causes-PropProp
+               (chosenItem ChooseBetweenArea1or2 changeToArea2)
+               preventingPeopleDyingInArea2) (causes-PropProp
+                                              (chosenItem
+                                               GiveSupportToFirstOrSecond
+                                               giveFinancialAssistanceToFactory2)
+                                              preventingLayoff2))
+(matchBetween (choices ChooseBetweenArea1or2
+               notChangeLocation) (choices
+                                   GiveSupportToFirstOrSecond
+                                   NotChangeSupport))
+(matchBetween (SelectingSomething
+               ChooseBetweenArea1or2) (SelectingSomething
+                                       GiveSupportToFirstOrSecond))
+(matchBetween ChooseBetweenArea1or2 GiveSupportToFirstOrSecond)
+(matchBetween (performedBy changeToArea2 you8115) (performedBy
+                                                   giveFinancialAssistanceToFactory2
+                                                   you1123))
+(matchBetween changeToArea2 giveFinancialAssistanceToFactory2)
+(matchBetween (preventedProp preventingPeopleDyingInArea1
+               PeopleDyingInArea1) (preventedProp
+                                    preventingLayoff1
+                                    employeeLayoff1))
+(matchBetween (objectActedOn PeopleDyingInArea1
+               PeopleInArea1) (objectActedOn employeeLayoff1
+                               WorkersInPlant1))
+(matchBetween PeopleDyingInArea1 employeeLayoff1)
+(matchBetween (groupCardinality PeopleInArea1 50) (groupCardinality
+                                                   WorkersInPlant1
+                                                   50))
+(matchBetween 50 50)
+(matchBetween PeopleInArea1 WorkersInPlant1)
+(matchBetween (PreventingSomething
+               preventingPeopleDyingInArea1) (PreventingSomething
+                                              preventingLayoff1))
+(matchBetween preventingPeopleDyingInArea1 preventingLayoff1)
+(matchBetween (IntelligentAgent you8115) (IntelligentAgent you1123))
+(matchBetween you8115 you1123)

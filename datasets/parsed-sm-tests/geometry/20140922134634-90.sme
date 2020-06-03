@@ -1,0 +1,32 @@
+(elementsIntersect Super-Edge-79 Super-Edge-81)
+(edgesPerpendicular Super-Edge-79 Super-Edge-81)
+(axisAligned Super-Edge-81)
+(PerceptualEdge Super-Edge-81)
+(StraightEdge Super-Edge-81)
+(axisAligned Super-Edge-79)
+(PerceptualEdge Super-Edge-79)
+(StraightEdge Super-Edge-79)
++++++++++++
+(StraightEdge Super-Edge-101)
+(StraightEdge Super-Edge-103)
+(PerceptualEdge Super-Edge-101)
+(PerceptualEdge Super-Edge-103)
+(edgesPerpendicular Super-Edge-101 Super-Edge-103)
+(elementsIntersect Super-Edge-101 Super-Edge-103)
++++++++++++
+(matchBetween Super-Edge-81 Super-Edge-103)
+(matchBetween (PerceptualEdge Super-Edge-81) (PerceptualEdge
+                                              Super-Edge-103))
+(matchBetween (StraightEdge Super-Edge-81) (StraightEdge
+                                            Super-Edge-103))
+(matchBetween (edgesPerpendicular Super-Edge-79
+               Super-Edge-81) (edgesPerpendicular Super-Edge-101
+                               Super-Edge-103))
+(matchBetween (elementsIntersect Super-Edge-79
+               Super-Edge-81) (elementsIntersect Super-Edge-101
+                               Super-Edge-103))
+(matchBetween (StraightEdge Super-Edge-79) (StraightEdge
+                                            Super-Edge-101))
+(matchBetween (PerceptualEdge Super-Edge-79) (PerceptualEdge
+                                              Super-Edge-101))
+(matchBetween Super-Edge-79 Super-Edge-101)

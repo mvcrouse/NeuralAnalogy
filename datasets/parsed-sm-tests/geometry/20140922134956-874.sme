@@ -1,0 +1,28 @@
+(LargeSizeShape Object-482)
+(2D-Shape-Closed Object-482)
+(2D-Shape-Convex Object-482)
+(2D-Shape-Straight Object-482)
+(Multiply-Symmetric-Shape Object-482)
+(2D-Shape-Generic Object-482)
+(ObjectsBorderColoredFnBlackColor Object-482)
+((ObjectsColoredFn WhiteColor) Object-482)
++++++++++++
+((ObjectsColoredFn BlackColor) Object-384)
+(2D-Shape-Generic Object-384)
+(Fully-Symmetric-Shape Object-384)
+(2D-Shape-Curved Object-384)
+(2D-Shape-Ellipse Object-384)
+(2D-Shape-Convex Object-384)
+(2D-Shape-Closed Object-384)
+(2D-Shape-AxisAligned Object-384)
+(ObjectsBorderColoredFnBlackColor Object-384)
+(SmallSizeShape Object-384)
++++++++++++
+(matchBetween (2D-Shape-Convex Object-482) (2D-Shape-Convex Object-384))
+(matchBetween (ObjectsBorderColoredFnBlackColor
+               Object-482) (ObjectsBorderColoredFnBlackColor
+                            Object-384))
+(matchBetween (2D-Shape-Generic Object-482) (2D-Shape-Generic
+                                             Object-384))
+(matchBetween (2D-Shape-Closed Object-482) (2D-Shape-Closed Object-384))
+(matchBetween Object-482 Object-384)

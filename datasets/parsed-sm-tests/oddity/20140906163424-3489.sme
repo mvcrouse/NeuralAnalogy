@@ -1,0 +1,59 @@
+(elementContains Element-5 Element-6)
+(2D-Shape-Convex Element-6)
+(2D-Shape-Curved Element-6)
+(Implicit-Shape Element-6)
+(ObjectsBorderColoredFnBlackColor Element-5)
+(2D-Shape-Generic Element-5)
+(2D-Shape-Convex Element-5)
+(ObjectsColoredFnBlackColor Element-5)
+(2D-Shape-Closed Element-5)
+(2D-Shape-Straight Element-5)
+(Centered-Element Element-5)
+(Fully-Symmetric-Shape Element-6)
+(2D-Shape-Ellipse Element-6)
+(2D-Shape-Closed Element-6)
++++++++++++
+(ObjectsColoredFnBlackColor Object-677)
+(Implicit-Shape Object-678)
+(Fully-Symmetric-Shape Object-678)
+(2D-Shape-Curved Object-678)
+(2D-Shape-Ellipse Object-678)
+(2D-Shape-Convex Object-678)
+(2D-Shape-Convex Object-677)
+(2D-Shape-Closed Object-678)
+(2D-Shape-Closed Object-677)
+(2D-Shape-Generic Object-677)
+(Perpendicular-Symmetric-Shape Object-677)
+(2D-Shape-Straight Object-677)
+(2D-Shape-Perpendicular Object-677)
+(ObjectsBorderColoredFnBlackColor Object-677)
+(centeredOn Object-678 Object-677)
+(elementContains Object-677 Object-678)
+(Centered-Element Object-677)
+(Centered-Element Object-678)
++++++++++++
+(matchBetween (Implicit-Shape Element-6) (Implicit-Shape Object-678))
+(matchBetween (Fully-Symmetric-Shape Element-6) (Fully-Symmetric-Shape
+                                                 Object-678))
+(matchBetween (2D-Shape-Closed Element-6) (2D-Shape-Closed Object-678))
+(matchBetween (2D-Shape-Generic Element-5) (2D-Shape-Generic
+                                            Object-677))
+(matchBetween (ObjectsColoredFnBlackColor
+               Element-5) (ObjectsColoredFnBlackColor Object-677))
+(matchBetween (Centered-Element Element-5) (Centered-Element
+                                            Object-677))
+(matchBetween (elementContains Element-5 Element-6) (elementContains
+                                                     Object-677
+                                                     Object-678))
+(matchBetween (2D-Shape-Closed Element-5) (2D-Shape-Closed Object-677))
+(matchBetween (2D-Shape-Straight Element-5) (2D-Shape-Straight
+                                             Object-677))
+(matchBetween (2D-Shape-Convex Element-5) (2D-Shape-Convex Object-677))
+(matchBetween (ObjectsBorderColoredFnBlackColor
+               Element-5) (ObjectsBorderColoredFnBlackColor Object-677))
+(matchBetween Element-5 Object-677)
+(matchBetween (2D-Shape-Ellipse Element-6) (2D-Shape-Ellipse
+                                            Object-678))
+(matchBetween (2D-Shape-Convex Element-6) (2D-Shape-Convex Object-678))
+(matchBetween (2D-Shape-Curved Element-6) (2D-Shape-Curved Object-678))
+(matchBetween Element-6 Object-678)

@@ -1,0 +1,18 @@
+(PerceptualEdge Edge-1093)
+(Circle-Shape Edge-1093)
+(EllipseEdge Edge-1093)
++++++++++++
+(StraightEdge Super-Edge-1118)
+(StraightEdge Edge-1103)
+(PerceptualEdge Super-Edge-1118)
+(PerceptualEdge Edge-1103)
+(axisAligned Super-Edge-1118)
+(axisAligned Edge-1103)
+(HorizontalEdge Super-Edge-1118)
+(VerticalEdge Edge-1103)
+(above Super-Edge-1118 Edge-1103)
+(edgesPerpendicular Super-Edge-1118 Edge-1103)
+(elementIntersects Edge-1103 Super-Edge-1118)
++++++++++++
+(matchBetween (PerceptualEdge Edge-1093) (PerceptualEdge Edge-1103))
+(matchBetween Edge-1093 Edge-1103)

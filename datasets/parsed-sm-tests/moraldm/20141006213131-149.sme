@@ -1,0 +1,222 @@
+(sacredValueChoice applyProgram2)
+(sacredValueChoice notChangeProgram)
+(affectsSigLargerGroup applyProgram2)
+(affectsSigLargerGroup notChangeProgram)
+(uninferredSentence (affectsSigLargerGroup applyProgram2))
+(uninferredSentence (affectsSigLargerGroup notChangeProgram))
+(uninferredSentence (directlyResponsible you8116 notChangeProgram))
+(uninferredSentence (preventsAlternativeNegativeOutcome applyProgram2))
+(uninferredSentence (usedAsMeansToPreventNegativeOutcome applyProgram2))
+(directlyResponsible you8116 applyProgram2)
+(directlyResponsible you8116 notChangeProgram)
+(preventsAlternativeNegativeOutcome applyProgram2)
+(usedAsMeansToPreventNegativeOutcome applyProgram2)
+(and (sacredValueChoice applyProgram2)
+     (sacredValueChoice notChangeProgram)
+     (uninferredSentence (affectsSigLargerGroup applyProgram2))
+     (uninferredSentence (affectsSigLargerGroup notChangeProgram))
+     (directlyResponsible you8116 applyProgram2)
+     (uninferredSentence
+      (directlyResponsible you8116 notChangeProgram))
+     (uninferredSentence
+      (preventsAlternativeNegativeOutcome applyProgram2))
+     (uninferredSentence
+      (usedAsMeansToPreventNegativeOutcome applyProgram2)))
+(rightChoice notChangeProgram)
+(chosenItem ChangeOrNotChangeTheProgram notChangeProgram)
+(chosenItem ChangeOrNotChangeTheProgram applyProgram2)
+((GroupFn MedicalPatient) CancerPatients)
+((GroupFn MedicalPatient) CancerPatientsGroup1)
+((GroupFn MedicalPatient) CancerPatientsGroup2)
+(IntelligentAgent you8116)
+(Cancer cancer2)
+(Cancer cancer1)
+(Dying DyingCancerPatientsGroup1)
+(Dying DyingCancerPatientsGroup2)
+(DrugAdministrationRouteType cancerProgram1)
+(DrugAdministrationRouteType cancerProgram2)
+(PreventingSomething preventingDyingCancerPatientsGroup1)
+(PreventingSomething preventingDyingCancerPatientsGroup2)
+(Inaction notChangeProgram)
+(SelectingSomething ChangeOrNotChangeTheProgram)
+(groupCardinality CancerPatientsGroup1 100)
+(groupCardinality CancerPatientsGroup2 1000)
+(subGroups CancerPatients CancerPatientsGroup1)
+(subGroups CancerPatients CancerPatientsGroup2)
+(objectActedOn DyingCancerPatientsGroup1 CancerPatientsGroup1)
+(objectActedOn DyingCancerPatientsGroup2 CancerPatientsGroup2)
+(diseaseTypeCurableByTreatmentType cancer1 cancerProgram1)
+(diseaseTypeCurableByTreatmentType cancer2 cancerProgram2)
+(preventedProp preventingDyingCancerPatientsGroup1
+ DyingCancerPatientsGroup1)
+(preventedProp preventingDyingCancerPatientsGroup2
+ DyingCancerPatientsGroup2)
+(choices ChangeOrNotChangeTheProgram applyProgram2)
+(choices ChangeOrNotChangeTheProgram notChangeProgram)
+(performedBy applyProgram2 you8116)
+(performedBy notChangeProgram you8116)
+(causes-PropProp (chosenItem ChangeOrNotChangeTheProgram applyProgram2)
+ preventingDyingCancerPatientsGroup2)
+(causes-PropProp (chosenItem ChangeOrNotChangeTheProgram applyProgram2)
+ DyingCancerPatientsGroup1)
+(causes-PropProp
+ (chosenItem ChangeOrNotChangeTheProgram notChangeProgram)
+ DyingCancerPatientsGroup2)
+(causes-PropProp
+ (chosenItem ChangeOrNotChangeTheProgram notChangeProgram)
+ preventingDyingCancerPatientsGroup1)
+(implies
+ (and (sacredValueChoice applyProgram2)
+      (sacredValueChoice notChangeProgram)
+      (uninferredSentence (affectsSigLargerGroup applyProgram2))
+      (uninferredSentence (affectsSigLargerGroup notChangeProgram))
+      (directlyResponsible you8116 applyProgram2)
+      (uninferredSentence
+       (directlyResponsible you8116 notChangeProgram))
+      (uninferredSentence
+       (preventsAlternativeNegativeOutcome applyProgram2))
+      (uninferredSentence
+       (usedAsMeansToPreventNegativeOutcome applyProgram2)))
+ (rightChoice notChangeProgram))
+(makeDecision you8116 notChangeProgram)
++++++++++++
+(IntelligentAgent you1143)
+((GroupFn HomelessPerson) group1FemaleHomeless)
+((GroupFn HomelessPerson) group2FemaleHomeless)
+(groupCardinality group1FemaleHomeless 50)
+(groupCardinality group2FemaleHomeless 150)
+(HumanShelterConstruction shelter1)
+(HumanShelterConstruction shelter2)
+(ShelteringSomething shelteringGroup1)
+(ShelteringSomething shelteringGroup2)
+(performedBy shelteringGroup1 shelter1)
+(performedBy FinancialAssitanceToShelter1 you1143)
+(performedBy shelteringGroup2 shelter1)
+(performedBy FinancialAssitanceToShelter2 you1143)
+(performedBy notChangeSupport you1143)
+(objectActedOn shelteringGroup1 group1FemaleHomeless)
+(objectActedOn shelteringGroup2 group2FemaleHomeless)
+(objectActedOn harmingGroup1 group1FemaleHomeless)
+(objectActedOn harmingGroup2 group2FemaleHomeless)
+(FinancialSupport FinancialAssitanceToShelter1)
+(FinancialSupport FinancialAssitanceToShelter2)
+(beneficiary FinancialAssitanceToShelter1 shelter1)
+(beneficiary FinancialAssitanceToShelter2 shelter2)
+(HarmingAnAgent harmingGroup1)
+(HarmingAnAgent harmingGroup2)
+(PreventingSomething preventingHarmingGroup1)
+(PreventingSomething preventingHarmingGroup2)
+(preventedProp preventingHarmingGroup1 harmingGroup1)
+(preventedProp preventingHarmingGroup2 harmingGroup2)
+(Inaction notChangeSupport)
+(SelectingSomething GivingOrNotGivingAssistance)
+(choices GivingOrNotGivingAssistance FinancialAssitanceToShelter2)
+(choices GivingOrNotGivingAssistance notChangeSupport)
+(chosenItem GivingOrNotGivingAssistance FinancialAssitanceToShelter2)
+(chosenItem GivingOrNotGivingAssistance notChangeSupport)
+(causes-PropProp
+ (chosenItem GivingOrNotGivingAssistance FinancialAssitanceToShelter2)
+ preventingHarmingGroup2)
+(causes-PropProp
+ (chosenItem GivingOrNotGivingAssistance FinancialAssitanceToShelter2)
+ harmingGroup1)
+(causes-PropProp
+ (chosenItem GivingOrNotGivingAssistance notChangeSupport)
+ preventingHarmingGroup1)
+(causes-PropProp
+ (chosenItem GivingOrNotGivingAssistance notChangeSupport)
+ harmingGroup2)
++++++++++++
+(matchBetween preventingDyingCancerPatientsGroup2 preventingHarmingGroup2)
+(matchBetween (PreventingSomething
+               preventingDyingCancerPatientsGroup2) (PreventingSomething
+                                                     preventingHarmingGroup2))
+(matchBetween CancerPatientsGroup2 group2FemaleHomeless)
+(matchBetween 1000 150)
+(matchBetween (groupCardinality CancerPatientsGroup2
+               1000) (groupCardinality group2FemaleHomeless 150))
+(matchBetween DyingCancerPatientsGroup2 harmingGroup2)
+(matchBetween (objectActedOn DyingCancerPatientsGroup2
+               CancerPatientsGroup2) (objectActedOn
+                                      harmingGroup2
+                                      group2FemaleHomeless))
+(matchBetween (preventedProp preventingDyingCancerPatientsGroup2
+               DyingCancerPatientsGroup2) (preventedProp
+                                           preventingHarmingGroup2
+                                           harmingGroup2))
+(matchBetween notChangeProgram notChangeSupport)
+(matchBetween (Inaction notChangeProgram) (Inaction notChangeSupport))
+(matchBetween (performedBy notChangeProgram you8116) (performedBy
+                                                      notChangeSupport
+                                                      you1143))
+(matchBetween (choices ChangeOrNotChangeTheProgram
+               applyProgram2) (choices GivingOrNotGivingAssistance
+                               FinancialAssitanceToShelter2))
+(matchBetween (chosenItem ChangeOrNotChangeTheProgram
+               applyProgram2) (chosenItem GivingOrNotGivingAssistance
+                               FinancialAssitanceToShelter2))
+(matchBetween (causes-PropProp
+               (chosenItem ChangeOrNotChangeTheProgram applyProgram2)
+               DyingCancerPatientsGroup1) (causes-PropProp
+                                           (chosenItem
+                                            GivingOrNotGivingAssistance
+                                            FinancialAssitanceToShelter2)
+                                           harmingGroup1))
+(matchBetween (chosenItem ChangeOrNotChangeTheProgram
+               notChangeProgram) (chosenItem
+                                  GivingOrNotGivingAssistance
+                                  notChangeSupport))
+(matchBetween (causes-PropProp
+               (chosenItem ChangeOrNotChangeTheProgram
+                notChangeProgram)
+               preventingDyingCancerPatientsGroup1) (causes-PropProp
+                                                     (chosenItem
+                                                      GivingOrNotGivingAssistance
+                                                      notChangeSupport)
+                                                     preventingHarmingGroup1))
+(matchBetween (causes-PropProp
+               (chosenItem ChangeOrNotChangeTheProgram
+                notChangeProgram)
+               DyingCancerPatientsGroup2) (causes-PropProp
+                                           (chosenItem
+                                            GivingOrNotGivingAssistance
+                                            notChangeSupport)
+                                           harmingGroup2))
+(matchBetween (causes-PropProp
+               (chosenItem ChangeOrNotChangeTheProgram applyProgram2)
+               preventingDyingCancerPatientsGroup2) (causes-PropProp
+                                                     (chosenItem
+                                                      GivingOrNotGivingAssistance
+                                                      FinancialAssitanceToShelter2)
+                                                     preventingHarmingGroup2))
+(matchBetween (choices ChangeOrNotChangeTheProgram
+               notChangeProgram) (choices
+                                  GivingOrNotGivingAssistance
+                                  notChangeSupport))
+(matchBetween (SelectingSomething
+               ChangeOrNotChangeTheProgram) (SelectingSomething
+                                             GivingOrNotGivingAssistance))
+(matchBetween ChangeOrNotChangeTheProgram GivingOrNotGivingAssistance)
+(matchBetween (performedBy applyProgram2 you8116) (performedBy
+                                                   FinancialAssitanceToShelter2
+                                                   you1143))
+(matchBetween applyProgram2 FinancialAssitanceToShelter2)
+(matchBetween (preventedProp preventingDyingCancerPatientsGroup1
+               DyingCancerPatientsGroup1) (preventedProp
+                                           preventingHarmingGroup1
+                                           harmingGroup1))
+(matchBetween (objectActedOn DyingCancerPatientsGroup1
+               CancerPatientsGroup1) (objectActedOn
+                                      harmingGroup1
+                                      group1FemaleHomeless))
+(matchBetween DyingCancerPatientsGroup1 harmingGroup1)
+(matchBetween (groupCardinality CancerPatientsGroup1
+               100) (groupCardinality group1FemaleHomeless 50))
+(matchBetween 100 50)
+(matchBetween CancerPatientsGroup1 group1FemaleHomeless)
+(matchBetween (PreventingSomething
+               preventingDyingCancerPatientsGroup1) (PreventingSomething
+                                                     preventingHarmingGroup1))
+(matchBetween preventingDyingCancerPatientsGroup1 preventingHarmingGroup1)
+(matchBetween (IntelligentAgent you8116) (IntelligentAgent you1143))
+(matchBetween you8116 you1143)

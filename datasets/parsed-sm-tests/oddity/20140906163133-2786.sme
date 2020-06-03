@@ -1,0 +1,147 @@
+(convexAngleBetweenEdges Edge-2566 Edge-2568)
+(convexAngleBetweenEdges Edge-2568 Edge-2564)
+(convexAngleBetweenEdges Edge-2564 Edge-2565)
+(convexAngleBetweenEdges Edge-2565 Edge-2566)
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-2565 Edge-2566)
+ (convexAngleBetweenEdges Edge-2566 Edge-2568))
+(bottomToTopCorner (convexAngleBetweenEdges Edge-2565 Edge-2566))
+(rightToLeftCorner (convexAngleBetweenEdges Edge-2565 Edge-2566))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-2564 Edge-2565)
+ (convexAngleBetweenEdges Edge-2565 Edge-2566))
+(topToBottomCorner (convexAngleBetweenEdges Edge-2564 Edge-2565))
+(rightToLeftCorner (convexAngleBetweenEdges Edge-2564 Edge-2565))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-2568 Edge-2564)
+ (convexAngleBetweenEdges Edge-2564 Edge-2565))
+(topToBottomCorner (convexAngleBetweenEdges Edge-2568 Edge-2564))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-2566 Edge-2568)
+ (convexAngleBetweenEdges Edge-2568 Edge-2564))
+(leftToRightCorner (convexAngleBetweenEdges Edge-2566 Edge-2568))
+(above Edge-2564 Edge-2565)
+(rightOf Edge-2564 Edge-2565)
+(above Edge-2568 Edge-2565)
+(rightOf Edge-2568 Edge-2565)
+(above Edge-2568 Edge-2564)
+(above Edge-2566 Edge-2565)
+(rightOf Edge-2565 Edge-2566)
+(above Edge-2566 Edge-2564)
+(rightOf Edge-2564 Edge-2566)
+(rightOf Edge-2568 Edge-2566)
+(lengthShort Edge-2565)
+(lengthMedium Edge-2568)
+(lengthMedium Edge-2564)
+(lengthLong Edge-2566)
+(ObliqueEdge-Downward Edge-2565)
+(PerceptualEdge Edge-2565)
+(StraightEdge Edge-2565)
+(PerceptualEdge Edge-2564)
+(CurvedEdge Edge-2564)
+(ObliqueEdge-Downward Edge-2568)
+(PerceptualEdge Edge-2568)
+(StraightEdge Edge-2568)
+(PerceptualEdge Edge-2566)
+(CurvedEdge Edge-2566)
++++++++++++
+(CurvedEdge Edge-2569)
+(PerceptualEdge Edge-2569)
+(PerceptualEdge Edge-2570)
+(PerceptualEdge Edge-2571)
+(PerceptualEdge Edge-2572)
+(StraightEdge Edge-2570)
+(StraightEdge Edge-2571)
+(StraightEdge Edge-2572)
+(ObliqueEdge-Downward Edge-2570)
+(ObliqueEdge-Downward Edge-2571)
+(ObliqueEdge-Downward Edge-2572)
+(lengthLong Edge-2569)
+(lengthTiny Edge-2570)
+(lengthTiny Edge-2572)
+(lengthTiny Edge-2571)
+(rightOf Edge-2569 Edge-2570)
+(rightOf Edge-2572 Edge-2569)
+(rightOf Edge-2571 Edge-2570)
+(rightOf Edge-2572 Edge-2570)
+(rightOf Edge-2572 Edge-2571)
+(above Edge-2570 Edge-2569)
+(above Edge-2569 Edge-2572)
+(above Edge-2570 Edge-2571)
+(above Edge-2570 Edge-2572)
+(above Edge-2571 Edge-2572)
+(convexAngleBetweenEdges Edge-2569 Edge-2570)
+(convexAngleBetweenEdges Edge-2572 Edge-2569)
+(rightToLeftCorner (convexAngleBetweenEdges Edge-2569 Edge-2570))
+(rightToLeftCorner (convexAngleBetweenEdges Edge-2572 Edge-2569))
+(bottomToTopCorner (convexAngleBetweenEdges Edge-2569 Edge-2570))
+(bottomToTopCorner (convexAngleBetweenEdges Edge-2572 Edge-2569))
+(concaveAngleBetweenEdges Edge-2570 Edge-2571)
+(concaveAngleBetweenEdges Edge-2571 Edge-2572)
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-2569 Edge-2570)
+ (concaveAngleBetweenEdges Edge-2570 Edge-2571))
+(cycleAdjacentAngles (concaveAngleBetweenEdges Edge-2570 Edge-2571)
+ (concaveAngleBetweenEdges Edge-2571 Edge-2572))
+(cycleAdjacentAngles (concaveAngleBetweenEdges Edge-2571 Edge-2572)
+ (convexAngleBetweenEdges Edge-2572 Edge-2569))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-2572 Edge-2569)
+ (convexAngleBetweenEdges Edge-2569 Edge-2570))
+(leftToRightCorner (concaveAngleBetweenEdges Edge-2570 Edge-2571))
+(leftToRightCorner (concaveAngleBetweenEdges Edge-2571 Edge-2572))
+(topToBottomCorner (concaveAngleBetweenEdges Edge-2570 Edge-2571))
+(topToBottomCorner (concaveAngleBetweenEdges Edge-2571 Edge-2572))
+(horizontallyOrientedCorner
+ (concaveAngleBetweenEdges Edge-2570 Edge-2571))
+(verticallyOrientedCorner
+ (concaveAngleBetweenEdges Edge-2571 Edge-2572))
+(perpendicularCorner (convexAngleBetweenEdges Edge-2572 Edge-2569))
++++++++++++
+(matchBetween (StraightEdge Edge-2568) (StraightEdge Edge-2571))
+(matchBetween Edge-2564 Edge-2572)
+(matchBetween (PerceptualEdge Edge-2564) (PerceptualEdge Edge-2572))
+(matchBetween Edge-2566 Edge-2570)
+(matchBetween (PerceptualEdge Edge-2566) (PerceptualEdge Edge-2570))
+(matchBetween Edge-2565 Edge-2569)
+(matchBetween (PerceptualEdge Edge-2565) (PerceptualEdge Edge-2569))
+(matchBetween (rightOf Edge-2564 Edge-2566) (rightOf
+                                             Edge-2572
+                                             Edge-2570))
+(matchBetween (convexAngleBetweenEdges Edge-2564
+               Edge-2565) (convexAngleBetweenEdges Edge-2572 Edge-2569))
+(matchBetween (rightToLeftCorner
+               (convexAngleBetweenEdges Edge-2564
+                Edge-2565)) (rightToLeftCorner
+                             (convexAngleBetweenEdges Edge-2572
+                              Edge-2569)))
+(matchBetween (rightOf Edge-2565 Edge-2566) (rightOf
+                                             Edge-2569
+                                             Edge-2570))
+(matchBetween (rightToLeftCorner
+               (convexAngleBetweenEdges Edge-2565
+                Edge-2566)) (rightToLeftCorner
+                             (convexAngleBetweenEdges Edge-2569
+                              Edge-2570)))
+(matchBetween (cycleAdjacentAngles
+               (convexAngleBetweenEdges Edge-2564 Edge-2565)
+               (convexAngleBetweenEdges Edge-2565
+                Edge-2566)) (cycleAdjacentAngles
+                             (convexAngleBetweenEdges Edge-2572
+                              Edge-2569)
+                             (convexAngleBetweenEdges Edge-2569
+                              Edge-2570)))
+(matchBetween (bottomToTopCorner
+               (convexAngleBetweenEdges Edge-2565
+                Edge-2566)) (bottomToTopCorner
+                             (convexAngleBetweenEdges Edge-2569
+                              Edge-2570)))
+(matchBetween (convexAngleBetweenEdges Edge-2565
+               Edge-2566) (convexAngleBetweenEdges Edge-2569 Edge-2570))
+(matchBetween (above Edge-2566 Edge-2565) (above Edge-2570 Edge-2569))
+(matchBetween (rightOf Edge-2564 Edge-2565) (rightOf
+                                             Edge-2572
+                                             Edge-2569))
+(matchBetween (above Edge-2566 Edge-2564) (above Edge-2570 Edge-2572))
+(matchBetween (rightOf Edge-2568 Edge-2566) (rightOf
+                                             Edge-2571
+                                             Edge-2570))
+(matchBetween (above Edge-2568 Edge-2564) (above Edge-2571 Edge-2572))
+(matchBetween (PerceptualEdge Edge-2568) (PerceptualEdge Edge-2571))
+(matchBetween (ObliqueEdge-Downward Edge-2568) (ObliqueEdge-Downward
+                                                Edge-2571))
+(matchBetween Edge-2568 Edge-2571)

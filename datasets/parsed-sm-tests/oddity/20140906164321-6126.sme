@@ -1,0 +1,57 @@
+((ShapeTypeFn 0) Edge-3705)
+((ShapeTypeFn 2) Super-Edge-3713)
+((ShapeTypeFn 4) Edge-3709)
+(edgesParallel Edge-3709 Edge-3705)
+(elementIntersects Edge-3705 Super-Edge-3713)
+(edgesPerpendicular Super-Edge-3713 Edge-3705)
+(elementIntersects Edge-3709 Super-Edge-3713)
+(edgesPerpendicular Super-Edge-3713 Edge-3709)
+(lengthShort Edge-3705)
+(lengthShort Edge-3709)
+(lengthLong Super-Edge-3713)
+(PerceptualEdge Edge-3705)
+(PerceptualEdge Edge-3709)
+(PerceptualEdge Super-Edge-3713)
++++++++++++
+(PerceptualEdge Super-Edge-3722)
+(PerceptualEdge Edge-3718)
+(PerceptualEdge Edge-3714)
+(lengthLong Super-Edge-3722)
+(lengthShort Edge-3718)
+(lengthShort Edge-3714)
+(edgesPerpendicular Super-Edge-3722 Edge-3718)
+(edgesPerpendicular Super-Edge-3722 Edge-3714)
+(elementIntersects Edge-3718 Super-Edge-3722)
+(elementIntersects Edge-3714 Super-Edge-3722)
+(edgesParallel Edge-3718 Edge-3714)
+((ShapeTypeFn 5) Edge-3718)
+((ShapeTypeFn 3) Super-Edge-3722)
+((ShapeTypeFn 1) Edge-3714)
++++++++++++
+(matchBetween Edge-3705 Edge-3714)
+(matchBetween (lengthShort Edge-3705) (lengthShort Edge-3714))
+(matchBetween (PerceptualEdge Edge-3705) (PerceptualEdge Edge-3714))
+(matchBetween (PerceptualEdge Super-Edge-3713) (PerceptualEdge
+                                                Super-Edge-3722))
+(matchBetween (elementIntersects Edge-3709
+               Super-Edge-3713) (elementIntersects
+                                 Edge-3718
+                                 Super-Edge-3722))
+(matchBetween (edgesPerpendicular Super-Edge-3713
+               Edge-3709) (edgesPerpendicular Super-Edge-3722
+                           Edge-3718))
+(matchBetween (edgesPerpendicular Super-Edge-3713
+               Edge-3705) (edgesPerpendicular Super-Edge-3722
+                           Edge-3714))
+(matchBetween (elementIntersects Edge-3705
+               Super-Edge-3713) (elementIntersects
+                                 Edge-3714
+                                 Super-Edge-3722))
+(matchBetween (edgesParallel Edge-3709 Edge-3705) (edgesParallel
+                                                   Edge-3718
+                                                   Edge-3714))
+(matchBetween (lengthLong Super-Edge-3713) (lengthLong Super-Edge-3722))
+(matchBetween Super-Edge-3713 Super-Edge-3722)
+(matchBetween (PerceptualEdge Edge-3709) (PerceptualEdge Edge-3718))
+(matchBetween (lengthShort Edge-3709) (lengthShort Edge-3718))
+(matchBetween Edge-3709 Edge-3718)

@@ -1,0 +1,39 @@
+(ShapeTypeFn0 Object-482)
+((ShapeTypeFn 1) Object-481)
+(narrowEdged Object-482)
+(wideEdged Object-481)
+(elementsIntersect Object-481 Object-482)
+(elementsOverlap Object-481 Object-482)
+(centeredOn Object-482 Object-481)
+(ObjectsBorderColoredFnBlackColor Object-482)
+(ObjectsBorderColoredFnBlackColor Object-481)
+(ObjectsColoredFnBlackColor Object-482)
++++++++++++
+(ObjectsColoredFnBlackColor Object-489)
+(ObjectsBorderColoredFnBlackColor Object-490)
+(ObjectsBorderColoredFnBlackColor Object-489)
+(elementsOverlap Object-490 Object-489)
+(elementsIntersect Object-490 Object-489)
+(wideEdged Object-490)
+(narrowEdged Object-489)
+((ShapeTypeFn 2) Object-490)
+(ShapeTypeFn0 Object-489)
++++++++++++
+(matchBetween (ObjectsBorderColoredFnBlackColor
+               Object-481) (ObjectsBorderColoredFnBlackColor
+                            Object-490))
+(matchBetween (narrowEdged Object-482) (narrowEdged Object-489))
+(matchBetween (ObjectsColoredFnBlackColor
+               Object-482) (ObjectsColoredFnBlackColor Object-489))
+(matchBetween (elementsOverlap Object-481 Object-482) (elementsOverlap
+                                                       Object-490
+                                                       Object-489))
+(matchBetween (elementsIntersect Object-481
+               Object-482) (elementsIntersect Object-490 Object-489))
+(matchBetween (ObjectsBorderColoredFnBlackColor
+               Object-482) (ObjectsBorderColoredFnBlackColor
+                            Object-489))
+(matchBetween (ShapeTypeFn0 Object-482) (ShapeTypeFn0 Object-489))
+(matchBetween Object-482 Object-489)
+(matchBetween (wideEdged Object-481) (wideEdged Object-490))
+(matchBetween Object-481 Object-490)

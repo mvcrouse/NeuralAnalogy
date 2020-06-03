@@ -1,0 +1,202 @@
+(sacredValueChoice order61574)
+(sacredValueChoice Inaction61980)
+(affectsSigLargerGroup order61574)
+(affectsSigLargerGroup Inaction61980)
+(uninferredSentence (affectsSigLargerGroup order61574))
+(uninferredSentence (affectsSigLargerGroup Inaction61980))
+(uninferredSentence (directlyResponsible you60659 Inaction61980))
+(directlyResponsible you60659 order61574)
+(directlyResponsible you60659 Inaction61980)
+(preventsAlternativeNegativeOutcome order61574)
+(usedAsMeansToPreventNegativeOutcome order61574)
+(and (sacredValueChoice order61574) (sacredValueChoice Inaction61980)
+     (uninferredSentence (affectsSigLargerGroup order61574))
+     (uninferredSentence (affectsSigLargerGroup Inaction61980))
+     (directlyResponsible you60659 order61574)
+     (uninferredSentence (directlyResponsible you60659 Inaction61980))
+     (preventsAlternativeNegativeOutcome order61574)
+     (usedAsMeansToPreventNegativeOutcome order61574))
+(rightChoice Inaction61980)
+(obstructs boat61694 torpedo60971)
+(chosenItem SelectingSomething61979 order61574)
+(chosenItem SelectingSomething61979 Inaction61980)
+(Inaction Inaction61980)
+(PreventingSomething PreventingSomething61978)
+(SelectingSomething SelectingSomething61979)
+((GroupFn Person) them60731)
+(Watercraft boat60512)
+((GroupFn Person) set-of-soldier61764)
+(Watercraft boat61694)
+(BarrierSituation intercept60913)
+(PreventingSomething save60698)
+(Ordering-CommunicationAct order61574)
+(RescuingSomeone save60698)
+(Set-Mathematical set-of-soldier61764)
+(SinkingEvent sink60482)
+(SinkingEvent sink61646)
+(Set-Mathematical them60731)
+(Torpedo torpedo60971)
+(Dying sink61646)
+(Dying sink60482)
+(performedBy PreventingSomething61978 you60659)
+(preventedSit PreventingSomething61978 sink60482)
+(choices SelectingSomething61979 order61574)
+(choices SelectingSomething61979 Inaction61980)
+(causes-PropSit (chosenItem SelectingSomething61979 Inaction61980)
+ sink60482)
+(performedBy order61574 you60659)
+(performedBy Inaction61980 you60659)
+(recipientOfInfo order61574 soldier60831)
+(causes-PropSit (chosenItem SelectingSomething61979 order61574)
+ intercept60913)
+(with-UnderspecifiedAgent intercept60913 boat61694)
+(causes-SitProp intercept60913 (obstructs boat61694 torpedo60971))
+(barrier intercept60913 boat61694)
+(causes-SitSit intercept60913 sink61646)
+(causes-SitSit intercept60913 save60698)
+(preventedSit save60698 sink60482)
+(objectActedOn order61574 boat61694)
+(beneficiary save60698 them60731)
+(performedBy save60698 you60659)
+(by-Underspecified save60698 order61574)
+(causes-SitSit save60698 PreventingSomething61978)
+(cardinality set-of-soldier61764 3)
+(doneBy sink60482 torpedo60971)
+(objectActedOn sink60482 boat60512)
+(doneBy sink61646 order61574)
+(objectActedOn sink61646 boat61694)
+(cardinality them60731 6)
+(implies
+ (and (sacredValueChoice order61574) (sacredValueChoice Inaction61980)
+      (uninferredSentence (affectsSigLargerGroup order61574))
+      (uninferredSentence (affectsSigLargerGroup Inaction61980))
+      (directlyResponsible you60659 order61574)
+      (uninferredSentence (directlyResponsible you60659 Inaction61980))
+      (preventsAlternativeNegativeOutcome order61574)
+      (usedAsMeansToPreventNegativeOutcome order61574))
+ (rightChoice Inaction61980))
+(makeDecision you60659 Inaction61980)
++++++++++++
+(Inaction Inaction18657)
+(performedBy PreventingSomething18655 you18016)
+(performedBy save18062 you18016)
+(performedBy throw18421 you18016)
+(performedBy Inaction18657 you18016)
+(preventedSit PreventingSomething18655 kill17889)
+(PreventingSomething PreventingSomething18655)
+(SelectingSomething SelectingSomething18656)
+(choices SelectingSomething18656 throw18421)
+(choices SelectingSomething18656 Inaction18657)
+(chosenItem SelectingSomething18656 Inaction18657)
+(chosenItem SelectingSomething18656 throw18421)
+(causes-PropSit (chosenItem SelectingSomething18656 Inaction18657)
+ kill17889)
+(causes-PropSit (chosenItem SelectingSomething18656 throw18421)
+ save18062)
+(causes-PropSit (chosenItem SelectingSomething18656 throw18421)
+ kill18493)
+(in-UnderspecifiedContainer bomb18151 restaurant17825)
+(Bomb bomb18151)
+(PhysicalDestructionEvent kill17889)
+(PhysicalDestructionEvent kill18493)
+(doneBy kill17889 bomb18151)
+(doneBy kill18493 throw18421)
+(Dying kill17889)
+(Dying kill18493)
+(organismKilled kill18493 person18540)
+(Terrace-Topographical patio18209)
+(Person person18540)
+(RestaurantSpace restaurant17825)
+(RescuingSomeone save18062)
+(beneficiary save18062 them18094)
+(by-Underspecified save18062 throw18421)
+(causes-SitSit save18062 PreventingSomething18655)
+(cardinality them18094 9)
+(cardinality person18540 1)
+(Set-Mathematical them18094)
+(objectActedOn throw18421 bomb18151)
+(toLocation throw18421 patio18209)
+(on-UnderspecifiedSurface bomb18151 patio18209)
+(causes-SitProp throw18421
+ (on-UnderspecifiedSurface bomb18151 patio18209))
+(ThrowingAnObject throw18421)
++++++++++++
+(matchBetween SelectingSomething61979 SelectingSomething18656)
+(matchBetween (SelectingSomething
+               SelectingSomething61979) (SelectingSomething
+                                         SelectingSomething18656))
+(matchBetween them60731 them18094)
+(matchBetween (Set-Mathematical them60731) (Set-Mathematical them18094))
+(matchBetween (choices SelectingSomething61979 Inaction61980) (choices
+                                                               SelectingSomething18656
+                                                               Inaction18657))
+(matchBetween (chosenItem SelectingSomething61979
+               Inaction61980) (chosenItem SelectingSomething18656
+                               Inaction18657))
+(matchBetween (causes-PropSit
+               (chosenItem SelectingSomething61979 Inaction61980)
+               sink60482) (causes-PropSit
+                           (chosenItem SelectingSomething18656
+                            Inaction18657)
+                           kill17889))
+(matchBetween you60659 you18016)
+(matchBetween (performedBy Inaction61980 you60659) (performedBy
+                                                    Inaction18657
+                                                    you18016))
+(matchBetween (performedBy PreventingSomething61978
+               you60659) (performedBy PreventingSomething18655
+                          you18016))
+(matchBetween set-of-soldier61764 person18540)
+(matchBetween 3 1)
+(matchBetween (cardinality set-of-soldier61764 3) (cardinality
+                                                   person18540
+                                                   1))
+(matchBetween torpedo60971 bomb18151)
+(matchBetween (doneBy sink60482 torpedo60971) (doneBy
+                                               kill17889
+                                               bomb18151))
+(matchBetween (performedBy save60698 you60659) (performedBy
+                                                save18062
+                                                you18016))
+(matchBetween (by-Underspecified save60698
+               order61574) (by-Underspecified save18062 throw18421))
+(matchBetween (causes-PropSit
+               (chosenItem SelectingSomething61979 order61574)
+               intercept60913) (causes-PropSit
+                                (chosenItem
+                                 SelectingSomething18656
+                                 throw18421)
+                                kill18493))
+(matchBetween intercept60913 kill18493)
+(matchBetween (chosenItem SelectingSomething61979
+               order61574) (chosenItem SelectingSomething18656
+                            throw18421))
+(matchBetween (causes-SitSit save60698
+               PreventingSomething61978) (causes-SitSit
+                                          save18062
+                                          PreventingSomething18655))
+(matchBetween (beneficiary save60698 them60731) (beneficiary
+                                                 save18062
+                                                 them18094))
+(matchBetween (RescuingSomeone save60698) (RescuingSomeone save18062))
+(matchBetween save60698 save18062)
+(matchBetween (cardinality them60731 6) (cardinality them18094 9))
+(matchBetween 6 9)
+(matchBetween (performedBy order61574 you60659) (performedBy
+                                                 throw18421
+                                                 you18016))
+(matchBetween (preventedSit PreventingSomething61978
+               sink60482) (preventedSit PreventingSomething18655
+                           kill17889))
+(matchBetween (choices SelectingSomething61979 order61574) (choices
+                                                            SelectingSomething18656
+                                                            throw18421))
+(matchBetween order61574 throw18421)
+(matchBetween (Dying sink60482) (Dying kill17889))
+(matchBetween sink60482 kill17889)
+(matchBetween (PreventingSomething
+               PreventingSomething61978) (PreventingSomething
+                                          PreventingSomething18655))
+(matchBetween PreventingSomething61978 PreventingSomething18655)
+(matchBetween (Inaction Inaction61980) (Inaction Inaction18657))
+(matchBetween Inaction61980 Inaction18657)

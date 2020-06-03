@@ -1,0 +1,13 @@
+((ShapeTypeFn 0) Object-12)
+(ObjectsBorderColoredFnBlackColor Object-12)
+(ObjectsColoredFnWhiteColor Object-12)
++++++++++++
+(ObjectsColoredFnWhiteColor Object-11)
+(ObjectsBorderColoredFnBlackColor Object-11)
+((ShapeTypeFn 1) Object-11)
++++++++++++
+(matchBetween (ObjectsColoredFnWhiteColor
+               Object-12) (ObjectsColoredFnWhiteColor Object-11))
+(matchBetween (ObjectsBorderColoredFnBlackColor
+               Object-12) (ObjectsBorderColoredFnBlackColor Object-11))
+(matchBetween Object-12 Object-11)

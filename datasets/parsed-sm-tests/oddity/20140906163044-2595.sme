@@ -1,0 +1,284 @@
+(edgesDisconnected Edge-2440 Edge-2442)
+(edgesDisconnected Edge-2437 Edge-2439)
+(angleBetweenEdges Edge-2437 Edge-2438)
+(convexAngleBetweenEdges Edge-2438 Edge-2439)
+(convexAngleBetweenEdges Edge-2440 Edge-2441)
+(convexAngleBetweenEdges Edge-2441 Edge-2442)
+(convexAngleBetweenEdges Edge-2442 Edge-2443)
+(convexAngleBetweenEdges Edge-2443 Edge-2437)
+(concaveAngleBetweenEdges Edge-2439 Edge-2440)
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-2443 Edge-2437)
+ (angleBetweenEdges Edge-2437 Edge-2438))
+(horizontallyOrientedCorner
+ (convexAngleBetweenEdges Edge-2443 Edge-2437))
+(bottomToTopCorner (convexAngleBetweenEdges Edge-2443 Edge-2437))
+(leftToRightCorner (convexAngleBetweenEdges Edge-2443 Edge-2437))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-2442 Edge-2443)
+ (convexAngleBetweenEdges Edge-2443 Edge-2437))
+(bottomToTopCorner (convexAngleBetweenEdges Edge-2442 Edge-2443))
+(rightToLeftCorner (convexAngleBetweenEdges Edge-2442 Edge-2443))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-2441 Edge-2442)
+ (convexAngleBetweenEdges Edge-2442 Edge-2443))
+(rightToLeftCorner (convexAngleBetweenEdges Edge-2441 Edge-2442))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-2440 Edge-2441)
+ (convexAngleBetweenEdges Edge-2441 Edge-2442))
+(topToBottomCorner (convexAngleBetweenEdges Edge-2440 Edge-2441))
+(leftToRightCorner (convexAngleBetweenEdges Edge-2440 Edge-2441))
+(cycleAdjacentAngles (concaveAngleBetweenEdges Edge-2439 Edge-2440)
+ (convexAngleBetweenEdges Edge-2440 Edge-2441))
+(horizontallyOrientedCorner
+ (concaveAngleBetweenEdges Edge-2439 Edge-2440))
+(topToBottomCorner (concaveAngleBetweenEdges Edge-2439 Edge-2440))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-2438 Edge-2439)
+ (concaveAngleBetweenEdges Edge-2439 Edge-2440))
+(topToBottomCorner (convexAngleBetweenEdges Edge-2438 Edge-2439))
+(cycleAdjacentAngles (angleBetweenEdges Edge-2437 Edge-2438)
+ (convexAngleBetweenEdges Edge-2438 Edge-2439))
+(bottomToTopCorner (angleBetweenEdges Edge-2437 Edge-2438))
+(leftToRightCorner (angleBetweenEdges Edge-2437 Edge-2438))
+(edgesParallel Edge-2437 Edge-2439)
+(parallelEdgeRelation (edgesDisconnected Edge-2437 Edge-2439))
+(edgesParallel Edge-2440 Edge-2442)
+(parallelEdgeRelation (edgesDisconnected Edge-2440 Edge-2442))
+(above Edge-2443 Edge-2442)
+(rightOf Edge-2442 Edge-2443)
+(above Edge-2443 Edge-2441)
+(rightOf Edge-2441 Edge-2443)
+(rightOf Edge-2441 Edge-2442)
+(above Edge-2440 Edge-2442)
+(rightOf Edge-2440 Edge-2442)
+(above Edge-2440 Edge-2441)
+(rightOf Edge-2441 Edge-2440)
+(above Edge-2439 Edge-2441)
+(rightOf Edge-2441 Edge-2439)
+(above Edge-2439 Edge-2440)
+(above Edge-2438 Edge-2443)
+(rightOf Edge-2438 Edge-2443)
+(above Edge-2438 Edge-2440)
+(above Edge-2438 Edge-2439)
+(above Edge-2437 Edge-2443)
+(rightOf Edge-2437 Edge-2443)
+(above Edge-2437 Edge-2442)
+(rightOf Edge-2442 Edge-2437)
+(rightOf Edge-2439 Edge-2437)
+(above Edge-2438 Edge-2437)
+(rightOf Edge-2438 Edge-2437)
+(lengthMedium Edge-2437)
+(lengthMedium Edge-2439)
+(lengthMedium Edge-2443)
+(lengthMedium Edge-2438)
+(lengthMedium Edge-2441)
+(lengthMedium Edge-2440)
+(lengthLong Edge-2442)
+(VerticalEdge Edge-2443)
+(axisAligned Edge-2443)
+(PerceptualEdge Edge-2443)
+(StraightEdge Edge-2443)
+(ObliqueEdge-Downward Edge-2442)
+(PerceptualEdge Edge-2442)
+(StraightEdge Edge-2442)
+(PerceptualEdge Edge-2441)
+(CurvedEdge Edge-2441)
+(ObliqueEdge-Downward Edge-2440)
+(PerceptualEdge Edge-2440)
+(StraightEdge Edge-2440)
+(ObliqueEdge-Upward Edge-2439)
+(PerceptualEdge Edge-2439)
+(StraightEdge Edge-2439)
+(CurvedEdge-UpBumped Edge-2438)
+(PerceptualEdge Edge-2438)
+(CurvedEdge Edge-2438)
+(ObliqueEdge-Upward Edge-2437)
+(PerceptualEdge Edge-2437)
+(StraightEdge Edge-2437)
++++++++++++
+(StraightEdge Edge-2444)
+(StraightEdge Edge-2445)
+(StraightEdge Edge-2446)
+(StraightEdge Edge-2448)
+(PerceptualEdge Edge-2444)
+(PerceptualEdge Edge-2445)
+(PerceptualEdge Edge-2446)
+(PerceptualEdge Edge-2447)
+(PerceptualEdge Edge-2448)
+(ObliqueEdge-Upward Edge-2444)
+(ObliqueEdge-Downward Edge-2445)
+(axisAligned Edge-2446)
+(axisAligned Edge-2448)
+(VerticalEdge Edge-2446)
+(VerticalEdge Edge-2448)
+(CurvedEdge Edge-2447)
+(lengthLong Edge-2446)
+(lengthLong Edge-2447)
+(lengthLong Edge-2448)
+(lengthLong Edge-2445)
+(lengthShort Edge-2444)
+(rightOf Edge-2445 Edge-2444)
+(rightOf Edge-2446 Edge-2444)
+(rightOf Edge-2447 Edge-2444)
+(rightOf Edge-2444 Edge-2448)
+(rightOf Edge-2446 Edge-2445)
+(rightOf Edge-2445 Edge-2448)
+(rightOf Edge-2446 Edge-2447)
+(rightOf Edge-2446 Edge-2448)
+(rightOf Edge-2447 Edge-2448)
+(above Edge-2444 Edge-2446)
+(above Edge-2444 Edge-2447)
+(above Edge-2444 Edge-2448)
+(above Edge-2445 Edge-2446)
+(above Edge-2445 Edge-2447)
+(above Edge-2445 Edge-2448)
+(above Edge-2446 Edge-2447)
+(above Edge-2448 Edge-2447)
+(edgesDisconnected Edge-2446 Edge-2448)
+(parallelEdgeRelation (edgesDisconnected Edge-2446 Edge-2448))
+(edgesParallel Edge-2446 Edge-2448)
+(convexAngleBetweenEdges Edge-2444 Edge-2445)
+(convexAngleBetweenEdges Edge-2445 Edge-2446)
+(convexAngleBetweenEdges Edge-2446 Edge-2447)
+(convexAngleBetweenEdges Edge-2447 Edge-2448)
+(convexAngleBetweenEdges Edge-2448 Edge-2444)
+(leftToRightCorner (convexAngleBetweenEdges Edge-2444 Edge-2445))
+(leftToRightCorner (convexAngleBetweenEdges Edge-2445 Edge-2446))
+(leftToRightCorner (convexAngleBetweenEdges Edge-2448 Edge-2444))
+(verticallyOrientedCorner (convexAngleBetweenEdges Edge-2444 Edge-2445))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-2444 Edge-2445)
+ (convexAngleBetweenEdges Edge-2445 Edge-2446))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-2445 Edge-2446)
+ (convexAngleBetweenEdges Edge-2446 Edge-2447))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-2446 Edge-2447)
+ (convexAngleBetweenEdges Edge-2447 Edge-2448))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-2447 Edge-2448)
+ (convexAngleBetweenEdges Edge-2448 Edge-2444))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-2448 Edge-2444)
+ (convexAngleBetweenEdges Edge-2444 Edge-2445))
+(topToBottomCorner (convexAngleBetweenEdges Edge-2445 Edge-2446))
+(topToBottomCorner (convexAngleBetweenEdges Edge-2446 Edge-2447))
+(horizontallyOrientedCorner
+ (convexAngleBetweenEdges Edge-2445 Edge-2446))
+(horizontallyOrientedCorner
+ (convexAngleBetweenEdges Edge-2448 Edge-2444))
+(adjacentObtuseAcuteAngles
+ (convexAngleBetweenEdges Edge-2445 Edge-2446)
+ (convexAngleBetweenEdges Edge-2446 Edge-2447))
+(rightToLeftCorner (convexAngleBetweenEdges Edge-2446 Edge-2447))
+(rightToLeftCorner (convexAngleBetweenEdges Edge-2447 Edge-2448))
+(perpendicularCorner (convexAngleBetweenEdges Edge-2447 Edge-2448))
+(bottomToTopCorner (convexAngleBetweenEdges Edge-2447 Edge-2448))
+(bottomToTopCorner (convexAngleBetweenEdges Edge-2448 Edge-2444))
++++++++++++
+(matchBetween (PerceptualEdge Edge-2440) (PerceptualEdge Edge-2445))
+(matchBetween Edge-2437 Edge-2444)
+(matchBetween (ObliqueEdge-Upward Edge-2437) (ObliqueEdge-Upward
+                                              Edge-2444))
+(matchBetween (StraightEdge Edge-2437) (StraightEdge Edge-2444))
+(matchBetween Edge-2442 Edge-2447)
+(matchBetween (lengthLong Edge-2442) (lengthLong Edge-2447))
+(matchBetween Edge-2443 Edge-2448)
+(matchBetween (VerticalEdge Edge-2443) (VerticalEdge Edge-2448))
+(matchBetween (PerceptualEdge Edge-2443) (PerceptualEdge Edge-2448))
+(matchBetween (above Edge-2440 Edge-2441) (above Edge-2445 Edge-2446))
+(matchBetween (convexAngleBetweenEdges Edge-2440
+               Edge-2441) (convexAngleBetweenEdges Edge-2445 Edge-2446))
+(matchBetween (topToBottomCorner
+               (convexAngleBetweenEdges Edge-2440
+                Edge-2441)) (topToBottomCorner
+                             (convexAngleBetweenEdges Edge-2445
+                              Edge-2446)))
+(matchBetween (above Edge-2440 Edge-2442) (above Edge-2445 Edge-2447))
+(matchBetween (rightOf Edge-2442 Edge-2437) (rightOf
+                                             Edge-2447
+                                             Edge-2444))
+(matchBetween (rightOf Edge-2437 Edge-2443) (rightOf
+                                             Edge-2444
+                                             Edge-2448))
+(matchBetween (convexAngleBetweenEdges Edge-2443
+               Edge-2437) (convexAngleBetweenEdges Edge-2448 Edge-2444))
+(matchBetween (horizontallyOrientedCorner
+               (convexAngleBetweenEdges Edge-2443
+                Edge-2437)) (horizontallyOrientedCorner
+                             (convexAngleBetweenEdges Edge-2448
+                              Edge-2444)))
+(matchBetween (leftToRightCorner
+               (convexAngleBetweenEdges Edge-2443
+                Edge-2437)) (leftToRightCorner
+                             (convexAngleBetweenEdges Edge-2448
+                              Edge-2444)))
+(matchBetween (rightOf Edge-2441 Edge-2443) (rightOf
+                                             Edge-2446
+                                             Edge-2448))
+(matchBetween (rightOf Edge-2442 Edge-2443) (rightOf
+                                             Edge-2447
+                                             Edge-2448))
+(matchBetween (bottomToTopCorner
+               (convexAngleBetweenEdges Edge-2442
+                Edge-2443)) (bottomToTopCorner
+                             (convexAngleBetweenEdges Edge-2447
+                              Edge-2448)))
+(matchBetween (cycleAdjacentAngles
+               (convexAngleBetweenEdges Edge-2442 Edge-2443)
+               (convexAngleBetweenEdges Edge-2443
+                Edge-2437)) (cycleAdjacentAngles
+                             (convexAngleBetweenEdges Edge-2447
+                              Edge-2448)
+                             (convexAngleBetweenEdges Edge-2448
+                              Edge-2444)))
+(matchBetween (cycleAdjacentAngles
+               (convexAngleBetweenEdges Edge-2441 Edge-2442)
+               (convexAngleBetweenEdges Edge-2442
+                Edge-2443)) (cycleAdjacentAngles
+                             (convexAngleBetweenEdges Edge-2446
+                              Edge-2447)
+                             (convexAngleBetweenEdges Edge-2447
+                              Edge-2448)))
+(matchBetween (cycleAdjacentAngles
+               (convexAngleBetweenEdges Edge-2440 Edge-2441)
+               (convexAngleBetweenEdges Edge-2441
+                Edge-2442)) (cycleAdjacentAngles
+                             (convexAngleBetweenEdges Edge-2445
+                              Edge-2446)
+                             (convexAngleBetweenEdges Edge-2446
+                              Edge-2447)))
+(matchBetween (rightToLeftCorner
+               (convexAngleBetweenEdges Edge-2442
+                Edge-2443)) (rightToLeftCorner
+                             (convexAngleBetweenEdges Edge-2447
+                              Edge-2448)))
+(matchBetween (convexAngleBetweenEdges Edge-2442
+               Edge-2443) (convexAngleBetweenEdges Edge-2447 Edge-2448))
+(matchBetween (above Edge-2443 Edge-2442) (above Edge-2448 Edge-2447))
+(matchBetween (rightToLeftCorner
+               (convexAngleBetweenEdges Edge-2441
+                Edge-2442)) (rightToLeftCorner
+                             (convexAngleBetweenEdges Edge-2446
+                              Edge-2447)))
+(matchBetween (convexAngleBetweenEdges Edge-2441
+               Edge-2442) (convexAngleBetweenEdges Edge-2446 Edge-2447))
+(matchBetween (bottomToTopCorner
+               (convexAngleBetweenEdges Edge-2443
+                Edge-2437)) (bottomToTopCorner
+                             (convexAngleBetweenEdges Edge-2448
+                              Edge-2444)))
+(matchBetween (rightOf Edge-2441 Edge-2442) (rightOf
+                                             Edge-2446
+                                             Edge-2447))
+(matchBetween (above Edge-2437 Edge-2443) (above Edge-2444 Edge-2448))
+(matchBetween (above Edge-2437 Edge-2442) (above Edge-2444 Edge-2447))
+(matchBetween (leftToRightCorner
+               (convexAngleBetweenEdges Edge-2440
+                Edge-2441)) (leftToRightCorner
+                             (convexAngleBetweenEdges Edge-2445
+                              Edge-2446)))
+(matchBetween (rightOf Edge-2441 Edge-2440) (rightOf
+                                             Edge-2446
+                                             Edge-2445))
+(matchBetween (StraightEdge Edge-2443) (StraightEdge Edge-2448))
+(matchBetween (axisAligned Edge-2443) (axisAligned Edge-2448))
+(matchBetween (PerceptualEdge Edge-2442) (PerceptualEdge Edge-2447))
+(matchBetween (PerceptualEdge Edge-2441) (PerceptualEdge Edge-2446))
+(matchBetween Edge-2441 Edge-2446)
+(matchBetween (PerceptualEdge Edge-2437) (PerceptualEdge Edge-2444))
+(matchBetween (StraightEdge Edge-2440) (StraightEdge Edge-2445))
+(matchBetween (ObliqueEdge-Downward Edge-2440) (ObliqueEdge-Downward
+                                                Edge-2445))
+(matchBetween Edge-2440 Edge-2445)

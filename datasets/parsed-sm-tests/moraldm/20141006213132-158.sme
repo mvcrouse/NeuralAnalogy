@@ -1,0 +1,216 @@
+(sacredValueChoice changeToArea2)
+(sacredValueChoice notChangeLocation)
+(affectsSigLargerGroup changeToArea2)
+(affectsSigLargerGroup notChangeLocation)
+(uninferredSentence (affectsSigLargerGroup changeToArea2))
+(uninferredSentence (affectsSigLargerGroup notChangeLocation))
+(uninferredSentence (directlyResponsible you8115 notChangeLocation))
+(uninferredSentence (preventsAlternativeNegativeOutcome changeToArea2))
+(uninferredSentence (usedAsMeansToPreventNegativeOutcome changeToArea2))
+(directlyResponsible you8115 changeToArea2)
+(directlyResponsible you8115 notChangeLocation)
+(preventsAlternativeNegativeOutcome changeToArea2)
+(usedAsMeansToPreventNegativeOutcome changeToArea2)
+(and (sacredValueChoice changeToArea2)
+     (sacredValueChoice notChangeLocation)
+     (uninferredSentence (affectsSigLargerGroup changeToArea2))
+     (uninferredSentence (affectsSigLargerGroup notChangeLocation))
+     (directlyResponsible you8115 changeToArea2)
+     (uninferredSentence
+      (directlyResponsible you8115 notChangeLocation))
+     (uninferredSentence
+      (preventsAlternativeNegativeOutcome changeToArea2))
+     (uninferredSentence
+      (usedAsMeansToPreventNegativeOutcome changeToArea2)))
+(rightChoice notChangeLocation)
+(chosenItem ChooseBetweenArea1or2 notChangeLocation)
+(chosenItem ChooseBetweenArea1or2 changeToArea2)
+(IntelligentAgent you8115)
+(Region-Underspecified region1)
+(Region-Underspecified region2)
+((GroupFn Person) PeopleInArea1)
+((GroupFn Person) PeopleInArea2)
+(Dying PeopleDyingInArea1)
+(Dying PeopleDyingInArea2)
+((GroupEventOfTypeFn VehicleAccident) TrafficAccidents)
+((PreventingFn (DyingFromEventTypeFn TrafficAccidents)) trafficProgram)
+(Translation-LocationChange changeToArea2)
+(Inaction notChangeLocation)
+(PreventingSomething preventingPeopleDyingInArea1)
+(PreventingSomething preventingPeopleDyingInArea2)
+(SelectingSomething ChooseBetweenArea1or2)
+(groupCardinality PeopleInArea1 50)
+(groupCardinality PeopleInArea2 200)
+(residesInRegion PeopleInArea1 region1)
+(residesInRegion PeopleInArea2 region2)
+(objectActedOn PeopleDyingInArea1 PeopleInArea1)
+(objectActedOn PeopleDyingInArea2 PeopleInArea2)
+(fromLocation changeToArea2 region1)
+(toLocation ChangeToArea2 region2)
+(preventedProp preventingPeopleDyingInArea1 PeopleDyingInArea1)
+(preventedProp preventingPeopleDyingInArea2 PeopleDyingInArea2)
+(choices ChooseBetweenArea1or2 changeToArea2)
+(choices ChooseBetweenArea1or2 notChangeLocation)
+(performedBy changeToArea2 you8115)
+(performedBy notChangeLocation you8115)
+(causes-PropProp (chosenItem ChooseBetweenArea1or2 changeToArea2)
+ preventingPeopleDyingInArea2)
+(causes-PropProp (chosenItem ChooseBetweenArea1or2 changeToArea2)
+ PeopleDyingInArea1)
+(causes-PropProp (chosenItem ChooseBetweenArea1or2 notChangeLocation)
+ PeopleDyingInArea2)
+(causes-PropProp (chosenItem ChooseBetweenArea1or2 notChangeLocation)
+ preventingPeopleDyingInArea1)
+(implies
+ (and (sacredValueChoice changeToArea2)
+      (sacredValueChoice notChangeLocation)
+      (uninferredSentence (affectsSigLargerGroup changeToArea2))
+      (uninferredSentence (affectsSigLargerGroup notChangeLocation))
+      (directlyResponsible you8115 changeToArea2)
+      (uninferredSentence
+       (directlyResponsible you8115 notChangeLocation))
+      (uninferredSentence
+       (preventsAlternativeNegativeOutcome changeToArea2))
+      (uninferredSentence
+       (usedAsMeansToPreventNegativeOutcome changeToArea2)))
+ (rightChoice notChangeLocation))
+(makeDecision you8115 notChangeLocation)
++++++++++++
+(IntelligentAgent you1143)
+((GroupFn HomelessPerson) group1FemaleHomeless)
+((GroupFn HomelessPerson) group2FemaleHomeless)
+(groupCardinality group1FemaleHomeless 50)
+(groupCardinality group2FemaleHomeless 150)
+(HumanShelterConstruction shelter1)
+(HumanShelterConstruction shelter2)
+(ShelteringSomething shelteringGroup1)
+(ShelteringSomething shelteringGroup2)
+(performedBy shelteringGroup1 shelter1)
+(performedBy FinancialAssitanceToShelter1 you1143)
+(performedBy shelteringGroup2 shelter1)
+(performedBy FinancialAssitanceToShelter2 you1143)
+(performedBy notChangeSupport you1143)
+(objectActedOn shelteringGroup1 group1FemaleHomeless)
+(objectActedOn shelteringGroup2 group2FemaleHomeless)
+(objectActedOn harmingGroup1 group1FemaleHomeless)
+(objectActedOn harmingGroup2 group2FemaleHomeless)
+(FinancialSupport FinancialAssitanceToShelter1)
+(FinancialSupport FinancialAssitanceToShelter2)
+(beneficiary FinancialAssitanceToShelter1 shelter1)
+(beneficiary FinancialAssitanceToShelter2 shelter2)
+(HarmingAnAgent harmingGroup1)
+(HarmingAnAgent harmingGroup2)
+(PreventingSomething preventingHarmingGroup1)
+(PreventingSomething preventingHarmingGroup2)
+(preventedProp preventingHarmingGroup1 harmingGroup1)
+(preventedProp preventingHarmingGroup2 harmingGroup2)
+(Inaction notChangeSupport)
+(SelectingSomething GivingOrNotGivingAssistance)
+(choices GivingOrNotGivingAssistance FinancialAssitanceToShelter2)
+(choices GivingOrNotGivingAssistance notChangeSupport)
+(chosenItem GivingOrNotGivingAssistance FinancialAssitanceToShelter2)
+(chosenItem GivingOrNotGivingAssistance notChangeSupport)
+(causes-PropProp
+ (chosenItem GivingOrNotGivingAssistance FinancialAssitanceToShelter2)
+ preventingHarmingGroup2)
+(causes-PropProp
+ (chosenItem GivingOrNotGivingAssistance FinancialAssitanceToShelter2)
+ harmingGroup1)
+(causes-PropProp
+ (chosenItem GivingOrNotGivingAssistance notChangeSupport)
+ preventingHarmingGroup1)
+(causes-PropProp
+ (chosenItem GivingOrNotGivingAssistance notChangeSupport)
+ harmingGroup2)
++++++++++++
+(matchBetween preventingPeopleDyingInArea2 preventingHarmingGroup2)
+(matchBetween (PreventingSomething
+               preventingPeopleDyingInArea2) (PreventingSomething
+                                              preventingHarmingGroup2))
+(matchBetween PeopleInArea2 group2FemaleHomeless)
+(matchBetween 200 150)
+(matchBetween (groupCardinality PeopleInArea2 200) (groupCardinality
+                                                    group2FemaleHomeless
+                                                    150))
+(matchBetween PeopleDyingInArea2 harmingGroup2)
+(matchBetween (objectActedOn PeopleDyingInArea2
+               PeopleInArea2) (objectActedOn harmingGroup2
+                               group2FemaleHomeless))
+(matchBetween (preventedProp preventingPeopleDyingInArea2
+               PeopleDyingInArea2) (preventedProp
+                                    preventingHarmingGroup2
+                                    harmingGroup2))
+(matchBetween notChangeLocation notChangeSupport)
+(matchBetween (Inaction notChangeLocation) (Inaction notChangeSupport))
+(matchBetween (performedBy notChangeLocation you8115) (performedBy
+                                                       notChangeSupport
+                                                       you1143))
+(matchBetween (choices ChooseBetweenArea1or2 changeToArea2) (choices
+                                                             GivingOrNotGivingAssistance
+                                                             FinancialAssitanceToShelter2))
+(matchBetween (chosenItem ChooseBetweenArea1or2
+               changeToArea2) (chosenItem GivingOrNotGivingAssistance
+                               FinancialAssitanceToShelter2))
+(matchBetween (causes-PropProp
+               (chosenItem ChooseBetweenArea1or2 changeToArea2)
+               PeopleDyingInArea1) (causes-PropProp
+                                    (chosenItem
+                                     GivingOrNotGivingAssistance
+                                     FinancialAssitanceToShelter2)
+                                    harmingGroup1))
+(matchBetween (chosenItem ChooseBetweenArea1or2
+               notChangeLocation) (chosenItem
+                                   GivingOrNotGivingAssistance
+                                   notChangeSupport))
+(matchBetween (causes-PropProp
+               (chosenItem ChooseBetweenArea1or2 notChangeLocation)
+               preventingPeopleDyingInArea1) (causes-PropProp
+                                              (chosenItem
+                                               GivingOrNotGivingAssistance
+                                               notChangeSupport)
+                                              preventingHarmingGroup1))
+(matchBetween (causes-PropProp
+               (chosenItem ChooseBetweenArea1or2 notChangeLocation)
+               PeopleDyingInArea2) (causes-PropProp
+                                    (chosenItem
+                                     GivingOrNotGivingAssistance
+                                     notChangeSupport)
+                                    harmingGroup2))
+(matchBetween (causes-PropProp
+               (chosenItem ChooseBetweenArea1or2 changeToArea2)
+               preventingPeopleDyingInArea2) (causes-PropProp
+                                              (chosenItem
+                                               GivingOrNotGivingAssistance
+                                               FinancialAssitanceToShelter2)
+                                              preventingHarmingGroup2))
+(matchBetween (choices ChooseBetweenArea1or2
+               notChangeLocation) (choices
+                                   GivingOrNotGivingAssistance
+                                   notChangeSupport))
+(matchBetween (SelectingSomething
+               ChooseBetweenArea1or2) (SelectingSomething
+                                       GivingOrNotGivingAssistance))
+(matchBetween ChooseBetweenArea1or2 GivingOrNotGivingAssistance)
+(matchBetween (performedBy changeToArea2 you8115) (performedBy
+                                                   FinancialAssitanceToShelter2
+                                                   you1143))
+(matchBetween changeToArea2 FinancialAssitanceToShelter2)
+(matchBetween (preventedProp preventingPeopleDyingInArea1
+               PeopleDyingInArea1) (preventedProp
+                                    preventingHarmingGroup1
+                                    harmingGroup1))
+(matchBetween (objectActedOn PeopleDyingInArea1
+               PeopleInArea1) (objectActedOn harmingGroup1
+                               group1FemaleHomeless))
+(matchBetween PeopleDyingInArea1 harmingGroup1)
+(matchBetween (groupCardinality PeopleInArea1 50) (groupCardinality
+                                                   group1FemaleHomeless
+                                                   50))
+(matchBetween 50 50)
+(matchBetween PeopleInArea1 group1FemaleHomeless)
+(matchBetween (PreventingSomething
+               preventingPeopleDyingInArea1) (PreventingSomething
+                                              preventingHarmingGroup1))
+(matchBetween preventingPeopleDyingInArea1 preventingHarmingGroup1)
+(matchBetween (IntelligentAgent you8115) (IntelligentAgent you1143))
+(matchBetween you8115 you1143)

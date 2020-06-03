@@ -1,0 +1,192 @@
+(sacredValueChoice GiveLand)
+(sacredValueChoice NotGiveLand)
+(affectsSigLargerGroup GiveLand)
+(affectsSigLargerGroup NotGiveLand)
+(uninferredSentence (affectsSigLargerGroup GiveLand))
+(uninferredSentence (affectsSigLargerGroup NotGiveLand))
+(uninferredSentence (directlyResponsible you811 NotGiveLand))
+(uninferredSentence (preventsAlternativeNegativeOutcome GiveLand))
+(uninferredSentence (usedAsMeansToPreventNegativeOutcome GiveLand))
+(directlyResponsible you811 GiveLand)
+(directlyResponsible you811 NotGiveLand)
+(preventsAlternativeNegativeOutcome GiveLand)
+(usedAsMeansToPreventNegativeOutcome GiveLand)
+(and (sacredValueChoice GiveLand) (sacredValueChoice NotGiveLand)
+     (uninferredSentence (affectsSigLargerGroup GiveLand))
+     (uninferredSentence (affectsSigLargerGroup NotGiveLand))
+     (directlyResponsible you811 GiveLand)
+     (uninferredSentence (directlyResponsible you811 NotGiveLand))
+     (uninferredSentence (preventsAlternativeNegativeOutcome GiveLand))
+     (uninferredSentence
+      (usedAsMeansToPreventNegativeOutcome GiveLand)))
+(rightChoice NotGiveLand)
+(chosenItem GivingOrNotGivingTheLand NotGiveLand)
+(chosenItem GivingOrNotGivingTheLand GiveLand)
+(operatesInRegion army2 natureReserve2)
+(operatesInRegion army2 natureReserve1)
+(IntelligentAgent you811)
+(NatureReserve natureReserve1)
+(NatureReserve natureReserve2)
+(Army-BranchOfService army2)
+(TransferringPossession TransferNaturePreserve2)
+(TransferringPossession TransferNaturePreserve1)
+(TransferringPossession GiveLand)
+(Inaction NotGiveLand)
+(PreventingSomething preventingTransferNaturePreserve1)
+(PreventingSomething preventingTransferNaturePreserve2)
+(PreventingSomething armyDoesNotOwnNaturePreserve1)
+(SelectingSomething GivingOrNotGivingTheLand)
+(landAreaOfRegion natureReserve1 200)
+(landAreaOfRegion natureReserve2 50)
+(toPossessor TransferNaturePreserve2 army2)
+(objectOfPossessionTransfer TransferNaturePreserve2 natureReserve2)
+(fromPossessor TransferNaturePreserve1 army2)
+(objectOfPossessionTransfer TransferNaturePreserve1 natureReserve1)
+(preventedProp preventingTransferNaturePreserve1
+ TransferNaturePreserve1)
+(preventedProp preventingTransferNaturePreserve2
+ TransferNaturePreserve2)
+(causes-SitSit TransferNaturePreserve1 armyDoesNotOwnNaturePreserve1)
+(preventedSit armyDoesNotOwnNaturePreserve1
+ (operatesInRegion army2 natureReserve1))
+(choices GivingOrNotGivingTheLand GiveLand)
+(choices GivingOrNotGivingTheLand NotGiveLand)
+(performedBy GiveLand you811)
+(performedBy NotGiveLand you811)
+(causes-PropProp (chosenItem GivingOrNotGivingTheLand GiveLand)
+ TransferNaturePreserve1)
+(causes-PropProp (chosenItem GivingOrNotGivingTheLand GiveLand)
+ TransferNaturePreserve2)
+(causes-PropProp TransferNaturePreserve2
+ (operatesInRegion army2 natureReserve2))
+(causes-PropProp (chosenItem GivingOrNotGivingTheLand NotGiveLand)
+ preventingTransferNaturePreserve1)
+(causes-PropProp (chosenItem GivingOrNotGivingTheLand NotGiveLand)
+ preventingTransferNaturePreserve2)
+(implies
+ (and (sacredValueChoice GiveLand) (sacredValueChoice NotGiveLand)
+      (uninferredSentence (affectsSigLargerGroup GiveLand))
+      (uninferredSentence (affectsSigLargerGroup NotGiveLand))
+      (directlyResponsible you811 GiveLand)
+      (uninferredSentence (directlyResponsible you811 NotGiveLand))
+      (uninferredSentence
+       (preventsAlternativeNegativeOutcome GiveLand))
+      (uninferredSentence
+       (usedAsMeansToPreventNegativeOutcome GiveLand)))
+ (rightChoice NotGiveLand))
+(makeDecision you811 NotGiveLand)
++++++++++++
+(IntelligentAgent you1123)
+((GroupFn FactoryWorker) WorkersInPlant1)
+((GroupFn FactoryWorker) WorkersInPlant2)
+(Employee FactoryWorker)
+(FactoryBuilding Factory1)
+(FactoryBuilding Factory2)
+(groupCardinality WorkersInPlant1 50)
+(groupCardinality WorkersInPlant2 500)
+(worksAtFacility WorkersInPlant1 Factory1)
+(worksAtFacility WorkersInPlant2 Factory2)
+(FinancialSupport FinancialAssistanceToFactory1)
+(FinancialSupport giveFinancialAssistanceToFactory2)
+(beneficiary FinancialAssistanceToFactory1 WorkersInPlant1)
+(beneficiary giveFinancialAssistanceToFactory2 WorkersInPlant2)
+(performedBy FinancialAssistanceToFactory1 you1123)
+(performedBy giveFinancialAssistanceToFactory2 you1123)
+(performedBy NotChangeSupport you1123)
+(EmployeeLayoff employeeLayoff1)
+(EmployeeLayoff employeeLayoff2)
+(objectActedOn employeeLayoff1 WorkersInPlant1)
+(objectActedOn employeeLayoff2 WorkersInPlant2)
+(PreventingSomething preventingLayoff1)
+(PreventingSomething preventingLayoff2)
+(preventedProp preventingLayoff1 employeeLayoff1)
+(preventedProp preventingLayoff2 employeeLayoff2)
+(supportedBy WorkersInPlant1 FinancialAssistanceToFactory1)
+(Inaction NotChangeSupport)
+(SelectingSomething GiveSupportToFirstOrSecond)
+(choices GiveSupportToFirstOrSecond giveFinancialAssistanceToFactory2)
+(choices GiveSupportToFirstOrSecond NotChangeSupport)
+(chosenItem GiveSupportToFirstOrSecond
+ giveFinancialAssistanceToFactory2)
+(chosenItem GiveSupportToFirstOrSecond NotChangeSupport)
+(causes-PropProp
+ (chosenItem GiveSupportToFirstOrSecond
+  giveFinancialAssistanceToFactory2)
+ preventingLayoff2)
+(causes-PropProp
+ (chosenItem GiveSupportToFirstOrSecond
+  giveFinancialAssistanceToFactory2)
+ employeeLayoff1)
+(causes-PropProp
+ (chosenItem GiveSupportToFirstOrSecond NotChangeSupport)
+ employeeLayoff2)
+(causes-PropProp
+ (chosenItem GiveSupportToFirstOrSecond NotChangeSupport)
+ preventingLayoff1)
++++++++++++
+(matchBetween preventingTransferNaturePreserve1 preventingLayoff1)
+(matchBetween (PreventingSomething
+               preventingTransferNaturePreserve1) (PreventingSomething
+                                                   preventingLayoff1))
+(matchBetween NotGiveLand NotChangeSupport)
+(matchBetween (Inaction NotGiveLand) (Inaction NotChangeSupport))
+(matchBetween (performedBy NotGiveLand you811) (performedBy
+                                                NotChangeSupport
+                                                you1123))
+(matchBetween (choices GivingOrNotGivingTheLand GiveLand) (choices
+                                                           GiveSupportToFirstOrSecond
+                                                           giveFinancialAssistanceToFactory2))
+(matchBetween (chosenItem GivingOrNotGivingTheLand
+               GiveLand) (chosenItem GiveSupportToFirstOrSecond
+                          giveFinancialAssistanceToFactory2))
+(matchBetween TransferNaturePreserve2 preventingLayoff2)
+(matchBetween (causes-PropProp
+               (chosenItem GivingOrNotGivingTheLand GiveLand)
+               TransferNaturePreserve2) (causes-PropProp
+                                         (chosenItem
+                                          GiveSupportToFirstOrSecond
+                                          giveFinancialAssistanceToFactory2)
+                                         preventingLayoff2))
+(matchBetween (causes-PropProp
+               (chosenItem GivingOrNotGivingTheLand GiveLand)
+               TransferNaturePreserve1) (causes-PropProp
+                                         (chosenItem
+                                          GiveSupportToFirstOrSecond
+                                          giveFinancialAssistanceToFactory2)
+                                         employeeLayoff1))
+(matchBetween (causes-PropProp
+               (chosenItem GivingOrNotGivingTheLand NotGiveLand)
+               preventingTransferNaturePreserve1) (causes-PropProp
+                                                   (chosenItem
+                                                    GiveSupportToFirstOrSecond
+                                                    NotChangeSupport)
+                                                   preventingLayoff1))
+(matchBetween (causes-PropProp
+               (chosenItem GivingOrNotGivingTheLand NotGiveLand)
+               preventingTransferNaturePreserve2) (causes-PropProp
+                                                   (chosenItem
+                                                    GiveSupportToFirstOrSecond
+                                                    NotChangeSupport)
+                                                   employeeLayoff2))
+(matchBetween preventingTransferNaturePreserve2 employeeLayoff2)
+(matchBetween (chosenItem GivingOrNotGivingTheLand
+               NotGiveLand) (chosenItem GiveSupportToFirstOrSecond
+                             NotChangeSupport))
+(matchBetween (choices GivingOrNotGivingTheLand NotGiveLand) (choices
+                                                              GiveSupportToFirstOrSecond
+                                                              NotChangeSupport))
+(matchBetween (SelectingSomething
+               GivingOrNotGivingTheLand) (SelectingSomething
+                                          GiveSupportToFirstOrSecond))
+(matchBetween GivingOrNotGivingTheLand GiveSupportToFirstOrSecond)
+(matchBetween (performedBy GiveLand you811) (performedBy
+                                             giveFinancialAssistanceToFactory2
+                                             you1123))
+(matchBetween GiveLand giveFinancialAssistanceToFactory2)
+(matchBetween (preventedProp preventingTransferNaturePreserve1
+               TransferNaturePreserve1) (preventedProp
+                                         preventingLayoff1
+                                         employeeLayoff1))
+(matchBetween TransferNaturePreserve1 employeeLayoff1)
+(matchBetween (IntelligentAgent you811) (IntelligentAgent you1123))
+(matchBetween you811 you1123)

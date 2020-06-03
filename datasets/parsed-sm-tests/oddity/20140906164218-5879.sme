@@ -1,0 +1,44 @@
+(ShapeTypeFn0 Object-1102)
+(ShapeTypeFn1 Object-1101)
+(narrowEdged Object-1102)
+(wideEdged Object-1101)
+(rightOf Object-1102 Object-1101)
+(above Object-1102 Object-1101)
+(elementsIntersect Object-1101 Object-1102)
+(ObjectsBorderColoredFnBlackColor Object-1102)
+(ObjectsBorderColoredFnBlackColor Object-1101)
+(ObjectsColoredFnBlackColor Object-1102)
++++++++++++
+(ObjectsColoredFnBlackColor Object-1092)
+(ObjectsBorderColoredFnBlackColor Object-1091)
+(ObjectsBorderColoredFnBlackColor Object-1092)
+(elementsIntersect Object-1091 Object-1092)
+(above Object-1092 Object-1091)
+(rightOf Object-1092 Object-1091)
+(wideEdged Object-1091)
+(narrowEdged Object-1092)
+(ShapeTypeFn1 Object-1091)
+(ShapeTypeFn0 Object-1092)
++++++++++++
+(matchBetween (wideEdged Object-1101) (wideEdged Object-1091))
+(matchBetween Object-1102 Object-1092)
+(matchBetween (ShapeTypeFn0 Object-1102) (ShapeTypeFn0 Object-1092))
+(matchBetween (ObjectsBorderColoredFnBlackColor
+               Object-1102) (ObjectsBorderColoredFnBlackColor
+                             Object-1092))
+(matchBetween (rightOf Object-1102 Object-1101) (rightOf
+                                                 Object-1092
+                                                 Object-1091))
+(matchBetween (elementsIntersect Object-1101
+               Object-1102) (elementsIntersect Object-1091 Object-1092))
+(matchBetween (above Object-1102 Object-1101) (above
+                                               Object-1092
+                                               Object-1091))
+(matchBetween (ObjectsColoredFnBlackColor
+               Object-1102) (ObjectsColoredFnBlackColor Object-1092))
+(matchBetween (narrowEdged Object-1102) (narrowEdged Object-1092))
+(matchBetween (ObjectsBorderColoredFnBlackColor
+               Object-1101) (ObjectsBorderColoredFnBlackColor
+                             Object-1091))
+(matchBetween (ShapeTypeFn1 Object-1101) (ShapeTypeFn1 Object-1091))
+(matchBetween Object-1101 Object-1091)

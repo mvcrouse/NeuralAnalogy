@@ -1,0 +1,186 @@
+(sacredValueChoice GiveLand)
+(sacredValueChoice NotGiveLand)
+(affectsSigLargerGroup GiveLand)
+(affectsSigLargerGroup NotGiveLand)
+(uninferredSentence (affectsSigLargerGroup GiveLand))
+(uninferredSentence (affectsSigLargerGroup NotGiveLand))
+(uninferredSentence (directlyResponsible you811 NotGiveLand))
+(uninferredSentence (preventsAlternativeNegativeOutcome GiveLand))
+(uninferredSentence (usedAsMeansToPreventNegativeOutcome GiveLand))
+(directlyResponsible you811 GiveLand)
+(directlyResponsible you811 NotGiveLand)
+(preventsAlternativeNegativeOutcome GiveLand)
+(usedAsMeansToPreventNegativeOutcome GiveLand)
+(and (sacredValueChoice GiveLand) (sacredValueChoice NotGiveLand)
+     (uninferredSentence (affectsSigLargerGroup GiveLand))
+     (uninferredSentence (affectsSigLargerGroup NotGiveLand))
+     (directlyResponsible you811 GiveLand)
+     (uninferredSentence (directlyResponsible you811 NotGiveLand))
+     (uninferredSentence (preventsAlternativeNegativeOutcome GiveLand))
+     (uninferredSentence
+      (usedAsMeansToPreventNegativeOutcome GiveLand)))
+(rightChoice NotGiveLand)
+(chosenItem GivingOrNotGivingTheLand NotGiveLand)
+(chosenItem GivingOrNotGivingTheLand GiveLand)
+(operatesInRegion army2 natureReserve2)
+(operatesInRegion army2 natureReserve1)
+(IntelligentAgent you811)
+(NatureReserve natureReserve1)
+(NatureReserve natureReserve2)
+(Army-BranchOfService army2)
+(TransferringPossession TransferNaturePreserve2)
+(TransferringPossession TransferNaturePreserve1)
+(TransferringPossession GiveLand)
+(Inaction NotGiveLand)
+(PreventingSomething preventingTransferNaturePreserve1)
+(PreventingSomething preventingTransferNaturePreserve2)
+(PreventingSomething armyDoesNotOwnNaturePreserve1)
+(SelectingSomething GivingOrNotGivingTheLand)
+(landAreaOfRegion natureReserve1 200)
+(landAreaOfRegion natureReserve2 50)
+(toPossessor TransferNaturePreserve2 army2)
+(objectOfPossessionTransfer TransferNaturePreserve2 natureReserve2)
+(fromPossessor TransferNaturePreserve1 army2)
+(objectOfPossessionTransfer TransferNaturePreserve1 natureReserve1)
+(preventedProp preventingTransferNaturePreserve1
+ TransferNaturePreserve1)
+(preventedProp preventingTransferNaturePreserve2
+ TransferNaturePreserve2)
+(causes-SitSit TransferNaturePreserve1 armyDoesNotOwnNaturePreserve1)
+(preventedSit armyDoesNotOwnNaturePreserve1
+ (operatesInRegion army2 natureReserve1))
+(choices GivingOrNotGivingTheLand GiveLand)
+(choices GivingOrNotGivingTheLand NotGiveLand)
+(performedBy GiveLand you811)
+(performedBy NotGiveLand you811)
+(causes-PropProp (chosenItem GivingOrNotGivingTheLand GiveLand)
+ TransferNaturePreserve1)
+(causes-PropProp (chosenItem GivingOrNotGivingTheLand GiveLand)
+ TransferNaturePreserve2)
+(causes-PropProp TransferNaturePreserve2
+ (operatesInRegion army2 natureReserve2))
+(causes-PropProp (chosenItem GivingOrNotGivingTheLand NotGiveLand)
+ preventingTransferNaturePreserve1)
+(causes-PropProp (chosenItem GivingOrNotGivingTheLand NotGiveLand)
+ preventingTransferNaturePreserve2)
+(implies
+ (and (sacredValueChoice GiveLand) (sacredValueChoice NotGiveLand)
+      (uninferredSentence (affectsSigLargerGroup GiveLand))
+      (uninferredSentence (affectsSigLargerGroup NotGiveLand))
+      (directlyResponsible you811 GiveLand)
+      (uninferredSentence (directlyResponsible you811 NotGiveLand))
+      (uninferredSentence
+       (preventsAlternativeNegativeOutcome GiveLand))
+      (uninferredSentence
+       (usedAsMeansToPreventNegativeOutcome GiveLand)))
+ (rightChoice NotGiveLand))
+(makeDecision you811 NotGiveLand)
++++++++++++
+((GroupFn HumanChild) ChildrenInDanger)
+((GroupFn HumanChild) ChildrenInDangerGroup1)
+((GroupFn HumanChild) ChildrenInDangerGroup2)
+(IntelligentAgent you1003)
+(groupCardinality ChildrenInDanger 10000)
+(groupCardinality ChildrenInDangerGroup1 1000)
+(groupCardinality ChildrenInDangerGroup2 1)
+(subGroups ChildrenInDanger ChildrenInDangerGroup1)
+(subGroups ChildrenInDanger ChildrenInDangerGroup2)
+(DiseaseType disease1960)
+((VaccineForAgainstFn ChildrenInDanger disease1960) vaccine1960)
+(Dying DyingChildrenGroup1)
+(Dying DyingChildrenGroup2)
+(objectActedOn DyingChildrenGroup1 ChildrenInDangerGroup1)
+(objectActedOn DyingChildrenGroup2 ChildrenInDangerGroup2)
+(Injecting-Medical giveVaccine)
+(deviceUsed giveVaccine vaccine1960)
+(bodilyActedOn vaccine1960 ChildrenInDangerGroup1)
+(bodilyActedOn vaccineSideEffect ChildrenInDangerGroup2)
+(Inaction NotGiveVaccine)
+(PreventingSomething preventingDyingChildrenGroup1)
+(PreventingSomething preventingDyingChildrenGroup2)
+(preventedProp preventingDyingChildrenGroup1 DyingChildrenGroup1)
+(preventedProp preventingDyingChildrenGroup2 DyingChildrenGroup2)
+(SelectingSomething GivingOrNotGivingTheVaccine2)
+(choices GivingOrNotGivingTheVaccine2 giveVaccine)
+(choices GivingOrNotGivingTheVaccine2 NotGiveVaccine)
+(performedBy giveVaccine you1003)
+(performedBy NotGiveVaccine you1003)
+(chosenItem GivingOrNotGivingTheVaccine2 giveVaccine)
+(chosenItem GivingOrNotGivingTheVaccine2 NotGiveVaccine)
+(causes-PropProp (chosenItem GivingOrNotGivingTheVaccine2 giveVaccine)
+ preventingDyingChildrenGroup1)
+(causes-PropProp (chosenItem GivingOrNotGivingTheVaccine2 giveVaccine)
+ DyingChildrenGroup2)
+(causes-PropProp
+ (chosenItem GivingOrNotGivingTheVaccine2 NotGiveVaccine)
+ DyingChildrenGroup1)
+(causes-PropProp
+ (chosenItem GivingOrNotGivingTheVaccine2 NotGiveVaccine)
+ preventingDyingChildrenGroup2)
++++++++++++
+(matchBetween preventingTransferNaturePreserve1 preventingDyingChildrenGroup2)
+(matchBetween (PreventingSomething
+               preventingTransferNaturePreserve1) (PreventingSomething
+                                                   preventingDyingChildrenGroup2))
+(matchBetween NotGiveLand NotGiveVaccine)
+(matchBetween (Inaction NotGiveLand) (Inaction NotGiveVaccine))
+(matchBetween (performedBy NotGiveLand you811) (performedBy
+                                                NotGiveVaccine
+                                                you1003))
+(matchBetween (choices GivingOrNotGivingTheLand GiveLand) (choices
+                                                           GivingOrNotGivingTheVaccine2
+                                                           giveVaccine))
+(matchBetween (chosenItem GivingOrNotGivingTheLand
+               GiveLand) (chosenItem GivingOrNotGivingTheVaccine2
+                          giveVaccine))
+(matchBetween TransferNaturePreserve2 preventingDyingChildrenGroup1)
+(matchBetween (causes-PropProp
+               (chosenItem GivingOrNotGivingTheLand GiveLand)
+               TransferNaturePreserve2) (causes-PropProp
+                                         (chosenItem
+                                          GivingOrNotGivingTheVaccine2
+                                          giveVaccine)
+                                         preventingDyingChildrenGroup1))
+(matchBetween (causes-PropProp
+               (chosenItem GivingOrNotGivingTheLand GiveLand)
+               TransferNaturePreserve1) (causes-PropProp
+                                         (chosenItem
+                                          GivingOrNotGivingTheVaccine2
+                                          giveVaccine)
+                                         DyingChildrenGroup2))
+(matchBetween (causes-PropProp
+               (chosenItem GivingOrNotGivingTheLand NotGiveLand)
+               preventingTransferNaturePreserve1) (causes-PropProp
+                                                   (chosenItem
+                                                    GivingOrNotGivingTheVaccine2
+                                                    NotGiveVaccine)
+                                                   preventingDyingChildrenGroup2))
+(matchBetween (causes-PropProp
+               (chosenItem GivingOrNotGivingTheLand NotGiveLand)
+               preventingTransferNaturePreserve2) (causes-PropProp
+                                                   (chosenItem
+                                                    GivingOrNotGivingTheVaccine2
+                                                    NotGiveVaccine)
+                                                   DyingChildrenGroup1))
+(matchBetween preventingTransferNaturePreserve2 DyingChildrenGroup1)
+(matchBetween (chosenItem GivingOrNotGivingTheLand
+               NotGiveLand) (chosenItem GivingOrNotGivingTheVaccine2
+                             NotGiveVaccine))
+(matchBetween (choices GivingOrNotGivingTheLand NotGiveLand) (choices
+                                                              GivingOrNotGivingTheVaccine2
+                                                              NotGiveVaccine))
+(matchBetween (SelectingSomething
+               GivingOrNotGivingTheLand) (SelectingSomething
+                                          GivingOrNotGivingTheVaccine2))
+(matchBetween GivingOrNotGivingTheLand GivingOrNotGivingTheVaccine2)
+(matchBetween (performedBy GiveLand you811) (performedBy
+                                             giveVaccine
+                                             you1003))
+(matchBetween GiveLand giveVaccine)
+(matchBetween (preventedProp preventingTransferNaturePreserve1
+               TransferNaturePreserve1) (preventedProp
+                                         preventingDyingChildrenGroup2
+                                         DyingChildrenGroup2))
+(matchBetween TransferNaturePreserve1 DyingChildrenGroup2)
+(matchBetween (IntelligentAgent you811) (IntelligentAgent you1003))
+(matchBetween you811 you1003)

@@ -1,0 +1,38 @@
+(ShapeTypeFn0 Object-941)
+((ShapeTypeFn 1) Object-942)
+(narrowEdged Object-941)
+(wideEdged Object-942)
+(elementsIntersect Object-942 Object-941)
+(elementsOverlap Object-942 Object-941)
+(ObjectsBorderColoredFnBlackColor Object-941)
+(ObjectsBorderColoredFnBlackColor Object-942)
+(ObjectsColoredFnBlackColor Object-941)
++++++++++++
+(ObjectsColoredFnBlackColor Object-949)
+(ObjectsBorderColoredFnBlackColor Object-950)
+(ObjectsBorderColoredFnBlackColor Object-949)
+(elementsOverlap Object-950 Object-949)
+(elementsIntersect Object-950 Object-949)
+(wideEdged Object-950)
+(narrowEdged Object-949)
+((ShapeTypeFn 2) Object-950)
+(ShapeTypeFn0 Object-949)
++++++++++++
+(matchBetween (ObjectsBorderColoredFnBlackColor
+               Object-942) (ObjectsBorderColoredFnBlackColor
+                            Object-950))
+(matchBetween (narrowEdged Object-941) (narrowEdged Object-949))
+(matchBetween (ObjectsColoredFnBlackColor
+               Object-941) (ObjectsColoredFnBlackColor Object-949))
+(matchBetween (elementsOverlap Object-942 Object-941) (elementsOverlap
+                                                       Object-950
+                                                       Object-949))
+(matchBetween (elementsIntersect Object-942
+               Object-941) (elementsIntersect Object-950 Object-949))
+(matchBetween (ObjectsBorderColoredFnBlackColor
+               Object-941) (ObjectsBorderColoredFnBlackColor
+                            Object-949))
+(matchBetween (ShapeTypeFn0 Object-941) (ShapeTypeFn0 Object-949))
+(matchBetween Object-941 Object-949)
+(matchBetween (wideEdged Object-942) (wideEdged Object-950))
+(matchBetween Object-942 Object-950)

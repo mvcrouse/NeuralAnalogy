@@ -1,0 +1,198 @@
+(sacredValueChoice open3575)
+(sacredValueChoice Inaction4227)
+(affectsSigLargerGroup open3575)
+(affectsSigLargerGroup Inaction4227)
+(uninferredSentence (affectsSigLargerGroup open3575))
+(uninferredSentence (affectsSigLargerGroup Inaction4227))
+(uninferredSentence (directlyResponsible you3467 Inaction4227))
+(uninferredSentence (preventsAlternativeNegativeOutcome open3575))
+(uninferredSentence (usedAsMeansToPreventNegativeOutcome open3575))
+(directlyResponsible you3467 open3575)
+(directlyResponsible you3467 Inaction4227)
+(preventsAlternativeNegativeOutcome open3575)
+(usedAsMeansToPreventNegativeOutcome open3575)
+(and (sacredValueChoice open3575) (sacredValueChoice Inaction4227)
+     (uninferredSentence (affectsSigLargerGroup open3575))
+     (uninferredSentence (affectsSigLargerGroup Inaction4227))
+     (directlyResponsible you3467 open3575)
+     (uninferredSentence (directlyResponsible you3467 Inaction4227))
+     (uninferredSentence (preventsAlternativeNegativeOutcome open3575))
+     (uninferredSentence
+      (usedAsMeansToPreventNegativeOutcome open3575)))
+(and (on-UnderspecifiedSurface dam3171 river3220) (Dam dam3171)
+     (River river3220) (TemporalPredicate temporallySubsumes))
+(rightChoice Inaction4227)
+(chosenItem SelectingSomething4226 Inaction4227)
+(chosenItem SelectingSomething4226 open3575)
+(on-UnderspecifiedSurface dam3171 river3220)
+(Dam dam3171)
+(River river3220)
+(TemporalPredicate temporallySubsumes)
+(Set-Mathematical them3545)
+(BiologicalSpecies species3257)
+(Extinction extinction3406)
+(RescuingSomeone save3513)
+(OpeningSomething open3575)
+(PreventingSomething PreventingSomething4225)
+(Set-Mathematical set-of-species3797)
+(BiologicalSpecies species3797)
+(Extinction extinction3941)
+(SelectingSomething SelectingSomething4226)
+(Inaction Inaction4227)
+(PreventingSomething p23)
+(causes-PropSit
+ (and (on-UnderspecifiedSurface dam3171 river3220) (Dam dam3171)
+      (River river3220) (TemporalPredicate temporallySubsumes))
+ extinction3406)
+(cardinality them3545 20)
+(elementOf species3257 them3545)
+(generalizes species3257 Fish)
+(objectActedOn extinction3406 species3257)
+(beneficiary save3513 them3545)
+(performedBy save3513 you3467)
+(by-Underspecified save3513 open3575)
+(causes-SitSit save3513 PreventingSomething4225)
+(performedBy open3575 you3467)
+(objectActedOn open3575 dam3171)
+(causes-SitSit open3575 extinction3941)
+(performedBy PreventingSomething4225 you3467)
+(preventedSit PreventingSomething4225 extinction3406)
+(cardinality set-of-species3797 2)
+(elementOf species3797 set-of-species3797)
+(generalizes species3797 Fish)
+(objectActedOn extinction3941 species3797)
+(choices SelectingSomething4226 open3575)
+(choices SelectingSomething4226 Inaction4227)
+(causes-PropSit (chosenItem SelectingSomething4226 open3575) save3513)
+(causes-PropSit (chosenItem SelectingSomething4226 Inaction4227)
+ extinction3406)
+(performedBy Inaction4227 you3467)
+(preventedSit p23 extinction3941)
+(causes-PropSit (chosenItem SelectingSomething4226 Inaction4227) p23)
+(implies
+ (and (sacredValueChoice open3575) (sacredValueChoice Inaction4227)
+      (uninferredSentence (affectsSigLargerGroup open3575))
+      (uninferredSentence (affectsSigLargerGroup Inaction4227))
+      (directlyResponsible you3467 open3575)
+      (uninferredSentence (directlyResponsible you3467 Inaction4227))
+      (uninferredSentence
+       (preventsAlternativeNegativeOutcome open3575))
+      (uninferredSentence
+       (usedAsMeansToPreventNegativeOutcome open3575)))
+ (rightChoice Inaction4227))
+(makeDecision you3467 Inaction4227)
++++++++++++
+(Inaction Inaction71193)
+(performedBy PreventingSomething71191 you69298)
+(performedBy hit69039 train70550)
+(performedBy hit70613 train70550)
+(performedBy push70396 you69298)
+(performedBy Inaction71193 you69298)
+(performedBy save69337 you69298)
+(preventedSit PreventingSomething71191 hit69039)
+(PreventingSomething PreventingSomething71191)
+(SelectingSomething SelectingSomething71192)
+(choices SelectingSomething71192 push70396)
+(choices SelectingSomething71192 Inaction71193)
+(chosenItem SelectingSomething71192 Inaction71193)
+(chosenItem SelectingSomething71192 push70396)
+(causes-PropSit (chosenItem SelectingSomething71192 Inaction71193)
+ hit69039)
+(causes-PropSit (chosenItem SelectingSomething71192 push70396) hit70613)
+(Bus-RoadVehicle bus69096)
+(Bus-RoadVehicle bus70728)
+((GroupFn Person) them69370)
+((GroupFn Person) set-of-passenger69536)
+(Dying hit69039)
+(Dying hit70613)
+(HittingAnObject hit69039)
+(HittingAnObject hit70613)
+(objectActedOn hit69039 bus69096)
+(objectActedOn hit70613 bus70728)
+(objectActedOn push70396 bus70728)
+(causes-SitSit hit70613 save69337)
+(causes-SitSit save69337 PreventingSomething71191)
+(PushingAnObject push70396)
+(providerOfMotiveForce push70396 you69298)
+(primaryObjectMoving push70396 bus70728)
+(RescuingSomeone save69337)
+(beneficiary save69337 them69370)
+(by-Underspecified save69337 push70396)
+(cardinality set-of-passenger69536 2)
+(cardinality them69370 10)
+(Set-Mathematical set-of-passenger69536)
+(Set-Mathematical them69370)
+(HighAmountFn Speed)
+(speedOfObject-Underspecified train70550 (HighAmountFn Speed))
+(Train-TransportationDevice train70550)
++++++++++++
+(matchBetween them3545 them69370)
+(matchBetween (Set-Mathematical them3545) (Set-Mathematical them69370))
+(matchBetween PreventingSomething4225 PreventingSomething71191)
+(matchBetween (PreventingSomething
+               PreventingSomething4225) (PreventingSomething
+                                         PreventingSomething71191))
+(matchBetween extinction3406 hit69039)
+(matchBetween species3257 bus69096)
+(matchBetween (objectActedOn extinction3406 species3257) (objectActedOn
+                                                          hit69039
+                                                          bus69096))
+(matchBetween you3467 you69298)
+(matchBetween (performedBy PreventingSomething4225
+               you3467) (performedBy PreventingSomething71191 you69298))
+(matchBetween open3575 push70396)
+(matchBetween dam3171 bus70728)
+(matchBetween (objectActedOn open3575 dam3171) (objectActedOn
+                                                push70396
+                                                bus70728))
+(matchBetween (performedBy open3575 you3467) (performedBy
+                                              push70396
+                                              you69298))
+(matchBetween (choices SelectingSomething4226 Inaction4227) (choices
+                                                             SelectingSomething71192
+                                                             Inaction71193))
+(matchBetween (chosenItem SelectingSomething4226
+               Inaction4227) (chosenItem SelectingSomething71192
+                              Inaction71193))
+(matchBetween (causes-PropSit
+               (chosenItem SelectingSomething4226 Inaction4227)
+               extinction3406) (causes-PropSit
+                                (chosenItem
+                                 SelectingSomething71192
+                                 Inaction71193)
+                                hit69039))
+(matchBetween (causes-PropSit
+               (chosenItem SelectingSomething4226 open3575)
+               save3513) (causes-PropSit
+                          (chosenItem SelectingSomething71192
+                           push70396)
+                          hit70613))
+(matchBetween save3513 hit70613)
+(matchBetween (chosenItem SelectingSomething4226 open3575) (chosenItem
+                                                            SelectingSomething71192
+                                                            push70396))
+(matchBetween (choices SelectingSomething4226 open3575) (choices
+                                                         SelectingSomething71192
+                                                         push70396))
+(matchBetween (SelectingSomething
+               SelectingSomething4226) (SelectingSomething
+                                        SelectingSomething71192))
+(matchBetween SelectingSomething4226 SelectingSomething71192)
+(matchBetween (performedBy Inaction4227 you3467) (performedBy
+                                                  Inaction71193
+                                                  you69298))
+(matchBetween (Inaction Inaction4227) (Inaction Inaction71193))
+(matchBetween Inaction4227 Inaction71193)
+(matchBetween (preventedSit PreventingSomething4225
+               extinction3406) (preventedSit
+                                PreventingSomething71191
+                                hit69039))
+(matchBetween (cardinality them3545 20) (cardinality them69370 10))
+(matchBetween 20 10)
+(matchBetween (cardinality set-of-species3797 2) (cardinality
+                                                  set-of-passenger69536
+                                                  2))
+(matchBetween 2 2)
+(matchBetween (Set-Mathematical set-of-species3797) (Set-Mathematical
+                                                     set-of-passenger69536))
+(matchBetween set-of-species3797 set-of-passenger69536)

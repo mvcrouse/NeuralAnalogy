@@ -1,0 +1,56 @@
+(wideEdged Element-6)
+(narrowEdged Element-5)
+(2D-Shape-Open Element-6)
+(2D-Shape-Straight Element-6)
+(2D-Shape-Curved Element-5)
+(ObjectsColoredFnBlackColor Element-5)
+(2D-Shape-Ellipse Element-5)
+(ObjectsBorderColoredFnBlackColor Element-5)
+(2D-Shape-Closed Element-5)
+(Fully-Symmetric-Shape Element-5)
+(2D-Shape-Generic Element-5)
+(2D-Shape-Convex Element-5)
+(ObjectsBorderColoredFnBlackColor Element-6)
+(2D-Shape-Generic Element-6)
++++++++++++
+(ObjectsColoredFnBlackColor Object-601)
+(2D-Shape-Generic Object-601)
+(2D-Shape-Generic Object-600)
+(Fully-Symmetric-Shape Object-601)
+(2D-Shape-Curved Object-601)
+(2D-Shape-Ellipse Object-601)
+(2D-Shape-Convex Object-601)
+(2D-Shape-Closed Object-601)
+(2D-Shape-Straight Object-600)
+(2D-Shape-Open Object-600)
+(ObjectsBorderColoredFnBlackColor Object-600)
+(ObjectsBorderColoredFnBlackColor Object-601)
+(Centered-Element Object-600)
+(Centered-Element Object-601)
+(wideEdged Object-600)
+(narrowEdged Object-601)
++++++++++++
+(matchBetween (2D-Shape-Open Element-6) (2D-Shape-Open Object-600))
+(matchBetween (ObjectsBorderColoredFnBlackColor
+               Element-6) (ObjectsBorderColoredFnBlackColor Object-600))
+(matchBetween Element-5 Object-601)
+(matchBetween (narrowEdged Element-5) (narrowEdged Object-601))
+(matchBetween (ObjectsColoredFnBlackColor
+               Element-5) (ObjectsColoredFnBlackColor Object-601))
+(matchBetween (2D-Shape-Closed Element-5) (2D-Shape-Closed Object-601))
+(matchBetween (2D-Shape-Convex Element-5) (2D-Shape-Convex Object-601))
+(matchBetween (2D-Shape-Generic Element-5) (2D-Shape-Generic
+                                            Object-601))
+(matchBetween (ObjectsBorderColoredFnBlackColor
+               Element-5) (ObjectsBorderColoredFnBlackColor Object-601))
+(matchBetween (Fully-Symmetric-Shape Element-5) (Fully-Symmetric-Shape
+                                                 Object-601))
+(matchBetween (2D-Shape-Ellipse Element-5) (2D-Shape-Ellipse
+                                            Object-601))
+(matchBetween (2D-Shape-Curved Element-5) (2D-Shape-Curved Object-601))
+(matchBetween (2D-Shape-Generic Element-6) (2D-Shape-Generic
+                                            Object-600))
+(matchBetween (2D-Shape-Straight Element-6) (2D-Shape-Straight
+                                             Object-600))
+(matchBetween (wideEdged Element-6) (wideEdged Object-600))
+(matchBetween Element-6 Object-600)

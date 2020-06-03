@@ -1,0 +1,54 @@
+(elementContains Element-6 Element-5)
+(2D-Shape-Generic Element-6)
+(2D-Shape-Closed Element-6)
+(ObjectsBorderColoredFnBlackColor Element-5)
+(Fully-Symmetric-Shape Element-5)
+(ObjectsColoredFnBlackColor Element-5)
+(2D-Shape-Convex Element-5)
+(2D-Shape-Closed Element-5)
+(2D-Shape-Curved Element-5)
+(2D-Shape-Generic Element-5)
+(2D-Shape-Ellipse Element-5)
+(Centered-Element Element-6)
+(ObjectsColoredFnWhiteColor Element-6)
+(ObjectsBorderColoredFnBlackColor Element-6)
++++++++++++
+(ObjectsColoredFnBlackColor Object-452)
+(ObjectsColoredFnWhiteColor Object-457)
+(2D-Shape-Generic Object-457)
+(2D-Shape-Generic Object-452)
+(Symmetric-Blob Object-457)
+(2D-Shape-Closed Object-457)
+(2D-Shape-Closed Object-452)
+(Fully-Symmetric-Shape Object-452)
+(2D-Shape-Curved Object-452)
+(2D-Shape-Ellipse Object-452)
+(2D-Shape-Convex Object-452)
+(ObjectsBorderColoredFnBlackColor Object-452)
+(ObjectsBorderColoredFnBlackColor Object-457)
+(Centered-Element Object-457)
++++++++++++
+(matchBetween (2D-Shape-Generic Element-6) (2D-Shape-Generic
+                                            Object-457))
+(matchBetween (ObjectsColoredFnWhiteColor
+               Element-6) (ObjectsColoredFnWhiteColor Object-457))
+(matchBetween Element-5 Object-452)
+(matchBetween (Fully-Symmetric-Shape Element-5) (Fully-Symmetric-Shape
+                                                 Object-452))
+(matchBetween (2D-Shape-Convex Element-5) (2D-Shape-Convex Object-452))
+(matchBetween (2D-Shape-Curved Element-5) (2D-Shape-Curved Object-452))
+(matchBetween (2D-Shape-Ellipse Element-5) (2D-Shape-Ellipse
+                                            Object-452))
+(matchBetween (ObjectsBorderColoredFnBlackColor
+               Element-5) (ObjectsBorderColoredFnBlackColor Object-452))
+(matchBetween (2D-Shape-Generic Element-5) (2D-Shape-Generic
+                                            Object-452))
+(matchBetween (2D-Shape-Closed Element-5) (2D-Shape-Closed Object-452))
+(matchBetween (ObjectsColoredFnBlackColor
+               Element-5) (ObjectsColoredFnBlackColor Object-452))
+(matchBetween (ObjectsBorderColoredFnBlackColor
+               Element-6) (ObjectsBorderColoredFnBlackColor Object-457))
+(matchBetween (Centered-Element Element-6) (Centered-Element
+                                            Object-457))
+(matchBetween (2D-Shape-Closed Element-6) (2D-Shape-Closed Object-457))
+(matchBetween Element-6 Object-457)

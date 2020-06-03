@@ -1,0 +1,25 @@
+(Centered-Element Object-424)
+(ObjectsBorderColoredFnBlackColor Object-424)
+(2D-Shape-Open Object-424)
+(2D-Shape-Forked Object-424)
+(2D-Shape-Straight Object-424)
+(Symmetric-Shape Object-424)
+(2D-Shape-Generic Object-424)
++++++++++++
+((ObjectsColoredFn WhiteColor) Object-426)
+(2D-Shape-Generic Object-426)
+(Symmetric-Shape Object-426)
+(2D-Shape-Closed Object-426)
+(2D-Shape-AxisAligned Object-426)
+(ObjectsBorderColoredFnBlackColor Object-426)
+(Centered-Element Object-426)
++++++++++++
+(matchBetween (ObjectsBorderColoredFnBlackColor
+               Object-424) (ObjectsBorderColoredFnBlackColor
+                            Object-426))
+(matchBetween (2D-Shape-Generic Object-424) (2D-Shape-Generic
+                                             Object-426))
+(matchBetween (Symmetric-Shape Object-424) (Symmetric-Shape Object-426))
+(matchBetween (Centered-Element Object-424) (Centered-Element
+                                             Object-426))
+(matchBetween Object-424 Object-426)

@@ -1,0 +1,135 @@
+(convexAngleBetweenEdges Edge-3276 Edge-3277)
+(convexAngleBetweenEdges Edge-3277 Edge-3278)
+(convexAngleBetweenEdges Edge-3278 Edge-3276)
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-3278 Edge-3276)
+ (convexAngleBetweenEdges Edge-3276 Edge-3277))
+(horizontallyOrientedCorner
+ (convexAngleBetweenEdges Edge-3278 Edge-3276))
+(bottomToTopCorner (convexAngleBetweenEdges Edge-3278 Edge-3276))
+(leftToRightCorner (convexAngleBetweenEdges Edge-3278 Edge-3276))
+(perpendicularCorner (convexAngleBetweenEdges Edge-3278 Edge-3276))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-3277 Edge-3278)
+ (convexAngleBetweenEdges Edge-3278 Edge-3276))
+(verticallyOrientedCorner (convexAngleBetweenEdges Edge-3277 Edge-3278))
+(rightToLeftCorner (convexAngleBetweenEdges Edge-3277 Edge-3278))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-3276 Edge-3277)
+ (convexAngleBetweenEdges Edge-3277 Edge-3278))
+(topToBottomCorner (convexAngleBetweenEdges Edge-3276 Edge-3277))
+(rightOf Edge-3277 Edge-3278)
+(edgesPerpendicular Edge-3276 Edge-3278)
+(above Edge-3276 Edge-3278)
+(rightOf Edge-3276 Edge-3278)
+(above Edge-3276 Edge-3277)
+(lengthMedium Edge-3278)
+(lengthLong Edge-3276)
+(lengthLong Edge-3277)
+(ObliqueEdge-Downward Edge-3278)
+(PerceptualEdge Edge-3278)
+(StraightEdge Edge-3278)
+(ObliqueEdge-Upward Edge-3277)
+(PerceptualEdge Edge-3277)
+(StraightEdge Edge-3277)
+(ObliqueEdge-Upward Edge-3276)
+(PerceptualEdge Edge-3276)
+(StraightEdge Edge-3276)
++++++++++++
+(StraightEdge Edge-3279)
+(StraightEdge Edge-3280)
+(StraightEdge Edge-3281)
+(PerceptualEdge Edge-3279)
+(PerceptualEdge Edge-3280)
+(PerceptualEdge Edge-3281)
+(ObliqueEdge-Downward Edge-3279)
+(ObliqueEdge-Downward Edge-3280)
+(ObliqueEdge-Upward Edge-3281)
+(lengthLong Edge-3279)
+(lengthLong Edge-3280)
+(lengthShort Edge-3281)
+(above Edge-3279 Edge-3280)
+(above Edge-3281 Edge-3280)
+(rightOf Edge-3279 Edge-3281)
+(rightOf Edge-3280 Edge-3281)
+(edgesPerpendicular Edge-3280 Edge-3281)
+(convexAngleBetweenEdges Edge-3279 Edge-3280)
+(convexAngleBetweenEdges Edge-3280 Edge-3281)
+(convexAngleBetweenEdges Edge-3281 Edge-3279)
+(topToBottomCorner (convexAngleBetweenEdges Edge-3279 Edge-3280))
+(horizontallyOrientedCorner
+ (convexAngleBetweenEdges Edge-3279 Edge-3280))
+(horizontallyOrientedCorner
+ (convexAngleBetweenEdges Edge-3280 Edge-3281))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-3279 Edge-3280)
+ (convexAngleBetweenEdges Edge-3280 Edge-3281))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-3280 Edge-3281)
+ (convexAngleBetweenEdges Edge-3281 Edge-3279))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-3281 Edge-3279)
+ (convexAngleBetweenEdges Edge-3279 Edge-3280))
+(perpendicularCorner (convexAngleBetweenEdges Edge-3280 Edge-3281))
+(rightToLeftCorner (convexAngleBetweenEdges Edge-3280 Edge-3281))
+(bottomToTopCorner (convexAngleBetweenEdges Edge-3280 Edge-3281))
+(leftToRightCorner (convexAngleBetweenEdges Edge-3281 Edge-3279))
+(verticallyOrientedCorner (convexAngleBetweenEdges Edge-3281 Edge-3279))
++++++++++++
+(matchBetween Edge-3276 Edge-3279)
+(matchBetween (lengthLong Edge-3276) (lengthLong Edge-3279))
+(matchBetween (PerceptualEdge Edge-3277) (PerceptualEdge Edge-3280))
+(matchBetween (StraightEdge Edge-3276) (StraightEdge Edge-3279))
+(matchBetween (StraightEdge Edge-3278) (StraightEdge Edge-3281))
+(matchBetween (rightOf Edge-3277 Edge-3278) (rightOf
+                                             Edge-3280
+                                             Edge-3281))
+(matchBetween (convexAngleBetweenEdges Edge-3278
+               Edge-3276) (convexAngleBetweenEdges Edge-3281 Edge-3279))
+(matchBetween (leftToRightCorner
+               (convexAngleBetweenEdges Edge-3278
+                Edge-3276)) (leftToRightCorner
+                             (convexAngleBetweenEdges Edge-3281
+                              Edge-3279)))
+(matchBetween (convexAngleBetweenEdges Edge-3276
+               Edge-3277) (convexAngleBetweenEdges Edge-3279 Edge-3280))
+(matchBetween (topToBottomCorner
+               (convexAngleBetweenEdges Edge-3276
+                Edge-3277)) (topToBottomCorner
+                             (convexAngleBetweenEdges Edge-3279
+                              Edge-3280)))
+(matchBetween (cycleAdjacentAngles
+               (convexAngleBetweenEdges Edge-3277 Edge-3278)
+               (convexAngleBetweenEdges Edge-3278
+                Edge-3276)) (cycleAdjacentAngles
+                             (convexAngleBetweenEdges Edge-3280
+                              Edge-3281)
+                             (convexAngleBetweenEdges Edge-3281
+                              Edge-3279)))
+(matchBetween (cycleAdjacentAngles
+               (convexAngleBetweenEdges Edge-3278 Edge-3276)
+               (convexAngleBetweenEdges Edge-3276
+                Edge-3277)) (cycleAdjacentAngles
+                             (convexAngleBetweenEdges Edge-3281
+                              Edge-3279)
+                             (convexAngleBetweenEdges Edge-3279
+                              Edge-3280)))
+(matchBetween (cycleAdjacentAngles
+               (convexAngleBetweenEdges Edge-3276 Edge-3277)
+               (convexAngleBetweenEdges Edge-3277
+                Edge-3278)) (cycleAdjacentAngles
+                             (convexAngleBetweenEdges Edge-3279
+                              Edge-3280)
+                             (convexAngleBetweenEdges Edge-3280
+                              Edge-3281)))
+(matchBetween (rightToLeftCorner
+               (convexAngleBetweenEdges Edge-3277
+                Edge-3278)) (rightToLeftCorner
+                             (convexAngleBetweenEdges Edge-3280
+                              Edge-3281)))
+(matchBetween (convexAngleBetweenEdges Edge-3277
+               Edge-3278) (convexAngleBetweenEdges Edge-3280 Edge-3281))
+(matchBetween (above Edge-3276 Edge-3277) (above Edge-3279 Edge-3280))
+(matchBetween (rightOf Edge-3276 Edge-3278) (rightOf
+                                             Edge-3279
+                                             Edge-3281))
+(matchBetween (StraightEdge Edge-3277) (StraightEdge Edge-3280))
+(matchBetween (PerceptualEdge Edge-3278) (PerceptualEdge Edge-3281))
+(matchBetween Edge-3278 Edge-3281)
+(matchBetween (PerceptualEdge Edge-3276) (PerceptualEdge Edge-3279))
+(matchBetween (lengthLong Edge-3277) (lengthLong Edge-3280))
+(matchBetween Edge-3277 Edge-3280)

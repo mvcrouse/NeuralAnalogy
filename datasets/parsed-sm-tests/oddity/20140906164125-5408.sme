@@ -1,0 +1,39 @@
+(ShapeTypeFn0 Object-1064)
+((ShapeTypeFn 1) Object-1063)
+(narrowEdged Object-1064)
+(wideEdged Object-1063)
+(rightOf Object-1063 Object-1064)
+(elementsIntersect Object-1063 Object-1064)
+(ObjectsBorderColoredFnBlackColor Object-1064)
+(ObjectsBorderColoredFnBlackColor Object-1063)
+(ObjectsColoredFnBlackColor Object-1064)
++++++++++++
+(ObjectsColoredFnBlackColor Object-1058)
+(ObjectsBorderColoredFnBlackColor Object-1057)
+(ObjectsBorderColoredFnBlackColor Object-1058)
+(elementsIntersect Object-1057 Object-1058)
+(above Object-1057 Object-1058)
+(rightOf Object-1057 Object-1058)
+(wideEdged Object-1057)
+(narrowEdged Object-1058)
+((ShapeTypeFn 2) Object-1057)
+(ShapeTypeFn0 Object-1058)
++++++++++++
+(matchBetween (ObjectsBorderColoredFnBlackColor
+               Object-1063) (ObjectsBorderColoredFnBlackColor
+                             Object-1057))
+(matchBetween (narrowEdged Object-1064) (narrowEdged Object-1058))
+(matchBetween (ObjectsColoredFnBlackColor
+               Object-1064) (ObjectsColoredFnBlackColor Object-1058))
+(matchBetween (elementsIntersect Object-1063
+               Object-1064) (elementsIntersect Object-1057 Object-1058))
+(matchBetween (rightOf Object-1063 Object-1064) (rightOf
+                                                 Object-1057
+                                                 Object-1058))
+(matchBetween (ObjectsBorderColoredFnBlackColor
+               Object-1064) (ObjectsBorderColoredFnBlackColor
+                             Object-1058))
+(matchBetween (ShapeTypeFn0 Object-1064) (ShapeTypeFn0 Object-1058))
+(matchBetween Object-1064 Object-1058)
+(matchBetween (wideEdged Object-1063) (wideEdged Object-1057))
+(matchBetween Object-1063 Object-1057)

@@ -1,0 +1,144 @@
+(convexAngleBetweenEdges Edge-2598 Edge-2597)
+(convexAngleBetweenEdges Edge-2597 Edge-2596)
+(convexAngleBetweenEdges Edge-2596 Edge-2598)
+((ShapeTypeFn 0) Edge-2598)
+((ShapeTypeFn 2) Edge-2597)
+((ShapeTypeFn 4) Edge-2596)
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-2596 Edge-2598)
+ (convexAngleBetweenEdges Edge-2598 Edge-2597))
+(verticallyOrientedCorner (convexAngleBetweenEdges Edge-2596 Edge-2598))
+(rightToLeftCorner (convexAngleBetweenEdges Edge-2596 Edge-2598))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-2597 Edge-2596)
+ (convexAngleBetweenEdges Edge-2596 Edge-2598))
+(topToBottomCorner (convexAngleBetweenEdges Edge-2597 Edge-2596))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-2598 Edge-2597)
+ (convexAngleBetweenEdges Edge-2597 Edge-2596))
+(horizontallyOrientedCorner
+ (convexAngleBetweenEdges Edge-2598 Edge-2597))
+(bottomToTopCorner (convexAngleBetweenEdges Edge-2598 Edge-2597))
+(leftToRightCorner (convexAngleBetweenEdges Edge-2598 Edge-2597))
+(perpendicularCorner (convexAngleBetweenEdges Edge-2598 Edge-2597))
+(above Edge-2597 Edge-2596)
+(rightOf Edge-2596 Edge-2598)
+(edgesPerpendicular Edge-2598 Edge-2597)
+(above Edge-2597 Edge-2598)
+(rightOf Edge-2597 Edge-2598)
+(lengthMedium Edge-2598)
+(lengthLong Edge-2597)
+(lengthLong Edge-2596)
+(PerceptualEdge Edge-2596)
+(PerceptualEdge Edge-2597)
+(PerceptualEdge Edge-2598)
++++++++++++
+(PerceptualEdge Edge-2602)
+(PerceptualEdge Edge-2601)
+(PerceptualEdge Edge-2600)
+(PerceptualEdge Edge-2599)
+(axisAligned Edge-2602)
+(axisAligned Edge-2601)
+(axisAligned Edge-2600)
+(axisAligned Edge-2599)
+(lengthLong Edge-2601)
+(lengthLong Edge-2599)
+(lengthMedium Edge-2602)
+(lengthMedium Edge-2600)
+(rightOf Edge-2601 Edge-2602)
+(rightOf Edge-2600 Edge-2602)
+(rightOf Edge-2599 Edge-2602)
+(rightOf Edge-2600 Edge-2601)
+(rightOf Edge-2600 Edge-2599)
+(above Edge-2601 Edge-2602)
+(above Edge-2602 Edge-2599)
+(above Edge-2601 Edge-2600)
+(above Edge-2601 Edge-2599)
+(above Edge-2600 Edge-2599)
+(edgesPerpendicular Edge-2602 Edge-2601)
+(edgesPerpendicular Edge-2602 Edge-2599)
+(edgesPerpendicular Edge-2601 Edge-2600)
+(edgesPerpendicular Edge-2600 Edge-2599)
+(edgesDisconnected Edge-2601 Edge-2599)
+(edgesDisconnected Edge-2602 Edge-2600)
+(parallelEdgeRelation (edgesDisconnected Edge-2601 Edge-2599))
+(parallelEdgeRelation (edgesDisconnected Edge-2602 Edge-2600))
+(edgesParallel Edge-2601 Edge-2599)
+(edgesParallel Edge-2602 Edge-2600)
+(convexAngleBetweenEdges Edge-2602 Edge-2601)
+(convexAngleBetweenEdges Edge-2601 Edge-2600)
+(convexAngleBetweenEdges Edge-2600 Edge-2599)
+(convexAngleBetweenEdges Edge-2599 Edge-2602)
+(perpendicularCorner (convexAngleBetweenEdges Edge-2602 Edge-2601))
+(perpendicularCorner (convexAngleBetweenEdges Edge-2601 Edge-2600))
+(perpendicularCorner (convexAngleBetweenEdges Edge-2600 Edge-2599))
+(perpendicularCorner (convexAngleBetweenEdges Edge-2599 Edge-2602))
+(leftToRightCorner (convexAngleBetweenEdges Edge-2602 Edge-2601))
+(leftToRightCorner (convexAngleBetweenEdges Edge-2601 Edge-2600))
+(bottomToTopCorner (convexAngleBetweenEdges Edge-2602 Edge-2601))
+(bottomToTopCorner (convexAngleBetweenEdges Edge-2599 Edge-2602))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-2602 Edge-2601)
+ (convexAngleBetweenEdges Edge-2601 Edge-2600))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-2601 Edge-2600)
+ (convexAngleBetweenEdges Edge-2600 Edge-2599))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-2600 Edge-2599)
+ (convexAngleBetweenEdges Edge-2599 Edge-2602))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-2599 Edge-2602)
+ (convexAngleBetweenEdges Edge-2602 Edge-2601))
+(topToBottomCorner (convexAngleBetweenEdges Edge-2601 Edge-2600))
+(topToBottomCorner (convexAngleBetweenEdges Edge-2600 Edge-2599))
+(rightToLeftCorner (convexAngleBetweenEdges Edge-2600 Edge-2599))
+(rightToLeftCorner (convexAngleBetweenEdges Edge-2599 Edge-2602))
+((ShapeTypeFn 6) Edge-2600)
+((ShapeTypeFn 5) Edge-2599)
+((ShapeTypeFn 3) Edge-2601)
+((ShapeTypeFn 1) Edge-2602)
++++++++++++
+(matchBetween (PerceptualEdge Edge-2596) (PerceptualEdge Edge-2599))
+(matchBetween Edge-2597 Edge-2601)
+(matchBetween (lengthLong Edge-2597) (lengthLong Edge-2601))
+(matchBetween (PerceptualEdge Edge-2597) (PerceptualEdge Edge-2601))
+(matchBetween (rightOf Edge-2596 Edge-2598) (rightOf
+                                             Edge-2599
+                                             Edge-2602))
+(matchBetween (edgesPerpendicular Edge-2598
+               Edge-2597) (edgesPerpendicular Edge-2602 Edge-2601))
+(matchBetween (rightOf Edge-2597 Edge-2598) (rightOf
+                                             Edge-2601
+                                             Edge-2602))
+(matchBetween (leftToRightCorner
+               (convexAngleBetweenEdges Edge-2598
+                Edge-2597)) (leftToRightCorner
+                             (convexAngleBetweenEdges Edge-2602
+                              Edge-2601)))
+(matchBetween (cycleAdjacentAngles
+               (convexAngleBetweenEdges Edge-2596 Edge-2598)
+               (convexAngleBetweenEdges Edge-2598
+                Edge-2597)) (cycleAdjacentAngles
+                             (convexAngleBetweenEdges Edge-2599
+                              Edge-2602)
+                             (convexAngleBetweenEdges Edge-2602
+                              Edge-2601)))
+(matchBetween (perpendicularCorner
+               (convexAngleBetweenEdges Edge-2598
+                Edge-2597)) (perpendicularCorner
+                             (convexAngleBetweenEdges Edge-2602
+                              Edge-2601)))
+(matchBetween (bottomToTopCorner
+               (convexAngleBetweenEdges Edge-2598
+                Edge-2597)) (bottomToTopCorner
+                             (convexAngleBetweenEdges Edge-2602
+                              Edge-2601)))
+(matchBetween (convexAngleBetweenEdges Edge-2598
+               Edge-2597) (convexAngleBetweenEdges Edge-2602 Edge-2601))
+(matchBetween (above Edge-2597 Edge-2598) (above Edge-2601 Edge-2602))
+(matchBetween (rightToLeftCorner
+               (convexAngleBetweenEdges Edge-2596
+                Edge-2598)) (rightToLeftCorner
+                             (convexAngleBetweenEdges Edge-2599
+                              Edge-2602)))
+(matchBetween (convexAngleBetweenEdges Edge-2596
+               Edge-2598) (convexAngleBetweenEdges Edge-2599 Edge-2602))
+(matchBetween (above Edge-2597 Edge-2596) (above Edge-2601 Edge-2599))
+(matchBetween (PerceptualEdge Edge-2598) (PerceptualEdge Edge-2602))
+(matchBetween (lengthMedium Edge-2598) (lengthMedium Edge-2602))
+(matchBetween Edge-2598 Edge-2602)
+(matchBetween (lengthLong Edge-2596) (lengthLong Edge-2599))
+(matchBetween Edge-2596 Edge-2599)

@@ -1,0 +1,181 @@
+(sacredValueChoice open8135)
+(sacredValueChoice notOpen8135)
+(affectsSigLargerGroup open8135)
+(affectsSigLargerGroup notOpen8135)
+(uninferredSentence (affectsSigLargerGroup open8135))
+(uninferredSentence (affectsSigLargerGroup notOpen8135))
+(uninferredSentence (directlyResponsible you8131 notOpen8135))
+(uninferredSentence (preventsAlternativeNegativeOutcome open8135))
+(uninferredSentence (usedAsMeansToPreventNegativeOutcome open8135))
+(directlyResponsible you8131 open8135)
+(directlyResponsible you8131 notOpen8135)
+(preventsAlternativeNegativeOutcome open8135)
+(usedAsMeansToPreventNegativeOutcome open8135)
+(and (sacredValueChoice open8135) (sacredValueChoice notOpen8135)
+     (uninferredSentence (affectsSigLargerGroup open8135))
+     (uninferredSentence (affectsSigLargerGroup notOpen8135))
+     (directlyResponsible you8131 open8135)
+     (uninferredSentence (directlyResponsible you8131 notOpen8135))
+     (uninferredSentence (preventsAlternativeNegativeOutcome open8135))
+     (uninferredSentence
+      (usedAsMeansToPreventNegativeOutcome open8135)))
+(rightChoice notOpen8135)
+(chosenItem OpeningOrNotOpeningTheDam notOpen8135)
+(chosenItem OpeningOrNotOpeningTheDam open8135)
+(IntelligentAgent you8131)
+(Dam dam7557)
+((GroupFn AnimalSpecies) River1FishGroups)
+((GroupFn AnimalSpecies) River1FishGroup1)
+((GroupFn AnimalSpecies) River1FishGroup2)
+(Extinction ExtinctionRiver1FishGroup1)
+(Extinction ExtinctionRiver1FishGroup2)
+(OpeningSomething open8135)
+(PreventingSomething preventingExtinctionRiver1FishGroup1)
+(PreventingSomething preventingExtinctionRiver1FishGroup2)
+(SelectingSomething OpeningOrNotOpeningTheDam)
+(groupCardinality River1FishGroup1 2)
+(groupCardinality River1FishGroup2 20)
+(subGroups River1FishGroups River1FishGroup1)
+(subGroups River1FishGroups River1FishGroup2)
+(objectActedOn ExtinctionRiver1FishGroup1 River1FishGroup1)
+(objectActedOn ExtinctionRiver1FishGroup2 River1FishGroup2)
+(isInaction notOpen8135)
+(objectActedOn open8135 dam7557)
+(preventedProp preventingExtinctionRiver1FishGroup1
+ ExtinctionRiver1FishGroup1)
+(preventedProp preventingExtinctionRiver1FishGroup2
+ ExtinctionRiver1FishGroup2)
+(choices OpeningOrNotOpeningTheDam open8135)
+(choices OpeningOrNotOpeningTheDam notOpen8135)
+(performedBy open8135 you8131)
+(performedBy notOpen8135 you8131)
+(causes-PropProp (chosenItem OpeningOrNotOpeningTheDam open8135)
+ preventingExtinctionRiver1FishGroup2)
+(causes-PropProp (chosenItem OpeningOrNotOpeningTheDam open8135)
+ ExtinctionRiver1FishGroup1)
+(causes-PropProp (chosenItem OpeningOrNotOpeningTheDam notOpen8135)
+ ExtinctionRiver1FishGroup2)
+(causes-PropProp (chosenItem OpeningOrNotOpeningTheDam notOpen8135)
+ preventingExtinctionRiver1FishGroup1)
+(implies
+ (and (sacredValueChoice open8135) (sacredValueChoice notOpen8135)
+      (uninferredSentence (affectsSigLargerGroup open8135))
+      (uninferredSentence (affectsSigLargerGroup notOpen8135))
+      (directlyResponsible you8131 open8135)
+      (uninferredSentence (directlyResponsible you8131 notOpen8135))
+      (uninferredSentence
+       (preventsAlternativeNegativeOutcome open8135))
+      (uninferredSentence
+       (usedAsMeansToPreventNegativeOutcome open8135)))
+ (rightChoice notOpen8135))
+(makeDecision you8131 notOpen8135)
++++++++++++
+(IntelligentAgent you811)
+(NatureReserve natureReserve1)
+(NatureReserve natureReserve2)
+(landAreaOfRegion natureReserve1 200)
+(landAreaOfRegion natureReserve2 50)
+(Army-BranchOfService army2)
+(TransferringPossession TransferNaturePreserve2)
+(TransferringPossession TransferNaturePreserve1)
+(TransferringPossession GiveLand)
+(toPossessor TransferNaturePreserve2 army2)
+(objectOfPossessionTransfer TransferNaturePreserve2 natureReserve2)
+(objectOfPossessionTransfer TransferNaturePreserve1 natureReserve1)
+(fromPossessor TransferNaturePreserve1 army2)
+(Inaction NotGiveLand)
+(PreventingSomething preventingTransferNaturePreserve1)
+(PreventingSomething preventingTransferNaturePreserve2)
+(PreventingSomething armyDoesNotOwnNaturePreserve1)
+(preventedProp preventingTransferNaturePreserve1
+ TransferNaturePreserve1)
+(preventedProp preventingTransferNaturePreserve2
+ TransferNaturePreserve2)
+(causes-SitSit TransferNaturePreserve1 armyDoesNotOwnNaturePreserve1)
+(operatesInRegion army2 natureReserve1)
+(operatesInRegion army2 natureReserve2)
+(preventedSit armyDoesNotOwnNaturePreserve1
+ (operatesInRegion army2 natureReserve1))
+(SelectingSomething GivingOrNotGivingTheLand)
+(choices GivingOrNotGivingTheLand GiveLand)
+(choices GivingOrNotGivingTheLand NotGiveLand)
+(performedBy GiveLand you811)
+(performedBy NotGiveLand you811)
+(chosenItem GivingOrNotGivingTheLand GiveLand)
+(chosenItem GivingOrNotGivingTheLand NotGiveLand)
+(causes-PropProp (chosenItem GivingOrNotGivingTheLand GiveLand)
+ TransferNaturePreserve1)
+(causes-PropProp (chosenItem GivingOrNotGivingTheLand GiveLand)
+ TransferNaturePreserve2)
+(causes-PropProp TransferNaturePreserve2
+ (operatesInRegion army2 natureReserve2))
+(causes-PropProp (chosenItem GivingOrNotGivingTheLand NotGiveLand)
+ preventingTransferNaturePreserve1)
+(causes-PropProp (chosenItem GivingOrNotGivingTheLand NotGiveLand)
+ preventingTransferNaturePreserve2)
++++++++++++
+(matchBetween preventingExtinctionRiver1FishGroup2 preventingTransferNaturePreserve2)
+(matchBetween (PreventingSomething
+               preventingExtinctionRiver1FishGroup2) (PreventingSomething
+                                                      preventingTransferNaturePreserve2))
+(matchBetween notOpen8135 GiveLand)
+(matchBetween (performedBy notOpen8135 you8131) (performedBy
+                                                 GiveLand
+                                                 you811))
+(matchBetween OpeningOrNotOpeningTheDam GivingOrNotGivingTheLand)
+(matchBetween (SelectingSomething
+               OpeningOrNotOpeningTheDam) (SelectingSomething
+                                           GivingOrNotGivingTheLand))
+(matchBetween (choices OpeningOrNotOpeningTheDam open8135) (choices
+                                                            GivingOrNotGivingTheLand
+                                                            NotGiveLand))
+(matchBetween (chosenItem OpeningOrNotOpeningTheDam
+               open8135) (chosenItem GivingOrNotGivingTheLand
+                          NotGiveLand))
+(matchBetween ExtinctionRiver1FishGroup1 preventingTransferNaturePreserve1)
+(matchBetween (causes-PropProp
+               (chosenItem OpeningOrNotOpeningTheDam open8135)
+               ExtinctionRiver1FishGroup1) (causes-PropProp
+                                            (chosenItem
+                                             GivingOrNotGivingTheLand
+                                             NotGiveLand)
+                                            preventingTransferNaturePreserve1))
+(matchBetween (causes-PropProp
+               (chosenItem OpeningOrNotOpeningTheDam open8135)
+               preventingExtinctionRiver1FishGroup2) (causes-PropProp
+                                                      (chosenItem
+                                                       GivingOrNotGivingTheLand
+                                                       NotGiveLand)
+                                                      preventingTransferNaturePreserve2))
+(matchBetween (causes-PropProp
+               (chosenItem OpeningOrNotOpeningTheDam notOpen8135)
+               ExtinctionRiver1FishGroup2) (causes-PropProp
+                                            (chosenItem
+                                             GivingOrNotGivingTheLand
+                                             GiveLand)
+                                            TransferNaturePreserve2))
+(matchBetween (causes-PropProp
+               (chosenItem OpeningOrNotOpeningTheDam notOpen8135)
+               preventingExtinctionRiver1FishGroup1) (causes-PropProp
+                                                      (chosenItem
+                                                       GivingOrNotGivingTheLand
+                                                       GiveLand)
+                                                      TransferNaturePreserve1))
+(matchBetween preventingExtinctionRiver1FishGroup1 TransferNaturePreserve1)
+(matchBetween (chosenItem OpeningOrNotOpeningTheDam
+               notOpen8135) (chosenItem GivingOrNotGivingTheLand
+                             GiveLand))
+(matchBetween (choices OpeningOrNotOpeningTheDam notOpen8135) (choices
+                                                               GivingOrNotGivingTheLand
+                                                               GiveLand))
+(matchBetween (performedBy open8135 you8131) (performedBy
+                                              NotGiveLand
+                                              you811))
+(matchBetween open8135 NotGiveLand)
+(matchBetween (preventedProp preventingExtinctionRiver1FishGroup2
+               ExtinctionRiver1FishGroup2) (preventedProp
+                                            preventingTransferNaturePreserve2
+                                            TransferNaturePreserve2))
+(matchBetween ExtinctionRiver1FishGroup2 TransferNaturePreserve2)
+(matchBetween (IntelligentAgent you8131) (IntelligentAgent you811))
+(matchBetween you8131 you811)

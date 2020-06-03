@@ -1,0 +1,213 @@
+(sacredValueChoice throw18421)
+(sacredValueChoice Inaction18657)
+(affectsSigLargerGroup throw18421)
+(affectsSigLargerGroup Inaction18657)
+(uninferredSentence (affectsSigLargerGroup throw18421))
+(uninferredSentence (affectsSigLargerGroup Inaction18657))
+(uninferredSentence (directlyResponsible you18016 Inaction18657))
+(uninferredSentence (usedAsMeansToPreventNegativeOutcome throw18421))
+(directlyResponsible you18016 throw18421)
+(directlyResponsible you18016 Inaction18657)
+(preventsAlternativeNegativeOutcome throw18421)
+(usedAsMeansToPreventNegativeOutcome throw18421)
+(and (sacredValueChoice throw18421) (sacredValueChoice Inaction18657)
+     (uninferredSentence (affectsSigLargerGroup throw18421))
+     (uninferredSentence (affectsSigLargerGroup Inaction18657))
+     (directlyResponsible you18016 throw18421)
+     (uninferredSentence (directlyResponsible you18016 Inaction18657))
+     (preventsAlternativeNegativeOutcome throw18421)
+     (uninferredSentence
+      (usedAsMeansToPreventNegativeOutcome throw18421)))
+(rightChoice throw18421)
+(on-UnderspecifiedSurface bomb18151 patio18209)
+(chosenItem SelectingSomething18656 throw18421)
+(chosenItem SelectingSomething18656 Inaction18657)
+(Inaction Inaction18657)
+(PreventingSomething PreventingSomething18655)
+(SelectingSomething SelectingSomething18656)
+(Bomb bomb18151)
+(PhysicalDestructionEvent kill17889)
+(Dying kill17889)
+(Dying kill18493)
+(PhysicalDestructionEvent kill18493)
+(Terrace-Topographical patio18209)
+(Person person18540)
+(RestaurantSpace restaurant17825)
+(RescuingSomeone save18062)
+(Set-Mathematical them18094)
+(ThrowingAnObject throw18421)
+(performedBy PreventingSomething18655 you18016)
+(preventedSit PreventingSomething18655 kill17889)
+(choices SelectingSomething18656 throw18421)
+(choices SelectingSomething18656 Inaction18657)
+(causes-PropSit (chosenItem SelectingSomething18656 Inaction18657)
+ kill17889)
+(causes-PropSit (chosenItem SelectingSomething18656 throw18421)
+ save18062)
+(causes-PropSit (chosenItem SelectingSomething18656 throw18421)
+ kill18493)
+(in-UnderspecifiedContainer bomb18151 restaurant17825)
+(doneBy kill17889 bomb18151)
+(organismKilled kill18493 person18540)
+(doneBy kill18493 throw18421)
+(beneficiary save18062 them18094)
+(performedBy save18062 you18016)
+(by-Underspecified save18062 throw18421)
+(causes-SitSit save18062 PreventingSomething18655)
+(cardinality them18094 9)
+(performedBy throw18421 you18016)
+(performedBy Inaction18657 you18016)
+(objectActedOn throw18421 bomb18151)
+(toLocation throw18421 patio18209)
+(causes-SitProp throw18421
+ (on-UnderspecifiedSurface bomb18151 patio18209))
+(cardinality person18540 1)
+(implies
+ (and (sacredValueChoice throw18421) (sacredValueChoice Inaction18657)
+      (uninferredSentence (affectsSigLargerGroup throw18421))
+      (uninferredSentence (affectsSigLargerGroup Inaction18657))
+      (directlyResponsible you18016 throw18421)
+      (uninferredSentence (directlyResponsible you18016 Inaction18657))
+      (preventsAlternativeNegativeOutcome throw18421)
+      (uninferredSentence
+       (usedAsMeansToPreventNegativeOutcome throw18421)))
+ (rightChoice throw18421))
+(makeDecision you18016 throw18421)
++++++++++++
+(Inaction Inaction131950)
+(performedBy PreventingSomething131948 you128898)
+(performedBy order131049 you128898)
+(performedBy Inaction131950 you128898)
+(performedBy save128937 you128898)
+(preventedSit PreventingSomething131948 die128829)
+(PreventingSomething PreventingSomething131948)
+(SelectingSomething SelectingSomething131949)
+(choices SelectingSomething131949 order131049)
+(choices SelectingSomething131949 Inaction131950)
+(chosenItem SelectingSomething131949 Inaction131950)
+(chosenItem SelectingSomething131949 order131049)
+(causes-PropSit (chosenItem SelectingSomething131949 Inaction131950)
+ die128829)
+(causes-PropSit (chosenItem SelectingSomething131949 order131049)
+ save128937)
+(Dying die128829)
+(Dying die131270)
+(in-UnderspecifiedContainer die131270 refugee-camp129739)
+(in-UnderspecifiedContainer famine127520 ContinentOfAfrica)
+(Famine famine127520)
+(FoodOrDrink food127320)
+(recipientOfInfo order131049 convoy127246)
+(RefugeeCamp refugee-camp129739)
+(RefugeeCamp refugee-camp127421)
+(Convoy convoy127246)
+(primaryObjectMoving go129115 convoy127246)
+(toLocation go129115 refugee-camp129739)
+(Movement-TranslationEvent go129115)
+(and (RefugeeCamp refugee-camp129739) (Convoy convoy127246)
+     (primaryObjectMoving go129115 convoy127246)
+     (toLocation go129115 refugee-camp129739)
+     (Movement-TranslationEvent go129115))
+(infoTransferred order131049
+ (and (RefugeeCamp refugee-camp129739) (Convoy convoy127246)
+      (primaryObjectMoving go129115 convoy127246)
+      (toLocation go129115 refugee-camp129739)
+      (Movement-TranslationEvent go129115)))
+(causes-SitSit order131049 die131270)
+(causes-SitSit save128937 PreventingSomething131948)
+(Ordering-CommunicationAct order131049)
+(RescuingSomeone save128937)
+(beneficiary save128937 them128970)
+(by-Underspecified save128937 order131049)
+(cardinality set-of-people131188 100)
+(cardinality them128970 1000)
+(Set-Mathematical set-of-people131188)
+(Set-Mathematical them128970)
+(to-UnderspecifiedLocation transport127299 refugee-camp127421)
+(transporter transport127299 convoy127246)
+(transportees transport127299 food127320)
+(TransportationEvent transport127299)
+(Truck truck127274)
+(possessiveRelation truck127274 convoy127246)
++++++++++++
+(matchBetween bomb18151 famine127520)
+(matchBetween restaurant17825 ContinentOfAfrica)
+(matchBetween (in-UnderspecifiedContainer bomb18151
+               restaurant17825) (in-UnderspecifiedContainer
+                                 famine127520
+                                 ContinentOfAfrica))
+(matchBetween kill17889 die128829)
+(matchBetween (Dying kill17889) (Dying die128829))
+(matchBetween PreventingSomething18655 PreventingSomething131948)
+(matchBetween (PreventingSomething
+               PreventingSomething18655) (PreventingSomething
+                                          PreventingSomething131948))
+(matchBetween save18062 save128937)
+(matchBetween (RescuingSomeone save18062) (RescuingSomeone save128937))
+(matchBetween you18016 you128898)
+(matchBetween (performedBy PreventingSomething18655
+               you18016) (performedBy PreventingSomething131948
+                          you128898))
+(matchBetween (causes-SitSit save18062
+               PreventingSomething18655) (causes-SitSit
+                                          save128937
+                                          PreventingSomething131948))
+(matchBetween Inaction18657 Inaction131950)
+(matchBetween (Inaction Inaction18657) (Inaction Inaction131950))
+(matchBetween throw18421 order131049)
+(matchBetween (performedBy throw18421 you18016) (performedBy
+                                                 order131049
+                                                 you128898))
+(matchBetween SelectingSomething18656 SelectingSomething131949)
+(matchBetween (SelectingSomething
+               SelectingSomething18656) (SelectingSomething
+                                         SelectingSomething131949))
+(matchBetween (choices SelectingSomething18656 throw18421) (choices
+                                                            SelectingSomething131949
+                                                            order131049))
+(matchBetween (chosenItem SelectingSomething18656
+               throw18421) (chosenItem SelectingSomething131949
+                            order131049))
+(matchBetween (causes-PropSit
+               (chosenItem SelectingSomething18656 throw18421)
+               save18062) (causes-PropSit
+                           (chosenItem SelectingSomething131949
+                            order131049)
+                           save128937))
+(matchBetween (causes-PropSit
+               (chosenItem SelectingSomething18656 Inaction18657)
+               kill17889) (causes-PropSit
+                           (chosenItem SelectingSomething131949
+                            Inaction131950)
+                           die128829))
+(matchBetween (chosenItem SelectingSomething18656
+               Inaction18657) (chosenItem SelectingSomething131949
+                               Inaction131950))
+(matchBetween (choices SelectingSomething18656 Inaction18657) (choices
+                                                               SelectingSomething131949
+                                                               Inaction131950))
+(matchBetween (by-Underspecified save18062
+               throw18421) (by-Underspecified save128937 order131049))
+(matchBetween (performedBy Inaction18657 you18016) (performedBy
+                                                    Inaction131950
+                                                    you128898))
+(matchBetween (performedBy save18062 you18016) (performedBy
+                                                save128937
+                                                you128898))
+(matchBetween (beneficiary save18062 them18094) (beneficiary
+                                                 save128937
+                                                 them128970))
+(matchBetween (preventedSit PreventingSomething18655
+               kill17889) (preventedSit PreventingSomething131948
+                           die128829))
+(matchBetween (cardinality them18094 9) (cardinality them128970 1000))
+(matchBetween 9 1000)
+(matchBetween (Set-Mathematical them18094) (Set-Mathematical
+                                            them128970))
+(matchBetween them18094 them128970)
+(matchBetween (cardinality person18540 1) (cardinality
+                                           set-of-people131188
+                                           100))
+(matchBetween 1 100)
+(matchBetween person18540 set-of-people131188)
+(matchBetween (Dying kill18493) (Dying die131270))
+(matchBetween kill18493 die131270)

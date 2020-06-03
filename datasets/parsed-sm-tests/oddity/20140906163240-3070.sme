@@ -1,0 +1,27 @@
+(elementsIntersect Super-Edge-2688 Super-Edge-2686)
+(edgesPerpendicular Super-Edge-2688 Super-Edge-2686)
+(PerceptualEdge Super-Edge-2686)
+(StraightEdge Super-Edge-2686)
+(PerceptualEdge Super-Edge-2688)
+(StraightEdge Super-Edge-2688)
++++++++++++
+(StraightEdge Super-Edge-2696)
+(StraightEdge Super-Edge-2694)
+(PerceptualEdge Super-Edge-2696)
+(PerceptualEdge Super-Edge-2694)
+(elementsIntersect Super-Edge-2696 Super-Edge-2694)
++++++++++++
+(matchBetween Super-Edge-2686 Super-Edge-2694)
+(matchBetween (PerceptualEdge Super-Edge-2686) (PerceptualEdge
+                                                Super-Edge-2694))
+(matchBetween (StraightEdge Super-Edge-2686) (StraightEdge
+                                              Super-Edge-2694))
+(matchBetween (elementsIntersect Super-Edge-2688
+               Super-Edge-2686) (elementsIntersect
+                                 Super-Edge-2696
+                                 Super-Edge-2694))
+(matchBetween (StraightEdge Super-Edge-2688) (StraightEdge
+                                              Super-Edge-2696))
+(matchBetween (PerceptualEdge Super-Edge-2688) (PerceptualEdge
+                                                Super-Edge-2696))
+(matchBetween Super-Edge-2688 Super-Edge-2696)

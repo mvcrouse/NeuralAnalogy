@@ -1,0 +1,18 @@
+(elementsIntersect Super-Edge-101 Super-Edge-103)
+(edgesPerpendicular Super-Edge-101 Super-Edge-103)
+(ObliqueEdge-Upward Super-Edge-103)
+(PerceptualEdge Super-Edge-103)
+(StraightEdge Super-Edge-103)
+(ObliqueEdge-Downward Super-Edge-101)
+(PerceptualEdge Super-Edge-101)
+(StraightEdge Super-Edge-101)
++++++++++++
+(StraightEdge Edge-57)
+(PerceptualEdge Edge-57)
+(ObliqueEdge-Upward Edge-57)
++++++++++++
+(matchBetween (PerceptualEdge Super-Edge-103) (PerceptualEdge Edge-57))
+(matchBetween (StraightEdge Super-Edge-103) (StraightEdge Edge-57))
+(matchBetween (ObliqueEdge-Upward Super-Edge-103) (ObliqueEdge-Upward
+                                                   Edge-57))
+(matchBetween Super-Edge-103 Edge-57)

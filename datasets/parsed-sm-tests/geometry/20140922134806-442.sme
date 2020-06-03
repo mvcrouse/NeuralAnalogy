@@ -1,0 +1,178 @@
+(edgesDisconnected Edge-376 Edge-378)
+(edgesDisconnected Edge-375 Edge-377)
+(convexAngleBetweenEdges Edge-375 Edge-376)
+(convexAngleBetweenEdges Edge-376 Edge-377)
+(convexAngleBetweenEdges Edge-377 Edge-378)
+(convexAngleBetweenEdges Edge-378 Edge-375)
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-378 Edge-375)
+ (convexAngleBetweenEdges Edge-375 Edge-376))
+(perpendicularCorner (convexAngleBetweenEdges Edge-378 Edge-375))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-377 Edge-378)
+ (convexAngleBetweenEdges Edge-378 Edge-375))
+(perpendicularCorner (convexAngleBetweenEdges Edge-377 Edge-378))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-376 Edge-377)
+ (convexAngleBetweenEdges Edge-377 Edge-378))
+(perpendicularCorner (convexAngleBetweenEdges Edge-376 Edge-377))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-375 Edge-376)
+ (convexAngleBetweenEdges Edge-376 Edge-377))
+(perpendicularCorner (convexAngleBetweenEdges Edge-375 Edge-376))
+(edgesParallel Edge-375 Edge-377)
+(parallelEdgeRelation (edgesDisconnected Edge-375 Edge-377))
+(edgesParallel Edge-376 Edge-378)
+(parallelEdgeRelation (edgesDisconnected Edge-376 Edge-378))
+(edgesPerpendicular Edge-377 Edge-378)
+(edgesPerpendicular Edge-376 Edge-377)
+(edgesPerpendicular Edge-375 Edge-378)
+(edgesPerpendicular Edge-375 Edge-376)
+(axisAligned Edge-378)
+(PerceptualEdge Edge-378)
+(StraightEdge Edge-378)
+(axisAligned Edge-377)
+(PerceptualEdge Edge-377)
+(StraightEdge Edge-377)
+(axisAligned Edge-376)
+(PerceptualEdge Edge-376)
+(StraightEdge Edge-376)
+(axisAligned Edge-375)
+(PerceptualEdge Edge-375)
+(StraightEdge Edge-375)
++++++++++++
+(StraightEdge Edge-411)
+(StraightEdge Edge-412)
+(StraightEdge Edge-413)
+(StraightEdge Edge-414)
+(PerceptualEdge Edge-411)
+(PerceptualEdge Edge-412)
+(PerceptualEdge Edge-413)
+(PerceptualEdge Edge-414)
+(axisAligned Edge-411)
+(axisAligned Edge-412)
+(axisAligned Edge-413)
+(axisAligned Edge-414)
+(edgesPerpendicular Edge-411 Edge-412)
+(edgesPerpendicular Edge-411 Edge-414)
+(edgesPerpendicular Edge-412 Edge-413)
+(edgesPerpendicular Edge-413 Edge-414)
+(edgesDisconnected Edge-412 Edge-414)
+(edgesDisconnected Edge-411 Edge-413)
+(parallelEdgeRelation (edgesDisconnected Edge-412 Edge-414))
+(parallelEdgeRelation (edgesDisconnected Edge-411 Edge-413))
+(edgesParallel Edge-412 Edge-414)
+(edgesParallel Edge-411 Edge-413)
+(convexAngleBetweenEdges Edge-411 Edge-412)
+(convexAngleBetweenEdges Edge-412 Edge-413)
+(convexAngleBetweenEdges Edge-413 Edge-414)
+(convexAngleBetweenEdges Edge-414 Edge-411)
+(perpendicularCorner (convexAngleBetweenEdges Edge-411 Edge-412))
+(perpendicularCorner (convexAngleBetweenEdges Edge-412 Edge-413))
+(perpendicularCorner (convexAngleBetweenEdges Edge-413 Edge-414))
+(perpendicularCorner (convexAngleBetweenEdges Edge-414 Edge-411))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-411 Edge-412)
+ (convexAngleBetweenEdges Edge-412 Edge-413))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-412 Edge-413)
+ (convexAngleBetweenEdges Edge-413 Edge-414))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-413 Edge-414)
+ (convexAngleBetweenEdges Edge-414 Edge-411))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-414 Edge-411)
+ (convexAngleBetweenEdges Edge-411 Edge-412))
++++++++++++
+(matchBetween Edge-376 Edge-412)
+(matchBetween (axisAligned Edge-376) (axisAligned Edge-412))
+(matchBetween Edge-378 Edge-414)
+(matchBetween (axisAligned Edge-378) (axisAligned Edge-414))
+(matchBetween (PerceptualEdge Edge-376) (PerceptualEdge Edge-412))
+(matchBetween (PerceptualEdge Edge-378) (PerceptualEdge Edge-414))
+(matchBetween (StraightEdge Edge-376) (StraightEdge Edge-412))
+(matchBetween (StraightEdge Edge-378) (StraightEdge Edge-414))
+(matchBetween (edgesParallel Edge-375 Edge-377) (edgesParallel
+                                                 Edge-411
+                                                 Edge-413))
+(matchBetween (edgesPerpendicular Edge-375
+               Edge-378) (edgesPerpendicular Edge-411 Edge-414))
+(matchBetween (edgesPerpendicular Edge-377
+               Edge-378) (edgesPerpendicular Edge-413 Edge-414))
+(matchBetween (edgesDisconnected Edge-375 Edge-377) (edgesDisconnected
+                                                     Edge-411
+                                                     Edge-413))
+(matchBetween (parallelEdgeRelation
+               (edgesDisconnected Edge-375
+                Edge-377)) (parallelEdgeRelation
+                            (edgesDisconnected Edge-411 Edge-413)))
+(matchBetween (convexAngleBetweenEdges Edge-376
+               Edge-377) (convexAngleBetweenEdges Edge-412 Edge-413))
+(matchBetween (perpendicularCorner
+               (convexAngleBetweenEdges Edge-376
+                Edge-377)) (perpendicularCorner
+                            (convexAngleBetweenEdges Edge-412
+                             Edge-413)))
+(matchBetween (convexAngleBetweenEdges Edge-378
+               Edge-375) (convexAngleBetweenEdges Edge-414 Edge-411))
+(matchBetween (perpendicularCorner
+               (convexAngleBetweenEdges Edge-378
+                Edge-375)) (perpendicularCorner
+                            (convexAngleBetweenEdges Edge-414
+                             Edge-411)))
+(matchBetween (cycleAdjacentAngles
+               (convexAngleBetweenEdges Edge-376 Edge-377)
+               (convexAngleBetweenEdges Edge-377
+                Edge-378)) (cycleAdjacentAngles
+                            (convexAngleBetweenEdges Edge-412 Edge-413)
+                            (convexAngleBetweenEdges Edge-413
+                             Edge-414)))
+(matchBetween (cycleAdjacentAngles
+               (convexAngleBetweenEdges Edge-378 Edge-375)
+               (convexAngleBetweenEdges Edge-375
+                Edge-376)) (cycleAdjacentAngles
+                            (convexAngleBetweenEdges Edge-414 Edge-411)
+                            (convexAngleBetweenEdges Edge-411
+                             Edge-412)))
+(matchBetween (cycleAdjacentAngles
+               (convexAngleBetweenEdges Edge-377 Edge-378)
+               (convexAngleBetweenEdges Edge-378
+                Edge-375)) (cycleAdjacentAngles
+                            (convexAngleBetweenEdges Edge-413 Edge-414)
+                            (convexAngleBetweenEdges Edge-414
+                             Edge-411)))
+(matchBetween (cycleAdjacentAngles
+               (convexAngleBetweenEdges Edge-375 Edge-376)
+               (convexAngleBetweenEdges Edge-376
+                Edge-377)) (cycleAdjacentAngles
+                            (convexAngleBetweenEdges Edge-411 Edge-412)
+                            (convexAngleBetweenEdges Edge-412
+                             Edge-413)))
+(matchBetween (perpendicularCorner
+               (convexAngleBetweenEdges Edge-377
+                Edge-378)) (perpendicularCorner
+                            (convexAngleBetweenEdges Edge-413
+                             Edge-414)))
+(matchBetween (convexAngleBetweenEdges Edge-377
+               Edge-378) (convexAngleBetweenEdges Edge-413 Edge-414))
+(matchBetween (perpendicularCorner
+               (convexAngleBetweenEdges Edge-375
+                Edge-376)) (perpendicularCorner
+                            (convexAngleBetweenEdges Edge-411
+                             Edge-412)))
+(matchBetween (convexAngleBetweenEdges Edge-375
+               Edge-376) (convexAngleBetweenEdges Edge-411 Edge-412))
+(matchBetween (parallelEdgeRelation
+               (edgesDisconnected Edge-376
+                Edge-378)) (parallelEdgeRelation
+                            (edgesDisconnected Edge-412 Edge-414)))
+(matchBetween (edgesDisconnected Edge-376 Edge-378) (edgesDisconnected
+                                                     Edge-412
+                                                     Edge-414))
+(matchBetween (edgesPerpendicular Edge-376
+               Edge-377) (edgesPerpendicular Edge-412 Edge-413))
+(matchBetween (edgesPerpendicular Edge-375
+               Edge-376) (edgesPerpendicular Edge-411 Edge-412))
+(matchBetween (edgesParallel Edge-376 Edge-378) (edgesParallel
+                                                 Edge-412
+                                                 Edge-414))
+(matchBetween (StraightEdge Edge-377) (StraightEdge Edge-413))
+(matchBetween (StraightEdge Edge-375) (StraightEdge Edge-411))
+(matchBetween (PerceptualEdge Edge-377) (PerceptualEdge Edge-413))
+(matchBetween (PerceptualEdge Edge-375) (PerceptualEdge Edge-411))
+(matchBetween (axisAligned Edge-377) (axisAligned Edge-413))
+(matchBetween Edge-377 Edge-413)
+(matchBetween (axisAligned Edge-375) (axisAligned Edge-411))
+(matchBetween Edge-375 Edge-411)

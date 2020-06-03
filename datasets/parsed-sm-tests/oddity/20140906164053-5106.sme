@@ -1,0 +1,89 @@
+(convexAngleBetweenEdges Edge-3471 Edge-3472)
+(convexAngleBetweenEdges Edge-3472 Edge-3473)
+(convexAngleBetweenEdges Edge-3473 Edge-3471)
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-3473 Edge-3471)
+ (convexAngleBetweenEdges Edge-3471 Edge-3472))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-3472 Edge-3473)
+ (convexAngleBetweenEdges Edge-3473 Edge-3471))
+(perpendicularCorner (convexAngleBetweenEdges Edge-3472 Edge-3473))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-3471 Edge-3472)
+ (convexAngleBetweenEdges Edge-3472 Edge-3473))
+(edgesPerpendicular Edge-3472 Edge-3473)
+(lengthShort Edge-3473)
+(lengthLong Edge-3472)
+(lengthLong Edge-3471)
+(PerceptualEdge Edge-3473)
+(StraightEdge Edge-3473)
+(PerceptualEdge Edge-3472)
+(StraightEdge Edge-3472)
+(PerceptualEdge Edge-3471)
+(StraightEdge Edge-3471)
++++++++++++
+(StraightEdge Edge-3477)
+(StraightEdge Edge-3478)
+(StraightEdge Edge-3479)
+(PerceptualEdge Edge-3477)
+(PerceptualEdge Edge-3478)
+(PerceptualEdge Edge-3479)
+(lengthLong Edge-3478)
+(lengthLong Edge-3477)
+(lengthMedium Edge-3479)
+(edgesPerpendicular Edge-3477 Edge-3479)
+(convexAngleBetweenEdges Edge-3477 Edge-3478)
+(convexAngleBetweenEdges Edge-3478 Edge-3479)
+(convexAngleBetweenEdges Edge-3479 Edge-3477)
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-3477 Edge-3478)
+ (convexAngleBetweenEdges Edge-3478 Edge-3479))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-3478 Edge-3479)
+ (convexAngleBetweenEdges Edge-3479 Edge-3477))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-3479 Edge-3477)
+ (convexAngleBetweenEdges Edge-3477 Edge-3478))
+(perpendicularCorner (convexAngleBetweenEdges Edge-3479 Edge-3477))
++++++++++++
+(matchBetween (PerceptualEdge Edge-3471) (PerceptualEdge Edge-3478))
+(matchBetween Edge-3472 Edge-3479)
+(matchBetween (PerceptualEdge Edge-3472) (PerceptualEdge Edge-3479))
+(matchBetween (StraightEdge Edge-3472) (StraightEdge Edge-3479))
+(matchBetween (edgesPerpendicular Edge-3472
+               Edge-3473) (edgesPerpendicular Edge-3477 Edge-3479))
+(matchBetween (convexAngleBetweenEdges Edge-3473
+               Edge-3471) (convexAngleBetweenEdges Edge-3477 Edge-3478))
+(matchBetween (convexAngleBetweenEdges Edge-3471
+               Edge-3472) (convexAngleBetweenEdges Edge-3478 Edge-3479))
+(matchBetween (cycleAdjacentAngles
+               (convexAngleBetweenEdges Edge-3473 Edge-3471)
+               (convexAngleBetweenEdges Edge-3471
+                Edge-3472)) (cycleAdjacentAngles
+                             (convexAngleBetweenEdges Edge-3477
+                              Edge-3478)
+                             (convexAngleBetweenEdges Edge-3478
+                              Edge-3479)))
+(matchBetween (cycleAdjacentAngles
+               (convexAngleBetweenEdges Edge-3472 Edge-3473)
+               (convexAngleBetweenEdges Edge-3473
+                Edge-3471)) (cycleAdjacentAngles
+                             (convexAngleBetweenEdges Edge-3479
+                              Edge-3477)
+                             (convexAngleBetweenEdges Edge-3477
+                              Edge-3478)))
+(matchBetween (cycleAdjacentAngles
+               (convexAngleBetweenEdges Edge-3471 Edge-3472)
+               (convexAngleBetweenEdges Edge-3472
+                Edge-3473)) (cycleAdjacentAngles
+                             (convexAngleBetweenEdges Edge-3478
+                              Edge-3479)
+                             (convexAngleBetweenEdges Edge-3479
+                              Edge-3477)))
+(matchBetween (perpendicularCorner
+               (convexAngleBetweenEdges Edge-3472
+                Edge-3473)) (perpendicularCorner
+                             (convexAngleBetweenEdges Edge-3479
+                              Edge-3477)))
+(matchBetween (convexAngleBetweenEdges Edge-3472
+               Edge-3473) (convexAngleBetweenEdges Edge-3479 Edge-3477))
+(matchBetween (StraightEdge Edge-3473) (StraightEdge Edge-3477))
+(matchBetween (PerceptualEdge Edge-3473) (PerceptualEdge Edge-3477))
+(matchBetween Edge-3473 Edge-3477)
+(matchBetween (StraightEdge Edge-3471) (StraightEdge Edge-3478))
+(matchBetween (lengthLong Edge-3471) (lengthLong Edge-3478))
+(matchBetween Edge-3471 Edge-3478)

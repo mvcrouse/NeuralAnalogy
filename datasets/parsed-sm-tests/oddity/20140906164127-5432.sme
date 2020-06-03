@@ -1,0 +1,60 @@
+(wideEdged Element-4)
+(elementsIntersect Element-4 Element-3)
+(narrowEdged Element-3)
+(2D-Shape-Straight Element-4)
+(2D-Shape-Generic Element-4)
+(2D-Shape-Ellipse Element-3)
+(ObjectsColoredFnBlackColor Element-3)
+(2D-Shape-Convex Element-3)
+(2D-Shape-Generic Element-3)
+(ObjectsBorderColoredFnBlackColor Element-3)
+(2D-Shape-Curved Element-3)
+(Fully-Symmetric-Shape Element-3)
+(2D-Shape-Closed Element-3)
+(2D-Shape-Open Element-4)
+(ObjectsBorderColoredFnBlackColor Element-4)
++++++++++++
+(ObjectsColoredFnBlackColor Object-1060)
+(2D-Shape-Generic Object-1060)
+(2D-Shape-Generic Object-1059)
+(Fully-Symmetric-Shape Object-1060)
+(2D-Shape-Curved Object-1060)
+(2D-Shape-Ellipse Object-1060)
+(2D-Shape-Convex Object-1060)
+(2D-Shape-Closed Object-1060)
+(2D-Shape-Straight Object-1059)
+(2D-Shape-Open Object-1059)
+(ObjectsBorderColoredFnBlackColor Object-1059)
+(ObjectsBorderColoredFnBlackColor Object-1060)
+(elementsIntersect Object-1059 Object-1060)
+(wideEdged Object-1059)
+(narrowEdged Object-1060)
++++++++++++
+(matchBetween (2D-Shape-Straight Element-4) (2D-Shape-Straight
+                                             Object-1059))
+(matchBetween (2D-Shape-Open Element-4) (2D-Shape-Open Object-1059))
+(matchBetween Element-3 Object-1060)
+(matchBetween (narrowEdged Element-3) (narrowEdged Object-1060))
+(matchBetween (ObjectsColoredFnBlackColor
+               Element-3) (ObjectsColoredFnBlackColor Object-1060))
+(matchBetween (2D-Shape-Generic Element-3) (2D-Shape-Generic
+                                            Object-1060))
+(matchBetween (Fully-Symmetric-Shape Element-3) (Fully-Symmetric-Shape
+                                                 Object-1060))
+(matchBetween (ObjectsBorderColoredFnBlackColor
+               Element-3) (ObjectsBorderColoredFnBlackColor
+                           Object-1060))
+(matchBetween (elementsIntersect Element-4
+               Element-3) (elementsIntersect Object-1059 Object-1060))
+(matchBetween (2D-Shape-Closed Element-3) (2D-Shape-Closed Object-1060))
+(matchBetween (2D-Shape-Curved Element-3) (2D-Shape-Curved Object-1060))
+(matchBetween (2D-Shape-Convex Element-3) (2D-Shape-Convex Object-1060))
+(matchBetween (2D-Shape-Ellipse Element-3) (2D-Shape-Ellipse
+                                            Object-1060))
+(matchBetween (ObjectsBorderColoredFnBlackColor
+               Element-4) (ObjectsBorderColoredFnBlackColor
+                           Object-1059))
+(matchBetween (2D-Shape-Generic Element-4) (2D-Shape-Generic
+                                            Object-1059))
+(matchBetween (wideEdged Element-4) (wideEdged Object-1059))
+(matchBetween Element-4 Object-1059)

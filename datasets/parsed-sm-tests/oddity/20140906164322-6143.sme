@@ -1,0 +1,58 @@
+(lengthShort Element-12)
+(lengthLong Element-11)
+(elementIntersects Element-12 Element-11)
+(edgesPerpendicular Element-11 Element-12)
+(edgesPerpendicular Element-11 Element-10)
+(elementIntersects Element-10 Element-11)
+(edgesParallel Element-12 Element-10)
+(lengthShort Element-10)
+(PerceptualEdge Element-10)
+(StraightEdge Element-10)
+(PerceptualEdge Element-11)
+(StraightEdge Element-11)
+(StraightEdge Element-12)
+(PerceptualEdge Element-12)
++++++++++++
+(StraightEdge Super-Edge-3758)
+(StraightEdge Edge-3754)
+(StraightEdge Edge-3750)
+(PerceptualEdge Super-Edge-3758)
+(PerceptualEdge Edge-3754)
+(PerceptualEdge Edge-3750)
+(lengthLong Super-Edge-3758)
+(lengthShort Edge-3754)
+(lengthShort Edge-3750)
+(edgesPerpendicular Super-Edge-3758 Edge-3754)
+(edgesPerpendicular Super-Edge-3758 Edge-3750)
+(elementIntersects Edge-3754 Super-Edge-3758)
+(elementIntersects Edge-3750 Super-Edge-3758)
+(edgesParallel Edge-3754 Edge-3750)
++++++++++++
+(matchBetween Element-12 Edge-3750)
+(matchBetween (lengthShort Element-12) (lengthShort Edge-3750))
+(matchBetween (StraightEdge Element-10) (StraightEdge Edge-3754))
+(matchBetween (PerceptualEdge Element-10) (PerceptualEdge Edge-3754))
+(matchBetween (StraightEdge Element-11) (StraightEdge Super-Edge-3758))
+(matchBetween (edgesParallel Element-12 Element-10) (edgesParallel
+                                                     Edge-3754
+                                                     Edge-3750))
+(matchBetween (edgesPerpendicular Element-11
+               Element-12) (edgesPerpendicular Super-Edge-3758
+                            Edge-3750))
+(matchBetween (elementIntersects Element-12
+               Element-11) (elementIntersects Edge-3750
+                            Super-Edge-3758))
+(matchBetween (elementIntersects Element-10
+               Element-11) (elementIntersects Edge-3754
+                            Super-Edge-3758))
+(matchBetween (edgesPerpendicular Element-11
+               Element-10) (edgesPerpendicular Super-Edge-3758
+                            Edge-3754))
+(matchBetween (PerceptualEdge Element-11) (PerceptualEdge
+                                           Super-Edge-3758))
+(matchBetween (lengthLong Element-11) (lengthLong Super-Edge-3758))
+(matchBetween Element-11 Super-Edge-3758)
+(matchBetween (PerceptualEdge Element-12) (PerceptualEdge Edge-3750))
+(matchBetween (StraightEdge Element-12) (StraightEdge Edge-3750))
+(matchBetween (lengthShort Element-10) (lengthShort Edge-3754))
+(matchBetween Element-10 Edge-3754)

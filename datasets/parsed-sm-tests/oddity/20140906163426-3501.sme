@@ -1,0 +1,55 @@
+(elementContains Element-9 Element-10)
+(Implicit-Shape Element-10)
+(Fully-Symmetric-Shape Element-10)
+(2D-Shape-Closed Element-10)
+(2D-Shape-Generic Element-9)
+(ObjectsColoredFnBlackColor Element-9)
+(Centered-Element Element-9)
+(2D-Shape-Closed Element-9)
+(2D-Shape-Straight Element-9)
+(2D-Shape-Convex Element-9)
+(ObjectsBorderColoredFnBlackColor Element-9)
+(2D-Shape-Ellipse Element-10)
+(2D-Shape-Convex Element-10)
+(2D-Shape-Curved Element-10)
++++++++++++
+(ObjectsColoredFnBlackColor Object-675)
+(Implicit-Shape Object-683)
+(Fully-Symmetric-Shape Object-683)
+(2D-Shape-Curved Object-683)
+(2D-Shape-Ellipse Object-683)
+(2D-Shape-Convex Object-683)
+(2D-Shape-Convex Object-675)
+(2D-Shape-Closed Object-683)
+(2D-Shape-Closed Object-675)
+(2D-Shape-Generic Object-675)
+(2D-Shape-Straight Object-675)
+(ObjectsBorderColoredFnBlackColor Object-675)
+(elementContains Object-675 Object-683)
+(Centered-Element Object-675)
++++++++++++
+(matchBetween (Fully-Symmetric-Shape Element-10) (Fully-Symmetric-Shape
+                                                  Object-683))
+(matchBetween (2D-Shape-Ellipse Element-10) (2D-Shape-Ellipse
+                                             Object-683))
+(matchBetween (2D-Shape-Curved Element-10) (2D-Shape-Curved Object-683))
+(matchBetween (ObjectsColoredFnBlackColor
+               Element-9) (ObjectsColoredFnBlackColor Object-675))
+(matchBetween (2D-Shape-Closed Element-9) (2D-Shape-Closed Object-675))
+(matchBetween (ObjectsBorderColoredFnBlackColor
+               Element-9) (ObjectsBorderColoredFnBlackColor Object-675))
+(matchBetween (elementContains Element-9 Element-10) (elementContains
+                                                      Object-675
+                                                      Object-683))
+(matchBetween (2D-Shape-Convex Element-9) (2D-Shape-Convex Object-675))
+(matchBetween (2D-Shape-Straight Element-9) (2D-Shape-Straight
+                                             Object-675))
+(matchBetween (Centered-Element Element-9) (Centered-Element
+                                            Object-675))
+(matchBetween (2D-Shape-Generic Element-9) (2D-Shape-Generic
+                                            Object-675))
+(matchBetween Element-9 Object-675)
+(matchBetween (2D-Shape-Convex Element-10) (2D-Shape-Convex Object-683))
+(matchBetween (2D-Shape-Closed Element-10) (2D-Shape-Closed Object-683))
+(matchBetween (Implicit-Shape Element-10) (Implicit-Shape Object-683))
+(matchBetween Element-10 Object-683)

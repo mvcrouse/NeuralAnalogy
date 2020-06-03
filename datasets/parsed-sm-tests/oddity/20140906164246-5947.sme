@@ -1,0 +1,99 @@
+(axisAligned Element-10)
+(lengthShort Element-10)
+(lengthLong Element-11)
+(edgesParallel Element-12 Element-10)
+(rightOf Element-10 Element-11)
+(above Element-10 Element-11)
+(edgesPerpendicular Element-11 Element-10)
+(elementIntersects Element-10 Element-11)
+(elementIntersects Element-12 Element-11)
+(edgesPerpendicular Element-11 Element-12)
+(above Element-12 Element-11)
+(rightOf Element-12 Element-11)
+(above Element-12 Element-10)
+(axisAligned Element-11)
+(lengthShort Element-12)
+(axisAligned Element-12)
+(StraightEdge Element-10)
+(PerceptualEdge Element-10)
+(HorizontalEdge Element-10)
+(StraightEdge Element-11)
+(PerceptualEdge Element-11)
+(VerticalEdge Element-11)
+(HorizontalEdge Element-12)
+(PerceptualEdge Element-12)
+(StraightEdge Element-12)
++++++++++++
+(StraightEdge Super-Edge-3617)
+(StraightEdge Edge-3613)
+(StraightEdge Edge-3609)
+(PerceptualEdge Super-Edge-3617)
+(PerceptualEdge Edge-3613)
+(PerceptualEdge Edge-3609)
+(axisAligned Super-Edge-3617)
+(axisAligned Edge-3613)
+(axisAligned Edge-3609)
+(VerticalEdge Super-Edge-3617)
+(HorizontalEdge Edge-3613)
+(HorizontalEdge Edge-3609)
+(lengthLong Super-Edge-3617)
+(lengthShort Edge-3613)
+(lengthShort Edge-3609)
+(rightOf Edge-3613 Super-Edge-3617)
+(rightOf Edge-3609 Super-Edge-3617)
+(above Edge-3613 Super-Edge-3617)
+(above Edge-3609 Super-Edge-3617)
+(above Edge-3613 Edge-3609)
+(edgesPerpendicular Super-Edge-3617 Edge-3613)
+(edgesPerpendicular Super-Edge-3617 Edge-3609)
+(elementIntersects Edge-3613 Super-Edge-3617)
+(elementIntersects Edge-3609 Super-Edge-3617)
+(edgesParallel Edge-3613 Edge-3609)
++++++++++++
+(matchBetween Element-10 Edge-3609)
+(matchBetween (lengthShort Element-10) (lengthShort Edge-3609))
+(matchBetween (axisAligned Element-10) (axisAligned Edge-3609))
+(matchBetween (HorizontalEdge Element-10) (HorizontalEdge Edge-3609))
+(matchBetween (PerceptualEdge Element-10) (PerceptualEdge Edge-3609))
+(matchBetween (StraightEdge Element-10) (StraightEdge Edge-3609))
+(matchBetween (axisAligned Element-11) (axisAligned Super-Edge-3617))
+(matchBetween (PerceptualEdge Element-11) (PerceptualEdge
+                                           Super-Edge-3617))
+(matchBetween (edgesParallel Element-12 Element-10) (edgesParallel
+                                                     Edge-3613
+                                                     Edge-3609))
+(matchBetween (elementIntersects Element-12
+               Element-11) (elementIntersects Edge-3613
+                            Super-Edge-3617))
+(matchBetween (edgesPerpendicular Element-11
+               Element-12) (edgesPerpendicular Super-Edge-3617
+                            Edge-3613))
+(matchBetween (rightOf Element-12 Element-11) (rightOf
+                                               Edge-3613
+                                               Super-Edge-3617))
+(matchBetween (above Element-12 Element-11) (above
+                                             Edge-3613
+                                             Super-Edge-3617))
+(matchBetween (above Element-10 Element-11) (above
+                                             Edge-3609
+                                             Super-Edge-3617))
+(matchBetween (rightOf Element-10 Element-11) (rightOf
+                                               Edge-3609
+                                               Super-Edge-3617))
+(matchBetween (edgesPerpendicular Element-11
+               Element-10) (edgesPerpendicular Super-Edge-3617
+                            Edge-3609))
+(matchBetween (elementIntersects Element-10
+               Element-11) (elementIntersects Edge-3609
+                            Super-Edge-3617))
+(matchBetween (above Element-12 Element-10) (above Edge-3613 Edge-3609))
+(matchBetween (StraightEdge Element-11) (StraightEdge Super-Edge-3617))
+(matchBetween (VerticalEdge Element-11) (VerticalEdge Super-Edge-3617))
+(matchBetween (lengthLong Element-11) (lengthLong Super-Edge-3617))
+(matchBetween Element-11 Super-Edge-3617)
+(matchBetween (StraightEdge Element-12) (StraightEdge Edge-3613))
+(matchBetween (PerceptualEdge Element-12) (PerceptualEdge Edge-3613))
+(matchBetween (HorizontalEdge Element-12) (HorizontalEdge Edge-3613))
+(matchBetween (axisAligned Element-12) (axisAligned Edge-3613))
+(matchBetween (lengthShort Element-12) (lengthShort Edge-3613))
+(matchBetween Element-12 Edge-3613)

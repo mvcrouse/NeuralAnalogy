@@ -1,0 +1,172 @@
+(sacredValueChoice throw18421)
+(sacredValueChoice Inaction18657)
+(affectsSigLargerGroup throw18421)
+(affectsSigLargerGroup Inaction18657)
+(uninferredSentence (affectsSigLargerGroup throw18421))
+(uninferredSentence (affectsSigLargerGroup Inaction18657))
+(uninferredSentence (directlyResponsible you18016 Inaction18657))
+(uninferredSentence (usedAsMeansToPreventNegativeOutcome throw18421))
+(directlyResponsible you18016 throw18421)
+(directlyResponsible you18016 Inaction18657)
+(preventsAlternativeNegativeOutcome throw18421)
+(usedAsMeansToPreventNegativeOutcome throw18421)
+(and (sacredValueChoice throw18421) (sacredValueChoice Inaction18657)
+     (uninferredSentence (affectsSigLargerGroup throw18421))
+     (uninferredSentence (affectsSigLargerGroup Inaction18657))
+     (directlyResponsible you18016 throw18421)
+     (uninferredSentence (directlyResponsible you18016 Inaction18657))
+     (preventsAlternativeNegativeOutcome throw18421)
+     (uninferredSentence
+      (usedAsMeansToPreventNegativeOutcome throw18421)))
+(rightChoice throw18421)
+(on-UnderspecifiedSurface bomb18151 patio18209)
+(chosenItem SelectingSomething18656 throw18421)
+(chosenItem SelectingSomething18656 Inaction18657)
+(Inaction Inaction18657)
+(PreventingSomething PreventingSomething18655)
+(SelectingSomething SelectingSomething18656)
+(Bomb bomb18151)
+(PhysicalDestructionEvent kill17889)
+(Dying kill17889)
+(Dying kill18493)
+(PhysicalDestructionEvent kill18493)
+(Terrace-Topographical patio18209)
+(Person person18540)
+(RestaurantSpace restaurant17825)
+(RescuingSomeone save18062)
+(Set-Mathematical them18094)
+(ThrowingAnObject throw18421)
+(performedBy PreventingSomething18655 you18016)
+(preventedSit PreventingSomething18655 kill17889)
+(choices SelectingSomething18656 throw18421)
+(choices SelectingSomething18656 Inaction18657)
+(causes-PropSit (chosenItem SelectingSomething18656 Inaction18657)
+ kill17889)
+(causes-PropSit (chosenItem SelectingSomething18656 throw18421)
+ save18062)
+(causes-PropSit (chosenItem SelectingSomething18656 throw18421)
+ kill18493)
+(in-UnderspecifiedContainer bomb18151 restaurant17825)
+(doneBy kill17889 bomb18151)
+(organismKilled kill18493 person18540)
+(doneBy kill18493 throw18421)
+(beneficiary save18062 them18094)
+(performedBy save18062 you18016)
+(by-Underspecified save18062 throw18421)
+(causes-SitSit save18062 PreventingSomething18655)
+(cardinality them18094 9)
+(performedBy throw18421 you18016)
+(performedBy Inaction18657 you18016)
+(objectActedOn throw18421 bomb18151)
+(toLocation throw18421 patio18209)
+(causes-SitProp throw18421
+ (on-UnderspecifiedSurface bomb18151 patio18209))
+(cardinality person18540 1)
+(implies
+ (and (sacredValueChoice throw18421) (sacredValueChoice Inaction18657)
+      (uninferredSentence (affectsSigLargerGroup throw18421))
+      (uninferredSentence (affectsSigLargerGroup Inaction18657))
+      (directlyResponsible you18016 throw18421)
+      (uninferredSentence (directlyResponsible you18016 Inaction18657))
+      (preventsAlternativeNegativeOutcome throw18421)
+      (uninferredSentence
+       (usedAsMeansToPreventNegativeOutcome throw18421)))
+ (rightChoice throw18421))
+(makeDecision you18016 throw18421)
++++++++++++
+(Inaction Inaction43377)
+(performedBy PreventingSomething43375 you42105)
+(performedBy obtain42917 you42105)
+(performedBy Inaction43377 you42105)
+(performedBy save42144 you42105)
+(PreventingSomething PreventingSomething43375)
+(SelectingSomething SelectingSomething43376)
+(choices SelectingSomething43376 obtain42917)
+(choices SelectingSomething43376 Inaction43377)
+(chosenItem SelectingSomething43376 obtain42917)
+(causes-PropSit (chosenItem SelectingSomething43376 obtain42917)
+ save42144)
+(causes-PropSit (chosenItem SelectingSomething43376 obtain42917)
+ (possessiveRelation patient43049 paraplegia43118))
+(possessiveRelation patient43049 paraplegia43118)
+(objectActedOn obtain42917 patient43049)
+(HarmingAnAgent (possessiveRelation patient43049 paraplegia43118))
+(Marrow bone-marrow42305)
+(toPossessor obtain42917 you42105)
+(transferredObject obtain42917 bone-marrow42305)
+(from-UnderspecifiedLocation obtain42917 patient43049)
+(TakingSomething obtain42917)
+(Paraplegia paraplegia42037)
+(Paraplegia paraplegia43118)
+(MedicalPatient patient43049)
+(RescuingSomeone save42144)
+(beneficiary save42144 set-of-patient41970)
+(by-Underspecified save42144 obtain42917)
+(causes-SitSit save42144 PreventingSomething43375)
+((GroupFn MedicalPatient) set-of-patient41970)
+(cardinality set-of-patient41970 4)
+(cardinality patient43049 1)
+(Set-Mathematical set-of-patient41970)
+(Virus virus41880)
++++++++++++
+(matchBetween PreventingSomething18655 PreventingSomething43375)
+(matchBetween (PreventingSomething
+               PreventingSomething18655) (PreventingSomething
+                                          PreventingSomething43375))
+(matchBetween 9 4)
+(matchBetween (cardinality them18094 9) (cardinality
+                                         set-of-patient41970
+                                         4))
+(matchBetween you18016 you42105)
+(matchBetween (performedBy Inaction18657 you18016) (performedBy
+                                                    Inaction43377
+                                                    you42105))
+(matchBetween (beneficiary save18062 them18094) (beneficiary
+                                                 save42144
+                                                 set-of-patient41970))
+(matchBetween (performedBy save18062 you18016) (performedBy
+                                                save42144
+                                                you42105))
+(matchBetween throw18421 obtain42917)
+(matchBetween bomb18151 patient43049)
+(matchBetween (objectActedOn throw18421 bomb18151) (objectActedOn
+                                                    obtain42917
+                                                    patient43049))
+(matchBetween (performedBy throw18421 you18016) (performedBy
+                                                 obtain42917
+                                                 you42105))
+(matchBetween (choices SelectingSomething18656 throw18421) (choices
+                                                            SelectingSomething43376
+                                                            obtain42917))
+(matchBetween (causes-PropSit
+               (chosenItem SelectingSomething18656 throw18421)
+               save18062) (causes-PropSit
+                           (chosenItem SelectingSomething43376
+                            obtain42917)
+                           save42144))
+(matchBetween (chosenItem SelectingSomething18656
+               throw18421) (chosenItem SelectingSomething43376
+                            obtain42917))
+(matchBetween (by-Underspecified save18062
+               throw18421) (by-Underspecified save42144 obtain42917))
+(matchBetween (choices SelectingSomething18656 Inaction18657) (choices
+                                                               SelectingSomething43376
+                                                               Inaction43377))
+(matchBetween (SelectingSomething
+               SelectingSomething18656) (SelectingSomething
+                                         SelectingSomething43376))
+(matchBetween SelectingSomething18656 SelectingSomething43376)
+(matchBetween (causes-SitSit save18062
+               PreventingSomething18655) (causes-SitSit
+                                          save42144
+                                          PreventingSomething43375))
+(matchBetween (performedBy PreventingSomething18655
+               you18016) (performedBy PreventingSomething43375
+                          you42105))
+(matchBetween (RescuingSomeone save18062) (RescuingSomeone save42144))
+(matchBetween save18062 save42144)
+(matchBetween (Set-Mathematical them18094) (Set-Mathematical
+                                            set-of-patient41970))
+(matchBetween them18094 set-of-patient41970)
+(matchBetween (Inaction Inaction18657) (Inaction Inaction43377))
+(matchBetween Inaction18657 Inaction43377)

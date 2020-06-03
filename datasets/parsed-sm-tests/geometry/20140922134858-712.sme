@@ -1,0 +1,116 @@
+(convexAngleBetweenEdges Edge-616 Super-Edge-640)
+(convexAngleBetweenEdges Super-Edge-640 Edge-613)
+(concaveAngleBetweenEdges Edge-613 Edge-616)
+(cycleAdjacentAngles (concaveAngleBetweenEdges Edge-613 Edge-616)
+ (convexAngleBetweenEdges Edge-616 Super-Edge-640))
+(topToBottomCorner (concaveAngleBetweenEdges Edge-613 Edge-616))
+(cycleAdjacentAngles (convexAngleBetweenEdges Super-Edge-640 Edge-613)
+ (concaveAngleBetweenEdges Edge-613 Edge-616))
+(leftToRightCorner (convexAngleBetweenEdges Super-Edge-640 Edge-613))
+(perpendicularCorner (convexAngleBetweenEdges Super-Edge-640 Edge-613))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-616 Super-Edge-640)
+ (convexAngleBetweenEdges Super-Edge-640 Edge-613))
+(rightToLeftCorner (convexAngleBetweenEdges Edge-616 Super-Edge-640))
+(perpendicularCorner (convexAngleBetweenEdges Edge-616 Super-Edge-640))
+(rightOf Edge-613 Super-Edge-640)
+(above Edge-613 Edge-616)
+(rightOf Edge-616 Super-Edge-640)
+(CurvedEdge-RightBumped Edge-613)
+(PerceptualEdge Edge-613)
+(CurvedEdge Edge-613)
+(VerticalEdge Super-Edge-640)
+(axisAligned Super-Edge-640)
+(PerceptualEdge Super-Edge-640)
+(StraightEdge Super-Edge-640)
+(CurvedEdge-RightBumped Edge-616)
+(PerceptualEdge Edge-616)
+(CurvedEdge Edge-616)
++++++++++++
+(CurvedEdge Edge-635)
+(CurvedEdge Edge-638)
+(PerceptualEdge Edge-635)
+(PerceptualEdge Super-Edge-652)
+(PerceptualEdge Edge-638)
+(CurvedEdge-LeftBumped Edge-635)
+(CurvedEdge-LeftBumped Edge-638)
+(StraightEdge Super-Edge-652)
+(axisAligned Super-Edge-652)
+(VerticalEdge Super-Edge-652)
+(rightOf Super-Edge-652 Edge-635)
+(rightOf Super-Edge-652 Edge-638)
+(above Edge-635 Edge-638)
+(convexAngleBetweenEdges Edge-635 Super-Edge-652)
+(convexAngleBetweenEdges Super-Edge-652 Edge-638)
+(perpendicularCorner (convexAngleBetweenEdges Edge-635 Super-Edge-652))
+(perpendicularCorner (convexAngleBetweenEdges Super-Edge-652 Edge-638))
+(leftToRightCorner (convexAngleBetweenEdges Edge-635 Super-Edge-652))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-635 Super-Edge-652)
+ (convexAngleBetweenEdges Super-Edge-652 Edge-638))
+(cycleAdjacentAngles (convexAngleBetweenEdges Super-Edge-652 Edge-638)
+ (concaveAngleBetweenEdges Edge-638 Edge-635))
+(cycleAdjacentAngles (concaveAngleBetweenEdges Edge-638 Edge-635)
+ (convexAngleBetweenEdges Edge-635 Super-Edge-652))
+(rightToLeftCorner (convexAngleBetweenEdges Super-Edge-652 Edge-638))
+(concaveAngleBetweenEdges Edge-638 Edge-635)
+(bottomToTopCorner (concaveAngleBetweenEdges Edge-638 Edge-635))
++++++++++++
+(matchBetween Edge-613 Edge-638)
+(matchBetween (PerceptualEdge Edge-613) (PerceptualEdge Edge-638))
+(matchBetween (CurvedEdge Edge-613) (CurvedEdge Edge-638))
+(matchBetween (axisAligned Super-Edge-640) (axisAligned Super-Edge-652))
+(matchBetween (PerceptualEdge Super-Edge-640) (PerceptualEdge
+                                               Super-Edge-652))
+(matchBetween (convexAngleBetweenEdges Super-Edge-640
+               Edge-613) (convexAngleBetweenEdges Super-Edge-652
+                          Edge-638))
+(matchBetween (perpendicularCorner
+               (convexAngleBetweenEdges Super-Edge-640
+                Edge-613)) (perpendicularCorner
+                            (convexAngleBetweenEdges Super-Edge-652
+                             Edge-638)))
+(matchBetween (cycleAdjacentAngles
+               (concaveAngleBetweenEdges Edge-613 Edge-616)
+               (convexAngleBetweenEdges Edge-616
+                Super-Edge-640)) (cycleAdjacentAngles
+                                  (concaveAngleBetweenEdges
+                                   Edge-638
+                                   Edge-635)
+                                  (convexAngleBetweenEdges
+                                   Edge-635
+                                   Super-Edge-652)))
+(matchBetween (cycleAdjacentAngles
+               (convexAngleBetweenEdges Edge-616 Super-Edge-640)
+               (convexAngleBetweenEdges Super-Edge-640
+                Edge-613)) (cycleAdjacentAngles
+                            (convexAngleBetweenEdges Edge-635
+                             Super-Edge-652)
+                            (convexAngleBetweenEdges Super-Edge-652
+                             Edge-638)))
+(matchBetween (cycleAdjacentAngles
+               (convexAngleBetweenEdges Super-Edge-640 Edge-613)
+               (concaveAngleBetweenEdges Edge-613
+                Edge-616)) (cycleAdjacentAngles
+                            (convexAngleBetweenEdges Super-Edge-652
+                             Edge-638)
+                            (concaveAngleBetweenEdges Edge-638
+                             Edge-635)))
+(matchBetween (concaveAngleBetweenEdges Edge-613
+               Edge-616) (concaveAngleBetweenEdges Edge-638 Edge-635))
+(matchBetween (perpendicularCorner
+               (convexAngleBetweenEdges Edge-616
+                Super-Edge-640)) (perpendicularCorner
+                                  (convexAngleBetweenEdges
+                                   Edge-635
+                                   Super-Edge-652)))
+(matchBetween (convexAngleBetweenEdges Edge-616
+               Super-Edge-640) (convexAngleBetweenEdges
+                                Edge-635
+                                Super-Edge-652))
+(matchBetween (StraightEdge Super-Edge-640) (StraightEdge
+                                             Super-Edge-652))
+(matchBetween (VerticalEdge Super-Edge-640) (VerticalEdge
+                                             Super-Edge-652))
+(matchBetween Super-Edge-640 Super-Edge-652)
+(matchBetween (CurvedEdge Edge-616) (CurvedEdge Edge-635))
+(matchBetween (PerceptualEdge Edge-616) (PerceptualEdge Edge-635))
+(matchBetween Edge-616 Edge-635)

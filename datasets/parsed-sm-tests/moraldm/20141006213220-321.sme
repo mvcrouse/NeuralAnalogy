@@ -1,0 +1,171 @@
+(sacredValueChoice obtain42917)
+(sacredValueChoice Inaction43377)
+(affectsSigLargerGroup obtain42917)
+(affectsSigLargerGroup Inaction43377)
+(uninferredSentence (affectsSigLargerGroup obtain42917))
+(uninferredSentence (affectsSigLargerGroup Inaction43377))
+(uninferredSentence (directlyResponsible you42105 Inaction43377))
+(directlyResponsible you42105 obtain42917)
+(directlyResponsible you42105 Inaction43377)
+(preventsAlternativeNegativeOutcome obtain42917)
+(usedAsMeansToPreventNegativeOutcome obtain42917)
+(and (sacredValueChoice obtain42917) (sacredValueChoice Inaction43377)
+     (uninferredSentence (affectsSigLargerGroup obtain42917))
+     (uninferredSentence (affectsSigLargerGroup Inaction43377))
+     (directlyResponsible you42105 obtain42917)
+     (uninferredSentence (directlyResponsible you42105 Inaction43377))
+     (preventsAlternativeNegativeOutcome obtain42917)
+     (usedAsMeansToPreventNegativeOutcome obtain42917))
+(rightChoice Inaction43377)
+(chosenItem SelectingSomething43376 obtain42917)
+(possessiveRelation patient43049 paraplegia43118)
+(Inaction Inaction43377)
+(PreventingSomething PreventingSomething43375)
+(SelectingSomething SelectingSomething43376)
+(HarmingAnAgent (possessiveRelation patient43049 paraplegia43118))
+(Marrow bone-marrow42305)
+(TakingSomething obtain42917)
+(Paraplegia paraplegia42037)
+(Paraplegia paraplegia43118)
+(MedicalPatient patient43049)
+(RescuingSomeone save42144)
+((GroupFn MedicalPatient) set-of-patient41970)
+(Set-Mathematical set-of-patient41970)
+(Virus virus41880)
+(performedBy PreventingSomething43375 you42105)
+(choices SelectingSomething43376 obtain42917)
+(choices SelectingSomething43376 Inaction43377)
+(causes-PropSit (chosenItem SelectingSomething43376 obtain42917)
+ save42144)
+(causes-PropSit (chosenItem SelectingSomething43376 obtain42917)
+ (possessiveRelation patient43049 paraplegia43118))
+(objectActedOn obtain42917 patient43049)
+(performedBy obtain42917 you42105)
+(performedBy Inaction43377 you42105)
+(toPossessor obtain42917 you42105)
+(transferredObject obtain42917 bone-marrow42305)
+(from-UnderspecifiedLocation obtain42917 patient43049)
+(beneficiary save42144 set-of-patient41970)
+(performedBy save42144 you42105)
+(by-Underspecified save42144 obtain42917)
+(causes-SitSit save42144 PreventingSomething43375)
+(cardinality set-of-patient41970 4)
+(cardinality patient43049 1)
+(implies
+ (and (sacredValueChoice obtain42917) (sacredValueChoice Inaction43377)
+      (uninferredSentence (affectsSigLargerGroup obtain42917))
+      (uninferredSentence (affectsSigLargerGroup Inaction43377))
+      (directlyResponsible you42105 obtain42917)
+      (uninferredSentence (directlyResponsible you42105 Inaction43377))
+      (preventsAlternativeNegativeOutcome obtain42917)
+      (usedAsMeansToPreventNegativeOutcome obtain42917))
+ (rightChoice Inaction43377))
+(makeDecision you42105 Inaction43377)
++++++++++++
+(Inaction Inaction17768)
+(performedBy PreventingSomething17766 you16920)
+(performedBy save16966 you16920)
+(performedBy throw17475 you16920)
+(performedBy Inaction17768 you16920)
+(preventedSit PreventingSomething17766 kill16793)
+(PreventingSomething PreventingSomething17766)
+(SelectingSomething SelectingSomething17767)
+(choices SelectingSomething17767 throw17475)
+(choices SelectingSomething17767 Inaction17768)
+(chosenItem SelectingSomething17767 Inaction17768)
+(chosenItem SelectingSomething17767 throw17475)
+(causes-PropSit (chosenItem SelectingSomething17767 Inaction17768)
+ kill16793)
+(causes-PropSit (chosenItem SelectingSomething17767 throw17475)
+ save16966)
+(causes-PropSit (chosenItem SelectingSomething17767 throw17475)
+ kill17547)
+(in-UnderspecifiedContainer bomb17131 restaurant16729)
+(Bomb bomb17131)
+(PhysicalDestructionEvent kill16793)
+(PhysicalDestructionEvent kill17547)
+(doneBy kill16793 bomb17131)
+(doneBy kill17547 throw17475)
+(Dying kill16793)
+(Dying kill17547)
+(organismKilled kill17547 person17613)
+(Person person17613)
+(RestaurantSpace restaurant16729)
+(RescuingSomeone save16966)
+(beneficiary save16966 them16998)
+(by-Underspecified save16966 throw17475)
+(causes-SitSit save16966 PreventingSomething17766)
+(causes-SitSit kill17547 save16966)
+(cardinality them16998 9)
+(cardinality person17613 1)
+(Set-Mathematical them16998)
+(objectActedOn throw17475 person17613)
+(toLocation throw17475 bomb17131)
+(on-UnderspecifiedSurface person17613 bomb17131)
+(causes-SitProp throw17475
+ (on-UnderspecifiedSurface person17613 bomb17131))
+(ThrowingAnObject throw17475)
++++++++++++
+(matchBetween PreventingSomething43375 PreventingSomething17766)
+(matchBetween (PreventingSomething
+               PreventingSomething43375) (PreventingSomething
+                                          PreventingSomething17766))
+(matchBetween patient43049 person17613)
+(matchBetween 1 1)
+(matchBetween (cardinality patient43049 1) (cardinality person17613 1))
+(matchBetween save42144 save16966)
+(matchBetween (RescuingSomeone save42144) (RescuingSomeone save16966))
+(matchBetween (performedBy Inaction43377 you42105) (performedBy
+                                                    Inaction17768
+                                                    you16920))
+(matchBetween (causes-SitSit save42144
+               PreventingSomething43375) (causes-SitSit
+                                          save16966
+                                          PreventingSomething17766))
+(matchBetween SelectingSomething43376 SelectingSomething17767)
+(matchBetween (SelectingSomething
+               SelectingSomething43376) (SelectingSomething
+                                         SelectingSomething17767))
+(matchBetween obtain42917 throw17475)
+(matchBetween (objectActedOn obtain42917 patient43049) (objectActedOn
+                                                        throw17475
+                                                        person17613))
+(matchBetween (by-Underspecified save42144
+               obtain42917) (by-Underspecified save16966 throw17475))
+(matchBetween (chosenItem SelectingSomething43376
+               obtain42917) (chosenItem SelectingSomething17767
+                             throw17475))
+(matchBetween (causes-PropSit
+               (chosenItem SelectingSomething43376 obtain42917)
+               save42144) (causes-PropSit
+                           (chosenItem SelectingSomething17767
+                            throw17475)
+                           save16966))
+(matchBetween (choices SelectingSomething43376 obtain42917) (choices
+                                                             SelectingSomething17767
+                                                             throw17475))
+(matchBetween (performedBy obtain42917 you42105) (performedBy
+                                                  throw17475
+                                                  you16920))
+(matchBetween (choices SelectingSomething43376 Inaction43377) (choices
+                                                               SelectingSomething17767
+                                                               Inaction17768))
+(matchBetween (performedBy save42144 you42105) (performedBy
+                                                save16966
+                                                you16920))
+(matchBetween (beneficiary save42144 set-of-patient41970) (beneficiary
+                                                           save16966
+                                                           them16998))
+(matchBetween (performedBy PreventingSomething43375
+               you42105) (performedBy PreventingSomething17766
+                          you16920))
+(matchBetween you42105 you16920)
+(matchBetween (cardinality set-of-patient41970 4) (cardinality
+                                                   them16998
+                                                   9))
+(matchBetween 4 9)
+(matchBetween (Set-Mathematical set-of-patient41970) (Set-Mathematical
+                                                      them16998))
+(matchBetween set-of-patient41970 them16998)
+(matchBetween (Inaction Inaction43377) (Inaction Inaction17768))
+(matchBetween Inaction43377 Inaction17768)

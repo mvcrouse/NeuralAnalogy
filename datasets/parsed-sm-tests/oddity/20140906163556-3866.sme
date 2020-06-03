@@ -1,0 +1,129 @@
+(convexAngleBetweenEdges Edge-2978 Edge-2979)
+(convexAngleBetweenEdges Edge-2979 Edge-2980)
+(convexAngleBetweenEdges Edge-2980 Edge-2978)
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-2980 Edge-2978)
+ (convexAngleBetweenEdges Edge-2978 Edge-2979))
+(horizontallyOrientedCorner
+ (convexAngleBetweenEdges Edge-2980 Edge-2978))
+(topToBottomCorner (convexAngleBetweenEdges Edge-2980 Edge-2978))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-2979 Edge-2980)
+ (convexAngleBetweenEdges Edge-2980 Edge-2978))
+(verticallyOrientedCorner (convexAngleBetweenEdges Edge-2979 Edge-2980))
+(bottomToTopCorner (convexAngleBetweenEdges Edge-2979 Edge-2980))
+(leftToRightCorner (convexAngleBetweenEdges Edge-2979 Edge-2980))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-2978 Edge-2979)
+ (convexAngleBetweenEdges Edge-2979 Edge-2980))
+(rightToLeftCorner (convexAngleBetweenEdges Edge-2978 Edge-2979))
+(above Edge-2980 Edge-2979)
+(rightOf Edge-2980 Edge-2979)
+(above Edge-2980 Edge-2978)
+(rightOf Edge-2978 Edge-2979)
+(lengthMedium Edge-2980)
+(lengthLong Edge-2979)
+(lengthLong Edge-2978)
+(ObliqueEdge-Downward Edge-2980)
+(PerceptualEdge Edge-2980)
+(StraightEdge Edge-2980)
+(ObliqueEdge-Upward Edge-2979)
+(PerceptualEdge Edge-2979)
+(StraightEdge Edge-2979)
+(ObliqueEdge-Upward Edge-2978)
+(PerceptualEdge Edge-2978)
+(StraightEdge Edge-2978)
++++++++++++
+(StraightEdge Edge-2984)
+(StraightEdge Edge-2985)
+(StraightEdge Edge-2986)
+(PerceptualEdge Edge-2984)
+(PerceptualEdge Edge-2985)
+(PerceptualEdge Edge-2986)
+(ObliqueEdge-Downward Edge-2984)
+(ObliqueEdge-Upward Edge-2985)
+(axisAligned Edge-2986)
+(VerticalEdge Edge-2986)
+(lengthLong Edge-2985)
+(lengthLong Edge-2986)
+(lengthMedium Edge-2984)
+(above Edge-2985 Edge-2984)
+(above Edge-2986 Edge-2984)
+(rightOf Edge-2986 Edge-2984)
+(rightOf Edge-2986 Edge-2985)
+(convexAngleBetweenEdges Edge-2984 Edge-2985)
+(convexAngleBetweenEdges Edge-2985 Edge-2986)
+(convexAngleBetweenEdges Edge-2986 Edge-2984)
+(bottomToTopCorner (convexAngleBetweenEdges Edge-2984 Edge-2985))
+(horizontallyOrientedCorner
+ (convexAngleBetweenEdges Edge-2984 Edge-2985))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-2984 Edge-2985)
+ (convexAngleBetweenEdges Edge-2985 Edge-2986))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-2985 Edge-2986)
+ (convexAngleBetweenEdges Edge-2986 Edge-2984))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-2986 Edge-2984)
+ (convexAngleBetweenEdges Edge-2984 Edge-2985))
+(leftToRightCorner (convexAngleBetweenEdges Edge-2985 Edge-2986))
+(verticallyOrientedCorner (convexAngleBetweenEdges Edge-2985 Edge-2986))
+(verticallyOrientedCorner (convexAngleBetweenEdges Edge-2986 Edge-2984))
+(rightToLeftCorner (convexAngleBetweenEdges Edge-2986 Edge-2984))
+(topToBottomCorner (convexAngleBetweenEdges Edge-2986 Edge-2984))
++++++++++++
+(matchBetween (StraightEdge Edge-2978) (StraightEdge Edge-2984))
+(matchBetween (ObliqueEdge-Upward Edge-2979) (ObliqueEdge-Upward
+                                              Edge-2985))
+(matchBetween (StraightEdge Edge-2979) (StraightEdge Edge-2985))
+(matchBetween (StraightEdge Edge-2980) (StraightEdge Edge-2986))
+(matchBetween (convexAngleBetweenEdges Edge-2980
+               Edge-2978) (convexAngleBetweenEdges Edge-2986 Edge-2984))
+(matchBetween (topToBottomCorner
+               (convexAngleBetweenEdges Edge-2980
+                Edge-2978)) (topToBottomCorner
+                             (convexAngleBetweenEdges Edge-2986
+                              Edge-2984)))
+(matchBetween (convexAngleBetweenEdges Edge-2979
+               Edge-2980) (convexAngleBetweenEdges Edge-2985 Edge-2986))
+(matchBetween (verticallyOrientedCorner
+               (convexAngleBetweenEdges Edge-2979
+                Edge-2980)) (verticallyOrientedCorner
+                             (convexAngleBetweenEdges Edge-2985
+                              Edge-2986)))
+(matchBetween (convexAngleBetweenEdges Edge-2978
+               Edge-2979) (convexAngleBetweenEdges Edge-2984 Edge-2985))
+(matchBetween (cycleAdjacentAngles
+               (convexAngleBetweenEdges Edge-2980 Edge-2978)
+               (convexAngleBetweenEdges Edge-2978
+                Edge-2979)) (cycleAdjacentAngles
+                             (convexAngleBetweenEdges Edge-2986
+                              Edge-2984)
+                             (convexAngleBetweenEdges Edge-2984
+                              Edge-2985)))
+(matchBetween (cycleAdjacentAngles
+               (convexAngleBetweenEdges Edge-2979 Edge-2980)
+               (convexAngleBetweenEdges Edge-2980
+                Edge-2978)) (cycleAdjacentAngles
+                             (convexAngleBetweenEdges Edge-2985
+                              Edge-2986)
+                             (convexAngleBetweenEdges Edge-2986
+                              Edge-2984)))
+(matchBetween (cycleAdjacentAngles
+               (convexAngleBetweenEdges Edge-2978 Edge-2979)
+               (convexAngleBetweenEdges Edge-2979
+                Edge-2980)) (cycleAdjacentAngles
+                             (convexAngleBetweenEdges Edge-2984
+                              Edge-2985)
+                             (convexAngleBetweenEdges Edge-2985
+                              Edge-2986)))
+(matchBetween (leftToRightCorner
+               (convexAngleBetweenEdges Edge-2979
+                Edge-2980)) (leftToRightCorner
+                             (convexAngleBetweenEdges Edge-2985
+                              Edge-2986)))
+(matchBetween (rightOf Edge-2980 Edge-2979) (rightOf
+                                             Edge-2986
+                                             Edge-2985))
+(matchBetween (above Edge-2980 Edge-2978) (above Edge-2986 Edge-2984))
+(matchBetween (PerceptualEdge Edge-2980) (PerceptualEdge Edge-2986))
+(matchBetween Edge-2980 Edge-2986)
+(matchBetween (PerceptualEdge Edge-2979) (PerceptualEdge Edge-2985))
+(matchBetween (lengthLong Edge-2979) (lengthLong Edge-2985))
+(matchBetween Edge-2979 Edge-2985)
+(matchBetween (PerceptualEdge Edge-2978) (PerceptualEdge Edge-2984))
+(matchBetween Edge-2978 Edge-2984)

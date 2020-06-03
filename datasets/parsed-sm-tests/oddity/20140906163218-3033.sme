@@ -1,0 +1,90 @@
+(convexAngleBetweenEdges Element-8 Element-9)
+(convexAngleBetweenEdges Element-9 Element-7)
+(convexAngleBetweenEdges Element-7 Element-8)
+(lengthLong Element-9)
+(lengthLong Element-8)
+(perpendicularCorner (convexAngleBetweenEdges Element-7 Element-8))
+(cycleAdjacentAngles (convexAngleBetweenEdges Element-7 Element-8)
+ (convexAngleBetweenEdges Element-8 Element-9))
+(cycleAdjacentAngles (convexAngleBetweenEdges Element-9 Element-7)
+ (convexAngleBetweenEdges Element-7 Element-8))
+(cycleAdjacentAngles (convexAngleBetweenEdges Element-8 Element-9)
+ (convexAngleBetweenEdges Element-9 Element-7))
+(edgesPerpendicular Element-7 Element-8)
+(lengthMedium Element-7)
+(PerceptualEdge Element-9)
+(PerceptualEdge Element-7)
+(StraightEdge Element-7)
+(StraightEdge Element-8)
+(PerceptualEdge Element-8)
+(StraightEdge Element-9)
++++++++++++
+(StraightEdge Edge-2627)
+(StraightEdge Edge-2626)
+(StraightEdge Edge-2625)
+(PerceptualEdge Edge-2627)
+(PerceptualEdge Edge-2626)
+(PerceptualEdge Edge-2625)
+(lengthLong Edge-2625)
+(lengthMedium Edge-2627)
+(lengthMedium Edge-2626)
+(edgesPerpendicular Edge-2627 Edge-2626)
+(convexAngleBetweenEdges Edge-2627 Edge-2626)
+(convexAngleBetweenEdges Edge-2626 Edge-2625)
+(convexAngleBetweenEdges Edge-2625 Edge-2627)
+(perpendicularCorner (convexAngleBetweenEdges Edge-2627 Edge-2626))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-2627 Edge-2626)
+ (convexAngleBetweenEdges Edge-2626 Edge-2625))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-2626 Edge-2625)
+ (convexAngleBetweenEdges Edge-2625 Edge-2627))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-2625 Edge-2627)
+ (convexAngleBetweenEdges Edge-2627 Edge-2626))
++++++++++++
+(matchBetween (PerceptualEdge Element-9) (PerceptualEdge Edge-2625))
+(matchBetween Element-8 Edge-2626)
+(matchBetween (PerceptualEdge Element-8) (PerceptualEdge Edge-2626))
+(matchBetween Element-7 Edge-2627)
+(matchBetween (lengthMedium Element-7) (lengthMedium Edge-2627))
+(matchBetween (StraightEdge Element-7) (StraightEdge Edge-2627))
+(matchBetween (convexAngleBetweenEdges Element-7
+               Element-8) (convexAngleBetweenEdges Edge-2627 Edge-2626))
+(matchBetween (perpendicularCorner
+               (convexAngleBetweenEdges Element-7
+                Element-8)) (perpendicularCorner
+                             (convexAngleBetweenEdges Edge-2627
+                              Edge-2626)))
+(matchBetween (cycleAdjacentAngles
+               (convexAngleBetweenEdges Element-9 Element-7)
+               (convexAngleBetweenEdges Element-7
+                Element-8)) (cycleAdjacentAngles
+                             (convexAngleBetweenEdges Edge-2625
+                              Edge-2627)
+                             (convexAngleBetweenEdges Edge-2627
+                              Edge-2626)))
+(matchBetween (cycleAdjacentAngles
+               (convexAngleBetweenEdges Element-7 Element-8)
+               (convexAngleBetweenEdges Element-8
+                Element-9)) (cycleAdjacentAngles
+                             (convexAngleBetweenEdges Edge-2627
+                              Edge-2626)
+                             (convexAngleBetweenEdges Edge-2626
+                              Edge-2625)))
+(matchBetween (cycleAdjacentAngles
+               (convexAngleBetweenEdges Element-8 Element-9)
+               (convexAngleBetweenEdges Element-9
+                Element-7)) (cycleAdjacentAngles
+                             (convexAngleBetweenEdges Edge-2626
+                              Edge-2625)
+                             (convexAngleBetweenEdges Edge-2625
+                              Edge-2627)))
+(matchBetween (convexAngleBetweenEdges Element-8
+               Element-9) (convexAngleBetweenEdges Edge-2626 Edge-2625))
+(matchBetween (convexAngleBetweenEdges Element-9
+               Element-7) (convexAngleBetweenEdges Edge-2625 Edge-2627))
+(matchBetween (edgesPerpendicular Element-7
+               Element-8) (edgesPerpendicular Edge-2627 Edge-2626))
+(matchBetween (PerceptualEdge Element-7) (PerceptualEdge Edge-2627))
+(matchBetween (StraightEdge Element-8) (StraightEdge Edge-2626))
+(matchBetween (StraightEdge Element-9) (StraightEdge Edge-2625))
+(matchBetween (lengthLong Element-9) (lengthLong Edge-2625))
+(matchBetween Element-9 Edge-2625)

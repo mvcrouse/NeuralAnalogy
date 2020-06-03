@@ -1,0 +1,188 @@
+(edgesDisconnected Edge-2916 Edge-2918)
+(edgesDisconnected Edge-2915 Edge-2917)
+(convexAngleBetweenEdges Edge-2915 Edge-2916)
+(convexAngleBetweenEdges Edge-2916 Edge-2917)
+(convexAngleBetweenEdges Edge-2917 Edge-2918)
+(convexAngleBetweenEdges Edge-2918 Edge-2915)
+(adjacentObtuseAcuteAngles
+ (convexAngleBetweenEdges Edge-2918 Edge-2915)
+ (convexAngleBetweenEdges Edge-2915 Edge-2916))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-2918 Edge-2915)
+ (convexAngleBetweenEdges Edge-2915 Edge-2916))
+(adjacentAcuteObtuseAngles
+ (convexAngleBetweenEdges Edge-2917 Edge-2918)
+ (convexAngleBetweenEdges Edge-2918 Edge-2915))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-2917 Edge-2918)
+ (convexAngleBetweenEdges Edge-2918 Edge-2915))
+(adjacentObtuseAcuteAngles
+ (convexAngleBetweenEdges Edge-2916 Edge-2917)
+ (convexAngleBetweenEdges Edge-2917 Edge-2918))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-2916 Edge-2917)
+ (convexAngleBetweenEdges Edge-2917 Edge-2918))
+(adjacentAcuteObtuseAngles
+ (convexAngleBetweenEdges Edge-2915 Edge-2916)
+ (convexAngleBetweenEdges Edge-2916 Edge-2917))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-2915 Edge-2916)
+ (convexAngleBetweenEdges Edge-2916 Edge-2917))
+(edgesParallel Edge-2915 Edge-2917)
+(parallelEdgeRelation (edgesDisconnected Edge-2915 Edge-2917))
+(edgesParallel Edge-2916 Edge-2918)
+(parallelEdgeRelation (edgesDisconnected Edge-2916 Edge-2918))
+(lengthMedium Edge-2918)
+(lengthMedium Edge-2916)
+(lengthLong Edge-2917)
+(lengthLong Edge-2915)
+(axisAligned Edge-2918)
+(PerceptualEdge Edge-2918)
+(StraightEdge Edge-2918)
+(axisAligned Edge-2917)
+(PerceptualEdge Edge-2917)
+(StraightEdge Edge-2917)
+(axisAligned Edge-2916)
+(PerceptualEdge Edge-2916)
+(StraightEdge Edge-2916)
+(axisAligned Edge-2915)
+(PerceptualEdge Edge-2915)
+(StraightEdge Edge-2915)
++++++++++++
+(StraightEdge Edge-2922)
+(StraightEdge Edge-2921)
+(StraightEdge Edge-2920)
+(StraightEdge Edge-2919)
+(PerceptualEdge Edge-2922)
+(PerceptualEdge Edge-2921)
+(PerceptualEdge Edge-2920)
+(PerceptualEdge Edge-2919)
+(edgesDisconnected Edge-2921 Edge-2919)
+(edgesDisconnected Edge-2922 Edge-2920)
+(parallelEdgeRelation (edgesDisconnected Edge-2921 Edge-2919))
+(parallelEdgeRelation (edgesDisconnected Edge-2922 Edge-2920))
+(edgesParallel Edge-2921 Edge-2919)
+(edgesParallel Edge-2922 Edge-2920)
+(convexAngleBetweenEdges Edge-2922 Edge-2921)
+(convexAngleBetweenEdges Edge-2921 Edge-2920)
+(convexAngleBetweenEdges Edge-2920 Edge-2919)
+(convexAngleBetweenEdges Edge-2919 Edge-2922)
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-2922 Edge-2921)
+ (convexAngleBetweenEdges Edge-2921 Edge-2920))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-2921 Edge-2920)
+ (convexAngleBetweenEdges Edge-2920 Edge-2919))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-2920 Edge-2919)
+ (convexAngleBetweenEdges Edge-2919 Edge-2922))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-2919 Edge-2922)
+ (convexAngleBetweenEdges Edge-2922 Edge-2921))
+(adjacentAcuteObtuseAngles
+ (convexAngleBetweenEdges Edge-2922 Edge-2921)
+ (convexAngleBetweenEdges Edge-2921 Edge-2920))
+(adjacentAcuteObtuseAngles
+ (convexAngleBetweenEdges Edge-2920 Edge-2919)
+ (convexAngleBetweenEdges Edge-2919 Edge-2922))
+(adjacentObtuseAcuteAngles
+ (convexAngleBetweenEdges Edge-2921 Edge-2920)
+ (convexAngleBetweenEdges Edge-2920 Edge-2919))
+(adjacentObtuseAcuteAngles
+ (convexAngleBetweenEdges Edge-2919 Edge-2922)
+ (convexAngleBetweenEdges Edge-2922 Edge-2921))
++++++++++++
+(matchBetween Edge-2916 Edge-2921)
+(matchBetween (PerceptualEdge Edge-2916) (PerceptualEdge Edge-2921))
+(matchBetween Edge-2918 Edge-2919)
+(matchBetween (PerceptualEdge Edge-2918) (PerceptualEdge Edge-2919))
+(matchBetween (StraightEdge Edge-2916) (StraightEdge Edge-2921))
+(matchBetween (StraightEdge Edge-2918) (StraightEdge Edge-2919))
+(matchBetween (edgesParallel Edge-2915 Edge-2917) (edgesParallel
+                                                   Edge-2922
+                                                   Edge-2920))
+(matchBetween (edgesDisconnected Edge-2915
+               Edge-2917) (edgesDisconnected Edge-2922 Edge-2920))
+(matchBetween (parallelEdgeRelation
+               (edgesDisconnected Edge-2915
+                Edge-2917)) (parallelEdgeRelation
+                             (edgesDisconnected Edge-2922 Edge-2920)))
+(matchBetween (convexAngleBetweenEdges Edge-2918
+               Edge-2915) (convexAngleBetweenEdges Edge-2919 Edge-2922))
+(matchBetween (convexAngleBetweenEdges Edge-2915
+               Edge-2916) (convexAngleBetweenEdges Edge-2922 Edge-2921))
+(matchBetween (adjacentObtuseAcuteAngles
+               (convexAngleBetweenEdges Edge-2918 Edge-2915)
+               (convexAngleBetweenEdges Edge-2915
+                Edge-2916)) (adjacentObtuseAcuteAngles
+                             (convexAngleBetweenEdges Edge-2919
+                              Edge-2922)
+                             (convexAngleBetweenEdges Edge-2922
+                              Edge-2921)))
+(matchBetween (adjacentAcuteObtuseAngles
+               (convexAngleBetweenEdges Edge-2917 Edge-2918)
+               (convexAngleBetweenEdges Edge-2918
+                Edge-2915)) (adjacentAcuteObtuseAngles
+                             (convexAngleBetweenEdges Edge-2920
+                              Edge-2919)
+                             (convexAngleBetweenEdges Edge-2919
+                              Edge-2922)))
+(matchBetween (cycleAdjacentAngles
+               (convexAngleBetweenEdges Edge-2916 Edge-2917)
+               (convexAngleBetweenEdges Edge-2917
+                Edge-2918)) (cycleAdjacentAngles
+                             (convexAngleBetweenEdges Edge-2921
+                              Edge-2920)
+                             (convexAngleBetweenEdges Edge-2920
+                              Edge-2919)))
+(matchBetween (cycleAdjacentAngles
+               (convexAngleBetweenEdges Edge-2918 Edge-2915)
+               (convexAngleBetweenEdges Edge-2915
+                Edge-2916)) (cycleAdjacentAngles
+                             (convexAngleBetweenEdges Edge-2919
+                              Edge-2922)
+                             (convexAngleBetweenEdges Edge-2922
+                              Edge-2921)))
+(matchBetween (cycleAdjacentAngles
+               (convexAngleBetweenEdges Edge-2917 Edge-2918)
+               (convexAngleBetweenEdges Edge-2918
+                Edge-2915)) (cycleAdjacentAngles
+                             (convexAngleBetweenEdges Edge-2920
+                              Edge-2919)
+                             (convexAngleBetweenEdges Edge-2919
+                              Edge-2922)))
+(matchBetween (cycleAdjacentAngles
+               (convexAngleBetweenEdges Edge-2915 Edge-2916)
+               (convexAngleBetweenEdges Edge-2916
+                Edge-2917)) (cycleAdjacentAngles
+                             (convexAngleBetweenEdges Edge-2922
+                              Edge-2921)
+                             (convexAngleBetweenEdges Edge-2921
+                              Edge-2920)))
+(matchBetween (adjacentAcuteObtuseAngles
+               (convexAngleBetweenEdges Edge-2915 Edge-2916)
+               (convexAngleBetweenEdges Edge-2916
+                Edge-2917)) (adjacentAcuteObtuseAngles
+                             (convexAngleBetweenEdges Edge-2922
+                              Edge-2921)
+                             (convexAngleBetweenEdges Edge-2921
+                              Edge-2920)))
+(matchBetween (adjacentObtuseAcuteAngles
+               (convexAngleBetweenEdges Edge-2916 Edge-2917)
+               (convexAngleBetweenEdges Edge-2917
+                Edge-2918)) (adjacentObtuseAcuteAngles
+                             (convexAngleBetweenEdges Edge-2921
+                              Edge-2920)
+                             (convexAngleBetweenEdges Edge-2920
+                              Edge-2919)))
+(matchBetween (convexAngleBetweenEdges Edge-2916
+               Edge-2917) (convexAngleBetweenEdges Edge-2921 Edge-2920))
+(matchBetween (convexAngleBetweenEdges Edge-2917
+               Edge-2918) (convexAngleBetweenEdges Edge-2920 Edge-2919))
+(matchBetween (parallelEdgeRelation
+               (edgesDisconnected Edge-2916
+                Edge-2918)) (parallelEdgeRelation
+                             (edgesDisconnected Edge-2921 Edge-2919)))
+(matchBetween (edgesDisconnected Edge-2916
+               Edge-2918) (edgesDisconnected Edge-2921 Edge-2919))
+(matchBetween (edgesParallel Edge-2916 Edge-2918) (edgesParallel
+                                                   Edge-2921
+                                                   Edge-2919))
+(matchBetween (StraightEdge Edge-2917) (StraightEdge Edge-2920))
+(matchBetween (StraightEdge Edge-2915) (StraightEdge Edge-2922))
+(matchBetween (PerceptualEdge Edge-2917) (PerceptualEdge Edge-2920))
+(matchBetween Edge-2917 Edge-2920)
+(matchBetween (PerceptualEdge Edge-2915) (PerceptualEdge Edge-2922))
+(matchBetween Edge-2915 Edge-2922)

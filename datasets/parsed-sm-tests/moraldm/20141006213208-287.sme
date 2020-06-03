@@ -1,0 +1,195 @@
+(sacredValueChoice redirect40379)
+(sacredValueChoice Inaction43400)
+(affectsSigLargerGroup redirect40379)
+(affectsSigLargerGroup Inaction43400)
+(uninferredSentence (affectsSigLargerGroup redirect40379))
+(uninferredSentence (affectsSigLargerGroup Inaction43400))
+(uninferredSentence (directlyResponsible you39300 Inaction43400))
+(uninferredSentence (usedAsMeansToPreventNegativeOutcome redirect40379))
+(directlyResponsible you39300 redirect40379)
+(directlyResponsible you39300 Inaction43400)
+(preventsAlternativeNegativeOutcome redirect40379)
+(usedAsMeansToPreventNegativeOutcome redirect40379)
+(and (sacredValueChoice redirect40379)
+     (sacredValueChoice Inaction43400)
+     (uninferredSentence (affectsSigLargerGroup redirect40379))
+     (uninferredSentence (affectsSigLargerGroup Inaction43400))
+     (directlyResponsible you39300 redirect40379)
+     (uninferredSentence (directlyResponsible you39300 Inaction43400))
+     (preventsAlternativeNegativeOutcome redirect40379)
+     (uninferredSentence
+      (usedAsMeansToPreventNegativeOutcome redirect40379)))
+(rightChoice redirect40379)
+(chosenItem SelectingSomething43399 redirect40379)
+(possessiveRelation patient40523 paraplegia40592)
+(Inaction Inaction43400)
+(PreventingSomething PreventingSomething43398)
+(SelectingSomething SelectingSomething43399)
+(HarmingAnAgent (possessiveRelation patient40523 paraplegia40592))
+(Paraplegia paraplegia39232)
+(Paraplegia paraplegia40592)
+(MedicalPatient patient40523)
+(Translation-LocationChange redirect40379)
+(RoomInAConstruction room39499)
+(RescuingSomeone save39339)
+(GroupFnMedicalPatient set-of-patient39165)
+(Set-Mathematical set-of-patient39165)
+(Virus virus39075)
+(performedBy PreventingSomething43398 you39300)
+(choices SelectingSomething43399 redirect40379)
+(choices SelectingSomething43399 Inaction43400)
+(causes-PropSit (chosenItem SelectingSomething43399 redirect40379)
+ save39339)
+(performedBy redirect40379 you39300)
+(performedBy Inaction43400 you39300)
+(objectActedOn redirect40379 virus39075)
+(primaryObjectMoving redirect40379 virus39075)
+(toLocation redirect40379 room39499)
+(causes-PropSit (chosenItem SelectingSomething43399 redirect40379)
+ (possessiveRelation patient40523 paraplegia40592))
+(with-UnderspecifiedAgent room39499 patient40523)
+(beneficiary save39339 set-of-patient39165)
+(performedBy save39339 you39300)
+(by-Underspecified save39339 redirect40379)
+(causes-SitSit save39339 PreventingSomething43398)
+(cardinality set-of-patient39165 4)
+(cardinality patient40523 1)
+(implies
+ (and (sacredValueChoice redirect40379)
+      (sacredValueChoice Inaction43400)
+      (uninferredSentence (affectsSigLargerGroup redirect40379))
+      (uninferredSentence (affectsSigLargerGroup Inaction43400))
+      (directlyResponsible you39300 redirect40379)
+      (uninferredSentence (directlyResponsible you39300 Inaction43400))
+      (preventsAlternativeNegativeOutcome redirect40379)
+      (uninferredSentence
+       (usedAsMeansToPreventNegativeOutcome redirect40379)))
+ (rightChoice redirect40379))
+(makeDecision you39300 redirect40379)
++++++++++++
+(Inaction Inaction43377)
+(performedBy PreventingSomething43375 you42105)
+(performedBy obtain42917 you42105)
+(performedBy Inaction43377 you42105)
+(performedBy save42144 you42105)
+(PreventingSomething PreventingSomething43375)
+(SelectingSomething SelectingSomething43376)
+(choices SelectingSomething43376 obtain42917)
+(choices SelectingSomething43376 Inaction43377)
+(chosenItem SelectingSomething43376 obtain42917)
+(causes-PropSit (chosenItem SelectingSomething43376 obtain42917)
+ save42144)
+(causes-PropSit (chosenItem SelectingSomething43376 obtain42917)
+ (possessiveRelation patient43049 paraplegia43118))
+(possessiveRelation patient43049 paraplegia43118)
+(objectActedOn obtain42917 patient43049)
+(HarmingAnAgent (possessiveRelation patient43049 paraplegia43118))
+(Marrow bone-marrow42305)
+(toPossessor obtain42917 you42105)
+(transferredObject obtain42917 bone-marrow42305)
+(from-UnderspecifiedLocation obtain42917 patient43049)
+(TakingSomething obtain42917)
+(Paraplegia paraplegia42037)
+(Paraplegia paraplegia43118)
+(MedicalPatient patient43049)
+(RescuingSomeone save42144)
+(beneficiary save42144 set-of-patient41970)
+(by-Underspecified save42144 obtain42917)
+(causes-SitSit save42144 PreventingSomething43375)
+(GroupFnMedicalPatient set-of-patient41970)
+(cardinality set-of-patient41970 4)
+(cardinality patient43049 1)
+(Set-Mathematical set-of-patient41970)
+(Virus virus41880)
++++++++++++
+(matchBetween virus39075 virus41880)
+(matchBetween (Virus virus39075) (Virus virus41880))
+(matchBetween PreventingSomething43398 PreventingSomething43375)
+(matchBetween (PreventingSomething
+               PreventingSomething43398) (PreventingSomething
+                                          PreventingSomething43375))
+(matchBetween (Set-Mathematical set-of-patient39165) (Set-Mathematical
+                                                      set-of-patient41970))
+(matchBetween save39339 save42144)
+(matchBetween (RescuingSomeone save39339) (RescuingSomeone save42144))
+(matchBetween (performedBy Inaction43400 you39300) (performedBy
+                                                    Inaction43377
+                                                    you42105))
+(matchBetween (beneficiary save39339 set-of-patient39165) (beneficiary
+                                                           save42144
+                                                           set-of-patient41970))
+(matchBetween paraplegia40592 paraplegia43118)
+(matchBetween (Paraplegia paraplegia40592) (Paraplegia paraplegia43118))
+(matchBetween SelectingSomething43399 SelectingSomething43376)
+(matchBetween (SelectingSomething
+               SelectingSomething43399) (SelectingSomething
+                                         SelectingSomething43376))
+(matchBetween (choices SelectingSomething43399 Inaction43400) (choices
+                                                               SelectingSomething43376
+                                                               Inaction43377))
+(matchBetween (by-Underspecified save39339
+               redirect40379) (by-Underspecified save42144 obtain42917))
+(matchBetween (choices SelectingSomething43399 redirect40379) (choices
+                                                               SelectingSomething43376
+                                                               obtain42917))
+(matchBetween (causes-PropSit
+               (chosenItem SelectingSomething43399 redirect40379)
+               (possessiveRelation patient40523
+                paraplegia40592)) (causes-PropSit
+                                   (chosenItem
+                                    SelectingSomething43376
+                                    obtain42917)
+                                   (possessiveRelation
+                                    patient43049
+                                    paraplegia43118)))
+(matchBetween (causes-PropSit
+               (chosenItem SelectingSomething43399 redirect40379)
+               save39339) (causes-PropSit
+                           (chosenItem SelectingSomething43376
+                            obtain42917)
+                           save42144))
+(matchBetween (chosenItem SelectingSomething43399
+               redirect40379) (chosenItem SelectingSomething43376
+                               obtain42917))
+(matchBetween (HarmingAnAgent
+               (possessiveRelation patient40523
+                paraplegia40592)) (HarmingAnAgent
+                                   (possessiveRelation
+                                    patient43049
+                                    paraplegia43118)))
+(matchBetween (possessiveRelation patient40523
+               paraplegia40592) (possessiveRelation
+                                 patient43049
+                                 paraplegia43118))
+(matchBetween (performedBy redirect40379 you39300) (performedBy
+                                                    obtain42917
+                                                    you42105))
+(matchBetween redirect40379 obtain42917)
+(matchBetween (cardinality patient40523 1) (cardinality patient43049 1))
+(matchBetween 1 1)
+(matchBetween (MedicalPatient patient40523) (MedicalPatient
+                                             patient43049))
+(matchBetween patient40523 patient43049)
+(matchBetween (performedBy save39339 you39300) (performedBy
+                                                save42144
+                                                you42105))
+(matchBetween (causes-SitSit save39339
+               PreventingSomething43398) (causes-SitSit
+                                          save42144
+                                          PreventingSomething43375))
+(matchBetween (performedBy PreventingSomething43398
+               you39300) (performedBy PreventingSomething43375
+                          you42105))
+(matchBetween you39300 you42105)
+(matchBetween (cardinality set-of-patient39165 4) (cardinality
+                                                   set-of-patient41970
+                                                   4))
+(matchBetween 4 4)
+(matchBetween (GroupFnMedicalPatient
+               set-of-patient39165) (GroupFnMedicalPatient
+                                     set-of-patient41970))
+(matchBetween set-of-patient39165 set-of-patient41970)
+(matchBetween (Inaction Inaction43400) (Inaction Inaction43377))
+(matchBetween Inaction43400 Inaction43377)
+(matchBetween (Paraplegia paraplegia39232) (Paraplegia paraplegia42037))
+(matchBetween paraplegia39232 paraplegia42037)

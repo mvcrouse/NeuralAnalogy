@@ -1,0 +1,31 @@
+(elementIntersects Edge-655 Super-Edge-657)
+(elementsConnected Super-Edge-657 Edge-655)
+(PerceptualEdge Edge-655)
+(CurvedEdge Edge-655)
+(axisAligned Super-Edge-657)
+(PerceptualEdge Super-Edge-657)
+(StraightEdge Super-Edge-657)
++++++++++++
+(StraightEdge Super-Edge-642)
+(PerceptualEdge Super-Edge-642)
+(PerceptualEdge Edge-619)
+(axisAligned Super-Edge-642)
+(CurvedEdge Edge-619)
+(elementsConnected Super-Edge-642 Edge-619)
+(elementIntersects Edge-619 Super-Edge-642)
++++++++++++
+(matchBetween (PerceptualEdge Edge-655) (PerceptualEdge Edge-619))
+(matchBetween (PerceptualEdge Super-Edge-657) (PerceptualEdge
+                                               Super-Edge-642))
+(matchBetween (elementIntersects Edge-655
+               Super-Edge-657) (elementIntersects
+                                Edge-619
+                                Super-Edge-642))
+(matchBetween (elementsConnected Super-Edge-657
+               Edge-655) (elementsConnected Super-Edge-642 Edge-619))
+(matchBetween (StraightEdge Super-Edge-657) (StraightEdge
+                                             Super-Edge-642))
+(matchBetween (axisAligned Super-Edge-657) (axisAligned Super-Edge-642))
+(matchBetween Super-Edge-657 Super-Edge-642)
+(matchBetween (CurvedEdge Edge-655) (CurvedEdge Edge-619))
+(matchBetween Edge-655 Edge-619)

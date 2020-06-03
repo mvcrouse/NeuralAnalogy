@@ -1,0 +1,204 @@
+(sacredValueChoice throw17475)
+(sacredValueChoice Inaction17768)
+(affectsSigLargerGroup throw17475)
+(affectsSigLargerGroup Inaction17768)
+(uninferredSentence (affectsSigLargerGroup throw17475))
+(uninferredSentence (affectsSigLargerGroup Inaction17768))
+(uninferredSentence (directlyResponsible you16920 Inaction17768))
+(directlyResponsible you16920 throw17475)
+(directlyResponsible you16920 Inaction17768)
+(preventsAlternativeNegativeOutcome throw17475)
+(usedAsMeansToPreventNegativeOutcome throw17475)
+(and (sacredValueChoice throw17475) (sacredValueChoice Inaction17768)
+     (uninferredSentence (affectsSigLargerGroup throw17475))
+     (uninferredSentence (affectsSigLargerGroup Inaction17768))
+     (directlyResponsible you16920 throw17475)
+     (uninferredSentence (directlyResponsible you16920 Inaction17768))
+     (preventsAlternativeNegativeOutcome throw17475)
+     (usedAsMeansToPreventNegativeOutcome throw17475))
+(rightChoice Inaction17768)
+(on-UnderspecifiedSurface person17613 bomb17131)
+(chosenItem SelectingSomething17767 throw17475)
+(chosenItem SelectingSomething17767 Inaction17768)
+(Inaction Inaction17768)
+(PreventingSomething PreventingSomething17766)
+(SelectingSomething SelectingSomething17767)
+(Bomb bomb17131)
+(PhysicalDestructionEvent kill16793)
+(Dying kill16793)
+(Dying kill17547)
+(PhysicalDestructionEvent kill17547)
+(Person person17613)
+(RestaurantSpace restaurant16729)
+(RescuingSomeone save16966)
+(Set-Mathematical them16998)
+(ThrowingAnObject throw17475)
+(performedBy PreventingSomething17766 you16920)
+(preventedSit PreventingSomething17766 kill16793)
+(choices SelectingSomething17767 throw17475)
+(choices SelectingSomething17767 Inaction17768)
+(causes-PropSit (chosenItem SelectingSomething17767 Inaction17768)
+ kill16793)
+(causes-PropSit (chosenItem SelectingSomething17767 throw17475)
+ save16966)
+(causes-PropSit (chosenItem SelectingSomething17767 throw17475)
+ kill17547)
+(in-UnderspecifiedContainer bomb17131 restaurant16729)
+(doneBy kill16793 bomb17131)
+(organismKilled kill17547 person17613)
+(doneBy kill17547 throw17475)
+(beneficiary save16966 them16998)
+(performedBy save16966 you16920)
+(by-Underspecified save16966 throw17475)
+(causes-SitSit save16966 PreventingSomething17766)
+(cardinality them16998 9)
+(performedBy throw17475 you16920)
+(performedBy Inaction17768 you16920)
+(objectActedOn throw17475 person17613)
+(toLocation throw17475 bomb17131)
+(causes-SitProp throw17475
+ (on-UnderspecifiedSurface person17613 bomb17131))
+(cardinality person17613 1)
+(causes-SitSit kill17547 save16966)
+(implies
+ (and (sacredValueChoice throw17475) (sacredValueChoice Inaction17768)
+      (uninferredSentence (affectsSigLargerGroup throw17475))
+      (uninferredSentence (affectsSigLargerGroup Inaction17768))
+      (directlyResponsible you16920 throw17475)
+      (uninferredSentence (directlyResponsible you16920 Inaction17768))
+      (preventsAlternativeNegativeOutcome throw17475)
+      (usedAsMeansToPreventNegativeOutcome throw17475))
+ (rightChoice Inaction17768))
+(makeDecision you16920 Inaction17768)
++++++++++++
+(Inaction Inaction68012)
+(performedBy PreventingSomething68010 you64335)
+(performedBy hit64076 train64488)
+(performedBy hit67367 train64488)
+(performedBy redirect67174 you64335)
+(performedBy Inaction68012 you64335)
+(performedBy save64374 you64335)
+(preventedSit PreventingSomething68010 hit64076)
+(PreventingSomething PreventingSomething68010)
+(SelectingSomething SelectingSomething68011)
+(choices SelectingSomething68011 redirect67174)
+(choices SelectingSomething68011 Inaction68012)
+(chosenItem SelectingSomething68011 Inaction68012)
+(chosenItem SelectingSomething68011 redirect67174)
+(causes-PropSit (chosenItem SelectingSomething68011 Inaction68012)
+ hit64076)
+(causes-PropSit (chosenItem SelectingSomething68011 redirect67174)
+ save64374)
+(causes-PropSit (chosenItem SelectingSomething68011 redirect67174)
+ hit67367)
+((GroupFn Person) them64407)
+((GroupFn Person) set-of-passenger66080)
+(Dying hit64076)
+(Dying hit67367)
+(Bus-RoadVehicle bus64133)
+(Bus-RoadVehicle bus66039)
+(on-UnderspecifiedSurface bus66039 side-track66173)
+(HittingAnObject hit64076)
+(HittingAnObject hit67367)
+(objectActedOn hit64076 bus64133)
+(objectActedOn hit67367 bus66039)
+(Translation-LocationChange redirect67174)
+(primaryObjectMoving redirect67174 train64488)
+(toLocation redirect67174 side-track66173)
+(RescuingSomeone save64374)
+(beneficiary save64374 them64407)
+(by-Underspecified save64374 redirect67174)
+(causes-SitSit save64374 PreventingSomething68010)
+(cardinality set-of-passenger66080 2)
+(cardinality them64407 10)
+(Set-Mathematical set-of-passenger66080)
+(Set-Mathematical them64407)
+(Railway-siding side-track66173)
+(HighAmountFn Speed)
+(speedOfObject-Underspecified train64488 (HighAmountFn Speed))
+(Train-TransportationDevice train64488)
++++++++++++
+(matchBetween kill16793 hit64076)
+(matchBetween (Dying kill16793) (Dying hit64076))
+(matchBetween PreventingSomething17766 PreventingSomething68010)
+(matchBetween (PreventingSomething
+               PreventingSomething17766) (PreventingSomething
+                                          PreventingSomething68010))
+(matchBetween 9 10)
+(matchBetween (cardinality them16998 9) (cardinality them64407 10))
+(matchBetween (preventedSit PreventingSomething17766
+               kill16793) (preventedSit PreventingSomething68010
+                           hit64076))
+(matchBetween (beneficiary save16966 them16998) (beneficiary
+                                                 save64374
+                                                 them64407))
+(matchBetween (causes-SitSit save16966
+               PreventingSomething17766) (causes-SitSit
+                                          save64374
+                                          PreventingSomething68010))
+(matchBetween (performedBy Inaction17768 you16920) (performedBy
+                                                    Inaction68012
+                                                    you64335))
+(matchBetween (performedBy throw17475 you16920) (performedBy
+                                                 redirect67174
+                                                 you64335))
+(matchBetween SelectingSomething17767 SelectingSomething68011)
+(matchBetween (SelectingSomething
+               SelectingSomething17767) (SelectingSomething
+                                         SelectingSomething68011))
+(matchBetween (chosenItem SelectingSomething17767
+               Inaction17768) (chosenItem SelectingSomething68011
+                               Inaction68012))
+(matchBetween (causes-PropSit
+               (chosenItem SelectingSomething17767 Inaction17768)
+               kill16793) (causes-PropSit
+                           (chosenItem SelectingSomething68011
+                            Inaction68012)
+                           hit64076))
+(matchBetween (chosenItem SelectingSomething17767
+               throw17475) (chosenItem SelectingSomething68011
+                            redirect67174))
+(matchBetween (causes-PropSit
+               (chosenItem SelectingSomething17767 throw17475)
+               kill17547) (causes-PropSit
+                           (chosenItem SelectingSomething68011
+                            redirect67174)
+                           hit67367))
+(matchBetween (causes-PropSit
+               (chosenItem SelectingSomething17767 throw17475)
+               save16966) (causes-PropSit
+                           (chosenItem SelectingSomething68011
+                            redirect67174)
+                           save64374))
+(matchBetween (choices SelectingSomething17767 throw17475) (choices
+                                                            SelectingSomething68011
+                                                            redirect67174))
+(matchBetween (choices SelectingSomething17767 Inaction17768) (choices
+                                                               SelectingSomething68011
+                                                               Inaction68012))
+(matchBetween (by-Underspecified save16966
+               throw17475) (by-Underspecified save64374 redirect67174))
+(matchBetween (toLocation throw17475 bomb17131) (toLocation
+                                                 redirect67174
+                                                 side-track66173))
+(matchBetween throw17475 redirect67174)
+(matchBetween (Inaction Inaction17768) (Inaction Inaction68012))
+(matchBetween Inaction17768 Inaction68012)
+(matchBetween (performedBy save16966 you16920) (performedBy
+                                                save64374
+                                                you64335))
+(matchBetween (performedBy PreventingSomething17766
+               you16920) (performedBy PreventingSomething68010
+                          you64335))
+(matchBetween you16920 you64335)
+(matchBetween (RescuingSomeone save16966) (RescuingSomeone save64374))
+(matchBetween save16966 save64374)
+(matchBetween (on-UnderspecifiedSurface person17613
+               bomb17131) (on-UnderspecifiedSurface bus66039
+                           side-track66173))
+(matchBetween bomb17131 side-track66173)
+(matchBetween person17613 bus66039)
+(matchBetween (Set-Mathematical them16998) (Set-Mathematical them64407))
+(matchBetween them16998 them64407)
+(matchBetween (Dying kill17547) (Dying hit67367))
+(matchBetween kill17547 hit67367)

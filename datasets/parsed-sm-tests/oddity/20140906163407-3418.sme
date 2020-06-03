@@ -1,0 +1,73 @@
+(elementsIntersect Element-4 Element-3)
+(elementsOverlap Element-4 Element-3)
+(2D-Shape-AxisAligned Element-4)
+(2D-Shape-Generic Element-4)
+(2D-Shape-Oblique Element-4)
+(OnLeft-Element Element-3)
+(2D-Shape-Ellipse Element-3)
+(ObjectsColoredFnBlackColor Element-3)
+(2D-Shape-Convex Element-3)
+(2D-Shape-Generic Element-3)
+(ObjectsBorderColoredFnBlackColor Element-3)
+(2D-Shape-Curved Element-3)
+(Fully-Symmetric-Shape Element-3)
+(2D-Shape-Closed Element-3)
+(Centered-Element Element-4)
+(2D-Shape-Straight Element-4)
+(ObjectsBorderColoredFnBlackColor Element-4)
+(2D-Shape-Open Element-4)
++++++++++++
+(ObjectsColoredFnBlackColor Object-943)
+(2D-Shape-Generic Object-943)
+(2D-Shape-Generic Object-944)
+(Fully-Symmetric-Shape Object-943)
+(2D-Shape-Curved Object-943)
+(2D-Shape-Ellipse Object-943)
+(2D-Shape-Convex Object-943)
+(2D-Shape-Closed Object-943)
+(2D-Shape-AxisAligned Object-943)
+(2D-Shape-AxisAligned Object-944)
+(2D-Shape-Straight Object-944)
+(2D-Shape-Open Object-944)
+(2D-Shape-Oblique Object-944)
+(ObjectsBorderColoredFnBlackColor Object-944)
+(ObjectsBorderColoredFnBlackColor Object-943)
+(elementsOverlap Object-944 Object-943)
+(elementsIntersect Object-944 Object-943)
+(Centered-Element Object-944)
+(OnLeft-Element Object-943)
++++++++++++
+(matchBetween (2D-Shape-Oblique Element-4) (2D-Shape-Oblique
+                                            Object-944))
+(matchBetween (Centered-Element Element-4) (Centered-Element
+                                            Object-944))
+(matchBetween (ObjectsBorderColoredFnBlackColor
+               Element-4) (ObjectsBorderColoredFnBlackColor Object-944))
+(matchBetween Element-3 Object-943)
+(matchBetween (OnLeft-Element Element-3) (OnLeft-Element Object-943))
+(matchBetween (ObjectsColoredFnBlackColor
+               Element-3) (ObjectsColoredFnBlackColor Object-943))
+(matchBetween (2D-Shape-Generic Element-3) (2D-Shape-Generic
+                                            Object-943))
+(matchBetween (Fully-Symmetric-Shape Element-3) (Fully-Symmetric-Shape
+                                                 Object-943))
+(matchBetween (ObjectsBorderColoredFnBlackColor
+               Element-3) (ObjectsBorderColoredFnBlackColor Object-943))
+(matchBetween (elementsOverlap Element-4 Element-3) (elementsOverlap
+                                                     Object-944
+                                                     Object-943))
+(matchBetween (elementsIntersect Element-4
+               Element-3) (elementsIntersect Object-944 Object-943))
+(matchBetween (2D-Shape-Closed Element-3) (2D-Shape-Closed Object-943))
+(matchBetween (2D-Shape-Curved Element-3) (2D-Shape-Curved Object-943))
+(matchBetween (2D-Shape-Convex Element-3) (2D-Shape-Convex Object-943))
+(matchBetween (2D-Shape-Ellipse Element-3) (2D-Shape-Ellipse
+                                            Object-943))
+(matchBetween (2D-Shape-Open Element-4) (2D-Shape-Open Object-944))
+(matchBetween (2D-Shape-Straight Element-4) (2D-Shape-Straight
+                                             Object-944))
+(matchBetween (2D-Shape-Generic Element-4) (2D-Shape-Generic
+                                            Object-944))
+(matchBetween (2D-Shape-AxisAligned Element-4) (2D-Shape-AxisAligned
+                                                Object-944))
+(matchBetween Element-4 Object-944)

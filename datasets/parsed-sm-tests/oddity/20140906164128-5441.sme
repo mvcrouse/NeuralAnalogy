@@ -1,0 +1,60 @@
+(wideEdged Element-8)
+(elementsIntersect Element-8 Element-7)
+(narrowEdged Element-7)
+(ObjectsBorderColoredFnBlackColor Element-8)
+(2D-Shape-Straight Element-8)
+(2D-Shape-Closed Element-7)
+(2D-Shape-Ellipse Element-7)
+(Fully-Symmetric-Shape Element-7)
+(ObjectsColoredFnBlackColor Element-7)
+(2D-Shape-Generic Element-7)
+(2D-Shape-Curved Element-7)
+(2D-Shape-Convex Element-7)
+(ObjectsBorderColoredFnBlackColor Element-7)
+(2D-Shape-Generic Element-8)
+(2D-Shape-Open Element-8)
++++++++++++
+(ObjectsColoredFnBlackColor Object-1058)
+(2D-Shape-Generic Object-1058)
+(2D-Shape-Generic Object-1057)
+(Fully-Symmetric-Shape Object-1058)
+(2D-Shape-Curved Object-1058)
+(2D-Shape-Ellipse Object-1058)
+(2D-Shape-Convex Object-1058)
+(2D-Shape-Closed Object-1058)
+(2D-Shape-Straight Object-1057)
+(2D-Shape-Open Object-1057)
+(ObjectsBorderColoredFnBlackColor Object-1057)
+(ObjectsBorderColoredFnBlackColor Object-1058)
+(elementsIntersect Object-1057 Object-1058)
+(wideEdged Object-1057)
+(narrowEdged Object-1058)
++++++++++++
+(matchBetween (2D-Shape-Straight Element-8) (2D-Shape-Straight
+                                             Object-1057))
+(matchBetween (2D-Shape-Generic Element-8) (2D-Shape-Generic
+                                            Object-1057))
+(matchBetween Element-7 Object-1058)
+(matchBetween (narrowEdged Element-7) (narrowEdged Object-1058))
+(matchBetween (2D-Shape-Ellipse Element-7) (2D-Shape-Ellipse
+                                            Object-1058))
+(matchBetween (ObjectsColoredFnBlackColor
+               Element-7) (ObjectsColoredFnBlackColor Object-1058))
+(matchBetween (2D-Shape-Convex Element-7) (2D-Shape-Convex Object-1058))
+(matchBetween (2D-Shape-Generic Element-7) (2D-Shape-Generic
+                                            Object-1058))
+(matchBetween (elementsIntersect Element-8
+               Element-7) (elementsIntersect Object-1057 Object-1058))
+(matchBetween (ObjectsBorderColoredFnBlackColor
+               Element-7) (ObjectsBorderColoredFnBlackColor
+                           Object-1058))
+(matchBetween (2D-Shape-Curved Element-7) (2D-Shape-Curved Object-1058))
+(matchBetween (Fully-Symmetric-Shape Element-7) (Fully-Symmetric-Shape
+                                                 Object-1058))
+(matchBetween (2D-Shape-Closed Element-7) (2D-Shape-Closed Object-1058))
+(matchBetween (2D-Shape-Open Element-8) (2D-Shape-Open Object-1057))
+(matchBetween (ObjectsBorderColoredFnBlackColor
+               Element-8) (ObjectsBorderColoredFnBlackColor
+                           Object-1057))
+(matchBetween (wideEdged Element-8) (wideEdged Object-1057))
+(matchBetween Element-8 Object-1057)

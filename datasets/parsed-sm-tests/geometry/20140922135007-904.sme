@@ -1,0 +1,32 @@
+(elementsConnected Edge-952 Edge-951)
+(rightOf Edge-951 Edge-952)
+(ObliqueEdge-Upward Edge-951)
+(PerceptualEdge Edge-951)
+(StraightEdge Edge-951)
+(ObliqueEdge-Downward Edge-952)
+(PerceptualEdge Edge-952)
+(StraightEdge Edge-952)
++++++++++++
+(StraightEdge Edge-954)
+(StraightEdge Edge-953)
+(PerceptualEdge Edge-954)
+(PerceptualEdge Edge-953)
+(ObliqueEdge-Upward Edge-954)
+(ObliqueEdge-Downward Edge-953)
+(rightOf Edge-954 Edge-953)
+(elementsConnected Edge-954 Edge-953)
++++++++++++
+(matchBetween Edge-952 Edge-953)
+(matchBetween (ObliqueEdge-Downward Edge-952) (ObliqueEdge-Downward
+                                               Edge-953))
+(matchBetween (PerceptualEdge Edge-951) (PerceptualEdge Edge-954))
+(matchBetween (StraightEdge Edge-951) (StraightEdge Edge-954))
+(matchBetween (rightOf Edge-951 Edge-952) (rightOf Edge-954 Edge-953))
+(matchBetween (elementsConnected Edge-952 Edge-951) (elementsConnected
+                                                     Edge-954
+                                                     Edge-953))
+(matchBetween (StraightEdge Edge-952) (StraightEdge Edge-953))
+(matchBetween (PerceptualEdge Edge-952) (PerceptualEdge Edge-953))
+(matchBetween (ObliqueEdge-Upward Edge-951) (ObliqueEdge-Upward
+                                             Edge-954))
+(matchBetween Edge-951 Edge-954)

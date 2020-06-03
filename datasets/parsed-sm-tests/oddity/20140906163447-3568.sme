@@ -1,0 +1,39 @@
+(2D-Shape-Perpendicular Element-16)
+(2D-Shape-Generic Element-16)
+(Fully-Symmetric-Shape Element-16)
+(2D-Shape-Closed Element-16)
+(Centered-Element Element-16)
+(2D-Shape-Convex Element-16)
+(ObjectsColoredFnBlackColor Element-16)
+(2D-Shape-Straight Element-16)
+(ObjectsBorderColoredFnBlackColor Element-16)
++++++++++++
+(ObjectsColoredFnBlackColor Object-687)
+(2D-Shape-Generic Object-687)
+(Fully-Symmetric-Shape Object-687)
+(2D-Shape-Straight Object-687)
+(2D-Shape-Convex Object-687)
+(2D-Shape-Perpendicular Object-687)
+(2D-Shape-Closed Object-687)
+(2D-Shape-AxisAligned Object-687)
+(ObjectsBorderColoredFnBlackColor Object-687)
+(Centered-Element Object-687)
++++++++++++
+(matchBetween (2D-Shape-Generic Element-16) (2D-Shape-Generic
+                                             Object-687))
+(matchBetween (2D-Shape-Closed Element-16) (2D-Shape-Closed Object-687))
+(matchBetween (2D-Shape-Convex Element-16) (2D-Shape-Convex Object-687))
+(matchBetween (2D-Shape-Straight Element-16) (2D-Shape-Straight
+                                              Object-687))
+(matchBetween (ObjectsBorderColoredFnBlackColor
+               Element-16) (ObjectsBorderColoredFnBlackColor
+                            Object-687))
+(matchBetween (ObjectsColoredFnBlackColor
+               Element-16) (ObjectsColoredFnBlackColor Object-687))
+(matchBetween (Centered-Element Element-16) (Centered-Element
+                                             Object-687))
+(matchBetween (Fully-Symmetric-Shape Element-16) (Fully-Symmetric-Shape
+                                                  Object-687))
+(matchBetween (2D-Shape-Perpendicular
+               Element-16) (2D-Shape-Perpendicular Object-687))
+(matchBetween Element-16 Object-687)

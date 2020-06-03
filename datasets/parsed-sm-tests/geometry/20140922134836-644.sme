@@ -1,0 +1,200 @@
+(ElementInImageFn Element-109 Image-1)
+(ElementInImageFn Element-109 Image-2)
+(ElementInImageFn Element-111 Image-1)
+(ElementInImageFn Element-111 Image-2)
+(ScaledShape-Bigger (ElementInImageFn Element-109 Image-1))
+(ScaledShape-Bigger (ElementInImageFn Element-111 Image-2))
+(ScaledShape-Smaller (ElementInImageFn Element-109 Image-2))
+(ScaledShape-Smaller (ElementInImageFn Element-111 Image-1))
+(ObjectsColoredFnBlackColor (ElementInImageFn Element-111 Image-1))
+(ObjectsColoredFnBlackColor (ElementInImageFn Element-109 Image-2))
+(ObjectsColoredFnWhiteColor (ElementInImageFn Element-109 Image-1))
+(ObjectsColoredFnWhiteColor (ElementInImageFn Element-111 Image-2))
+(ElementInARowFn1 Image-2)
+(changeBetweenImages
+ (ObjectsColoredFnBlackColor (ElementInImageFn Element-109 Image-2))
+ Image-1 Image-2)
+(changeBetweenImages
+ (ObjectsColoredFnWhiteColor (ElementInImageFn Element-111 Image-2))
+ Image-1 Image-2)
+(changeBetweenImages
+ (ObjectsColoredFnWhiteColor (ElementInImageFn Element-109 Image-1))
+ Image-2 Image-1)
+(changeBetweenImages
+ (ObjectsColoredFnBlackColor (ElementInImageFn Element-111 Image-1))
+ Image-2 Image-1)
+(changeBetweenImagesFromTo
+ (ScaledShape-Smaller (ElementInImageFn Element-111 Image-1))
+ (ScaledShape-Bigger (ElementInImageFn Element-111 Image-2)) Image-1
+ Image-2)
+(changeBetweenImagesFromTo
+ (ScaledShape-Bigger (ElementInImageFn Element-109 Image-1))
+ (ScaledShape-Smaller (ElementInImageFn Element-109 Image-2)) Image-1
+ Image-2)
+(ElementInARowFn0 Image-1)
++++++++++++
+(ElementInARowFn0 Image-1)
+(ElementInImageFn Element-13 Image-1)
+(ElementInImageFn Element-13 Image-2)
+(ElementInImageFn Element-14 Image-1)
+(ElementInImageFn Element-14 Image-2)
+(ElementInImageFn Element-15 Image-1)
+(ElementInImageFn Element-15 Image-2)
+(ScaledShape-Bigger (ElementInImageFn Element-13 Image-1))
+(ScaledShape-Bigger (ElementInImageFn Element-15 Image-2))
+(ScaledShape-Smaller (ElementInImageFn Element-13 Image-2))
+(ScaledShape-Smaller (ElementInImageFn Element-15 Image-1))
+(changeBetweenImagesFromTo
+ (ScaledShape-Bigger (ElementInImageFn Element-13 Image-1))
+ (ScaledShape-Smaller (ElementInImageFn Element-13 Image-2)) Image-1
+ Image-2)
+(changeBetweenImagesFromTo
+ (RotatedShape-180 (ElementInImageFn Element-14 Image-1))
+ (RotatedShape-180 (ElementInImageFn Element-14 Image-2)) Image-1
+ Image-2)
+(changeBetweenImagesFromTo
+ (ScaledShape-Smaller (ElementInImageFn Element-15 Image-1))
+ (ScaledShape-Bigger (ElementInImageFn Element-15 Image-2)) Image-1
+ Image-2)
+(RotatedShape-180 (ElementInImageFn Element-14 Image-1))
+(RotatedShape-180 (ElementInImageFn Element-14 Image-2))
+(ObjectsColoredFnBlackColor (ElementInImageFn Element-15 Image-1))
+(ObjectsColoredFnBlackColor (ElementInImageFn Element-13 Image-2))
+(changeBetweenImages
+ (ObjectsColoredFnBlackColor (ElementInImageFn Element-15 Image-1))
+ Image-2 Image-1)
+(changeBetweenImages
+ (ObjectsColoredFnWhiteColor (ElementInImageFn Element-13 Image-1))
+ Image-2 Image-1)
+(changeBetweenImages
+ (ObjectsColoredFnWhiteColor (ElementInImageFn Element-15 Image-2))
+ Image-1 Image-2)
+(changeBetweenImages
+ (ObjectsColoredFnBlackColor (ElementInImageFn Element-13 Image-2))
+ Image-1 Image-2)
+(ObjectsColoredFnWhiteColor (ElementInImageFn Element-13 Image-1))
+(ObjectsColoredFnWhiteColor (ElementInImageFn Element-15 Image-2))
+(ElementInARowFn1 Image-2)
++++++++++++
+(matchBetween Image-1 Image-1)
+(matchBetween (ElementInARowFn0 Image-1) (ElementInARowFn0 Image-1))
+(matchBetween Element-109 Element-13)
+(matchBetween (ElementInImageFn Element-109 Image-1) (ElementInImageFn
+                                                      Element-13
+                                                      Image-1))
+(matchBetween (ObjectsColoredFnWhiteColor
+               (ElementInImageFn Element-109
+                Image-1)) (ObjectsColoredFnWhiteColor
+                           (ElementInImageFn Element-13 Image-1)))
+(matchBetween (changeBetweenImages
+               (ObjectsColoredFnWhiteColor
+                (ElementInImageFn Element-109 Image-1))
+               Image-2 Image-1) (changeBetweenImages
+                                 (ObjectsColoredFnWhiteColor
+                                  (ElementInImageFn
+                                   Element-13
+                                   Image-1))
+                                 Image-2
+                                 Image-1))
+(matchBetween (ElementInImageFn Element-109 Image-2) (ElementInImageFn
+                                                      Element-13
+                                                      Image-2))
+(matchBetween (ObjectsColoredFnBlackColor
+               (ElementInImageFn Element-109
+                Image-2)) (ObjectsColoredFnBlackColor
+                           (ElementInImageFn Element-13 Image-2)))
+(matchBetween (changeBetweenImages
+               (ObjectsColoredFnBlackColor
+                (ElementInImageFn Element-109 Image-2))
+               Image-1 Image-2) (changeBetweenImages
+                                 (ObjectsColoredFnBlackColor
+                                  (ElementInImageFn
+                                   Element-13
+                                   Image-2))
+                                 Image-1
+                                 Image-2))
+(matchBetween (ScaledShape-Bigger
+               (ElementInImageFn Element-111
+                Image-2)) (ScaledShape-Bigger
+                           (ElementInImageFn Element-15 Image-2)))
+(matchBetween (ScaledShape-Smaller
+               (ElementInImageFn Element-111
+                Image-1)) (ScaledShape-Smaller
+                           (ElementInImageFn Element-15 Image-1)))
+(matchBetween (changeBetweenImagesFromTo
+               (ScaledShape-Smaller
+                (ElementInImageFn Element-111 Image-1))
+               (ScaledShape-Bigger
+                (ElementInImageFn Element-111 Image-2))
+               Image-1 Image-2) (changeBetweenImagesFromTo
+                                 (ScaledShape-Smaller
+                                  (ElementInImageFn
+                                   Element-15
+                                   Image-1))
+                                 (ScaledShape-Bigger
+                                  (ElementInImageFn
+                                   Element-15
+                                   Image-2))
+                                 Image-1
+                                 Image-2))
+(matchBetween (changeBetweenImagesFromTo
+               (ScaledShape-Bigger
+                (ElementInImageFn Element-109 Image-1))
+               (ScaledShape-Smaller
+                (ElementInImageFn Element-109 Image-2))
+               Image-1 Image-2) (changeBetweenImagesFromTo
+                                 (ScaledShape-Bigger
+                                  (ElementInImageFn
+                                   Element-13
+                                   Image-1))
+                                 (ScaledShape-Smaller
+                                  (ElementInImageFn
+                                   Element-13
+                                   Image-2))
+                                 Image-1
+                                 Image-2))
+(matchBetween (ScaledShape-Smaller
+               (ElementInImageFn Element-109
+                Image-2)) (ScaledShape-Smaller
+                           (ElementInImageFn Element-13 Image-2)))
+(matchBetween (ScaledShape-Bigger
+               (ElementInImageFn Element-109
+                Image-1)) (ScaledShape-Bigger
+                           (ElementInImageFn Element-13 Image-1)))
+(matchBetween (changeBetweenImages
+               (ObjectsColoredFnWhiteColor
+                (ElementInImageFn Element-111 Image-2))
+               Image-1 Image-2) (changeBetweenImages
+                                 (ObjectsColoredFnWhiteColor
+                                  (ElementInImageFn
+                                   Element-15
+                                   Image-2))
+                                 Image-1
+                                 Image-2))
+(matchBetween (ObjectsColoredFnWhiteColor
+               (ElementInImageFn Element-111
+                Image-2)) (ObjectsColoredFnWhiteColor
+                           (ElementInImageFn Element-15 Image-2)))
+(matchBetween (ElementInImageFn Element-111 Image-2) (ElementInImageFn
+                                                      Element-15
+                                                      Image-2))
+(matchBetween (changeBetweenImages
+               (ObjectsColoredFnBlackColor
+                (ElementInImageFn Element-111 Image-1))
+               Image-2 Image-1) (changeBetweenImages
+                                 (ObjectsColoredFnBlackColor
+                                  (ElementInImageFn
+                                   Element-15
+                                   Image-1))
+                                 Image-2
+                                 Image-1))
+(matchBetween (ObjectsColoredFnBlackColor
+               (ElementInImageFn Element-111
+                Image-1)) (ObjectsColoredFnBlackColor
+                           (ElementInImageFn Element-15 Image-1)))
+(matchBetween (ElementInImageFn Element-111 Image-1) (ElementInImageFn
+                                                      Element-15
+                                                      Image-1))
+(matchBetween Element-111 Element-15)
+(matchBetween (ElementInARowFn1 Image-2) (ElementInARowFn1 Image-2))
+(matchBetween Image-2 Image-2)

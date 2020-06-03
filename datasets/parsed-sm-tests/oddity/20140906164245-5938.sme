@@ -1,0 +1,104 @@
+(edgesParallel Edge-3658 Edge-3654)
+(above Edge-3658 Edge-3654)
+(elementIntersects Edge-3654 Super-Edge-3662)
+(edgesPerpendicular Super-Edge-3662 Edge-3654)
+(above Edge-3654 Super-Edge-3662)
+(rightOf Edge-3654 Super-Edge-3662)
+(elementIntersects Edge-3658 Super-Edge-3662)
+(edgesPerpendicular Super-Edge-3662 Edge-3658)
+(above Edge-3658 Super-Edge-3662)
+(rightOf Edge-3658 Super-Edge-3662)
+(lengthShort Edge-3654)
+(lengthShort Edge-3658)
+(lengthLong Super-Edge-3662)
+(HorizontalEdge Edge-3654)
+(axisAligned Edge-3654)
+(PerceptualEdge Edge-3654)
+(StraightEdge Edge-3654)
+(HorizontalEdge Edge-3658)
+(axisAligned Edge-3658)
+(PerceptualEdge Edge-3658)
+(StraightEdge Edge-3658)
+(VerticalEdge Super-Edge-3662)
+(axisAligned Super-Edge-3662)
+(PerceptualEdge Super-Edge-3662)
+(StraightEdge Super-Edge-3662)
++++++++++++
+(StraightEdge Super-Edge-3617)
+(StraightEdge Edge-3613)
+(StraightEdge Edge-3609)
+(PerceptualEdge Super-Edge-3617)
+(PerceptualEdge Edge-3613)
+(PerceptualEdge Edge-3609)
+(axisAligned Super-Edge-3617)
+(axisAligned Edge-3613)
+(axisAligned Edge-3609)
+(VerticalEdge Super-Edge-3617)
+(HorizontalEdge Edge-3613)
+(HorizontalEdge Edge-3609)
+(lengthLong Super-Edge-3617)
+(lengthShort Edge-3613)
+(lengthShort Edge-3609)
+(rightOf Edge-3613 Super-Edge-3617)
+(rightOf Edge-3609 Super-Edge-3617)
+(above Edge-3613 Super-Edge-3617)
+(above Edge-3609 Super-Edge-3617)
+(above Edge-3613 Edge-3609)
+(edgesPerpendicular Super-Edge-3617 Edge-3613)
+(edgesPerpendicular Super-Edge-3617 Edge-3609)
+(elementIntersects Edge-3613 Super-Edge-3617)
+(elementIntersects Edge-3609 Super-Edge-3617)
+(edgesParallel Edge-3613 Edge-3609)
++++++++++++
+(matchBetween Edge-3654 Edge-3609)
+(matchBetween (lengthShort Edge-3654) (lengthShort Edge-3609))
+(matchBetween (HorizontalEdge Edge-3654) (HorizontalEdge Edge-3609))
+(matchBetween (axisAligned Edge-3654) (axisAligned Edge-3609))
+(matchBetween (PerceptualEdge Edge-3654) (PerceptualEdge Edge-3609))
+(matchBetween (StraightEdge Edge-3654) (StraightEdge Edge-3609))
+(matchBetween (VerticalEdge Super-Edge-3662) (VerticalEdge
+                                              Super-Edge-3617))
+(matchBetween (PerceptualEdge Super-Edge-3662) (PerceptualEdge
+                                                Super-Edge-3617))
+(matchBetween (edgesParallel Edge-3658 Edge-3654) (edgesParallel
+                                                   Edge-3613
+                                                   Edge-3609))
+(matchBetween (elementIntersects Edge-3658
+               Super-Edge-3662) (elementIntersects
+                                 Edge-3613
+                                 Super-Edge-3617))
+(matchBetween (edgesPerpendicular Super-Edge-3662
+               Edge-3658) (edgesPerpendicular Super-Edge-3617
+                           Edge-3613))
+(matchBetween (above Edge-3658 Super-Edge-3662) (above
+                                                 Edge-3613
+                                                 Super-Edge-3617))
+(matchBetween (rightOf Edge-3658 Super-Edge-3662) (rightOf
+                                                   Edge-3613
+                                                   Super-Edge-3617))
+(matchBetween (rightOf Edge-3654 Super-Edge-3662) (rightOf
+                                                   Edge-3609
+                                                   Super-Edge-3617))
+(matchBetween (above Edge-3654 Super-Edge-3662) (above
+                                                 Edge-3609
+                                                 Super-Edge-3617))
+(matchBetween (edgesPerpendicular Super-Edge-3662
+               Edge-3654) (edgesPerpendicular Super-Edge-3617
+                           Edge-3609))
+(matchBetween (elementIntersects Edge-3654
+               Super-Edge-3662) (elementIntersects
+                                 Edge-3609
+                                 Super-Edge-3617))
+(matchBetween (above Edge-3658 Edge-3654) (above Edge-3613 Edge-3609))
+(matchBetween (StraightEdge Super-Edge-3662) (StraightEdge
+                                              Super-Edge-3617))
+(matchBetween (axisAligned Super-Edge-3662) (axisAligned
+                                             Super-Edge-3617))
+(matchBetween (lengthLong Super-Edge-3662) (lengthLong Super-Edge-3617))
+(matchBetween Super-Edge-3662 Super-Edge-3617)
+(matchBetween (StraightEdge Edge-3658) (StraightEdge Edge-3613))
+(matchBetween (PerceptualEdge Edge-3658) (PerceptualEdge Edge-3613))
+(matchBetween (axisAligned Edge-3658) (axisAligned Edge-3613))
+(matchBetween (HorizontalEdge Edge-3658) (HorizontalEdge Edge-3613))
+(matchBetween (lengthShort Edge-3658) (lengthShort Edge-3613))
+(matchBetween Edge-3658 Edge-3613)

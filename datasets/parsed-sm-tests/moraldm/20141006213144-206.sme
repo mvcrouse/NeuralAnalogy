@@ -1,0 +1,233 @@
+(sacredValueChoice redirect67174)
+(sacredValueChoice Inaction68012)
+(affectsSigLargerGroup redirect67174)
+(affectsSigLargerGroup Inaction68012)
+(uninferredSentence (affectsSigLargerGroup redirect67174))
+(uninferredSentence (affectsSigLargerGroup Inaction68012))
+(uninferredSentence (directlyResponsible you64335 Inaction68012))
+(uninferredSentence (usedAsMeansToPreventNegativeOutcome redirect67174))
+(directlyResponsible you64335 redirect67174)
+(directlyResponsible you64335 Inaction68012)
+(preventsAlternativeNegativeOutcome redirect67174)
+(usedAsMeansToPreventNegativeOutcome redirect67174)
+(and (sacredValueChoice redirect67174)
+     (sacredValueChoice Inaction68012)
+     (uninferredSentence (affectsSigLargerGroup redirect67174))
+     (uninferredSentence (affectsSigLargerGroup Inaction68012))
+     (directlyResponsible you64335 redirect67174)
+     (uninferredSentence (directlyResponsible you64335 Inaction68012))
+     (preventsAlternativeNegativeOutcome redirect67174)
+     (uninferredSentence
+      (usedAsMeansToPreventNegativeOutcome redirect67174)))
+(rightChoice redirect67174)
+(HighAmountFn Speed)
+(chosenItem SelectingSomething68011 redirect67174)
+(chosenItem SelectingSomething68011 Inaction68012)
+(Inaction Inaction68012)
+(PreventingSomething PreventingSomething68010)
+(SelectingSomething SelectingSomething68011)
+(GroupFnPerson them64407)
+(GroupFnPerson set-of-passenger66080)
+(Dying hit64076)
+(Dying hit67367)
+(Bus-RoadVehicle bus64133)
+(Bus-RoadVehicle bus66039)
+(HittingAnObject hit64076)
+(HittingAnObject hit67367)
+(Translation-LocationChange redirect67174)
+(RescuingSomeone save64374)
+(Set-Mathematical set-of-passenger66080)
+(Railway-siding side-track66173)
+(Set-Mathematical them64407)
+(Train-TransportationDevice train64488)
+(performedBy PreventingSomething68010 you64335)
+(preventedSit PreventingSomething68010 hit64076)
+(choices SelectingSomething68011 redirect67174)
+(choices SelectingSomething68011 Inaction68012)
+(causes-PropSit (chosenItem SelectingSomething68011 Inaction68012)
+ hit64076)
+(causes-PropSit (chosenItem SelectingSomething68011 redirect67174)
+ save64374)
+(on-UnderspecifiedSurface bus66039 side-track66173)
+(performedBy hit64076 train64488)
+(objectActedOn hit64076 bus64133)
+(objectActedOn hit67367 bus66039)
+(performedBy hit67367 train64488)
+(causes-PropSit (chosenItem SelectingSomething68011 redirect67174)
+ hit67367)
+(performedBy redirect67174 you64335)
+(performedBy Inaction68012 you64335)
+(primaryObjectMoving redirect67174 train64488)
+(toLocation redirect67174 side-track66173)
+(beneficiary save64374 them64407)
+(performedBy save64374 you64335)
+(by-Underspecified save64374 redirect67174)
+(causes-SitSit save64374 PreventingSomething68010)
+(cardinality set-of-passenger66080 2)
+(cardinality them64407 10)
+(speedOfObject-Underspecified train64488 (HighAmountFn Speed))
+(implies
+ (and (sacredValueChoice redirect67174)
+      (sacredValueChoice Inaction68012)
+      (uninferredSentence (affectsSigLargerGroup redirect67174))
+      (uninferredSentence (affectsSigLargerGroup Inaction68012))
+      (directlyResponsible you64335 redirect67174)
+      (uninferredSentence (directlyResponsible you64335 Inaction68012))
+      (preventsAlternativeNegativeOutcome redirect67174)
+      (uninferredSentence
+       (usedAsMeansToPreventNegativeOutcome redirect67174)))
+ (rightChoice redirect67174))
+(makeDecision you64335 redirect67174)
++++++++++++
+(Inaction Inaction71193)
+(performedBy PreventingSomething71191 you69298)
+(performedBy hit69039 train70550)
+(performedBy hit70613 train70550)
+(performedBy push70396 you69298)
+(performedBy Inaction71193 you69298)
+(performedBy save69337 you69298)
+(preventedSit PreventingSomething71191 hit69039)
+(PreventingSomething PreventingSomething71191)
+(SelectingSomething SelectingSomething71192)
+(choices SelectingSomething71192 push70396)
+(choices SelectingSomething71192 Inaction71193)
+(chosenItem SelectingSomething71192 Inaction71193)
+(chosenItem SelectingSomething71192 push70396)
+(causes-PropSit (chosenItem SelectingSomething71192 Inaction71193)
+ hit69039)
+(causes-PropSit (chosenItem SelectingSomething71192 push70396) hit70613)
+(Bus-RoadVehicle bus69096)
+(Bus-RoadVehicle bus70728)
+(GroupFnPerson them69370)
+(GroupFnPerson set-of-passenger69536)
+(Dying hit69039)
+(Dying hit70613)
+(HittingAnObject hit69039)
+(HittingAnObject hit70613)
+(objectActedOn hit69039 bus69096)
+(objectActedOn hit70613 bus70728)
+(objectActedOn push70396 bus70728)
+(causes-SitSit hit70613 save69337)
+(causes-SitSit save69337 PreventingSomething71191)
+(PushingAnObject push70396)
+(providerOfMotiveForce push70396 you69298)
+(primaryObjectMoving push70396 bus70728)
+(RescuingSomeone save69337)
+(beneficiary save69337 them69370)
+(by-Underspecified save69337 push70396)
+(cardinality set-of-passenger69536 2)
+(cardinality them69370 10)
+(Set-Mathematical set-of-passenger69536)
+(Set-Mathematical them69370)
+(HighAmountFn Speed)
+(speedOfObject-Underspecified train70550 (HighAmountFn Speed))
+(Train-TransportationDevice train70550)
++++++++++++
+(matchBetween bus64133 bus69096)
+(matchBetween (Bus-RoadVehicle bus64133) (Bus-RoadVehicle bus69096))
+(matchBetween (Set-Mathematical
+               set-of-passenger66080) (Set-Mathematical
+                                       set-of-passenger69536))
+(matchBetween them64407 them69370)
+(matchBetween (GroupFnPerson them64407) (GroupFnPerson them69370))
+(matchBetween train64488 train70550)
+(matchBetween (Train-TransportationDevice
+               train64488) (Train-TransportationDevice train70550))
+(matchBetween hit67367 hit70613)
+(matchBetween (Dying hit67367) (Dying hit70613))
+(matchBetween save64374 save69337)
+(matchBetween (RescuingSomeone save64374) (RescuingSomeone save69337))
+(matchBetween hit64076 hit69039)
+(matchBetween (Dying hit64076) (Dying hit69039))
+(matchBetween (objectActedOn hit67367 bus66039) (objectActedOn
+                                                 hit70613
+                                                 bus70728))
+(matchBetween (objectActedOn hit64076 bus64133) (objectActedOn
+                                                 hit69039
+                                                 bus69096))
+(matchBetween (performedBy save64374 you64335) (performedBy
+                                                save69337
+                                                you69298))
+(matchBetween (causes-SitSit save64374
+               PreventingSomething68010) (causes-SitSit
+                                          save69337
+                                          PreventingSomething71191))
+(matchBetween (performedBy hit64076 train64488) (performedBy
+                                                 hit69039
+                                                 train70550))
+(matchBetween Speed Speed)
+(matchBetween (HighAmountFn Speed) (HighAmountFn Speed))
+(matchBetween (speedOfObject-Underspecified train64488
+               (HighAmountFn Speed)) (speedOfObject-Underspecified
+                                      train70550
+                                      (HighAmountFn Speed)))
+(matchBetween redirect67174 push70396)
+(matchBetween (performedBy redirect67174 you64335) (performedBy
+                                                    push70396
+                                                    you69298))
+(matchBetween SelectingSomething68011 SelectingSomething71192)
+(matchBetween (SelectingSomething
+               SelectingSomething68011) (SelectingSomething
+                                         SelectingSomething71192))
+(matchBetween (choices SelectingSomething68011 redirect67174) (choices
+                                                               SelectingSomething71192
+                                                               push70396))
+(matchBetween (chosenItem SelectingSomething68011
+               Inaction68012) (chosenItem SelectingSomething71192
+                               Inaction71193))
+(matchBetween (causes-PropSit
+               (chosenItem SelectingSomething68011 Inaction68012)
+               hit64076) (causes-PropSit
+                          (chosenItem SelectingSomething71192
+                           Inaction71193)
+                          hit69039))
+(matchBetween (causes-PropSit
+               (chosenItem SelectingSomething68011 redirect67174)
+               hit67367) (causes-PropSit
+                          (chosenItem SelectingSomething71192
+                           push70396)
+                          hit70613))
+(matchBetween (chosenItem SelectingSomething68011
+               redirect67174) (chosenItem SelectingSomething71192
+                               push70396))
+(matchBetween (choices SelectingSomething68011 Inaction68012) (choices
+                                                               SelectingSomething71192
+                                                               Inaction71193))
+(matchBetween (by-Underspecified save64374
+               redirect67174) (by-Underspecified save69337 push70396))
+(matchBetween (performedBy Inaction68012 you64335) (performedBy
+                                                    Inaction71193
+                                                    you69298))
+(matchBetween (Inaction Inaction68012) (Inaction Inaction71193))
+(matchBetween Inaction68012 Inaction71193)
+(matchBetween (preventedSit PreventingSomething68010
+               hit64076) (preventedSit PreventingSomething71191
+                          hit69039))
+(matchBetween (performedBy hit67367 train64488) (performedBy
+                                                 hit70613
+                                                 train70550))
+(matchBetween (beneficiary save64374 them64407) (beneficiary
+                                                 save69337
+                                                 them69370))
+(matchBetween (performedBy PreventingSomething68010
+               you64335) (performedBy PreventingSomething71191
+                          you69298))
+(matchBetween you64335 you69298)
+(matchBetween (HittingAnObject hit64076) (HittingAnObject hit69039))
+(matchBetween (cardinality them64407 10) (cardinality them69370 10))
+(matchBetween 10 10)
+(matchBetween (HittingAnObject hit67367) (HittingAnObject hit70613))
+(matchBetween (cardinality set-of-passenger66080 2) (cardinality
+                                                     set-of-passenger69536
+                                                     2))
+(matchBetween 2 2)
+(matchBetween (Set-Mathematical them64407) (Set-Mathematical them69370))
+(matchBetween (PreventingSomething
+               PreventingSomething68010) (PreventingSomething
+                                          PreventingSomething71191))
+(matchBetween PreventingSomething68010 PreventingSomething71191)
+(matchBetween (GroupFnPerson set-of-passenger66080) (GroupFnPerson
+                                                     set-of-passenger69536))
+(matchBetween set-of-passenger66080 set-of-passenger69536)
+(matchBetween (Bus-RoadVehicle bus66039) (Bus-RoadVehicle bus70728))
+(matchBetween bus66039 bus70728)

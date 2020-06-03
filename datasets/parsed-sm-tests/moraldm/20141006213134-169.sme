@@ -1,0 +1,228 @@
+(sacredValueChoice FinancialAssitanceToShelter2)
+(sacredValueChoice notChangeSupport)
+(affectsSigLargerGroup FinancialAssitanceToShelter2)
+(affectsSigLargerGroup notChangeSupport)
+(uninferredSentence
+ (affectsSigLargerGroup FinancialAssitanceToShelter2))
+(uninferredSentence (affectsSigLargerGroup notChangeSupport))
+(uninferredSentence (directlyResponsible you1143 notChangeSupport))
+(uninferredSentence
+ (preventsAlternativeNegativeOutcome FinancialAssitanceToShelter2))
+(uninferredSentence
+ (usedAsMeansToPreventNegativeOutcome FinancialAssitanceToShelter2))
+(directlyResponsible you1143 FinancialAssitanceToShelter2)
+(directlyResponsible you1143 notChangeSupport)
+(preventsAlternativeNegativeOutcome FinancialAssitanceToShelter2)
+(usedAsMeansToPreventNegativeOutcome FinancialAssitanceToShelter2)
+(and (sacredValueChoice FinancialAssitanceToShelter2)
+     (sacredValueChoice notChangeSupport)
+     (uninferredSentence
+      (affectsSigLargerGroup FinancialAssitanceToShelter2))
+     (uninferredSentence (affectsSigLargerGroup notChangeSupport))
+     (directlyResponsible you1143 FinancialAssitanceToShelter2)
+     (uninferredSentence
+      (directlyResponsible you1143 notChangeSupport))
+     (uninferredSentence
+      (preventsAlternativeNegativeOutcome
+       FinancialAssitanceToShelter2))
+     (uninferredSentence
+      (usedAsMeansToPreventNegativeOutcome
+       FinancialAssitanceToShelter2)))
+(rightChoice notChangeSupport)
+(chosenItem GivingOrNotGivingAssistance notChangeSupport)
+(chosenItem GivingOrNotGivingAssistance FinancialAssitanceToShelter2)
+(IntelligentAgent you1143)
+((GroupFn HomelessPerson) group1FemaleHomeless)
+((GroupFn HomelessPerson) group2FemaleHomeless)
+(HumanShelterConstruction shelter1)
+(ShelteringSomething shelteringGroup1)
+(FinancialSupport FinancialAssitanceToShelter1)
+(HumanShelterConstruction shelter2)
+(ShelteringSomething shelteringGroup2)
+(FinancialSupport FinancialAssitanceToShelter2)
+(HarmingAnAgent harmingGroup1)
+(HarmingAnAgent harmingGroup2)
+(PreventingSomething preventingHarmingGroup1)
+(PreventingSomething preventingHarmingGroup2)
+(Inaction notChangeSupport)
+(SelectingSomething GivingOrNotGivingAssistance)
+(groupCardinality group1FemaleHomeless 50)
+(groupCardinality group2FemaleHomeless 150)
+(performedBy shelteringGroup1 shelter1)
+(objectActedOn shelteringGroup1 group1FemaleHomeless)
+(beneficiary FinancialAssitanceToShelter1 shelter1)
+(performedBy FinancialAssitanceToShelter1 you1143)
+(performedBy shelteringGroup2 shelter1)
+(objectActedOn shelteringGroup2 group2FemaleHomeless)
+(beneficiary FinancialAssitanceToShelter2 shelter2)
+(performedBy FinancialAssitanceToShelter2 you1143)
+(objectActedOn harmingGroup1 group1FemaleHomeless)
+(objectActedOn harmingGroup2 group2FemaleHomeless)
+(preventedProp preventingHarmingGroup1 harmingGroup1)
+(preventedProp preventingHarmingGroup2 harmingGroup2)
+(performedBy notChangeSupport you1143)
+(choices GivingOrNotGivingAssistance FinancialAssitanceToShelter2)
+(choices GivingOrNotGivingAssistance notChangeSupport)
+(causes-PropProp
+ (chosenItem GivingOrNotGivingAssistance FinancialAssitanceToShelter2)
+ preventingHarmingGroup2)
+(causes-PropProp
+ (chosenItem GivingOrNotGivingAssistance FinancialAssitanceToShelter2)
+ harmingGroup1)
+(causes-PropProp
+ (chosenItem GivingOrNotGivingAssistance notChangeSupport)
+ preventingHarmingGroup1)
+(causes-PropProp
+ (chosenItem GivingOrNotGivingAssistance notChangeSupport)
+ harmingGroup2)
+(implies
+ (and (sacredValueChoice FinancialAssitanceToShelter2)
+      (sacredValueChoice notChangeSupport)
+      (uninferredSentence
+       (affectsSigLargerGroup FinancialAssitanceToShelter2))
+      (uninferredSentence (affectsSigLargerGroup notChangeSupport))
+      (directlyResponsible you1143 FinancialAssitanceToShelter2)
+      (uninferredSentence
+       (directlyResponsible you1143 notChangeSupport))
+      (uninferredSentence
+       (preventsAlternativeNegativeOutcome
+        FinancialAssitanceToShelter2))
+      (uninferredSentence
+       (usedAsMeansToPreventNegativeOutcome
+        FinancialAssitanceToShelter2)))
+ (rightChoice notChangeSupport))
+(makeDecision you1143 notChangeSupport)
++++++++++++
+(IntelligentAgent you8131)
+(Dam dam7557)
+((GroupFn AnimalSpecies) River1FishGroups)
+((GroupFn AnimalSpecies) River1FishGroup1)
+((GroupFn AnimalSpecies) River1FishGroup2)
+(groupCardinality River1FishGroup1 2)
+(groupCardinality River1FishGroup2 20)
+(subGroups River1FishGroups River1FishGroup1)
+(subGroups River1FishGroups River1FishGroup2)
+(Extinction ExtinctionRiver1FishGroup1)
+(Extinction ExtinctionRiver1FishGroup2)
+(objectActedOn ExtinctionRiver1FishGroup1 River1FishGroup1)
+(objectActedOn ExtinctionRiver1FishGroup2 River1FishGroup2)
+(objectActedOn open8135 dam7557)
+(isInaction notOpen8135)
+(OpeningSomething open8135)
+(PreventingSomething preventingExtinctionRiver1FishGroup1)
+(PreventingSomething preventingExtinctionRiver1FishGroup2)
+(preventedProp preventingExtinctionRiver1FishGroup1
+ ExtinctionRiver1FishGroup1)
+(preventedProp preventingExtinctionRiver1FishGroup2
+ ExtinctionRiver1FishGroup2)
+(SelectingSomething OpeningOrNotOpeningTheDam)
+(choices OpeningOrNotOpeningTheDam open8135)
+(choices OpeningOrNotOpeningTheDam notOpen8135)
+(performedBy open8135 you8131)
+(performedBy notOpen8135 you8131)
+(chosenItem OpeningOrNotOpeningTheDam open8135)
+(chosenItem OpeningOrNotOpeningTheDam notOpen8135)
+(causes-PropProp (chosenItem OpeningOrNotOpeningTheDam open8135)
+ preventingExtinctionRiver1FishGroup2)
+(causes-PropProp (chosenItem OpeningOrNotOpeningTheDam open8135)
+ ExtinctionRiver1FishGroup1)
+(causes-PropProp (chosenItem OpeningOrNotOpeningTheDam notOpen8135)
+ ExtinctionRiver1FishGroup2)
+(causes-PropProp (chosenItem OpeningOrNotOpeningTheDam notOpen8135)
+ preventingExtinctionRiver1FishGroup1)
++++++++++++
+(matchBetween preventingHarmingGroup2 preventingExtinctionRiver1FishGroup1)
+(matchBetween (PreventingSomething
+               preventingHarmingGroup2) (PreventingSomething
+                                         preventingExtinctionRiver1FishGroup1))
+(matchBetween group2FemaleHomeless River1FishGroup1)
+(matchBetween 150 2)
+(matchBetween (groupCardinality group2FemaleHomeless
+               150) (groupCardinality River1FishGroup1 2))
+(matchBetween harmingGroup2 ExtinctionRiver1FishGroup1)
+(matchBetween (objectActedOn harmingGroup2
+               group2FemaleHomeless) (objectActedOn
+                                      ExtinctionRiver1FishGroup1
+                                      River1FishGroup1))
+(matchBetween (preventedProp preventingHarmingGroup2
+               harmingGroup2) (preventedProp
+                               preventingExtinctionRiver1FishGroup1
+                               ExtinctionRiver1FishGroup1))
+(matchBetween notChangeSupport open8135)
+(matchBetween (performedBy notChangeSupport you1143) (performedBy
+                                                      open8135
+                                                      you8131))
+(matchBetween GivingOrNotGivingAssistance OpeningOrNotOpeningTheDam)
+(matchBetween (SelectingSomething
+               GivingOrNotGivingAssistance) (SelectingSomething
+                                             OpeningOrNotOpeningTheDam))
+(matchBetween (choices GivingOrNotGivingAssistance
+               FinancialAssitanceToShelter2) (choices
+                                              OpeningOrNotOpeningTheDam
+                                              notOpen8135))
+(matchBetween (causes-PropProp
+               (chosenItem GivingOrNotGivingAssistance
+                notChangeSupport)
+               preventingHarmingGroup1) (causes-PropProp
+                                         (chosenItem
+                                          OpeningOrNotOpeningTheDam
+                                          open8135)
+                                         preventingExtinctionRiver1FishGroup2))
+(matchBetween (causes-PropProp
+               (chosenItem GivingOrNotGivingAssistance
+                FinancialAssitanceToShelter2)
+               preventingHarmingGroup2) (causes-PropProp
+                                         (chosenItem
+                                          OpeningOrNotOpeningTheDam
+                                          notOpen8135)
+                                         preventingExtinctionRiver1FishGroup1))
+(matchBetween (causes-PropProp
+               (chosenItem GivingOrNotGivingAssistance
+                FinancialAssitanceToShelter2)
+               harmingGroup1) (causes-PropProp
+                               (chosenItem
+                                OpeningOrNotOpeningTheDam
+                                notOpen8135)
+                               ExtinctionRiver1FishGroup2))
+(matchBetween (chosenItem GivingOrNotGivingAssistance
+               FinancialAssitanceToShelter2) (chosenItem
+                                              OpeningOrNotOpeningTheDam
+                                              notOpen8135))
+(matchBetween (causes-PropProp
+               (chosenItem GivingOrNotGivingAssistance
+                notChangeSupport)
+               harmingGroup2) (causes-PropProp
+                               (chosenItem
+                                OpeningOrNotOpeningTheDam
+                                open8135)
+                               ExtinctionRiver1FishGroup1))
+(matchBetween (chosenItem GivingOrNotGivingAssistance
+               notChangeSupport) (chosenItem
+                                  OpeningOrNotOpeningTheDam
+                                  open8135))
+(matchBetween (choices GivingOrNotGivingAssistance
+               notChangeSupport) (choices
+                                  OpeningOrNotOpeningTheDam
+                                  open8135))
+(matchBetween (performedBy FinancialAssitanceToShelter2
+               you1143) (performedBy notOpen8135 you8131))
+(matchBetween FinancialAssitanceToShelter2 notOpen8135)
+(matchBetween (preventedProp preventingHarmingGroup1
+               harmingGroup1) (preventedProp
+                               preventingExtinctionRiver1FishGroup2
+                               ExtinctionRiver1FishGroup2))
+(matchBetween (objectActedOn harmingGroup1
+               group1FemaleHomeless) (objectActedOn
+                                      ExtinctionRiver1FishGroup2
+                                      River1FishGroup2))
+(matchBetween harmingGroup1 ExtinctionRiver1FishGroup2)
+(matchBetween (groupCardinality group1FemaleHomeless
+               50) (groupCardinality River1FishGroup2 20))
+(matchBetween 50 20)
+(matchBetween group1FemaleHomeless River1FishGroup2)
+(matchBetween (PreventingSomething
+               preventingHarmingGroup1) (PreventingSomething
+                                         preventingExtinctionRiver1FishGroup2))
+(matchBetween preventingHarmingGroup1 preventingExtinctionRiver1FishGroup2)
+(matchBetween (IntelligentAgent you1143) (IntelligentAgent you8131))
+(matchBetween you1143 you8131)

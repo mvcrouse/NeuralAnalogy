@@ -1,0 +1,210 @@
+(sacredValueChoice giveVaccine)
+(sacredValueChoice NotGiveVaccine)
+(affectsSigLargerGroup giveVaccine)
+(affectsSigLargerGroup NotGiveVaccine)
+(uninferredSentence (affectsSigLargerGroup giveVaccine))
+(uninferredSentence (affectsSigLargerGroup NotGiveVaccine))
+(uninferredSentence (directlyResponsible you2805 NotGiveVaccine))
+(uninferredSentence (preventsAlternativeNegativeOutcome giveVaccine))
+(uninferredSentence (usedAsMeansToPreventNegativeOutcome giveVaccine))
+(directlyResponsible you2805 giveVaccine)
+(directlyResponsible you2805 NotGiveVaccine)
+(preventsAlternativeNegativeOutcome giveVaccine)
+(usedAsMeansToPreventNegativeOutcome giveVaccine)
+(and (sacredValueChoice giveVaccine) (sacredValueChoice NotGiveVaccine)
+     (uninferredSentence (affectsSigLargerGroup giveVaccine))
+     (uninferredSentence (affectsSigLargerGroup NotGiveVaccine))
+     (directlyResponsible you2805 giveVaccine)
+     (uninferredSentence (directlyResponsible you2805 NotGiveVaccine))
+     (uninferredSentence
+      (preventsAlternativeNegativeOutcome giveVaccine))
+     (uninferredSentence
+      (usedAsMeansToPreventNegativeOutcome giveVaccine)))
+(rightChoice NotGiveVaccine)
+(chosenItem GivingOrNotGivingTheVaccine NotGiveVaccine)
+(chosenItem GivingOrNotGivingTheVaccine giveVaccine)
+((GroupFn HumanChild) ChildrenInDanger)
+((GroupFn HumanChild) ChildrenInDangerGroup1)
+((GroupFn HumanChild) ChildrenInDangerGroup2)
+(IntelligentAgent you2805)
+(DiseaseType disease1960)
+((VaccineForAgainstFn ChildrenInDanger disease1960) vaccine1960)
+(Dying DyingChildrenGroup1)
+(Dying DyingChildrenGroup2)
+(Injecting-Medical giveVaccine)
+(Inaction NotGiveVaccine)
+(PreventingSomething preventingDyingChildrenGroup1)
+(PreventingSomething preventingDyingChildrenGroup2)
+(SelectingSomething GivingOrNotGivingTheVaccine)
+(groupCardinality ChildrenInDanger 10000)
+(groupCardinality ChildrenInDangerGroup1 10)
+(groupCardinality ChildrenInDangerGroup2 1)
+(subGroups ChildrenInDanger ChildrenInDangerGroup1)
+(subGroups ChildrenInDanger ChildrenInDangerGroup2)
+(objectActedOn DyingChildrenGroup1 ChildrenInDangerGroup1)
+(objectActedOn DyingChildrenGroup2 ChildrenInDangerGroup2)
+(deviceUsed giveVaccine vaccine1960)
+(bodilyActedOn vaccine1960 ChildrenInDangerGroup1)
+(bodilyActedOn vaccineSideEffect ChildrenInDangerGroup2)
+(preventedProp preventingDyingChildrenGroup1 DyingChildrenGroup1)
+(preventedProp preventingDyingChildrenGroup2 DyingChildrenGroup2)
+(choices GivingOrNotGivingTheVaccine giveVaccine)
+(choices GivingOrNotGivingTheVaccine NotGiveVaccine)
+(performedBy giveVaccine you2805)
+(performedBy NotGiveVaccine you2805)
+(causes-PropProp (chosenItem GivingOrNotGivingTheVaccine giveVaccine)
+ preventingDyingChildrenGroup1)
+(causes-PropProp (chosenItem GivingOrNotGivingTheVaccine giveVaccine)
+ DyingChildrenGroup2)
+(causes-PropProp
+ (chosenItem GivingOrNotGivingTheVaccine NotGiveVaccine)
+ DyingChildrenGroup1)
+(causes-PropProp
+ (chosenItem GivingOrNotGivingTheVaccine NotGiveVaccine)
+ preventingDyingChildrenGroup2)
+(implies
+ (and (sacredValueChoice giveVaccine)
+      (sacredValueChoice NotGiveVaccine)
+      (uninferredSentence (affectsSigLargerGroup giveVaccine))
+      (uninferredSentence (affectsSigLargerGroup NotGiveVaccine))
+      (directlyResponsible you2805 giveVaccine)
+      (uninferredSentence (directlyResponsible you2805 NotGiveVaccine))
+      (uninferredSentence
+       (preventsAlternativeNegativeOutcome giveVaccine))
+      (uninferredSentence
+       (usedAsMeansToPreventNegativeOutcome giveVaccine)))
+ (rightChoice NotGiveVaccine))
+(makeDecision you2805 NotGiveVaccine)
++++++++++++
+(IntelligentAgent you8115)
+(RefugeeCamp Camp1)
+(RefugeeCamp Camp2)
+((GroupFn Person) PeopleInDangerInCamp1)
+((GroupFn Person) PeopleInDangerInCamp2)
+(groupCardinality PeopleInDangerInCamp1 100)
+(groupCardinality PeopleInDangerInCamp2 1000)
+(residesInRegion PeopleInDangerInCamp1 Camp1)
+(residesInRegion PeopleInDangerInCamp2 Camp2)
+(Starvation PeopleDyingInCamp1)
+(Starvation PeopleDyingInCamp2)
+(objectActedOn PeopleDyingInCamp1 PeopleInDangerInCamp1)
+(objectActedOn PeopleDyingInCamp2 PeopleInDangerInCamp2)
+(objectActedOn ReRouteToCamp2 TruckConvoy)
+(Convoy TruckConvoy)
+(genls FoodTruck Truck)
+(containedObject FoodTruck Food)
+(groupMemberType TruckConvoy FoodTruck)
+(MovementEvent ReRouteToCamp2)
+(toLocation ReRouteToCamp2 Camp2)
+(PreventingSomething preventingPeopleDyingInCamp1)
+(PreventingSomething preventingPeopleDyingInCamp2)
+(preventedProp preventingPeopleDyingInCamp1 PeopleDyingInCamp1)
+(preventedProp preventingPeopleDyingInCamp2 PeopleDyingInCamp2)
+(Inaction notReRoute)
+(SelectingSomething SendingTruckToCamp1OrCamp2)
+(choices SendingTruckToCamp1OrCamp2 ReRouteToCamp2)
+(choices SendingTruckToCamp1OrCamp2 notReRoute)
+(performedBy ReRouteToCamp2 you8115)
+(performedBy notReRoute you8115)
+(chosenItem SendingTruckToCamp1OrCamp2 ReRouteToCamp2)
+(chosenItem SendingTruckToCamp1OrCamp2 notReRoute)
+(causes-PropProp (chosenItem SendingTruckToCamp1OrCamp2 ReRouteToCamp2)
+ preventingPeopleDyingInCamp2)
+(causes-PropProp (chosenItem SendingTruckToCamp1OrCamp2 ReRouteToCamp2)
+ PeopleDyingInCamp1)
+(causes-PropProp (chosenItem SendingTruckToCamp1OrCamp2 notReRoute)
+ PeopleDyingInCamp2)
+(causes-PropProp (chosenItem SendingTruckToCamp1OrCamp2 notReRoute)
+ preventingPeopleDyingInCamp1)
++++++++++++
+(matchBetween preventingDyingChildrenGroup2 preventingPeopleDyingInCamp1)
+(matchBetween (PreventingSomething
+               preventingDyingChildrenGroup2) (PreventingSomething
+                                               preventingPeopleDyingInCamp1))
+(matchBetween ChildrenInDangerGroup2 PeopleInDangerInCamp1)
+(matchBetween 1 100)
+(matchBetween (groupCardinality ChildrenInDangerGroup2
+               1) (groupCardinality PeopleInDangerInCamp1 100))
+(matchBetween DyingChildrenGroup2 PeopleDyingInCamp1)
+(matchBetween (objectActedOn DyingChildrenGroup2
+               ChildrenInDangerGroup2) (objectActedOn
+                                        PeopleDyingInCamp1
+                                        PeopleInDangerInCamp1))
+(matchBetween (preventedProp preventingDyingChildrenGroup2
+               DyingChildrenGroup2) (preventedProp
+                                     preventingPeopleDyingInCamp1
+                                     PeopleDyingInCamp1))
+(matchBetween NotGiveVaccine notReRoute)
+(matchBetween (Inaction NotGiveVaccine) (Inaction notReRoute))
+(matchBetween (performedBy NotGiveVaccine you2805) (performedBy
+                                                    notReRoute
+                                                    you8115))
+(matchBetween (choices GivingOrNotGivingTheVaccine
+               giveVaccine) (choices SendingTruckToCamp1OrCamp2
+                             ReRouteToCamp2))
+(matchBetween (chosenItem GivingOrNotGivingTheVaccine
+               giveVaccine) (chosenItem SendingTruckToCamp1OrCamp2
+                             ReRouteToCamp2))
+(matchBetween (causes-PropProp
+               (chosenItem GivingOrNotGivingTheVaccine giveVaccine)
+               DyingChildrenGroup2) (causes-PropProp
+                                     (chosenItem
+                                      SendingTruckToCamp1OrCamp2
+                                      ReRouteToCamp2)
+                                     PeopleDyingInCamp1))
+(matchBetween (chosenItem GivingOrNotGivingTheVaccine
+               NotGiveVaccine) (chosenItem
+                                SendingTruckToCamp1OrCamp2
+                                notReRoute))
+(matchBetween (causes-PropProp
+               (chosenItem GivingOrNotGivingTheVaccine NotGiveVaccine)
+               preventingDyingChildrenGroup2) (causes-PropProp
+                                               (chosenItem
+                                                SendingTruckToCamp1OrCamp2
+                                                notReRoute)
+                                               preventingPeopleDyingInCamp1))
+(matchBetween (causes-PropProp
+               (chosenItem GivingOrNotGivingTheVaccine NotGiveVaccine)
+               DyingChildrenGroup1) (causes-PropProp
+                                     (chosenItem
+                                      SendingTruckToCamp1OrCamp2
+                                      notReRoute)
+                                     PeopleDyingInCamp2))
+(matchBetween (causes-PropProp
+               (chosenItem GivingOrNotGivingTheVaccine giveVaccine)
+               preventingDyingChildrenGroup1) (causes-PropProp
+                                               (chosenItem
+                                                SendingTruckToCamp1OrCamp2
+                                                ReRouteToCamp2)
+                                               preventingPeopleDyingInCamp2))
+(matchBetween (choices GivingOrNotGivingTheVaccine
+               NotGiveVaccine) (choices
+                                SendingTruckToCamp1OrCamp2
+                                notReRoute))
+(matchBetween (SelectingSomething
+               GivingOrNotGivingTheVaccine) (SelectingSomething
+                                             SendingTruckToCamp1OrCamp2))
+(matchBetween GivingOrNotGivingTheVaccine SendingTruckToCamp1OrCamp2)
+(matchBetween (performedBy giveVaccine you2805) (performedBy
+                                                 ReRouteToCamp2
+                                                 you8115))
+(matchBetween giveVaccine ReRouteToCamp2)
+(matchBetween (preventedProp preventingDyingChildrenGroup1
+               DyingChildrenGroup1) (preventedProp
+                                     preventingPeopleDyingInCamp2
+                                     PeopleDyingInCamp2))
+(matchBetween (objectActedOn DyingChildrenGroup1
+               ChildrenInDangerGroup1) (objectActedOn
+                                        PeopleDyingInCamp2
+                                        PeopleInDangerInCamp2))
+(matchBetween DyingChildrenGroup1 PeopleDyingInCamp2)
+(matchBetween (groupCardinality ChildrenInDangerGroup1
+               10) (groupCardinality PeopleInDangerInCamp2 1000))
+(matchBetween 10 1000)
+(matchBetween ChildrenInDangerGroup1 PeopleInDangerInCamp2)
+(matchBetween (PreventingSomething
+               preventingDyingChildrenGroup1) (PreventingSomething
+                                               preventingPeopleDyingInCamp2))
+(matchBetween preventingDyingChildrenGroup1 preventingPeopleDyingInCamp2)
+(matchBetween (IntelligentAgent you2805) (IntelligentAgent you8115))
+(matchBetween you2805 you8115)

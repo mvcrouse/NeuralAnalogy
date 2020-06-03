@@ -1,0 +1,31 @@
+((ShapeTypeFn 0) Object-1037)
+((ShapeTypeFn 2) Object-1039)
+(rightOf Object-1039 Object-1037)
+(ObjectsBorderColoredFnBlackColor Object-1039)
+(ObjectsBorderColoredFnBlackColor Object-1037)
+(ObjectsColoredFnBlackColor Object-1039)
+(ObjectsColoredFnBlackColor Object-1037)
++++++++++++
+(ObjectsColoredFnBlackColor Object-1041)
+(ObjectsColoredFnBlackColor Object-1042)
+(ObjectsBorderColoredFnBlackColor Object-1041)
+(ObjectsBorderColoredFnBlackColor Object-1042)
+(rightOf Object-1042 Object-1041)
+((ShapeTypeFn 3) Object-1042)
+((ShapeTypeFn 1) Object-1041)
++++++++++++
+(matchBetween Object-1039 Object-1042)
+(matchBetween (ObjectsBorderColoredFnBlackColor
+               Object-1039) (ObjectsBorderColoredFnBlackColor
+                             Object-1042))
+(matchBetween (ObjectsColoredFnBlackColor
+               Object-1039) (ObjectsColoredFnBlackColor Object-1042))
+(matchBetween (rightOf Object-1039 Object-1037) (rightOf
+                                                 Object-1042
+                                                 Object-1041))
+(matchBetween (ObjectsColoredFnBlackColor
+               Object-1037) (ObjectsColoredFnBlackColor Object-1041))
+(matchBetween (ObjectsBorderColoredFnBlackColor
+               Object-1037) (ObjectsBorderColoredFnBlackColor
+                             Object-1041))
+(matchBetween Object-1037 Object-1041)

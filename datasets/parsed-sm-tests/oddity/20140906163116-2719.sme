@@ -1,0 +1,60 @@
+(wideEdged Element-6)
+(narrowEdged Element-5)
+(Centered-Element Element-6)
+(2D-Shape-Generic Element-6)
+(ObjectsBorderColoredFnBlackColor Element-6)
+(2D-Shape-Convex Element-5)
+(2D-Shape-Generic Element-5)
+(Fully-Symmetric-Shape Element-5)
+(2D-Shape-Closed Element-5)
+(ObjectsBorderColoredFnBlackColor Element-5)
+(2D-Shape-Ellipse Element-5)
+(ObjectsColoredFnBlackColor Element-5)
+(2D-Shape-Curved Element-5)
+(2D-Shape-Straight Element-6)
+(2D-Shape-Open Element-6)
++++++++++++
+(ObjectsColoredFnBlackColor Object-485)
+(2D-Shape-Generic Object-485)
+(2D-Shape-Generic Object-486)
+(Fully-Symmetric-Shape Object-485)
+(2D-Shape-Curved Object-485)
+(2D-Shape-Ellipse Object-485)
+(2D-Shape-Convex Object-485)
+(2D-Shape-Closed Object-485)
+(2D-Shape-Straight Object-486)
+(2D-Shape-Open Object-486)
+(ObjectsBorderColoredFnBlackColor Object-486)
+(ObjectsBorderColoredFnBlackColor Object-485)
+(elementsOverlap Object-486 Object-485)
+(elementsIntersect Object-486 Object-485)
+(Centered-Element Object-486)
+(wideEdged Object-486)
+(narrowEdged Object-485)
++++++++++++
+(matchBetween (Centered-Element Element-6) (Centered-Element
+                                            Object-486))
+(matchBetween (ObjectsBorderColoredFnBlackColor
+               Element-6) (ObjectsBorderColoredFnBlackColor Object-486))
+(matchBetween (2D-Shape-Open Element-6) (2D-Shape-Open Object-486))
+(matchBetween (2D-Shape-Convex Element-5) (2D-Shape-Convex Object-485))
+(matchBetween (Fully-Symmetric-Shape Element-5) (Fully-Symmetric-Shape
+                                                 Object-485))
+(matchBetween (ObjectsBorderColoredFnBlackColor
+               Element-5) (ObjectsBorderColoredFnBlackColor Object-485))
+(matchBetween (ObjectsColoredFnBlackColor
+               Element-5) (ObjectsColoredFnBlackColor Object-485))
+(matchBetween (2D-Shape-Curved Element-5) (2D-Shape-Curved Object-485))
+(matchBetween (2D-Shape-Ellipse Element-5) (2D-Shape-Ellipse
+                                            Object-485))
+(matchBetween (2D-Shape-Closed Element-5) (2D-Shape-Closed Object-485))
+(matchBetween (2D-Shape-Generic Element-5) (2D-Shape-Generic
+                                            Object-485))
+(matchBetween (narrowEdged Element-5) (narrowEdged Object-485))
+(matchBetween Element-5 Object-485)
+(matchBetween (2D-Shape-Straight Element-6) (2D-Shape-Straight
+                                             Object-486))
+(matchBetween (2D-Shape-Generic Element-6) (2D-Shape-Generic
+                                            Object-486))
+(matchBetween (wideEdged Element-6) (wideEdged Object-486))
+(matchBetween Element-6 Object-486)

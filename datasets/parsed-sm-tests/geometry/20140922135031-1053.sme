@@ -1,0 +1,139 @@
+(ElementInImageFn Element-2 Image-2)
+(ElementInImageFn Element-2 Image-1)
+(ElementInImageFn Element-1 Image-1)
+(RemovedShape (ElementInImageFn Element-2 Image-2))
+(AddedShapeTypeFnStrictShapeTypeFn01
+ (ElementInImageFn Element-2 Image-1))
+(ElementAddedInImageFn Element-2 Image-1)
+(elementContains (ElementInImageFn Element-1 Image-1)
+ (ElementAddedInImageFn Element-2 Image-1))
+(centeredOn (ElementAddedInImageFn Element-2 Image-1)
+ (ElementInImageFn Element-1 Image-1))
+(ElementInARowFn1 Image-2)
+(changeBetweenImages
+ (centeredOn (ElementAddedInImageFn Element-2 Image-1)
+  (ElementInImageFn Element-1 Image-1))
+ Image-2 Image-1)
+(changeBetweenImages
+ (elementContains (ElementInImageFn Element-1 Image-1)
+  (ElementAddedInImageFn Element-2 Image-1))
+ Image-2 Image-1)
+(changeBetweenImagesFromTo
+ (RemovedShape (ElementInImageFn Element-2 Image-2))
+ (AddedShapeTypeFnStrictShapeTypeFn01
+  (ElementInImageFn Element-2 Image-1))
+ Image-2 Image-1)
+(ElementInARowFn0 Image-1)
++++++++++++
+(ElementInARowFn0 Image-1)
+(ElementInImageFn Element-71 Image-2)
+(ElementInImageFn Element-71 Image-1)
+(ElementInImageFn Element-70 Image-1)
+(ElementInImageFn Element-70 Image-2)
+(RemovedShape (ElementInImageFn Element-71 Image-2))
+(AddedShapeTypeFnStrictShapeTypeFn20
+ (ElementInImageFn Element-71 Image-1))
+(changeBetweenImagesFromTo
+ (RemovedShape (ElementInImageFn Element-71 Image-2))
+ (AddedShapeTypeFnStrictShapeTypeFn20
+  (ElementInImageFn Element-71 Image-1))
+ Image-2 Image-1)
+(changeBetweenImagesFromTo
+ ((StrictShapeTypeFn 1 0) (ElementInImageFn Element-70 Image-1))
+ ((StrictShapeTypeFn 2 1) (ElementInImageFn Element-70 Image-2))
+ Image-1 Image-2)
+((StrictShapeTypeFn 1 0) (ElementInImageFn Element-70 Image-1))
+((StrictShapeTypeFn 2 1) (ElementInImageFn Element-70 Image-2))
+(ElementAddedInImageFn Element-71 Image-1)
+(elementContains (ElementInImageFn Element-70 Image-1)
+ (ElementAddedInImageFn Element-71 Image-1))
+(changeBetweenImages
+ (elementContains (ElementInImageFn Element-70 Image-1)
+  (ElementAddedInImageFn Element-71 Image-1))
+ Image-2 Image-1)
+(changeBetweenImages
+ (centeredOn (ElementAddedInImageFn Element-71 Image-1)
+  (ElementInImageFn Element-70 Image-1))
+ Image-2 Image-1)
+(centeredOn (ElementAddedInImageFn Element-71 Image-1)
+ (ElementInImageFn Element-70 Image-1))
+(ElementInARowFn1 Image-2)
++++++++++++
+(matchBetween Image-1 Image-1)
+(matchBetween (ElementInARowFn0 Image-1) (ElementInARowFn0 Image-1))
+(matchBetween Element-1 Element-70)
+(matchBetween (ElementInImageFn Element-1 Image-1) (ElementInImageFn
+                                                    Element-70
+                                                    Image-1))
+(matchBetween (ElementAddedInImageFn Element-2
+               Image-1) (ElementAddedInImageFn Element-71 Image-1))
+(matchBetween (elementContains (ElementInImageFn Element-1 Image-1)
+               (ElementAddedInImageFn Element-2
+                Image-1)) (elementContains
+                           (ElementInImageFn Element-70 Image-1)
+                           (ElementAddedInImageFn Element-71 Image-1)))
+(matchBetween (changeBetweenImages
+               (elementContains (ElementInImageFn Element-1 Image-1)
+                (ElementAddedInImageFn Element-2 Image-1))
+               Image-2 Image-1) (changeBetweenImages
+                                 (elementContains
+                                  (ElementInImageFn Element-70 Image-1)
+                                  (ElementAddedInImageFn
+                                   Element-71
+                                   Image-1))
+                                 Image-2
+                                 Image-1))
+(matchBetween (changeBetweenImages
+               (centeredOn (ElementAddedInImageFn Element-2 Image-1)
+                (ElementInImageFn Element-1 Image-1))
+               Image-2 Image-1) (changeBetweenImages
+                                 (centeredOn
+                                  (ElementAddedInImageFn
+                                   Element-71
+                                   Image-1)
+                                  (ElementInImageFn
+                                   Element-70
+                                   Image-1))
+                                 Image-2
+                                 Image-1))
+(matchBetween (centeredOn (ElementAddedInImageFn Element-2 Image-1)
+               (ElementInImageFn Element-1 Image-1)) (centeredOn
+                                                      (ElementAddedInImageFn
+                                                       Element-71
+                                                       Image-1)
+                                                      (ElementInImageFn
+                                                       Element-70
+                                                       Image-1)))
+(matchBetween (changeBetweenImagesFromTo
+               (RemovedShape (ElementInImageFn Element-2 Image-2))
+               (AddedShapeTypeFnStrictShapeTypeFn01
+                (ElementInImageFn Element-2 Image-1))
+               Image-2 Image-1) (changeBetweenImagesFromTo
+                                 (RemovedShape
+                                  (ElementInImageFn
+                                   Element-71
+                                   Image-2))
+                                 (AddedShapeTypeFnStrictShapeTypeFn20
+                                  (ElementInImageFn
+                                   Element-71
+                                   Image-1))
+                                 Image-2
+                                 Image-1))
+(matchBetween (AddedShapeTypeFnStrictShapeTypeFn01
+               (ElementInImageFn Element-2
+                Image-1)) (AddedShapeTypeFnStrictShapeTypeFn20
+                           (ElementInImageFn Element-71 Image-1)))
+(matchBetween (RemovedShape
+               (ElementInImageFn Element-2 Image-2)) (RemovedShape
+                                                      (ElementInImageFn
+                                                       Element-71
+                                                       Image-2)))
+(matchBetween (ElementInImageFn Element-2 Image-2) (ElementInImageFn
+                                                    Element-71
+                                                    Image-2))
+(matchBetween (ElementInImageFn Element-2 Image-1) (ElementInImageFn
+                                                    Element-71
+                                                    Image-1))
+(matchBetween Element-2 Element-71)
+(matchBetween (ElementInARowFn1 Image-2) (ElementInARowFn1 Image-2))
+(matchBetween Image-2 Image-2)

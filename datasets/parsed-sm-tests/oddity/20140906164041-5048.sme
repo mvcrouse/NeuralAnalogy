@@ -1,0 +1,71 @@
+(convexAngleBetweenEdges Edge-3423 Edge-3424)
+(convexAngleBetweenEdges Edge-3424 Edge-3425)
+(convexAngleBetweenEdges Edge-3425 Edge-3423)
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-3425 Edge-3423)
+ (convexAngleBetweenEdges Edge-3423 Edge-3424))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-3424 Edge-3425)
+ (convexAngleBetweenEdges Edge-3425 Edge-3423))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-3423 Edge-3424)
+ (convexAngleBetweenEdges Edge-3424 Edge-3425))
+(PerceptualEdge Edge-3425)
+(StraightEdge Edge-3425)
+(PerceptualEdge Edge-3424)
+(StraightEdge Edge-3424)
+(PerceptualEdge Edge-3423)
+(StraightEdge Edge-3423)
++++++++++++
+(StraightEdge Edge-3426)
+(StraightEdge Edge-3427)
+(StraightEdge Edge-3428)
+(PerceptualEdge Edge-3426)
+(PerceptualEdge Edge-3427)
+(PerceptualEdge Edge-3428)
+(convexAngleBetweenEdges Edge-3428 Edge-3427)
+(convexAngleBetweenEdges Edge-3427 Edge-3426)
+(convexAngleBetweenEdges Edge-3426 Edge-3428)
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-3428 Edge-3427)
+ (convexAngleBetweenEdges Edge-3427 Edge-3426))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-3426 Edge-3428)
+ (convexAngleBetweenEdges Edge-3428 Edge-3427))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-3427 Edge-3426)
+ (convexAngleBetweenEdges Edge-3426 Edge-3428))
++++++++++++
+(matchBetween Edge-3424 Edge-3428)
+(matchBetween (PerceptualEdge Edge-3424) (PerceptualEdge Edge-3428))
+(matchBetween (StraightEdge Edge-3423) (StraightEdge Edge-3426))
+(matchBetween (StraightEdge Edge-3425) (StraightEdge Edge-3427))
+(matchBetween (convexAngleBetweenEdges Edge-3425
+               Edge-3423) (convexAngleBetweenEdges Edge-3427 Edge-3426))
+(matchBetween (cycleAdjacentAngles
+               (convexAngleBetweenEdges Edge-3424 Edge-3425)
+               (convexAngleBetweenEdges Edge-3425
+                Edge-3423)) (cycleAdjacentAngles
+                             (convexAngleBetweenEdges Edge-3428
+                              Edge-3427)
+                             (convexAngleBetweenEdges Edge-3427
+                              Edge-3426)))
+(matchBetween (cycleAdjacentAngles
+               (convexAngleBetweenEdges Edge-3425 Edge-3423)
+               (convexAngleBetweenEdges Edge-3423
+                Edge-3424)) (cycleAdjacentAngles
+                             (convexAngleBetweenEdges Edge-3427
+                              Edge-3426)
+                             (convexAngleBetweenEdges Edge-3426
+                              Edge-3428)))
+(matchBetween (cycleAdjacentAngles
+               (convexAngleBetweenEdges Edge-3423 Edge-3424)
+               (convexAngleBetweenEdges Edge-3424
+                Edge-3425)) (cycleAdjacentAngles
+                             (convexAngleBetweenEdges Edge-3426
+                              Edge-3428)
+                             (convexAngleBetweenEdges Edge-3428
+                              Edge-3427)))
+(matchBetween (convexAngleBetweenEdges Edge-3423
+               Edge-3424) (convexAngleBetweenEdges Edge-3426 Edge-3428))
+(matchBetween (convexAngleBetweenEdges Edge-3424
+               Edge-3425) (convexAngleBetweenEdges Edge-3428 Edge-3427))
+(matchBetween (StraightEdge Edge-3424) (StraightEdge Edge-3428))
+(matchBetween (PerceptualEdge Edge-3425) (PerceptualEdge Edge-3427))
+(matchBetween Edge-3425 Edge-3427)
+(matchBetween (PerceptualEdge Edge-3423) (PerceptualEdge Edge-3426))
+(matchBetween Edge-3423 Edge-3426)

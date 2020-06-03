@@ -1,0 +1,611 @@
+(ideal-gas ideal-co2)
+(tout-isentropic turbine1)
+(r ideal-co2)
+(spec-s t1-in)
+(p t1-out)
+(p t1-in)
+(delta-h turbine1)
+(shaft-work turbine1)
+(gas t1-in)
+(gas t1-out)
+(substance-of t1-in ideal-co2)
+(substance-of t1-out ideal-co2)
+(isentropic turbine1)
+(adiabatic turbine1)
+(thermodynamic-stuff t1-in)
+(thermodynamic-stuff t1-out)
+(turbine turbine1 t1-in t1-out)
+(q turbine1)
+(- (q turbine1) (delta-h turbine1))
+(- (h t1-out) (h t1-in))
+(- (* (cp ideal-co2) (log (t t1-in))) (* (r ideal-co2) (log (p t1-in))))
+(- (* (cp ideal-co2) (log (tout-isentropic turbine1)))
+   (* (r ideal-co2) (log (p t1-out))))
+(= (shaft-work turbine1) (- (q turbine1) (delta-h turbine1)))
+(= (delta-h turbine1) (- (h t1-out) (h t1-in)))
+(= (spec-h t1-in) (/ (h t1-in) (mass-flow t1-in)))
+(= (spec-h t1-in) (* (cp ideal-co2) (t t1-in)))
+(= (spec-s t1-in)
+   (- (* (cp ideal-co2) (log (t t1-in)))
+      (* (r ideal-co2) (log (p t1-in)))))
+(= (spec-s t1-in)
+   (- (* (cp ideal-co2) (log (tout-isentropic turbine1)))
+      (* (r ideal-co2) (log (p t1-out)))))
+(= (t t1-out) (tout-isentropic turbine1))
+(= (spec-h t1-out) (/ (h t1-out) (mass-flow t1-out)))
+(= (mass-flow t1-in) (mass-flow t1-out))
+(= (spec-h t1-out) (* (cp ideal-co2) (t t1-out)))
+(equation (= (shaft-work turbine1) (- (q turbine1) (delta-h turbine1))))
+(equation (= (delta-h turbine1) (- (h t1-out) (h t1-in))))
+(equation (= (spec-h t1-in) (/ (h t1-in) (mass-flow t1-in))))
+(equation (= (spec-h t1-in) (* (cp ideal-co2) (t t1-in))))
+(equation
+ (= (spec-s t1-in)
+    (- (* (cp ideal-co2) (log (t t1-in)))
+       (* (r ideal-co2) (log (p t1-in))))))
+(equation
+ (= (spec-s t1-in)
+    (- (* (cp ideal-co2) (log (tout-isentropic turbine1)))
+       (* (r ideal-co2) (log (p t1-out))))))
+(equation (= (t t1-out) (tout-isentropic turbine1)))
+(equation (= (spec-h t1-out) (/ (h t1-out) (mass-flow t1-out))))
+(equation (= (mass-flow t1-in) (mass-flow t1-out)))
+(equation (= (spec-h t1-out) (* (cp ideal-co2) (t t1-out))))
+(nvalue (shaft-work turbine1) 8.0331864e+7)
+(nvalue (delta-h turbine1) -8.0331864e+7)
+(nvalue (q turbine1) 0.0)
+(nvalue (h t1-out) 1.1847395e+8)
+(nvalue (h t1-in) 1.9880581e+8)
+(nvalue (spec-h t1-in) 397611.62)
+(nvalue (mass-flow t1-in) 500.0)
+(nvalue (t t1-in) 473.15)
+(nvalue (cp ideal-co2) 840.35004)
+(nvalue (spec-s t1-in) 2566.093)
+(nvalue (p t1-in) 1000000.0)
+(nvalue (r ideal-co2) 188.9159)
+(nvalue (tout-isentropic turbine1) 281.96335)
+(nvalue (p t1-out) 100000.0)
+(nvalue (t t1-out) 281.96335)
+(nvalue (spec-h t1-out) 236947.9)
+(nvalue (mass-flow t1-out) 500.0)
+(and (nvalue (delta-h turbine1) -8.0331864e+7)
+     (nvalue (q turbine1) 0.0)
+     (equation
+      (= (shaft-work turbine1) (- (q turbine1) (delta-h turbine1)))))
+(and (nvalue (h t1-out) 1.1847395e+8) (nvalue (h t1-in) 1.9880581e+8)
+     (equation (= (delta-h turbine1) (- (h t1-out) (h t1-in)))))
+(and (nvalue (spec-h t1-in) 397611.62) (nvalue (mass-flow t1-in) 500.0)
+     (equation (= (spec-h t1-in) (/ (h t1-in) (mass-flow t1-in)))))
+(and (substance-of t1-in ideal-co2) (ideal-gas ideal-co2))
+(and (nvalue (t t1-in) 473.15)
+     (equation (= (spec-h t1-in) (* (cp ideal-co2) (t t1-in))))
+     (nvalue (cp ideal-co2) 840.35004))
+(and (nvalue (t t1-in) 473.15) (nvalue (p t1-in) 1000000.0)
+     (equation
+      (= (spec-s t1-in)
+         (- (* (cp ideal-co2) (log (t t1-in)))
+            (* (r ideal-co2) (log (p t1-in))))))
+     (nvalue (cp ideal-co2) 840.35004) (nvalue (r ideal-co2) 188.9159))
+(and (substance-of t1-in ideal-co2) (gas t1-in) (gas t1-out)
+     (turbine turbine1 t1-in t1-out) (ideal-gas ideal-co2))
+(and (nvalue (spec-s t1-in) 2566.093) (nvalue (p t1-out) 100000.0)
+     (equation
+      (= (spec-s t1-in)
+         (- (* (cp ideal-co2) (log (tout-isentropic turbine1)))
+            (* (r ideal-co2) (log (p t1-out))))))
+     (nvalue (cp ideal-co2) 840.35004) (nvalue (r ideal-co2) 188.9159))
+(and (isentropic turbine1) (turbine turbine1 t1-in t1-out))
+(and (equation (= (t t1-out) (tout-isentropic turbine1)))
+     (nvalue (tout-isentropic turbine1) 281.96335))
+(and (nvalue (spec-h t1-out) 236947.9)
+     (nvalue (mass-flow t1-out) 500.0)
+     (equation (= (spec-h t1-out) (/ (h t1-out) (mass-flow t1-out)))))
+(and (nvalue (mass-flow t1-in) 500.0)
+     (equation (= (mass-flow t1-in) (mass-flow t1-out))))
+(and (substance-of t1-out ideal-co2) (ideal-gas ideal-co2))
+(and (nvalue (t t1-out) 281.96335)
+     (equation (= (spec-h t1-out) (* (cp ideal-co2) (t t1-out))))
+     (nvalue (cp ideal-co2) 840.35004))
+(h t1-out)
+(h t1-in)
+(spec-h t1-in)
+(spec-h t1-out)
+(mass-flow t1-in)
+(mass-flow t1-out)
+(/ (h t1-in) (mass-flow t1-in))
+(/ (h t1-out) (mass-flow t1-out))
+(cp ideal-co2)
+(t t1-in)
+(t t1-out)
+(* (cp ideal-co2) (t t1-in))
+(* (cp ideal-co2) (log (t t1-in)))
+(* (r ideal-co2) (log (p t1-in)))
+(* (cp ideal-co2) (log (tout-isentropic turbine1)))
+(* (r ideal-co2) (log (p t1-out)))
+(* (cp ideal-co2) (t t1-out))
+(log (t t1-in))
+(log (p t1-in))
+(log (tout-isentropic turbine1))
+(log (p t1-out))
+(derived-by (nvalue (q turbine1) 0.0) (adiabatic turbine1))
+(derived-by (nvalue (spec-h t1-out) 236947.9)
+ (and (nvalue (t t1-out) 281.96335)
+      (equation (= (spec-h t1-out) (* (cp ideal-co2) (t t1-out))))
+      (nvalue (cp ideal-co2) 840.35004)))
+(implies (and (substance-of t1-out ideal-co2) (ideal-gas ideal-co2))
+ (equation (= (spec-h t1-out) (* (cp ideal-co2) (t t1-out)))))
+(derived-by (nvalue (mass-flow t1-out) 500.0)
+ (and (nvalue (mass-flow t1-in) 500.0)
+      (equation (= (mass-flow t1-in) (mass-flow t1-out)))))
+(implies (thermodynamic-stuff t1-out)
+ (equation (= (spec-h t1-out) (/ (h t1-out) (mass-flow t1-out)))))
+(derived-by (nvalue (h t1-out) 1.1847395e+8)
+ (and (nvalue (spec-h t1-out) 236947.9)
+      (nvalue (mass-flow t1-out) 500.0)
+      (equation (= (spec-h t1-out) (/ (h t1-out) (mass-flow t1-out))))))
+(derived-by (nvalue (t t1-out) 281.96335)
+ (and (equation (= (t t1-out) (tout-isentropic turbine1)))
+      (nvalue (tout-isentropic turbine1) 281.96335)))
+(implies (and (isentropic turbine1) (turbine turbine1 t1-in t1-out))
+ (equation (= (t t1-out) (tout-isentropic turbine1))))
+(derived-by (nvalue (tout-isentropic turbine1) 281.96335)
+ (and (nvalue (spec-s t1-in) 2566.093) (nvalue (p t1-out) 100000.0)
+      (equation
+       (= (spec-s t1-in)
+          (- (* (cp ideal-co2) (log (tout-isentropic turbine1)))
+             (* (r ideal-co2) (log (p t1-out))))))
+      (nvalue (cp ideal-co2) 840.35004)
+      (nvalue (r ideal-co2) 188.9159)))
+(implies
+ (and (substance-of t1-in ideal-co2) (gas t1-in) (gas t1-out)
+      (turbine turbine1 t1-in t1-out) (ideal-gas ideal-co2))
+ (equation
+  (= (spec-s t1-in)
+     (- (* (cp ideal-co2) (log (tout-isentropic turbine1)))
+        (* (r ideal-co2) (log (p t1-out)))))))
+(given (nvalue (t t1-in) 473.15))
+(implies (and (substance-of t1-in ideal-co2) (ideal-gas ideal-co2))
+ (equation
+  (= (spec-s t1-in)
+     (- (* (cp ideal-co2) (log (t t1-in)))
+        (* (r ideal-co2) (log (p t1-in)))))))
+(derived-by (nvalue (spec-s t1-in) 2566.093)
+ (and (nvalue (t t1-in) 473.15) (nvalue (p t1-in) 1000000.0)
+      (equation
+       (= (spec-s t1-in)
+          (- (* (cp ideal-co2) (log (t t1-in)))
+             (* (r ideal-co2) (log (p t1-in))))))
+      (nvalue (cp ideal-co2) 840.35004)
+      (nvalue (r ideal-co2) 188.9159)))
+(derived-by (nvalue (spec-h t1-in) 397611.62)
+ (and (nvalue (t t1-in) 473.15)
+      (equation (= (spec-h t1-in) (* (cp ideal-co2) (t t1-in))))
+      (nvalue (cp ideal-co2) 840.35004)))
+(implies (and (substance-of t1-in ideal-co2) (ideal-gas ideal-co2))
+ (equation (= (spec-h t1-in) (* (cp ideal-co2) (t t1-in)))))
+(implies (thermodynamic-stuff t1-in)
+ (equation (= (spec-h t1-in) (/ (h t1-in) (mass-flow t1-in)))))
+(derived-by (nvalue (h t1-in) 1.9880581e+8)
+ (and (nvalue (spec-h t1-in) 397611.62)
+      (nvalue (mass-flow t1-in) 500.0)
+      (equation (= (spec-h t1-in) (/ (h t1-in) (mass-flow t1-in))))))
+(derived-by (nvalue (delta-h turbine1) -8.0331864e+7)
+ (and (nvalue (h t1-out) 1.1847395e+8) (nvalue (h t1-in) 1.9880581e+8)
+      (equation (= (delta-h turbine1) (- (h t1-out) (h t1-in))))))
+(implies (turbine turbine1 t1-in t1-out)
+ (equation (= (delta-h turbine1) (- (h t1-out) (h t1-in)))))
+(derived-by (nvalue (shaft-work turbine1) 8.0331864e+7)
+ (and (nvalue (delta-h turbine1) -8.0331864e+7)
+      (nvalue (q turbine1) 0.0)
+      (equation
+       (= (shaft-work turbine1) (- (q turbine1) (delta-h turbine1))))))
+(implies (turbine turbine1 t1-in t1-out)
+ (equation
+  (= (shaft-work turbine1) (- (q turbine1) (delta-h turbine1)))))
+(thermodynamic-cycle cycle)
+(fluid-flow t1-in t1-out)
+(expansion t1-in t1-out turbine1)
++++++++++++
+(thermodynamic-cycle cycle)
+(turbine turbine2 t2-in t2-out)
+(thermodynamic-stuff t2-out)
+(thermodynamic-stuff t2-in)
+(fluid-flow t2-in t2-out)
+(expansion t2-in t2-out turbine2)
+(adiabatic turbine2)
+(isentropic turbine2)
+(substance-of t2-out air)
+(substance-of t2-in air)
+(gas t2-out)
+(gas t2-in)
+(mass-flow t2-in)
+(mass-flow t2-out)
+(nvalue (mass-flow t2-in) 0.5)
+(nvalue (p t2-in) 500000.0)
+(nvalue (t t2-out) 373.15)
+(nvalue (p t2-out) 200000.0)
+(given (nvalue (mass-flow t2-in) 0.5))
+(given (nvalue (p t2-in) 500000.0))
+(given (nvalue (t t2-out) 373.15))
+(given (nvalue (p t2-out) 200000.0))
+(p t2-in)
+(p t2-out)
+(t t2-out)
+(t t2-in)
+(work-flows-out cycle)
+(shaft-work turbine2)
+(the-set (shaft-work turbine2))
+(members (work-flows-out cycle) (the-set (shaft-work turbine2)))
+(and (members (work-flows-out cycle) (the-set (shaft-work turbine2)))
+     (thermodynamic-cycle cycle))
+(work-out cycle)
+(+ (shaft-work turbine2))
+(+ (work-in cycle) (work-out cycle))
+(+ (q-in cycle) (q-out cycle))
+(= (work-out cycle) (+ (shaft-work turbine2)))
+(= (net-work cycle) (+ (work-in cycle) (work-out cycle)))
+(= (net-q cycle) (+ (q-in cycle) (q-out cycle)))
+(= (shaft-work turbine2) (- (q turbine2) (delta-h turbine2)))
+(= (delta-h turbine2) (- (h t2-out) (h t2-in)))
+(= (spec-h t2-in) (/ (h t2-in) (mass-flow t2-in)))
+(= (spec-h t2-in) (* (cp air) (t t2-in)))
+(= (spec-s t2-in)
+   (- (* (cp air) (log (t t2-in))) (* (r air) (log (p t2-in)))))
+(= (spec-s t2-in)
+   (- (* (cp air) (log (tout-isentropic turbine2)))
+      (* (r air) (log (p t2-out)))))
+(= (t t2-out) (tout-isentropic turbine2))
+(= (spec-h t2-out) (/ (h t2-out) (mass-flow t2-out)))
+(= (mass-flow t2-in) (mass-flow t2-out))
+(= (spec-h t2-out) (* (cp air) (t t2-out)))
+(equation (= (work-out cycle) (+ (shaft-work turbine2))))
+(equation (= (net-work cycle) (+ (work-in cycle) (work-out cycle))))
+(equation (= (net-q cycle) (+ (q-in cycle) (q-out cycle))))
+(equation (= (shaft-work turbine2) (- (q turbine2) (delta-h turbine2))))
+(equation (= (delta-h turbine2) (- (h t2-out) (h t2-in))))
+(equation (= (spec-h t2-in) (/ (h t2-in) (mass-flow t2-in))))
+(equation (= (spec-h t2-in) (* (cp air) (t t2-in))))
+(equation
+ (= (spec-s t2-in)
+    (- (* (cp air) (log (t t2-in))) (* (r air) (log (p t2-in))))))
+(equation
+ (= (spec-s t2-in)
+    (- (* (cp air) (log (tout-isentropic turbine2)))
+       (* (r air) (log (p t2-out))))))
+(equation (= (t t2-out) (tout-isentropic turbine2)))
+(equation (= (spec-h t2-out) (/ (h t2-out) (mass-flow t2-out))))
+(equation (= (mass-flow t2-in) (mass-flow t2-out)))
+(equation (= (spec-h t2-out) (* (cp air) (t t2-out))))
+(implies
+ (and (members (work-flows-out cycle) (the-set (shaft-work turbine2)))
+      (thermodynamic-cycle cycle))
+ (equation (= (work-out cycle) (+ (shaft-work turbine2)))))
+(implies (thermodynamic-cycle cycle)
+ (equation (= (net-work cycle) (+ (work-in cycle) (work-out cycle)))))
+(implies (thermodynamic-cycle cycle)
+ (equation (= (net-q cycle) (+ (q-in cycle) (q-out cycle)))))
+(net-work cycle)
+(work-in cycle)
+(net-q cycle)
+(q-in cycle)
+(q-out cycle)
+(goal-parameter (shaft-work turbine2))
+(q turbine2)
+(delta-h turbine2)
+(- (q turbine2) (delta-h turbine2))
+(- (h t2-out) (h t2-in))
+(- (* (cp air) (log (t t2-in))) (* (r air) (log (p t2-in))))
+(- (* (cp air) (log (tout-isentropic turbine2)))
+   (* (r air) (log (p t2-out))))
+(h t2-out)
+(h t2-in)
+(spec-h t2-in)
+(spec-h t2-out)
+(/ (h t2-in) (mass-flow t2-in))
+(/ (h t2-out) (mass-flow t2-out))
+(cp air)
+(* (cp air) (t t2-in))
+(* (cp air) (log (t t2-in)))
+(* (r air) (log (p t2-in)))
+(* (cp air) (log (tout-isentropic turbine2)))
+(* (r air) (log (p t2-out)))
+(* (cp air) (t t2-out))
+(spec-s t2-in)
+(log (t t2-in))
+(log (p t2-in))
+(log (tout-isentropic turbine2))
+(log (p t2-out))
+(r air)
+(tout-isentropic turbine2)
++++++++++++
+(matchBetween (* (cp ideal-co2) (t t1-out)) (* (cp air) (t t2-out)))
+(matchBetween (= (spec-h t1-out) (* (cp ideal-co2) (t t1-out))) (=
+                                                                 (spec-h
+                                                                  t2-out)
+                                                                 (*
+                                                                  (cp
+                                                                   air)
+                                                                  (t
+                                                                   t2-out))))
+(matchBetween (equation
+               (= (spec-h t1-out)
+                  (* (cp ideal-co2) (t t1-out)))) (equation
+                                                   (=
+                                                    (spec-h t2-out)
+                                                    (*
+                                                     (cp air)
+                                                     (t t2-out)))))
+(matchBetween (= (mass-flow t1-in) (mass-flow t1-out)) (=
+                                                        (mass-flow
+                                                         t2-in)
+                                                        (mass-flow
+                                                         t2-out)))
+(matchBetween (equation
+               (= (mass-flow t1-in) (mass-flow t1-out))) (equation
+                                                          (=
+                                                           (mass-flow
+                                                            t2-in)
+                                                           (mass-flow
+                                                            t2-out))))
+(matchBetween (mass-flow t1-out) (mass-flow t2-out))
+(matchBetween (/ (h t1-out) (mass-flow t1-out)) (/
+                                                 (h t2-out)
+                                                 (mass-flow t2-out)))
+(matchBetween (spec-h t1-out) (spec-h t2-out))
+(matchBetween (= (spec-h t1-out) (/ (h t1-out) (mass-flow t1-out))) (=
+                                                                     (spec-h
+                                                                      t2-out)
+                                                                     (/
+                                                                      (h
+                                                                       t2-out)
+                                                                      (mass-flow
+                                                                       t2-out))))
+(matchBetween (equation
+               (= (spec-h t1-out)
+                  (/ (h t1-out) (mass-flow t1-out)))) (equation
+                                                       (=
+                                                        (spec-h t2-out)
+                                                        (/
+                                                         (h t2-out)
+                                                         (mass-flow
+                                                          t2-out)))))
+(matchBetween (= (t t1-out) (tout-isentropic turbine1)) (=
+                                                         (t t2-out)
+                                                         (tout-isentropic
+                                                          turbine2)))
+(matchBetween (equation
+               (= (t t1-out) (tout-isentropic turbine1))) (equation
+                                                           (=
+                                                            (t t2-out)
+                                                            (tout-isentropic
+                                                             turbine2))))
+(matchBetween (log (p t1-out)) (log (p t2-out)))
+(matchBetween (tout-isentropic turbine1) (tout-isentropic turbine2))
+(matchBetween (log (tout-isentropic turbine1)) (log
+                                                (tout-isentropic
+                                                 turbine2)))
+(matchBetween (* (r ideal-co2) (log (p t1-out))) (*
+                                                  (r air)
+                                                  (log (p t2-out))))
+(matchBetween (* (cp ideal-co2) (log (tout-isentropic turbine1))) (*
+                                                                   (cp
+                                                                    air)
+                                                                   (log
+                                                                    (tout-isentropic
+                                                                     turbine2))))
+(matchBetween (- (* (cp ideal-co2) (log (tout-isentropic turbine1)))
+                 (* (r ideal-co2) (log (p t1-out)))) (-
+                                                      (*
+                                                       (cp air)
+                                                       (log
+                                                        (tout-isentropic
+                                                         turbine2)))
+                                                      (*
+                                                       (r air)
+                                                       (log
+                                                        (p t2-out)))))
+(matchBetween (= (spec-s t1-in)
+                 (- (* (cp ideal-co2) (log (tout-isentropic turbine1)))
+                    (* (r ideal-co2) (log (p t1-out))))) (=
+                                                          (spec-s
+                                                           t2-in)
+                                                          (-
+                                                           (*
+                                                            (cp air)
+                                                            (log
+                                                             (tout-isentropic
+                                                              turbine2)))
+                                                           (*
+                                                            (r air)
+                                                            (log
+                                                             (p
+                                                              t2-out))))))
+(matchBetween (equation
+               (= (spec-s t1-in)
+                  (- (* (cp ideal-co2)
+                        (log (tout-isentropic turbine1)))
+                     (* (r ideal-co2) (log (p t1-out)))))) (equation
+                                                            (=
+                                                             (spec-s
+                                                              t2-in)
+                                                             (-
+                                                              (*
+                                                               (cp air)
+                                                               (log
+                                                                (tout-isentropic
+                                                                 turbine2)))
+                                                              (*
+                                                               (r air)
+                                                               (log
+                                                                (p
+                                                                 t2-out)))))))
+(matchBetween 281.96335 373.15)
+(matchBetween (t t1-out) (t t2-out))
+(matchBetween (nvalue (t t1-out) 281.96335) (nvalue (t t2-out) 373.15))
+(matchBetween (r ideal-co2) (r air))
+(matchBetween (spec-s t1-in) (spec-s t2-in))
+(matchBetween (log (p t1-in)) (log (p t2-in)))
+(matchBetween (log (t t1-in)) (log (t t2-in)))
+(matchBetween (* (r ideal-co2) (log (p t1-in))) (*
+                                                 (r air)
+                                                 (log (p t2-in))))
+(matchBetween (* (cp ideal-co2) (log (t t1-in))) (*
+                                                  (cp air)
+                                                  (log (t t2-in))))
+(matchBetween (- (* (cp ideal-co2) (log (t t1-in)))
+                 (* (r ideal-co2) (log (p t1-in)))) (-
+                                                     (*
+                                                      (cp air)
+                                                      (log (t t2-in)))
+                                                     (*
+                                                      (r air)
+                                                      (log (p t2-in)))))
+(matchBetween (= (spec-s t1-in)
+                 (- (* (cp ideal-co2) (log (t t1-in)))
+                    (* (r ideal-co2) (log (p t1-in))))) (=
+                                                         (spec-s t2-in)
+                                                         (-
+                                                          (*
+                                                           (cp air)
+                                                           (log
+                                                            (t t2-in)))
+                                                          (*
+                                                           (r air)
+                                                           (log
+                                                            (p
+                                                             t2-in))))))
+(matchBetween (equation
+               (= (spec-s t1-in)
+                  (- (* (cp ideal-co2) (log (t t1-in)))
+                     (* (r ideal-co2) (log (p t1-in)))))) (equation
+                                                           (=
+                                                            (spec-s
+                                                             t2-in)
+                                                            (-
+                                                             (*
+                                                              (cp air)
+                                                              (log
+                                                               (t
+                                                                t2-in)))
+                                                             (*
+                                                              (r air)
+                                                              (log
+                                                               (p
+                                                                t2-in)))))))
+(matchBetween 100000.0 200000.0)
+(matchBetween (nvalue (p t1-out) 100000.0) (nvalue (p t2-out) 200000.0))
+(matchBetween (cp ideal-co2) (cp air))
+(matchBetween (t t1-in) (t t2-in))
+(matchBetween (* (cp ideal-co2) (t t1-in)) (* (cp air) (t t2-in)))
+(matchBetween (= (spec-h t1-in) (* (cp ideal-co2) (t t1-in))) (=
+                                                               (spec-h
+                                                                t2-in)
+                                                               (*
+                                                                (cp
+                                                                 air)
+                                                                (t
+                                                                 t2-in))))
+(matchBetween (equation
+               (= (spec-h t1-in)
+                  (* (cp ideal-co2) (t t1-in)))) (equation
+                                                  (=
+                                                   (spec-h t2-in)
+                                                   (*
+                                                    (cp air)
+                                                    (t t2-in)))))
+(matchBetween 1000000.0 500000.0)
+(matchBetween (nvalue (p t1-in) 1000000.0) (nvalue (p t2-in) 500000.0))
+(matchBetween (spec-h t1-in) (spec-h t2-in))
+(matchBetween (/ (h t1-in) (mass-flow t1-in)) (/
+                                               (h t2-in)
+                                               (mass-flow t2-in)))
+(matchBetween (= (spec-h t1-in) (/ (h t1-in) (mass-flow t1-in))) (=
+                                                                  (spec-h
+                                                                   t2-in)
+                                                                  (/
+                                                                   (h
+                                                                    t2-in)
+                                                                   (mass-flow
+                                                                    t2-in))))
+(matchBetween (equation
+               (= (spec-h t1-in)
+                  (/ (h t1-in) (mass-flow t1-in)))) (equation
+                                                     (=
+                                                      (spec-h t2-in)
+                                                      (/
+                                                       (h t2-in)
+                                                       (mass-flow
+                                                        t2-in)))))
+(matchBetween (h t1-in) (h t2-in))
+(matchBetween (h t1-out) (h t2-out))
+(matchBetween (- (h t1-out) (h t1-in)) (- (h t2-out) (h t2-in)))
+(matchBetween (= (delta-h turbine1) (- (h t1-out) (h t1-in))) (=
+                                                               (delta-h
+                                                                turbine2)
+                                                               (-
+                                                                (h
+                                                                 t2-out)
+                                                                (h
+                                                                 t2-in))))
+(matchBetween (equation
+               (= (delta-h turbine1)
+                  (- (h t1-out) (h t1-in)))) (equation
+                                              (=
+                                               (delta-h turbine2)
+                                               (-
+                                                (h t2-out)
+                                                (h t2-in)))))
+(matchBetween (mass-flow t1-in) (mass-flow t2-in))
+(matchBetween 500.0 0.5)
+(matchBetween (nvalue (mass-flow t1-in) 500.0) (nvalue
+                                                (mass-flow t2-in)
+                                                0.5))
+(matchBetween (q turbine1) (q turbine2))
+(matchBetween (delta-h turbine1) (delta-h turbine2))
+(matchBetween (- (q turbine1) (delta-h turbine1)) (-
+                                                   (q turbine2)
+                                                   (delta-h turbine2)))
+(matchBetween (= (shaft-work turbine1)
+                 (- (q turbine1) (delta-h turbine1))) (=
+                                                       (shaft-work
+                                                        turbine2)
+                                                       (-
+                                                        (q turbine2)
+                                                        (delta-h
+                                                         turbine2))))
+(matchBetween (equation
+               (= (shaft-work turbine1)
+                  (- (q turbine1) (delta-h turbine1)))) (equation
+                                                         (=
+                                                          (shaft-work
+                                                           turbine2)
+                                                          (-
+                                                           (q turbine2)
+                                                           (delta-h
+                                                            turbine2)))))
+(matchBetween turbine1 turbine2)
+(matchBetween (adiabatic turbine1) (adiabatic turbine2))
+(matchBetween (shaft-work turbine1) (shaft-work turbine2))
+(matchBetween t1-out t2-out)
+(matchBetween (thermodynamic-stuff t1-out) (thermodynamic-stuff t2-out))
+(matchBetween (gas t1-out) (gas t2-out))
+(matchBetween (p t1-in) (p t2-in))
+(matchBetween (substance-of t1-out ideal-co2) (substance-of t2-out air))
+(matchBetween (turbine turbine1 t1-in t1-out) (turbine
+                                               turbine2
+                                               t2-in
+                                               t2-out))
+(matchBetween (expansion t1-in t1-out turbine1) (expansion
+                                                 t2-in
+                                                 t2-out
+                                                 turbine2))
+(matchBetween (fluid-flow t1-in t1-out) (fluid-flow t2-in t2-out))
+(matchBetween (substance-of t1-in ideal-co2) (substance-of t2-in air))
+(matchBetween ideal-co2 air)
+(matchBetween (p t1-out) (p t2-out))
+(matchBetween (gas t1-in) (gas t2-in))
+(matchBetween (thermodynamic-stuff t1-in) (thermodynamic-stuff t2-in))
+(matchBetween t1-in t2-in)
+(matchBetween (isentropic turbine1) (isentropic turbine2))
+(matchBetween (thermodynamic-cycle cycle) (thermodynamic-cycle cycle))
+(matchBetween cycle cycle)

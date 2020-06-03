@@ -1,0 +1,43 @@
+(ShapeTypeFn0 Object-649)
+((ShapeTypeFn 1) Object-650)
+(narrowEdged Object-649)
+(wideEdged Object-650)
+(elementsIntersect Object-650 Object-649)
+(elementsOverlap Object-650 Object-649)
+(centeredOn Object-649 Object-650)
+(ObjectsBorderColoredFnBlackColor Object-649)
+(ObjectsBorderColoredFnBlackColor Object-650)
+(ObjectsColoredFnBlackColor Object-649)
++++++++++++
+(ObjectsColoredFnBlackColor Object-651)
+(ObjectsBorderColoredFnBlackColor Object-652)
+(ObjectsBorderColoredFnBlackColor Object-651)
+(centeredOn Object-651 Object-652)
+(elementsOverlap Object-652 Object-651)
+(elementsIntersect Object-652 Object-651)
+(wideEdged Object-652)
+(narrowEdged Object-651)
+((ShapeTypeFn 2) Object-652)
+(ShapeTypeFn0 Object-651)
++++++++++++
+(matchBetween (ObjectsBorderColoredFnBlackColor
+               Object-650) (ObjectsBorderColoredFnBlackColor
+                            Object-652))
+(matchBetween (narrowEdged Object-649) (narrowEdged Object-651))
+(matchBetween (ObjectsColoredFnBlackColor
+               Object-649) (ObjectsColoredFnBlackColor Object-651))
+(matchBetween (elementsOverlap Object-650 Object-649) (elementsOverlap
+                                                       Object-652
+                                                       Object-651))
+(matchBetween (centeredOn Object-649 Object-650) (centeredOn
+                                                  Object-651
+                                                  Object-652))
+(matchBetween (elementsIntersect Object-650
+               Object-649) (elementsIntersect Object-652 Object-651))
+(matchBetween (ObjectsBorderColoredFnBlackColor
+               Object-649) (ObjectsBorderColoredFnBlackColor
+                            Object-651))
+(matchBetween (ShapeTypeFn0 Object-649) (ShapeTypeFn0 Object-651))
+(matchBetween Object-649 Object-651)
+(matchBetween (wideEdged Object-650) (wideEdged Object-652))
+(matchBetween Object-650 Object-652)

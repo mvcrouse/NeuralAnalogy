@@ -1,0 +1,210 @@
+(sacredValueChoice ReRouteToCamp2)
+(sacredValueChoice notReRoute)
+(affectsSigLargerGroup ReRouteToCamp2)
+(affectsSigLargerGroup notReRoute)
+(uninferredSentence (affectsSigLargerGroup ReRouteToCamp2))
+(uninferredSentence (affectsSigLargerGroup notReRoute))
+(uninferredSentence (directlyResponsible you8115 notReRoute))
+(uninferredSentence (preventsAlternativeNegativeOutcome ReRouteToCamp2))
+(uninferredSentence
+ (usedAsMeansToPreventNegativeOutcome ReRouteToCamp2))
+(directlyResponsible you8115 ReRouteToCamp2)
+(directlyResponsible you8115 notReRoute)
+(preventsAlternativeNegativeOutcome ReRouteToCamp2)
+(usedAsMeansToPreventNegativeOutcome ReRouteToCamp2)
+(and (sacredValueChoice ReRouteToCamp2) (sacredValueChoice notReRoute)
+     (uninferredSentence (affectsSigLargerGroup ReRouteToCamp2))
+     (uninferredSentence (affectsSigLargerGroup notReRoute))
+     (directlyResponsible you8115 ReRouteToCamp2)
+     (uninferredSentence (directlyResponsible you8115 notReRoute))
+     (uninferredSentence
+      (preventsAlternativeNegativeOutcome ReRouteToCamp2))
+     (uninferredSentence
+      (usedAsMeansToPreventNegativeOutcome ReRouteToCamp2)))
+(rightChoice notReRoute)
+(chosenItem SendingTruckToCamp1OrCamp2 notReRoute)
+(chosenItem SendingTruckToCamp1OrCamp2 ReRouteToCamp2)
+(IntelligentAgent you8115)
+(RefugeeCamp Camp1)
+(RefugeeCamp Camp2)
+((GroupFn Person) PeopleInDangerInCamp1)
+((GroupFn Person) PeopleInDangerInCamp2)
+(Starvation PeopleDyingInCamp1)
+(Starvation PeopleDyingInCamp2)
+(Convoy TruckConvoy)
+(MovementEvent ReRouteToCamp2)
+(PreventingSomething preventingPeopleDyingInCamp1)
+(PreventingSomething preventingPeopleDyingInCamp2)
+(Inaction notReRoute)
+(SelectingSomething SendingTruckToCamp1OrCamp2)
+(groupCardinality PeopleInDangerInCamp1 100)
+(groupCardinality PeopleInDangerInCamp2 1000)
+(residesInRegion PeopleInDangerInCamp1 Camp1)
+(residesInRegion PeopleInDangerInCamp2 Camp2)
+(objectActedOn PeopleDyingInCamp1 PeopleInDangerInCamp1)
+(objectActedOn PeopleDyingInCamp2 PeopleInDangerInCamp2)
+(containedObject FoodTruck Food)
+(groupMemberType TruckConvoy FoodTruck)
+(objectActedOn ReRouteToCamp2 TruckConvoy)
+(toLocation ReRouteToCamp2 Camp2)
+(preventedProp preventingPeopleDyingInCamp1 PeopleDyingInCamp1)
+(preventedProp preventingPeopleDyingInCamp2 PeopleDyingInCamp2)
+(choices SendingTruckToCamp1OrCamp2 ReRouteToCamp2)
+(choices SendingTruckToCamp1OrCamp2 notReRoute)
+(performedBy ReRouteToCamp2 you8115)
+(performedBy notReRoute you8115)
+(causes-PropProp (chosenItem SendingTruckToCamp1OrCamp2 ReRouteToCamp2)
+ preventingPeopleDyingInCamp2)
+(causes-PropProp (chosenItem SendingTruckToCamp1OrCamp2 ReRouteToCamp2)
+ PeopleDyingInCamp1)
+(causes-PropProp (chosenItem SendingTruckToCamp1OrCamp2 notReRoute)
+ PeopleDyingInCamp2)
+(causes-PropProp (chosenItem SendingTruckToCamp1OrCamp2 notReRoute)
+ preventingPeopleDyingInCamp1)
+(implies
+ (and (sacredValueChoice ReRouteToCamp2) (sacredValueChoice notReRoute)
+      (uninferredSentence (affectsSigLargerGroup ReRouteToCamp2))
+      (uninferredSentence (affectsSigLargerGroup notReRoute))
+      (directlyResponsible you8115 ReRouteToCamp2)
+      (uninferredSentence (directlyResponsible you8115 notReRoute))
+      (uninferredSentence
+       (preventsAlternativeNegativeOutcome ReRouteToCamp2))
+      (uninferredSentence
+       (usedAsMeansToPreventNegativeOutcome ReRouteToCamp2)))
+ (rightChoice notReRoute))
+(makeDecision you8115 notReRoute)
++++++++++++
+((GroupFn MedicalPatient) CancerPatients)
+((GroupFn MedicalPatient) CancerPatientsGroup1)
+((GroupFn MedicalPatient) CancerPatientsGroup2)
+(IntelligentAgent you8116)
+(groupCardinality CancerPatientsGroup1 100)
+(groupCardinality CancerPatientsGroup2 1000)
+(subGroups CancerPatients CancerPatientsGroup1)
+(subGroups CancerPatients CancerPatientsGroup2)
+(Cancer cancer2)
+(Cancer cancer1)
+(Dying DyingCancerPatientsGroup1)
+(Dying DyingCancerPatientsGroup2)
+(objectActedOn DyingCancerPatientsGroup1 CancerPatientsGroup1)
+(objectActedOn DyingCancerPatientsGroup2 CancerPatientsGroup2)
+(DrugAdministrationRouteType cancerProgram1)
+(DrugAdministrationRouteType cancerProgram2)
+(diseaseTypeCurableByTreatmentType cancer1 cancerProgram1)
+(diseaseTypeCurableByTreatmentType cancer2 cancerProgram2)
+(PreventingSomething preventingDyingCancerPatientsGroup1)
+(PreventingSomething preventingDyingCancerPatientsGroup2)
+(preventedProp preventingDyingCancerPatientsGroup1
+ DyingCancerPatientsGroup1)
+(preventedProp preventingDyingCancerPatientsGroup2
+ DyingCancerPatientsGroup2)
+(Inaction notChangeProgram)
+(SelectingSomething ChangeOrNotChangeTheProgram)
+(choices ChangeOrNotChangeTheProgram applyProgram2)
+(choices ChangeOrNotChangeTheProgram notChangeProgram)
+(performedBy applyProgram2 you8116)
+(performedBy notChangeProgram you8116)
+(chosenItem ChangeOrNotChangeTheProgram applyProgram2)
+(chosenItem ChangeOrNotChangeTheProgram notChangeProgram)
+(causes-PropProp (chosenItem ChangeOrNotChangeTheProgram applyProgram2)
+ preventingDyingCancerPatientsGroup2)
+(causes-PropProp (chosenItem ChangeOrNotChangeTheProgram applyProgram2)
+ DyingCancerPatientsGroup1)
+(causes-PropProp
+ (chosenItem ChangeOrNotChangeTheProgram notChangeProgram)
+ DyingCancerPatientsGroup2)
+(causes-PropProp
+ (chosenItem ChangeOrNotChangeTheProgram notChangeProgram)
+ preventingDyingCancerPatientsGroup1)
++++++++++++
+(matchBetween preventingPeopleDyingInCamp2 preventingDyingCancerPatientsGroup2)
+(matchBetween (PreventingSomething
+               preventingPeopleDyingInCamp2) (PreventingSomething
+                                              preventingDyingCancerPatientsGroup2))
+(matchBetween PeopleInDangerInCamp2 CancerPatientsGroup2)
+(matchBetween 1000 1000)
+(matchBetween (groupCardinality PeopleInDangerInCamp2
+               1000) (groupCardinality CancerPatientsGroup2 1000))
+(matchBetween PeopleDyingInCamp2 DyingCancerPatientsGroup2)
+(matchBetween (objectActedOn PeopleDyingInCamp2
+               PeopleInDangerInCamp2) (objectActedOn
+                                       DyingCancerPatientsGroup2
+                                       CancerPatientsGroup2))
+(matchBetween (preventedProp preventingPeopleDyingInCamp2
+               PeopleDyingInCamp2) (preventedProp
+                                    preventingDyingCancerPatientsGroup2
+                                    DyingCancerPatientsGroup2))
+(matchBetween notReRoute notChangeProgram)
+(matchBetween (Inaction notReRoute) (Inaction notChangeProgram))
+(matchBetween (performedBy notReRoute you8115) (performedBy
+                                                notChangeProgram
+                                                you8116))
+(matchBetween (choices SendingTruckToCamp1OrCamp2
+               ReRouteToCamp2) (choices
+                                ChangeOrNotChangeTheProgram
+                                applyProgram2))
+(matchBetween (chosenItem SendingTruckToCamp1OrCamp2
+               ReRouteToCamp2) (chosenItem
+                                ChangeOrNotChangeTheProgram
+                                applyProgram2))
+(matchBetween (causes-PropProp
+               (chosenItem SendingTruckToCamp1OrCamp2 ReRouteToCamp2)
+               PeopleDyingInCamp1) (causes-PropProp
+                                    (chosenItem
+                                     ChangeOrNotChangeTheProgram
+                                     applyProgram2)
+                                    DyingCancerPatientsGroup1))
+(matchBetween (chosenItem SendingTruckToCamp1OrCamp2
+               notReRoute) (chosenItem ChangeOrNotChangeTheProgram
+                            notChangeProgram))
+(matchBetween (causes-PropProp
+               (chosenItem SendingTruckToCamp1OrCamp2 notReRoute)
+               preventingPeopleDyingInCamp1) (causes-PropProp
+                                              (chosenItem
+                                               ChangeOrNotChangeTheProgram
+                                               notChangeProgram)
+                                              preventingDyingCancerPatientsGroup1))
+(matchBetween (causes-PropProp
+               (chosenItem SendingTruckToCamp1OrCamp2 notReRoute)
+               PeopleDyingInCamp2) (causes-PropProp
+                                    (chosenItem
+                                     ChangeOrNotChangeTheProgram
+                                     notChangeProgram)
+                                    DyingCancerPatientsGroup2))
+(matchBetween (causes-PropProp
+               (chosenItem SendingTruckToCamp1OrCamp2 ReRouteToCamp2)
+               preventingPeopleDyingInCamp2) (causes-PropProp
+                                              (chosenItem
+                                               ChangeOrNotChangeTheProgram
+                                               applyProgram2)
+                                              preventingDyingCancerPatientsGroup2))
+(matchBetween (choices SendingTruckToCamp1OrCamp2 notReRoute) (choices
+                                                               ChangeOrNotChangeTheProgram
+                                                               notChangeProgram))
+(matchBetween (SelectingSomething
+               SendingTruckToCamp1OrCamp2) (SelectingSomething
+                                            ChangeOrNotChangeTheProgram))
+(matchBetween SendingTruckToCamp1OrCamp2 ChangeOrNotChangeTheProgram)
+(matchBetween (performedBy ReRouteToCamp2 you8115) (performedBy
+                                                    applyProgram2
+                                                    you8116))
+(matchBetween ReRouteToCamp2 applyProgram2)
+(matchBetween (preventedProp preventingPeopleDyingInCamp1
+               PeopleDyingInCamp1) (preventedProp
+                                    preventingDyingCancerPatientsGroup1
+                                    DyingCancerPatientsGroup1))
+(matchBetween (objectActedOn PeopleDyingInCamp1
+               PeopleInDangerInCamp1) (objectActedOn
+                                       DyingCancerPatientsGroup1
+                                       CancerPatientsGroup1))
+(matchBetween PeopleDyingInCamp1 DyingCancerPatientsGroup1)
+(matchBetween (groupCardinality PeopleInDangerInCamp1
+               100) (groupCardinality CancerPatientsGroup1 100))
+(matchBetween 100 100)
+(matchBetween PeopleInDangerInCamp1 CancerPatientsGroup1)
+(matchBetween (PreventingSomething
+               preventingPeopleDyingInCamp1) (PreventingSomething
+                                              preventingDyingCancerPatientsGroup1))
+(matchBetween preventingPeopleDyingInCamp1 preventingDyingCancerPatientsGroup1)
+(matchBetween (IntelligentAgent you8115) (IntelligentAgent you8116))
+(matchBetween you8115 you8116)

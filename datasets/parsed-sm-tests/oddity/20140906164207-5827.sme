@@ -1,0 +1,37 @@
+(2D-Shape-Generic Element-4)
+(2D-Shape-Straight Element-4)
+(2D-Shape-Open Element-4)
+(ObjectsBorderColoredFnBlackColor Element-3)
+(ObjectsBorderColoredFnBlackColor Element-4)
+(2D-Shape-Open Element-3)
+(2D-Shape-Straight Element-3)
+(2D-Shape-Generic Element-3)
++++++++++++
+(2D-Shape-Generic Object-1188)
+(2D-Shape-Generic Object-1189)
+(2D-Shape-Straight Object-1188)
+(2D-Shape-Straight Object-1189)
+(2D-Shape-Open Object-1188)
+(2D-Shape-Open Object-1189)
+(ObjectsBorderColoredFnBlackColor Object-1189)
+(ObjectsBorderColoredFnBlackColor Object-1188)
+(parallelElements Object-1189 Object-1188)
++++++++++++
+(matchBetween Element-3 Object-1188)
+(matchBetween (ObjectsBorderColoredFnBlackColor
+               Element-3) (ObjectsBorderColoredFnBlackColor
+                           Object-1188))
+(matchBetween (2D-Shape-Open Element-4) (2D-Shape-Open Object-1189))
+(matchBetween (2D-Shape-Straight Element-4) (2D-Shape-Straight
+                                             Object-1189))
+(matchBetween (2D-Shape-Generic Element-4) (2D-Shape-Generic
+                                            Object-1189))
+(matchBetween (2D-Shape-Generic Element-3) (2D-Shape-Generic
+                                            Object-1188))
+(matchBetween (2D-Shape-Straight Element-3) (2D-Shape-Straight
+                                             Object-1188))
+(matchBetween (2D-Shape-Open Element-3) (2D-Shape-Open Object-1188))
+(matchBetween (ObjectsBorderColoredFnBlackColor
+               Element-4) (ObjectsBorderColoredFnBlackColor
+                           Object-1189))
+(matchBetween Element-4 Object-1189)

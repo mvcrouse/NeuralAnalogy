@@ -1,0 +1,17 @@
+(ObjectsBorderColoredFnBlackColor Element-2)
+(2D-Shape-Generic Element-2)
+(Centered-Element Element-2)
++++++++++++
+((ObjectsColoredFn WhiteColor) Object-470)
+(2D-Shape-Generic Object-470)
+(2D-Shape-Closed Object-470)
+(ObjectsBorderColoredFnBlackColor Object-470)
+(Centered-Element Object-470)
++++++++++++
+(matchBetween (2D-Shape-Generic Element-2) (2D-Shape-Generic
+                                            Object-470))
+(matchBetween (Centered-Element Element-2) (Centered-Element
+                                            Object-470))
+(matchBetween (ObjectsBorderColoredFnBlackColor
+               Element-2) (ObjectsBorderColoredFnBlackColor Object-470))
+(matchBetween Element-2 Object-470)

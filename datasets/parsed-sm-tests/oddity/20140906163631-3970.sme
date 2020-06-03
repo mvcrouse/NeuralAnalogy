@@ -1,0 +1,915 @@
+(edgesDisconnected Edge-3000 Edge-2987)
+(edgesDisconnected Edge-3001 Edge-2988)
+(edgesDisconnected Edge-3000 Edge-2989)
+(edgesDisconnected Edge-2999 Edge-2988)
+(edgesDisconnected Edge-2998 Edge-2993)
+(edgesDisconnected Edge-2995 Edge-2992)
+(convexAngleBetweenEdges Edge-3001 Edge-3000)
+(convexAngleBetweenEdges Edge-2999 Edge-2998)
+(convexAngleBetweenEdges Edge-2997 Edge-2996)
+(convexAngleBetweenEdges Edge-2995 Edge-2994)
+(convexAngleBetweenEdges Edge-2994 Edge-2993)
+(convexAngleBetweenEdges Edge-2992 Edge-2991)
+(convexAngleBetweenEdges Edge-2990 Edge-2989)
+(convexAngleBetweenEdges Edge-2988 Edge-2987)
+(convexAngleBetweenEdges Edge-2987 Edge-3001)
+(concaveAngleBetweenEdges Edge-3000 Edge-2999)
+(concaveAngleBetweenEdges Edge-2998 Edge-2997)
+(concaveAngleBetweenEdges Edge-2996 Edge-2995)
+(concaveAngleBetweenEdges Edge-2993 Edge-2992)
+(concaveAngleBetweenEdges Edge-2991 Edge-2990)
+(concaveAngleBetweenEdges Edge-2989 Edge-2988)
+(adjacentObtuseAcuteAngles
+ (convexAngleBetweenEdges Edge-2987 Edge-3001)
+ (convexAngleBetweenEdges Edge-3001 Edge-3000))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-2987 Edge-3001)
+ (convexAngleBetweenEdges Edge-3001 Edge-3000))
+(verticallyOrientedCorner (convexAngleBetweenEdges Edge-2987 Edge-3001))
+(leftToRightCorner (convexAngleBetweenEdges Edge-2987 Edge-3001))
+(adjacentAcuteObtuseAngles
+ (convexAngleBetweenEdges Edge-2988 Edge-2987)
+ (convexAngleBetweenEdges Edge-2987 Edge-3001))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-2988 Edge-2987)
+ (convexAngleBetweenEdges Edge-2987 Edge-3001))
+(horizontallyOrientedCorner
+ (convexAngleBetweenEdges Edge-2988 Edge-2987))
+(bottomToTopCorner (convexAngleBetweenEdges Edge-2988 Edge-2987))
+(cycleAdjacentAngles (concaveAngleBetweenEdges Edge-2989 Edge-2988)
+ (convexAngleBetweenEdges Edge-2988 Edge-2987))
+(horizontallyOrientedCorner
+ (concaveAngleBetweenEdges Edge-2989 Edge-2988))
+(bottomToTopCorner (concaveAngleBetweenEdges Edge-2989 Edge-2988))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-2990 Edge-2989)
+ (concaveAngleBetweenEdges Edge-2989 Edge-2988))
+(horizontallyOrientedCorner
+ (convexAngleBetweenEdges Edge-2990 Edge-2989))
+(bottomToTopCorner (convexAngleBetweenEdges Edge-2990 Edge-2989))
+(cycleAdjacentAngles (concaveAngleBetweenEdges Edge-2991 Edge-2990)
+ (convexAngleBetweenEdges Edge-2990 Edge-2989))
+(horizontallyOrientedCorner
+ (concaveAngleBetweenEdges Edge-2991 Edge-2990))
+(bottomToTopCorner (concaveAngleBetweenEdges Edge-2991 Edge-2990))
+(rightToLeftCorner (concaveAngleBetweenEdges Edge-2991 Edge-2990))
+(perpendicularCorner (concaveAngleBetweenEdges Edge-2991 Edge-2990))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-2992 Edge-2991)
+ (concaveAngleBetweenEdges Edge-2991 Edge-2990))
+(horizontallyOrientedCorner
+ (convexAngleBetweenEdges Edge-2992 Edge-2991))
+(bottomToTopCorner (convexAngleBetweenEdges Edge-2992 Edge-2991))
+(rightToLeftCorner (convexAngleBetweenEdges Edge-2992 Edge-2991))
+(perpendicularCorner (convexAngleBetweenEdges Edge-2992 Edge-2991))
+(cycleAdjacentAngles (concaveAngleBetweenEdges Edge-2993 Edge-2992)
+ (convexAngleBetweenEdges Edge-2992 Edge-2991))
+(horizontallyOrientedCorner
+ (concaveAngleBetweenEdges Edge-2993 Edge-2992))
+(bottomToTopCorner (concaveAngleBetweenEdges Edge-2993 Edge-2992))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-2994 Edge-2993)
+ (concaveAngleBetweenEdges Edge-2993 Edge-2992))
+(horizontallyOrientedCorner
+ (convexAngleBetweenEdges Edge-2994 Edge-2993))
+(bottomToTopCorner (convexAngleBetweenEdges Edge-2994 Edge-2993))
+(rightToLeftCorner (convexAngleBetweenEdges Edge-2994 Edge-2993))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-2995 Edge-2994)
+ (convexAngleBetweenEdges Edge-2994 Edge-2993))
+(straightCorner (edgesDisconnected Edge-2995 Edge-2992))
+(horizontallyOrientedCorner
+ (convexAngleBetweenEdges Edge-2995 Edge-2994))
+(topToBottomCorner (convexAngleBetweenEdges Edge-2995 Edge-2994))
+(rightToLeftCorner (convexAngleBetweenEdges Edge-2995 Edge-2994))
+(cycleAdjacentAngles (concaveAngleBetweenEdges Edge-2996 Edge-2995)
+ (convexAngleBetweenEdges Edge-2995 Edge-2994))
+(horizontallyOrientedCorner
+ (concaveAngleBetweenEdges Edge-2996 Edge-2995))
+(topToBottomCorner (concaveAngleBetweenEdges Edge-2996 Edge-2995))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-2997 Edge-2996)
+ (concaveAngleBetweenEdges Edge-2996 Edge-2995))
+(horizontallyOrientedCorner
+ (convexAngleBetweenEdges Edge-2997 Edge-2996))
+(topToBottomCorner (convexAngleBetweenEdges Edge-2997 Edge-2996))
+(rightToLeftCorner (convexAngleBetweenEdges Edge-2997 Edge-2996))
+(perpendicularCorner (convexAngleBetweenEdges Edge-2997 Edge-2996))
+(cycleAdjacentAngles (concaveAngleBetweenEdges Edge-2998 Edge-2997)
+ (convexAngleBetweenEdges Edge-2997 Edge-2996))
+(straightCorner (edgesDisconnected Edge-2998 Edge-2993))
+(horizontallyOrientedCorner
+ (concaveAngleBetweenEdges Edge-2998 Edge-2997))
+(topToBottomCorner (concaveAngleBetweenEdges Edge-2998 Edge-2997))
+(rightToLeftCorner (concaveAngleBetweenEdges Edge-2998 Edge-2997))
+(perpendicularCorner (concaveAngleBetweenEdges Edge-2998 Edge-2997))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-2999 Edge-2998)
+ (concaveAngleBetweenEdges Edge-2998 Edge-2997))
+(straightCorner (edgesDisconnected Edge-2999 Edge-2988))
+(horizontallyOrientedCorner
+ (convexAngleBetweenEdges Edge-2999 Edge-2998))
+(topToBottomCorner (convexAngleBetweenEdges Edge-2999 Edge-2998))
+(cycleAdjacentAngles (concaveAngleBetweenEdges Edge-3000 Edge-2999)
+ (convexAngleBetweenEdges Edge-2999 Edge-2998))
+(straightCorner (edgesDisconnected Edge-3000 Edge-2989))
+(horizontallyOrientedCorner
+ (concaveAngleBetweenEdges Edge-3000 Edge-2999))
+(topToBottomCorner (concaveAngleBetweenEdges Edge-3000 Edge-2999))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-3001 Edge-3000)
+ (concaveAngleBetweenEdges Edge-3000 Edge-2999))
+(horizontallyOrientedCorner
+ (convexAngleBetweenEdges Edge-3001 Edge-3000))
+(topToBottomCorner (convexAngleBetweenEdges Edge-3001 Edge-3000))
+(edgesParallel Edge-3001 Edge-2988)
+(parallelEdgeRelation (edgesDisconnected Edge-3001 Edge-2988))
+(edgesParallel Edge-3000 Edge-2987)
+(parallelEdgeRelation (edgesDisconnected Edge-3000 Edge-2987))
+(above Edge-2987 Edge-2988)
+(above Edge-2987 Edge-2989)
+(above Edge-2988 Edge-2989)
+(above Edge-2988 Edge-2990)
+(above Edge-2989 Edge-2990)
+(above Edge-2989 Edge-2991)
+(edgesPerpendicular Edge-2991 Edge-2990)
+(above Edge-2990 Edge-2991)
+(rightOf Edge-2991 Edge-2990)
+(above Edge-2990 Edge-2992)
+(rightOf Edge-2992 Edge-2990)
+(edgesPerpendicular Edge-2992 Edge-2991)
+(above Edge-2991 Edge-2992)
+(rightOf Edge-2992 Edge-2991)
+(above Edge-2991 Edge-2993)
+(rightOf Edge-2993 Edge-2991)
+(above Edge-2992 Edge-2993)
+(above Edge-2992 Edge-2994)
+(rightOf Edge-2994 Edge-2992)
+(above Edge-2993 Edge-2994)
+(rightOf Edge-2994 Edge-2993)
+(edgesColinear Edge-2995 Edge-2992)
+(rightOf Edge-2995 Edge-2993)
+(above Edge-2995 Edge-2994)
+(rightOf Edge-2995 Edge-2994)
+(above Edge-2996 Edge-2994)
+(rightOf Edge-2996 Edge-2994)
+(above Edge-2996 Edge-2995)
+(above Edge-2997 Edge-2995)
+(rightOf Edge-2997 Edge-2995)
+(edgesPerpendicular Edge-2997 Edge-2996)
+(above Edge-2997 Edge-2996)
+(rightOf Edge-2997 Edge-2996)
+(edgesColinear Edge-2998 Edge-2993)
+(above Edge-2998 Edge-2996)
+(rightOf Edge-2998 Edge-2996)
+(edgesPerpendicular Edge-2998 Edge-2997)
+(above Edge-2998 Edge-2997)
+(rightOf Edge-2998 Edge-2997)
+(edgesColinear Edge-2999 Edge-2988)
+(above Edge-2999 Edge-2997)
+(above Edge-2999 Edge-2998)
+(above Edge-2987 Edge-3000)
+(rightOf Edge-3000 Edge-2987)
+(edgesColinear Edge-3000 Edge-2989)
+(above Edge-3000 Edge-2998)
+(above Edge-3000 Edge-2999)
+(rightOf Edge-3001 Edge-2987)
+(above Edge-3001 Edge-2988)
+(rightOf Edge-3001 Edge-2988)
+(above Edge-3001 Edge-2999)
+(above Edge-3001 Edge-3000)
+(lengthShort Edge-2997)
+(lengthShort Edge-2991)
+(lengthShort Edge-2996)
+(lengthShort Edge-2992)
+(lengthShort Edge-2998)
+(lengthShort Edge-2990)
+(lengthShort Edge-2993)
+(lengthShort Edge-2995)
+(lengthShort Edge-2988)
+(lengthShort Edge-3000)
+(lengthShort Edge-2989)
+(lengthShort Edge-2999)
+(lengthMedium Edge-2987)
+(lengthMedium Edge-3001)
+(lengthLong Edge-2994)
+(ObliqueEdge-Upward Edge-2987)
+(PerceptualEdge Edge-2987)
+(StraightEdge Edge-2987)
+(ObliqueEdge-Downward Edge-2988)
+(PerceptualEdge Edge-2988)
+(StraightEdge Edge-2988)
+(ObliqueEdge-Upward Edge-2989)
+(PerceptualEdge Edge-2989)
+(StraightEdge Edge-2989)
+(ObliqueEdge-Downward Edge-2990)
+(PerceptualEdge Edge-2990)
+(StraightEdge Edge-2990)
+(ObliqueEdge-Upward Edge-2991)
+(PerceptualEdge Edge-2991)
+(StraightEdge Edge-2991)
+(ObliqueEdge-Downward Edge-2992)
+(PerceptualEdge Edge-2992)
+(StraightEdge Edge-2992)
+(ObliqueEdge-Upward Edge-2993)
+(PerceptualEdge Edge-2993)
+(StraightEdge Edge-2993)
+(HorizontalEdge Edge-2994)
+(axisAligned Edge-2994)
+(PerceptualEdge Edge-2994)
+(StraightEdge Edge-2994)
+(ObliqueEdge-Downward Edge-2995)
+(PerceptualEdge Edge-2995)
+(StraightEdge Edge-2995)
+(ObliqueEdge-Upward Edge-2996)
+(PerceptualEdge Edge-2996)
+(StraightEdge Edge-2996)
+(ObliqueEdge-Downward Edge-2997)
+(PerceptualEdge Edge-2997)
+(StraightEdge Edge-2997)
+(ObliqueEdge-Upward Edge-2998)
+(PerceptualEdge Edge-2998)
+(StraightEdge Edge-2998)
+(ObliqueEdge-Downward Edge-2999)
+(PerceptualEdge Edge-2999)
+(StraightEdge Edge-2999)
+(ObliqueEdge-Upward Edge-3000)
+(PerceptualEdge Edge-3000)
+(StraightEdge Edge-3000)
+(ObliqueEdge-Downward Edge-3001)
+(PerceptualEdge Edge-3001)
+(StraightEdge Edge-3001)
++++++++++++
+(StraightEdge Edge-3016)
+(StraightEdge Edge-3015)
+(StraightEdge Edge-3014)
+(StraightEdge Edge-3013)
+(StraightEdge Edge-3012)
+(StraightEdge Edge-3011)
+(StraightEdge Edge-3010)
+(StraightEdge Edge-3009)
+(StraightEdge Edge-3008)
+(StraightEdge Edge-3007)
+(StraightEdge Edge-3006)
+(StraightEdge Edge-3005)
+(StraightEdge Edge-3004)
+(StraightEdge Edge-3003)
+(StraightEdge Edge-3002)
+(PerceptualEdge Edge-3016)
+(PerceptualEdge Edge-3015)
+(PerceptualEdge Edge-3014)
+(PerceptualEdge Edge-3013)
+(PerceptualEdge Edge-3012)
+(PerceptualEdge Edge-3011)
+(PerceptualEdge Edge-3010)
+(PerceptualEdge Edge-3009)
+(PerceptualEdge Edge-3008)
+(PerceptualEdge Edge-3007)
+(PerceptualEdge Edge-3006)
+(PerceptualEdge Edge-3005)
+(PerceptualEdge Edge-3004)
+(PerceptualEdge Edge-3003)
+(PerceptualEdge Edge-3002)
+(ObliqueEdge-Downward Edge-3016)
+(ObliqueEdge-Downward Edge-3014)
+(ObliqueEdge-Downward Edge-3012)
+(ObliqueEdge-Downward Edge-3010)
+(ObliqueEdge-Downward Edge-3007)
+(ObliqueEdge-Downward Edge-3005)
+(ObliqueEdge-Downward Edge-3003)
+(ObliqueEdge-Upward Edge-3015)
+(ObliqueEdge-Upward Edge-3013)
+(ObliqueEdge-Upward Edge-3011)
+(ObliqueEdge-Upward Edge-3008)
+(ObliqueEdge-Upward Edge-3006)
+(ObliqueEdge-Upward Edge-3004)
+(ObliqueEdge-Upward Edge-3002)
+(axisAligned Edge-3009)
+(HorizontalEdge Edge-3009)
+(lengthLong Edge-3009)
+(lengthMedium Edge-3006)
+(lengthMedium Edge-3012)
+(lengthShort Edge-3004)
+(lengthShort Edge-3014)
+(lengthShort Edge-3005)
+(lengthShort Edge-3013)
+(lengthShort Edge-3002)
+(lengthShort Edge-3007)
+(lengthShort Edge-3016)
+(lengthShort Edge-3011)
+(lengthTiny Edge-3003)
+(lengthTiny Edge-3015)
+(lengthTiny Edge-3010)
+(lengthTiny Edge-3008)
+(rightOf Edge-3015 Edge-3016)
+(rightOf Edge-3014 Edge-3016)
+(rightOf Edge-3016 Edge-3003)
+(rightOf Edge-3016 Edge-3002)
+(rightOf Edge-3014 Edge-3015)
+(rightOf Edge-3013 Edge-3015)
+(rightOf Edge-3015 Edge-3002)
+(rightOf Edge-3011 Edge-3013)
+(rightOf Edge-3011 Edge-3010)
+(rightOf Edge-3011 Edge-3009)
+(rightOf Edge-3010 Edge-3009)
+(rightOf Edge-3010 Edge-3008)
+(rightOf Edge-3009 Edge-3008)
+(rightOf Edge-3009 Edge-3007)
+(rightOf Edge-3008 Edge-3007)
+(rightOf Edge-3005 Edge-3007)
+(rightOf Edge-3003 Edge-3005)
+(rightOf Edge-3003 Edge-3004)
+(rightOf Edge-3002 Edge-3004)
+(rightOf Edge-3002 Edge-3003)
+(above Edge-3016 Edge-3015)
+(above Edge-3016 Edge-3014)
+(above Edge-3016 Edge-3003)
+(above Edge-3015 Edge-3014)
+(above Edge-3015 Edge-3013)
+(above Edge-3002 Edge-3015)
+(above Edge-3014 Edge-3013)
+(above Edge-3014 Edge-3012)
+(above Edge-3013 Edge-3012)
+(above Edge-3013 Edge-3011)
+(above Edge-3012 Edge-3011)
+(above Edge-3012 Edge-3010)
+(above Edge-3011 Edge-3010)
+(above Edge-3011 Edge-3009)
+(above Edge-3010 Edge-3009)
+(above Edge-3008 Edge-3009)
+(above Edge-3007 Edge-3009)
+(above Edge-3007 Edge-3008)
+(above Edge-3006 Edge-3008)
+(above Edge-3006 Edge-3007)
+(above Edge-3005 Edge-3007)
+(above Edge-3005 Edge-3006)
+(above Edge-3004 Edge-3006)
+(above Edge-3004 Edge-3005)
+(above Edge-3003 Edge-3005)
+(above Edge-3003 Edge-3004)
+(above Edge-3002 Edge-3004)
+(above Edge-3002 Edge-3003)
+(edgesPerpendicular Edge-3016 Edge-3015)
+(edgesColinear Edge-3015 Edge-3008)
+(edgesColinear Edge-3013 Edge-3006)
+(edgesColinear Edge-3012 Edge-3005)
+(edgesColinear Edge-3010 Edge-3003)
+(convexAngleBetweenEdges Edge-3016 Edge-3015)
+(convexAngleBetweenEdges Edge-3014 Edge-3013)
+(convexAngleBetweenEdges Edge-3012 Edge-3011)
+(convexAngleBetweenEdges Edge-3010 Edge-3009)
+(convexAngleBetweenEdges Edge-3009 Edge-3008)
+(convexAngleBetweenEdges Edge-3007 Edge-3006)
+(convexAngleBetweenEdges Edge-3005 Edge-3004)
+(convexAngleBetweenEdges Edge-3003 Edge-3002)
+(convexAngleBetweenEdges Edge-3002 Edge-3016)
+(perpendicularCorner (convexAngleBetweenEdges Edge-3016 Edge-3015))
+(leftToRightCorner (convexAngleBetweenEdges Edge-3016 Edge-3015))
+(leftToRightCorner (concaveAngleBetweenEdges Edge-3015 Edge-3014))
+(leftToRightCorner (concaveAngleBetweenEdges Edge-3004 Edge-3003))
+(leftToRightCorner (convexAngleBetweenEdges Edge-3003 Edge-3002))
+(leftToRightCorner (convexAngleBetweenEdges Edge-3002 Edge-3016))
+(topToBottomCorner (convexAngleBetweenEdges Edge-3016 Edge-3015))
+(topToBottomCorner (concaveAngleBetweenEdges Edge-3015 Edge-3014))
+(topToBottomCorner (convexAngleBetweenEdges Edge-3014 Edge-3013))
+(topToBottomCorner (concaveAngleBetweenEdges Edge-3013 Edge-3012))
+(topToBottomCorner (convexAngleBetweenEdges Edge-3012 Edge-3011))
+(topToBottomCorner (concaveAngleBetweenEdges Edge-3011 Edge-3010))
+(topToBottomCorner (convexAngleBetweenEdges Edge-3010 Edge-3009))
+(horizontallyOrientedCorner
+ (convexAngleBetweenEdges Edge-3016 Edge-3015))
+(horizontallyOrientedCorner
+ (concaveAngleBetweenEdges Edge-3015 Edge-3014))
+(horizontallyOrientedCorner
+ (convexAngleBetweenEdges Edge-3014 Edge-3013))
+(horizontallyOrientedCorner
+ (concaveAngleBetweenEdges Edge-3013 Edge-3012))
+(horizontallyOrientedCorner
+ (convexAngleBetweenEdges Edge-3012 Edge-3011))
+(horizontallyOrientedCorner
+ (concaveAngleBetweenEdges Edge-3011 Edge-3010))
+(horizontallyOrientedCorner
+ (convexAngleBetweenEdges Edge-3010 Edge-3009))
+(horizontallyOrientedCorner
+ (convexAngleBetweenEdges Edge-3009 Edge-3008))
+(horizontallyOrientedCorner
+ (concaveAngleBetweenEdges Edge-3008 Edge-3007))
+(horizontallyOrientedCorner
+ (convexAngleBetweenEdges Edge-3007 Edge-3006))
+(horizontallyOrientedCorner
+ (concaveAngleBetweenEdges Edge-3006 Edge-3005))
+(horizontallyOrientedCorner
+ (convexAngleBetweenEdges Edge-3005 Edge-3004))
+(horizontallyOrientedCorner
+ (concaveAngleBetweenEdges Edge-3004 Edge-3003))
+(horizontallyOrientedCorner
+ (convexAngleBetweenEdges Edge-3003 Edge-3002))
+(concaveAngleBetweenEdges Edge-3015 Edge-3014)
+(concaveAngleBetweenEdges Edge-3013 Edge-3012)
+(concaveAngleBetweenEdges Edge-3011 Edge-3010)
+(concaveAngleBetweenEdges Edge-3008 Edge-3007)
+(concaveAngleBetweenEdges Edge-3006 Edge-3005)
+(concaveAngleBetweenEdges Edge-3004 Edge-3003)
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-3016 Edge-3015)
+ (concaveAngleBetweenEdges Edge-3015 Edge-3014))
+(cycleAdjacentAngles (concaveAngleBetweenEdges Edge-3015 Edge-3014)
+ (convexAngleBetweenEdges Edge-3014 Edge-3013))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-3014 Edge-3013)
+ (concaveAngleBetweenEdges Edge-3013 Edge-3012))
+(cycleAdjacentAngles (concaveAngleBetweenEdges Edge-3013 Edge-3012)
+ (convexAngleBetweenEdges Edge-3012 Edge-3011))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-3012 Edge-3011)
+ (concaveAngleBetweenEdges Edge-3011 Edge-3010))
+(cycleAdjacentAngles (concaveAngleBetweenEdges Edge-3011 Edge-3010)
+ (convexAngleBetweenEdges Edge-3010 Edge-3009))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-3010 Edge-3009)
+ (convexAngleBetweenEdges Edge-3009 Edge-3008))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-3009 Edge-3008)
+ (concaveAngleBetweenEdges Edge-3008 Edge-3007))
+(cycleAdjacentAngles (concaveAngleBetweenEdges Edge-3008 Edge-3007)
+ (convexAngleBetweenEdges Edge-3007 Edge-3006))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-3007 Edge-3006)
+ (concaveAngleBetweenEdges Edge-3006 Edge-3005))
+(cycleAdjacentAngles (concaveAngleBetweenEdges Edge-3006 Edge-3005)
+ (convexAngleBetweenEdges Edge-3005 Edge-3004))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-3005 Edge-3004)
+ (concaveAngleBetweenEdges Edge-3004 Edge-3003))
+(cycleAdjacentAngles (concaveAngleBetweenEdges Edge-3004 Edge-3003)
+ (convexAngleBetweenEdges Edge-3003 Edge-3002))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-3003 Edge-3002)
+ (convexAngleBetweenEdges Edge-3002 Edge-3016))
+(cycleAdjacentAngles (convexAngleBetweenEdges Edge-3002 Edge-3016)
+ (convexAngleBetweenEdges Edge-3016 Edge-3015))
+(edgesDisconnected Edge-3015 Edge-3008)
+(edgesDisconnected Edge-3013 Edge-3006)
+(edgesDisconnected Edge-3012 Edge-3005)
+(edgesDisconnected Edge-3010 Edge-3003)
+(straightCorner (edgesDisconnected Edge-3015 Edge-3008))
+(straightCorner (edgesDisconnected Edge-3013 Edge-3006))
+(straightCorner (edgesDisconnected Edge-3012 Edge-3005))
+(straightCorner (edgesDisconnected Edge-3010 Edge-3003))
+(rightToLeftCorner (concaveAngleBetweenEdges Edge-3011 Edge-3010))
+(rightToLeftCorner (convexAngleBetweenEdges Edge-3010 Edge-3009))
+(rightToLeftCorner (convexAngleBetweenEdges Edge-3009 Edge-3008))
+(rightToLeftCorner (concaveAngleBetweenEdges Edge-3008 Edge-3007))
+(bottomToTopCorner (convexAngleBetweenEdges Edge-3009 Edge-3008))
+(bottomToTopCorner (concaveAngleBetweenEdges Edge-3008 Edge-3007))
+(bottomToTopCorner (convexAngleBetweenEdges Edge-3007 Edge-3006))
+(bottomToTopCorner (concaveAngleBetweenEdges Edge-3006 Edge-3005))
+(bottomToTopCorner (convexAngleBetweenEdges Edge-3005 Edge-3004))
+(bottomToTopCorner (concaveAngleBetweenEdges Edge-3004 Edge-3003))
+(bottomToTopCorner (convexAngleBetweenEdges Edge-3003 Edge-3002))
+(adjacentAcuteObtuseAngles
+ (convexAngleBetweenEdges Edge-3003 Edge-3002)
+ (convexAngleBetweenEdges Edge-3002 Edge-3016))
+(verticallyOrientedCorner (convexAngleBetweenEdges Edge-3002 Edge-3016))
++++++++++++
+(matchBetween Edge-2997 Edge-3012)
+(matchBetween (ObliqueEdge-Downward Edge-2997) (ObliqueEdge-Downward
+                                                Edge-3012))
+(matchBetween (PerceptualEdge Edge-2991) (PerceptualEdge Edge-3006))
+(matchBetween (StraightEdge Edge-2991) (StraightEdge Edge-3006))
+(matchBetween Edge-2989 Edge-3004)
+(matchBetween (lengthShort Edge-2989) (lengthShort Edge-3004))
+(matchBetween (ObliqueEdge-Downward Edge-2999) (ObliqueEdge-Downward
+                                                Edge-3014))
+(matchBetween (PerceptualEdge Edge-2989) (PerceptualEdge Edge-3004))
+(matchBetween (StraightEdge Edge-2989) (StraightEdge Edge-3004))
+(matchBetween Edge-2992 Edge-3007)
+(matchBetween (lengthShort Edge-2992) (lengthShort Edge-3007))
+(matchBetween (ObliqueEdge-Upward Edge-2996) (ObliqueEdge-Upward
+                                              Edge-3011))
+(matchBetween (ObliqueEdge-Downward Edge-2990) (ObliqueEdge-Downward
+                                                Edge-3005))
+(matchBetween (PerceptualEdge Edge-2992) (PerceptualEdge Edge-3007))
+(matchBetween (StraightEdge Edge-2996) (StraightEdge Edge-3011))
+(matchBetween (StraightEdge Edge-2990) (StraightEdge Edge-3005))
+(matchBetween (PerceptualEdge Edge-3001) (PerceptualEdge Edge-3016))
+(matchBetween Edge-3000 Edge-3015)
+(matchBetween (ObliqueEdge-Upward Edge-3000) (ObliqueEdge-Upward
+                                              Edge-3015))
+(matchBetween (StraightEdge Edge-3000) (StraightEdge Edge-3015))
+(matchBetween (ObliqueEdge-Upward Edge-2998) (ObliqueEdge-Upward
+                                              Edge-3013))
+(matchBetween (StraightEdge Edge-2998) (StraightEdge Edge-3013))
+(matchBetween (PerceptualEdge Edge-2987) (PerceptualEdge Edge-3002))
+(matchBetween Edge-2988 Edge-3003)
+(matchBetween (ObliqueEdge-Downward Edge-2988) (ObliqueEdge-Downward
+                                                Edge-3003))
+(matchBetween (StraightEdge Edge-2988) (StraightEdge Edge-3003))
+(matchBetween Edge-2995 Edge-3010)
+(matchBetween (ObliqueEdge-Downward Edge-2995) (ObliqueEdge-Downward
+                                                Edge-3010))
+(matchBetween (PerceptualEdge Edge-2993) (PerceptualEdge Edge-3008))
+(matchBetween (StraightEdge Edge-2993) (StraightEdge Edge-3008))
+(matchBetween (HorizontalEdge Edge-2994) (HorizontalEdge Edge-3009))
+(matchBetween (PerceptualEdge Edge-2994) (PerceptualEdge Edge-3009))
+(matchBetween (above Edge-2999 Edge-2997) (above Edge-3014 Edge-3012))
+(matchBetween (above Edge-2997 Edge-2996) (above Edge-3012 Edge-3011))
+(matchBetween (above Edge-2990 Edge-2991) (above Edge-3005 Edge-3006))
+(matchBetween (above Edge-2990 Edge-2992) (above Edge-3005 Edge-3007))
+(matchBetween (concaveAngleBetweenEdges Edge-2991
+               Edge-2990) (concaveAngleBetweenEdges Edge-3006
+                           Edge-3005))
+(matchBetween (bottomToTopCorner
+               (concaveAngleBetweenEdges Edge-2991
+                Edge-2990)) (bottomToTopCorner
+                             (concaveAngleBetweenEdges Edge-3006
+                              Edge-3005)))
+(matchBetween (horizontallyOrientedCorner
+               (convexAngleBetweenEdges Edge-2992
+                Edge-2991)) (horizontallyOrientedCorner
+                             (convexAngleBetweenEdges Edge-3007
+                              Edge-3006)))
+(matchBetween (topToBottomCorner
+               (convexAngleBetweenEdges Edge-2997
+                Edge-2996)) (topToBottomCorner
+                             (convexAngleBetweenEdges Edge-3012
+                              Edge-3011)))
+(matchBetween (horizontallyOrientedCorner
+               (convexAngleBetweenEdges Edge-2990
+                Edge-2989)) (horizontallyOrientedCorner
+                             (convexAngleBetweenEdges Edge-3005
+                              Edge-3004)))
+(matchBetween (above Edge-3000 Edge-2999) (above Edge-3015 Edge-3014))
+(matchBetween (above Edge-2999 Edge-2998) (above Edge-3014 Edge-3013))
+(matchBetween (concaveAngleBetweenEdges Edge-3000
+               Edge-2999) (concaveAngleBetweenEdges Edge-3015
+                           Edge-3014))
+(matchBetween (horizontallyOrientedCorner
+               (concaveAngleBetweenEdges Edge-3000
+                Edge-2999)) (horizontallyOrientedCorner
+                             (concaveAngleBetweenEdges Edge-3015
+                              Edge-3014)))
+(matchBetween (topToBottomCorner
+               (concaveAngleBetweenEdges Edge-3000
+                Edge-2999)) (topToBottomCorner
+                             (concaveAngleBetweenEdges Edge-3015
+                              Edge-3014)))
+(matchBetween (convexAngleBetweenEdges Edge-2999
+               Edge-2998) (convexAngleBetweenEdges Edge-3014 Edge-3013))
+(matchBetween (horizontallyOrientedCorner
+               (convexAngleBetweenEdges Edge-2999
+                Edge-2998)) (horizontallyOrientedCorner
+                             (convexAngleBetweenEdges Edge-3014
+                              Edge-3013)))
+(matchBetween (above Edge-2987 Edge-2989) (above Edge-3002 Edge-3004))
+(matchBetween (above Edge-2997 Edge-2995) (above Edge-3012 Edge-3010))
+(matchBetween (above Edge-2988 Edge-2989) (above Edge-3003 Edge-3004))
+(matchBetween (above Edge-2996 Edge-2995) (above Edge-3011 Edge-3010))
+(matchBetween (above Edge-3000 Edge-2998) (above Edge-3015 Edge-3013))
+(matchBetween (rightOf Edge-2994 Edge-2992) (rightOf
+                                             Edge-3009
+                                             Edge-3007))
+(matchBetween (above Edge-2992 Edge-2994) (above Edge-3007 Edge-3009))
+(matchBetween (convexAngleBetweenEdges Edge-3001
+               Edge-3000) (convexAngleBetweenEdges Edge-3016 Edge-3015))
+(matchBetween (horizontallyOrientedCorner
+               (convexAngleBetweenEdges Edge-3001
+                Edge-3000)) (horizontallyOrientedCorner
+                             (convexAngleBetweenEdges Edge-3016
+                              Edge-3015)))
+(matchBetween (topToBottomCorner
+               (convexAngleBetweenEdges Edge-3001
+                Edge-3000)) (topToBottomCorner
+                             (convexAngleBetweenEdges Edge-3016
+                              Edge-3015)))
+(matchBetween (concaveAngleBetweenEdges Edge-2993
+               Edge-2992) (concaveAngleBetweenEdges Edge-3008
+                           Edge-3007))
+(matchBetween (bottomToTopCorner
+               (concaveAngleBetweenEdges Edge-2993
+                Edge-2992)) (bottomToTopCorner
+                             (concaveAngleBetweenEdges Edge-3008
+                              Edge-3007)))
+(matchBetween (horizontallyOrientedCorner
+               (concaveAngleBetweenEdges Edge-2993
+                Edge-2992)) (horizontallyOrientedCorner
+                             (concaveAngleBetweenEdges Edge-3008
+                              Edge-3007)))
+(matchBetween (rightOf Edge-3001 Edge-2988) (rightOf
+                                             Edge-3016
+                                             Edge-3003))
+(matchBetween (above Edge-3001 Edge-2988) (above Edge-3016 Edge-3003))
+(matchBetween (convexAngleBetweenEdges Edge-2987
+               Edge-3001) (convexAngleBetweenEdges Edge-3002 Edge-3016))
+(matchBetween (verticallyOrientedCorner
+               (convexAngleBetweenEdges Edge-2987
+                Edge-3001)) (verticallyOrientedCorner
+                             (convexAngleBetweenEdges Edge-3002
+                              Edge-3016)))
+(matchBetween (above Edge-2987 Edge-2988) (above Edge-3002 Edge-3003))
+(matchBetween (convexAngleBetweenEdges Edge-2988
+               Edge-2987) (convexAngleBetweenEdges Edge-3003 Edge-3002))
+(matchBetween (bottomToTopCorner
+               (convexAngleBetweenEdges Edge-2988
+                Edge-2987)) (bottomToTopCorner
+                             (convexAngleBetweenEdges Edge-3003
+                              Edge-3002)))
+(matchBetween (rightOf Edge-2995 Edge-2994) (rightOf
+                                             Edge-3010
+                                             Edge-3009))
+(matchBetween (above Edge-2995 Edge-2994) (above Edge-3010 Edge-3009))
+(matchBetween (convexAngleBetweenEdges Edge-2994
+               Edge-2993) (convexAngleBetweenEdges Edge-3009 Edge-3008))
+(matchBetween (bottomToTopCorner
+               (convexAngleBetweenEdges Edge-2994
+                Edge-2993)) (bottomToTopCorner
+                             (convexAngleBetweenEdges Edge-3009
+                              Edge-3008)))
+(matchBetween (rightToLeftCorner
+               (convexAngleBetweenEdges Edge-2994
+                Edge-2993)) (rightToLeftCorner
+                             (convexAngleBetweenEdges Edge-3009
+                              Edge-3008)))
+(matchBetween (horizontallyOrientedCorner
+               (convexAngleBetweenEdges Edge-2994
+                Edge-2993)) (horizontallyOrientedCorner
+                             (convexAngleBetweenEdges Edge-3009
+                              Edge-3008)))
+(matchBetween (cycleAdjacentAngles
+               (concaveAngleBetweenEdges Edge-2991 Edge-2990)
+               (convexAngleBetweenEdges Edge-2990
+                Edge-2989)) (cycleAdjacentAngles
+                             (concaveAngleBetweenEdges Edge-3006
+                              Edge-3005)
+                             (convexAngleBetweenEdges Edge-3005
+                              Edge-3004)))
+(matchBetween (cycleAdjacentAngles
+               (convexAngleBetweenEdges Edge-2999 Edge-2998)
+               (concaveAngleBetweenEdges Edge-2998
+                Edge-2997)) (cycleAdjacentAngles
+                             (convexAngleBetweenEdges Edge-3014
+                              Edge-3013)
+                             (concaveAngleBetweenEdges Edge-3013
+                              Edge-3012)))
+(matchBetween (cycleAdjacentAngles
+               (convexAngleBetweenEdges Edge-3001 Edge-3000)
+               (concaveAngleBetweenEdges Edge-3000
+                Edge-2999)) (cycleAdjacentAngles
+                             (convexAngleBetweenEdges Edge-3016
+                              Edge-3015)
+                             (concaveAngleBetweenEdges Edge-3015
+                              Edge-3014)))
+(matchBetween (cycleAdjacentAngles
+               (concaveAngleBetweenEdges Edge-2993 Edge-2992)
+               (convexAngleBetweenEdges Edge-2992
+                Edge-2991)) (cycleAdjacentAngles
+                             (concaveAngleBetweenEdges Edge-3008
+                              Edge-3007)
+                             (convexAngleBetweenEdges Edge-3007
+                              Edge-3006)))
+(matchBetween (cycleAdjacentAngles
+               (concaveAngleBetweenEdges Edge-3000 Edge-2999)
+               (convexAngleBetweenEdges Edge-2999
+                Edge-2998)) (cycleAdjacentAngles
+                             (concaveAngleBetweenEdges Edge-3015
+                              Edge-3014)
+                             (convexAngleBetweenEdges Edge-3014
+                              Edge-3013)))
+(matchBetween (cycleAdjacentAngles
+               (convexAngleBetweenEdges Edge-2987 Edge-3001)
+               (convexAngleBetweenEdges Edge-3001
+                Edge-3000)) (cycleAdjacentAngles
+                             (convexAngleBetweenEdges Edge-3002
+                              Edge-3016)
+                             (convexAngleBetweenEdges Edge-3016
+                              Edge-3015)))
+(matchBetween (cycleAdjacentAngles
+               (convexAngleBetweenEdges Edge-2994 Edge-2993)
+               (concaveAngleBetweenEdges Edge-2993
+                Edge-2992)) (cycleAdjacentAngles
+                             (convexAngleBetweenEdges Edge-3009
+                              Edge-3008)
+                             (concaveAngleBetweenEdges Edge-3008
+                              Edge-3007)))
+(matchBetween (cycleAdjacentAngles
+               (convexAngleBetweenEdges Edge-2988 Edge-2987)
+               (convexAngleBetweenEdges Edge-2987
+                Edge-3001)) (cycleAdjacentAngles
+                             (convexAngleBetweenEdges Edge-3003
+                              Edge-3002)
+                             (convexAngleBetweenEdges Edge-3002
+                              Edge-3016)))
+(matchBetween (cycleAdjacentAngles
+               (convexAngleBetweenEdges Edge-2995 Edge-2994)
+               (convexAngleBetweenEdges Edge-2994
+                Edge-2993)) (cycleAdjacentAngles
+                             (convexAngleBetweenEdges Edge-3010
+                              Edge-3009)
+                             (convexAngleBetweenEdges Edge-3009
+                              Edge-3008)))
+(matchBetween (adjacentAcuteObtuseAngles
+               (convexAngleBetweenEdges Edge-2988 Edge-2987)
+               (convexAngleBetweenEdges Edge-2987
+                Edge-3001)) (adjacentAcuteObtuseAngles
+                             (convexAngleBetweenEdges Edge-3003
+                              Edge-3002)
+                             (convexAngleBetweenEdges Edge-3002
+                              Edge-3016)))
+(matchBetween (cycleAdjacentAngles
+               (concaveAngleBetweenEdges Edge-2996 Edge-2995)
+               (convexAngleBetweenEdges Edge-2995
+                Edge-2994)) (cycleAdjacentAngles
+                             (concaveAngleBetweenEdges Edge-3011
+                              Edge-3010)
+                             (convexAngleBetweenEdges Edge-3010
+                              Edge-3009)))
+(matchBetween (cycleAdjacentAngles
+               (concaveAngleBetweenEdges Edge-2989 Edge-2988)
+               (convexAngleBetweenEdges Edge-2988
+                Edge-2987)) (cycleAdjacentAngles
+                             (concaveAngleBetweenEdges Edge-3004
+                              Edge-3003)
+                             (convexAngleBetweenEdges Edge-3003
+                              Edge-3002)))
+(matchBetween (cycleAdjacentAngles
+               (convexAngleBetweenEdges Edge-2990 Edge-2989)
+               (concaveAngleBetweenEdges Edge-2989
+                Edge-2988)) (cycleAdjacentAngles
+                             (convexAngleBetweenEdges Edge-3005
+                              Edge-3004)
+                             (concaveAngleBetweenEdges Edge-3004
+                              Edge-3003)))
+(matchBetween (cycleAdjacentAngles
+               (convexAngleBetweenEdges Edge-2997 Edge-2996)
+               (concaveAngleBetweenEdges Edge-2996
+                Edge-2995)) (cycleAdjacentAngles
+                             (convexAngleBetweenEdges Edge-3012
+                              Edge-3011)
+                             (concaveAngleBetweenEdges Edge-3011
+                              Edge-3010)))
+(matchBetween (cycleAdjacentAngles
+               (concaveAngleBetweenEdges Edge-2998 Edge-2997)
+               (convexAngleBetweenEdges Edge-2997
+                Edge-2996)) (cycleAdjacentAngles
+                             (concaveAngleBetweenEdges Edge-3013
+                              Edge-3012)
+                             (convexAngleBetweenEdges Edge-3012
+                              Edge-3011)))
+(matchBetween (cycleAdjacentAngles
+               (convexAngleBetweenEdges Edge-2992 Edge-2991)
+               (concaveAngleBetweenEdges Edge-2991
+                Edge-2990)) (cycleAdjacentAngles
+                             (convexAngleBetweenEdges Edge-3007
+                              Edge-3006)
+                             (concaveAngleBetweenEdges Edge-3006
+                              Edge-3005)))
+(matchBetween (topToBottomCorner
+               (convexAngleBetweenEdges Edge-2995
+                Edge-2994)) (topToBottomCorner
+                             (convexAngleBetweenEdges Edge-3010
+                              Edge-3009)))
+(matchBetween (horizontallyOrientedCorner
+               (convexAngleBetweenEdges Edge-2995
+                Edge-2994)) (horizontallyOrientedCorner
+                             (convexAngleBetweenEdges Edge-3010
+                              Edge-3009)))
+(matchBetween (rightToLeftCorner
+               (convexAngleBetweenEdges Edge-2995
+                Edge-2994)) (rightToLeftCorner
+                             (convexAngleBetweenEdges Edge-3010
+                              Edge-3009)))
+(matchBetween (convexAngleBetweenEdges Edge-2995
+               Edge-2994) (convexAngleBetweenEdges Edge-3010 Edge-3009))
+(matchBetween (above Edge-2993 Edge-2994) (above Edge-3008 Edge-3009))
+(matchBetween (rightOf Edge-2994 Edge-2993) (rightOf
+                                             Edge-3009
+                                             Edge-3008))
+(matchBetween (horizontallyOrientedCorner
+               (convexAngleBetweenEdges Edge-2988
+                Edge-2987)) (horizontallyOrientedCorner
+                             (convexAngleBetweenEdges Edge-3003
+                              Edge-3002)))
+(matchBetween (rightOf Edge-2995 Edge-2993) (rightOf
+                                             Edge-3010
+                                             Edge-3008))
+(matchBetween (leftToRightCorner
+               (convexAngleBetweenEdges Edge-2987
+                Edge-3001)) (leftToRightCorner
+                             (convexAngleBetweenEdges Edge-3002
+                              Edge-3016)))
+(matchBetween (above Edge-2987 Edge-3000) (above Edge-3002 Edge-3015))
+(matchBetween (rightOf Edge-3000 Edge-2987) (rightOf
+                                             Edge-3015
+                                             Edge-3002))
+(matchBetween (topToBottomCorner
+               (concaveAngleBetweenEdges Edge-2996
+                Edge-2995)) (topToBottomCorner
+                             (concaveAngleBetweenEdges Edge-3011
+                              Edge-3010)))
+(matchBetween (horizontallyOrientedCorner
+               (concaveAngleBetweenEdges Edge-2996
+                Edge-2995)) (horizontallyOrientedCorner
+                             (concaveAngleBetweenEdges Edge-3011
+                              Edge-3010)))
+(matchBetween (concaveAngleBetweenEdges Edge-2996
+               Edge-2995) (concaveAngleBetweenEdges Edge-3011
+                           Edge-3010))
+(matchBetween (rightOf Edge-3001 Edge-2987) (rightOf
+                                             Edge-3016
+                                             Edge-3002))
+(matchBetween (horizontallyOrientedCorner
+               (concaveAngleBetweenEdges Edge-2989
+                Edge-2988)) (horizontallyOrientedCorner
+                             (concaveAngleBetweenEdges Edge-3004
+                              Edge-3003)))
+(matchBetween (bottomToTopCorner
+               (concaveAngleBetweenEdges Edge-2989
+                Edge-2988)) (bottomToTopCorner
+                             (concaveAngleBetweenEdges Edge-3004
+                              Edge-3003)))
+(matchBetween (concaveAngleBetweenEdges Edge-2989
+               Edge-2988) (concaveAngleBetweenEdges Edge-3004
+                           Edge-3003))
+(matchBetween (above Edge-2996 Edge-2994) (above Edge-3011 Edge-3009))
+(matchBetween (rightOf Edge-2996 Edge-2994) (rightOf
+                                             Edge-3011
+                                             Edge-3009))
+(matchBetween (above Edge-2992 Edge-2993) (above Edge-3007 Edge-3008))
+(matchBetween (above Edge-2988 Edge-2990) (above Edge-3003 Edge-3005))
+(matchBetween (above Edge-2991 Edge-2993) (above Edge-3006 Edge-3008))
+(matchBetween (above Edge-3001 Edge-3000) (above Edge-3016 Edge-3015))
+(matchBetween (topToBottomCorner
+               (convexAngleBetweenEdges Edge-2999
+                Edge-2998)) (topToBottomCorner
+                             (convexAngleBetweenEdges Edge-3014
+                              Edge-3013)))
+(matchBetween (topToBottomCorner
+               (concaveAngleBetweenEdges Edge-2998
+                Edge-2997)) (topToBottomCorner
+                             (concaveAngleBetweenEdges Edge-3013
+                              Edge-3012)))
+(matchBetween (horizontallyOrientedCorner
+               (concaveAngleBetweenEdges Edge-2998
+                Edge-2997)) (horizontallyOrientedCorner
+                             (concaveAngleBetweenEdges Edge-3013
+                              Edge-3012)))
+(matchBetween (concaveAngleBetweenEdges Edge-2998
+               Edge-2997) (concaveAngleBetweenEdges Edge-3013
+                           Edge-3012))
+(matchBetween (above Edge-2998 Edge-2996) (above Edge-3013 Edge-3011))
+(matchBetween (above Edge-2998 Edge-2997) (above Edge-3013 Edge-3012))
+(matchBetween (above Edge-3001 Edge-2999) (above Edge-3016 Edge-3014))
+(matchBetween (bottomToTopCorner
+               (convexAngleBetweenEdges Edge-2990
+                Edge-2989)) (bottomToTopCorner
+                             (convexAngleBetweenEdges Edge-3005
+                              Edge-3004)))
+(matchBetween (convexAngleBetweenEdges Edge-2990
+               Edge-2989) (convexAngleBetweenEdges Edge-3005 Edge-3004))
+(matchBetween (horizontallyOrientedCorner
+               (concaveAngleBetweenEdges Edge-2991
+                Edge-2990)) (horizontallyOrientedCorner
+                             (concaveAngleBetweenEdges Edge-3006
+                              Edge-3005)))
+(matchBetween (horizontallyOrientedCorner
+               (convexAngleBetweenEdges Edge-2997
+                Edge-2996)) (horizontallyOrientedCorner
+                             (convexAngleBetweenEdges Edge-3012
+                              Edge-3011)))
+(matchBetween (convexAngleBetweenEdges Edge-2997
+               Edge-2996) (convexAngleBetweenEdges Edge-3012 Edge-3011))
+(matchBetween (bottomToTopCorner
+               (convexAngleBetweenEdges Edge-2992
+                Edge-2991)) (bottomToTopCorner
+                             (convexAngleBetweenEdges Edge-3007
+                              Edge-3006)))
+(matchBetween (convexAngleBetweenEdges Edge-2992
+               Edge-2991) (convexAngleBetweenEdges Edge-3007 Edge-3006))
+(matchBetween (above Edge-2989 Edge-2990) (above Edge-3004 Edge-3005))
+(matchBetween (above Edge-2991 Edge-2992) (above Edge-3006 Edge-3007))
+(matchBetween (above Edge-2989 Edge-2991) (above Edge-3004 Edge-3006))
+(matchBetween (StraightEdge Edge-2994) (StraightEdge Edge-3009))
+(matchBetween (axisAligned Edge-2994) (axisAligned Edge-3009))
+(matchBetween (lengthLong Edge-2994) (lengthLong Edge-3009))
+(matchBetween Edge-2994 Edge-3009)
+(matchBetween (StraightEdge Edge-2995) (StraightEdge Edge-3010))
+(matchBetween (PerceptualEdge Edge-2995) (PerceptualEdge Edge-3010))
+(matchBetween (ObliqueEdge-Upward Edge-2993) (ObliqueEdge-Upward
+                                              Edge-3008))
+(matchBetween Edge-2993 Edge-3008)
+(matchBetween (PerceptualEdge Edge-2988) (PerceptualEdge Edge-3003))
+(matchBetween (StraightEdge Edge-2987) (StraightEdge Edge-3002))
+(matchBetween (ObliqueEdge-Upward Edge-2987) (ObliqueEdge-Upward
+                                              Edge-3002))
+(matchBetween Edge-2987 Edge-3002)
+(matchBetween (PerceptualEdge Edge-2998) (PerceptualEdge Edge-3013))
+(matchBetween (lengthShort Edge-2998) (lengthShort Edge-3013))
+(matchBetween Edge-2998 Edge-3013)
+(matchBetween (PerceptualEdge Edge-3000) (PerceptualEdge Edge-3015))
+(matchBetween (StraightEdge Edge-3001) (StraightEdge Edge-3016))
+(matchBetween (ObliqueEdge-Downward Edge-3001) (ObliqueEdge-Downward
+                                                Edge-3016))
+(matchBetween Edge-3001 Edge-3016)
+(matchBetween (StraightEdge Edge-2992) (StraightEdge Edge-3007))
+(matchBetween (PerceptualEdge Edge-2990) (PerceptualEdge Edge-3005))
+(matchBetween (PerceptualEdge Edge-2996) (PerceptualEdge Edge-3011))
+(matchBetween (ObliqueEdge-Downward Edge-2992) (ObliqueEdge-Downward
+                                                Edge-3007))
+(matchBetween (lengthShort Edge-2996) (lengthShort Edge-3011))
+(matchBetween Edge-2996 Edge-3011)
+(matchBetween (lengthShort Edge-2990) (lengthShort Edge-3005))
+(matchBetween Edge-2990 Edge-3005)
+(matchBetween (StraightEdge Edge-2999) (StraightEdge Edge-3014))
+(matchBetween (PerceptualEdge Edge-2999) (PerceptualEdge Edge-3014))
+(matchBetween (ObliqueEdge-Upward Edge-2989) (ObliqueEdge-Upward
+                                              Edge-3004))
+(matchBetween (lengthShort Edge-2999) (lengthShort Edge-3014))
+(matchBetween Edge-2999 Edge-3014)
+(matchBetween (StraightEdge Edge-2997) (StraightEdge Edge-3012))
+(matchBetween (PerceptualEdge Edge-2997) (PerceptualEdge Edge-3012))
+(matchBetween (ObliqueEdge-Upward Edge-2991) (ObliqueEdge-Upward
+                                              Edge-3006))
+(matchBetween Edge-2991 Edge-3006)

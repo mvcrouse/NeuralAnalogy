@@ -1,0 +1,57 @@
+(ElementInImageFn Element-109 Image-1)
+(ElementInImageFn Element-109 Image-2)
+(ElementInImageFn Element-111 Image-1)
+(ElementInImageFn Element-111 Image-2)
+(ScaledShape-Bigger (ElementInImageFn Element-109 Image-1))
+(ScaledShape-Bigger (ElementInImageFn Element-111 Image-2))
+(ScaledShape-Smaller (ElementInImageFn Element-109 Image-2))
+(ScaledShape-Smaller (ElementInImageFn Element-111 Image-1))
+((ObjectsColoredFn BlackColor) (ElementInImageFn Element-111 Image-1))
+((ObjectsColoredFn BlackColor) (ElementInImageFn Element-109 Image-2))
+((ObjectsColoredFn WhiteColor) (ElementInImageFn Element-109 Image-1))
+((ObjectsColoredFn WhiteColor) (ElementInImageFn Element-111 Image-2))
+(ElementInARowFn1 Image-2)
+(changeBetweenImages
+ ((ObjectsColoredFn BlackColor) (ElementInImageFn Element-109 Image-2))
+ Image-1 Image-2)
+(changeBetweenImages
+ ((ObjectsColoredFn WhiteColor) (ElementInImageFn Element-111 Image-2))
+ Image-1 Image-2)
+(changeBetweenImages
+ ((ObjectsColoredFn WhiteColor) (ElementInImageFn Element-109 Image-1))
+ Image-2 Image-1)
+(changeBetweenImages
+ ((ObjectsColoredFn BlackColor) (ElementInImageFn Element-111 Image-1))
+ Image-2 Image-1)
+(changeBetweenImagesFromTo
+ (ScaledShape-Smaller (ElementInImageFn Element-111 Image-1))
+ (ScaledShape-Bigger (ElementInImageFn Element-111 Image-2)) Image-1
+ Image-2)
+(changeBetweenImagesFromTo
+ (ScaledShape-Bigger (ElementInImageFn Element-109 Image-1))
+ (ScaledShape-Smaller (ElementInImageFn Element-109 Image-2)) Image-1
+ Image-2)
+(ElementInARowFn0 Image-1)
++++++++++++
+(ElementInARowFn0 Image-1)
+(ElementInImageFn Element-34 Image-1)
+(ElementInImageFn Element-34 Image-2)
+(ReflectedShape-XAxis (ElementInImageFn Element-34 Image-1))
+(ReflectedShape-XAxis (ElementInImageFn Element-34 Image-2))
+(changeBetweenImagesFromTo
+ (ReflectedShape-XAxis (ElementInImageFn Element-34 Image-1))
+ (ReflectedShape-XAxis (ElementInImageFn Element-34 Image-2)) Image-1
+ Image-2)
+(ElementInARowFn1 Image-2)
++++++++++++
+(matchBetween Image-1 Image-1)
+(matchBetween (ElementInARowFn0 Image-1) (ElementInARowFn0 Image-1))
+(matchBetween (ElementInImageFn Element-109 Image-2) (ElementInImageFn
+                                                      Element-34
+                                                      Image-2))
+(matchBetween (ElementInImageFn Element-109 Image-1) (ElementInImageFn
+                                                      Element-34
+                                                      Image-1))
+(matchBetween Element-109 Element-34)
+(matchBetween (ElementInARowFn1 Image-2) (ElementInARowFn1 Image-2))
+(matchBetween Image-2 Image-2)

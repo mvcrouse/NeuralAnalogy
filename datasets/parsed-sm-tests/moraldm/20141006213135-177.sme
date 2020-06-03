@@ -1,0 +1,174 @@
+(sacredValueChoice open3575)
+(sacredValueChoice Inaction4227)
+(affectsSigLargerGroup open3575)
+(affectsSigLargerGroup Inaction4227)
+(uninferredSentence (affectsSigLargerGroup open3575))
+(uninferredSentence (affectsSigLargerGroup Inaction4227))
+(uninferredSentence (directlyResponsible you3467 Inaction4227))
+(uninferredSentence (preventsAlternativeNegativeOutcome open3575))
+(uninferredSentence (usedAsMeansToPreventNegativeOutcome open3575))
+(directlyResponsible you3467 open3575)
+(directlyResponsible you3467 Inaction4227)
+(preventsAlternativeNegativeOutcome open3575)
+(usedAsMeansToPreventNegativeOutcome open3575)
+(and (sacredValueChoice open3575) (sacredValueChoice Inaction4227)
+     (uninferredSentence (affectsSigLargerGroup open3575))
+     (uninferredSentence (affectsSigLargerGroup Inaction4227))
+     (directlyResponsible you3467 open3575)
+     (uninferredSentence (directlyResponsible you3467 Inaction4227))
+     (uninferredSentence (preventsAlternativeNegativeOutcome open3575))
+     (uninferredSentence
+      (usedAsMeansToPreventNegativeOutcome open3575)))
+(and (on-UnderspecifiedSurface dam3171 river3220) (Dam dam3171)
+     (River river3220) (TemporalPredicate temporallySubsumes))
+(rightChoice Inaction4227)
+(chosenItem SelectingSomething4226 Inaction4227)
+(chosenItem SelectingSomething4226 open3575)
+(on-UnderspecifiedSurface dam3171 river3220)
+(Dam dam3171)
+(River river3220)
+(TemporalPredicate temporallySubsumes)
+(Set-Mathematical them3545)
+(BiologicalSpecies species3257)
+(Extinction extinction3406)
+(RescuingSomeone save3513)
+(OpeningSomething open3575)
+(PreventingSomething PreventingSomething4225)
+(Set-Mathematical set-of-species3797)
+(BiologicalSpecies species3797)
+(Extinction extinction3941)
+(SelectingSomething SelectingSomething4226)
+(Inaction Inaction4227)
+(PreventingSomething p23)
+(causes-PropSit
+ (and (on-UnderspecifiedSurface dam3171 river3220) (Dam dam3171)
+      (River river3220) (TemporalPredicate temporallySubsumes))
+ extinction3406)
+(cardinality them3545 20)
+(elementOf species3257 them3545)
+(generalizes species3257 Fish)
+(objectActedOn extinction3406 species3257)
+(beneficiary save3513 them3545)
+(performedBy save3513 you3467)
+(by-Underspecified save3513 open3575)
+(causes-SitSit save3513 PreventingSomething4225)
+(performedBy open3575 you3467)
+(objectActedOn open3575 dam3171)
+(causes-SitSit open3575 extinction3941)
+(performedBy PreventingSomething4225 you3467)
+(preventedSit PreventingSomething4225 extinction3406)
+(cardinality set-of-species3797 2)
+(elementOf species3797 set-of-species3797)
+(generalizes species3797 Fish)
+(objectActedOn extinction3941 species3797)
+(choices SelectingSomething4226 open3575)
+(choices SelectingSomething4226 Inaction4227)
+(causes-PropSit (chosenItem SelectingSomething4226 open3575) save3513)
+(causes-PropSit (chosenItem SelectingSomething4226 Inaction4227)
+ extinction3406)
+(performedBy Inaction4227 you3467)
+(preventedSit p23 extinction3941)
+(causes-PropSit (chosenItem SelectingSomething4226 Inaction4227) p23)
+(implies
+ (and (sacredValueChoice open3575) (sacredValueChoice Inaction4227)
+      (uninferredSentence (affectsSigLargerGroup open3575))
+      (uninferredSentence (affectsSigLargerGroup Inaction4227))
+      (directlyResponsible you3467 open3575)
+      (uninferredSentence (directlyResponsible you3467 Inaction4227))
+      (uninferredSentence
+       (preventsAlternativeNegativeOutcome open3575))
+      (uninferredSentence
+       (usedAsMeansToPreventNegativeOutcome open3575)))
+ (rightChoice Inaction4227))
+(makeDecision you3467 Inaction4227)
++++++++++++
+(IntelligentAgent you8131)
+(Dam dam7557)
+((GroupFn AnimalSpecies) River1FishGroups)
+((GroupFn AnimalSpecies) River1FishGroup1)
+((GroupFn AnimalSpecies) River1FishGroup2)
+(groupCardinality River1FishGroup1 2)
+(groupCardinality River1FishGroup2 20)
+(subGroups River1FishGroups River1FishGroup1)
+(subGroups River1FishGroups River1FishGroup2)
+(Extinction ExtinctionRiver1FishGroup1)
+(Extinction ExtinctionRiver1FishGroup2)
+(objectActedOn ExtinctionRiver1FishGroup1 River1FishGroup1)
+(objectActedOn ExtinctionRiver1FishGroup2 River1FishGroup2)
+(objectActedOn open8135 dam7557)
+(isInaction notOpen8135)
+(OpeningSomething open8135)
+(PreventingSomething preventingExtinctionRiver1FishGroup1)
+(PreventingSomething preventingExtinctionRiver1FishGroup2)
+(preventedProp preventingExtinctionRiver1FishGroup1
+ ExtinctionRiver1FishGroup1)
+(preventedProp preventingExtinctionRiver1FishGroup2
+ ExtinctionRiver1FishGroup2)
+(SelectingSomething OpeningOrNotOpeningTheDam)
+(choices OpeningOrNotOpeningTheDam open8135)
+(choices OpeningOrNotOpeningTheDam notOpen8135)
+(performedBy open8135 you8131)
+(performedBy notOpen8135 you8131)
+(chosenItem OpeningOrNotOpeningTheDam open8135)
+(chosenItem OpeningOrNotOpeningTheDam notOpen8135)
+(causes-PropProp (chosenItem OpeningOrNotOpeningTheDam open8135)
+ preventingExtinctionRiver1FishGroup2)
+(causes-PropProp (chosenItem OpeningOrNotOpeningTheDam open8135)
+ ExtinctionRiver1FishGroup1)
+(causes-PropProp (chosenItem OpeningOrNotOpeningTheDam notOpen8135)
+ ExtinctionRiver1FishGroup2)
+(causes-PropProp (chosenItem OpeningOrNotOpeningTheDam notOpen8135)
+ preventingExtinctionRiver1FishGroup1)
++++++++++++
+(matchBetween PreventingSomething4225 preventingExtinctionRiver1FishGroup2)
+(matchBetween (PreventingSomething
+               PreventingSomething4225) (PreventingSomething
+                                         preventingExtinctionRiver1FishGroup2))
+(matchBetween extinction3406 ExtinctionRiver1FishGroup2)
+(matchBetween (Extinction extinction3406) (Extinction
+                                           ExtinctionRiver1FishGroup2))
+(matchBetween species3797 River1FishGroup1)
+(matchBetween (objectActedOn extinction3941 species3797) (objectActedOn
+                                                          ExtinctionRiver1FishGroup1
+                                                          River1FishGroup1))
+(matchBetween open3575 open8135)
+(matchBetween (OpeningSomething open3575) (OpeningSomething open8135))
+(matchBetween Inaction4227 notOpen8135)
+(matchBetween you3467 you8131)
+(matchBetween (performedBy Inaction4227 you3467) (performedBy
+                                                  notOpen8135
+                                                  you8131))
+(matchBetween (performedBy open3575 you3467) (performedBy
+                                              open8135
+                                              you8131))
+(matchBetween (chosenItem SelectingSomething4226
+               Inaction4227) (chosenItem OpeningOrNotOpeningTheDam
+                              notOpen8135))
+(matchBetween (chosenItem SelectingSomething4226 open3575) (chosenItem
+                                                            OpeningOrNotOpeningTheDam
+                                                            open8135))
+(matchBetween (choices SelectingSomething4226 open3575) (choices
+                                                         OpeningOrNotOpeningTheDam
+                                                         open8135))
+(matchBetween (choices SelectingSomething4226 Inaction4227) (choices
+                                                             OpeningOrNotOpeningTheDam
+                                                             notOpen8135))
+(matchBetween (objectActedOn open3575 dam3171) (objectActedOn
+                                                open8135
+                                                dam7557))
+(matchBetween (SelectingSomething
+               SelectingSomething4226) (SelectingSomething
+                                        OpeningOrNotOpeningTheDam))
+(matchBetween SelectingSomething4226 OpeningOrNotOpeningTheDam)
+(matchBetween (objectActedOn extinction3406 species3257) (objectActedOn
+                                                          ExtinctionRiver1FishGroup2
+                                                          River1FishGroup2))
+(matchBetween species3257 River1FishGroup2)
+(matchBetween (Dam dam3171) (Dam dam7557))
+(matchBetween dam3171 dam7557)
+(matchBetween (Extinction extinction3941) (Extinction
+                                           ExtinctionRiver1FishGroup1))
+(matchBetween extinction3941 ExtinctionRiver1FishGroup1)
+(matchBetween (PreventingSomething p23) (PreventingSomething
+                                         preventingExtinctionRiver1FishGroup1))
+(matchBetween p23 preventingExtinctionRiver1FishGroup1)
