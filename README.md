@@ -64,3 +64,20 @@ base and target logical expression sets. An example of its use is
      >>> (p (f b a))
      >>> (p (f d c))
      >>> END
+     
+## Citing this Work
+
+If you end up using this work in a publication, please cite the original paper
+
+      @article{crouse2020neural,
+
+         title={Neural Analogical Matching},
+  
+         author={Crouse, Maxwell and Nakos, Constantine and Abdelaziz, Ibrahim and Forbus, Kenneth},
+  
+         journal={arXiv preprint arXiv:2004.03573},
+  
+         year={2020}
+   
+      }
+     
