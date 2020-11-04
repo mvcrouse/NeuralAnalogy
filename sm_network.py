@@ -197,7 +197,7 @@ class SMN(nn.Module):
     #####
 
     def structural_match(self, b_node_lst, t_node_lst, k_encs=16, req_corrs=None,
-                         score_by_prob=False, output_k=False,hashable_syms=False):
+                         score_by_prob=False, output_k=False,hashable_syms=False,use_iou=True):
         best_mapping = (float('-inf'), float('-inf'), [], [], (0, 0))
         all_mappings = []
         for _ in range(k_encs):
@@ -220,7 +220,7 @@ class SMN(nn.Module):
             valid_edges, sm_score, violations = get_sm_from_mapping(mapping_edges)
             mapping_val = (mapping_prob, sm_score, mapping, cis, 
                            valid_edges, violations)
-            if output_k: all_mappings.append(mapping_val)
+            all_mappings.append(mapping_val)
             comp_score = mapping_prob if score_by_prob else sm_score
             best_score = best_mapping[0] if score_by_prob else best_mapping[1]
             v_ct, bv_ct = sum(violations), sum(best_mapping[len(best_mapping)-1])
@@ -228,6 +228,16 @@ class SMN(nn.Module):
             if (comp_score == best_score and v_ct < bv_ct) or \
                (comp_score > best_score):
                 best_mapping = mapping_val
+                iou_rankings = []
+        for m1 in all_mappings:
+            edges1 = set([e for (p, e) in m1[2]])
+            iou = 0
+            for m2 in all_mappings:
+                edges2 = [e for (p, e) in m2[2]]
+                iou += (len(edges1.intersection(edges2)) / len(edges1.union(edges2)))
+            iou_rankings.append((iou, m1))
+        iou_rankings = sorted(iou_rankings, key=lambda x : x[0], reverse=True)
+        if use_iou: best_mapping = iou_rankings[0][1]
         if output_k: return all_mappings
         return best_mapping
 
