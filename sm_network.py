@@ -228,7 +228,7 @@ class SMN(nn.Module):
             if (comp_score == best_score and v_ct < bv_ct) or \
                (comp_score > best_score):
                 best_mapping = mapping_val
-                iou_rankings = []
+        iou_rankings = []
         for m1 in all_mappings:
             edges1 = set([e for (p, e) in m1[2]])
             iou = 0
