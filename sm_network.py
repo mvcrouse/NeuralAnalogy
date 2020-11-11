@@ -196,8 +196,8 @@ class SMN(nn.Module):
     # Formatting
     #####
 
-    def structural_match(self, b_node_lst, t_node_lst, k_encs=16, req_corrs=None,
-                         score_by_prob=False, output_k=False,hashable_syms=False,use_iou=True):
+    def structural_match(self, b_node_lst, t_node_lst, k_encs=32, req_corrs=None,
+                         score_by_prob=False, output_k=False, hashable_syms=False, use_iou=True):
         best_mapping = (float('-inf'), float('-inf'), [], [], (0, 0))
         all_mappings = []
         for _ in range(k_encs):
@@ -230,14 +230,15 @@ class SMN(nn.Module):
                 best_mapping = mapping_val
         iou_rankings = []
         for m1 in all_mappings:
+            m1_prob = m1[0]
             edges1 = set([e for (p, e) in m1[2]])
             iou = 0
             for m2 in all_mappings:
                 edges2 = [e for (p, e) in m2[2]]
                 iou += (len(edges1.intersection(edges2)) / len(edges1.union(edges2)))
-            iou_rankings.append((iou, m1))
+            iou_rankings.append((iou, m1_prob, m1))
         iou_rankings = sorted(iou_rankings, key=lambda x : x[0], reverse=True)
-        if use_iou: best_mapping = iou_rankings[0][1]
+        if use_iou: best_mapping = iou_rankings[0][2]
         if output_k: return all_mappings
         return best_mapping
 
